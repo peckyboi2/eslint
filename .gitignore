@@ -31,8 +31,20 @@ yarn.lock
 package-lock.json
 pnpm-lock.yaml
 
+# Curated historical inputs include required build/ and tmp/ source files.
+!/evals/golden/prepared-inputs/
+!/evals/golden/prepared-inputs/**
+
 # Docs site
 _site
 /docs/src/assets/css
 
 .cursor
+
+# Local Python caches are not assignment evidence.
+/scripts/**/__pycache__/
+
+# Local development outputs; explicitly include selected final evaluation evidence.
+/evals/runs/
+/evals/platform-tests/
+/evals/checks/

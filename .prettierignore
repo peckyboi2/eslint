@@ -13,3 +13,9 @@ ecosystem
 packages/js/src/configs/eslint-all.js
 packages/js/src/configs/eslint-recommended.js
 tests/fixtures
+
+<!-- Generated snapshots and evidence -->
+evals/runs/
+evals/platform-tests/
+evals/checks/
+evals/golden/

@@ -5,3 +5,11 @@
 
 # The test fixtures are text files.
 /tests/fixtures/**/* text eol=lf
+
+# Historical assignment inputs retain exact archived bytes, including CRLF/spaces.
+/evals/golden/prepared-inputs/** -text -whitespace
+
+# Run evidence and configuration snapshots retain their recorded hashes.
+/evals/runs/** -text -whitespace
+/evals/platform-tests/** -text -whitespace
+/evals/checks/** -text -whitespace
