@@ -15,13 +15,13 @@ import tempfile
 import threading
 from typing import Any
 
-import constants as c
-from errors import ClarifierError, TransportError, ValidationError, guarded
-from recording import PreviewConfig, Session, redact_text, save_json, sha, write_bytes, write_text
-from request import make_config, prepare_request, record_request
-from skill import LoadedSkill
-from staging import StagedCase
-from validation import parse_json
+from clarifier.shared import constants as c
+from clarifier.shared.errors import ClarifierError, TransportError, ValidationError, guarded
+from clarifier.inference.recording import PreviewConfig, Session, redact_text, save_json, sha, write_bytes, write_text
+from clarifier.inference.request import make_config, prepare_request, record_request
+from clarifier.inference.skill import LoadedSkill
+from clarifier.inference.staging import StagedCase
+from clarifier.outputs.validation import parse_json
 
 
 @dataclass(frozen=True)

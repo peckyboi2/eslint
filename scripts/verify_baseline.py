@@ -8,9 +8,9 @@ import tarfile
 from pathlib import Path, PurePosixPath
 import sys
 
-sys.path.insert(0, str(Path(__file__).resolve().parent / "clarifier"))
-from constants import CONFIG_PATHS, CONFIG_PATH, MODULE_NAMES, SKILL_PATH
-from recording import load_configuration
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from clarifier.shared.constants import CONFIG_PATHS, CONFIG_PATH, MODULE_NAMES, SKILL_PATH
+from clarifier.inference.recording import load_configuration
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -147,7 +147,8 @@ def main():
     ).splitlines()))
     unexpected = {
         p for p in added
-        if not (p.startswith("evals/golden/")
+        if not (p == "scripts/clarifier/tests/test_layout.py"
+                or p.startswith("evals/golden/")
                 or p.startswith(("evals/runs/", "evals/platform-tests/", "evals/checks/"))
                 or p in {path.as_posix() for path in CONFIG_PATHS}
                 or p in {f"scripts/clarifier/tests/test_{name}.py" for name in MODULE_NAMES}
@@ -155,8 +156,6 @@ def main():
                 or p in {"evals/development-evidence.tar.gz",
                          "scripts/clarifier/tests/fixtures/routing.json",
                          "scripts/verify_baseline.py", "scripts/clarifier/preview.py",
-                         "scripts/clarifier/transport.py",
-                         "scripts/clarifier/config.json", "scripts/clarifier/decision.schema.json",
                          ".claude/skills/eslint-clarification/SKILL.md"})
     }
     if unexpected:

@@ -7,9 +7,9 @@ import stat
 import tempfile
 from typing import TypedDict
 
-import constants as c
-from errors import StagingError, guarded
-from recording import Session, save_json, sha
+from clarifier.shared import constants as c
+from clarifier.shared.errors import StagingError, guarded
+from clarifier.inference.recording import Session, save_json, sha
 
 
 class FileDigest(TypedDict):

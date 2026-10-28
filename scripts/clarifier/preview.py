@@ -4,15 +4,20 @@ import argparse
 from pathlib import Path
 from typing import Callable
 
-import constants as c
-from errors import ClarifierError
-import recording
-import request
-import routing
-import skill
-import staging
-import transport
-import validation
+import sys
+
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from clarifier.shared import constants as c
+from clarifier.shared.errors import ClarifierError
+from clarifier.inference import recording
+from clarifier.inference import request
+from clarifier.outputs import routing
+from clarifier.inference import skill
+from clarifier.inference import staging
+from clarifier.inference import transport
+from clarifier.outputs import validation
 
 
 def run(platform_test: bool = False, *, root: Path = c.ROOT,

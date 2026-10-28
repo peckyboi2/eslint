@@ -5,16 +5,16 @@ from pathlib import Path
 import tempfile
 import unittest
 
-import constants as c
-import errors
-import recording as rec
-import request as req
-import skill
+from clarifier.shared import constants as c
+from clarifier.shared import errors
+from clarifier.inference import recording as rec
+from clarifier.inference import request as req
+from clarifier.inference import skill
 
 
 class NativeLoading(unittest.TestCase):
     def setUp(self):
-        self.config = json.loads((c.HERE / "config.json").read_text())
+        self.config = json.loads((c.ROOT / c.CONFIG_PATH).read_text())
         self.incoming = {"model": self.config["model"], "instructions": "trusted skill", "tools": [{"name": "shell"}],
                          "input": [{"role": "developer", "content": [{"text": "private host context"}]},
                                    {"role": "user", "content": [{"text": "approved evidence"}]}]}

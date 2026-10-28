@@ -2,9 +2,9 @@
 import re
 from typing import TypedDict
 
-import constants as c
-from errors import ValidationError
-from validation import ModelResult, parse_and_validate
+from clarifier.shared import constants as c
+from clarifier.shared.errors import ValidationError
+from clarifier.outputs.validation import ModelResult, parse_and_validate
 
 
 class PreviewRoute(TypedDict, total=False):

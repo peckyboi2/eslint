@@ -5,9 +5,9 @@ from pathlib import Path
 import tempfile
 import unittest
 
-import constants as c
-import errors
-import recording as rec
+from clarifier.shared import constants as c
+from clarifier.shared import errors
+from clarifier.inference import recording as rec
 
 spec = importlib.util.spec_from_file_location("verify_baseline", c.ROOT / "scripts/verify_baseline.py")
 baseline = importlib.util.module_from_spec(spec)

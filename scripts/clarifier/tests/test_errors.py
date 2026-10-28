@@ -1,6 +1,6 @@
 """Typed error and interruption boundaries for tasks 09–15 and R1."""
 import unittest
-from errors import ClarifierError, InterruptedRun, StagingError, guarded
+from clarifier.shared.errors import ClarifierError, InterruptedRun, StagingError, guarded
 
 
 class TypedBoundaries(unittest.TestCase):

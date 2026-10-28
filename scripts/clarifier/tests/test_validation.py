@@ -1,9 +1,9 @@
 """Pure decision validation for tasks 08, 13 and R1; infrastructure only."""
 import json
 import unittest
-import constants as c
-from errors import ValidationError
-import validation as v
+from clarifier.shared import constants as c
+from clarifier.shared.errors import ValidationError
+from clarifier.outputs import validation as v
 
 
 class StrictValidation(unittest.TestCase):

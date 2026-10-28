@@ -9,14 +9,14 @@ import tempfile
 import unittest
 from unittest.mock import Mock, patch
 
-import constants as c
-import errors
-import preview as p
-import recording as rec
-import request as req
-import routing as route
-import staging as stage
-import transport as t
+from clarifier.shared import constants as c
+from clarifier.shared import errors
+from clarifier import preview as p
+from clarifier.inference import recording as rec
+from clarifier.inference import request as req
+from clarifier.outputs import routing as route
+from clarifier.inference import staging as stage
+from clarifier.inference import transport as t
 
 spec = importlib.util.spec_from_file_location("verify_baseline", c.ROOT / "scripts/verify_baseline.py")
 baseline = importlib.util.module_from_spec(spec)
@@ -38,7 +38,7 @@ class RunFixture(unittest.TestCase):
         case = "evals/golden/prepared-inputs/inputs/20373"
         shutil.copytree(c.ROOT / case, self.root / case)
         here = self.root / "scripts/clarifier"
-        self.config = json.loads((here / "config.json").read_text())
+        self.config = json.loads((self.root / c.CONFIG_PATH).read_text())
 
         self.network = self.enterContext(patch.object(t.http.client, "HTTPSConnection"))
         self.binary = self.root / "synthetic-codex"

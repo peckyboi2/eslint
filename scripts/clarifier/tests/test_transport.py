@@ -6,10 +6,10 @@ import tempfile
 import unittest
 from unittest.mock import Mock, patch
 
-import constants as c
-import errors
-import recording as rec
-import transport as t
+from clarifier.shared import constants as c
+from clarifier.shared import errors
+from clarifier.inference import recording as rec
+from clarifier.inference import transport as t
 
 
 class ProviderResponses(unittest.TestCase):

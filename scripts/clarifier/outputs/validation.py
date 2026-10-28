@@ -4,8 +4,8 @@ import re
 import unicodedata
 from typing import Any, Literal, TypedDict
 
-import constants as c
-from errors import ValidationError, guarded
+from clarifier.shared import constants as c
+from clarifier.shared.errors import ValidationError, guarded
 
 
 class ModelResult(TypedDict):

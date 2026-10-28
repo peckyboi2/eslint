@@ -10,14 +10,14 @@ from tempfile import TemporaryDirectory
 from typing import Any, Callable, TYPE_CHECKING, TypedDict
 import uuid
 
-import constants as c
-from errors import (ClarifierError, ConfigurationError, InterruptedRun,
+from clarifier.shared import constants as c
+from clarifier.shared.errors import (ClarifierError, ConfigurationError, InterruptedRun,
                     RecordingError, ValidationError, guarded)
-from routing import PreviewRoute, rejected
-from validation import parse_json
+from clarifier.outputs.routing import PreviewRoute, rejected
+from clarifier.outputs.validation import parse_json
 
 if TYPE_CHECKING:
-    from transport import Gate
+    from clarifier.inference.transport import Gate
 
 
 class PreviewConfig(TypedDict):

@@ -1,8 +1,8 @@
 """Constants/schema consistency for tasks 08–15 and R1; infrastructure only."""
 import json
 import unittest
-import constants as c
-import recording
+from clarifier.shared import constants as c
+from clarifier.inference import recording
 
 
 class ConstantPolicy(unittest.TestCase):
@@ -16,6 +16,7 @@ class ConstantPolicy(unittest.TestCase):
         self.assertEqual(schema['properties'][c.CLARIFICATION]['maxLength'], c.MAX_CLARIFICATION_CHARS)
 
     def test_snapshot_covers_every_runtime_module(self):
-        modules = {path.name for path in c.HERE.glob('*.py') if not path.name.startswith('test_')}
-        self.assertEqual(modules, {f'{name}.py' for name in c.MODULE_NAMES})
+        modules = {path.relative_to(c.HERE) for path in c.HERE.rglob('*.py')
+                   if 'tests' not in path.relative_to(c.HERE).parts}
+        self.assertEqual(modules, set(c.SOURCE_PATHS))
         self.assertEqual(len(c.CONFIG_PATHS), len(set(c.CONFIG_PATHS)))

@@ -3,11 +3,11 @@ import json
 from pathlib import Path
 from typing import Any
 
-import constants as c
-from errors import RequestError, guarded
-from recording import PreviewConfig, Session, save_json, sha, write_text
-from skill import loaded_skill, loader_evidence, native_probe
-from staging import StagedCase, read_safe
+from clarifier.shared import constants as c
+from clarifier.shared.errors import RequestError, guarded
+from clarifier.inference.recording import PreviewConfig, Session, save_json, sha, write_text
+from clarifier.inference.skill import loaded_skill, loader_evidence, native_probe
+from clarifier.inference.staging import StagedCase, read_safe
 
 
 def build_prompt(evidence: Path) -> str:

@@ -1,17 +1,35 @@
 """Trusted paths, schemas and preview limits. Serves tasks 08–15 and R1."""
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-HERE = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[3]
+HERE = Path(__file__).resolve().parent.parent
 SKILL_PATH = Path(".claude/skills/eslint-clarification/SKILL.md")
 NATIVE_SKILL_PATH = Path(".agents/skills/eslint-clarification/SKILL.md")
 CASE_PATH = Path("evals/golden/prepared-inputs/inputs/20373")
-CONFIG_PATH = Path("scripts/clarifier/config.json")
-SCHEMA_PATH = Path("scripts/clarifier/decision.schema.json")
-MODULE_NAMES = ("constants", "errors", "staging", "skill", "request", "transport",
-                "validation", "routing", "recording", "preview")
+CONFIG_PATH = Path("scripts/clarifier/config/config.json")
+SCHEMA_PATH = Path("scripts/clarifier/config/decision.schema.json")
+MODULE_PATHS = tuple(map(Path, (
+    "shared/constants.py",
+    "shared/errors.py",
+    "preview.py",
+    "inference/staging.py",
+    "inference/skill.py",
+    "inference/request.py",
+    "inference/transport.py",
+    "inference/recording.py",
+    "outputs/validation.py",
+    "outputs/routing.py",
+)))
+PACKAGE_PATHS = tuple(map(Path, (
+    "__init__.py",
+    "shared/__init__.py",
+    "inference/__init__.py",
+    "outputs/__init__.py",
+)))
+SOURCE_PATHS = MODULE_PATHS + PACKAGE_PATHS
+MODULE_NAMES = tuple(path.stem for path in MODULE_PATHS)
 CONFIG_PATHS = (SKILL_PATH, CONFIG_PATH, SCHEMA_PATH,
-                *(Path(f"scripts/clarifier/{name}.py") for name in MODULE_NAMES))
+                *(Path("scripts/clarifier") / name for name in SOURCE_PATHS))
 RETAINED_CONFIG_PATHS = (SKILL_PATH, CONFIG_PATH, SCHEMA_PATH)
 APPROVED = {
     "body.md": "52acebec10d033684d643df1c45c849b02967fa291806af3ee70f7e5ee1d0243",

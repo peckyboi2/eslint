@@ -3,10 +3,10 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-import constants as c
-from errors import SkillError, guarded
-from recording import Session, sha, write_bytes
-from staging import read_safe
+from clarifier.shared import constants as c
+from clarifier.shared.errors import SkillError, guarded
+from clarifier.inference.recording import Session, sha, write_bytes
+from clarifier.inference.staging import read_safe
 
 
 @dataclass(frozen=True)

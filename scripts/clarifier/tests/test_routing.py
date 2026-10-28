@@ -2,8 +2,8 @@
 import json
 import unittest
 
-import constants as c
-import routing as route
+from clarifier.shared import constants as c
+from clarifier.outputs import routing as route
 
 
 class Decisions(unittest.TestCase):
