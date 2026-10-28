@@ -1,0 +1,146 @@
+{
+  "issue": 20373,
+  "run_id": "final-f-20261028-v9-01-20373-a1",
+  "status": "completed",
+  "actual_decision": "clarify",
+  "result": {
+    "decision": "clarify",
+    "rationale": "The report supplies environment versions, the override configuration, the plugin-registration toggle, and the different errors for `.ts` and `.js` files. However, the configuration returned by `feEslint` from `@fe/eslint-config` and its dependency setup are absent. Without them, a maintainer cannot reconstruct the base plugin registrations and file matching needed to reproduce either case. The lint invocation is also unspecified, leaving the target-file selection unclear.",
+    "clarification": "Could you share the configuration exported by `@fe/eslint-config`, together with the relevant `package.json` and lockfile, or a minimal project containing them, and the exact lint command or package-script invocation that demonstrates the two cases? The supplied override does not show which base configurations and plugin registrations apply to the `.ts` and `.js` files."
+  },
+  "errors": [],
+  "input_hashes": {
+    "body.md": "52acebec10d033684d643df1c45c849b02967fa291806af3ee70f7e5ee1d0243",
+    "snapshot.json": "cb0a6bae09b182ec75254f2079ad7712ef4fa42f95e6456aa04a3eaadc0ee588",
+    "title.txt": "8aacd3f7ce411c29e90e47cb1e6f9fab92581735ab2187f6dfaa28f5252fb8d3"
+  },
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "public_actions": [],
+  "usage": {
+    "input_tokens": 4330,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 1216,
+    "output_tokens_details": {
+      "reasoning_tokens": 1034
+    },
+    "total_tokens": 5546,
+    "attribution": {
+      "items": {
+        "msg_05551b2a15d11793016ae1a8bb1258819184f915afe5eed088": {
+          "input_tokens": 2373,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 2373,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_05551b2a15d11793016ae1a8bb125881918b9cef7d6cce48a4": {
+          "input_tokens": 1955,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_05551b2a15d11793016ae1a8e8a6208191806ca014c39a53c1": {
+          "input_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 182,
+          "content": [
+            {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 182
+            }
+          ]
+        },
+        "rs_05551b2a15d11793016ae1a8d2dd508191841ec3a00701f61c": {
+          "input_tokens": 2,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 516
+        },
+        "rs_05551b2a15d11793016ae1a8e878ec8191b89f4d333919745c": {
+          "input_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 518
+        }
+      }
+    }
+  },
+  "cost": "unknown",
+  "source": "evals/golden/prepared-inputs/inputs/20373",
+  "run": "evals/runs/final-f-20261028-v9-01-20373-a1",
+  "campaign_id": "final-f-20261028-v9",
+  "expected_decision": "clarify",
+  "decision_pass": true,
+  "quality_review": {
+    "comment_quality": "pass",
+    "criteria": [
+      {
+        "criterion": 1,
+        "result": "pass",
+        "evidence": "Requests the configuration exported by @fe/eslint-config and relevant package.json/lockfile or a minimal project containing them; these are absent from the preserved override."
+      },
+      {
+        "criterion": 2,
+        "result": "pass",
+        "evidence": "Explains that the supplied override does not show base configurations and plugin registrations for the .ts/.js files; no error cause or fix asserted."
+      },
+      {
+        "criterion": 3,
+        "result": "pass",
+        "evidence": "One cohesive setup request; exact lint command/package-script is also absent and relates to selection of the two file cases. It does not repeat the supplied versions or override."
+      },
+      {
+        "criterion": 4,
+        "result": "pass",
+        "evidence": "Could you share… is respectful and neutral; no validity verdict or promise."
+      },
+      {
+        "criterion": 5,
+        "result": "pass",
+        "evidence": "No deletion, diagnosis, fix, execution, continuation or forbidden operation proposed; inference tool calls are empty."
+      },
+      {
+        "criterion": 6,
+        "result": "pass",
+        "evidence": "Validated bounded preview with trusted model/run attribution; @fe/eslint-config is a package reference, no reporter mention or posting target."
+      },
+      {
+        "criterion": 7,
+        "result": "pass",
+        "evidence": "Exactly one preview comment, public_actions=[] and posting_available=false; no public comment."
+      }
+    ],
+    "irrelevant_content": false,
+    "redundant_content": false,
+    "silent_branch_violation": false,
+    "notes": [
+      "Fresh final-campaign decision and comment match the accepted shared-configuration/dependency requirement."
+    ],
+    "issue": 20373,
+    "run_id": "final-f-20261028-v9-01-20373-a1",
+    "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+    "reviewed_at": "2026-10-28T07:49:33.648971+00:00"
+  },
+  "clarification_success": true
+}

@@ -1,0 +1,9 @@
+{
+  "actor_id": 234542779,
+  "scope": "local-development-preview",
+  "rolling_limit": 11,
+  "campaign": "c-development-20261028",
+  "authorization_text": "Allow one additional local preview",
+  "authorisation_source": "Darren reply in this chat on 2026-10-28 to one-time exception request; hosted limits unchanged; no paid API access",
+  "recorded_at": "2026-10-28T01:58:09.711991+00:00"
+}

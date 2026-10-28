@@ -1,0 +1,2582 @@
+{
+  "url": "https://github.com/eslint/eslint/issues/21320",
+  "retrieved_at": "2026-10-26T13:16:40.880778+00:00",
+  "data": {
+    "id": "I_kwDOAKjKDc8AAAABRDCECg",
+    "number": 21320,
+    "repository": {
+      "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+      "databaseId": 11061773,
+      "name": "eslint",
+      "isArchived": false,
+      "nameWithOwner": "eslint/eslint",
+      "viewerCanInteract": false,
+      "viewerInteractionLimitReasonHTML": "",
+      "slashCommandsEnabled": false,
+      "visibility": "PUBLIC",
+      "viewerCanPush": false,
+      "owner": {
+        "__typename": "Organization",
+        "login": "eslint",
+        "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+        "url": "https://github.com/eslint",
+        "databaseId": 6019716,
+        "name": "ESLint",
+        "issueFieldsEnabled": true,
+        "issueFields": {
+          "totalCount": 0
+        },
+        "pinnedIssueFields": {
+          "nodes": []
+        }
+      },
+      "isPrivate": false,
+      "isWritable": true,
+      "isOwnerEnterpriseManaged": false,
+      "viewerCanPinIssues": false,
+      "isCopilotAgentEnabled": null,
+      "issueTypes": {
+        "edges": [
+          {
+            "node": {
+              "id": "IT_kwDOAFvahM4AB8CR"
+            }
+          },
+          {
+            "node": {
+              "id": "IT_kwDOAFvahM4AB8CU"
+            }
+          },
+          {
+            "node": {
+              "id": "IT_kwDOAFvahM4AB8CW"
+            }
+          }
+        ]
+      },
+      "viewerIssueCreationPermissions": {
+        "triageable": false
+      },
+      "pinnedIssues": {
+        "totalCount": 1
+      }
+    },
+    "viewerCanAssign": false,
+    "viewerCanLabel": false,
+    "viewerCanSetMilestone": false,
+    "viewerCanSetFields": false,
+    "viewerCanType": false,
+    "viewerCanUpdateMetadata": false,
+    "issueType": null,
+    "assignedActors": {
+      "nodes": [
+        {
+          "__typename": "User",
+          "__isActor": "User",
+          "id": "U_kgDOBqrqbw",
+          "login": "dvd233",
+          "name": "dvd233",
+          "profileResourcePath": "/dvd233",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111864431?s=64&u=38ee233a5689dcb35f1f25485faf26822fac33af&v=4",
+          "__isNode": "User"
+        }
+      ]
+    },
+    "labels": {
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "NA"
+      },
+      "edges": [
+        {
+          "node": {
+            "id": "MDU6TGFiZWwxMzExMDYyMjk=",
+            "fullDatabaseId": "131106229",
+            "color": "0052cc",
+            "name": "accepted",
+            "nameHTML": "accepted",
+            "description": "There is consensus among the team that this change meets the criteria for inclusion",
+            "url": "https://github.com/eslint/eslint/labels/accepted",
+            "archivedAt": null
+          }
+        },
+        {
+          "node": {
+            "id": "MDU6TGFiZWw0NTcxMTM1MA==",
+            "fullDatabaseId": "45711350",
+            "color": "fc2929",
+            "name": "bug",
+            "nameHTML": "bug",
+            "description": "ESLint is working incorrectly",
+            "url": "https://github.com/eslint/eslint/labels/bug",
+            "archivedAt": null
+          }
+        },
+        {
+          "node": {
+            "id": "MDU6TGFiZWwyNzg2ODIzNTMy",
+            "fullDatabaseId": "2786823532",
+            "color": "7A14E9",
+            "name": "repro:yes",
+            "nameHTML": "repro:yes",
+            "description": "Issues with a reproducible example",
+            "url": "https://github.com/eslint/eslint/labels/repro%3Ayes",
+            "archivedAt": null
+          }
+        },
+        {
+          "node": {
+            "id": "MDU6TGFiZWw0NTc5ODYzOQ==",
+            "fullDatabaseId": "45798639",
+            "color": "fbca04",
+            "name": "rule",
+            "nameHTML": "rule",
+            "description": "Relates to ESLint's core rules",
+            "url": "https://github.com/eslint/eslint/labels/rule",
+            "archivedAt": null
+          }
+        }
+      ]
+    },
+    "milestone": null,
+    "issueFieldValues": {
+      "nodes": []
+    },
+    "projectItems": {
+      "edges": [
+        {
+          "node": {
+            "id": "PVTI_lADOAFvahM4AKMzDzg6tSkk",
+            "isArchived": false,
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "template": false,
+              "viewerCanUpdate": false,
+              "url": "https://github.com/orgs/eslint/projects/3",
+              "field": {
+                "__typename": "ProjectV2SingleSelectField",
+                "databaseId": 26615641,
+                "id": "PVTSSF_lADOAFvahM4AKMzDzgGWH1k",
+                "name": "Status",
+                "options": [
+                  {
+                    "id": "1fbeffee",
+                    "optionId": "1fbeffee",
+                    "name": "Needs Triage",
+                    "nameHTML": "Needs Triage",
+                    "color": "GRAY",
+                    "descriptionHTML": "Issues/PRs that haven't yet been addressed by a team member.",
+                    "description": "Issues/PRs that haven't yet been addressed by a team member."
+                  },
+                  {
+                    "id": "3d3a611f",
+                    "optionId": "3d3a611f",
+                    "name": "Triaging",
+                    "nameHTML": "Triaging",
+                    "color": "GRAY",
+                    "descriptionHTML": "Issues/PRs currently being triaged by a team member to determine if all of the necessary information is present.",
+                    "description": "Issues/PRs currently being triaged by a team member to determine if all of the necessary information is present."
+                  },
+                  {
+                    "id": "195dd2d3",
+                    "optionId": "195dd2d3",
+                    "name": "Ready for Dev Team",
+                    "nameHTML": "Ready for Dev Team",
+                    "color": "GRAY",
+                    "descriptionHTML": "Issues/PRs that have been properly triaged and are ready for the dev team to analyze.",
+                    "description": "Issues/PRs that have been properly triaged and are ready for the dev team to analyze."
+                  },
+                  {
+                    "id": "fb5d77af",
+                    "optionId": "fb5d77af",
+                    "name": "Evaluating",
+                    "nameHTML": "Evaluating",
+                    "color": "YELLOW",
+                    "descriptionHTML": "Issues/PRs being evaluated by a team member before deciding how to proceed.",
+                    "description": "Issues/PRs being evaluated by a team member before deciding how to proceed."
+                  },
+                  {
+                    "id": "b09513bc",
+                    "optionId": "b09513bc",
+                    "name": "Feedback Needed",
+                    "nameHTML": "Feedback Needed",
+                    "color": "YELLOW",
+                    "descriptionHTML": "Issues/PRs where a team member is requesting feedback from the larger team.",
+                    "description": "Issues/PRs where a team member is requesting feedback from the larger team."
+                  },
+                  {
+                    "id": "f489065d",
+                    "optionId": "f489065d",
+                    "name": "Waiting for RFC",
+                    "nameHTML": "Waiting for RFC",
+                    "color": "PURPLE",
+                    "descriptionHTML": "Issues/PRs that are waiting for an RFC before further evaluating.",
+                    "description": "Issues/PRs that are waiting for an RFC before further evaluating."
+                  },
+                  {
+                    "id": "6a71a348",
+                    "optionId": "6a71a348",
+                    "name": "RFC Opened",
+                    "nameHTML": "RFC Opened",
+                    "color": "PURPLE",
+                    "descriptionHTML": "Issues/PRs that have an RFC opened and under review.",
+                    "description": "Issues/PRs that have an RFC opened and under review."
+                  },
+                  {
+                    "id": "5f6d9328",
+                    "optionId": "5f6d9328",
+                    "name": "Blocked",
+                    "nameHTML": "Blocked",
+                    "color": "RED",
+                    "descriptionHTML": "Issues/PRs that cannot be progressed due to some constraint.",
+                    "description": "Issues/PRs that cannot be progressed due to some constraint."
+                  },
+                  {
+                    "id": "aff067e3",
+                    "optionId": "aff067e3",
+                    "name": "Ready to Implement",
+                    "nameHTML": "Ready to Implement",
+                    "color": "GREEN",
+                    "descriptionHTML": "Issues that have been accepted and are ready to be implemented.",
+                    "description": "Issues that have been accepted and are ready to be implemented."
+                  },
+                  {
+                    "id": "8b3eb8e0",
+                    "optionId": "8b3eb8e0",
+                    "name": "Implementing",
+                    "nameHTML": "Implementing",
+                    "color": "GREEN",
+                    "descriptionHTML": "Accepted issues with open PRs and accepted PRs.",
+                    "description": "Accepted issues with open PRs and accepted PRs."
+                  },
+                  {
+                    "id": "34a9e837",
+                    "optionId": "34a9e837",
+                    "name": "Second Review Needed",
+                    "nameHTML": "Second Review Needed",
+                    "color": "GREEN",
+                    "descriptionHTML": "Pull requests that already have one approval and are looking for a second before merging.",
+                    "description": "Pull requests that already have one approval and are looking for a second before merging."
+                  },
+                  {
+                    "id": "45ca0cff",
+                    "optionId": "45ca0cff",
+                    "name": "Merge Candidates",
+                    "nameHTML": "Merge Candidates",
+                    "color": "GREEN",
+                    "descriptionHTML": "Pull requests that have been approved and are likely ready for merge but would like one more check.",
+                    "description": "Pull requests that have been approved and are likely ready for merge but would like one more check."
+                  },
+                  {
+                    "id": "06ca0d48",
+                    "optionId": "06ca0d48",
+                    "name": "Complete",
+                    "nameHTML": "Complete",
+                    "color": "GRAY",
+                    "descriptionHTML": "",
+                    "description": ""
+                  }
+                ],
+                "__isNode": "ProjectV2SingleSelectField"
+              },
+              "closed": false,
+              "number": 3,
+              "hasReachedItemsLimit": false
+            },
+            "fieldValueByName": {
+              "__typename": "ProjectV2ItemFieldSingleSelectValue",
+              "id": "PVTFSV_lQDOAFvahM4AKMzDzg6tSknOLJOfxA",
+              "optionId": "06ca0d48",
+              "name": "Complete",
+              "nameHTML": "Complete",
+              "color": "GRAY",
+              "__isNode": "ProjectV2ItemFieldSingleSelectValue"
+            },
+            "__typename": "ProjectV2Item"
+          },
+          "cursor": "MQ"
+        }
+      ],
+      "pageInfo": {
+        "endCursor": "MQ",
+        "hasNextPage": false
+      }
+    },
+    "agentAssignments": [],
+    "linkedPullRequests": {
+      "nodes": [
+        {
+          "id": "PR_kwDOAKjKDc8AAAABDWT9BA",
+          "url": "https://github.com/eslint/eslint/pull/21323",
+          "number": 21323,
+          "title": "fix: avoid invalid object-shorthand fixes for super methods",
+          "state": "MERGED",
+          "isDraft": false,
+          "isInMergeQueue": false,
+          "createdAt": "2026-09-13T16:31:20Z",
+          "databaseId": 4519689476,
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+            "name": "eslint",
+            "nameWithOwner": "eslint/eslint",
+            "owner": {
+              "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+              "login": "eslint",
+              "__typename": "Organization"
+            }
+          },
+          "__typename": "PullRequest"
+        }
+      ]
+    },
+    "closedByPullRequestsReferences": {
+      "nodes": [
+        {
+          "id": "PR_kwDOAKjKDc8AAAABDWT9BA",
+          "number": 21323,
+          "url": "https://github.com/eslint/eslint/pull/21323",
+          "state": "MERGED",
+          "databaseId": 4519689476
+        }
+      ]
+    },
+    "updatedAt": "2026-10-23T16:11:16Z",
+    "title": "Bug: object-shorthand never autofix produces invalid syntax for methods using super",
+    "titleHTML": "Bug: object-shorthand never autofix produces invalid syntax for methods using super",
+    "url": "https://github.com/eslint/eslint/issues/21320",
+    "totalCommentsCount": 6,
+    "viewerCanUpdateNext": false,
+    "subIssuesSummary": {
+      "total": 0,
+      "completed": 0
+    },
+    "state": "CLOSED",
+    "stateReason": "COMPLETED",
+    "duplicateOf": null,
+    "locked": false,
+    "viewerCanComment": false,
+    "databaseId": 5438997514,
+    "createdAt": "2026-09-13T08:12:40Z",
+    "viewerDidAuthor": false,
+    "author": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/38338151?v=4",
+      "login": "torjan0",
+      "id": "MDQ6VXNlcjM4MzM4MTUx",
+      "profileUrl": "https://github.com/torjan0",
+      "name": "Maksim Hayder",
+      "__typename": "User"
+    },
+    "body": "### Environment\n\nESLint 10.10.0 and main commit 45ad79e54a39b54b4ce8eb47e612bd2f72a7a651; Node 22.23.2; Ubuntu.\n\n### Parser\n\nDefault (Espree).\n\n### What did you do?\n\n```js\nconst { Linter } = require(\"eslint\");\nconst code = \"const obj = { describe() { return super.toString(); } }; obj.describe();\";\nconst result = new Linter().verifyAndFix(code, {\n  languageOptions: { ecmaVersion: 2022, sourceType: \"script\" },\n  rules: { \"object-shorthand\": [\"error\", \"never\"] }\n});\nconsole.log(result);\n```\n\n### What did you expect?\n\nPreserve valid syntax and behavior, or leave the diagnostic without an unsafe automatic fix.\n\n### What actually happened?\n\n`verifyAndFix()` returns `fixed: true` with this output and a fatal `Parsing error: 'super' keyword outside a method` diagnostic:\n\n```js\nconst obj = { describe: function() { return super.toString(); } }; obj.describe();\n```\n\nThe input evaluates to `[object Object]`; the output fails to parse. A method using `this.toString()` instead remains valid after fixing. CLI file writes were not tested.\n\n### Link to Minimal Reproducible Example\n\n[ESLint Playground](https://eslint.org/play#eyJ0ZXh0IjoiY29uc3Qgb2JqID0geyBkZXNjcmliZSgpIHsgcmV0dXJuIHN1cGVyLnRvU3RyaW5nKCk7IH0gfTsgb2JqLmRlc2NyaWJlKCk7Iiwib3B0aW9ucyI6eyJydWxlcyI6eyJvYmplY3Qtc2hvcnRoYW5kIjpbImVycm9yIiwibmV2ZXIiXX0sImxhbmd1YWdlT3B0aW9ucyI6eyJlY21hVmVyc2lvbiI6MjAyMiwic291cmNlVHlwZSI6InNjcmlwdCJ9fX0=)\n\n### AI acknowledgment\n\nGPT-6 Astra assisted; I manually reviewed this report.\n",
+    "bodyHTML": "<h3 dir=\"auto\">Environment</h3>\n<p dir=\"auto\">ESLint 10.10.0 and main commit <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/eslint/eslint/commit/45ad79e54a39b54b4ce8eb47e612bd2f72a7a651/hovercard\" href=\"https://github.com/eslint/eslint/commit/45ad79e54a39b54b4ce8eb47e612bd2f72a7a651\"><tt>45ad79e</tt></a>; Node 22.23.2; Ubuntu.</p>\n<h3 dir=\"auto\">Parser</h3>\n<p dir=\"auto\">Default (Espree).</p>\n<h3 dir=\"auto\">What did you do?</h3>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"const { Linter } = require(&quot;eslint&quot;);\nconst code = &quot;const obj = { describe() { return super.toString(); } }; obj.describe();&quot;;\nconst result = new Linter().verifyAndFix(code, {\n  languageOptions: { ecmaVersion: 2022, sourceType: &quot;script&quot; },\n  rules: { &quot;object-shorthand&quot;: [&quot;error&quot;, &quot;never&quot;] }\n});\nconsole.log(result);\"><pre class=\"notranslate\"><span class=\"pl-k\">const</span> <span class=\"pl-kos\">{</span> Linter <span class=\"pl-kos\">}</span> <span class=\"pl-c1\">=</span> <span class=\"pl-en\">require</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"eslint\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-s1\">code</span> <span class=\"pl-c1\">=</span> <span class=\"pl-s\">\"const obj = { describe() { return super.toString(); } }; obj.describe();\"</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-s1\">result</span> <span class=\"pl-c1\">=</span> <span class=\"pl-k\">new</span> <span class=\"pl-v\">Linter</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">verifyAndFix</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">code</span><span class=\"pl-kos\">,</span> <span class=\"pl-kos\">{</span>\n  <span class=\"pl-c1\">languageOptions</span>: <span class=\"pl-kos\">{</span> <span class=\"pl-c1\">ecmaVersion</span>: <span class=\"pl-c1\">2022</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">sourceType</span>: <span class=\"pl-s\">\"script\"</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-c1\">rules</span>: <span class=\"pl-kos\">{</span> <span class=\"pl-s\">\"object-shorthand\"</span>: <span class=\"pl-kos\">[</span><span class=\"pl-s\">\"error\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-s\">\"never\"</span><span class=\"pl-kos\">]</span> <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-smi\">console</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">log</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">result</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span></pre></div>\n<h3 dir=\"auto\">What did you expect?</h3>\n<p dir=\"auto\">Preserve valid syntax and behavior, or leave the diagnostic without an unsafe automatic fix.</p>\n<h3 dir=\"auto\">What actually happened?</h3>\n<p dir=\"auto\"><code class=\"notranslate\">verifyAndFix()</code> returns <code class=\"notranslate\">fixed: true</code> with this output and a fatal <code class=\"notranslate\">Parsing error: 'super' keyword outside a method</code> diagnostic:</p>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"const obj = { describe: function() { return super.toString(); } }; obj.describe();\"><pre class=\"notranslate\"><span class=\"pl-k\">const</span> <span class=\"pl-s1\">obj</span> <span class=\"pl-c1\">=</span> <span class=\"pl-kos\">{</span> <span class=\"pl-en\">describe</span>: <span class=\"pl-k\">function</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span> <span class=\"pl-k\">return</span> <span class=\"pl-smi\">super</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">toString</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span> <span class=\"pl-kos\">}</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span> <span class=\"pl-s1\">obj</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">describe</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span></pre></div>\n<p dir=\"auto\">The input evaluates to <code class=\"notranslate\">[object Object]</code>; the output fails to parse. A method using <code class=\"notranslate\">this.toString()</code> instead remains valid after fixing. CLI file writes were not tested.</p>\n<h3 dir=\"auto\">Link to Minimal Reproducible Example</h3>\n<p dir=\"auto\"><a href=\"https://eslint.org/play#eyJ0ZXh0IjoiY29uc3Qgb2JqID0geyBkZXNjcmliZSgpIHsgcmV0dXJuIHN1cGVyLnRvU3RyaW5nKCk7IH0gfTsgb2JqLmRlc2NyaWJlKCk7Iiwib3B0aW9ucyI6eyJydWxlcyI6eyJvYmplY3Qtc2hvcnRoYW5kIjpbImVycm9yIiwibmV2ZXIiXX0sImxhbmd1YWdlT3B0aW9ucyI6eyJlY21hVmVyc2lvbiI6MjAyMiwic291cmNlVHlwZSI6InNjcmlwdCJ9fX0=\" rel=\"nofollow\">ESLint Playground</a></p>\n<h3 dir=\"auto\">AI acknowledgment</h3>\n<p dir=\"auto\">GPT-6 Astra assisted; I manually reviewed this report.</p>",
+    "bodyVersion": "e34f7c9cf0da40eb9cd9db910ff5b3a9c75d1e57c81fda81e96220973d2e8a1e",
+    "reactionGroups": [
+      {
+        "content": "THUMBS_UP",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "THUMBS_DOWN",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "LAUGH",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "HOORAY",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "CONFUSED",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "HEART",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "ROCKET",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "EYES",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      }
+    ],
+    "pinnedIssueComment": null,
+    "__isIssueOrPullRequest": "Issue",
+    "isPinned": false,
+    "viewerCanDelete": false,
+    "viewerCanTransfer": false,
+    "viewerCanConvertToDiscussion": false,
+    "viewerCanLock": false,
+    "timelineItems": {
+      "totalCount": 20,
+      "beforeFocusCount": 0,
+      "afterFocusCount": 0,
+      "pageInfo": {
+        "hasNextPage": true,
+        "hasPreviousPage": false,
+        "startCursor": "Y3Vyc29yOnYyOpPPAAABoJnTYJABqzMxMDQ3MjE0OTk2",
+        "endCursor": "Y3Vyc29yOnYyOpPPAAABoJx7JBgBqzMxMDYzODk5MzAx"
+      },
+      "edges": [
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJnTYJABqzMxMDQ3MjE0OTk2",
+          "node": {
+            "__typename": "AddedToProjectV2Event",
+            "id": "ATPVTE_lADOAKjKDc8AAAABRDCECs8AAAAHOo7nlA",
+            "databaseId": 31047214996,
+            "createdAt": "2026-09-13T08:12:42Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            }
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJnTZHgBqzMxMDQ3MjE1NTI5",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABRDCECs8AAAAHOo7pqQ",
+            "databaseId": 31047215529,
+            "createdAt": "2026-09-13T08:12:43Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "",
+            "status": "Needs Triage"
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoAc6AAqjU2NTIzNDU5Nzk=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUOf0ew",
+            "createdAt": "2026-09-13T09:01:56Z",
+            "url": "https://github.com/eslint/eslint/issues/21320#issuecomment-5652345979",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5652345979,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21320,
+              "locked": false,
+              "databaseId": 5438997514
+            },
+            "author": {
+              "__typename": "User",
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "login": "mdjermanovic",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "profileUrl": "https://github.com/mdjermanovic",
+              "name": "Milos Djermanovic"
+            },
+            "authorAssociation": "MEMBER",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "Thanks for report, I can reproduce this. I think the `\"never\"` option shouldn't apply to methods using `super`. Marking as accepted, PR is welcome.",
+            "bodyHTML": "<p dir=\"auto\">Thanks for report, I can reproduce this. I think the <code class=\"notranslate\">\"never\"</code> option shouldn't apply to methods using <code class=\"notranslate\">super</code>. Marking as accepted, PR is welcome.</p>",
+            "bodyVersion": "be7dacb45f81c8ab0ae85c1853fd141cd49fe129a1499919976e06212dc1e7c0",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoBJ1ABqzMxMDQ4MDQ3NTU2",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABRDCECs8AAAAHOpubxA",
+            "databaseId": 31048047556,
+            "createdAt": "2026-09-13T09:02:42Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "label": {
+              "id": "MDU6TGFiZWw0NTcxMTM1MA==",
+              "archivedAt": null,
+              "nameHTML": "bug",
+              "name": "bug",
+              "color": "fc2929",
+              "description": "ESLint is working incorrectly"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoBJ1ABqzMxMDQ4MDQ3NTU5",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABRDCECs8AAAAHOpubxw",
+            "databaseId": 31048047559,
+            "createdAt": "2026-09-13T09:02:42Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "label": {
+              "id": "MDU6TGFiZWw0NTc5ODYzOQ==",
+              "archivedAt": null,
+              "nameHTML": "rule",
+              "name": "rule",
+              "color": "fbca04",
+              "description": "Relates to ESLint's core rules"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoBJ1ABqzMxMDQ4MDQ3NTYy",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABRDCECs8AAAAHOpubyg",
+            "databaseId": 31048047562,
+            "createdAt": "2026-09-13T09:02:42Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "label": {
+              "id": "MDU6TGFiZWwxMzExMDYyMjk=",
+              "archivedAt": null,
+              "nameHTML": "accepted",
+              "name": "accepted",
+              "color": "0052cc",
+              "description": "There is consensus among the team that this change meets the criteria for inclusion"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoBJ1ABqzMxMDQ4MDQ3NTY1",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABRDCECs8AAAAHOpubzQ",
+            "databaseId": 31048047565,
+            "createdAt": "2026-09-13T09:02:42Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "label": {
+              "id": "MDU6TGFiZWwyNzg2ODIzNTMy",
+              "archivedAt": null,
+              "nameHTML": "repro:yes",
+              "name": "repro:yes",
+              "color": "7A14E9",
+              "description": "Issues with a reproducible example"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoe_AgBqzMxMDQ4NTIzOTMw",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABRDCECs8AAAAHOqLgmg",
+            "databaseId": 31048523930,
+            "createdAt": "2026-09-13T09:35:17Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "Needs Triage",
+            "status": "Ready to Implement"
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJppU0gAqjU2NTI4MzUzNDk=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUO9sFQ",
+            "createdAt": "2026-09-13T10:56:29Z",
+            "url": "https://github.com/eslint/eslint/issues/21320#issuecomment-5652835349",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5652835349,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21320,
+              "locked": false,
+              "databaseId": 5438997514
+            },
+            "author": {
+              "__typename": "User",
+              "id": "U_kgDOBqrqbw",
+              "login": "dvd233",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/111864431?u=38ee233a5689dcb35f1f25485faf26822fac33af&v=4",
+              "profileUrl": "https://github.com/dvd233",
+              "name": "dvd233"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": "2026-09-13T11:02:40Z",
+            "lastUserContentEdit": {
+              "id": "UCE_lALOAKjKDc8AAAABUO9sFc8AAAABCz0phw",
+              "editor": {
+                "__typename": "User",
+                "id": "U_kgDOBqrqbw",
+                "url": "https://github.com/dvd233",
+                "login": "dvd233"
+              }
+            },
+            "pinnedBy": null,
+            "body": "I'm working on this now and expect to open a focused PR today. I'll make the `\"never\"` option skip object methods whose `super` usage requires method syntax and add regression coverage for the reported case and related method-bound `super` usage.\n\n**Created by AI (GPT-5.6 Sol).**\n",
+            "bodyHTML": "<p dir=\"auto\">I'm working on this now and expect to open a focused PR today. I'll make the <code class=\"notranslate\">\"never\"</code> option skip object methods whose <code class=\"notranslate\">super</code> usage requires method syntax and add regression coverage for the reported case and related method-bound <code class=\"notranslate\">super</code> usage.</p>\n<p dir=\"auto\"><strong>Created by AI (GPT-5.6 Sol).</strong></p>",
+            "bodyVersion": "bf012c6c040f554da29b565e03c2eedab0cbea0de3c7c19d81e384d2ae18e201",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJt6F2gAqjU2NTQzNDI2MTY=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUQZr2A",
+            "createdAt": "2026-09-13T15:54:25Z",
+            "url": "https://github.com/eslint/eslint/issues/21320#issuecomment-5654342616",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5654342616,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21320,
+              "locked": false,
+              "databaseId": 5438997514
+            },
+            "author": {
+              "__typename": "User",
+              "id": "U_kgDOC4sYUQ",
+              "login": "crimsonjay0",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/193665105?v=4",
+              "profileUrl": "https://github.com/crimsonjay0",
+              "name": "crimsonjay0"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "I would like to be assigned to this.",
+            "bodyHTML": "<p dir=\"auto\">I would like to be assigned to this.</p>",
+            "bodyVersion": "04450f9408c15303e9eb0f0bad731213bee813a8d0f9a07c5d969f28e7fb6a02",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJuAaJgBqzMxMDU3MDE4Nzc5",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABRDCECs8AAAAHOyR_mw",
+            "databaseId": 31057018779,
+            "createdAt": "2026-09-13T16:01:19Z",
+            "actor": {
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4",
+              "login": "DMartens",
+              "profileResourcePath": "/DMartens",
+              "__typename": "User",
+              "name": "fnx"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "Ready to Implement",
+            "status": "Implementing"
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJuAcGgAqjU2NTQzNzk2OTk=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUQb8sw",
+            "createdAt": "2026-09-13T16:01:21Z",
+            "url": "https://github.com/eslint/eslint/issues/21320#issuecomment-5654379699",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5654379699,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21320,
+              "locked": false,
+              "databaseId": 5438997514
+            },
+            "author": {
+              "__typename": "User",
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "login": "DMartens",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?v=4",
+              "profileUrl": "https://github.com/DMartens",
+              "name": "fnx"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": "2026-09-13T20:35:52Z",
+            "lastUserContentEdit": {
+              "id": "UCE_lALOAKjKDc8AAAABUQb8s88AAAABC3Js5g",
+              "editor": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjk2NjI3Ng==",
+                "url": "https://github.com/DMartens",
+                "login": "DMartens"
+              }
+            },
+            "pinnedBy": null,
+            "body": "~~There is already a PR for this (#21322)~~.\n~~Unfortunately I am unable to assign it as the person has not commented on this issue.~~\nEdit: Mistook issues from the same issue author.",
+            "bodyHTML": "<p dir=\"auto\"><del>There is already a PR for this (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5439302865\" data-permission-text=\"Title is private\" data-url=\"https://github.com/eslint/eslint/issues/21322\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/eslint/eslint/pull/21322/hovercard\" href=\"https://github.com/eslint/eslint/pull/21322\">#21322</a>)</del>.<br>\n<del>Unfortunately I am unable to assign it as the person has not commented on this issue.</del><br>\nEdit: Mistook issues from the same issue author.</p>",
+            "bodyVersion": "3b08ab1a257de472ead385cd8dba930bd4b6a86382e64eb929150a1b717c95b6",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJuEYDgAqjU2NTQ0MDQyNjg=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUQdcrA",
+            "createdAt": "2026-09-13T16:05:39Z",
+            "url": "https://github.com/eslint/eslint/issues/21320#issuecomment-5654404268",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5654404268,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21320,
+              "locked": false,
+              "databaseId": 5438997514
+            },
+            "author": {
+              "__typename": "User",
+              "id": "U_kgDOC4sYUQ",
+              "login": "crimsonjay0",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/193665105?v=4",
+              "profileUrl": "https://github.com/crimsonjay0",
+              "name": "crimsonjay0"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "@DMartens That PR addresses another issue.",
+            "bodyHTML": "<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/DMartens/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/DMartens\">@DMartens</a> That PR addresses another issue.</p>",
+            "bodyVersion": "b76e68e00d5c3d7fbbf3c9ab755e11877d02a6828c678d1302ef0cb4976b474f",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJucAwAAqjU2NTQ1NDgyMTI=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUQmO9A",
+            "createdAt": "2026-09-13T16:31:28Z",
+            "url": "https://github.com/eslint/eslint/issues/21320#issuecomment-5654548212",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5654548212,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21320,
+              "locked": false,
+              "databaseId": 5438997514
+            },
+            "author": {
+              "__typename": "Bot",
+              "id": "MDM6Qm90Nzg5ODI2NjY=",
+              "login": "eslint-github-bot",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/100364?v=4",
+              "profileUrl": "https://github.com/apps/eslint-github-bot"
+            },
+            "authorAssociation": "NONE",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "\ud83d\udc4b Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21323. Thanks, @dvd233!\n\n[//]: # (issue-pr-link)",
+            "bodyHTML": "<p dir=\"auto\">\ud83d\udc4b Hi! This issue is being addressed in pull request <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5441302429\" data-permission-text=\"Title is private\" data-url=\"https://github.com/eslint/eslint/issues/21323\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/eslint/eslint/pull/21323/hovercard\" href=\"https://github.com/eslint/eslint/pull/21323\">#21323</a>. Thanks, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dvd233/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dvd233\">@dvd233</a>!</p>",
+            "bodyVersion": "72d1e26769048b0263863a3fabfc7a25979335605aa42d965a7bc1e805d12662",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJx7JBgBqzMxMDYzODk5MzAx",
+          "node": {
+            "__typename": "AssignedEvent",
+            "id": "AE_lADOAKjKDc8AAAABRDCECs8AAAAHO418pQ",
+            "databaseId": 31063899301,
+            "createdAt": "2026-09-13T20:35:11Z",
+            "actor": {
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4",
+              "login": "DMartens",
+              "profileResourcePath": "/DMartens",
+              "__typename": "User",
+              "name": "fnx"
+            },
+            "assignee": {
+              "__typename": "User",
+              "id": "U_kgDOBqrqbw",
+              "login": "dvd233",
+              "resourcePath": "/dvd233",
+              "name": "dvd233"
+            },
+            "intent": null
+          }
+        }
+      ]
+    },
+    "backTimelineItems": {
+      "totalCount": 20,
+      "beforeFocusCount": 0,
+      "afterFocusCount": 0,
+      "pageInfo": {
+        "hasNextPage": false,
+        "hasPreviousPage": true,
+        "startCursor": "Y3Vyc29yOnYyOpPPAAABoJoBJ1ABqzMxMDQ4MDQ3NTU5",
+        "endCursor": "Y3Vyc29yOnYyOpPPAAABoWmH8FgBqzM0MDY5NTA1OTYx"
+      },
+      "edges": [
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoBJ1ABqzMxMDQ4MDQ3NTU5",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABRDCECs8AAAAHOpubxw",
+            "databaseId": 31048047559,
+            "createdAt": "2026-09-13T09:02:42Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "label": {
+              "id": "MDU6TGFiZWw0NTc5ODYzOQ==",
+              "archivedAt": null,
+              "nameHTML": "rule",
+              "name": "rule",
+              "color": "fbca04",
+              "description": "Relates to ESLint's core rules"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoBJ1ABqzMxMDQ4MDQ3NTYy",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABRDCECs8AAAAHOpubyg",
+            "databaseId": 31048047562,
+            "createdAt": "2026-09-13T09:02:42Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "label": {
+              "id": "MDU6TGFiZWwxMzExMDYyMjk=",
+              "archivedAt": null,
+              "nameHTML": "accepted",
+              "name": "accepted",
+              "color": "0052cc",
+              "description": "There is consensus among the team that this change meets the criteria for inclusion"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoBJ1ABqzMxMDQ4MDQ3NTY1",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABRDCECs8AAAAHOpubzQ",
+            "databaseId": 31048047565,
+            "createdAt": "2026-09-13T09:02:42Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "label": {
+              "id": "MDU6TGFiZWwyNzg2ODIzNTMy",
+              "archivedAt": null,
+              "nameHTML": "repro:yes",
+              "name": "repro:yes",
+              "color": "7A14E9",
+              "description": "Issues with a reproducible example"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoe_AgBqzMxMDQ4NTIzOTMw",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABRDCECs8AAAAHOqLgmg",
+            "databaseId": 31048523930,
+            "createdAt": "2026-09-13T09:35:17Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "Needs Triage",
+            "status": "Ready to Implement"
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJppU0gAqjU2NTI4MzUzNDk=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUO9sFQ",
+            "createdAt": "2026-09-13T10:56:29Z",
+            "url": "https://github.com/eslint/eslint/issues/21320#issuecomment-5652835349",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5652835349,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21320,
+              "locked": false,
+              "databaseId": 5438997514
+            },
+            "author": {
+              "__typename": "User",
+              "id": "U_kgDOBqrqbw",
+              "login": "dvd233",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/111864431?u=38ee233a5689dcb35f1f25485faf26822fac33af&v=4",
+              "profileUrl": "https://github.com/dvd233",
+              "name": "dvd233"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": "2026-09-13T11:02:40Z",
+            "lastUserContentEdit": {
+              "id": "UCE_lALOAKjKDc8AAAABUO9sFc8AAAABCz0phw",
+              "editor": {
+                "__typename": "User",
+                "id": "U_kgDOBqrqbw",
+                "url": "https://github.com/dvd233",
+                "login": "dvd233"
+              }
+            },
+            "pinnedBy": null,
+            "body": "I'm working on this now and expect to open a focused PR today. I'll make the `\"never\"` option skip object methods whose `super` usage requires method syntax and add regression coverage for the reported case and related method-bound `super` usage.\n\n**Created by AI (GPT-5.6 Sol).**\n",
+            "bodyHTML": "<p dir=\"auto\">I'm working on this now and expect to open a focused PR today. I'll make the <code class=\"notranslate\">\"never\"</code> option skip object methods whose <code class=\"notranslate\">super</code> usage requires method syntax and add regression coverage for the reported case and related method-bound <code class=\"notranslate\">super</code> usage.</p>\n<p dir=\"auto\"><strong>Created by AI (GPT-5.6 Sol).</strong></p>",
+            "bodyVersion": "bf012c6c040f554da29b565e03c2eedab0cbea0de3c7c19d81e384d2ae18e201",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJt6F2gAqjU2NTQzNDI2MTY=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUQZr2A",
+            "createdAt": "2026-09-13T15:54:25Z",
+            "url": "https://github.com/eslint/eslint/issues/21320#issuecomment-5654342616",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5654342616,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21320,
+              "locked": false,
+              "databaseId": 5438997514
+            },
+            "author": {
+              "__typename": "User",
+              "id": "U_kgDOC4sYUQ",
+              "login": "crimsonjay0",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/193665105?v=4",
+              "profileUrl": "https://github.com/crimsonjay0",
+              "name": "crimsonjay0"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "I would like to be assigned to this.",
+            "bodyHTML": "<p dir=\"auto\">I would like to be assigned to this.</p>",
+            "bodyVersion": "04450f9408c15303e9eb0f0bad731213bee813a8d0f9a07c5d969f28e7fb6a02",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJuAaJgBqzMxMDU3MDE4Nzc5",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABRDCECs8AAAAHOyR_mw",
+            "databaseId": 31057018779,
+            "createdAt": "2026-09-13T16:01:19Z",
+            "actor": {
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4",
+              "login": "DMartens",
+              "profileResourcePath": "/DMartens",
+              "__typename": "User",
+              "name": "fnx"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "Ready to Implement",
+            "status": "Implementing"
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJuAcGgAqjU2NTQzNzk2OTk=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUQb8sw",
+            "createdAt": "2026-09-13T16:01:21Z",
+            "url": "https://github.com/eslint/eslint/issues/21320#issuecomment-5654379699",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5654379699,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21320,
+              "locked": false,
+              "databaseId": 5438997514
+            },
+            "author": {
+              "__typename": "User",
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "login": "DMartens",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?v=4",
+              "profileUrl": "https://github.com/DMartens",
+              "name": "fnx"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": "2026-09-13T20:35:52Z",
+            "lastUserContentEdit": {
+              "id": "UCE_lALOAKjKDc8AAAABUQb8s88AAAABC3Js5g",
+              "editor": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjk2NjI3Ng==",
+                "url": "https://github.com/DMartens",
+                "login": "DMartens"
+              }
+            },
+            "pinnedBy": null,
+            "body": "~~There is already a PR for this (#21322)~~.\n~~Unfortunately I am unable to assign it as the person has not commented on this issue.~~\nEdit: Mistook issues from the same issue author.",
+            "bodyHTML": "<p dir=\"auto\"><del>There is already a PR for this (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5439302865\" data-permission-text=\"Title is private\" data-url=\"https://github.com/eslint/eslint/issues/21322\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/eslint/eslint/pull/21322/hovercard\" href=\"https://github.com/eslint/eslint/pull/21322\">#21322</a>)</del>.<br>\n<del>Unfortunately I am unable to assign it as the person has not commented on this issue.</del><br>\nEdit: Mistook issues from the same issue author.</p>",
+            "bodyVersion": "3b08ab1a257de472ead385cd8dba930bd4b6a86382e64eb929150a1b717c95b6",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJuEYDgAqjU2NTQ0MDQyNjg=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUQdcrA",
+            "createdAt": "2026-09-13T16:05:39Z",
+            "url": "https://github.com/eslint/eslint/issues/21320#issuecomment-5654404268",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5654404268,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21320,
+              "locked": false,
+              "databaseId": 5438997514
+            },
+            "author": {
+              "__typename": "User",
+              "id": "U_kgDOC4sYUQ",
+              "login": "crimsonjay0",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/193665105?v=4",
+              "profileUrl": "https://github.com/crimsonjay0",
+              "name": "crimsonjay0"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "@DMartens That PR addresses another issue.",
+            "bodyHTML": "<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/DMartens/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/DMartens\">@DMartens</a> That PR addresses another issue.</p>",
+            "bodyVersion": "b76e68e00d5c3d7fbbf3c9ab755e11877d02a6828c678d1302ef0cb4976b474f",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJucAwAAqjU2NTQ1NDgyMTI=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUQmO9A",
+            "createdAt": "2026-09-13T16:31:28Z",
+            "url": "https://github.com/eslint/eslint/issues/21320#issuecomment-5654548212",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5654548212,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21320,
+              "locked": false,
+              "databaseId": 5438997514
+            },
+            "author": {
+              "__typename": "Bot",
+              "id": "MDM6Qm90Nzg5ODI2NjY=",
+              "login": "eslint-github-bot",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/100364?v=4",
+              "profileUrl": "https://github.com/apps/eslint-github-bot"
+            },
+            "authorAssociation": "NONE",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "\ud83d\udc4b Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21323. Thanks, @dvd233!\n\n[//]: # (issue-pr-link)",
+            "bodyHTML": "<p dir=\"auto\">\ud83d\udc4b Hi! This issue is being addressed in pull request <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5441302429\" data-permission-text=\"Title is private\" data-url=\"https://github.com/eslint/eslint/issues/21323\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/eslint/eslint/pull/21323/hovercard\" href=\"https://github.com/eslint/eslint/pull/21323\">#21323</a>. Thanks, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dvd233/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dvd233\">@dvd233</a>!</p>",
+            "bodyVersion": "72d1e26769048b0263863a3fabfc7a25979335605aa42d965a7bc1e805d12662",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJx7JBgBqzMxMDYzODk5MzAx",
+          "node": {
+            "__typename": "AssignedEvent",
+            "id": "AE_lADOAKjKDc8AAAABRDCECs8AAAAHO418pQ",
+            "databaseId": 31063899301,
+            "createdAt": "2026-09-13T20:35:11Z",
+            "actor": {
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4",
+              "login": "DMartens",
+              "profileResourcePath": "/DMartens",
+              "__typename": "User",
+              "name": "fnx"
+            },
+            "assignee": {
+              "__typename": "User",
+              "id": "U_kgDOBqrqbw",
+              "login": "dvd233",
+              "resourcePath": "/dvd233",
+              "name": "dvd233"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoQcn21gBqzMyNDQ1NjgxNDgy",
+          "node": {
+            "__typename": "ReferencedEvent",
+            "id": "REFE_lADOAKjKDc8AAAABRDCECs8AAAAHjenPSg",
+            "databaseId": 32445681482,
+            "createdAt": "2026-10-04T13:43:35Z",
+            "actor": {
+              "id": "U_kgDOBqrqbw",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/111864431?s=64&u=38ee233a5689dcb35f1f25485faf26822fac33af&v=4",
+              "login": "dvd233",
+              "profileResourcePath": "/dvd233",
+              "__typename": "User",
+              "name": "dvd233"
+            },
+            "willCloseSubject": false,
+            "subject": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "__typename": "Issue"
+            },
+            "commit": {
+              "id": "C_kwDOUZMB8NoAKDNmZWMxNDU5MDkzNzk0ODE5MmRiMjYyOWEyZTNiMjJjYzI5M2JiNmI",
+              "message": "test: cover additional object-shorthand super cases\n\nAdd valid cases for an async generator, super in a default parameter, and nested object methods that both use super.\n\nRefs #21320\n\n**Created by AI (GPT-6).**",
+              "messageHeadlineHTML": "test: cover additional object-shorthand super cases",
+              "messageBodyHTML": "Add valid cases for an async generator, super in a default parameter, and nested object methods that both use super.\n\nRefs <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5438997514\" data-permission-text=\"Title is private\" data-url=\"https://github.com/eslint/eslint/issues/21320\" data-hovercard-type=\"issue\" data-hovercard-url=\"/eslint/eslint/issues/21320/hovercard\" href=\"https://github.com/eslint/eslint/issues/21320\">eslint#21320</a>\n\n**Created by AI (GPT-6).**",
+              "url": "https://github.com/dvd233/eslint/commit/3fec14590937948192db2629a2e3b22cc293bb6b",
+              "abbreviatedOid": "3fec145",
+              "repository": {
+                "id": "R_kgDOUZMB8A",
+                "name": "eslint",
+                "owner": {
+                  "__typename": "User",
+                  "id": "U_kgDOBqrqbw",
+                  "login": "dvd233"
+                },
+                "defaultBranch": "main"
+              }
+            }
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoTR4YbgBqzMzMTE2ODcxNjg1",
+          "node": {
+            "__typename": "ReferencedEvent",
+            "id": "REFE_lADOAKjKDc8AAAABRDCECs8AAAAHtetcBQ",
+            "databaseId": 33116871685,
+            "createdAt": "2026-10-13T08:54:27Z",
+            "actor": {
+              "id": "U_kgDOBqrqbw",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/111864431?s=64&u=38ee233a5689dcb35f1f25485faf26822fac33af&v=4",
+              "login": "dvd233",
+              "profileResourcePath": "/dvd233",
+              "__typename": "User",
+              "name": "dvd233"
+            },
+            "willCloseSubject": false,
+            "subject": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "__typename": "Issue"
+            },
+            "commit": {
+              "id": "C_kwDOUZMB8NoAKDliMWQ3MWYxZGI4MGIzMjdkOWU3ZDQ2OGJkZGFlNTBjMDU5ZTU0MTE",
+              "message": "test: cover mixed avoidQuotes methods with super\n\nRefs #21320",
+              "messageHeadlineHTML": "test: cover mixed avoidQuotes methods with super",
+              "messageBodyHTML": "Refs <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5438997514\" data-permission-text=\"Title is private\" data-url=\"https://github.com/eslint/eslint/issues/21320\" data-hovercard-type=\"issue\" data-hovercard-url=\"/eslint/eslint/issues/21320/hovercard\" href=\"https://github.com/eslint/eslint/issues/21320\">eslint#21320</a>",
+              "url": "https://github.com/dvd233/eslint/commit/9b1d71f1db80b327d9e7d468bddae50c059e5411",
+              "abbreviatedOid": "9b1d71f",
+              "repository": {
+                "id": "R_kgDOUZMB8A",
+                "name": "eslint",
+                "owner": {
+                  "__typename": "User",
+                  "id": "U_kgDOBqrqbw",
+                  "login": "dvd233"
+                },
+                "defaultBranch": "main"
+              }
+            }
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoUaP-TgBqzMzNDg0MDM0OTU0",
+          "node": {
+            "__typename": "ReferencedEvent",
+            "id": "REFE_lADOAKjKDc8AAAABRDCECs8AAAAHy83Tig",
+            "databaseId": 33484034954,
+            "createdAt": "2026-10-16T21:13:23Z",
+            "actor": {
+              "id": "U_kgDOBqrqbw",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/111864431?s=64&u=38ee233a5689dcb35f1f25485faf26822fac33af&v=4",
+              "login": "dvd233",
+              "profileResourcePath": "/dvd233",
+              "__typename": "User",
+              "name": "dvd233"
+            },
+            "willCloseSubject": false,
+            "subject": {
+              "id": "I_kwDOAKjKDc8AAAABRDCECg",
+              "__typename": "Issue"
+            },
+            "commit": {
+              "id": "C_kwDOUZMB8NoAKDEwYWI0ZGFhZGIyMWNmNzY1ODhiZTBmYjBhMWRiNTc1NzNkMTJmYTI",
+              "message": "refactor: skip irrelevant scopes in object-shorthand\n\nRefs #21320",
+              "messageHeadlineHTML": "refactor: skip irrelevant scopes in object-shorthand",
+              "messageBodyHTML": "Refs <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5438997514\" data-permission-text=\"Title is private\" data-url=\"https://github.com/eslint/eslint/issues/21320\" data-hovercard-type=\"issue\" data-hovercard-url=\"/eslint/eslint/issues/21320/hovercard\" href=\"https://github.com/eslint/eslint/issues/21320\">eslint#21320</a>",
+              "url": "https://github.com/dvd233/eslint/commit/10ab4daadb21cf76588be0fb0a1db57573d12fa2",
+              "abbreviatedOid": "10ab4da",
+              "repository": {
+                "id": "R_kgDOUZMB8A",
+                "name": "eslint",
+                "owner": {
+                  "__typename": "User",
+                  "id": "U_kgDOBqrqbw",
+                  "login": "dvd233"
+                },
+                "defaultBranch": "main"
+              }
+            }
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoWmH6IgBqzM0MDY5NTAxNDQ1",
+          "node": {
+            "__typename": "ClosedEvent",
+            "id": "CE_lADOAKjKDc8AAAABRDCECs8AAAAH7rNWBQ",
+            "databaseId": 34069501445,
+            "createdAt": "2026-10-23T16:11:17Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ2NjQ3MTQx",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/46647141?s=64&u=a108f0cd92e299f1fcd3b8eeb923928cc544bb50&v=4",
+              "login": "snitin315",
+              "profileResourcePath": "/snitin315",
+              "__typename": "User",
+              "name": "Nitin Kumar"
+            },
+            "stateReason": "COMPLETED",
+            "duplicateOf": null,
+            "closingProjectItemStatus": null,
+            "closer": {
+              "id": "PR_kwDOAKjKDc8AAAABDWT9BA",
+              "__typename": "PullRequest",
+              "url": "https://github.com/eslint/eslint/pull/21323",
+              "number": 21323,
+              "repository": {
+                "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+                "name": "eslint",
+                "owner": {
+                  "__typename": "Organization",
+                  "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                  "login": "eslint"
+                }
+              }
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoWmH8FgBqzM0MDY5NTA1OTYx",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABRDCECs8AAAAH7rNnqQ",
+            "databaseId": 34069505961,
+            "createdAt": "2026-10-23T16:11:19Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "Implementing",
+            "status": "Complete"
+          }
+        }
+      ]
+    },
+    "pendingSuggestions": []
+  }
+}

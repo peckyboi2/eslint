@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-28T05:11:02.901578+00:00",
+  "standing_authorisation": "Darren permitted local allowance increases as needed during development; exact text retained in both extension decisions.",
+  "campaign": "c-development-20261028",
+  "local_rolling_limit": 21,
+  "local_campaign_limit": 21,
+  "hosted_rolling_limit": 10,
+  "hosted_campaign_limit": 20,
+  "admissions_total": 21,
+  "rolling_24h_admissions": 21,
+  "admissions_added_during_D": 10,
+  "initial_pre_inference_failures": 9,
+  "additional_targeted_regression": 1,
+  "reservations_refunded": 0,
+  "campaign_reset": false,
+  "posting_enabled": false,
+  "remaining_local_admissions": 0
+}

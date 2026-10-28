@@ -1,0 +1,43 @@
+{
+  "verification_type": "actual local trigger/gate/quota checks plus stipulated queue scenario; no platform burst/model execution",
+  "issue_arrivals": {
+    "count": 300,
+    "clarifier_workflow_trigger": "workflow_dispatch only",
+    "automatic_inference": 0,
+    "automatic_public_actions": 0,
+    "work_left_for_humans": "All unselected reports remain human work; arrivals do not select or process them"
+  },
+  "burst_assuming_active_run_held": {
+    "manual_dispatch_attempts": 300,
+    "active": 1,
+    "pending": 1,
+    "superseded_pending": 298,
+    "simulated_admissions_when_final_pending_released": 2,
+    "actual_model_calls": 0,
+    "queue_observation": "NOT live-tested; see blocked task46",
+    "human_work": "Superseded dispatches are terminal, not a delayed backlog; admissions do not establish correct decisions or resolved reports"
+  },
+  "serial_released_attempts_same_rolling_day": {
+    "attempts": 300,
+    "fixture_admissions": 10,
+    "quota_rejected": 290,
+    "actual_model_calls": 0,
+    "automatic_retry": false,
+    "next_day_max_additional_before_campaign_cap": 10,
+    "total_campaign_limit": 20
+  },
+  "current_operation": {
+    "actions_enabled": false,
+    "registered_workflows": 0,
+    "live_state_branch": false,
+    "live_target": null,
+    "local_development_ledger": "41/41; distinct from unchanged hosted 10/24h and 20/campaign"
+  },
+  "routing_limit": "Current dispatch supports one fixed approved historical report, not arbitrary incoming issues. General issue selection/backlog processing is not implemented.",
+  "claims_not_made": [
+    "Backlog clearance",
+    "Workload/time savings",
+    "Processing all 300 reports",
+    "Observed pending replacement or actual model calls from dispatches"
+  ]
+}

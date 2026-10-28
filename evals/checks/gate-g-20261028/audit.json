@@ -1,0 +1,733 @@
+{
+  "status": "local preparation for academic dry-run vetting; exact committed-tree check follows in task66",
+  "requirements": [
+    {
+      "requirement": "real workflow and contextual AI justification, rejected alternative/prevented actions",
+      "status": "documented",
+      "evidence": [
+        "DESIGN.md"
+      ]
+    },
+    {
+      "requirement": "defined need measurement period/method/limitations",
+      "status": "fixed evidence recounted; no savings claim",
+      "evidence": [
+        "evals/measurement/",
+        "evals/checks/gate-g-20261028/measurement-verification.json"
+      ]
+    },
+    {
+      "requirement": "workflow trigger/permissions/tools/safe outputs/timeout/network",
+      "status": "implemented; YAML/local deterministic tests; hosted and host containment gaps explicit",
+      "evidence": [
+        ".github/workflows/clarifier-triage.yml",
+        ".github/workflows/clarifier-stop.yml",
+        "scripts/clarifier/",
+        "evals/checks/gate-f-20261028/pre-freeze-capabilities.json"
+      ]
+    },
+    {
+      "requirement": "compiled .lock.yml",
+      "status": "not applicable: authored GitHub Actions equivalent, not gh-aw",
+      "evidence": [
+        ".github/workflows/clarifier-triage.yml"
+      ]
+    },
+    {
+      "requirement": "repository instructions, canonical skill, policy, supporting scripts",
+      "status": "present and frozen",
+      "evidence": [
+        "AGENTS.md",
+        "CONTRIBUTING.md",
+        ".claude/skills/eslint-clarification/SKILL.md",
+        "scripts/clarifier/"
+      ]
+    },
+    {
+      "requirement": "actual skill loading/use and evaluated-session isolation",
+      "status": "ten saved actual native-load/request records checked by frozen evaluator",
+      "evidence": [
+        "evals/runs/final-f-20261028-v9-*",
+        "scripts/clarifier/outputs/campaign.py"
+      ]
+    },
+    {
+      "requirement": "ten historical inputs/expectations recorded before inference",
+      "status": "golden-v1 preserved; bounded provenance limitations explicit",
+      "evidence": [
+        "evals/golden/FREEZE.json",
+        "evals/golden/expectations.json",
+        "evals/golden/prepared-inputs/"
+      ]
+    },
+    {
+      "requirement": "all actual outputs/logs/comparisons/errors and reproduction",
+      "status": "complete final campaign and all prior failures retained; adjacent indexed layout deviation explicit",
+      "evidence": [
+        "evals/README.md",
+        "evals/checks/gate-f-20261028/",
+        "evals/runs/",
+        "evals/platform-tests/",
+        "evals/development-evidence.tar.gz"
+      ]
+    },
+    {
+      "requirement": "malicious input preview gate and full adversarial execution",
+      "status": "three actual attacks each under E-v6/v7/v8; model no-tool output checked, no public action; simulated MCP text labelled",
+      "evidence": [
+        "evals/checks/gate-e-20261028/task40-model-review.json",
+        "evals/checks/gate-e-20261028/task42-v7-attack-review.json",
+        "evals/checks/gate-e-20261028/task47-v8-attack-review.json"
+      ]
+    },
+    {
+      "requirement": "all nine governance controls and five scenarios with file references",
+      "status": "documented implemented/local/simulated/proposed/live-blocked distinctions",
+      "evidence": [
+        "DESIGN.md",
+        "evals/README.md"
+      ]
+    },
+    {
+      "requirement": "DESIGN normal Markdown <=150 lines; BOM and final AI-use statement",
+      "status": "76 lines including blanks; current local references resolve",
+      "evidence": [
+        "DESIGN.md"
+      ]
+    },
+    {
+      "requirement": "submission specific GitHub commit link and Darren vetting",
+      "status": "local candidate only; remote link blocked pending exact-payload publication approval",
+      "evidence": [
+        "evals/checks/gate-g-20261028/review.md"
+      ]
+    },
+    {
+      "requirement": "private ctreude collaborator condition",
+      "status": "not applicable: read-only verified public repository; no invitation sent",
+      "evidence": [
+        "evals/checks/gate-g-20261028/remote-identity.json"
+      ]
+    }
+  ],
+  "configuration_version": "milestone-f-final-v9",
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "freeze_sha256": "0c0ca76cd19e5adca0c5ebfc2be40e531a1ecbda5a4a546ada9f42d125d21a5f",
+  "frozen_files_verified": 168,
+  "prior_evidence_files_unchanged": 2710,
+  "required_evidence_files_staged": 655,
+  "configuration_source_identity": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "all_final_cases": [
+    {
+      "issue": 20373,
+      "run_id": "final-f-20261028-v9-01-20373-a1",
+      "status": "completed",
+      "actual_decision": "clarify",
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": []
+    },
+    {
+      "issue": 20606,
+      "run_id": "final-f-20261028-v9-02-20606-a1",
+      "status": "completed",
+      "actual_decision": "clarify",
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": []
+    },
+    {
+      "issue": 19924,
+      "run_id": "final-f-20261028-v9-03-19924-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": []
+    },
+    {
+      "issue": 19044,
+      "run_id": "final-f-20261028-v9-04-19044-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": []
+    },
+    {
+      "issue": 21320,
+      "run_id": "final-f-20261028-v9-05-21320-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": []
+    },
+    {
+      "issue": 19477,
+      "run_id": "final-f-20261028-v9-06-19477-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": []
+    },
+    {
+      "issue": 21304,
+      "run_id": "final-f-20261028-v9-07-21304-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": []
+    },
+    {
+      "issue": 19847,
+      "run_id": "final-f-20261028-v9-08-19847-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": []
+    },
+    {
+      "issue": 19118,
+      "run_id": "final-f-20261028-v9-09-19118-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": []
+    },
+    {
+      "issue": 19818,
+      "run_id": "final-f-20261028-v9-10-19818-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": []
+    }
+  ],
+  "deterministic_tests": {
+    "count": 172,
+    "result": "PASS",
+    "evidence": "deterministic-tests.txt",
+    "new_model_calls": 0
+  },
+  "offline_reproduction": "offline-reproduction.txt and staged-tree-reproduction.txt",
+  "baseline": {
+    "full_tree": "literal FAIL due solely to new G documentation/measurement additions; preserved in full-tree-baseline.txt",
+    "evaluated_projection": "PASS unchanged verifier; explicit omissions recorded in baseline-projection.json",
+    "upstream_original_files": 2362,
+    "modified_original_paths": [
+      ".gitattributes",
+      ".gitignore",
+      ".prettierignore",
+      "AGENTS.md",
+      "CONTRIBUTING.md"
+    ],
+    "inherited_workflows_unchanged": 10
+  },
+  "design_lines": 76,
+  "current_markdown_local_references_checked": 121,
+  "current_links": [
+    {
+      "document": "DESIGN.md",
+      "target": "evals/README.md"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/measurement/README.md"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "AGENTS.md"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "CONTRIBUTING.md"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": ".claude/skills/eslint-clarification/SKILL.md"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/inference/skill.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": ".github/workflows/clarifier-triage.yml"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/controls/policy.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/inference/packages.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/inference/staging.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/inference/request.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/inference/transport.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/checks/gate-e-20261028/gate-e-review.json"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/checks/gate-f-20261028/pre-freeze-capabilities.json"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/controls/identity.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/outputs/validation.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/outputs/output_handler.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/outputs/posting.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/outputs/release_gate.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/controls/ledger.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/inference/recording.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": ".github/workflows/clarifier-stop.yml"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/github/stop_io.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/check_regression.py"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/checks/gate-e-20261028/task49-drift-review-policy.json"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/checks/gate-e-20261028/task47-v8-attack-review.json"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/checks/gate-e-20261028/task50-scenario.json"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/checks/gate-e-20261028/task48-phone-stop-fallback.json"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/checks/gate-f-20261028/comparison.json"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/checks/gate-f-20261028/freeze.json"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/checks/gate-f-20261028/semantic-reviews.json"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/README.md#earlier-evidence-and-failures"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "scripts/clarifier/config/"
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "evals/checks/gate-f-20261028/"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "../DESIGN.md"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "golden/README.md"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/freeze.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "golden/prepared-inputs/"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "golden/prepared-inputs/manifest.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "golden/FREEZE.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "golden/expectations.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "golden/expected-decision-review.md"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "golden/comment-quality.md"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "golden/evaluation-plan.md"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/comparison.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/semantic-reviews.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/gate-f-review.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/final-integrity-quota.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/pre-freeze-tests-v3.txt"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/pre-freeze-capabilities.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/required-evidence-for-g.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "measurement/README.md"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/final-f-20261028-v9-01-20373-a1/raw-output.txt"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/comparisons/20373.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/final-f-20261028-v9-02-20606-a1/raw-output.txt"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/comparisons/20606.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/final-f-20261028-v9-03-19924-a1/raw-output.txt"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/comparisons/19924.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/final-f-20261028-v9-04-19044-a1/raw-output.txt"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/comparisons/19044.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/final-f-20261028-v9-05-21320-a1/raw-output.txt"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/comparisons/21320.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/final-f-20261028-v9-06-19477-a1/raw-output.txt"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/comparisons/19477.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/final-f-20261028-v9-07-21304-a1/raw-output.txt"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/comparisons/21304.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/final-f-20261028-v9-08-19847-a1/raw-output.txt"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/comparisons/19847.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/final-f-20261028-v9-09-19118-a1/raw-output.txt"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/comparisons/19118.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/final-f-20261028-v9-10-19818-a1/raw-output.txt"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/comparisons/19818.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "development-evidence.tar.gz"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "../.github/workflows/clarifier-triage.yml"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "../scripts/clarifier/controls/policy.py"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "../scripts/clarifier/controls/identity.py"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "../scripts/clarifier/controls/ledger.py"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "../scripts/clarifier/outputs/posting_intent.py"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "../scripts/clarifier/outputs/posting.py"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task47-reconciliation-simulation.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "../.github/workflows/clarifier-stop.yml"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task48-phone-stop-fallback.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "../scripts/check_regression.py"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task49-drift-review-policy.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "development-evidence.tar.gz"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-c-20261028/"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/20261028T050239Z-453163ef/comparison.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/20261028T054714Z-72edea74/comparison.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/20261028T050356Z-3f74565e/comparison.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/20261028T054822Z-b5ee3ae0/comparison.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "runs/20261028T060932Z-f77abb9c/comparison.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-d-rubric-review-20261028/verification.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/gate-e-review.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task40-model-review.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task42-v7-attack-review.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task47-v8-attack-review.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task42-correction-freeze-v2.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task47-correction-freeze-v2.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task46-queue-simulation.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task48-phone-stop-fallback.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task49-review-failure-v1.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-e-20261028/task50-scenario.json"
+    },
+    {
+      "document": "evals/README.md",
+      "target": "checks/gate-f-20261028/pre-freeze-corrections.json"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "remote-identity.json"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "candidate-changes.txt"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "candidate-tree-files.txt"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "../../README.md"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "../../../DESIGN.md"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "../gate-f-20261028/comparison.json"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "../gate-e-20261028/gate-e-review.json"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "../gate-e-20261028/task47-v8-attack-review.json"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "preserved-evidence-sha256.json"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "../../measurement/README.md"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "deterministic-tests.txt"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "offline-reproduction.txt"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "actionlint.txt"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "audit.json"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "full-tree-baseline.txt"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "baseline-projection.json"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "secret-scan.json"
+    },
+    {
+      "document": "evals/checks/gate-g-20261028/review.md",
+      "target": "secret-scan-initial-findings.json"
+    }
+  ],
+  "archive_sha256": "33e5bf68145a83871ff94324b25694a780e326e119ad48f979d78e8b75620531",
+  "measurement": "derived export with four expired signed-image tokens redacted; original hashes retained, metric unchanged",
+  "secret_scan": "secret-scan.json; no pattern/name matches, not a universal proof",
+  "layout_deviations": [
+    "Frozen root/golden README bytes retained; current evals/README home and DESIGN provide navigation",
+    "Actual outputs/logs and reproduction adjacent to closed golden-v1 inventory, indexed from evals/README",
+    "Frozen verify_baseline allowlist predates G docs; full-tree rejection retained and separate projection baseline labelled",
+    "Nested new evals/measurement/.gitattributes preserves exported byte hashes; frozen root attributes untouched"
+  ],
+  "missing_or_unsupported": [
+    "Remote commit link: blocked pending exact SHA/payload/destination approval",
+    "E46 live queue and E48 phone-only active/future stop remain blocked",
+    "Hosted engine/login/state/target/release not provisioned; bot/token placement, cancellation/contention/retention unverified",
+    "Host OS containment/egress firewall unsupported/untested; final-check-to-POST race unresolved",
+    "Provider backend revision and monetary cost unknown; no hard dollar/token cap or guaranteed provider cancellation",
+    "No independently blinded/Darren per-output approval; no unseen/representative performance or time-savings evidence",
+    "Omitted historical Python copies cannot be reconstructed from hashes"
+  ],
+  "public_writes": [],
+  "G_model_calls": 0,
+  "quota_changed": false,
+  "posting_enabled": false,
+  "submission": false
+}

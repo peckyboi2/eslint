@@ -1,0 +1,9 @@
+{
+  "issue": 20373,
+  "decision": "no_action",
+  "configuration_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "model": "synthetic-provider-update",
+  "status": "completed",
+  "quality_review": "pass",
+  "public_actions": []
+}

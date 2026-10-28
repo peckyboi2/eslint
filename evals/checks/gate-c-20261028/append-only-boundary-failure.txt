@@ -1,0 +1,17 @@
+test_corrupt_missing_or_ambiguous_state_rejected (tests.test_ledger.LedgerTests.test_corrupt_missing_or_ambiguous_state_rejected) ... ok
+test_initial_is_disabled_and_roundtrips (tests.test_ledger.LedgerTests.test_initial_is_disabled_and_roundtrips) ... ok
+test_reservations_and_decisions_cannot_be_removed (tests.test_ledger.TransitionTests.test_reservations_and_decisions_cannot_be_removed) ... ERROR
+
+======================================================================
+ERROR: test_reservations_and_decisions_cannot_be_removed (tests.test_ledger.TransitionTests.test_reservations_and_decisions_cannot_be_removed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_ledger.py", line 31, in test_reservations_and_decisions_cannot_be_removed
+    with self.assertRaises(p.StateError):ledger.validate_transition(previous,changed)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'ledger' has no attribute 'validate_transition'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.038s
+
+FAILED (errors=1)

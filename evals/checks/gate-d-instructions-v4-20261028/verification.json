@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "prior_evidence_files_unchanged": 1292,
+  "focused_tests": 47,
+  "baseline": "PASS",
+  "markdown": "PASS",
+  "diff_check": "PASS",
+  "configuration_sha256": "aa4f8b250850871e43859bcd2f6c967508e375a695c43b08e9f14fad1e0a16fa",
+  "model_calls": 0,
+  "quota_changed": false,
+  "public_actions": [],
+  "model_behaviour_verified": false
+}

@@ -1,0 +1,20 @@
+{
+  "issue": 20373,
+  "expected_decision": "clarify",
+  "observation": {
+    "issue": 20373,
+    "decision": "clarify",
+    "configuration_sha256": "3d9151822045b917165383d3a54e55927b042749502eb680460bfe3fa1e0de2a",
+    "model": "gpt-6.1-sol",
+    "status": "completed",
+    "quality_review": "pass",
+    "public_actions": []
+  },
+  "checks_pass": true,
+  "failures": [],
+  "review_required": true,
+  "review_owner": "Darren Peck",
+  "promotion_allowed": false,
+  "scope": "One evaluator observation; no campaign accuracy claim",
+  "provider_revision_detection": "Unavailable when provider retains the same model ID"
+}

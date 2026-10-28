@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "verification_type": "actual evidence/hash checks and deterministic infrastructure; semantic failures retained separately",
+  "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+  "actual_model_calls_verified": 9,
+  "case_outputs_verified": 9,
+  "deterministic_tests": 132,
+  "prior_evidence_files": 1307,
+  "prior_immutable_files_unchanged": 1306,
+  "approved_state_transition": {
+    "admissions_before": 21,
+    "admissions_after": 30,
+    "append_only": true,
+    "refunded": 0
+  },
+  "public_actions": [],
+  "markdown": "PASS",
+  "diff_check": "PASS",
+  "golden_archive_upstream_integrity": "PASS",
+  "findings": {
+    "cases": 9,
+    "actual_model_calls": 9,
+    "decisions_matching": 8,
+    "cases_passing_decision_and_quality": 8,
+    "public_actions": 0
+  },
+  "unresolved_model_failure": "19924 returned clarify instead of human_review",
+  "final_ten_case_aggregate": null
+}

@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-10-28T07:04:43.312093+00:00",
+  "verification_type": "actual read-only GitHub API observation after sandbox network denial",
+  "observations": [
+    {
+      "endpoint": "user",
+      "method": "GET",
+      "exit_code": 0,
+      "data": {
+        "id": 234542779,
+        "login": "peckyboi2"
+      },
+      "error": null
+    },
+    {
+      "endpoint": "repos/peckyboi2/eslint",
+      "method": "GET",
+      "exit_code": 0,
+      "data": {
+        "default_branch": "main",
+        "full_name": "peckyboi2/eslint",
+        "id": 1435519573,
+        "owner": {
+          "id": 234542779,
+          "login": "peckyboi2"
+        },
+        "permissions": {
+          "admin": true,
+          "maintain": true,
+          "pull": true,
+          "push": true,
+          "triage": true
+        }
+      },
+      "error": null
+    },
+    {
+      "endpoint": "repos/peckyboi2/eslint/actions/permissions",
+      "method": "GET",
+      "exit_code": 0,
+      "data": {
+        "allowed_actions": null,
+        "enabled": false
+      },
+      "error": null
+    },
+    {
+      "endpoint": "repos/peckyboi2/eslint/actions/workflows",
+      "method": "GET",
+      "exit_code": 0,
+      "data": {
+        "total_count": 0,
+        "workflows": []
+      },
+      "error": null
+    },
+    {
+      "endpoint": "repos/peckyboi2/eslint/git/ref/heads/triage-state",
+      "method": "GET",
+      "exit_code": 1,
+      "data": null,
+      "error": "gh: Not Found (HTTP 404)"
+    }
+  ],
+  "external_mutations": [],
+  "public_actions": []
+}

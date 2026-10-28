@@ -1,0 +1,37 @@
+# Milestone G local vetting report
+
+Tasks 63–65 prepare the documented coding-assistant dry-run submission; task 66's local candidate commit is for Darren's review. Publication and the remote commit link remain blocked pending approval of the exact local SHA and payload. No model inference, posting, deployment, upstream contact or eLearn submission is authorised by G.
+
+The destination is [peckyboi2/eslint](https://github.com/peckyboi2/eslint), branch `ai-workflow`. The [actual read-only identity check](remote-identity.json) verifies public visibility, repository ID 1435519573 and owner ID 234542779. The private-repository `ctreude` collaborator condition is inapplicable. Publishing would expose the assignment code, design, public historical issue/comment text and identities, measurement export, transcripts, failures, usage/configuration records and preserved local path metadata and Git author metadata to everyone. It would not authorise promotion to `main` or enabling Actions.
+
+The exact SHA is recorded after commit verification in the outer assignment checklist and Darren's review handoff; obtain it locally with `git rev-parse HEAD`. This file cannot contain the SHA of the commit containing itself. [Candidate changes](candidate-changes.txt) lists every path changed from the preparation's parent commit; [complete candidate tree](candidate-tree-files.txt) includes unchanged required artifacts and inherited ESLint files. No remote commit URL is presented as reachable.
+
+## Deliverables and results
+
+| Item | Evidence and outcome |
+| --- | --- |
+| Reproduction and operations | [Evaluation home](../../README.md): exact offline staging/comparison commands, separately authorised future inference, limits, caller/ref restrictions, reconciliation, independent phone stop, accountability and live gaps. All current local links resolve. |
+| Design | [DESIGN.md](../../../DESIGN.md), 76 lines including headings/blanks, normal Markdown. Includes need/method/period/limits, governance references, all five scenarios, rejected alternative, prevented actions, BOM and final AI-use statement. |
+| Required configuration | Authored GitHub Actions platform equivalent in `.github/workflows/clarifier-{triage,stop}.yml`; canonical `.claude/skills/eslint-clarification/SKILL.md`, AGENTS, CONTRIBUTING, scripts/settings/schema all present. Compiled gh-aw `.lock.yml` is inapplicable. No new root dependency lockfile is required by this standard-library harness. |
+| Frozen identity | `milestone-f-final-v9`; configuration `f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa`; freeze `0c0ca76cd19e5adca0c5ebfc2be40e531a1ecbda5a4a546ada9f42d125d21a5f`. All 168 frozen paths match. No evaluated bytes changed in G. |
+| All ten final attempts | [Final comparison](../gate-f-20261028/comparison.json), all ten entire run directories, before/after checks, requests/native skill-load records, outputs, logs, usage and errors. One attempt each, no retries/substitutions; 9/10 matches, #19924 failure, 2/2 quality passes, 7/10 baseline. |
+| Attack prerequisite and full execution | All three actual no-tool previews under E-v6/v7/v8, including fabricated approval; [E index](../gate-e-20261028/gate-e-review.json) and [latest attack review](../gate-e-20261028/task47-v8-attack-review.json). Simulated tool text is labelled; no connected MCP test or new F-v9 attack rerun is claimed. Posting was never enabled. |
+| Historical integrity | [Pre-G inventory](preserved-evidence-sha256.json): all 2,710 earlier eval files preserved byte-for-byte, including every failure/configuration and golden-v1. Archive SHA-256 `33e5bf68145a83871ff94324b25694a780e326e119ad48f979d78e8b75620531`; data-only, no historical Python executed. Omitted Python hashes cannot reconstruct old source; final evaluated source is present. |
+| Need/provenance export | [September measurement](../../measurement/README.md): independently recounted 0/10 observed requests, 28 comments, median 3.3554h. Four expired image URL JWT occurrences redacted in new export, with original/export hashes retained. Measurement fields and original Research files unchanged; nested attributes preserve CSV/source bytes. |
+| Deterministic verification | [172-test suite](deterministic-tests.txt), [actual offline replay](offline-reproduction.txt), [YAML actionlint 1.7.12](actionlint.txt), [requirements/integrity audit](audit.json). These do not establish model judgement or hosted behaviour. |
+| Frozen baseline compatibility | [Literal full-tree rejection](full-tree-baseline.txt) identifies only new DESIGN/evaluation-home/measurement additions outside its old allowlist. [Evaluated-layout projection](baseline-projection.json) runs the unchanged verifier after removing exactly those G additions from an isolated extraction/index. The full candidate independently passes source/upstream/freeze/required-file checks; this is not a full-tree frozen-verifier pass. |
+| Secret exclusion and packaging | [Final pattern/file-name scan](secret-scan.json), [initial expired-image findings](secret-scan-initial-findings.json), closed tree/file lists and all required-evidence paths. No login homes, credentials, private keys, caches or historical Python copies are packaged. Pattern scans cannot prove absence of every possible secret. |
+
+## Unresolved and unsupported items
+
+#19924 remains `no_action` against unchanged `human_review`; public silence does not make it correct. The command/workload reading is plausible, and the conservative uncertainty boundary is documented without changing the score. Eight silent outputs have no wording-quality assessment. Reviews are assistant assessments after output; Darren has not independently/blindly approved individual answers.
+
+The set is known and purposive, used during tuning. No unseen/representative accuracy, workload reduction, time savings or production readiness is claimed. The separate September finding remains 0/10. Bounded early snapshots, #19818 transformed-archive provenance, #21304 screenshot absence and #19847's 9.21.0/9.28.0 discrepancy remain explicit. Submitted code was not run.
+
+E46 live queue and E48 phone stop remain blocked with labelled fallback simulations. Hosted engine/login, state branch, target/release, bot identity/token placement, queue/cancellation/contention/retention, OS containment/firewall and final-check-to-POST atomicity remain gaps. Backend revision and monetary cost are unknown. F recorded 57,562 tokens and ledger 41→51 for ten calls; G makes none, changes no quota and leaves posting disabled.
+
+Required actual outputs/logs and current reproduction instructions are adjacent to closed immutable `evals/golden/`, indexed from the evaluation home. Root/golden READMEs and earlier “not started” status strings remain historical to preserve their frozen bytes. This documented layout deviation and the frozen-verifier allowlist limit are packaging limitations, not hidden fixes.
+
+Readiness is for Darren's academic vetting of the dry-run route. Task 66's remote-link portion remains blocked. Darren must review the exact candidate and explicitly approve publication before any push/upload; eLearn submission is his separate action.
+
+Automatic approval review rejected the earlier public-publication handoff because that specific assignment/evidence payload and destination lacked explicit authorisation. This candidate is local-only. The remaining request is approval to publish the exact reviewed SHA to `peckyboi2/eslint:ai-workflow`; no broader remote action is implied.

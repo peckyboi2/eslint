@@ -1,0 +1,25 @@
+{
+  "kind": "derived measurement export; no new research collection",
+  "reason": "Exclude signed image access tokens unnecessary for comment-window measurement",
+  "source_manifest": "SOURCE-SHA256-MANIFEST.json",
+  "originals_unchanged": true,
+  "measurement_fields_unchanged": true,
+  "redactions": [
+    {
+      "path": "sources/21304.json",
+      "source_sha256": "a96a14dde4394dff52d105a68e604365fcc9689e081c183a078292fb829cc6f3",
+      "export_sha256": "2eb87f128ecabeadc461d56ad62061e57d7db3e36c3952c032d3719fea708e9a",
+      "redacted_token_occurrences": 2,
+      "kind": "Expired GitHub signed image URL in bodyHTML; no measurement/comment text changed",
+      "token_expired_at": "2026-10-26T13:21:36+00:00"
+    },
+    {
+      "path": "sources/21314.json",
+      "source_sha256": "ba2c815ea0b38a912e7aa741a0d19b7d403075d6f1365191ba718803fc89a1b5",
+      "export_sha256": "5452a16282b14592a0d969c49fa94c8c0a3fd3b1fc9229349af16d4baae1ae36",
+      "redacted_token_occurrences": 2,
+      "kind": "Expired GitHub signed image URL in bodyHTML; no measurement/comment text changed",
+      "token_expired_at": "2026-10-26T13:21:36+00:00"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": "Could you share the configuration returned by `feEslint` from `@fe/eslint-config`, together with the relevant `package.json` and lockfile, or a minimal project containing them? The inherited configuration and dependency setup are needed to reproduce how the plugin definitions interact with the supplied overrides.\n\n**Created by AI (OpenAI Codex, gpt-6.1-sol).**\nPreview run: `20261028T064658Z-ff381898`.",
+  "source_issue": 20373,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "clarify",
+  "validated_output": {
+    "decision": "clarify",
+    "rationale": "The report supplies environment versions, the consuming flat configuration, the plugin toggle and the errors for different file types. However, it spreads the configuration returned by `feEslint` from `@fe/eslint-config`, whose settings and dependency records are absent. Without that inherited setup, a maintainer cannot reconstruct which plugin definitions and file scopes are combined with the supplied overrides to produce the two configuration errors.",
+    "clarification": "Could you share the configuration returned by `feEslint` from `@fe/eslint-config`, together with the relevant `package.json` and lockfile, or a minimal project containing them? The inherited configuration and dependency setup are needed to reproduce how the plugin definitions interact with the supplied overrides."
+  }
+}

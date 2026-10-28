@@ -1,0 +1,19 @@
+{
+  "first_suite": "pre-freeze-tests.txt",
+  "initial_failures": [
+    "new evaluator modules missing from source inventory",
+    "unsafe-path error remained a safe StagingError rather than evaluator CampaignError"
+  ],
+  "initial_baseline_failure": "Unexpected assignment additions: evaluator files",
+  "corrections": [
+    "register evaluator source modules and narrow check_campaign.py allowance",
+    "translate unsafe path to typed CampaignError"
+  ],
+  "current_suite": "pre-freeze-tests-v3.txt",
+  "tests_passed": 172,
+  "model_calls_before_freeze": 0,
+  "scope_additions": [
+    "shared/constants.py",
+    "scripts/verify_baseline.py"
+  ]
+}

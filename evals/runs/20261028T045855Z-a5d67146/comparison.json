@@ -1,0 +1,86 @@
+{
+  "verification_type": "actual selected-engine coding-assistant preview; not a GitHub workflow run",
+  "reviewed_at": "2026-10-28T05:01:00.984608+00:00",
+  "reviewer": "Codex implementation review; no Darren human output approval claimed",
+  "source_issue": 20606,
+  "expected_decision": "clarify",
+  "actual_decision": "clarify",
+  "decision_pass": true,
+  "quality": [
+    {
+      "criterion": 1,
+      "result": "pass",
+      "evidence": "Requests minimal warning-producing project with tsconfig.angular.json, compilation inputs and package.json/lockfile/build script."
+    },
+    {
+      "criterion": 2,
+      "result": "pass",
+      "evidence": "Briefly explains absent compilation setup; no cause asserted."
+    },
+    {
+      "criterion": 3,
+      "result": "pass",
+      "evidence": "One cohesive request; minimal project covers full webpack setup without repeating environment versions."
+    },
+    {
+      "criterion": 4,
+      "result": "pass",
+      "evidence": "Neutral request, no promise or bug validity judgement."
+    },
+    {
+      "criterion": 5,
+      "result": "pass",
+      "evidence": "No execution, diagnosis, fixes, deletion advice or other forbidden actions."
+    },
+    {
+      "criterion": 6,
+      "result": "pass",
+      "evidence": "Safe bounded proposed comment and factual AI/run attribution."
+    },
+    {
+      "criterion": 7,
+      "result": "pass",
+      "evidence": "One proposed preview; public_actions=[] and posting_target=null."
+    }
+  ],
+  "quality_findings": {
+    "unnecessary_questions": [],
+    "missed_clarifications": [],
+    "deferrals": [],
+    "silent_branch_violations": [],
+    "scope_issues": [],
+    "infrastructure_failures": [
+      "validation.json.source_issue is 20373 rather than selected case 20606; run record and exact request correctly identify/input 20606."
+    ],
+    "notes": [
+      "Agent decision and comment quality pass.",
+      "Infrastructure metadata failure retained: validation source_issue incorrectly remains 20373; no posting target or public write exists.",
+      "Fix and targeted fresh rerun required before relying on the corrected routing."
+    ]
+  },
+  "actual_clarification": "Could you share a minimal project that produces the warning, including `tsconfig.angular.json`, the relevant compilation inputs, and `package.json` with its lockfile and build script? The supplied resolver snippet does not show how `@eslint/plugin-kit` enters the TypeScript compilation, so the project would establish that reproduction path.",
+  "actual_rationale": "The report supplies environment versions, the affected package version and published paths, a webpack configuration excerpt, and the warning and expected behavior. However, the referenced tsconfig.angular.json and the compilation inputs that lead to processing @eslint/plugin-kit are absent. The preserved playground contains only a comment and lint settings, not a build reproduction. The missing compilation setup is necessary to reproduce the Angular warning rather than only inspect the package contents.",
+  "raw_output_sha256": "2768196b7df7c79aefc0c042235a39d1bd5b8c0dcfea56811681b9dbe247b66e",
+  "configuration_sha256": "31f2406f508f70680ac56013c06d1900b2f5f391fea89f15a063f7bfecb90113",
+  "configuration_version": "milestone-d-development-v2",
+  "input_hashes": {
+    "body.md": "0bf7b3f7742f8c94409012f7775d81c48497e13dca85d9f9575163cd963e36e1",
+    "snapshot.json": "26b42f996edf751304044c8e2e866cd9526c5eff4a5bb8631ab1cb558bda1326",
+    "support/playground-1.json": "0fada517ef6703ec36f3d8b95f3d0215be70ac23f8c879e374ac821654a88e4c",
+    "title.txt": "bafb36fd5e3eec3fb151c5d89aa46adeebaec659155356f02f8ff3fee1ba66d8"
+  },
+  "boundary_checks": {
+    "exact_selected_input": true,
+    "skill_loaded": true,
+    "fresh_two_message_request": true,
+    "outbound_tools": [],
+    "implicit_host_context_forwarded": false,
+    "temporary_workspace_removed": true
+  },
+  "public_actions": [],
+  "limitations": [
+    "Preview only; no live GitHub/platform verification.",
+    "Host Python/Codex is trusted, not OS-jailed.",
+    "Backend revision unpinned; monetary cost unknown."
+  ]
+}

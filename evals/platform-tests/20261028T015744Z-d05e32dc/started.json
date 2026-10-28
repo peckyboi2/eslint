@@ -1,0 +1,21 @@
+{
+  "run_id": "20261028T015744Z-d05e32dc",
+  "started_at": "2026-10-28T01:57:44.338133+00:00",
+  "status": "started",
+  "trigger": "manual Milestone B authorised development preview",
+  "kind": "synthetic platform test",
+  "verification_type": "synthetic infrastructure",
+  "source_issue": 20373,
+  "model_requested": "unknown",
+  "engine": "unknown",
+  "input_hashes": "unknown",
+  "skill_sha256": "unknown",
+  "engine_version": "unknown",
+  "model_returned": "unknown",
+  "usage": "unknown",
+  "cost": "unknown",
+  "errors": [],
+  "posting_available": false,
+  "public_actions": [],
+  "backend_revision_pinned": false
+}

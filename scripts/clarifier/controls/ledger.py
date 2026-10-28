@@ -56,10 +56,14 @@ def validate(state: Any) -> dict:
 
 def local_campaign_limit(state: dict) -> int:
     """Return the recorded local cap or the unchanged hosted campaign cap."""
-    approved = any(row['action'] == 'extend-local-preview'
-                   and row['reason'].startswith(p.LOCAL_EXTENSION_REASON)
-                   and digest(row['reason'][len(p.LOCAL_EXTENSION_REASON):]) for row in state['decisions'])
-    return p.LOCAL_CAMPAIGN_LIMIT if approved else p.CAMPAIGN_LIMIT
+    limit = p.CAMPAIGN_LIMIT
+    for cap, prefix in p.LOCAL_CAMPAIGN_APPROVALS:
+        approved = any(row['action'] == 'extend-local-preview'
+                       and row['reason'].startswith(prefix)
+                       and digest(row['reason'][len(prefix):]) for row in state['decisions'])
+        if approved:
+            limit = max(limit, cap)
+    return limit
 
 
 def validate_admissions(rows: list, limit: int = p.CAMPAIGN_LIMIT) -> None:

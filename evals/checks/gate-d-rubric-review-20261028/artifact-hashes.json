@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "description": "Final review documents and evidence hashes, excluding this self-manifest; all prior protected files rechecked unchanged.",
+  "files": {
+    "Research/ESLint expected-decision review.md": "404ca0f9b9646f466f44ed7f7aef1c524ab487bfe4470a3366323d2bf2dd8146",
+    "README.md": "312b1f15ef28b3a084f893cd6f3baab278f752ef272c8932df3086e74c6b401c",
+    "IMPLEMENTATION_TASKS.md": "74762b3aedb21cf97dff75520d78e962d1610875b20c73ce6b1fa7386aba9093",
+    "eslint-fork/evals/checks/gate-d-rubric-review-20261028/baseline.json": "7ce478a08b548f213c3b079a105cd34c62771316eb1cffd1988395c12e898583",
+    "eslint-fork/evals/checks/gate-d-rubric-review-20261028/prior-protected-hashes.json": "c772f5e23a0763ab64ae00583cbe986ca9a96a59b7f6d302ea29aa24f9f1f17b",
+    "eslint-fork/evals/checks/gate-d-rubric-review-20261028/verification.json": "6cffa4bf7e76e16ff85ba50710e938290877c9efb3789575a2f04d08ccaee58e"
+  }
+}

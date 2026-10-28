@@ -1,0 +1,154 @@
+{
+  "verification_type": "handler simulation only; no GitHub call, bot identity or public write",
+  "source_model_run": "20261028T020039Z-14037685",
+  "evaluated_configuration_sha256": "fea4bd34fd5c9403afc1604d3800a66ad54b2d849c4db023b5e8bab0517c82e3",
+  "control_configuration": {
+    "version": "milestone-c-development-v4",
+    "aggregate_sha256": "156c39a661d93985b551fd7b926850d881cd0b5a989c8835a4d2934507b86f7a",
+    "source_hashes": {
+      ".claude/skills/eslint-clarification/SKILL.md": "290acdc81c5b4596e58583a1b5d2e7458e638f1e43d3a6e38ef75290a3f0e78e",
+      ".github/workflows/clarifier-stop.yml": "540861fec0081f2cfe99f2c3a8a387f88306ed22631f70a64f45f304ce7ecfe2",
+      ".github/workflows/clarifier-triage.yml": "c664721ac0a2ef95aa9761721bc9bc9435e2a1f1b04c21c14e04a9222303c733",
+      "scripts/clarifier/admission.py": "2e906c7232894f3bfb90b85adb6859f77fe4b9267c99a8683953fe594fa21c95",
+      "scripts/clarifier/adversarial.py": "ebb7b46e50cf3887eb4225f22e3afbd645fd31928c33ed4ec0b95c2b92dae0eb",
+      "scripts/clarifier/c_preview.py": "0a6ad83456b49eeb4bd920c07aa14b87791aa369ed7367fd00a07e182f212492",
+      "scripts/clarifier/config-c-v4.json": "d082ef2fe4e0fd4375db5b6de557a2a57a3917d5884fbe6da6f1e161052904ab",
+      "scripts/clarifier/constants.py": "2c1ed19b8c380fbb03bab0c86952c0f5280d41acbf636eedd815db706dc871c8",
+      "scripts/clarifier/decision.schema.json": "97bf2f86d7d67d83f8ed2e368e4928e0df9f88185c7335844cab4f0dcfb726a1",
+      "scripts/clarifier/dry_state.py": "b52bf68e4c4849fd2ca21b232153589be0fbe14f3ecf094ab5f088559973d6e5",
+      "scripts/clarifier/errors.py": "b7ea54db7e1682d14aaeadf4b29e67255017b684141a6deb26d54a21893109ea",
+      "scripts/clarifier/github_api.py": "a743a1771e41d023bbc8282c48c2a33a94d853b68ebed3776da3615c740b77fd",
+      "scripts/clarifier/identity.py": "38295b2a1d7b8d59bf66ef319931e83e81b3d0263644a9acdf3c143cc34a65a5",
+      "scripts/clarifier/ledger.py": "2feca22ef9f92dd446bc9b37407da47b2b1d36feeb0ee06be1cf4ba08f7ce53d",
+      "scripts/clarifier/output_handler.py": "1c4f13568a884f3ee7f8b6ddc7445a35582500392f7186453eb3b5c8c2629b15",
+      "scripts/clarifier/policy.py": "0b34da0a16bfc2e8d3fb17381944c4661d3ba64601c1bb9487cc647e677d2fc0",
+      "scripts/clarifier/posting.py": "7d7578b677b10be154180931ef6009a962b00e912a476b6617506ed2d66b8642",
+      "scripts/clarifier/posting_intent.py": "60a81f68514235ecfe7a44dd416f372845537c1665078fce5c9441f9d0fd78f9",
+      "scripts/clarifier/preview.py": "523d7367ca229a2618f3ed4a56462a32aee52bb561eeaf58bcd4ee8a120d0831",
+      "scripts/clarifier/recording.py": "e69420ec792db5e03e2a80b639548f4381a504e3665c002488b90a74ae707e41",
+      "scripts/clarifier/release_gate.py": "5657627046aa2f8ce3b9bd3bfe7fea37cb461042c321f91969113f53b5631964",
+      "scripts/clarifier/request.py": "2c918af1581add9413ea8422343753a3d7c29874af9c80bad673362512713040",
+      "scripts/clarifier/routing.py": "213de781e2b51cece140c509f9999911aafc975e5d4077a4b3be9360325ca10a",
+      "scripts/clarifier/skill.py": "0975312879d3bdb843a77f4e60e9b3c81dacb0322138b5a7bee1aadac3e6e9d5",
+      "scripts/clarifier/staging.py": "fa34b1777b02b05c176c2bffac25c911c37abb9dc51462f93b86077dba9ea5ab",
+      "scripts/clarifier/state_store.py": "e2948b5a74f855a5d48fbb8567a0aa990024003da235f0144e870b4ee149293a",
+      "scripts/clarifier/stop.py": "be4c96bc918c9b10303da88d784da03ae882116b8e73659a1771532304e55dcb",
+      "scripts/clarifier/stop_io.py": "db97c5b1144fed615e87cc9edd41420aa5903b3933c7ceb2b9a6e7f9d6d2216d",
+      "scripts/clarifier/transport.py": "46e773b6a9b4d65665a37815aa2b18a4ac4e15f4d2bd025106c257b2ddc28966",
+      "scripts/clarifier/validation.py": "0f36ed1c8858ca82dbdf91db688062fa46062fc6b5a3453fe2c9b926e1470d36",
+      "scripts/clarifier/workflow.py": "2f02133aadaa56c4e0960c7f95363de1bfe3ba74193a93edf412cfb65eb88e33",
+      "scripts/clarifier/workflow_audit.py": "ca1b68e5cdc812f93a6f1fd5f1e23912d9950fa255b25758fb7dd59996d84031",
+      "scripts/clarifier/workflow_io.py": "6e1e0aa522f952d865224ea2c6203460a08d37fded02e1224691c44319506107"
+    }
+  },
+  "live_result": "NOT RUN",
+  "live_gap": "Live release absent: CI engine/login, sandbox target and reviewed promotion evidence are unprovisioned",
+  "comment_url": null,
+  "real_public_writes": 0,
+  "synthetic_context_run_id": "123",
+  "synthetic_target_issue": 1,
+  "synthetic_bot_identity": "github-actions[bot]",
+  "synthetic_comment_id": 999,
+  "synthetic_release": "Constructed by trusted test code only; not a Darren promotion approval",
+  "marker": "clarifier-attempt-60bb28ad8ce137a98b0b1fc6fb673c3e1a11626b9890c9200a28898ec1fb5f05",
+  "comment": "Could you share the configuration provided by `feEslint` from `@fe/eslint-config`, together with the relevant `package.json` and lockfile, or a minimal project containing them? The inline configuration builds on that shared setup, so its inherited settings and plugin dependencies are needed to reproduce the two errors.\n\n**Created by AI (OpenAI Codex, gpt-6.1-sol).**\nPosted by GitHub Actions application; [run 123](https://github.com/peckyboi2/eslint/actions/runs/123).\n<!-- clarifier-attempt-60bb28ad8ce137a98b0b1fc6fb673c3e1a11626b9890c9200a28898ec1fb5f05 -->",
+  "comment_characters": 563,
+  "api_calls_are_fake": true,
+  "simulated_api_calls": [
+    {
+      "method": "GET",
+      "path": "/repos/peckyboi2/eslint/issues/1",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "path": "/repos/peckyboi2/eslint/issues/1/comments",
+      "body": {
+        "body": "Could you share the configuration provided by `feEslint` from `@fe/eslint-config`, together with the relevant `package.json` and lockfile, or a minimal project containing them? The inline configuration builds on that shared setup, so its inherited settings and plugin dependencies are needed to reproduce the two errors.\n\n**Created by AI (OpenAI Codex, gpt-6.1-sol).**\nPosted by GitHub Actions application; [run 123](https://github.com/peckyboi2/eslint/actions/runs/123).\n<!-- clarifier-attempt-60bb28ad8ce137a98b0b1fc6fb673c3e1a11626b9890c9200a28898ec1fb5f05 -->"
+      }
+    }
+  ],
+  "state_before": {
+    "schema": 1,
+    "enabled": true,
+    "posting_enabled": true,
+    "campaign": "c-development-20261028",
+    "admissions": [
+      {
+        "run_id": "123",
+        "event_key": "922381dcf5d09d85463d31b3c8d0ec44ae94d2d11827c160fd89413e023497bc",
+        "input_key": "e1b69d35ddde5f412f15342ac4a7f7bd3e9ce00820eee72d84d11229fbf92c4b",
+        "at": 100,
+        "campaign": "c-development-20261028"
+      }
+    ],
+    "posts": [],
+    "decisions": [
+      {
+        "actor_id": 234542779,
+        "at": 1,
+        "reason": "Owner setup for mock",
+        "action": "bootstrap"
+      },
+      {
+        "actor_id": 234542779,
+        "at": 2,
+        "reason": "Mock preview authorisation",
+        "action": "enable-preview"
+      },
+      {
+        "actor_id": 234542779,
+        "at": 3,
+        "reason": "Mock posting release only",
+        "action": "enable-posting"
+      }
+    ]
+  },
+  "state_after": {
+    "admissions": [
+      {
+        "at": 100,
+        "campaign": "c-development-20261028",
+        "event_key": "922381dcf5d09d85463d31b3c8d0ec44ae94d2d11827c160fd89413e023497bc",
+        "input_key": "e1b69d35ddde5f412f15342ac4a7f7bd3e9ce00820eee72d84d11229fbf92c4b",
+        "run_id": "123"
+      }
+    ],
+    "campaign": "c-development-20261028",
+    "decisions": [
+      {
+        "action": "bootstrap",
+        "actor_id": 234542779,
+        "at": 1,
+        "reason": "Owner setup for mock"
+      },
+      {
+        "action": "enable-preview",
+        "actor_id": 234542779,
+        "at": 2,
+        "reason": "Mock preview authorisation"
+      },
+      {
+        "action": "enable-posting",
+        "actor_id": 234542779,
+        "at": 3,
+        "reason": "Mock posting release only"
+      }
+    ],
+    "enabled": true,
+    "posting_enabled": true,
+    "posts": [
+      {
+        "comment_id": 999,
+        "configuration": "156c39a661d93985b551fd7b926850d881cd0b5a989c8835a4d2934507b86f7a",
+        "event_key": "922381dcf5d09d85463d31b3c8d0ec44ae94d2d11827c160fd89413e023497bc",
+        "input_key": "e1b69d35ddde5f412f15342ac4a7f7bd3e9ce00820eee72d84d11229fbf92c4b",
+        "marker": "clarifier-attempt-60bb28ad8ce137a98b0b1fc6fb673c3e1a11626b9890c9200a28898ec1fb5f05",
+        "report": 1,
+        "run_id": "123",
+        "status": "posted"
+      }
+    ],
+    "schema": 1
+  }
+}

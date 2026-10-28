@@ -1,0 +1,8 @@
+test_new_event_and_changed_input_cannot_bypass_lifetime_limit (tests.test_replay.ReplayTests.test_new_event_and_changed_input_cannot_bypass_lifetime_limit) ... ok
+test_posted_receipt_cannot_be_rewritten_or_removed (tests.test_replay.ReplayTests.test_posted_receipt_cannot_be_rewritten_or_removed) ... ok
+test_same_original_event_and_rerun_block_before_model_or_write (tests.test_replay.ReplayTests.test_same_original_event_and_rerun_block_before_model_or_write) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK

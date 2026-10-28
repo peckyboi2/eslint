@@ -1,0 +1,85 @@
+{
+  "verification_type": "actual selected-engine coding-assistant preview; not a GitHub workflow run",
+  "reviewed_at": "2026-10-28T05:11:02.758890+00:00",
+  "reviewer": "Codex implementation review; no Darren human output approval claimed",
+  "source_issue": 19818,
+  "expected_decision": "no_action",
+  "actual_decision": "no_action",
+  "decision_pass": true,
+  "quality": [
+    {
+      "criterion": 1,
+      "result": "pass",
+      "evidence": "Internal completeness judgement agrees with frozen expectation: Recognises complete original triggering/comparison examples, inline rule and playground settings, versions and observed/expected diagnostic."
+    },
+    {
+      "criterion": 2,
+      "result": "not_assessable",
+      "evidence": "No proposed comment; public wording criterion is not assessable."
+    },
+    {
+      "criterion": 3,
+      "result": "not_assessable",
+      "evidence": "No proposed comment; no redundant public request."
+    },
+    {
+      "criterion": 4,
+      "result": "pass",
+      "evidence": "Internal rationale remains neutral and does not decide whether maintainers should accept the bug."
+    },
+    {
+      "criterion": 5,
+      "result": "pass",
+      "evidence": "No diagnosis/fix or submitted-code execution; preview has no action/tool interface."
+    },
+    {
+      "criterion": 6,
+      "result": "pass",
+      "evidence": "Validated silent result with correct selected identity; no posting target."
+    },
+    {
+      "criterion": 7,
+      "result": "pass",
+      "evidence": "clarification and preview_comment are null; public_actions=[] and no public write occurred."
+    }
+  ],
+  "quality_findings": {
+    "unnecessary_questions": [],
+    "missed_clarifications": [],
+    "deferrals": [],
+    "silent_branch_violations": [],
+    "scope_issues": [],
+    "infrastructure_failures": [],
+    "notes": [
+      "Recognises complete original triggering/comparison examples, inline rule and playground settings, versions and observed/expected diagnostic.",
+      "Expected no_action; original i++ and i-- expressions and weaker ClickHouse archive provenance are byte-preserved.",
+      "Completeness is assessed without asserting whether the requested behaviour is a bug or replacing postfix expressions with later edits."
+    ]
+  },
+  "actual_clarification": null,
+  "actual_rationale": "The report supplies ESLint 9.28.0, the runtime environment, the default Espree parser, and complete triggering and comparison examples. The inline rule directive and supplied playground configuration establish the relevant settings. The observed diagnostic and expected absence of errors are explicit, so a maintainer can reproduce the reported behavior without additional information.",
+  "raw_output_sha256": "d26ea8eaa873214cbb9a5203d9093c889d766118817cf306b75806c0e9337968",
+  "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+  "configuration_version": "milestone-d-development-v3",
+  "input_hashes": {
+    "body.md": "8f81bebba3ff2b4ef76b54d9744f74f069d24d0820588e3fa8c454075068a638",
+    "snapshot.json": "42ff4f85764bdcbcced9d219e6e89b90656435f65c13381d0a08333171acec62",
+    "support/playground-1.json": "9565b6b311e39e3fc56d40081c3ee704f5d7f05c5dbec9372080d6250df30415",
+    "title.txt": "69a5848ef026217f2b4746b153a5143ad7a716fe62fcd906089a46b5289216b6"
+  },
+  "boundary_checks": {
+    "exact_selected_input": true,
+    "skill_loaded": true,
+    "fresh_two_message_request": true,
+    "outbound_tools": [],
+    "implicit_host_context_forwarded": false,
+    "temporary_workspace_removed": true,
+    "selected_route_identity_matches": true
+  },
+  "public_actions": [],
+  "limitations": [
+    "Preview only; no live GitHub/platform verification.",
+    "Host Python/Codex is trusted, not OS-jailed.",
+    "Backend revision unpinned; monetary cost unknown."
+  ]
+}

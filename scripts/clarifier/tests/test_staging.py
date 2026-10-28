@@ -13,6 +13,26 @@ from clarifier.inference import staging as stage
 
 
 class Staging(unittest.TestCase):
+    def test_exact_package_size_and_one_byte_excess_without_partial_copy(self):
+        for size in (c.MAX_INPUT_BYTES, c.MAX_INPUT_BYTES + 1):
+            with tempfile.TemporaryDirectory(dir=c.PRIVATE_TEMP_ROOT) as tmp:
+                root = Path(tmp)
+                source = root / 'source'
+                source.mkdir()
+                body = b'x' * (size - 1)
+                (source / 'body.md').write_bytes(body)
+                (source / 'support.txt').write_bytes(b'y')
+                hashes = {'body.md': rec.sha(body), 'support.txt': rec.sha(b'y')}
+                destination = root / 'stage'
+                if size == c.MAX_INPUT_BYTES:
+                    result = stage.stage(source, destination, expected=hashes)
+                    self.assertEqual(result['staged_bytes'], size)
+                    self.assertEqual((destination / 'body.md').read_bytes(), body)
+                else:
+                    with self.assertRaises(errors.StagingError):
+                        stage.stage(source, destination, expected=hashes)
+                    self.assertFalse(destination.exists())
+
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory(dir="/private/tmp")
         self.addCleanup(self.tmp.cleanup)

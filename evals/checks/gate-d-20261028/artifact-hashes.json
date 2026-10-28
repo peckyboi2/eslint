@@ -1,0 +1,20 @@
+{
+  "before-inventory.json": "b9022287e1e3c2c9830711adeb6cd2d5e791d945cf715902de0773e35e0a4dbe",
+  "configuration/.claude/skills/eslint-clarification/SKILL.md": "cf48df54b41da49e9a678ed6ede2e202b483acde7674b34681d98c3b3417bf73",
+  "configuration/scripts/clarifier/config/config.json": "4ed86703af2b8016d5fcfcf62a2cf19eb7da1024985c4c46a5de1983b98fc8d9",
+  "configuration/scripts/clarifier/config/decision.schema.json": "97bf2f86d7d67d83f8ed2e368e4928e0df9f88185c7335844cab4f0dcfb726a1",
+  "configuration-hashes.json": "f93597eb74e08bae582caac8d71ad7d4e900c7e2b80236fe0e45c973978984d9",
+  "final-baseline.json": "2193b84bc2b8809af9dbbcb7fa5bee6ac947ad7cf039b016e7ef4ef09215835f",
+  "final-verification.json": "aae3db71d1a7788f03889bc57bbeccc15e175a64c433cdab1c4b544e636d6de9",
+  "gate-d-review.json": "0f1f16aedefd6d58e246be74c7f86252417dd02011bdfb43a423c15bfd579536",
+  "prior-config-v5.json": "66b06f7f00ef2f9523cb871aa4bb7c3eceb6ff161e5db88cd5709acfaf63f0d9",
+  "prior-evidence-integrity.json": "a91fef438be20378e38e8fc6438cb42c75a719cb53e368b9e72954e14a3f3a84",
+  "prior-skill-v5.md": "290acdc81c5b4596e58583a1b5d2e7458e638f1e43d3a6e38ef75290a3f0e78e",
+  "quota-status.json": "5f34eee10e6a65037e52aca1b01010bc2d78fbca0361f6014a57e02b0ff08f07",
+  "task29-baseline.json": "1aa8cac4259009ec5ad4877a10ee199e85e1947e61d24e3892a7407f682f326f",
+  "task29-diff-check.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "task29-packages.json": "42b60ecf08def0f6941fc72a39380b60d2f71475edfa29ba09402af4b43b39de",
+  "task29-record.json": "bb961812ed93cd263821fd375dca2087694702da18a10c735e17717d3975bdea",
+  "task29-tests.txt": "315942052adaec2b6e9786303eb23b84f864a2e53db06f8298d9cd7f4959b83d",
+  "task30-38-attempts.json": "fccd89575742927562a4c87d0ff622404b306f984ec32415f92fd51c8e0f5b37"
+}

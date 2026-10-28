@@ -1,0 +1,11 @@
+{
+  "actor_id": 234542779,
+  "scope": "local-development-preview",
+  "rolling_limit": 39,
+  "campaign_limit": 39,
+  "campaign": "c-development-20261028",
+  "authorization_text": "ok",
+  "authorisation_source": "Approval in this side conversation of the shown exact paragraph and plan: test #19924 first; run the other eight only if it passes decision/content review",
+  "recorded_at": "2026-10-28T06:09:26.923202+00:00",
+  "purpose": "At most nine local development previews under a first-case semantic gate; all 30 reservations retained, no refund/reset, hosted limits unchanged"
+}

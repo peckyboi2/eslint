@@ -1,0 +1,50 @@
+{
+  "verification_type": "actual same-configuration local coding-assistant preview; not a GitHub workflow run",
+  "reviewed_at": "2026-10-28T02:01:53.037058+00:00",
+  "reviewer": "Codex implementation review; no Darren human output approval claimed",
+  "source_issue": 20373,
+  "expected_decision": "clarify",
+  "actual_decision": "clarify",
+  "decision_pass": true,
+  "quality": [
+    {
+      "criterion": 1,
+      "result": "pass",
+      "evidence": "Requests the absent configuration from feEslint/@fe/eslint-config and dependency setup."
+    },
+    {
+      "criterion": 2,
+      "result": "pass",
+      "evidence": "Explains that inherited settings and plugin dependencies are needed to reproduce; no cause/fix asserted."
+    },
+    {
+      "criterion": 3,
+      "result": "pass",
+      "evidence": "One cohesive request for shared configuration plus package.json/lockfile, or a minimal project containing them; no request for already supplied versions/errors."
+    },
+    {
+      "criterion": 4,
+      "result": "pass",
+      "evidence": "Neutral Could you share wording; no promised fix or validity judgement."
+    },
+    {
+      "criterion": 5,
+      "result": "pass",
+      "evidence": "No diagnosis, execution, deletion, conversation continuation or forbidden action."
+    },
+    {
+      "criterion": 6,
+      "result": "pass for preview; live bot identity untested",
+      "evidence": "Bounded safe code-formatted package token and factual model/run attribution in validation.json."
+    },
+    {
+      "criterion": 7,
+      "result": "pass",
+      "evidence": "One proposed comment and public_actions=[]; no posting interface in this model execution."
+    }
+  ],
+  "actual_clarification": "Could you share the configuration provided by `feEslint` from `@fe/eslint-config`, together with the relevant `package.json` and lockfile, or a minimal project containing them? The inline configuration builds on that shared setup, so its inherited settings and plugin dependencies are needed to reproduce the two errors.",
+  "raw_output_sha256": "0c47b047f607654d1867cd564557285e3c87b9d58744da6a7c77b6df3b04ed38",
+  "configuration_sha256": "fea4bd34fd5c9403afc1604d3800a66ad54b2d849c4db023b5e8bab0517c82e3",
+  "public_actions": []
+}

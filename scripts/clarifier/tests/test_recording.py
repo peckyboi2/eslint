@@ -12,6 +12,44 @@ from clarifier.inference import recording as rec
 spec = importlib.util.spec_from_file_location("verify_baseline", c.ROOT / "scripts/verify_baseline.py")
 baseline = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(baseline)
+regression_spec = importlib.util.spec_from_file_location('check_regression', c.ROOT / 'scripts/check_regression.py')
+regression = importlib.util.module_from_spec(regression_spec)
+regression_spec.loader.exec_module(regression)
+
+
+class RegressionReview(unittest.TestCase):
+    def observation(self):
+        return dict(issue=20373, decision='clarify', configuration_sha256='a'*64,
+                    model=c.FIXED_CONFIG['model'], status='completed', quality_review='pass',
+                    public_actions=[])
+
+    def test_synthetic_drift_failure_is_visible_and_never_promoted(self):
+        observed = self.observation()
+        observed.update(decision='no_action', configuration_sha256='b'*64, model='synthetic-provider-update')
+        result = regression.assess(regression.load_expectations(), observed, 'a'*64, c.FIXED_CONFIG['model'])
+        self.assertEqual(set(result['failures']), {'decision mismatch', 'configuration changed', 'model identity changed'})
+        self.assertTrue(result['review_required'])
+        self.assertFalse(result['promotion_allowed'])
+        self.assertFalse(result['checks_pass'])
+        self.assertEqual(result['observation']['public_actions'], [])
+
+    def test_passing_or_pending_quality_still_requires_owner_review(self):
+        for quality in ('pass', 'pending', 'fail'):
+            observed = self.observation()
+            observed['quality_review'] = quality
+            result = regression.assess(regression.load_expectations(), observed, 'a'*64, c.FIXED_CONFIG['model'])
+            self.assertEqual(result['checks_pass'], quality == 'pass')
+            self.assertTrue(result['review_required'])
+            self.assertFalse(result['promotion_allowed'])
+
+    def test_malformed_observation_and_missing_expected_case_fail_closed(self):
+        from clarifier.outputs.release_gate import live_release
+        from clarifier.controls.policy import PostingBlocked
+        for observation in (None, {}, {**self.observation(), 'issue': True}):
+            with self.assertRaises(errors.ClarifierError):
+                regression.assess({}, observation, 'a'*64, 'model')
+        with self.assertRaises(PostingBlocked):
+            live_release()
 
 
 class DevelopmentEvidence(unittest.TestCase):

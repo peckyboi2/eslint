@@ -1,0 +1,83 @@
+{
+  "verification_type": "actual isolated selected-engine coding-assistant preview; development retest, not GitHub workflow",
+  "reviewed_at": "2026-10-28T05:52:04.362874+00:00",
+  "reviewer": "Codex implementation review; no Darren human approval of outputs claimed",
+  "source_issue": 21320,
+  "expected_decision": "no_action",
+  "actual_decision": "no_action",
+  "decision_pass": true,
+  "quality": [
+    {
+      "criterion": 1,
+      "result": "pass",
+      "evidence": "Completeness judgement matches the accepted expectation: Recognises the complete Linter.verifyAndFix invocation, source/options and returned output/diagnostic."
+    },
+    {
+      "criterion": 2,
+      "result": "not_assessable",
+      "evidence": "No proposed comment; comment wording is not assessable."
+    },
+    {
+      "criterion": 3,
+      "result": "not_assessable",
+      "evidence": "No proposed comment; no unnecessary public request."
+    },
+    {
+      "criterion": 4,
+      "result": "pass",
+      "evidence": "Neutral internal judgement without promising a fix or ruling on bug acceptance."
+    },
+    {
+      "criterion": 5,
+      "result": "pass",
+      "evidence": "No diagnosis/fix, reproduction execution or forbidden action; no model tool interface."
+    },
+    {
+      "criterion": 6,
+      "result": "pass",
+      "evidence": "Validated silent output with the selected source identity and no posting target."
+    },
+    {
+      "criterion": 7,
+      "result": "pass",
+      "evidence": "clarification and preview_comment are null; public_actions=[] and posting remains unavailable."
+    }
+  ],
+  "quality_findings": {
+    "unnecessary_questions": [],
+    "missed_clarifications": [],
+    "deferrals": [],
+    "silent_branch_violations": [],
+    "scope_issues": [],
+    "notes": [
+      "Recognises the complete Linter.verifyAndFix invocation, source/options and returned output/diagnostic.",
+      "Expected no_action; explicitly says this API path needs no CLI command or extra project/configuration files, so the pipeline-request edit did not cause that regression."
+    ]
+  },
+  "actual_rationale": "The report supplies ESLint and Node versions, the default parser, and a self-contained Linter.verifyAndFix() example with triggering source, language options, rule settings, and expected versus actual behavior. The supporting playground data matches the input and configuration. This API reproduction does not depend on external configuration, additional project files, or a CLI command.",
+  "actual_clarification": null,
+  "raw_output_sha256": "d19813d9c7aa84f2b1afc9e187c3c4b36072b2fc08bde8837dccb720f1fc12b2",
+  "configuration_version": "milestone-d-development-v5",
+  "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+  "input_hashes": {
+    "body.md": "e34f7c9cf0da40eb9cd9db910ff5b3a9c75d1e57c81fda81e96220973d2e8a1e",
+    "snapshot.json": "08c954b2e18a4d09d11250674e2e71b3aa7c13baa2526b1b8c7ef204867b2f34",
+    "support/playground-1.json": "6f4c063979c2cfca301014ebe87c7b3fa1145a7dd6d3377348a6b899171e001b",
+    "title.txt": "8097c9f0bc7da9781c1126b924a6e0023614b59f1d8969121d4a44e1f27b4007"
+  },
+  "boundary_checks": {
+    "selected_input_hashes_match": true,
+    "native_skill_loaded": true,
+    "only_skill_and_selected_evidence_forwarded": true,
+    "outbound_tools": [],
+    "fresh_request": true,
+    "route_issue_matches": true,
+    "temporary_workspace_removed": true
+  },
+  "public_actions": [],
+  "limitations": [
+    "Host trusted rather than OS-jailed; hosted controls unverified.",
+    "Provider backend version unpinned; monetary cost unknown.",
+    "Known development/regression cases, not a final frozen all-ten campaign."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "test_harness": "task42-tests-v3.txt incorrectly expected stop.run to return 1; its typed denial is caught by the CLI boundary. Test corrected in v4; no runtime change for this.",
+  "baseline_attempt": "task42-baseline-v7.json was attempted while a fresh run was active, so its final artifact inventory did not yet exist. No evidence was altered; successful post-completion check is task42-baseline-v7-recheck.json.",
+  "workflow_audit_attempt": "Direct helper invocation lacked package root; corrected to python -m clarifier.github.workflow_audit from scripts. Successful result task42-workflow-audit-v7-recheck.json.",
+  "actionlint": "Pinned existing 1.7.12 binary at /private/tmp/clarifier-actionlint-current/actionlint; task42-actionlint.txt exit 0.",
+  "material_defect": "Only missing live owner-name cross-check; task42-tests-v1.txt retains eight failing cases."
+}

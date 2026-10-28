@@ -1,0 +1,1 @@
+PASS: current module links resolve; Markdown spacing checked; all 596 protected pre-existing files unchanged; four CLI entry paths retained; one active configuration remains.

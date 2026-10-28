@@ -1,0 +1,24 @@
+{
+  "issue": 20373,
+  "expected_decision": "clarify",
+  "observation": {
+    "issue": 20373,
+    "decision": "no_action",
+    "configuration_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "model": "synthetic-provider-update",
+    "status": "completed",
+    "quality_review": "pass",
+    "public_actions": []
+  },
+  "checks_pass": false,
+  "failures": [
+    "decision mismatch",
+    "configuration changed",
+    "model identity changed"
+  ],
+  "review_required": true,
+  "review_owner": "Darren Peck",
+  "promotion_allowed": false,
+  "scope": "One evaluator observation; no campaign accuracy claim",
+  "provider_revision_detection": "Unavailable when provider retains the same model ID"
+}

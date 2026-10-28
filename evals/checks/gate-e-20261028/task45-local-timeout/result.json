@@ -1,0 +1,13 @@
+{
+  "verification_type": "actual local trusted child process timeout; no model/submitted code",
+  "expected": "One-second configured test timeout kills and reaps process group; preserve stdout/stderr; no public action",
+  "actual": "Inference runtime limit exceeded; process group terminated",
+  "elapsed_seconds": 1.0061787080485374,
+  "pid": 72239,
+  "terminated_and_reaped": true,
+  "public_actions": [],
+  "production_inference_seconds": 300,
+  "hosted_job_minutes": 15,
+  "hosted_timeout_live_tested": false,
+  "provider_compute_cancellation": "unknown"
+}

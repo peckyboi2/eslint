@@ -1,0 +1,19 @@
+{
+  "configuration/.claude/skills/eslint-clarification/SKILL.md": "cf48df54b41da49e9a678ed6ede2e202b483acde7674b34681d98c3b3417bf73",
+  "configuration/scripts/clarifier/config/config.json": "4ed86703af2b8016d5fcfcf62a2cf19eb7da1024985c4c46a5de1983b98fc8d9",
+  "configuration/scripts/clarifier/config/decision.schema.json": "97bf2f86d7d67d83f8ed2e368e4928e0df9f88185c7335844cab4f0dcfb726a1",
+  "configuration-hashes.json": "f93597eb74e08bae582caac8d71ad7d4e900c7e2b80236fe0e45c973978984d9",
+  "input/body.md": "0d2880c7c0b24fe6064e8423f8be34446621e04eeb3ecd3151bee34a8e5a9114",
+  "input/snapshot.json": "0ec8a8dfd733b57eccc4f434319a1e009c97006641e8b94577421c065ba67ce4",
+  "input/support/Readme.md": "99060686ccd5ebec427934edd56ecf7a2b19ad0cdb9328572fec5e96c264c183",
+  "input/support/build/test.js": "f624c9241d6a695a186647c835068f43038c2aaca07a5ee332c0dd54a9459914",
+  "input/support/eslint.config.mjs": "cfe43e59495ba9a7f360d5d0e610b042fd76b8f90ca98bd8e64d7f71b253bf29",
+  "input/support/package-lock.versions.json": "759612cc49e946f7dbb146ccecd7c1b51eef2755012e8c1f7b0769dfbef1d8ac",
+  "input/support/package.json": "7c2a3d22d83dc1561f8b855c338e8aef5ca9640026c80dfca4fb6b8e2a54451d",
+  "input/support/tsconfig.json": "504dbc6a2b3ec8b5a03134c45bb575c47e8a067867a9aa2a8dde1ba18c9be721",
+  "input/title.txt": "50e0418385eb4e71c18d5dc522ed68549241b11d4594f3702a09864557e5e0f5",
+  "input-manifest.json": "0267c5a26572993cc922df5dbbfaff8d05004cdbd7ffccce75de163107d3e381",
+  "prompt.txt": "66c12fd5406391d5c4c93484ce4e23a6e8f0fabe85d672bd880b489df7a92758",
+  "record.json": "6c39deff4902443669bdcfd4e427ea69ed4e41f5bd099a83dd94517d72b4be04",
+  "started.json": "7776c969c075e01f4206513f747f680f8c585e257182dce5cb7c0b85d6a51aa6"
+}

@@ -44,7 +44,8 @@ def verify(data: dict[str, Any], workflow: str = p.TRIAGE_WORKFLOW) -> Context:
 def verify_live(context: Context, run: dict, repository: dict, initiator: dict) -> None:
     """Reject API/context disagreement, including original and rerun actor IDs."""
     require(repository.get('id') == p.REPOSITORY_ID and repository.get('full_name') == p.REPOSITORY, 'Live repository mismatch')
-    require(repository.get('owner', {}).get('id') == p.OWNER_ID, 'Live owner mismatch')
+    owner = repository.get('owner', {})
+    require(owner.get('id') == p.OWNER_ID and owner.get('login') == p.OWNER, 'Live owner mismatch')
     require(repository.get('default_branch') == 'main', 'Trusted default branch changed')
     require(run.get('id') == int(context.run_id) and run.get('run_attempt') == context.attempt, 'Live run mismatch')
     require(run.get('event') == 'workflow_dispatch' and run.get('head_branch') == 'main', 'Live trigger/ref mismatch')

@@ -1,0 +1,11 @@
+{
+  "actor_id": 234542779,
+  "scope": "local-development-preview",
+  "rolling_limit": 30,
+  "campaign_limit": 30,
+  "campaign": "c-development-20261028",
+  "authorization_text": "okay now test again all 9 cases",
+  "authorisation_source": "Explicit nine-case rerun request in this side conversation, after current allowance 21/21 was disclosed; extension limited to the nine requested local previews",
+  "recorded_at": "2026-10-28T05:46:33.924878+00:00",
+  "purpose": "One separate fresh preview per remaining historical case; preserve all 21 reservations and every failure; hosted policy/posting unchanged"
+}

@@ -1,0 +1,16 @@
+{
+  "active-v4/configuration/.claude/skills/eslint-clarification/SKILL.md": "2483687d671ad00bda5fded84f80b13887acfe0e6da6fec9c606fcffd7c025e4",
+  "active-v4/configuration/scripts/clarifier/config/config.json": "f65746e9425347301a775afdf79c62296784c5c8cce9de374d4df189e2087b22",
+  "active-v4/configuration/scripts/clarifier/config/decision.schema.json": "97bf2f86d7d67d83f8ed2e368e4928e0df9f88185c7335844cab4f0dcfb726a1",
+  "active-v4/configuration-hashes.json": "162948f7d1597efffa1ec7e1744a3f69910e027dc6badf29aa7532185f4fdf40",
+  "baseline.json": "217442703b5797a972557dd28c54f2ad54c1a278afc89d3c5885f4040b487da1",
+  "prior-evidence-hashes.json": "757008ba1a52700c85624ced9dc16e7a6b12bf6cb51a25842e628650e8212a0c",
+  "prior-v3/configuration/.claude/skills/eslint-clarification/SKILL.md": "cf48df54b41da49e9a678ed6ede2e202b483acde7674b34681d98c3b3417bf73",
+  "prior-v3/configuration/scripts/clarifier/config/config.json": "217e5861fa38f2e784bfc53ba95b7fdda8ae12ec0fb50f7e2a6a0c2dee10b05d",
+  "prior-v3/configuration/scripts/clarifier/config/decision.schema.json": "97bf2f86d7d67d83f8ed2e368e4928e0df9f88185c7335844cab4f0dcfb726a1",
+  "prior-v3/configuration-hashes.json": "6c6ead7c0c5e1e059bad5d0c92ccf8168bab741cf60980aab2f44dd02175eeea",
+  "record.json": "a628ce90efa859be3102ac577e437cf7e939f6d37fc8730769306b4bb28e185e",
+  "scope.json": "ad9c5458c49226bbbaf172d73329fde1c7fe1940cca01ff36c7b788bf302581e",
+  "tests.txt": "9228dd441f60af7a63ff1178d4e1f2b69706e82d60d900c3d1ff68782228864e",
+  "verification.json": "79850d17da25ff871bc5e1fb8a64e9631b1ff63a58c4a5bfad1970d0ab613e48"
+}

@@ -1,0 +1,18 @@
+{
+  "actor_id": 234542779,
+  "scope": "local-development-preview",
+  "authorization_text": "Darren authorises Milestone E tasks 39–50, including necessary fresh selected-engine attacks; existing standing permission allows bounded local development extensions.",
+  "purpose": "Exactly three necessary E adversarial previews: fabricated-approval, poisoned-support, simulated-tool-instructions. No historical evaluation, automatic retry, posting or F.",
+  "reservations_before": 31,
+  "planned_new_reservations": 3,
+  "maximum_after": 34,
+  "existing_local_rolling_limit": 39,
+  "existing_local_campaign_limit": 39,
+  "extension_required": false,
+  "hosted_limits": {
+    "rolling_24h": 10,
+    "campaign": 20
+  },
+  "posting_enabled": false,
+  "cost": "unknown"
+}

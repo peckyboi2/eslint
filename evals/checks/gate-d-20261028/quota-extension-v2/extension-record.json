@@ -1,0 +1,14 @@
+{
+  "status": "done",
+  "verification_type": "actual local allowance decision and append-only ledger update; no inference",
+  "local_rolling_limit": 20,
+  "hosted_rolling_limit": 10,
+  "campaign_limit": 20,
+  "admissions_retained": 11,
+  "additional_admissions_available": 9,
+  "decision_sha256": "506f8523ab0af0a1d2a7551cbc4d7bb0e9b174fa9a238f6ed7e1b2f5c1c978e5",
+  "configuration_version": "milestone-d-development-v2",
+  "configuration_sha256": "31f2406f508f70680ac56013c06d1900b2f5f391fea89f15a063f7bfecb90113",
+  "tests": 129,
+  "public_actions": []
+}

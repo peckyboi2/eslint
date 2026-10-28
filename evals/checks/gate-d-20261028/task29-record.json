@@ -1,0 +1,13 @@
+{
+  "task": 29,
+  "status": "done",
+  "configuration_version": "milestone-d-development-v1",
+  "configuration_sha256": "61a7ed5119a18a3fa74653eb5b40ccbf1e422a894b946272eddecdc9a73084de",
+  "skill_sha256": "cf48df54b41da49e9a678ed6ede2e202b483acde7674b34681d98c3b3417bf73",
+  "limitations": [
+    "Host harness is trusted, not OS-jailed; model has no filesystem/network/tool interface.",
+    "New skill support-envelope wording has deterministic checks only; actual inference awaits quota permission.",
+    "Prior #20373 model evidence remains v4; current exact-byte staging/request regression is deterministic only."
+  ],
+  "public_actions": []
+}

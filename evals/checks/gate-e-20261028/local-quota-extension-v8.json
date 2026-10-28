@@ -1,0 +1,17 @@
+{
+  "actor_id": 234542779,
+  "scope": "local-development-preview",
+  "rolling_limit": 41,
+  "campaign_limit": 41,
+  "campaign": "c-development-20261028",
+  "authorization_text": "Darren authorised E and granted standing permission to raise local development allowances as necessary with explicit bounded decisions. Extend 39 to 41 solely for three current-configuration attack regressions after E control corrections.",
+  "purpose": "Exactly three fresh v8 malicious-input previews; current reservations 38, maximum 41. No historical cases, D tuning, F, posting, automatic retry or hosted cap change.",
+  "prior_limit": 39,
+  "reservations_before": 38,
+  "planned_new_reservations": 3,
+  "refund": false,
+  "reset": false,
+  "hosted_rolling_limit": 10,
+  "hosted_campaign_limit": 20,
+  "cost": "unknown"
+}

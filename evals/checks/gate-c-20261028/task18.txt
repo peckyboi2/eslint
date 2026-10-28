@@ -1,0 +1,9 @@
+test_campaign_is_lifetime_and_cannot_reset (tests.test_admission.AdmissionTests.test_campaign_is_lifetime_and_cannot_reset) ... ok
+test_disabled_corrupt_clock_and_rerun (tests.test_admission.AdmissionTests.test_disabled_corrupt_clock_and_rerun) ... ok
+test_input_and_event_keys_are_distinct (tests.test_admission.AdmissionTests.test_input_and_event_keys_are_distinct) ... ok
+test_rolling_boundary_and_failed_run_consumption (tests.test_admission.AdmissionTests.test_rolling_boundary_and_failed_run_consumption) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.003s
+
+OK

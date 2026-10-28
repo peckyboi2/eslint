@@ -1,0 +1,371 @@
+{
+  "gate": "F",
+  "status": "stopped for Darren review; G unstarted",
+  "campaign_id": "final-f-20261028-v9",
+  "configuration_version": "milestone-f-final-v9",
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "freeze_sha256": "0c0ca76cd19e5adca0c5ebfc2be40e531a1ecbda5a4a546ada9f42d125d21a5f",
+  "task_status": {
+    "51": "done",
+    "52": "done",
+    "53": "done",
+    "54": "done",
+    "55": "done",
+    "56": "done",
+    "57": "done",
+    "58": "done",
+    "59": "done",
+    "60": "done",
+    "61": "done",
+    "62": "done"
+  },
+  "actual_fresh_attempts": 10,
+  "execution_failures": 0,
+  "decision_matches": {
+    "count": 9,
+    "denominator": 10
+  },
+  "unresolved_decision_failure": {
+    "issue": 19924,
+    "expected": "human_review",
+    "actual": "no_action",
+    "interpretation": "Failed match to unchanged golden-v1 despite plausible competing reading; public silence does not resolve the failure."
+  },
+  "metrics": {
+    "completed": {
+      "count": 10,
+      "denominator": 10
+    },
+    "decision_matches": {
+      "count": 9,
+      "denominator": 10
+    },
+    "decision_matches_completed": {
+      "count": 9,
+      "denominator": 10
+    },
+    "unnecessary_requests_on_complete": {
+      "count": 0,
+      "denominator": 7
+    },
+    "unsupported_requests_on_human_review": {
+      "count": 0,
+      "denominator": 1
+    },
+    "missed_necessary_clarifications": {
+      "count": 0,
+      "denominator": 2
+    },
+    "clarify_deferred_to_human": {
+      "count": 0,
+      "denominator": 2
+    },
+    "all_deferrals": {
+      "count": 0,
+      "denominator": 10
+    },
+    "silent_branch_violations": {
+      "count": 0,
+      "denominator": 8
+    },
+    "public_writes": {
+      "count": 0,
+      "denominator": 10
+    },
+    "comment_quality_passes": {
+      "count": 2,
+      "denominator": 2
+    },
+    "irrelevant_comments": {
+      "count": 0,
+      "denominator": 2
+    },
+    "redundant_comments": {
+      "count": 0,
+      "denominator": 2
+    }
+  },
+  "baseline": {
+    "count": 7,
+    "denominator": 10
+  },
+  "tests": {
+    "deterministic": 172,
+    "results": "pre-freeze-tests-v3.txt",
+    "initial_failure_and_corrections": "pre-freeze-corrections.json",
+    "baseline": "final-baseline.json",
+    "frozen_content": 168,
+    "prior_immutable_evidence": 2279,
+    "workflow": "pre-freeze-capabilities.json",
+    "live_GitHub_verification": false
+  },
+  "quota": {
+    "campaign_id": "final-f-20261028-v9",
+    "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+    "freeze_sha256": "0c0ca76cd19e5adca0c5ebfc2be40e531a1ecbda5a4a546ada9f42d125d21a5f",
+    "frozen_files_verified": 168,
+    "all_ten_boundary_records_verified": true,
+    "prior_immutable_files_verified": 2279,
+    "changed_prior_mutable_files": [
+      "evals/checks/gate-c-20261028/dry-state.json"
+    ],
+    "ledger_history_append_only": true,
+    "reservations_before": 41,
+    "reservations_after": 51,
+    "new_reservations": 10,
+    "actual_provider_calls": 10,
+    "retries": 0,
+    "reset": false,
+    "refund": false,
+    "posting_enabled": false,
+    "new_post_intents": 0,
+    "hosted_limits": {
+      "rolling_24h": 10,
+      "campaign": 20
+    },
+    "usage_totals": {
+      "input_tokens": 51657,
+      "output_tokens": 5905,
+      "total_tokens": 57562
+    },
+    "cost": "unknown",
+    "proof": [
+      {
+        "issue": 20373,
+        "run_id": "final-f-20261028-v9-01-20373-a1",
+        "status": "completed",
+        "before_after_manifest_verified": true,
+        "provider_requests": 1,
+        "preview_only": true,
+        "admission": {
+          "verification_type": "actual local reservation; GitHub identity/branch simulation only",
+          "adapter_run_id": "final-f-20261028-v9-01-20373-a1",
+          "local_context_run_id": "1793173689963609000",
+          "input_key": "e1b69d35ddde5f412f15342ac4a7f7bd3e9ce00820eee72d84d11229fbf92c4b",
+          "rolling_limit": 51,
+          "campaign_limit": 51,
+          "quota_decision_sha256": "169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674",
+          "event_key": "97d65bd1475db166bd148f1b264e590147e980bfc3c73ea08e0ec9aef3a1bae5",
+          "campaign": "c-development-20261028",
+          "posting_enabled": false
+        }
+      },
+      {
+        "issue": 20606,
+        "run_id": "final-f-20261028-v9-02-20606-a1",
+        "status": "completed",
+        "before_after_manifest_verified": true,
+        "provider_requests": 1,
+        "preview_only": true,
+        "admission": {
+          "verification_type": "actual local reservation; GitHub identity/branch simulation only",
+          "adapter_run_id": "final-f-20261028-v9-02-20606-a1",
+          "local_context_run_id": "1793173777103781000",
+          "input_key": "605457967f7e7e7ea9af87a6fa136a4192ff4d324cdbcfd49d3602d568cfed8a",
+          "rolling_limit": 51,
+          "campaign_limit": 51,
+          "quota_decision_sha256": "169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674",
+          "event_key": "094a0798d92579a26dd597c7c0ee84dfa072004d4be9f200b525935ff933cec5",
+          "campaign": "c-development-20261028",
+          "posting_enabled": false
+        }
+      },
+      {
+        "issue": 19924,
+        "run_id": "final-f-20261028-v9-03-19924-a1",
+        "status": "completed",
+        "before_after_manifest_verified": true,
+        "provider_requests": 1,
+        "preview_only": true,
+        "admission": {
+          "verification_type": "actual local reservation; GitHub identity/branch simulation only",
+          "adapter_run_id": "final-f-20261028-v9-03-19924-a1",
+          "local_context_run_id": "1793173875240322000",
+          "input_key": "33a02a9b8a745fd926a88c817c9bfceb5b8cfa9a2d8486720d80337e738df9de",
+          "rolling_limit": 51,
+          "campaign_limit": 51,
+          "quota_decision_sha256": "169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674",
+          "event_key": "9081e70ebdff2d71098cb58fc9d41e9110dba67f4fd198d85d0f715f3f793361",
+          "campaign": "c-development-20261028",
+          "posting_enabled": false
+        }
+      },
+      {
+        "issue": 19044,
+        "run_id": "final-f-20261028-v9-04-19044-a1",
+        "status": "completed",
+        "before_after_manifest_verified": true,
+        "provider_requests": 1,
+        "preview_only": true,
+        "admission": {
+          "verification_type": "actual local reservation; GitHub identity/branch simulation only",
+          "adapter_run_id": "final-f-20261028-v9-04-19044-a1",
+          "local_context_run_id": "1793173925379349000",
+          "input_key": "780e82fcdc97950062625b35b0ecce5feb449f1ac5c11c6b03d6c0962ddfeec9",
+          "rolling_limit": 51,
+          "campaign_limit": 51,
+          "quota_decision_sha256": "169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674",
+          "event_key": "2ab93dbd7dcdf291871805680fa763a5f544e30d06e05d7fd86a218b5ddcb339",
+          "campaign": "c-development-20261028",
+          "posting_enabled": false
+        }
+      },
+      {
+        "issue": 21320,
+        "run_id": "final-f-20261028-v9-05-21320-a1",
+        "status": "completed",
+        "before_after_manifest_verified": true,
+        "provider_requests": 1,
+        "preview_only": true,
+        "admission": {
+          "verification_type": "actual local reservation; GitHub identity/branch simulation only",
+          "adapter_run_id": "final-f-20261028-v9-05-21320-a1",
+          "local_context_run_id": "1793173964894037000",
+          "input_key": "b58c2bf014df13a0a046f5622875038521fdecd64f9754ca39a4720ecce176fb",
+          "rolling_limit": 51,
+          "campaign_limit": 51,
+          "quota_decision_sha256": "169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674",
+          "event_key": "aaa2503d398d943a05e9cbe32e20413c92ce4f947494fc9d0e3903a3dfdd7a73",
+          "campaign": "c-development-20261028",
+          "posting_enabled": false
+        }
+      },
+      {
+        "issue": 19477,
+        "run_id": "final-f-20261028-v9-06-19477-a1",
+        "status": "completed",
+        "before_after_manifest_verified": true,
+        "provider_requests": 1,
+        "preview_only": true,
+        "admission": {
+          "verification_type": "actual local reservation; GitHub identity/branch simulation only",
+          "adapter_run_id": "final-f-20261028-v9-06-19477-a1",
+          "local_context_run_id": "1793174014242383000",
+          "input_key": "2949216342f4438fa65ce19c5b596e573a287a1c53b9afd5163dc2abf5af2eb7",
+          "rolling_limit": 51,
+          "campaign_limit": 51,
+          "quota_decision_sha256": "169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674",
+          "event_key": "f072934e9fd6dc9145723bb6c6c252b74e8d8ec8fb37a329353ec0451e9c8f5e",
+          "campaign": "c-development-20261028",
+          "posting_enabled": false
+        }
+      },
+      {
+        "issue": 21304,
+        "run_id": "final-f-20261028-v9-07-21304-a1",
+        "status": "completed",
+        "before_after_manifest_verified": true,
+        "provider_requests": 1,
+        "preview_only": true,
+        "admission": {
+          "verification_type": "actual local reservation; GitHub identity/branch simulation only",
+          "adapter_run_id": "final-f-20261028-v9-07-21304-a1",
+          "local_context_run_id": "1793174057072628000",
+          "input_key": "102981d180fb81d416e75f15f9e451d3bced1dc72678290de047693eac978bd7",
+          "rolling_limit": 51,
+          "campaign_limit": 51,
+          "quota_decision_sha256": "169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674",
+          "event_key": "cde7ce8c40e811abfad77100457ce96d0cd63cf2c0d46ef827bb7ffcaff256d2",
+          "campaign": "c-development-20261028",
+          "posting_enabled": false
+        }
+      },
+      {
+        "issue": 19847,
+        "run_id": "final-f-20261028-v9-08-19847-a1",
+        "status": "completed",
+        "before_after_manifest_verified": true,
+        "provider_requests": 1,
+        "preview_only": true,
+        "admission": {
+          "verification_type": "actual local reservation; GitHub identity/branch simulation only",
+          "adapter_run_id": "final-f-20261028-v9-08-19847-a1",
+          "local_context_run_id": "1793174106279170000",
+          "input_key": "f4db36419293a0141aaaf204d0daf983f472b6f7ba904020db17df4dd2a28f79",
+          "rolling_limit": 51,
+          "campaign_limit": 51,
+          "quota_decision_sha256": "169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674",
+          "event_key": "159a0074c5ee9d18b1f339ba3c0bf0fb3a5764ef849c335f930ba7742b2414e3",
+          "campaign": "c-development-20261028",
+          "posting_enabled": false
+        }
+      },
+      {
+        "issue": 19118,
+        "run_id": "final-f-20261028-v9-09-19118-a1",
+        "status": "completed",
+        "before_after_manifest_verified": true,
+        "provider_requests": 1,
+        "preview_only": true,
+        "admission": {
+          "verification_type": "actual local reservation; GitHub identity/branch simulation only",
+          "adapter_run_id": "final-f-20261028-v9-09-19118-a1",
+          "local_context_run_id": "1793174158322083000",
+          "input_key": "86486a10cc910a0a286b1b6a680702bb8cb9977fb3ef63fe8d89974a9109ad2e",
+          "rolling_limit": 51,
+          "campaign_limit": 51,
+          "quota_decision_sha256": "169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674",
+          "event_key": "25abc721be8f3b9b9f1dfc61e79d24f45e545cbdc0390680dc5e166cd3f8da26",
+          "campaign": "c-development-20261028",
+          "posting_enabled": false
+        }
+      },
+      {
+        "issue": 19818,
+        "run_id": "final-f-20261028-v9-10-19818-a1",
+        "status": "completed",
+        "before_after_manifest_verified": true,
+        "provider_requests": 1,
+        "preview_only": true,
+        "admission": {
+          "verification_type": "actual local reservation; GitHub identity/branch simulation only",
+          "adapter_run_id": "final-f-20261028-v9-10-19818-a1",
+          "local_context_run_id": "1793174197950948000",
+          "input_key": "582b785a3ab82fea2eb80ca0662cf7dcc38166edd0da06b51e3d43afd184d61e",
+          "rolling_limit": 51,
+          "campaign_limit": 51,
+          "quota_decision_sha256": "169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674",
+          "event_key": "17f4935ac24942631fb24da5157a35d20c8f83c773c1148bf60e40327dd07a3f",
+          "campaign": "c-development-20261028",
+          "posting_enabled": false
+        }
+      }
+    ],
+    "development_archive_sha256": "33e5bf68145a83871ff94324b25694a780e326e119ad48f979d78e8b75620531"
+  },
+  "limitations": [
+    "Provider backend revision unpinned; selected model ID returned is checked, same-ID revisions undetectable.",
+    "Monetary cost unknown; no hard dollar/token cap or guaranteed provider cancellation.",
+    "Host Python/Codex not OS-jailed; host firewall/egress containment unsupported/untested.",
+    "E tasks 46 live queue and 48 phone stop remain blocked; fallback simulations do not verify live controls.",
+    "Hosted engine/login/state/target/release unprovisioned; last read-only preflight found Actions disabled, zero workflows, no triage-state; not reprovisioned.",
+    "Hosted permissions/token placement/bot identity/retention/state contention/queue cancellation untested; final check-to-POST race remains.",
+    "Known purposive development/regression set with accepted #19924 judgement boundary, assistant-informed labels and weaker historical provenance; no generalisation/readiness/time savings claim."
+  ],
+  "prior_control_status": {
+    "E46_live_queue": "blocked; completed labelled fallback",
+    "E48_phone_stop": "blocked; completed labelled fallback",
+    "promotion": false
+  },
+  "development_history": {
+    "corrected_comment_omission": "evals/runs/20261028T050239Z-453163ef/comparison.json",
+    "earlier_corrected_command_output": "evals/runs/20261028T054714Z-72edea74/comparison.json",
+    "uncertainty_failures": [
+      "evals/runs/20261028T050356Z-3f74565e/comparison.json",
+      "evals/runs/20261028T054822Z-b5ee3ae0/comparison.json",
+      "evals/runs/20261028T060932Z-f77abb9c/comparison.json"
+    ],
+    "rubric_review": "evals/checks/gate-d-rubric-review-20261028/verification.json",
+    "E_control_corrections": "evals/checks/gate-e-20261028/gate-e-review.json",
+    "archive": "evals/development-evidence.tar.gz",
+    "archive_sha256": "33e5bf68145a83871ff94324b25694a780e326e119ad48f979d78e8b75620531"
+  },
+  "reviewer": "Codex assistant content review; no independent/blinded human review or Darren approval of individual outputs claimed",
+  "public_actions": [],
+  "deployment": false,
+  "posting": false,
+  "paid_access": false,
+  "submission": false,
+  "G_started": false,
+  "evidence_to_stage_later": "required-evidence-for-g.json"
+}

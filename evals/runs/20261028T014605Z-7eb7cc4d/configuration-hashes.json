@@ -1,0 +1,41 @@
+{
+  "files": {
+    ".claude/skills/eslint-clarification/SKILL.md": "290acdc81c5b4596e58583a1b5d2e7458e638f1e43d3a6e38ef75290a3f0e78e",
+    "scripts/clarifier/config-c-v1.json": "47168336d158b339b14e394913f791c4c02ab5e05a52858e9d68396a1d8497f8",
+    "scripts/clarifier/decision.schema.json": "97bf2f86d7d67d83f8ed2e368e4928e0df9f88185c7335844cab4f0dcfb726a1"
+  },
+  "source_hashes": {
+    "scripts/clarifier/constants.py": "99060c37bba3b9993d33a5156a938f776b16b49e7f3aa16186148f2ea389aa78",
+    "scripts/clarifier/errors.py": "b7ea54db7e1682d14aaeadf4b29e67255017b684141a6deb26d54a21893109ea",
+    "scripts/clarifier/staging.py": "fa34b1777b02b05c176c2bffac25c911c37abb9dc51462f93b86077dba9ea5ab",
+    "scripts/clarifier/skill.py": "0975312879d3bdb843a77f4e60e9b3c81dacb0322138b5a7bee1aadac3e6e9d5",
+    "scripts/clarifier/request.py": "2c918af1581add9413ea8422343753a3d7c29874af9c80bad673362512713040",
+    "scripts/clarifier/transport.py": "46e773b6a9b4d65665a37815aa2b18a4ac4e15f4d2bd025106c257b2ddc28966",
+    "scripts/clarifier/validation.py": "0f36ed1c8858ca82dbdf91db688062fa46062fc6b5a3453fe2c9b926e1470d36",
+    "scripts/clarifier/routing.py": "213de781e2b51cece140c509f9999911aafc975e5d4077a4b3be9360325ca10a",
+    "scripts/clarifier/recording.py": "e69420ec792db5e03e2a80b639548f4381a504e3665c002488b90a74ae707e41",
+    "scripts/clarifier/preview.py": "523d7367ca229a2618f3ed4a56462a32aee52bb561eeaf58bcd4ee8a120d0831",
+    "scripts/clarifier/policy.py": "91688118e8eae4b6a6615f8d39aa29271e0ebeabff5c0581be94894bd1354ced",
+    "scripts/clarifier/identity.py": "56c746e84977a47bc10e37ebd070be2a46301bd89878772f0794f3bcbb937db7",
+    "scripts/clarifier/ledger.py": "242dde75213674da4382c52b94911abb0f0e83baabd7309ab529bb4cccc38504",
+    "scripts/clarifier/github_api.py": "a743a1771e41d023bbc8282c48c2a33a94d853b68ebed3776da3615c740b77fd",
+    "scripts/clarifier/state_store.py": "24a3d07bdd0e9149986bdfc5dfbaff7e473f1654e6093998c770380fa3258a63",
+    "scripts/clarifier/admission.py": "d45ea4e2d43d2385738aee5fff127f64dc2d4db0a82d029891ebbbfe38aa6740",
+    "scripts/clarifier/workflow.py": "2f02133aadaa56c4e0960c7f95363de1bfe3ba74193a93edf412cfb65eb88e33",
+    "scripts/clarifier/workflow_io.py": "6e1e0aa522f952d865224ea2c6203460a08d37fded02e1224691c44319506107",
+    "scripts/clarifier/output_handler.py": "32d68455e1a298f29cf710802df6dad5f765272febcbdd1beca0060786d75616",
+    "scripts/clarifier/release_gate.py": "5657627046aa2f8ce3b9bd3bfe7fea37cb461042c321f91969113f53b5631964",
+    "scripts/clarifier/posting_intent.py": "60a81f68514235ecfe7a44dd416f372845537c1665078fce5c9441f9d0fd78f9",
+    "scripts/clarifier/posting.py": "7d7578b677b10be154180931ef6009a962b00e912a476b6617506ed2d66b8642",
+    "scripts/clarifier/stop.py": "be4c96bc918c9b10303da88d784da03ae882116b8e73659a1771532304e55dcb",
+    "scripts/clarifier/stop_io.py": "17346815486aaf5d054ad3c5ec10d9f824f28026cbcac157373d4598a568f9da",
+    "scripts/clarifier/workflow_audit.py": "ca1b68e5cdc812f93a6f1fd5f1e23912d9950fa255b25758fb7dd59996d84031",
+    "scripts/clarifier/adversarial.py": "ebb7b46e50cf3887eb4225f22e3afbd645fd31928c33ed4ec0b95c2b92dae0eb",
+    "scripts/clarifier/dry_state.py": "6ca4e5786c08bd424b05a2eb8ead124703721a099c4de179dabb523b63538aaf",
+    "scripts/clarifier/c_preview.py": "0a6ad83456b49eeb4bd920c07aa14b87791aa369ed7367fd00a07e182f212492",
+    "scripts/clarifier/tests/fixtures/attacks-v1.json": "50453d53df10165dd7663630a82f736943e7f3960a0bd996ad70ed97568c113b",
+    ".github/workflows/clarifier-triage.yml": "c664721ac0a2ef95aa9761721bc9bc9435e2a1f1b04c21c14e04a9222303c733",
+    ".github/workflows/clarifier-stop.yml": "540861fec0081f2cfe99f2c3a8a387f88306ed22631f70a64f45f304ce7ecfe2"
+  },
+  "aggregate_sha256": "9c382a7d842459e78021bfe53acc646f648865f86f0c36ccfca1eb4c19d61b93"
+}

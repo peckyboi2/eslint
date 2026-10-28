@@ -1,0 +1,12 @@
+{
+  "text": "/* eslint no-console: \"error\" */\n\nconsole[logLevel](\"problem\");\nconsole[42](\"problem\");\n",
+  "options": {
+    "rules": {},
+    "languageOptions": {
+      "sourceType": "module",
+      "parserOptions": {
+        "ecmaFeatures": {}
+      }
+    }
+  }
+}

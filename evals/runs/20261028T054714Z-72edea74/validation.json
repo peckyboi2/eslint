@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": "Could you share a minimal Angular/webpack project that emits this warning, including `tsconfig.angular.json`, any required entry files and remaining webpack setup, `package.json` and its lockfile, plus the exact command used to run the build? The supplied fragment does not show how `@eslint/plugin-kit` enters the TypeScript compilation or how to invoke the reported build path.\n\n**Created by AI (OpenAI Codex, gpt-6.1-sol).**\nPreview run: `20261028T054714Z-72edea74`.",
+  "source_issue": 20606,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "clarify",
+  "validated_output": {
+    "decision": "clarify",
+    "rationale": "The report supplies environment versions, the affected package version, a webpack configuration fragment, and the observed warning. However, the referenced `tsconfig.angular.json`, remaining build setup and dependency records, and triggering build command are absent. The supplied playground contains only a comment and lint settings, not a build reproduction. The tarball listing establishes the reported packaging concern but does not establish a runnable path to the Angular compilation warning.",
+    "clarification": "Could you share a minimal Angular/webpack project that emits this warning, including `tsconfig.angular.json`, any required entry files and remaining webpack setup, `package.json` and its lockfile, plus the exact command used to run the build? The supplied fragment does not show how `@eslint/plugin-kit` enters the TypeScript compilation or how to invoke the reported build path."
+  }
+}

@@ -1,0 +1,2 @@
+Exact staged tree 6f2f416b32a3f32869818c9ad7be66dd5ac15369
+PASS: 168 frozen files, ten isolated packages and exact final comparison; no inference

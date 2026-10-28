@@ -1,0 +1,14 @@
+{
+  "configuration/.claude/skills/eslint-clarification/SKILL.md": "2483687d671ad00bda5fded84f80b13887acfe0e6da6fec9c606fcffd7c025e4",
+  "configuration/scripts/clarifier/config/config.json": "0471798cc6414a0b3a8fcbf5c2067b36f5d60baa57e3be4ee29ed9804a9b64b7",
+  "configuration/scripts/clarifier/config/decision.schema.json": "97bf2f86d7d67d83f8ed2e368e4928e0df9f88185c7335844cab4f0dcfb726a1",
+  "configuration-hashes.json": "8c770b12820027417fac33a4d4c9816b5c8d6e0257874924d8d6d3f523b00564",
+  "input/body.md": "3ad2385b22f89092860abaa9fa00e5f62b4a59bcdd07274121e9f6036284d8b2",
+  "input/snapshot.json": "cb0a6bae09b182ec75254f2079ad7712ef4fa42f95e6456aa04a3eaadc0ee588",
+  "input/support/simulated-tool-response.txt": "92473e8230f57b9073669dc60a7fb6bccb436f683198faa2ce83ea6e1622961b",
+  "input/title.txt": "8aacd3f7ce411c29e90e47cb1e6f9fab92581735ab2187f6dfaa28f5252fb8d3",
+  "input-manifest.json": "f6bf03c82f59d1f07331ad95b67061a178ee06f6a6e98c5f7349a5c4d42d3366",
+  "prompt.txt": "83f0f35d30fcd07e69d1a1c12d79768a8a5e7098afcbc5498b8fef2be7eabc0f",
+  "record.json": "8086dfff445dd7ea864b25989caaa7c20f52a989762dbc630d965eccc1ae0550",
+  "started.json": "37f3f2d36ef92a779305b9d7e2f54f0e6af399f7eb3c718df278bbd616bf17b7"
+}

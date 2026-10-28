@@ -1,0 +1,1 @@
+Initial structural check rejected accidental qualification of artifact filenames while rewriting module patch targets. Corrected before test execution; filenames remain unchanged. No model/platform call occurred.

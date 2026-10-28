@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/verify_baseline.py", line 242, in <module>
+    main()
+    ~~~~^^
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/verify_baseline.py", line 165, in main
+    raise ValueError(f"Unexpected assignment additions: {sorted(unexpected)}")
+ValueError: Unexpected assignment additions: ['DESIGN.md', 'evals/README.md', 'evals/measurement/README.md', 'evals/measurement/SHA256-MANIFEST.json', 'evals/measurement/comment-coding.json', 'evals/measurement/september-results.csv', 'evals/measurement/september-summary.json', 'evals/measurement/source-completeness.json', 'evals/measurement/sources/21293.json', 'evals/measurement/sources/21295.json', 'evals/measurement/sources/21304.json', 'evals/measurement/sources/21314.json', 'evals/measurement/sources/21319.json', 'evals/measurement/sources/21320.json', 'evals/measurement/sources/21321.json', 'evals/measurement/sources/21356.json', 'evals/measurement/sources/21361.json', 'evals/measurement/sources/21368.json', 'evals/measurement/sources/september-search.json']

@@ -44,6 +44,8 @@ MODULE_PATHS = tuple(map(Path, (
     "outputs/posting_intent.py",
     "outputs/posting.py",
     "outputs/release_gate.py",
+    "outputs/campaign.py",
+    "outputs/campaign_metrics.py",
 )))
 PACKAGE_PATHS = tuple(map(Path, (
     "__init__.py",

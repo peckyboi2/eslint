@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["decision", "rationale", "clarification"],
+  "properties": {
+    "decision": {"type": "string", "enum": ["clarify", "no_action", "human_review"]},
+    "rationale": {"type": "string", "minLength": 1, "maxLength": 3000, "pattern": "\\S"},
+    "clarification": {"type": ["string", "null"], "maxLength": 1500}
+  },
+  "oneOf": [
+    {"properties": {"decision": {"const": "clarify"}, "clarification": {"type": "string", "minLength": 1, "pattern": "\\S"}}},
+    {"properties": {"decision": {"enum": ["no_action", "human_review"]}, "clarification": {"type": "null"}}}
+  ]
+}

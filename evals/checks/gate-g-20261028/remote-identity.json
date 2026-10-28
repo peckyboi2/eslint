@@ -1,0 +1,18 @@
+{
+  "verification": "actual read-only gh api; initial sandbox network denied, read-only escalation succeeded",
+  "repository": {
+    "default_branch": "main",
+    "full_name": "peckyboi2/eslint",
+    "html_url": "https://github.com/peckyboi2/eslint",
+    "id": 1435519573,
+    "owner": {
+      "id": 234542779,
+      "login": "peckyboi2"
+    },
+    "private": false,
+    "visibility": "public"
+  },
+  "intended_branch": "ai-workflow",
+  "private_collaborator_requirement": "not applicable: public",
+  "remote_writes": []
+}

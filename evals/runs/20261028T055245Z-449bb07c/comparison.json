@@ -1,0 +1,83 @@
+{
+  "verification_type": "actual isolated selected-engine coding-assistant preview; development retest, not GitHub workflow",
+  "reviewed_at": "2026-10-28T05:53:17.817818+00:00",
+  "reviewer": "Codex implementation review; no Darren human approval of outputs claimed",
+  "source_issue": 21304,
+  "expected_decision": "no_action",
+  "actual_decision": "no_action",
+  "decision_pass": true,
+  "quality": [
+    {
+      "criterion": 1,
+      "result": "pass",
+      "evidence": "Completeness judgement matches the accepted expectation: Recognises self-contained rule configuration, source examples, versions and expected/observed behaviour in text and preserved playground data."
+    },
+    {
+      "criterion": 2,
+      "result": "not_assessable",
+      "evidence": "No proposed comment; comment wording is not assessable."
+    },
+    {
+      "criterion": 3,
+      "result": "not_assessable",
+      "evidence": "No proposed comment; no unnecessary public request."
+    },
+    {
+      "criterion": 4,
+      "result": "pass",
+      "evidence": "Neutral internal judgement without promising a fix or ruling on bug acceptance."
+    },
+    {
+      "criterion": 5,
+      "result": "pass",
+      "evidence": "No diagnosis/fix, reproduction execution or forbidden action; no model tool interface."
+    },
+    {
+      "criterion": 6,
+      "result": "pass",
+      "evidence": "Validated silent output with the selected source identity and no posting target."
+    },
+    {
+      "criterion": 7,
+      "result": "pass",
+      "evidence": "clarification and preview_comment are null; public_actions=[] and posting remains unavailable."
+    }
+  ],
+  "quality_findings": {
+    "unnecessary_questions": [],
+    "missed_clarifications": [],
+    "deferrals": [],
+    "silent_branch_violations": [],
+    "scope_issues": [],
+    "notes": [
+      "Recognises self-contained rule configuration, source examples, versions and expected/observed behaviour in text and preserved playground data.",
+      "Expected no_action; explicitly avoids relying on the unavailable screenshot or fetching links; no unnecessary information request."
+    ]
+  },
+  "actual_rationale": "The report supplies environment versions, the default parser, a self-contained rule configuration, triggering source examples, and expected versus observed behavior. The supplied playground payload also preserves the full input and configuration, including a `g`-flag comparison. This establishes a standalone lint reproduction without relying on the unavailable screenshot or fetching the link.",
+  "actual_clarification": null,
+  "raw_output_sha256": "02578dc5913eccfbcb2b1e6f056c222cf9c6bbe2f65a09a52f9b5d275a6220ce",
+  "configuration_version": "milestone-d-development-v5",
+  "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+  "input_hashes": {
+    "body.md": "ece9b68942dfaa87727c8262eb680c411ab68423dd942b6343b2539717ee065d",
+    "snapshot.json": "87cbd367b2cfbd92e60a180a4be1b8ea0730157f869083904e5ca32c456c23d8",
+    "support/playground-1.json": "dd91fbbef85dbb67997cf6423ac8b32d2f185df690c7205103c470d8a7a8d2bd",
+    "title.txt": "3f041738bb6647ab00e55964978f398bf870a6dc286e93abbf0eeb546a463393"
+  },
+  "boundary_checks": {
+    "selected_input_hashes_match": true,
+    "native_skill_loaded": true,
+    "only_skill_and_selected_evidence_forwarded": true,
+    "outbound_tools": [],
+    "fresh_request": true,
+    "route_issue_matches": true,
+    "temporary_workspace_removed": true
+  },
+  "public_actions": [],
+  "limitations": [
+    "Host trusted rather than OS-jailed; hosted controls unverified.",
+    "Provider backend version unpinned; monetary cost unknown.",
+    "Known development/regression cases, not a final frozen all-ten campaign."
+  ]
+}

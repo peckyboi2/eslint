@@ -1,0 +1,21 @@
+{
+  "version": "milestone-d-development-v3",
+  "engine": "codex-cli",
+  "cli_version": "codex-cli 0.154.0",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "xhigh",
+  "authentication": "existing ChatGPT login; no API key",
+  "input_limit_bytes": 65536,
+  "runtime_limit_seconds": 300,
+  "output_limit_bytes": 16384,
+  "response_limit_bytes": 2097152,
+  "comment_limit_characters": 2000,
+  "max_provider_requests": 1,
+  "mode": "preview",
+  "tools": [],
+  "source_issue": 20373,
+  "sandbox_repository": "peckyboi2/eslint",
+  "sandbox_repository_id": 1435519573,
+  "posting": false,
+  "skill_sha256": "cf48df54b41da49e9a678ed6ede2e202b483acde7674b34681d98c3b3417bf73"
+}

@@ -1,0 +1,22 @@
+test_live_release_is_disabled (tests.test_output_handler.OutputHandlerTests.test_live_release_is_disabled) ... ok
+test_mentions_rejected_even_in_code (tests.test_output_handler.OutputHandlerTests.test_mentions_rejected_even_in_code) ... ok
+test_one_attributed_bounded_plan (tests.test_output_handler.OutputHandlerTests.test_one_attributed_bounded_plan) ... ok
+test_rejected_or_silent_paths_never_write (tests.test_output_handler.OutputHandlerTests.test_rejected_or_silent_paths_never_write) ... ok
+test_scoped_package_in_code_is_safe_but_escaped_or_plain_mentions_are_blocked (tests.test_output_handler.OutputHandlerTests.test_scoped_package_in_code_is_safe_but_escaped_or_plain_mentions_are_blocked) ... ERROR
+
+======================================================================
+ERROR: test_scoped_package_in_code_is_safe_but_escaped_or_plain_mentions_are_blocked (tests.test_output_handler.OutputHandlerTests.test_scoped_package_in_code_is_safe_but_escaped_or_plain_mentions_are_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_output_handler.py", line 57, in test_scoped_package_in_code_is_safe_but_escaped_or_plain_mentions_are_blocked
+    self.assertIn('`@fe/eslint-config`',h.format_comment('Please share `@fe/eslint-config`.',args['ctx'],'trusted-marker'))
+                                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/output_handler.py", line 65, in format_comment
+    if '@' in comment: raise p.PostingBlocked('Public mentions are not permitted')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+policy.PostingBlocked: Public mentions are not permitted
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (errors=1)

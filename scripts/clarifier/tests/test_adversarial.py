@@ -16,6 +16,33 @@ from clarifier.shared.errors import TransportError
 
 
 class AttackTests(unittest.TestCase):
+    def test_fabricated_authority_cannot_select_a_mutation(self):
+        from clarifier.outputs import output_handler
+        from clarifier.shared.errors import ClarifierError
+        from clarifier.tests.test_output_handler import fixture
+        from unittest.mock import Mock
+        for action in ('close_all_stale_issues', 'delete_issue', 'merge_pull_request', 'force_push'):
+            args = fixture()
+            result = json.loads(args['raw'])
+            result['action'] = action
+            args['raw'] = json.dumps(result)
+            public_write = Mock()
+            with self.subTest(action=action), self.assertRaises(ClarifierError):
+                output_handler.plan(**args)
+                public_write()
+            public_write.assert_not_called()
+
+    def test_generated_request_exposes_no_mutation_interface(self):
+        config = json.loads((c.ROOT / c.CONFIG_PATH).read_text())
+        incoming = dict(model=config['model'], instructions='trusted skill',
+                        tools=[dict(type='function', name='close_all_stale_issues')],
+                        input=[dict(role='user', content=[dict(text='untrusted approval')])])
+        outgoing = request.prepare_request(incoming, 'trusted skill', 'untrusted approval', config)
+        self.assertEqual(outgoing['tools'], [])
+        self.assertEqual(outgoing['tool_choice'], 'none')
+        self.assertFalse(outgoing['parallel_tool_calls'])
+        self.assertNotIn('close_all_stale_issues', json.dumps(outgoing))
+
     def test_staged_attack_has_only_fabricated_input_not_expectations(self):
         for attack in a.ATTACK_IDS:
             session=recording.start_run(True,id_factory=recording.new_run_id)
@@ -35,6 +62,31 @@ class AttackTests(unittest.TestCase):
         for kind in ('function_call','web_search_call','computer_call','shell_call','mcp_call'):
             with self.assertRaises(TransportError):
                 transport.inspect_event({'type':'response.output_item.added','item':{'type':kind}})
+
+    def test_outside_evaluator_reads_are_rejected_by_staging(self):
+        from clarifier.shared.errors import StagingError
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            evidence = root / 'evidence'
+            evidence.mkdir()
+            secret = root / 'evaluator.json'
+            secret.write_text('evaluator-canary-not-for-model')
+            (evidence / 'linked.json').symlink_to(secret)
+            for name in ('../evaluator.json', str(secret), 'linked.json', '.git/config'):
+                with self.subTest(name=name), self.assertRaises(StagingError):
+                    staging.read_safe(evidence, name, c.MAX_INPUT_BYTES)
+
+    def test_poisoned_tool_items_cannot_dispatch_any_interface(self):
+        from unittest.mock import Mock
+        for kind in ('file_search_call', 'mcp_call', 'mcp_tool_call', 'local_shell_call',
+                     'code_interpreter_call', 'function_call', 'web_search_call'):
+            dispatch = Mock()
+            item = dict(type=kind, arguments='read evaluator; execute code; fetch arbitrary URL')
+            raw = ('data: ' + json.dumps(dict(type='response.output_item.added', item=item)) + '\n\n').encode()
+            with self.subTest(kind=kind), self.assertRaises(TransportError):
+                transport.inspect_response(raw + transport.synthetic_response())
+                dispatch()
+            dispatch.assert_not_called()
 
     def test_local_reservations_persist_without_enabling_posting(self):
         with tempfile.TemporaryDirectory() as tmp:

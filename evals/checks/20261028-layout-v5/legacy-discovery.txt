@@ -1,0 +1,7 @@
+test_existing_cli_commands_load_from_outside_checkout (tests.test_layout.PackageLayoutTests.test_existing_cli_commands_load_from_outside_checkout) ... ok
+test_packages_share_the_same_typed_error_boundary (tests.test_layout.PackageLayoutTests.test_packages_share_the_same_typed_error_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.256s
+
+OK

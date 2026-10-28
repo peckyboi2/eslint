@@ -15,7 +15,7 @@ from clarifier.controls.state_store import Snapshot, transact
 from clarifier.inference.staging import read_safe
 
 STATE = Path('evals/checks/gate-c-20261028/dry-state.json')
-DEVELOPMENT_DECISION = Path('evals/checks/gate-d-20261028/routing-fix-v3/local-quota-decision.json')
+DEVELOPMENT_DECISION = Path('evals/checks/gate-f-20261028/local-quota-decision.json')
 
 
 class DryStore:

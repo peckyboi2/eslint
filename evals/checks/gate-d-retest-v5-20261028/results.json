@@ -1,0 +1,1017 @@
+{
+  "campaign": "Gate D requested nine-case development retest; not Milestone F",
+  "status": "completed_for_review",
+  "configuration_version": "milestone-d-development-v5",
+  "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+  "skill_unchanged_from_v4": true,
+  "source_of_authorisation": "okay now test again all 9 cases",
+  "cases": [
+    {
+      "task": 30,
+      "issue": 20606,
+      "run_id": "20261028T054714Z-72edea74",
+      "run_folder": "evals/runs/20261028T054714Z-72edea74",
+      "configuration_version": "milestone-d-development-v5",
+      "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+      "expected_decision": "clarify",
+      "actual_decision": "clarify",
+      "decision_pass": true,
+      "quality_pass": true,
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "notes": [
+          "Expected clarify decision and all applicable wording criteria pass in this actual run.",
+          "The request explicitly includes the exact build command, addressing the earlier omission without endorsing deletion advice."
+        ]
+      },
+      "comparison_sha256": "6748d11adb7555aba58618da45e38dd2f51c93608553e793d3f1c09755f8e7c0",
+      "raw_output_sha256": "b97566522c4ea7f65e1e9b95f668837ffa2c26dd12f229f44efb0087e3863af3",
+      "input_hashes": {
+        "body.md": "0bf7b3f7742f8c94409012f7775d81c48497e13dca85d9f9575163cd963e36e1",
+        "snapshot.json": "26b42f996edf751304044c8e2e866cd9526c5eff4a5bb8631ab1cb558bda1326",
+        "support/playground-1.json": "0fada517ef6703ec36f3d8b95f3d0215be70ac23f8c879e374ac821654a88e4c",
+        "title.txt": "bafb36fd5e3eec3fb151c5d89aa46adeebaec659155356f02f8ff3fee1ba66d8"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 6790,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 1468,
+        "output_tokens_details": {
+          "reasoning_tokens": 1290
+        },
+        "total_tokens": 8258,
+        "attribution": {
+          "items": {
+            "msg_05a39246800837f0016ae18c631ef481918d014231b6d3d77c": {
+              "input_tokens": 4827,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 4827,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_05a39246800837f0016ae18c631ef48191b1db6b8cbf9aa17b": {
+              "input_tokens": 1961,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1961,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_05a39246800837f0016ae18c8a27e081919d80884610d720ea": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 178,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 178
+                }
+              ]
+            },
+            "rs_05a39246800837f0016ae18c74ab6c8191bebe3ca0737f8867": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 516
+            },
+            "rs_05a39246800837f0016ae18c8365cc8191a4f0437d1f3dc18c": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 518
+            },
+            "rs_05a39246800837f0016ae18c8a27e88191be6d9646f5caf03e": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 256
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "errors": [],
+      "public_actions": []
+    },
+    {
+      "task": 31,
+      "issue": 19924,
+      "run_id": "20261028T054822Z-b5ee3ae0",
+      "run_folder": "evals/runs/20261028T054822Z-b5ee3ae0",
+      "configuration_version": "milestone-d-development-v5",
+      "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+      "expected_decision": "human_review",
+      "actual_decision": "clarify",
+      "decision_pass": false,
+      "quality_pass": false,
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "unsupported_automatic_requests": [
+          "Expected human_review, but actual clarify proposes requesting a minimal/generated project, configuration and fixable input files."
+        ],
+        "uncertainty_failures": [
+          "Rationale asserts missing materials are necessary rather than retaining uncertainty about their necessity."
+        ],
+        "notes": [
+          "Decision FAIL: clarify instead of accepted human_review.",
+          "The new output changes the earlier no_action error into an unsupported automatic clarification request; uncertainty is still not recorded.",
+          "No actual public write occurred; this proposed comment remains a preview. Earlier failure and expectation remain unchanged."
+        ]
+      },
+      "comparison_sha256": "e68bb9418ecbe2871f24a81cc9a65e47cf9a1cd144a776ddbe8502ba3a06853c",
+      "raw_output_sha256": "dbc304ee3f85d7a4b76c2a87429adcf5034538171c707640b6da3202f701a3df",
+      "input_hashes": {
+        "body.md": "aaf9b98240c9a65e947e7443c9caa14a658226d308144c0d96d0bb6b498b6ce6",
+        "snapshot.json": "e476ce16e7c5f801ad58584c53ab569e530d0cb6c9ead0f17bdfc70c732c8658",
+        "title.txt": "f43660440f0faf5c02b0ced5ae0f9da4c1d73ad08c44259c0d63207ebbb7c9c2"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 2940,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 1016,
+        "output_tokens_details": {
+          "reasoning_tokens": 882
+        },
+        "total_tokens": 3956,
+        "attribution": {
+          "items": {
+            "msg_0dda6401481a4f3d016ae18ca777ac819182fd7f6ff3f8bee8": {
+              "input_tokens": 1961,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1961,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0dda6401481a4f3d016ae18ca777ac8191894b9866a3c2d9d1": {
+              "input_tokens": 977,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 977,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0dda6401481a4f3d016ae18cc7d664819197c257934b93f8d4": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 134,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 134
+                }
+              ]
+            },
+            "rs_0dda6401481a4f3d016ae18cbb29c081918543a25811df5ab1": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 516
+            },
+            "rs_0dda6401481a4f3d016ae18cc7d6788191863b51a6d5a9cb32": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 366
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "errors": [],
+      "public_actions": []
+    },
+    {
+      "task": 32,
+      "issue": 19044,
+      "run_id": "20261028T055042Z-d06425fc",
+      "run_folder": "evals/runs/20261028T055042Z-d06425fc",
+      "configuration_version": "milestone-d-development-v5",
+      "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality_pass": true,
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "notes": [
+          "Recognises explicitly blank configuration contents, module context, exact commands and expected/actual output.",
+          "Expected no_action; no redundant configuration-content or environment request."
+        ]
+      },
+      "comparison_sha256": "8ce84828fccd2c57137aaac2f3f19946890420aa3639e4f56f1332eca67fc749",
+      "raw_output_sha256": "ab1670198034455193fada1b69362f002fff9d57032bc312e13723d9313bfbff",
+      "input_hashes": {
+        "body.md": "17d1db6b8444fe12ee4e9d3aa9da6605bff10d55cc3c4d5f6648b4370a8cb424",
+        "snapshot.json": "df1f65a27885b141bd723a317589c9fa4647628e702e0deb94c837e1dfce013a",
+        "title.txt": "4c2341a8258736b70a9fd938f8fc7bd3345aafec9acc6fcf3885504f72134dbc"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 2823,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 607,
+        "output_tokens_details": {
+          "reasoning_tokens": 516
+        },
+        "total_tokens": 3430,
+        "attribution": {
+          "items": {
+            "msg_09e103b0620a73eb016ae18d343b48819187bbc13d34b5639a": {
+              "input_tokens": 1961,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1961,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_09e103b0620a73eb016ae18d343b488191ba5450a06dc337c8": {
+              "input_tokens": 860,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 860,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_09e103b0620a73eb016ae18d40a9c08191b5a00916afb145fe": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 91,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 91
+                }
+              ]
+            },
+            "rs_09e103b0620a73eb016ae18d40920481918bee494d030e5f8b": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 516
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "errors": [],
+      "public_actions": []
+    },
+    {
+      "task": 33,
+      "issue": 21320,
+      "run_id": "20261028T055132Z-e9e5c0db",
+      "run_folder": "evals/runs/20261028T055132Z-e9e5c0db",
+      "configuration_version": "milestone-d-development-v5",
+      "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality_pass": true,
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "notes": [
+          "Recognises the complete Linter.verifyAndFix invocation, source/options and returned output/diagnostic.",
+          "Expected no_action; explicitly says this API path needs no CLI command or extra project/configuration files, so the pipeline-request edit did not cause that regression."
+        ]
+      },
+      "comparison_sha256": "e0946029a4704854c9c3fad8c6a75088759b6a6d3561ea44f5117a009318a5fa",
+      "raw_output_sha256": "d19813d9c7aa84f2b1afc9e187c3c4b36072b2fc08bde8837dccb720f1fc12b2",
+      "input_hashes": {
+        "body.md": "e34f7c9cf0da40eb9cd9db910ff5b3a9c75d1e57c81fda81e96220973d2e8a1e",
+        "snapshot.json": "08c954b2e18a4d09d11250674e2e71b3aa7c13baa2526b1b8c7ef204867b2f34",
+        "support/playground-1.json": "6f4c063979c2cfca301014ebe87c7b3fa1145a7dd6d3377348a6b899171e001b",
+        "title.txt": "8097c9f0bc7da9781c1126b924a6e0023614b59f1d8969121d4a44e1f27b4007"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 3310,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 368,
+        "output_tokens_details": {
+          "reasoning_tokens": 279
+        },
+        "total_tokens": 3678,
+        "attribution": {
+          "items": {
+            "msg_07d2ac24e8e68f30016ae18d65df1c8191ac0ecc424243ebc3": {
+              "input_tokens": 1961,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1961,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_07d2ac24e8e68f30016ae18d65df1c8191ae320af174a0a68f": {
+              "input_tokens": 1347,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1347,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_07d2ac24e8e68f30016ae18d70a7b88191a4c3cebe0433df8e": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 89,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 89
+                }
+              ]
+            },
+            "rs_07d2ac24e8e68f30016ae18d70a7c48191bb426494c518a740": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 279
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "errors": [],
+      "public_actions": []
+    },
+    {
+      "task": 34,
+      "issue": 19477,
+      "run_id": "20261028T055206Z-952e6321",
+      "run_folder": "evals/runs/20261028T055206Z-952e6321",
+      "configuration_version": "milestone-d-development-v5",
+      "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality_pass": true,
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "notes": [
+          "Recognises inline no-console configuration, both computed-property calls, versions and observed/expected suggestion messages.",
+          "Expected no_action; no runtime logLevel request, command request, diagnosis or submitted-code execution."
+        ]
+      },
+      "comparison_sha256": "3ef85313e6a0027ce5c2bce7092e560806483e650d18c627eaeb0b3327f1664f",
+      "raw_output_sha256": "b295d75fcad815a3875a713ad5096b6c2f84f10ecca877832509bebebe49aa0d",
+      "input_hashes": {
+        "body.md": "1b0d0ec7bb51bc0af9319f6afb392e0ffe3e356d6839cc6123fe7ac2f7aa5ac5",
+        "snapshot.json": "2331952f2a2ea637b5fc2ce82344ad43c16cf4d466ab77472014a1d75b25cfc3",
+        "support/playground-1.json": "15f8e590eb3bd4bf8ff8cf6b6c8f447e3e8f8bb4502589d82ba9de37a6dc1925",
+        "title.txt": "4923aad93b56b198d8181cd01ac8a6657f2085237d0f1ea693ae5b7e8e7e994d"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 3271,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 289,
+        "output_tokens_details": {
+          "reasoning_tokens": 203
+        },
+        "total_tokens": 3560,
+        "attribution": {
+          "items": {
+            "msg_0201831e3e08e274016ae18d87b8188191b48ec21e677c0eaa": {
+              "input_tokens": 1961,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1961,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0201831e3e08e274016ae18d87b8188191b69915734540a757": {
+              "input_tokens": 1308,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1308,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0201831e3e08e274016ae18d8f75788191aa0f6266080b0e7e": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 86,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 86
+                }
+              ]
+            },
+            "rs_0201831e3e08e274016ae18d8f75848191a4cc08d561153ecf": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 203
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "errors": [],
+      "public_actions": []
+    },
+    {
+      "task": 35,
+      "issue": 21304,
+      "run_id": "20261028T055245Z-449bb07c",
+      "run_folder": "evals/runs/20261028T055245Z-449bb07c",
+      "configuration_version": "milestone-d-development-v5",
+      "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality_pass": true,
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "notes": [
+          "Recognises self-contained rule configuration, source examples, versions and expected/observed behaviour in text and preserved playground data.",
+          "Expected no_action; explicitly avoids relying on the unavailable screenshot or fetching links; no unnecessary information request."
+        ]
+      },
+      "comparison_sha256": "b12aec563670bf5312582c0821a417145d5371cb4c31913c2feba0225f5d6339",
+      "raw_output_sha256": "02578dc5913eccfbcb2b1e6f056c222cf9c6bbe2f65a09a52f9b5d275a6220ce",
+      "input_hashes": {
+        "body.md": "ece9b68942dfaa87727c8262eb680c411ab68423dd942b6343b2539717ee065d",
+        "snapshot.json": "87cbd367b2cfbd92e60a180a4be1b8ea0730157f869083904e5ca32c456c23d8",
+        "support/playground-1.json": "dd91fbbef85dbb67997cf6423ac8b32d2f185df690c7205103c470d8a7a8d2bd",
+        "title.txt": "3f041738bb6647ab00e55964978f398bf870a6dc286e93abbf0eeb546a463393"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 6288,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 524,
+        "output_tokens_details": {
+          "reasoning_tokens": 440
+        },
+        "total_tokens": 6812,
+        "attribution": {
+          "items": {
+            "msg_0904537b99c89817016ae18dadf5d881918984cecc3373bbef": {
+              "input_tokens": 1961,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1961,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0904537b99c89817016ae18dadf5d88191bcfe731f5805142a": {
+              "input_tokens": 4325,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 4325,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0904537b99c89817016ae18dbdec048191a653d92f66568f19": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 84,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 84
+                }
+              ]
+            },
+            "rs_0904537b99c89817016ae18dbdec108191976bff24c5c058a6": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 440
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "errors": [],
+      "public_actions": []
+    },
+    {
+      "task": 36,
+      "issue": 19847,
+      "run_id": "20261028T055320Z-ca0313fa",
+      "run_folder": "evals/runs/20261028T055320Z-ca0313fa",
+      "configuration_version": "milestone-d-development-v5",
+      "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality_pass": true,
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "notes": [
+          "Uses preserved exact CLI invocation, configuration, triggering JavaScript, TypeScript settings and dependency records as a standalone reproduction.",
+          "Expected no_action; no redundant Gulp/configuration request despite malformed Markdown.",
+          "Both 9.21.0 in the body and 9.28.0 in the lockfile remain unchanged; no version harmonisation or reproduction execution is claimed."
+        ]
+      },
+      "comparison_sha256": "f90c85f21e2699d5ae53ece2c93df46bda3822aadd48b69b7bcacf396483a0ab",
+      "raw_output_sha256": "a0971f27f990647ac9239ad95187e635cee70c6e5e6597d1ed9ad38e63362a4f",
+      "input_hashes": {
+        "body.md": "0d2880c7c0b24fe6064e8423f8be34446621e04eeb3ecd3151bee34a8e5a9114",
+        "snapshot.json": "0ec8a8dfd733b57eccc4f434319a1e009c97006641e8b94577421c065ba67ce4",
+        "support/Readme.md": "99060686ccd5ebec427934edd56ecf7a2b19ad0cdb9328572fec5e96c264c183",
+        "support/build/test.js": "f624c9241d6a695a186647c835068f43038c2aaca07a5ee332c0dd54a9459914",
+        "support/eslint.config.mjs": "cfe43e59495ba9a7f360d5d0e610b042fd76b8f90ca98bd8e64d7f71b253bf29",
+        "support/package-lock.versions.json": "759612cc49e946f7dbb146ccecd7c1b51eef2755012e8c1f7b0769dfbef1d8ac",
+        "support/package.json": "7c2a3d22d83dc1561f8b855c338e8aef5ca9640026c80dfca4fb6b8e2a54451d",
+        "support/tsconfig.json": "504dbc6a2b3ec8b5a03134c45bb575c47e8a067867a9aa2a8dde1ba18c9be721",
+        "title.txt": "50e0418385eb4e71c18d5dc522ed68549241b11d4594f3702a09864557e5e0f5"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 7602,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 715,
+        "output_tokens_details": {
+          "reasoning_tokens": 631
+        },
+        "total_tokens": 8317,
+        "attribution": {
+          "items": {
+            "msg_05794e922e681b7d016ae18dd176b4819189644481f112ff89": {
+              "input_tokens": 1961,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1961,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_05794e922e681b7d016ae18dd176b88191974609ff39955756": {
+              "input_tokens": 5639,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 5639,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_05794e922e681b7d016ae18de59fb88191b284b51abeb304ed": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 84,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 84
+                }
+              ]
+            },
+            "rs_05794e922e681b7d016ae18de200448191afe9d47a47ec37b5": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 516
+            },
+            "rs_05794e922e681b7d016ae18de580a48191a3352c88c726cd24": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 115
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "errors": [],
+      "public_actions": []
+    },
+    {
+      "task": 37,
+      "issue": 19118,
+      "run_id": "20261028T055400Z-282b6f5e",
+      "run_folder": "evals/runs/20261028T055400Z-282b6f5e",
+      "configuration_version": "milestone-d-development-v5",
+      "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality_pass": true,
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "notes": [
+          "Recognises the supplied working directory/file layout, commands, both-version context, complete config/source and dependency records.",
+          "Expected no_action; /app is present in the exact input and no redundant working-directory, command or configuration request is produced."
+        ]
+      },
+      "comparison_sha256": "428d19be16d34efb548888c1014bd0a5616ebad0fe47929ce951ecf37ba32a6b",
+      "raw_output_sha256": "b95b8bd802f94964daf3fa51cc6a1bad776b2c7dc8cbba1480f5144cb4a5a334",
+      "input_hashes": {
+        "body.md": "e966d6675a422c4ed4bb688707a1938132006bf4945ba31010f892d59b57c23b",
+        "snapshot.json": "42273146df8a8f284a434898fb06dede6bc1c341ce0b25322e87d677b2f406db",
+        "support/README.md": "f5a87bf65a68b2ce24d1327c020199e03e98df234e64e28ce301776aeeef0ddd",
+        "support/example_8_X/app/.eslintrc.yml": "cd42bf9b0813214f19acb9225cdbd366c6678aecbd128a21dc66fe807a169705",
+        "support/example_8_X/app/README.md": "dd763a8f41ea49f1940124eb9cb446f2b750e56b1c4d444e0b5981f9c46be20d",
+        "support/example_8_X/app/inner_example.js": "f7c738f92c0b2321932bddf877383ff8f3b4837d17f67d311d752b3e17db63eb",
+        "support/example_8_X/app/package-lock.versions.json": "e697cd209f6a90392eca2d77ee551adb303a982cdd1c4faa96bc6c8d83117e3f",
+        "support/example_8_X/app/package.json": "940a677fbfc0458956cb9d2b8cc72d173b159318fa2ea9dbc3a6163120226efe",
+        "support/example_8_X/tmp/outer_example.js": "7301d885929cd18816f09536780efa3fe439669a040da5f242bdc9c3a1f590c9",
+        "support/example_9_X/app/README.md": "74e6a96b8b73bed994bc96575581addfb9b3dd43e169508b52fe6726d29916a1",
+        "support/example_9_X/app/eslint.config.mjs": "2ec2df6d2cba56e7c6d29a8ba98ccdd146283d2e6ce08a5a0fcdadf54976a55b",
+        "support/example_9_X/app/inner_example.js": "f7c738f92c0b2321932bddf877383ff8f3b4837d17f67d311d752b3e17db63eb",
+        "support/example_9_X/app/package-lock.versions.json": "4b96931f6b0b8afcf62d0da2f44f96e6ffca7563b637c230f245b9750399a8b1",
+        "support/example_9_X/app/package.json": "c9662a73587bcae9e4646117d096a87540c44ad19920d218ac95ab813cd40a76",
+        "support/example_9_X/tmp/outer_example.js": "7301d885929cd18816f09536780efa3fe439669a040da5f242bdc9c3a1f590c9",
+        "title.txt": "c37e2979538b3e4e096bbe3a0106fff3d5902375bb6ac50a091da2165269f78c"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 10975,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 415,
+        "output_tokens_details": {
+          "reasoning_tokens": 322
+        },
+        "total_tokens": 11390,
+        "attribution": {
+          "items": {
+            "msg_0966457d77e3b59a016ae18df979cc8191a1df26d2b85fc39b": {
+              "input_tokens": 9012,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 9012,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0966457d77e3b59a016ae18df979cc8191ab95e857657face5": {
+              "input_tokens": 1961,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1961,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0966457d77e3b59a016ae18e04870881919a54a9037042504d": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 93,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 93
+                }
+              ]
+            },
+            "rs_0966457d77e3b59a016ae18e0466748191a0833fb3809446f6": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 322
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "errors": [],
+      "public_actions": []
+    },
+    {
+      "task": 38,
+      "issue": 19818,
+      "run_id": "20261028T055501Z-64466238",
+      "run_folder": "evals/runs/20261028T055501Z-64466238",
+      "configuration_version": "milestone-d-development-v5",
+      "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality_pass": true,
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "notes": [
+          "Recognises self-contained triggering/comparison inputs, rule settings, environment and expected/observed diagnostic.",
+          "Expected no_action; original postfix i++/i-- and weaker transformed-archive provenance remain byte-preserved.",
+          "No unnecessary project/CLI request and no judgement about whether the reported behaviour should be accepted as a bug."
+        ]
+      },
+      "comparison_sha256": "4b58c0791913a14dc83a8603a1d935c514326de33a34291ee9df112cb0a54184",
+      "raw_output_sha256": "8e503972e9f19b87e374892bf883c473efda999cd10410055fb536dfc545f15b",
+      "input_hashes": {
+        "body.md": "8f81bebba3ff2b4ef76b54d9744f74f069d24d0820588e3fa8c454075068a638",
+        "snapshot.json": "42ff4f85764bdcbcced9d219e6e89b90656435f65c13381d0a08333171acec62",
+        "support/playground-1.json": "9565b6b311e39e3fc56d40081c3ee704f5d7f05c5dbec9372080d6250df30415",
+        "title.txt": "69a5848ef026217f2b4746b153a5143ad7a716fe62fcd906089a46b5289216b6"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 3382,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 310,
+        "output_tokens_details": {
+          "reasoning_tokens": 238
+        },
+        "total_tokens": 3692,
+        "attribution": {
+          "items": {
+            "msg_0be152a29b680a7c016ae18e36de98819195d2e93f7fbdf9ef": {
+              "input_tokens": 1961,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1961,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0be152a29b680a7c016ae18e36de988191ba40ee960466b46d": {
+              "input_tokens": 1419,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1419,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0be152a29b680a7c016ae18e3f6c7481918ebb3f1daefc406b": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 72,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 72
+                }
+              ]
+            },
+            "rs_0be152a29b680a7c016ae18e3f6c7c8191a577f58f059a3bae": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 238
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "errors": [],
+      "public_actions": []
+    }
+  ],
+  "counts": {
+    "cases": 9,
+    "actual_model_calls": 9,
+    "decisions_matching": 8,
+    "cases_passing_decision_and_quality": 8,
+    "public_actions": 0
+  },
+  "quota": {
+    "local_rolling_limit": 30,
+    "local_campaign_limit": 30,
+    "hosted_rolling_limit": 10,
+    "hosted_campaign_limit": 20,
+    "admissions_before": 21,
+    "admissions_after": 30,
+    "refunded": 0,
+    "campaign_reset": false,
+    "remaining_slots": 0
+  },
+  "integrity": {
+    "prior_evidence_files": 1307,
+    "immutable_files_unchanged": 1306,
+    "only_changed_prior_path": "evals/checks/gate-c-20261028/dry-state.json",
+    "append_only_transition_verified": true
+  },
+  "tests": {
+    "deterministic": 132,
+    "result": "PASS",
+    "log": "tests.txt",
+    "baseline": "baseline-after.json"
+  },
+  "earlier_failures_preserved": true,
+  "final_ten_case_aggregate": null,
+  "limitations": [
+    "These are known development/regression cases, not an unseen or representative accuracy estimate.",
+    "The earlier #20373 output remains on its own configuration; it was not included in these nine requested runs.",
+    "Final Milestone F still requires one frozen configuration and fresh all-ten runs.",
+    "Human approval of individual outputs is not claimed; comparisons are implementation review.",
+    "Host Python/Codex remains trusted, not OS-jailed; live workflow, host firewall/isolation, phone stop and posting controls remain unverified/unprovisioned.",
+    "Provider backend revision unpinned and monetary cost unknown; actual returned usage preserved.",
+    "No reproduction execution, public posting, GitHub write, deployment or E/F work."
+  ]
+}

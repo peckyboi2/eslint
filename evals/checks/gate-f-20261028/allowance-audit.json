@@ -1,0 +1,16 @@
+{
+  "reservations_before": 41,
+  "reservations_after": 41,
+  "admissions_unchanged": true,
+  "decisions_append_only": true,
+  "new_decision": {
+    "action": "extend-local-preview",
+    "actor_id": 234542779,
+    "at": 1793173535,
+    "reason": "Owner approved local preview limits rolling=51 campaign=51; decision SHA-256 169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674"
+  },
+  "hosted_limits": [
+    10,
+    20
+  ]
+}

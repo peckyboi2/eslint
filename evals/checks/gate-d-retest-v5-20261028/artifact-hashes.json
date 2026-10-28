@@ -1,0 +1,21 @@
+{
+  "active-v5/configuration/.claude/skills/eslint-clarification/SKILL.md": "2483687d671ad00bda5fded84f80b13887acfe0e6da6fec9c606fcffd7c025e4",
+  "active-v5/configuration/scripts/clarifier/config/config.json": "0471798cc6414a0b3a8fcbf5c2067b36f5d60baa57e3be4ee29ed9804a9b64b7",
+  "active-v5/configuration/scripts/clarifier/config/decision.schema.json": "97bf2f86d7d67d83f8ed2e368e4928e0df9f88185c7335844cab4f0dcfb726a1",
+  "active-v5/configuration-hashes.json": "8c770b12820027417fac33a4d4c9816b5c8d6e0257874924d8d6d3f523b00564",
+  "baseline-after.json": "6f88561128a7c79a30a3fd78c97a1d9178239ad98e8ce2db6ed2879a68086765",
+  "baseline-before.json": "3afd4c66e6f51f3d2f94d9a289108103e73e914bf5176d0068fcb772fc212834",
+  "failure-follow-up.json": "f85d8d2a75bd419b9ff7cf3b2d41d56054dcd2baabad4a4dd258f59598290ca5",
+  "integrity.json": "1edfca2302ae0e3e490d6698af8eb20c30b7d3131e53950e6841ce80e3706f2c",
+  "local-quota-decision.json": "519285567d4a7ea19e328baac6c6c0665e3adc7302170bb419da99f3cc7883f4",
+  "pre-extension-state.json": "611f867d642447515629f43c37042f331c7107afc5aab5210cf0805dd2d6b123",
+  "preparation.json": "5162abd36ddc65a2a7e805c5ef8e87d603a11300b54d4dd77a7d8587f945e514",
+  "prior-evidence-hashes.json": "f38c9118b58e87001e3b8765ee99b698a295642c07c4cbedaf24de5f4da2451f",
+  "prior-v4/configuration/.claude/skills/eslint-clarification/SKILL.md": "2483687d671ad00bda5fded84f80b13887acfe0e6da6fec9c606fcffd7c025e4",
+  "prior-v4/configuration/scripts/clarifier/config/config.json": "f65746e9425347301a775afdf79c62296784c5c8cce9de374d4df189e2087b22",
+  "prior-v4/configuration/scripts/clarifier/config/decision.schema.json": "97bf2f86d7d67d83f8ed2e368e4928e0df9f88185c7335844cab4f0dcfb726a1",
+  "prior-v4/configuration-hashes.json": "162948f7d1597efffa1ec7e1744a3f69910e027dc6badf29aa7532185f4fdf40",
+  "results.json": "3000513d9899b7f703d9d6836e177ef3f2d63eb286bcaf912b95c55d5fced81a",
+  "tests.txt": "d88a45a5ca80ea4bb2627ee78e3bea9c51818e27d862481b8b96f1d6ee0ddd20",
+  "verification.json": "d104b9ebf540f5b1c34d2f5d397a9174498a00f3022c97b3bef3fc392dc5fe37"
+}

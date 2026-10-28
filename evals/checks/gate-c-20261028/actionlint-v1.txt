@@ -1,0 +1,4 @@
+.github/workflows/clarifier-triage.yml:14:3: unexpected key "queue" for "concurrency" section. expected one of "cancel-in-progress", "group" [syntax-check]
+   |
+14 |   queue: single
+   |   ^~~~~~

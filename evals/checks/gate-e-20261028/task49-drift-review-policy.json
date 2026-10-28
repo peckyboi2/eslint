@@ -1,0 +1,32 @@
+{
+  "owner": "Darren Peck",
+  "implemented": "scripts/check_regression.py: bounded evaluator-only observation check against pinned golden-v1 bytes; explicit failure reasons and no automatic promotion",
+  "synthetic_demonstration": [
+    "task49-review-failure-v1.json",
+    "task49-review-correction-v2.json"
+  ],
+  "review_schedule": {
+    "before_promotion": "All ten fresh previews under one final frozen configuration in separately authorised F; Darren reviews each decision/comment and all failures",
+    "after_change": "Repeat after any model/instructions/configuration/tool/permission change; retain previous campaign",
+    "while_enabled": "Manual owner review and all-ten regression rerun weekly; no scheduler/automation is provisioned",
+    "on_failure": "Keep posting disabled; surface report to Darren; preserve failed output; changes require a new configuration and fresh reruns, never relabel golden-v1"
+  },
+  "model_pin": {
+    "requested": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "cli": "codex-cli 0.154.0 with binary hash in runs",
+    "backend_revision": "unknown/unpinned",
+    "limits": "Same model ID can hide provider changes; cannot automatically detect them until observable output drift/retest or provider notice"
+  },
+  "known_genuine_d_failure": {
+    "issue": 19924,
+    "expected": "human_review",
+    "actual": "no_action",
+    "configuration": "milestone-d-development-v6",
+    "comparison": "evals/runs/20261028T060932Z-f77abb9c/comparison.json",
+    "interpretation": "Plausible competing judgement but failed accepted expectation; unchanged and not tuned here"
+  },
+  "human_approval_obtained": false,
+  "final_campaign_started": false,
+  "public_actions": []
+}

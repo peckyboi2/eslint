@@ -1,0 +1,1401 @@
+{
+  "url": "https://github.com/eslint/eslint/issues/21361",
+  "retrieved_at": "2026-10-26T13:16:45.393696+00:00",
+  "data": {
+    "id": "I_kwDOAKjKDc8AAAABTgGUjg",
+    "number": 21361,
+    "repository": {
+      "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+      "databaseId": 11061773,
+      "name": "eslint",
+      "isArchived": false,
+      "nameWithOwner": "eslint/eslint",
+      "viewerCanInteract": false,
+      "viewerInteractionLimitReasonHTML": "",
+      "slashCommandsEnabled": false,
+      "visibility": "PUBLIC",
+      "viewerCanPush": false,
+      "owner": {
+        "__typename": "Organization",
+        "login": "eslint",
+        "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+        "url": "https://github.com/eslint",
+        "databaseId": 6019716,
+        "name": "ESLint",
+        "issueFieldsEnabled": true,
+        "issueFields": {
+          "totalCount": 0
+        },
+        "pinnedIssueFields": {
+          "nodes": []
+        }
+      },
+      "isPrivate": false,
+      "isWritable": true,
+      "isOwnerEnterpriseManaged": false,
+      "viewerCanPinIssues": false,
+      "isCopilotAgentEnabled": null,
+      "issueTypes": {
+        "edges": [
+          {
+            "node": {
+              "id": "IT_kwDOAFvahM4AB8CR"
+            }
+          },
+          {
+            "node": {
+              "id": "IT_kwDOAFvahM4AB8CU"
+            }
+          },
+          {
+            "node": {
+              "id": "IT_kwDOAFvahM4AB8CW"
+            }
+          }
+        ]
+      },
+      "viewerIssueCreationPermissions": {
+        "triageable": false
+      },
+      "pinnedIssues": {
+        "totalCount": 1
+      }
+    },
+    "viewerCanAssign": false,
+    "viewerCanLabel": false,
+    "viewerCanSetMilestone": false,
+    "viewerCanSetFields": false,
+    "viewerCanType": false,
+    "viewerCanUpdateMetadata": false,
+    "issueType": null,
+    "assignedActors": {
+      "nodes": [
+        {
+          "__typename": "User",
+          "__isActor": "User",
+          "id": "MDQ6VXNlcjMyNjMzNjk3",
+          "login": "sethamus",
+          "name": null,
+          "profileResourcePath": "/sethamus",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/32633697?s=64&u=5e5d273fc85b088cb332b2181dc242700a65f7fc&v=4",
+          "__isNode": "User"
+        }
+      ]
+    },
+    "labels": {
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "Mw"
+      },
+      "edges": [
+        {
+          "node": {
+            "id": "MDU6TGFiZWwxMzExMDYyMjk=",
+            "fullDatabaseId": "131106229",
+            "color": "0052cc",
+            "name": "accepted",
+            "nameHTML": "accepted",
+            "description": "There is consensus among the team that this change meets the criteria for inclusion",
+            "url": "https://github.com/eslint/eslint/labels/accepted",
+            "archivedAt": null
+          }
+        },
+        {
+          "node": {
+            "id": "MDU6TGFiZWw0NTcxMTM1MA==",
+            "fullDatabaseId": "45711350",
+            "color": "fc2929",
+            "name": "bug",
+            "nameHTML": "bug",
+            "description": "ESLint is working incorrectly",
+            "url": "https://github.com/eslint/eslint/labels/bug",
+            "archivedAt": null
+          }
+        },
+        {
+          "node": {
+            "id": "MDU6TGFiZWwyNzg2ODIzNTMy",
+            "fullDatabaseId": "2786823532",
+            "color": "7A14E9",
+            "name": "repro:yes",
+            "nameHTML": "repro:yes",
+            "description": "Issues with a reproducible example",
+            "url": "https://github.com/eslint/eslint/labels/repro%3Ayes",
+            "archivedAt": null
+          }
+        }
+      ]
+    },
+    "milestone": null,
+    "issueFieldValues": {
+      "nodes": []
+    },
+    "projectItems": {
+      "edges": [
+        {
+          "node": {
+            "id": "PVTI_lADOAFvahM4AKMzDzg9CeDU",
+            "isArchived": false,
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "template": false,
+              "viewerCanUpdate": false,
+              "url": "https://github.com/orgs/eslint/projects/3",
+              "field": {
+                "__typename": "ProjectV2SingleSelectField",
+                "databaseId": 26615641,
+                "id": "PVTSSF_lADOAFvahM4AKMzDzgGWH1k",
+                "name": "Status",
+                "options": [
+                  {
+                    "id": "1fbeffee",
+                    "optionId": "1fbeffee",
+                    "name": "Needs Triage",
+                    "nameHTML": "Needs Triage",
+                    "color": "GRAY",
+                    "descriptionHTML": "Issues/PRs that haven't yet been addressed by a team member.",
+                    "description": "Issues/PRs that haven't yet been addressed by a team member."
+                  },
+                  {
+                    "id": "3d3a611f",
+                    "optionId": "3d3a611f",
+                    "name": "Triaging",
+                    "nameHTML": "Triaging",
+                    "color": "GRAY",
+                    "descriptionHTML": "Issues/PRs currently being triaged by a team member to determine if all of the necessary information is present.",
+                    "description": "Issues/PRs currently being triaged by a team member to determine if all of the necessary information is present."
+                  },
+                  {
+                    "id": "195dd2d3",
+                    "optionId": "195dd2d3",
+                    "name": "Ready for Dev Team",
+                    "nameHTML": "Ready for Dev Team",
+                    "color": "GRAY",
+                    "descriptionHTML": "Issues/PRs that have been properly triaged and are ready for the dev team to analyze.",
+                    "description": "Issues/PRs that have been properly triaged and are ready for the dev team to analyze."
+                  },
+                  {
+                    "id": "fb5d77af",
+                    "optionId": "fb5d77af",
+                    "name": "Evaluating",
+                    "nameHTML": "Evaluating",
+                    "color": "YELLOW",
+                    "descriptionHTML": "Issues/PRs being evaluated by a team member before deciding how to proceed.",
+                    "description": "Issues/PRs being evaluated by a team member before deciding how to proceed."
+                  },
+                  {
+                    "id": "b09513bc",
+                    "optionId": "b09513bc",
+                    "name": "Feedback Needed",
+                    "nameHTML": "Feedback Needed",
+                    "color": "YELLOW",
+                    "descriptionHTML": "Issues/PRs where a team member is requesting feedback from the larger team.",
+                    "description": "Issues/PRs where a team member is requesting feedback from the larger team."
+                  },
+                  {
+                    "id": "f489065d",
+                    "optionId": "f489065d",
+                    "name": "Waiting for RFC",
+                    "nameHTML": "Waiting for RFC",
+                    "color": "PURPLE",
+                    "descriptionHTML": "Issues/PRs that are waiting for an RFC before further evaluating.",
+                    "description": "Issues/PRs that are waiting for an RFC before further evaluating."
+                  },
+                  {
+                    "id": "6a71a348",
+                    "optionId": "6a71a348",
+                    "name": "RFC Opened",
+                    "nameHTML": "RFC Opened",
+                    "color": "PURPLE",
+                    "descriptionHTML": "Issues/PRs that have an RFC opened and under review.",
+                    "description": "Issues/PRs that have an RFC opened and under review."
+                  },
+                  {
+                    "id": "5f6d9328",
+                    "optionId": "5f6d9328",
+                    "name": "Blocked",
+                    "nameHTML": "Blocked",
+                    "color": "RED",
+                    "descriptionHTML": "Issues/PRs that cannot be progressed due to some constraint.",
+                    "description": "Issues/PRs that cannot be progressed due to some constraint."
+                  },
+                  {
+                    "id": "aff067e3",
+                    "optionId": "aff067e3",
+                    "name": "Ready to Implement",
+                    "nameHTML": "Ready to Implement",
+                    "color": "GREEN",
+                    "descriptionHTML": "Issues that have been accepted and are ready to be implemented.",
+                    "description": "Issues that have been accepted and are ready to be implemented."
+                  },
+                  {
+                    "id": "8b3eb8e0",
+                    "optionId": "8b3eb8e0",
+                    "name": "Implementing",
+                    "nameHTML": "Implementing",
+                    "color": "GREEN",
+                    "descriptionHTML": "Accepted issues with open PRs and accepted PRs.",
+                    "description": "Accepted issues with open PRs and accepted PRs."
+                  },
+                  {
+                    "id": "34a9e837",
+                    "optionId": "34a9e837",
+                    "name": "Second Review Needed",
+                    "nameHTML": "Second Review Needed",
+                    "color": "GREEN",
+                    "descriptionHTML": "Pull requests that already have one approval and are looking for a second before merging.",
+                    "description": "Pull requests that already have one approval and are looking for a second before merging."
+                  },
+                  {
+                    "id": "45ca0cff",
+                    "optionId": "45ca0cff",
+                    "name": "Merge Candidates",
+                    "nameHTML": "Merge Candidates",
+                    "color": "GREEN",
+                    "descriptionHTML": "Pull requests that have been approved and are likely ready for merge but would like one more check.",
+                    "description": "Pull requests that have been approved and are likely ready for merge but would like one more check."
+                  },
+                  {
+                    "id": "06ca0d48",
+                    "optionId": "06ca0d48",
+                    "name": "Complete",
+                    "nameHTML": "Complete",
+                    "color": "GRAY",
+                    "descriptionHTML": "",
+                    "description": ""
+                  }
+                ],
+                "__isNode": "ProjectV2SingleSelectField"
+              },
+              "closed": false,
+              "number": 3,
+              "hasReachedItemsLimit": false
+            },
+            "fieldValueByName": {
+              "__typename": "ProjectV2ItemFieldSingleSelectValue",
+              "id": "PVTFSV_lQDOAFvahM4AKMzDzg9CeDXOLmTDhQ",
+              "optionId": "aff067e3",
+              "name": "Ready to Implement",
+              "nameHTML": "Ready to Implement",
+              "color": "GREEN",
+              "__isNode": "ProjectV2ItemFieldSingleSelectValue"
+            },
+            "__typename": "ProjectV2Item"
+          },
+          "cursor": "MQ"
+        }
+      ],
+      "pageInfo": {
+        "endCursor": "MQ",
+        "hasNextPage": false
+      }
+    },
+    "agentAssignments": [],
+    "linkedPullRequests": {
+      "nodes": []
+    },
+    "closedByPullRequestsReferences": {
+      "nodes": [
+        {
+          "id": "PR_kwDOAKjKDc8AAAABF4UnYw",
+          "number": 21372,
+          "url": "https://github.com/eslint/eslint/pull/21372",
+          "state": "CLOSED",
+          "databaseId": 4689569635
+        }
+      ]
+    },
+    "updatedAt": "2026-09-30T11:00:48Z",
+    "title": "Bug: `func-name-matching` ignores property names containing astral letters",
+    "titleHTML": "Bug: <code>func-name-matching</code> ignores property names containing astral letters",
+    "url": "https://github.com/eslint/eslint/issues/21361",
+    "totalCommentsCount": 2,
+    "viewerCanUpdateNext": false,
+    "subIssuesSummary": {
+      "total": 0,
+      "completed": 0
+    },
+    "state": "OPEN",
+    "stateReason": null,
+    "duplicateOf": null,
+    "locked": false,
+    "viewerCanComment": false,
+    "databaseId": 5603693710,
+    "createdAt": "2026-09-27T15:02:35Z",
+    "viewerDidAuthor": false,
+    "author": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/32633697?u=5e5d273fc85b088cb332b2181dc242700a65f7fc&v=4",
+      "login": "sethamus",
+      "id": "MDQ6VXNlcjMyNjMzNjk3",
+      "profileUrl": "https://github.com/sethamus",
+      "name": null,
+      "__typename": "User"
+    },
+    "body": "### What parser are you using?\n\nDefault (Espree)\n\n### What did you do?\n\n<details>\n<summary>Configuration</summary>\n\n```js\n<!-- Paste your configuration here -->\n```\n</details>\n\n```js\n/* eslint func-name-matching: \"error\" */\n\nobj.\u03c6 = function \u03c8() {}; // reported\nobj.\ud801\udc28 = function \ud801\udc29() {}; // not reported\n\nobj['\u03c6'] = function \u03c8() {}; // reported\nobj['\ud801\udc28'] = function \ud801\udc29() {}; // not reported\n```\n\n\n### What did you expect to happen?\n\nAll four assignments should be reported. `\ud801\udc28` is a valid identifier in ES2015+, and the docs say that property assignments are skipped only when the name \"is not a valid identifier in the ECMAScript version specified in your configuration\".\n\n### What actually happened?\n\n```\nFunction name `\u03c8` should match property name `\u03c6`.\nFunction name `\u03c8` should match property name `\u03c6`.\n```\n\n### Link to Minimal Reproducible Example\n\nhttps://eslint.org/play/#eyJ0ZXh0IjoiLyogZXNsaW50IGZ1bmMtbmFtZS1tYXRjaGluZzogXCJlcnJvclwiICovXG5cbm9iai7PhiA9IGZ1bmN0aW9uIM+IKCkge307IC8vIHJlcG9ydGVkXG5vYmou8JCQqCA9IGZ1bmN0aW9uIPCQkKkoKSB7fTsgLy8gbm90IHJlcG9ydGVkXG5cbm9ialsnz4YnXSA9IGZ1bmN0aW9uIM+IKCkge307IC8vIHJlcG9ydGVkXG5vYmpbJ/CQkKgnXSA9IGZ1bmN0aW9uIPCQkKkoKSB7fTsgLy8gbm90IHJlcG9ydGVkIiwib3B0aW9ucyI6eyJydWxlcyI6e30sImxhbmd1YWdlT3B0aW9ucyI6eyJwYXJzZXJPcHRpb25zIjp7ImVjbWFGZWF0dXJlcyI6e319fX19\n\n### Participation\n\n- [x] I am willing to submit a pull request for this issue.\n\n### AI acknowledgment\n\n- [x] I did not use AI to generate this issue report.\n- [ ] (If the above is not checked) I have reviewed the AI-generated content before submitting.\n\n### Additional comments\n\n_No response_",
+    "bodyHTML": "<h3 dir=\"auto\">What parser are you using?</h3>\n<p dir=\"auto\">Default (Espree)</p>\n<h3 dir=\"auto\">What did you do?</h3>\n<details>\n<summary>Configuration</summary>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"&lt;!-- Paste your configuration here --&gt;\"><pre class=\"notranslate\">&lt;!-- Paste your configuration here --&gt;</pre></div>\n</details>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"/* eslint func-name-matching: &quot;error&quot; */\n\nobj.\u03c6 = function \u03c8() {}; // reported\nobj.\ud801\udc28 = function \ud801\udc29() {}; // not reported\n\nobj['\u03c6'] = function \u03c8() {}; // reported\nobj['\ud801\udc28'] = function \ud801\udc29() {}; // not reported\"><pre class=\"notranslate\"><span class=\"pl-c\">/* eslint func-name-matching: \"error\" */</span>\n\n<span class=\"pl-s1\">obj</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">\u03c6</span> <span class=\"pl-c1\">=</span> <span class=\"pl-k\">function</span> <span class=\"pl-en\">\u03c8</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span><span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// reported</span>\n<span class=\"pl-s1\">obj</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">\ud801\udc28</span> <span class=\"pl-c1\">=</span> <span class=\"pl-k\">function</span> <span class=\"pl-en\">\ud801\udc29</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span><span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// not reported</span>\n\n<span class=\"pl-s1\">obj</span><span class=\"pl-kos\">[</span><span class=\"pl-s\">'\u03c6'</span><span class=\"pl-kos\">]</span> <span class=\"pl-c1\">=</span> <span class=\"pl-k\">function</span> <span class=\"pl-en\">\u03c8</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span><span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// reported</span>\n<span class=\"pl-s1\">obj</span><span class=\"pl-kos\">[</span><span class=\"pl-s\">'\ud801\udc28'</span><span class=\"pl-kos\">]</span> <span class=\"pl-c1\">=</span> <span class=\"pl-k\">function</span> <span class=\"pl-en\">\ud801\udc29</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span><span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// not reported</span></pre></div>\n<h3 dir=\"auto\">What did you expect to happen?</h3>\n<p dir=\"auto\">All four assignments should be reported. <code class=\"notranslate\">\ud801\udc28</code> is a valid identifier in ES2015+, and the docs say that property assignments are skipped only when the name \"is not a valid identifier in the ECMAScript version specified in your configuration\".</p>\n<h3 dir=\"auto\">What actually happened?</h3>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Function name `\u03c8` should match property name `\u03c6`.\nFunction name `\u03c8` should match property name `\u03c6`.\"><pre class=\"notranslate\"><code class=\"notranslate\">Function name `\u03c8` should match property name `\u03c6`.\nFunction name `\u03c8` should match property name `\u03c6`.\n</code></pre></div>\n<h3 dir=\"auto\">Link to Minimal Reproducible Example</h3>\n<p dir=\"auto\"><a href=\"https://eslint.org/play/#eyJ0ZXh0IjoiLyogZXNsaW50IGZ1bmMtbmFtZS1tYXRjaGluZzogXCJlcnJvclwiICovXG5cbm9iai7PhiA9IGZ1bmN0aW9uIM+IKCkge307IC8vIHJlcG9ydGVkXG5vYmou8JCQqCA9IGZ1bmN0aW9uIPCQkKkoKSB7fTsgLy8gbm90IHJlcG9ydGVkXG5cbm9ialsnz4YnXSA9IGZ1bmN0aW9uIM+IKCkge307IC8vIHJlcG9ydGVkXG5vYmpbJ/CQkKgnXSA9IGZ1bmN0aW9uIPCQkKkoKSB7fTsgLy8gbm90IHJlcG9ydGVkIiwib3B0aW9ucyI6eyJydWxlcyI6e30sImxhbmd1YWdlT3B0aW9ucyI6eyJwYXJzZXJPcHRpb25zIjp7ImVjbWFGZWF0dXJlcyI6e319fX19\" rel=\"nofollow\">https://eslint.org/play/#eyJ0ZXh0IjoiLyogZXNsaW50IGZ1bmMtbmFtZS1tYXRjaGluZzogXCJlcnJvclwiICovXG5cbm9iai7PhiA9IGZ1bmN0aW9uIM+IKCkge307IC8vIHJlcG9ydGVkXG5vYmou8JCQqCA9IGZ1bmN0aW9uIPCQkKkoKSB7fTsgLy8gbm90IHJlcG9ydGVkXG5cbm9ialsnz4YnXSA9IGZ1bmN0aW9uIM+IKCkge307IC8vIHJlcG9ydGVkXG5vYmpbJ/CQkKgnXSA9IGZ1bmN0aW9uIPCQkKkoKSB7fTsgLy8gbm90IHJlcG9ydGVkIiwib3B0aW9ucyI6eyJydWxlcyI6e30sImxhbmd1YWdlT3B0aW9ucyI6eyJwYXJzZXJPcHRpb25zIjp7ImVjbWFGZWF0dXJlcyI6e319fX19</a></p>\n<h3 dir=\"auto\">Participation</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> I am willing to submit a pull request for this issue.</li>\n</ul>\n<h3 dir=\"auto\">AI acknowledgment</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> I did not use AI to generate this issue report.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> (If the above is not checked) I have reviewed the AI-generated content before submitting.</li>\n</ul>\n<h3 dir=\"auto\">Additional comments</h3>\n<p dir=\"auto\"><em>No response</em></p>",
+    "bodyVersion": "f8ca0981cfa1ebe1e474d9b47b9b0c3625af346b8ed953b922f46b391223fc91",
+    "reactionGroups": [
+      {
+        "content": "THUMBS_UP",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "THUMBS_DOWN",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "LAUGH",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "HOORAY",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "CONFUSED",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "HEART",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "ROCKET",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "EYES",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      }
+    ],
+    "pinnedIssueComment": null,
+    "__isIssueOrPullRequest": "Issue",
+    "isPinned": false,
+    "viewerCanDelete": false,
+    "viewerCanTransfer": false,
+    "viewerCanConvertToDiscussion": false,
+    "viewerCanLock": false,
+    "timelineItems": {
+      "totalCount": 10,
+      "beforeFocusCount": 0,
+      "afterFocusCount": 0,
+      "pageInfo": {
+        "hasNextPage": false,
+        "hasPreviousPage": false,
+        "startCursor": "Y3Vyc29yOnYyOpPPAAABoONjssgBqzMxOTM1NDM3MDUz",
+        "endCursor": "Y3Vyc29yOnYyOpPPAAABoPH5YwAAqjU5MDk4NDI3ODI="
+      },
+      "edges": [
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoONjssgBqzMxOTM1NDM3MDUz",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABTgGUjs8AAAAHb4AY_Q",
+            "databaseId": 31935437053,
+            "createdAt": "2026-09-27T15:02:37Z",
+            "actor": {
+              "id": "MDQ6VXNlcjMyNjMzNjk3",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/32633697?s=64&u=5e5d273fc85b088cb332b2181dc242700a65f7fc&v=4",
+              "login": "sethamus",
+              "profileResourcePath": "/sethamus",
+              "__typename": "User",
+              "name": null
+            },
+            "label": {
+              "id": "MDU6TGFiZWw0NTcxMTM1MA==",
+              "archivedAt": null,
+              "nameHTML": "bug",
+              "name": "bug",
+              "color": "fc2929",
+              "description": "ESLint is working incorrectly"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoONjssgBqzMxOTM1NDM3MTM2",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABTgGUjs8AAAAHb4AZUA",
+            "databaseId": 31935437136,
+            "createdAt": "2026-09-27T15:02:37Z",
+            "actor": {
+              "id": "MDQ6VXNlcjMyNjMzNjk3",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/32633697?s=64&u=5e5d273fc85b088cb332b2181dc242700a65f7fc&v=4",
+              "login": "sethamus",
+              "profileResourcePath": "/sethamus",
+              "__typename": "User",
+              "name": null
+            },
+            "label": {
+              "id": "MDU6TGFiZWwyNzg2ODA0MjQ1",
+              "archivedAt": null,
+              "nameHTML": "repro:needed",
+              "name": "repro:needed",
+              "color": "136971",
+              "description": "This issue should include a reproducible example"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoONjtrABqzMxOTM1NDcxMjE0",
+          "node": {
+            "__typename": "AddedToProjectV2Event",
+            "id": "ATPVTE_lADOAKjKDc8AAAABTgGUjs8AAAAHb4Cebg",
+            "databaseId": 31935471214,
+            "createdAt": "2026-09-27T15:02:38Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            }
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoONjupgBqzMxOTQ2NzE2NTg2",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABTgGUjs8AAAAHcCw1qg",
+            "databaseId": 31946716586,
+            "createdAt": "2026-09-27T15:02:39Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "",
+            "status": "Needs Triage"
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoONjvoABqzMxOTM1NDM4NDUw",
+          "node": {
+            "__typename": "AssignedEvent",
+            "id": "AE_lADOAKjKDc8AAAABTgGUjs8AAAAHb4Aecg",
+            "databaseId": 31935438450,
+            "createdAt": "2026-09-27T15:02:40Z",
+            "actor": {
+              "id": "MDM6Qm90Nzg5ODI2NjY=",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/100364?s=64&v=4",
+              "login": "eslint-github-bot",
+              "profileResourcePath": "/apps/eslint-github-bot",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "eslint-github-bot[bot]"
+            },
+            "assignee": {
+              "__typename": "User",
+              "id": "MDQ6VXNlcjMyNjMzNjk3",
+              "login": "sethamus",
+              "resourcePath": "/sethamus",
+              "name": null
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoOTiX6ABqzMxOTQ5Mjk5OTA0",
+          "node": {
+            "__typename": "UnlabeledEvent",
+            "id": "UNLE_lADOAKjKDc8AAAABTgGUjs8AAAAHcFOgwA",
+            "databaseId": 31949299904,
+            "createdAt": "2026-09-27T22:00:36Z",
+            "actor": {
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4",
+              "login": "DMartens",
+              "profileResourcePath": "/DMartens",
+              "__typename": "User",
+              "name": "fnx"
+            },
+            "label": {
+              "id": "MDU6TGFiZWwyNzg2ODA0MjQ1",
+              "archivedAt": null,
+              "nameHTML": "repro:needed",
+              "name": "repro:needed",
+              "color": "136971",
+              "description": "This issue should include a reproducible example"
+            }
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoOTiX6ABqzMxOTQ5Mjk5OTQ2",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABTgGUjs8AAAAHcFOg6g",
+            "databaseId": 31949299946,
+            "createdAt": "2026-09-27T22:00:36Z",
+            "actor": {
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4",
+              "login": "DMartens",
+              "profileResourcePath": "/DMartens",
+              "__typename": "User",
+              "name": "fnx"
+            },
+            "label": {
+              "id": "MDU6TGFiZWwxMzExMDYyMjk=",
+              "archivedAt": null,
+              "nameHTML": "accepted",
+              "name": "accepted",
+              "color": "0052cc",
+              "description": "There is consensus among the team that this change meets the criteria for inclusion"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoOTiX6ABqzMxOTQ5Mjk5OTYz",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABTgGUjs8AAAAHcFOg-w",
+            "databaseId": 31949299963,
+            "createdAt": "2026-09-27T22:00:36Z",
+            "actor": {
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4",
+              "login": "DMartens",
+              "profileResourcePath": "/DMartens",
+              "__typename": "User",
+              "name": "fnx"
+            },
+            "label": {
+              "id": "MDU6TGFiZWwyNzg2ODIzNTMy",
+              "archivedAt": null,
+              "nameHTML": "repro:yes",
+              "name": "repro:yes",
+              "color": "7A14E9",
+              "description": "Issues with a reproducible example"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoOTi--AAqjU4NjAyMjExNTM=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABXUvg4Q",
+            "createdAt": "2026-09-27T22:01:16Z",
+            "url": "https://github.com/eslint/eslint/issues/21361#issuecomment-5860221153",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5860221153,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABTgGUjg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjMyNjMzNjk3",
+                "login": "sethamus"
+              },
+              "number": 21361,
+              "locked": false,
+              "databaseId": 5603693710
+            },
+            "author": {
+              "__typename": "User",
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "login": "DMartens",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?v=4",
+              "profileUrl": "https://github.com/DMartens",
+              "name": "fnx"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "Thank you for checking other rules for the same bugs with astral letters.\nFeel free to open a PR for this.",
+            "bodyHTML": "<p dir=\"auto\">Thank you for checking other rules for the same bugs with astral letters.<br>\nFeel free to open a PR for this.</p>",
+            "bodyVersion": "3a9ebadcb9b21af8d15e2acd303d93138ec6c40641169671ac6680717b4e4b30",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoPH5YwAAqjU5MDk4NDI3ODI=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABYEELXg",
+            "createdAt": "2026-09-30T11:00:48Z",
+            "url": "https://github.com/eslint/eslint/issues/21361#issuecomment-5909842782",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5909842782,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABTgGUjg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjMyNjMzNjk3",
+                "login": "sethamus"
+              },
+              "number": 21361,
+              "locked": false,
+              "databaseId": 5603693710
+            },
+            "author": {
+              "__typename": "Bot",
+              "id": "MDM6Qm90Nzg5ODI2NjY=",
+              "login": "eslint-github-bot",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/100364?v=4",
+              "profileUrl": "https://github.com/apps/eslint-github-bot"
+            },
+            "authorAssociation": "NONE",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "\ud83d\udc4b Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21372. Thanks, @Hashim1999164!\n\n[//]: # (issue-pr-link)",
+            "bodyHTML": "<p dir=\"auto\">\ud83d\udc4b Hi! This issue is being addressed in pull request <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5645378305\" data-permission-text=\"Title is private\" data-url=\"https://github.com/eslint/eslint/issues/21372\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/eslint/eslint/pull/21372/hovercard\" href=\"https://github.com/eslint/eslint/pull/21372\">#21372</a>. Thanks, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Hashim1999164/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Hashim1999164\">@Hashim1999164</a>!</p>",
+            "bodyVersion": "d7c3e9a2cc57fe8cf4ad247f072984d548c9abc84ba27699244bea9ae79e5696",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "backTimelineItems": {
+      "totalCount": 10,
+      "beforeFocusCount": 0,
+      "afterFocusCount": 0,
+      "pageInfo": {
+        "hasNextPage": false,
+        "hasPreviousPage": false,
+        "startCursor": "Y3Vyc29yOnYyOpPPAAABoONjssgBqzMxOTM1NDM3MDUz",
+        "endCursor": "Y3Vyc29yOnYyOpPPAAABoPH5YwAAqjU5MDk4NDI3ODI="
+      },
+      "edges": [
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoONjssgBqzMxOTM1NDM3MDUz",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABTgGUjs8AAAAHb4AY_Q",
+            "databaseId": 31935437053,
+            "createdAt": "2026-09-27T15:02:37Z",
+            "actor": {
+              "id": "MDQ6VXNlcjMyNjMzNjk3",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/32633697?s=64&u=5e5d273fc85b088cb332b2181dc242700a65f7fc&v=4",
+              "login": "sethamus",
+              "profileResourcePath": "/sethamus",
+              "__typename": "User",
+              "name": null
+            },
+            "label": {
+              "id": "MDU6TGFiZWw0NTcxMTM1MA==",
+              "archivedAt": null,
+              "nameHTML": "bug",
+              "name": "bug",
+              "color": "fc2929",
+              "description": "ESLint is working incorrectly"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoONjssgBqzMxOTM1NDM3MTM2",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABTgGUjs8AAAAHb4AZUA",
+            "databaseId": 31935437136,
+            "createdAt": "2026-09-27T15:02:37Z",
+            "actor": {
+              "id": "MDQ6VXNlcjMyNjMzNjk3",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/32633697?s=64&u=5e5d273fc85b088cb332b2181dc242700a65f7fc&v=4",
+              "login": "sethamus",
+              "profileResourcePath": "/sethamus",
+              "__typename": "User",
+              "name": null
+            },
+            "label": {
+              "id": "MDU6TGFiZWwyNzg2ODA0MjQ1",
+              "archivedAt": null,
+              "nameHTML": "repro:needed",
+              "name": "repro:needed",
+              "color": "136971",
+              "description": "This issue should include a reproducible example"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoONjtrABqzMxOTM1NDcxMjE0",
+          "node": {
+            "__typename": "AddedToProjectV2Event",
+            "id": "ATPVTE_lADOAKjKDc8AAAABTgGUjs8AAAAHb4Cebg",
+            "databaseId": 31935471214,
+            "createdAt": "2026-09-27T15:02:38Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            }
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoONjupgBqzMxOTQ2NzE2NTg2",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABTgGUjs8AAAAHcCw1qg",
+            "databaseId": 31946716586,
+            "createdAt": "2026-09-27T15:02:39Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "",
+            "status": "Needs Triage"
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoONjvoABqzMxOTM1NDM4NDUw",
+          "node": {
+            "__typename": "AssignedEvent",
+            "id": "AE_lADOAKjKDc8AAAABTgGUjs8AAAAHb4Aecg",
+            "databaseId": 31935438450,
+            "createdAt": "2026-09-27T15:02:40Z",
+            "actor": {
+              "id": "MDM6Qm90Nzg5ODI2NjY=",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/100364?s=64&v=4",
+              "login": "eslint-github-bot",
+              "profileResourcePath": "/apps/eslint-github-bot",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "eslint-github-bot[bot]"
+            },
+            "assignee": {
+              "__typename": "User",
+              "id": "MDQ6VXNlcjMyNjMzNjk3",
+              "login": "sethamus",
+              "resourcePath": "/sethamus",
+              "name": null
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoOTiX6ABqzMxOTQ5Mjk5OTA0",
+          "node": {
+            "__typename": "UnlabeledEvent",
+            "id": "UNLE_lADOAKjKDc8AAAABTgGUjs8AAAAHcFOgwA",
+            "databaseId": 31949299904,
+            "createdAt": "2026-09-27T22:00:36Z",
+            "actor": {
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4",
+              "login": "DMartens",
+              "profileResourcePath": "/DMartens",
+              "__typename": "User",
+              "name": "fnx"
+            },
+            "label": {
+              "id": "MDU6TGFiZWwyNzg2ODA0MjQ1",
+              "archivedAt": null,
+              "nameHTML": "repro:needed",
+              "name": "repro:needed",
+              "color": "136971",
+              "description": "This issue should include a reproducible example"
+            }
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoOTiX6ABqzMxOTQ5Mjk5OTQ2",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABTgGUjs8AAAAHcFOg6g",
+            "databaseId": 31949299946,
+            "createdAt": "2026-09-27T22:00:36Z",
+            "actor": {
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4",
+              "login": "DMartens",
+              "profileResourcePath": "/DMartens",
+              "__typename": "User",
+              "name": "fnx"
+            },
+            "label": {
+              "id": "MDU6TGFiZWwxMzExMDYyMjk=",
+              "archivedAt": null,
+              "nameHTML": "accepted",
+              "name": "accepted",
+              "color": "0052cc",
+              "description": "There is consensus among the team that this change meets the criteria for inclusion"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoOTiX6ABqzMxOTQ5Mjk5OTYz",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABTgGUjs8AAAAHcFOg-w",
+            "databaseId": 31949299963,
+            "createdAt": "2026-09-27T22:00:36Z",
+            "actor": {
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4",
+              "login": "DMartens",
+              "profileResourcePath": "/DMartens",
+              "__typename": "User",
+              "name": "fnx"
+            },
+            "label": {
+              "id": "MDU6TGFiZWwyNzg2ODIzNTMy",
+              "archivedAt": null,
+              "nameHTML": "repro:yes",
+              "name": "repro:yes",
+              "color": "7A14E9",
+              "description": "Issues with a reproducible example"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoOTi--AAqjU4NjAyMjExNTM=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABXUvg4Q",
+            "createdAt": "2026-09-27T22:01:16Z",
+            "url": "https://github.com/eslint/eslint/issues/21361#issuecomment-5860221153",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5860221153,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABTgGUjg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjMyNjMzNjk3",
+                "login": "sethamus"
+              },
+              "number": 21361,
+              "locked": false,
+              "databaseId": 5603693710
+            },
+            "author": {
+              "__typename": "User",
+              "id": "MDQ6VXNlcjk2NjI3Ng==",
+              "login": "DMartens",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/966276?v=4",
+              "profileUrl": "https://github.com/DMartens",
+              "name": "fnx"
+            },
+            "authorAssociation": "CONTRIBUTOR",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "Thank you for checking other rules for the same bugs with astral letters.\nFeel free to open a PR for this.",
+            "bodyHTML": "<p dir=\"auto\">Thank you for checking other rules for the same bugs with astral letters.<br>\nFeel free to open a PR for this.</p>",
+            "bodyVersion": "3a9ebadcb9b21af8d15e2acd303d93138ec6c40641169671ac6680717b4e4b30",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoPH5YwAAqjU5MDk4NDI3ODI=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABYEELXg",
+            "createdAt": "2026-09-30T11:00:48Z",
+            "url": "https://github.com/eslint/eslint/issues/21361#issuecomment-5909842782",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5909842782,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABTgGUjg",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjMyNjMzNjk3",
+                "login": "sethamus"
+              },
+              "number": 21361,
+              "locked": false,
+              "databaseId": 5603693710
+            },
+            "author": {
+              "__typename": "Bot",
+              "id": "MDM6Qm90Nzg5ODI2NjY=",
+              "login": "eslint-github-bot",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/100364?v=4",
+              "profileUrl": "https://github.com/apps/eslint-github-bot"
+            },
+            "authorAssociation": "NONE",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "\ud83d\udc4b Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21372. Thanks, @Hashim1999164!\n\n[//]: # (issue-pr-link)",
+            "bodyHTML": "<p dir=\"auto\">\ud83d\udc4b Hi! This issue is being addressed in pull request <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5645378305\" data-permission-text=\"Title is private\" data-url=\"https://github.com/eslint/eslint/issues/21372\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/eslint/eslint/pull/21372/hovercard\" href=\"https://github.com/eslint/eslint/pull/21372\">#21372</a>. Thanks, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Hashim1999164/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Hashim1999164\">@Hashim1999164</a>!</p>",
+            "bodyVersion": "d7c3e9a2cc57fe8cf4ad247f072984d548c9abc84ba27699244bea9ae79e5696",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "pendingSuggestions": []
+  }
+}

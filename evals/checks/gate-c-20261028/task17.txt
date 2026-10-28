@@ -1,0 +1,16 @@
+test_conflict_reapplies_without_lost_record (tests.test_state_store.StateStoreTests.test_conflict_reapplies_without_lost_record) ... ok
+test_exhaustion_is_bounded (tests.test_state_store.StateStoreTests.test_exhaustion_is_bounded) ... ok
+test_expected_parent_precedes_git_mutations (tests.test_state_store.StateStoreTests.test_expected_parent_precedes_git_mutations) ... ok
+test_ref_update_is_nonforced_and_parent_bound (tests.test_state_store.StateStoreTests.test_ref_update_is_nonforced_and_parent_bound) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+test_corrupt_missing_or_ambiguous_state_rejected (tests.test_ledger.LedgerTests.test_corrupt_missing_or_ambiguous_state_rejected) ... ok
+test_initial_is_disabled_and_roundtrips (tests.test_ledger.LedgerTests.test_initial_is_disabled_and_roundtrips) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK

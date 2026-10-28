@@ -1,0 +1,153 @@
+{
+  "issue": 19118,
+  "run_id": "final-f-20261028-v9-09-19118-a1",
+  "status": "completed",
+  "actual_decision": "no_action",
+  "result": {
+    "decision": "no_action",
+    "rationale": "The report supplies ESLint 9.14.0, the default parser, working directory, triggering command, and observed/expected behavior. The supporting files provide the flat configuration, dependency records, source input, app/tmp directory layout, and an ESLint 8 comparison. Together these are sufficient to reconstruct the reported reproduction without clarification.",
+    "clarification": null
+  },
+  "errors": [],
+  "input_hashes": {
+    "body.md": "e966d6675a422c4ed4bb688707a1938132006bf4945ba31010f892d59b57c23b",
+    "snapshot.json": "42273146df8a8f284a434898fb06dede6bc1c341ce0b25322e87d677b2f406db",
+    "support/README.md": "f5a87bf65a68b2ce24d1327c020199e03e98df234e64e28ce301776aeeef0ddd",
+    "support/example_8_X/app/.eslintrc.yml": "cd42bf9b0813214f19acb9225cdbd366c6678aecbd128a21dc66fe807a169705",
+    "support/example_8_X/app/README.md": "dd763a8f41ea49f1940124eb9cb446f2b750e56b1c4d444e0b5981f9c46be20d",
+    "support/example_8_X/app/inner_example.js": "f7c738f92c0b2321932bddf877383ff8f3b4837d17f67d311d752b3e17db63eb",
+    "support/example_8_X/app/package-lock.versions.json": "e697cd209f6a90392eca2d77ee551adb303a982cdd1c4faa96bc6c8d83117e3f",
+    "support/example_8_X/app/package.json": "940a677fbfc0458956cb9d2b8cc72d173b159318fa2ea9dbc3a6163120226efe",
+    "support/example_8_X/tmp/outer_example.js": "7301d885929cd18816f09536780efa3fe439669a040da5f242bdc9c3a1f590c9",
+    "support/example_9_X/app/README.md": "74e6a96b8b73bed994bc96575581addfb9b3dd43e169508b52fe6726d29916a1",
+    "support/example_9_X/app/eslint.config.mjs": "2ec2df6d2cba56e7c6d29a8ba98ccdd146283d2e6ce08a5a0fcdadf54976a55b",
+    "support/example_9_X/app/inner_example.js": "f7c738f92c0b2321932bddf877383ff8f3b4837d17f67d311d752b3e17db63eb",
+    "support/example_9_X/app/package-lock.versions.json": "4b96931f6b0b8afcf62d0da2f44f96e6ffca7563b637c230f245b9750399a8b1",
+    "support/example_9_X/app/package.json": "c9662a73587bcae9e4646117d096a87540c44ad19920d218ac95ab813cd40a76",
+    "support/example_9_X/tmp/outer_example.js": "7301d885929cd18816f09536780efa3fe439669a040da5f242bdc9c3a1f590c9",
+    "title.txt": "c37e2979538b3e4e096bbe3a0106fff3d5902375bb6ac50a091da2165269f78c"
+  },
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "public_actions": [],
+  "usage": {
+    "input_tokens": 10969,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 413,
+    "output_tokens_details": {
+      "reasoning_tokens": 326
+    },
+    "total_tokens": 11382,
+    "attribution": {
+      "items": {
+        "msg_08985044e029f8e3016ae1aa8f75e081918265380e847c576d": {
+          "input_tokens": 9012,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 9012,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_08985044e029f8e3016ae1aa8f75e081918e2fdc3e64a3d2d3": {
+          "input_tokens": 1955,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_08985044e029f8e3016ae1aa9baff88191af84144f28c518d7": {
+          "input_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 87,
+          "content": [
+            {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 87
+            }
+          ]
+        },
+        "rs_08985044e029f8e3016ae1aa9bb0008191ad703dfa47c96b8e": {
+          "input_tokens": 2,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 326
+        }
+      }
+    }
+  },
+  "cost": "unknown",
+  "source": "evals/golden/prepared-inputs/inputs/19118",
+  "run": "evals/runs/final-f-20261028-v9-09-19118-a1",
+  "campaign_id": "final-f-20261028-v9",
+  "expected_decision": "no_action",
+  "decision_pass": true,
+  "quality_review": {
+    "comment_quality": "not_assessable",
+    "criteria": [
+      {
+        "criterion": 1,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 2,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 3,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 4,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 5,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 6,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 7,
+        "result": "pass",
+        "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+      }
+    ],
+    "irrelevant_content": false,
+    "redundant_content": false,
+    "silent_branch_violation": false,
+    "notes": [
+      "PASS: no_action matches with all sixteen approved files including both ESLint examples. The rationale recognises the supplied working directory (/app), command, layout, configs/source/dependencies and comparison. No redundant working-directory request or execution claim."
+    ],
+    "issue": 19118,
+    "run_id": "final-f-20261028-v9-09-19118-a1",
+    "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+    "reviewed_at": "2026-10-28T07:56:33.257881+00:00"
+  },
+  "clarification_success": false
+}

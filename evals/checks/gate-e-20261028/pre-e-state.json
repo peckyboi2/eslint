@@ -1,0 +1,270 @@
+{
+  "admissions": [
+    {
+      "at": 1793151965,
+      "campaign": "c-development-20261028",
+      "event_key": "c4bba7d29d434a33d0e638388ce5180fd5a456afc2eaba6cb582f6c928ebf2aa",
+      "input_key": "b47e8d8dd6bcb15fdd2cd5aaf343d1ac48787b0f41017e12b3ae4a53c2fd3344",
+      "run_id": "1793151965588891000"
+    },
+    {
+      "at": 1793151994,
+      "campaign": "c-development-20261028",
+      "event_key": "b8ff8b593c1a99567c2335ca6e4d67fa40682727b764c971329415cc974eaf35",
+      "input_key": "30e0111b0c32974e196df79ba99aaa5ff8496a23cea3de4bc92045a943fb7c63",
+      "run_id": "1793151994352574000"
+    },
+    {
+      "at": 1793152070,
+      "campaign": "c-development-20261028",
+      "event_key": "05aaff87c6d84cdb85d594b68412edd5dc3d0283f30df906c9ea563f528b5d91",
+      "input_key": "b47e8d8dd6bcb15fdd2cd5aaf343d1ac48787b0f41017e12b3ae4a53c2fd3344",
+      "run_id": "1793152070817507000"
+    },
+    {
+      "at": 1793152170,
+      "campaign": "c-development-20261028",
+      "event_key": "088760219293e0f3f1856db7d15146af4998746d408a37d6dfc121549203adea",
+      "input_key": "b47e8d8dd6bcb15fdd2cd5aaf343d1ac48787b0f41017e12b3ae4a53c2fd3344",
+      "run_id": "1793152170003059000"
+    },
+    {
+      "at": 1793152203,
+      "campaign": "c-development-20261028",
+      "event_key": "377b3d1e500e2d4f5fa24129d4d37772f293ebdab55d597bd3fb7bc29a3e075f",
+      "input_key": "30e0111b0c32974e196df79ba99aaa5ff8496a23cea3de4bc92045a943fb7c63",
+      "run_id": "1793152203289733000"
+    },
+    {
+      "at": 1793152236,
+      "campaign": "c-development-20261028",
+      "event_key": "086148c10fdd368664c5a8ee0857100f566cfd11a0cdc27b6260e78c3e6ee7ee",
+      "input_key": "3a1ea3141b928faad53330e290d5d6b828f268315108c2da9adb6ab3eeec28dc",
+      "run_id": "1793152236027413000"
+    },
+    {
+      "at": 1793152339,
+      "campaign": "c-development-20261028",
+      "event_key": "dfa23aad10d1b5a31b234a24a5e89ed47565631830136d512bcacc3215e15cc3",
+      "input_key": "e1b69d35ddde5f412f15342ac4a7f7bd3e9ce00820eee72d84d11229fbf92c4b",
+      "run_id": "1793152339485260000"
+    },
+    {
+      "at": 1793152689,
+      "campaign": "c-development-20261028",
+      "event_key": "7f0b41a2830c89caa0fc54b77184f040eba0c3b803933961469b2fff0f87adb2",
+      "input_key": "b47e8d8dd6bcb15fdd2cd5aaf343d1ac48787b0f41017e12b3ae4a53c2fd3344",
+      "run_id": "1793152689778925000"
+    },
+    {
+      "at": 1793152728,
+      "campaign": "c-development-20261028",
+      "event_key": "d4083e17d155f18a3a25d77da3cd2e9f9b2cf0e2cb3e34244a2eb362871ce7cc",
+      "input_key": "30e0111b0c32974e196df79ba99aaa5ff8496a23cea3de4bc92045a943fb7c63",
+      "run_id": "1793152728515791000"
+    },
+    {
+      "at": 1793152765,
+      "campaign": "c-development-20261028",
+      "event_key": "25974edc1b62627de09981fc021e7d0896e3f9c6ec7a1da5941727a45a13427d",
+      "input_key": "3a1ea3141b928faad53330e290d5d6b828f268315108c2da9adb6ab3eeec28dc",
+      "run_id": "1793152765108607000"
+    },
+    {
+      "at": 1793152839,
+      "campaign": "c-development-20261028",
+      "event_key": "86066472c8fe5f8af4b7b2759bdfda5eb3f0122a86fd50483e0ff855b7352769",
+      "input_key": "e1b69d35ddde5f412f15342ac4a7f7bd3e9ce00820eee72d84d11229fbf92c4b",
+      "run_id": "1793152839551869000"
+    },
+    {
+      "at": 1793163535,
+      "campaign": "c-development-20261028",
+      "event_key": "0b3ccbefea0b7b7d526c220720410c1898d21695de03d10a397361a92813fbc8",
+      "input_key": "605457967f7e7e7ea9af87a6fa136a4192ff4d324cdbcfd49d3602d568cfed8a",
+      "run_id": "1793163535518134000"
+    },
+    {
+      "at": 1793163759,
+      "campaign": "c-development-20261028",
+      "event_key": "cece680387010716df0feedab73075b2bb46698b5f2fa0af38381032577bcd3d",
+      "input_key": "605457967f7e7e7ea9af87a6fa136a4192ff4d324cdbcfd49d3602d568cfed8a",
+      "run_id": "1793163759020837000"
+    },
+    {
+      "at": 1793163836,
+      "campaign": "c-development-20261028",
+      "event_key": "025ee9ad06847369bc0cae9f599612a728427fd1d12a244f43ec6a326de0dac0",
+      "input_key": "33a02a9b8a745fd926a88c817c9bfceb5b8cfa9a2d8486720d80337e738df9de",
+      "run_id": "1793163836524087000"
+    },
+    {
+      "at": 1793163896,
+      "campaign": "c-development-20261028",
+      "event_key": "035ba5360081fdb3f394a65b78f20e316172f99ac1048502cbdf45cefd75fdc1",
+      "input_key": "780e82fcdc97950062625b35b0ecce5feb449f1ac5c11c6b03d6c0962ddfeec9",
+      "run_id": "1793163896069396000"
+    },
+    {
+      "at": 1793163939,
+      "campaign": "c-development-20261028",
+      "event_key": "83bab218ddbf5278b27cb53dd625808ae3855fea2c31631699faadc8be666383",
+      "input_key": "b58c2bf014df13a0a046f5622875038521fdecd64f9754ca39a4720ecce176fb",
+      "run_id": "1793163939653635000"
+    },
+    {
+      "at": 1793163973,
+      "campaign": "c-development-20261028",
+      "event_key": "9cb1dc16395eb474f8ee9f2ccfe274dc38689c4bada74d0f9ba419774c69935d",
+      "input_key": "2949216342f4438fa65ce19c5b596e573a287a1c53b9afd5163dc2abf5af2eb7",
+      "run_id": "1793163973922703000"
+    },
+    {
+      "at": 1793164007,
+      "campaign": "c-development-20261028",
+      "event_key": "d52b3677c38d4bbcc713f61851aca8fae986a746c360ff3de67bcdf7ac43864f",
+      "input_key": "102981d180fb81d416e75f15f9e451d3bced1dc72678290de047693eac978bd7",
+      "run_id": "1793164007926361000"
+    },
+    {
+      "at": 1793164042,
+      "campaign": "c-development-20261028",
+      "event_key": "df496bb0c88ffe69a191dba6d18673f4e71e4cdfad0316eba61c941fd76786a2",
+      "input_key": "f4db36419293a0141aaaf204d0daf983f472b6f7ba904020db17df4dd2a28f79",
+      "run_id": "1793164042516969000"
+    },
+    {
+      "at": 1793164181,
+      "campaign": "c-development-20261028",
+      "event_key": "52fe8d8e7dc77e76f1d8273fdb42998a4badfcb3a723274be82c516c0ae42ce4",
+      "input_key": "86486a10cc910a0a286b1b6a680702bb8cb9977fb3ef63fe8d89974a9109ad2e",
+      "run_id": "1793164181539824000"
+    },
+    {
+      "at": 1793164214,
+      "campaign": "c-development-20261028",
+      "event_key": "d6104d4eaac76726ab5d8b61fc55b5ea2c3a76e44ad3974f8421cd365938cb4b",
+      "input_key": "582b785a3ab82fea2eb80ca0662cf7dcc38166edd0da06b51e3d43afd184d61e",
+      "run_id": "1793164214233857000"
+    },
+    {
+      "at": 1793166434,
+      "campaign": "c-development-20261028",
+      "event_key": "61e90efa7e45eb8175855341f11378e5d1b41432a023f372fc6d1fbd4baee50d",
+      "input_key": "605457967f7e7e7ea9af87a6fa136a4192ff4d324cdbcfd49d3602d568cfed8a",
+      "run_id": "1793166434085155000"
+    },
+    {
+      "at": 1793166502,
+      "campaign": "c-development-20261028",
+      "event_key": "9e384a2f9b986dba1a984925e5ef5303c0ded17e45d8af6e7fc9d9417c93de41",
+      "input_key": "33a02a9b8a745fd926a88c817c9bfceb5b8cfa9a2d8486720d80337e738df9de",
+      "run_id": "1793166502614948000"
+    },
+    {
+      "at": 1793166642,
+      "campaign": "c-development-20261028",
+      "event_key": "6892d5d1142bb291c523fde0c2c3691962ac78ee4d83385e0a33fb927a689b95",
+      "input_key": "780e82fcdc97950062625b35b0ecce5feb449f1ac5c11c6b03d6c0962ddfeec9",
+      "run_id": "1793166642875608000"
+    },
+    {
+      "at": 1793166692,
+      "campaign": "c-development-20261028",
+      "event_key": "cc6ea12070cd29fd14d7477f3e5c39443420501c43da7cb3cd261abd4dcd52f1",
+      "input_key": "b58c2bf014df13a0a046f5622875038521fdecd64f9754ca39a4720ecce176fb",
+      "run_id": "1793166692336762000"
+    },
+    {
+      "at": 1793166726,
+      "campaign": "c-development-20261028",
+      "event_key": "3d181748952349e5fc42a6cb51b7e1d8720e8ecfbac7e98cd2df1e2fb7ba8038",
+      "input_key": "2949216342f4438fa65ce19c5b596e573a287a1c53b9afd5163dc2abf5af2eb7",
+      "run_id": "1793166726909453000"
+    },
+    {
+      "at": 1793166765,
+      "campaign": "c-development-20261028",
+      "event_key": "2fb99a23adf34c4575aecd94bf7ef77e3df77d4f5d0d380edf6f425e2a0578f1",
+      "input_key": "102981d180fb81d416e75f15f9e451d3bced1dc72678290de047693eac978bd7",
+      "run_id": "1793166765055782000"
+    },
+    {
+      "at": 1793166800,
+      "campaign": "c-development-20261028",
+      "event_key": "0311c959902f882e904402dc4f94d245281fe48616fe1f02af2055ba1c5f40c0",
+      "input_key": "f4db36419293a0141aaaf204d0daf983f472b6f7ba904020db17df4dd2a28f79",
+      "run_id": "1793166800681201000"
+    },
+    {
+      "at": 1793166840,
+      "campaign": "c-development-20261028",
+      "event_key": "8aa0feef203fb94e861c0d49dd1c0cfd4178465b1f6925102e367db40ea7e5de",
+      "input_key": "86486a10cc910a0a286b1b6a680702bb8cb9977fb3ef63fe8d89974a9109ad2e",
+      "run_id": "1793166840461417000"
+    },
+    {
+      "at": 1793166901,
+      "campaign": "c-development-20261028",
+      "event_key": "eaaf574cbf8766ea61061f7ab0464947688c3c9845d68c2674a6bc15b724539a",
+      "input_key": "582b785a3ab82fea2eb80ca0662cf7dcc38166edd0da06b51e3d43afd184d61e",
+      "run_id": "1793166901985829000"
+    },
+    {
+      "at": 1793167772,
+      "campaign": "c-development-20261028",
+      "event_key": "49fafe1ebf6c490f7ea540895ce412ec007bc64836f136979d9fb68746b55fa7",
+      "input_key": "33a02a9b8a745fd926a88c817c9bfceb5b8cfa9a2d8486720d80337e738df9de",
+      "run_id": "1793167772112106000"
+    }
+  ],
+  "campaign": "c-development-20261028",
+  "decisions": [
+    {
+      "action": "bootstrap",
+      "actor_id": 234542779,
+      "at": 1793151947,
+      "reason": "Darren authorised Milestone C dry runs on 2026-10-28"
+    },
+    {
+      "action": "enable-preview",
+      "actor_id": 234542779,
+      "at": 1793151947,
+      "reason": "Local-only preview campaign; posting disabled; remote Actions remain disabled"
+    },
+    {
+      "action": "extend-local-preview",
+      "actor_id": 234542779,
+      "at": 1793152689,
+      "reason": "Owner approved one additional local preview; decision SHA-256 96c3348dfc9191185791d1822d7c5022a01a31ef9b659b6e1f62429fed706b42"
+    },
+    {
+      "action": "extend-local-preview",
+      "actor_id": 234542779,
+      "at": 1793163497,
+      "reason": "Owner approved local preview rolling limit 20; decision SHA-256 506f8523ab0af0a1d2a7551cbc4d7bb0e9b174fa9a238f6ed7e1b2f5c1c978e5"
+    },
+    {
+      "action": "extend-local-preview",
+      "actor_id": 234542779,
+      "at": 1793163754,
+      "reason": "Owner approved local preview limits rolling=21 campaign=21; decision SHA-256 cf56d8d69d5409b98521b0a3f1e853c527127d3ca4382434cbb0359232c09cdd"
+    },
+    {
+      "action": "extend-local-preview",
+      "actor_id": 234542779,
+      "at": 1793166393,
+      "reason": "Owner approved local preview limits rolling=30 campaign=30; decision SHA-256 519285567d4a7ea19e328baac6c6c0665e3adc7302170bb419da99f3cc7883f4"
+    },
+    {
+      "action": "extend-local-preview",
+      "actor_id": 234542779,
+      "at": 1793167766,
+      "reason": "Owner approved local preview limits rolling=39 campaign=39; decision SHA-256 ac301bdbefd69d211cade7020b816b7f6c0975620b8e1a439322714f9deda3a9"
+    }
+  ],
+  "enabled": true,
+  "posting_enabled": false,
+  "posts": [],
+  "schema": 1
+}

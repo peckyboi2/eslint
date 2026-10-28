@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 19477,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "no_action",
+  "validated_output": {
+    "decision": "no_action",
+    "rationale": "The report supplies ESLint and environment versions, the default parser, inline `no-console` configuration, two triggering inputs, and the observed and expected suggestion wording. The supporting playground text confirms the input and language options, providing enough information to reproduce without relying on the external link.",
+    "clarification": null
+  }
+}

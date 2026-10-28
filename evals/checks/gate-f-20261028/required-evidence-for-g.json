@@ -1,0 +1,30 @@
+{
+  "status": "identification only; nothing staged and G not started",
+  "ignored_final_paths": [
+    "evals/checks/gate-f-20261028/",
+    "evals/runs/final-f-20261028-v9-01-20373-a1/",
+    "evals/runs/final-f-20261028-v9-02-20606-a1/",
+    "evals/runs/final-f-20261028-v9-03-19924-a1/",
+    "evals/runs/final-f-20261028-v9-04-19044-a1/",
+    "evals/runs/final-f-20261028-v9-05-21320-a1/",
+    "evals/runs/final-f-20261028-v9-06-19477-a1/",
+    "evals/runs/final-f-20261028-v9-07-21304-a1/",
+    "evals/runs/final-f-20261028-v9-08-19847-a1/",
+    "evals/runs/final-f-20261028-v9-09-19118-a1/",
+    "evals/runs/final-f-20261028-v9-10-19818-a1/"
+  ],
+  "development_history": [
+    "evals/development-evidence.tar.gz",
+    "evals/checks/gate-e-20261028/",
+    "evals/checks/gate-d-20261028/",
+    "evals/checks/gate-d-retest-v5-20261028/",
+    "evals/checks/gate-d-uncertainty-v6-20261028/",
+    "evals/checks/gate-d-rubric-review-20261028/",
+    "evals/runs/20261028T050239Z-453163ef/",
+    "evals/runs/20261028T050356Z-3f74565e/",
+    "evals/runs/20261028T054714Z-72edea74/",
+    "evals/runs/20261028T054822Z-b5ee3ae0/",
+    "evals/runs/20261028T060932Z-f77abb9c/"
+  ],
+  "note": "G must explicitly stage required final and relevant development evidence despite development ignore rules; source once in active implementation, earlier source hashes identify but cannot reconstruct omitted copies. Preserve other earlier evidence; do not replace failures."
+}

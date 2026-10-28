@@ -1,0 +1,1576 @@
+{
+  "url": "https://github.com/eslint/eslint/issues/21321",
+  "retrieved_at": "2026-10-26T13:16:40.904836+00:00",
+  "data": {
+    "id": "I_kwDOAKjKDc8AAAABRDCfTw",
+    "number": 21321,
+    "repository": {
+      "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+      "databaseId": 11061773,
+      "name": "eslint",
+      "isArchived": false,
+      "nameWithOwner": "eslint/eslint",
+      "viewerCanInteract": false,
+      "viewerInteractionLimitReasonHTML": "",
+      "slashCommandsEnabled": false,
+      "visibility": "PUBLIC",
+      "viewerCanPush": false,
+      "owner": {
+        "__typename": "Organization",
+        "login": "eslint",
+        "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+        "url": "https://github.com/eslint",
+        "databaseId": 6019716,
+        "name": "ESLint",
+        "issueFieldsEnabled": true,
+        "issueFields": {
+          "totalCount": 0
+        },
+        "pinnedIssueFields": {
+          "nodes": []
+        }
+      },
+      "isPrivate": false,
+      "isWritable": true,
+      "isOwnerEnterpriseManaged": false,
+      "viewerCanPinIssues": false,
+      "isCopilotAgentEnabled": null,
+      "issueTypes": {
+        "edges": [
+          {
+            "node": {
+              "id": "IT_kwDOAFvahM4AB8CR"
+            }
+          },
+          {
+            "node": {
+              "id": "IT_kwDOAFvahM4AB8CU"
+            }
+          },
+          {
+            "node": {
+              "id": "IT_kwDOAFvahM4AB8CW"
+            }
+          }
+        ]
+      },
+      "viewerIssueCreationPermissions": {
+        "triageable": false
+      },
+      "pinnedIssues": {
+        "totalCount": 1
+      }
+    },
+    "viewerCanAssign": false,
+    "viewerCanLabel": false,
+    "viewerCanSetMilestone": false,
+    "viewerCanSetFields": false,
+    "viewerCanType": false,
+    "viewerCanUpdateMetadata": false,
+    "issueType": null,
+    "assignedActors": {
+      "nodes": []
+    },
+    "labels": {
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "Mg"
+      },
+      "edges": [
+        {
+          "node": {
+            "id": "MDU6TGFiZWw0NTcxMTM1MA==",
+            "fullDatabaseId": "45711350",
+            "color": "fc2929",
+            "name": "bug",
+            "nameHTML": "bug",
+            "description": "ESLint is working incorrectly",
+            "url": "https://github.com/eslint/eslint/labels/bug",
+            "archivedAt": null
+          }
+        },
+        {
+          "node": {
+            "id": "MDU6TGFiZWw0NTc5ODYzOQ==",
+            "fullDatabaseId": "45798639",
+            "color": "fbca04",
+            "name": "rule",
+            "nameHTML": "rule",
+            "description": "Relates to ESLint's core rules",
+            "url": "https://github.com/eslint/eslint/labels/rule",
+            "archivedAt": null
+          }
+        }
+      ]
+    },
+    "milestone": null,
+    "issueFieldValues": {
+      "nodes": []
+    },
+    "projectItems": {
+      "edges": [
+        {
+          "node": {
+            "id": "PVTI_lADOAFvahM4AKMzDzg6tS4U",
+            "isArchived": true,
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "template": false,
+              "viewerCanUpdate": false,
+              "url": "https://github.com/orgs/eslint/projects/3",
+              "field": {
+                "__typename": "ProjectV2SingleSelectField",
+                "databaseId": 26615641,
+                "id": "PVTSSF_lADOAFvahM4AKMzDzgGWH1k",
+                "name": "Status",
+                "options": [
+                  {
+                    "id": "1fbeffee",
+                    "optionId": "1fbeffee",
+                    "name": "Needs Triage",
+                    "nameHTML": "Needs Triage",
+                    "color": "GRAY",
+                    "descriptionHTML": "Issues/PRs that haven't yet been addressed by a team member.",
+                    "description": "Issues/PRs that haven't yet been addressed by a team member."
+                  },
+                  {
+                    "id": "3d3a611f",
+                    "optionId": "3d3a611f",
+                    "name": "Triaging",
+                    "nameHTML": "Triaging",
+                    "color": "GRAY",
+                    "descriptionHTML": "Issues/PRs currently being triaged by a team member to determine if all of the necessary information is present.",
+                    "description": "Issues/PRs currently being triaged by a team member to determine if all of the necessary information is present."
+                  },
+                  {
+                    "id": "195dd2d3",
+                    "optionId": "195dd2d3",
+                    "name": "Ready for Dev Team",
+                    "nameHTML": "Ready for Dev Team",
+                    "color": "GRAY",
+                    "descriptionHTML": "Issues/PRs that have been properly triaged and are ready for the dev team to analyze.",
+                    "description": "Issues/PRs that have been properly triaged and are ready for the dev team to analyze."
+                  },
+                  {
+                    "id": "fb5d77af",
+                    "optionId": "fb5d77af",
+                    "name": "Evaluating",
+                    "nameHTML": "Evaluating",
+                    "color": "YELLOW",
+                    "descriptionHTML": "Issues/PRs being evaluated by a team member before deciding how to proceed.",
+                    "description": "Issues/PRs being evaluated by a team member before deciding how to proceed."
+                  },
+                  {
+                    "id": "b09513bc",
+                    "optionId": "b09513bc",
+                    "name": "Feedback Needed",
+                    "nameHTML": "Feedback Needed",
+                    "color": "YELLOW",
+                    "descriptionHTML": "Issues/PRs where a team member is requesting feedback from the larger team.",
+                    "description": "Issues/PRs where a team member is requesting feedback from the larger team."
+                  },
+                  {
+                    "id": "f489065d",
+                    "optionId": "f489065d",
+                    "name": "Waiting for RFC",
+                    "nameHTML": "Waiting for RFC",
+                    "color": "PURPLE",
+                    "descriptionHTML": "Issues/PRs that are waiting for an RFC before further evaluating.",
+                    "description": "Issues/PRs that are waiting for an RFC before further evaluating."
+                  },
+                  {
+                    "id": "6a71a348",
+                    "optionId": "6a71a348",
+                    "name": "RFC Opened",
+                    "nameHTML": "RFC Opened",
+                    "color": "PURPLE",
+                    "descriptionHTML": "Issues/PRs that have an RFC opened and under review.",
+                    "description": "Issues/PRs that have an RFC opened and under review."
+                  },
+                  {
+                    "id": "5f6d9328",
+                    "optionId": "5f6d9328",
+                    "name": "Blocked",
+                    "nameHTML": "Blocked",
+                    "color": "RED",
+                    "descriptionHTML": "Issues/PRs that cannot be progressed due to some constraint.",
+                    "description": "Issues/PRs that cannot be progressed due to some constraint."
+                  },
+                  {
+                    "id": "aff067e3",
+                    "optionId": "aff067e3",
+                    "name": "Ready to Implement",
+                    "nameHTML": "Ready to Implement",
+                    "color": "GREEN",
+                    "descriptionHTML": "Issues that have been accepted and are ready to be implemented.",
+                    "description": "Issues that have been accepted and are ready to be implemented."
+                  },
+                  {
+                    "id": "8b3eb8e0",
+                    "optionId": "8b3eb8e0",
+                    "name": "Implementing",
+                    "nameHTML": "Implementing",
+                    "color": "GREEN",
+                    "descriptionHTML": "Accepted issues with open PRs and accepted PRs.",
+                    "description": "Accepted issues with open PRs and accepted PRs."
+                  },
+                  {
+                    "id": "34a9e837",
+                    "optionId": "34a9e837",
+                    "name": "Second Review Needed",
+                    "nameHTML": "Second Review Needed",
+                    "color": "GREEN",
+                    "descriptionHTML": "Pull requests that already have one approval and are looking for a second before merging.",
+                    "description": "Pull requests that already have one approval and are looking for a second before merging."
+                  },
+                  {
+                    "id": "45ca0cff",
+                    "optionId": "45ca0cff",
+                    "name": "Merge Candidates",
+                    "nameHTML": "Merge Candidates",
+                    "color": "GREEN",
+                    "descriptionHTML": "Pull requests that have been approved and are likely ready for merge but would like one more check.",
+                    "description": "Pull requests that have been approved and are likely ready for merge but would like one more check."
+                  },
+                  {
+                    "id": "06ca0d48",
+                    "optionId": "06ca0d48",
+                    "name": "Complete",
+                    "nameHTML": "Complete",
+                    "color": "GRAY",
+                    "descriptionHTML": "",
+                    "description": ""
+                  }
+                ],
+                "__isNode": "ProjectV2SingleSelectField"
+              },
+              "closed": false,
+              "number": 3,
+              "hasReachedItemsLimit": false
+            },
+            "fieldValueByName": {
+              "__typename": "ProjectV2ItemFieldSingleSelectValue",
+              "id": "PVTFSV_lQDOAFvahM4AKMzDzg6tS4XOLJOj_Q",
+              "optionId": "06ca0d48",
+              "name": "Complete",
+              "nameHTML": "Complete",
+              "color": "GRAY",
+              "__isNode": "ProjectV2ItemFieldSingleSelectValue"
+            },
+            "__typename": "ProjectV2Item"
+          },
+          "cursor": "MQ"
+        }
+      ],
+      "pageInfo": {
+        "endCursor": "MQ",
+        "hasNextPage": false
+      }
+    },
+    "agentAssignments": [],
+    "linkedPullRequests": {
+      "nodes": []
+    },
+    "closedByPullRequestsReferences": {
+      "nodes": []
+    },
+    "updatedAt": "2026-09-18T13:32:30Z",
+    "title": "Bug: logical-assignment-operators never autofix introduces a setter call on a short-circuited assignment",
+    "titleHTML": "Bug: logical-assignment-operators never autofix introduces a setter call on a short-circuited assignment",
+    "url": "https://github.com/eslint/eslint/issues/21321",
+    "totalCommentsCount": 3,
+    "viewerCanUpdateNext": false,
+    "subIssuesSummary": {
+      "total": 0,
+      "completed": 0
+    },
+    "state": "CLOSED",
+    "stateReason": "NOT_PLANNED",
+    "duplicateOf": null,
+    "locked": false,
+    "viewerCanComment": false,
+    "databaseId": 5439004495,
+    "createdAt": "2026-09-13T08:14:05Z",
+    "viewerDidAuthor": false,
+    "author": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/38338151?v=4",
+      "login": "torjan0",
+      "id": "MDQ6VXNlcjM4MzM4MTUx",
+      "profileUrl": "https://github.com/torjan0",
+      "name": "Maksim Hayder",
+      "__typename": "User"
+    },
+    "body": "### Environment\n\nESLint 10.10.0 and main commit 45ad79e54a39b54b4ce8eb47e612bd2f72a7a651; Node 22.23.2; Ubuntu.\n\n### Parser\n\nDefault (Espree).\n\n### What did you do?\n\n```js\nconst { Linter } = require(\"eslint\");\nconst vm = require(\"node:vm\");\nconst code = \"var log=[];Object.defineProperty(globalThis,'p',{get(){return 1;},set(v){log.push('set');},configurable:true}); p ||= 2; log.join(',');\";\nconst result = new Linter().verifyAndFix(code, {\n  languageOptions: { ecmaVersion: 2022, sourceType: \"script\" },\n  rules: { \"logical-assignment-operators\": [\"error\", \"never\"] }\n});\nconsole.log(JSON.stringify(vm.runInNewContext(code)));\nconsole.log(JSON.stringify(vm.runInNewContext(result.output)));\n```\n\n### What did you expect?\n\nBoth executions should return `\"\"`: the truthy getter result makes the original assignment short-circuit without calling the setter.\n\n### What actually happened?\n\nThe fix changes `p ||= 2` to `p = p || 2`, introducing an unconditional setter call. The executions return:\n\n```text\n\"\"\n\"set\"\n```\n\nThe same effect was reproduced with `??=`. These observations use fresh Node VM contexts in script mode.\n\n### Link to Minimal Reproducible Example\n\n[ESLint Playground](https://eslint.org/play#eyJ0ZXh0IjoidmFyIGxvZz1bXTtPYmplY3QuZGVmaW5lUHJvcGVydHkoZ2xvYmFsVGhpcywncCcse2dldCgpe3JldHVybiAxO30sc2V0KHYpe2xvZy5wdXNoKCdzZXQnKTt9LGNvbmZpZ3VyYWJsZTp0cnVlfSk7IHAgfHw9IDI7IGxvZy5qb2luKCcsJyk7Iiwib3B0aW9ucyI6eyJydWxlcyI6eyJsb2dpY2FsLWFzc2lnbm1lbnQtb3BlcmF0b3JzIjpbImVycm9yIiwibmV2ZXIiXX0sImxhbmd1YWdlT3B0aW9ucyI6eyJlY21hVmVyc2lvbiI6MjAyMiwic291cmNlVHlwZSI6InNjcmlwdCJ9fX0=)\n\n### AI acknowledgment\n\nGPT-6 Astra assisted; I manually reviewed this report.\n",
+    "bodyHTML": "<h3 dir=\"auto\">Environment</h3>\n<p dir=\"auto\">ESLint 10.10.0 and main commit <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/eslint/eslint/commit/45ad79e54a39b54b4ce8eb47e612bd2f72a7a651/hovercard\" href=\"https://github.com/eslint/eslint/commit/45ad79e54a39b54b4ce8eb47e612bd2f72a7a651\"><tt>45ad79e</tt></a>; Node 22.23.2; Ubuntu.</p>\n<h3 dir=\"auto\">Parser</h3>\n<p dir=\"auto\">Default (Espree).</p>\n<h3 dir=\"auto\">What did you do?</h3>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"const { Linter } = require(&quot;eslint&quot;);\nconst vm = require(&quot;node:vm&quot;);\nconst code = &quot;var log=[];Object.defineProperty(globalThis,'p',{get(){return 1;},set(v){log.push('set');},configurable:true}); p ||= 2; log.join(',');&quot;;\nconst result = new Linter().verifyAndFix(code, {\n  languageOptions: { ecmaVersion: 2022, sourceType: &quot;script&quot; },\n  rules: { &quot;logical-assignment-operators&quot;: [&quot;error&quot;, &quot;never&quot;] }\n});\nconsole.log(JSON.stringify(vm.runInNewContext(code)));\nconsole.log(JSON.stringify(vm.runInNewContext(result.output)));\"><pre class=\"notranslate\"><span class=\"pl-k\">const</span> <span class=\"pl-kos\">{</span> Linter <span class=\"pl-kos\">}</span> <span class=\"pl-c1\">=</span> <span class=\"pl-en\">require</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"eslint\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-s1\">vm</span> <span class=\"pl-c1\">=</span> <span class=\"pl-en\">require</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"node:vm\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-s1\">code</span> <span class=\"pl-c1\">=</span> <span class=\"pl-s\">\"var log=[];Object.defineProperty(globalThis,'p',{get(){return 1;},set(v){log.push('set');},configurable:true}); p ||= 2; log.join(',');\"</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-s1\">result</span> <span class=\"pl-c1\">=</span> <span class=\"pl-k\">new</span> <span class=\"pl-v\">Linter</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">verifyAndFix</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">code</span><span class=\"pl-kos\">,</span> <span class=\"pl-kos\">{</span>\n  <span class=\"pl-c1\">languageOptions</span>: <span class=\"pl-kos\">{</span> <span class=\"pl-c1\">ecmaVersion</span>: <span class=\"pl-c1\">2022</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">sourceType</span>: <span class=\"pl-s\">\"script\"</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-c1\">rules</span>: <span class=\"pl-kos\">{</span> <span class=\"pl-s\">\"logical-assignment-operators\"</span>: <span class=\"pl-kos\">[</span><span class=\"pl-s\">\"error\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-s\">\"never\"</span><span class=\"pl-kos\">]</span> <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-smi\">console</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">log</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">JSON</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">stringify</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">vm</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">runInNewContext</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">code</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-smi\">console</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">log</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">JSON</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">stringify</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">vm</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">runInNewContext</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">result</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">output</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span></pre></div>\n<h3 dir=\"auto\">What did you expect?</h3>\n<p dir=\"auto\">Both executions should return <code class=\"notranslate\">\"\"</code>: the truthy getter result makes the original assignment short-circuit without calling the setter.</p>\n<h3 dir=\"auto\">What actually happened?</h3>\n<p dir=\"auto\">The fix changes <code class=\"notranslate\">p ||= 2</code> to <code class=\"notranslate\">p = p || 2</code>, introducing an unconditional setter call. The executions return:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"&quot;&quot;\n&quot;set&quot;\"><pre lang=\"text\" class=\"notranslate\"><code class=\"notranslate\">\"\"\n\"set\"\n</code></pre></div>\n<p dir=\"auto\">The same effect was reproduced with <code class=\"notranslate\">??=</code>. These observations use fresh Node VM contexts in script mode.</p>\n<h3 dir=\"auto\">Link to Minimal Reproducible Example</h3>\n<p dir=\"auto\"><a href=\"https://eslint.org/play#eyJ0ZXh0IjoidmFyIGxvZz1bXTtPYmplY3QuZGVmaW5lUHJvcGVydHkoZ2xvYmFsVGhpcywncCcse2dldCgpe3JldHVybiAxO30sc2V0KHYpe2xvZy5wdXNoKCdzZXQnKTt9LGNvbmZpZ3VyYWJsZTp0cnVlfSk7IHAgfHw9IDI7IGxvZy5qb2luKCcsJyk7Iiwib3B0aW9ucyI6eyJydWxlcyI6eyJsb2dpY2FsLWFzc2lnbm1lbnQtb3BlcmF0b3JzIjpbImVycm9yIiwibmV2ZXIiXX0sImxhbmd1YWdlT3B0aW9ucyI6eyJlY21hVmVyc2lvbiI6MjAyMiwic291cmNlVHlwZSI6InNjcmlwdCJ9fX0=\" rel=\"nofollow\">ESLint Playground</a></p>\n<h3 dir=\"auto\">AI acknowledgment</h3>\n<p dir=\"auto\">GPT-6 Astra assisted; I manually reviewed this report.</p>",
+    "bodyVersion": "6376e873deec6e6eb283da24f0ba10b4e21591881ee2fa0c79246981fe1d246a",
+    "reactionGroups": [
+      {
+        "content": "THUMBS_UP",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "THUMBS_DOWN",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "__typename": "User",
+              "__isActor": "User",
+              "id": "MDQ6VXNlcjUzMDE5Njc2",
+              "login": "kirkwaiblinger",
+              "name": "Kirk Waiblinger",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/53019676?s=64&u=011e3c12c599959be7b935adc7c7014820ecf71c&v=4",
+              "__isNode": "User"
+            }
+          ]
+        }
+      },
+      {
+        "content": "LAUGH",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "HOORAY",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "CONFUSED",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "HEART",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "ROCKET",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      },
+      {
+        "content": "EYES",
+        "viewerHasReacted": false,
+        "reactors": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      }
+    ],
+    "pinnedIssueComment": null,
+    "__isIssueOrPullRequest": "Issue",
+    "isPinned": false,
+    "viewerCanDelete": false,
+    "viewerCanTransfer": false,
+    "viewerCanConvertToDiscussion": false,
+    "viewerCanLock": false,
+    "timelineItems": {
+      "totalCount": 9,
+      "beforeFocusCount": 0,
+      "afterFocusCount": 0,
+      "pageInfo": {
+        "hasNextPage": false,
+        "hasPreviousPage": false,
+        "startCursor": "Y3Vyc29yOnYyOpPPAAABoJnUrJgBqzMxMDQ3MjUyNTIx",
+        "endCursor": "Y3Vyc29yOnYyOpPPAAABoLS4AWgBqzMxMzkyNzgxNTA5"
+      },
+      "edges": [
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJnUrJgBqzMxMDQ3MjUyNTIx",
+          "node": {
+            "__typename": "AddedToProjectV2Event",
+            "id": "ATPVTE_lADOAKjKDc8AAAABRDCfT88AAAAHOo96KQ",
+            "databaseId": 31047252521,
+            "createdAt": "2026-09-13T08:14:07Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            }
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJnUtGgBqzMxMDQ3MjUxNzU5",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABRDCfT88AAAAHOo93Lw",
+            "databaseId": 31047251759,
+            "createdAt": "2026-09-13T08:14:09Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "",
+            "status": "Needs Triage"
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoFuzABqzMxMDQ4MTA4Njg4",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABRDCfT88AAAAHOpyKkA",
+            "databaseId": 31048108688,
+            "createdAt": "2026-09-13T09:07:42Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "label": {
+              "id": "MDU6TGFiZWw0NTcxMTM1MA==",
+              "archivedAt": null,
+              "nameHTML": "bug",
+              "name": "bug",
+              "color": "fc2929",
+              "description": "ESLint is working incorrectly"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoFuzABqzMxMDQ4MTA4Njk2",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABRDCfT88AAAAHOpyKmA",
+            "databaseId": 31048108696,
+            "createdAt": "2026-09-13T09:07:42Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "label": {
+              "id": "MDU6TGFiZWw0NTc5ODYzOQ==",
+              "archivedAt": null,
+              "nameHTML": "rule",
+              "name": "rule",
+              "color": "fbca04",
+              "description": "Relates to ESLint's core rules"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoeW-AAqjU2NTI0NzE3MDM=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUOnflw",
+            "createdAt": "2026-09-13T09:34:36Z",
+            "url": "https://github.com/eslint/eslint/issues/21321#issuecomment-5652471703",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5652471703,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCfTw",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21321,
+              "locked": false,
+              "databaseId": 5439004495
+            },
+            "author": {
+              "__typename": "User",
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "login": "mdjermanovic",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "profileUrl": "https://github.com/mdjermanovic",
+              "name": "Milos Djermanovic"
+            },
+            "authorAssociation": "MEMBER",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "In case of global variables, we could convert autofixes to suggestions, like we are already doing with member expressions for the same reason (possible setter). However, global setters seems like an extreme edge case, so I think we shouldn't make any changes to the rule.\n\n@eslint/eslint-team thoughts?",
+            "bodyHTML": "<p dir=\"auto\">In case of global variables, we could convert autofixes to suggestions, like we are already doing with member expressions for the same reason (possible setter). However, global setters seems like an extreme edge case, so I think we shouldn't make any changes to the rule.</p>\n<p dir=\"auto\">@eslint/eslint-team thoughts?</p>",
+            "bodyVersion": "9dc0408f1f58c78d15cccaa71135a2e58d109d80244457727f749c5564344a54",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 2,
+                  "nodes": [
+                    {
+                      "__typename": "User",
+                      "id": "MDQ6VXNlcjk2NjI3Ng==",
+                      "login": "DMartens",
+                      "name": "fnx",
+                      "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4"
+                    },
+                    {
+                      "__typename": "User",
+                      "id": "U_kgDOByIDJA",
+                      "login": "lumirlumir",
+                      "name": "lumir",
+                      "avatarUrl": "https://avatars.githubusercontent.com/u/119669540?s=64&u=3b86ec42a9346edd3eb790cd1d8b9285b4b5ef27&v=4"
+                    }
+                  ]
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoKxfYNgAqjU3MDU1NjQ5NTg=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABVBQDHg",
+            "createdAt": "2026-09-16T22:38:47Z",
+            "url": "https://github.com/eslint/eslint/issues/21321#issuecomment-5705564958",
+            "isHidden": true,
+            "isMinimized": true,
+            "minimizedReason": "low-quality",
+            "databaseId": 5705564958,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCfTw",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21321,
+              "locked": false,
+              "databaseId": 5439004495
+            },
+            "author": {
+              "__typename": "User",
+              "id": "U_kgDOC9QfLA",
+              "login": "InnoxCodes",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/198450988?u=f1b96929877c8ad072962e3499b6327ebbb632ce&v=4",
+              "profileUrl": "https://github.com/InnoxCodes",
+              "name": "Daksh Tyagi"
+            },
+            "authorAssociation": "NONE",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "**This comment was created with AI (Claude Sonnet 5).**\n\nI dug into the root cause and have a fix ready, but per ESLint's AI contribution policy I understand AI-generated PRs are only considered for issues labeled `accepted`, so I'm posting the diagnosis and proposed fix here rather than opening a PR against an unaccepted issue. Happy to submit it as a PR if a maintainer marks this accepted.\n\n### Root cause\n\nIn `lib/rules/logical-assignment-operators.js`, the `never`-mode fixer (and the three `always`-mode fixers going the other direction) gate whether to auto-fix vs. only suggest via `cannotBeGetter(node)`:\n\n```js\nfunction cannotBeGetter(node) {\n\treturn (\n\t\tnode.type === \"Identifier\" &&\n\t\t(isStrict || !isInsideWithBlock(node))\n\t);\n}\n```\n\nThe intent is \"a plain `Identifier` target can't have observable getter/setter side effects unless we're inside a non-strict `with` block.\" That's true for identifiers bound to local variables, but not for identifiers that resolve to an **implicit global** - i.e. no local declaration, so at runtime the reference is effectively a property access on the global object. In `sourceType: \"script\"`, `Object.defineProperty(globalThis, 'p', { get, set, configurable: true })` makes plain `p` an accessor, with no `with` block involved at all, which is exactly this issue's repro.\n\n`isInsideWithBlock` catches the `with` case; nothing catches the implicit-global case, so `cannotBeGetter` returns `true` (safe to auto-fix) when it shouldn't.\n\n### Proposed fix\n\nThe file already has the right tool for this: `astUtils.isReferenceToGlobalVariable(scope, node)` (used a few lines up, for detecting bare `undefined`) returns `true` exactly for a reference with no local declaration - which is precisely \"could be an implicit-global accessor.\" Extending `cannotBeGetter` to take the enclosing scope and exclude that case:\n\n```js\nfunction cannotBeGetter(node, scope) {\n\treturn (\n\t\tnode.type === \"Identifier\" &&\n\t\t!astUtils.isReferenceToGlobalVariable(scope, node) &&\n\t\t(isStrict || !isInsideWithBlock(node))\n\t);\n}\n```\n\nThis needs threading a `scope` (via `sourceCode.getScope(...)`, same pattern already used for the `IfStatement` handler) through to all four call sites (`never`-mode `AssignmentExpression`, `always`-mode `foo = foo || bar`, `always`-mode `foo || (foo = bar)`, and `always`-mode `if (foo) foo = bar`), since all four convert between forms that are only equivalent when the assignment target has no observable write side effect - the `never` direction currently over-fixes by adding an unconditional write, and the `always` direction under-fixes in the same way in reverse (removes a write that should stay conditional).\n\nA variable that *is* locally declared (function param, `let`/`const`/`var` inside a function, etc.) is unaffected - `isReferenceToGlobalVariable` only returns `true` when `reference.resolved.defs.length === 0`, so the common case still auto-fixes exactly as it does today.\n\nI verified this fix (and confirmed the bug reproduces without it) against the exact repro in this issue, plus checked all four `cannotBeGetter` call sites individually with both a global-identifier case (downgrades from autofix to suggestion-only, as intended) and a locally-scoped identifier case (still autofixes, no regression).",
+            "bodyHTML": "<p dir=\"auto\"><strong>This comment was created with AI (Claude Sonnet 5).</strong></p>\n<p dir=\"auto\">I dug into the root cause and have a fix ready, but per ESLint's AI contribution policy I understand AI-generated PRs are only considered for issues labeled <code class=\"notranslate\">accepted</code>, so I'm posting the diagnosis and proposed fix here rather than opening a PR against an unaccepted issue. Happy to submit it as a PR if a maintainer marks this accepted.</p>\n<h3 dir=\"auto\">Root cause</h3>\n<p dir=\"auto\">In <code class=\"notranslate\">lib/rules/logical-assignment-operators.js</code>, the <code class=\"notranslate\">never</code>-mode fixer (and the three <code class=\"notranslate\">always</code>-mode fixers going the other direction) gate whether to auto-fix vs. only suggest via <code class=\"notranslate\">cannotBeGetter(node)</code>:</p>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"function cannotBeGetter(node) {\n\treturn (\n\t\tnode.type === &quot;Identifier&quot; &amp;&amp;\n\t\t(isStrict || !isInsideWithBlock(node))\n\t);\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">function</span> <span class=\"pl-en\">cannotBeGetter</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">node</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n\t<span class=\"pl-k\">return</span> <span class=\"pl-kos\">(</span>\n\t\t<span class=\"pl-s1\">node</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">type</span> <span class=\"pl-c1\">===</span> <span class=\"pl-s\">\"Identifier\"</span> <span class=\"pl-c1\">&amp;&amp;</span>\n\t\t<span class=\"pl-kos\">(</span><span class=\"pl-s1\">isStrict</span> <span class=\"pl-c1\">||</span> <span class=\"pl-c1\">!</span><span class=\"pl-en\">isInsideWithBlock</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">node</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n\t<span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">The intent is \"a plain <code class=\"notranslate\">Identifier</code> target can't have observable getter/setter side effects unless we're inside a non-strict <code class=\"notranslate\">with</code> block.\" That's true for identifiers bound to local variables, but not for identifiers that resolve to an <strong>implicit global</strong> - i.e. no local declaration, so at runtime the reference is effectively a property access on the global object. In <code class=\"notranslate\">sourceType: \"script\"</code>, <code class=\"notranslate\">Object.defineProperty(globalThis, 'p', { get, set, configurable: true })</code> makes plain <code class=\"notranslate\">p</code> an accessor, with no <code class=\"notranslate\">with</code> block involved at all, which is exactly this issue's repro.</p>\n<p dir=\"auto\"><code class=\"notranslate\">isInsideWithBlock</code> catches the <code class=\"notranslate\">with</code> case; nothing catches the implicit-global case, so <code class=\"notranslate\">cannotBeGetter</code> returns <code class=\"notranslate\">true</code> (safe to auto-fix) when it shouldn't.</p>\n<h3 dir=\"auto\">Proposed fix</h3>\n<p dir=\"auto\">The file already has the right tool for this: <code class=\"notranslate\">astUtils.isReferenceToGlobalVariable(scope, node)</code> (used a few lines up, for detecting bare <code class=\"notranslate\">undefined</code>) returns <code class=\"notranslate\">true</code> exactly for a reference with no local declaration - which is precisely \"could be an implicit-global accessor.\" Extending <code class=\"notranslate\">cannotBeGetter</code> to take the enclosing scope and exclude that case:</p>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"function cannotBeGetter(node, scope) {\n\treturn (\n\t\tnode.type === &quot;Identifier&quot; &amp;&amp;\n\t\t!astUtils.isReferenceToGlobalVariable(scope, node) &amp;&amp;\n\t\t(isStrict || !isInsideWithBlock(node))\n\t);\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">function</span> <span class=\"pl-en\">cannotBeGetter</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">node</span><span class=\"pl-kos\">,</span> <span class=\"pl-s1\">scope</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n\t<span class=\"pl-k\">return</span> <span class=\"pl-kos\">(</span>\n\t\t<span class=\"pl-s1\">node</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">type</span> <span class=\"pl-c1\">===</span> <span class=\"pl-s\">\"Identifier\"</span> <span class=\"pl-c1\">&amp;&amp;</span>\n\t\t<span class=\"pl-c1\">!</span><span class=\"pl-s1\">astUtils</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">isReferenceToGlobalVariable</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">scope</span><span class=\"pl-kos\">,</span> <span class=\"pl-s1\">node</span><span class=\"pl-kos\">)</span> <span class=\"pl-c1\">&amp;&amp;</span>\n\t\t<span class=\"pl-kos\">(</span><span class=\"pl-s1\">isStrict</span> <span class=\"pl-c1\">||</span> <span class=\"pl-c1\">!</span><span class=\"pl-en\">isInsideWithBlock</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">node</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n\t<span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">This needs threading a <code class=\"notranslate\">scope</code> (via <code class=\"notranslate\">sourceCode.getScope(...)</code>, same pattern already used for the <code class=\"notranslate\">IfStatement</code> handler) through to all four call sites (<code class=\"notranslate\">never</code>-mode <code class=\"notranslate\">AssignmentExpression</code>, <code class=\"notranslate\">always</code>-mode <code class=\"notranslate\">foo = foo || bar</code>, <code class=\"notranslate\">always</code>-mode <code class=\"notranslate\">foo || (foo = bar)</code>, and <code class=\"notranslate\">always</code>-mode <code class=\"notranslate\">if (foo) foo = bar</code>), since all four convert between forms that are only equivalent when the assignment target has no observable write side effect - the <code class=\"notranslate\">never</code> direction currently over-fixes by adding an unconditional write, and the <code class=\"notranslate\">always</code> direction under-fixes in the same way in reverse (removes a write that should stay conditional).</p>\n<p dir=\"auto\">A variable that <em>is</em> locally declared (function param, <code class=\"notranslate\">let</code>/<code class=\"notranslate\">const</code>/<code class=\"notranslate\">var</code> inside a function, etc.) is unaffected - <code class=\"notranslate\">isReferenceToGlobalVariable</code> only returns <code class=\"notranslate\">true</code> when <code class=\"notranslate\">reference.resolved.defs.length === 0</code>, so the common case still auto-fixes exactly as it does today.</p>\n<p dir=\"auto\">I verified this fix (and confirmed the bug reproduces without it) against the exact repro in this issue, plus checked all four <code class=\"notranslate\">cannotBeGetter</code> call sites individually with both a global-identifier case (downgrades from autofix to suggestion-only, as intended) and a locally-scoped identifier case (still autofixes, no regression).</p>",
+            "bodyVersion": "527c9436efbc015ecffe7edd2dba8304282ef4e863c6524b522b96f44fbd6524",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoLS39bAAqjU3MzA3MzM1ODA=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABVZQODA",
+            "createdAt": "2026-09-18T13:32:30Z",
+            "url": "https://github.com/eslint/eslint/issues/21321#issuecomment-5730733580",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5730733580,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCfTw",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21321,
+              "locked": false,
+              "databaseId": 5439004495
+            },
+            "author": {
+              "__typename": "User",
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "login": "mdjermanovic",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "profileUrl": "https://github.com/mdjermanovic",
+              "name": "Milos Djermanovic"
+            },
+            "authorAssociation": "MEMBER",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "Based on the thumbs-up on my previous comment, it looks like the team agrees not to make any changes to this rule in this regard.",
+            "bodyHTML": "<p dir=\"auto\">Based on the thumbs-up on my previous comment, it looks like the team agrees not to make any changes to this rule in this regard.</p>",
+            "bodyVersion": "8a2207ad73402720e1775eb423dd8acfc6d990cfad6aa084b8d89792f415ccee",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoLS3-ZgBqzMxMzkyNzE2NDY4",
+          "node": {
+            "__typename": "ClosedEvent",
+            "id": "CE_lADOAKjKDc8AAAABRDCfT88AAAAHTybWtA",
+            "databaseId": 31392716468,
+            "createdAt": "2026-09-18T13:32:31Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "stateReason": "NOT_PLANNED",
+            "duplicateOf": null,
+            "closingProjectItemStatus": null,
+            "closer": null,
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoLS4AWgBqzMxMzkyNzgxNTA5",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABRDCfT88AAAAHTyfUxQ",
+            "databaseId": 31392781509,
+            "createdAt": "2026-09-18T13:32:33Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "Needs Triage",
+            "status": "Complete"
+          }
+        }
+      ]
+    },
+    "backTimelineItems": {
+      "totalCount": 9,
+      "beforeFocusCount": 0,
+      "afterFocusCount": 0,
+      "pageInfo": {
+        "hasNextPage": false,
+        "hasPreviousPage": false,
+        "startCursor": "Y3Vyc29yOnYyOpPPAAABoJnUrJgBqzMxMDQ3MjUyNTIx",
+        "endCursor": "Y3Vyc29yOnYyOpPPAAABoLS4AWgBqzMxMzkyNzgxNTA5"
+      },
+      "edges": [
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJnUrJgBqzMxMDQ3MjUyNTIx",
+          "node": {
+            "__typename": "AddedToProjectV2Event",
+            "id": "ATPVTE_lADOAKjKDc8AAAABRDCfT88AAAAHOo96KQ",
+            "databaseId": 31047252521,
+            "createdAt": "2026-09-13T08:14:07Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            }
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJnUtGgBqzMxMDQ3MjUxNzU5",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABRDCfT88AAAAHOo93Lw",
+            "databaseId": 31047251759,
+            "createdAt": "2026-09-13T08:14:09Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "",
+            "status": "Needs Triage"
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoFuzABqzMxMDQ4MTA4Njg4",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABRDCfT88AAAAHOpyKkA",
+            "databaseId": 31048108688,
+            "createdAt": "2026-09-13T09:07:42Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "label": {
+              "id": "MDU6TGFiZWw0NTcxMTM1MA==",
+              "archivedAt": null,
+              "nameHTML": "bug",
+              "name": "bug",
+              "color": "fc2929",
+              "description": "ESLint is working incorrectly"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoFuzABqzMxMDQ4MTA4Njk2",
+          "node": {
+            "__typename": "LabeledEvent",
+            "id": "LE_lADOAKjKDc8AAAABRDCfT88AAAAHOpyKmA",
+            "databaseId": 31048108696,
+            "createdAt": "2026-09-13T09:07:42Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "label": {
+              "id": "MDU6TGFiZWw0NTc5ODYzOQ==",
+              "archivedAt": null,
+              "nameHTML": "rule",
+              "name": "rule",
+              "color": "fbca04",
+              "description": "Relates to ESLint's core rules"
+            },
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoJoeW-AAqjU2NTI0NzE3MDM=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABUOnflw",
+            "createdAt": "2026-09-13T09:34:36Z",
+            "url": "https://github.com/eslint/eslint/issues/21321#issuecomment-5652471703",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5652471703,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCfTw",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21321,
+              "locked": false,
+              "databaseId": 5439004495
+            },
+            "author": {
+              "__typename": "User",
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "login": "mdjermanovic",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "profileUrl": "https://github.com/mdjermanovic",
+              "name": "Milos Djermanovic"
+            },
+            "authorAssociation": "MEMBER",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "In case of global variables, we could convert autofixes to suggestions, like we are already doing with member expressions for the same reason (possible setter). However, global setters seems like an extreme edge case, so I think we shouldn't make any changes to the rule.\n\n@eslint/eslint-team thoughts?",
+            "bodyHTML": "<p dir=\"auto\">In case of global variables, we could convert autofixes to suggestions, like we are already doing with member expressions for the same reason (possible setter). However, global setters seems like an extreme edge case, so I think we shouldn't make any changes to the rule.</p>\n<p dir=\"auto\">@eslint/eslint-team thoughts?</p>",
+            "bodyVersion": "9dc0408f1f58c78d15cccaa71135a2e58d109d80244457727f749c5564344a54",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 2,
+                  "nodes": [
+                    {
+                      "__typename": "User",
+                      "id": "MDQ6VXNlcjk2NjI3Ng==",
+                      "login": "DMartens",
+                      "name": "fnx",
+                      "avatarUrl": "https://avatars.githubusercontent.com/u/966276?s=64&v=4"
+                    },
+                    {
+                      "__typename": "User",
+                      "id": "U_kgDOByIDJA",
+                      "login": "lumirlumir",
+                      "name": "lumir",
+                      "avatarUrl": "https://avatars.githubusercontent.com/u/119669540?s=64&u=3b86ec42a9346edd3eb790cd1d8b9285b4b5ef27&v=4"
+                    }
+                  ]
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoKxfYNgAqjU3MDU1NjQ5NTg=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABVBQDHg",
+            "createdAt": "2026-09-16T22:38:47Z",
+            "url": "https://github.com/eslint/eslint/issues/21321#issuecomment-5705564958",
+            "isHidden": true,
+            "isMinimized": true,
+            "minimizedReason": "low-quality",
+            "databaseId": 5705564958,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCfTw",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21321,
+              "locked": false,
+              "databaseId": 5439004495
+            },
+            "author": {
+              "__typename": "User",
+              "id": "U_kgDOC9QfLA",
+              "login": "InnoxCodes",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/198450988?u=f1b96929877c8ad072962e3499b6327ebbb632ce&v=4",
+              "profileUrl": "https://github.com/InnoxCodes",
+              "name": "Daksh Tyagi"
+            },
+            "authorAssociation": "NONE",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "**This comment was created with AI (Claude Sonnet 5).**\n\nI dug into the root cause and have a fix ready, but per ESLint's AI contribution policy I understand AI-generated PRs are only considered for issues labeled `accepted`, so I'm posting the diagnosis and proposed fix here rather than opening a PR against an unaccepted issue. Happy to submit it as a PR if a maintainer marks this accepted.\n\n### Root cause\n\nIn `lib/rules/logical-assignment-operators.js`, the `never`-mode fixer (and the three `always`-mode fixers going the other direction) gate whether to auto-fix vs. only suggest via `cannotBeGetter(node)`:\n\n```js\nfunction cannotBeGetter(node) {\n\treturn (\n\t\tnode.type === \"Identifier\" &&\n\t\t(isStrict || !isInsideWithBlock(node))\n\t);\n}\n```\n\nThe intent is \"a plain `Identifier` target can't have observable getter/setter side effects unless we're inside a non-strict `with` block.\" That's true for identifiers bound to local variables, but not for identifiers that resolve to an **implicit global** - i.e. no local declaration, so at runtime the reference is effectively a property access on the global object. In `sourceType: \"script\"`, `Object.defineProperty(globalThis, 'p', { get, set, configurable: true })` makes plain `p` an accessor, with no `with` block involved at all, which is exactly this issue's repro.\n\n`isInsideWithBlock` catches the `with` case; nothing catches the implicit-global case, so `cannotBeGetter` returns `true` (safe to auto-fix) when it shouldn't.\n\n### Proposed fix\n\nThe file already has the right tool for this: `astUtils.isReferenceToGlobalVariable(scope, node)` (used a few lines up, for detecting bare `undefined`) returns `true` exactly for a reference with no local declaration - which is precisely \"could be an implicit-global accessor.\" Extending `cannotBeGetter` to take the enclosing scope and exclude that case:\n\n```js\nfunction cannotBeGetter(node, scope) {\n\treturn (\n\t\tnode.type === \"Identifier\" &&\n\t\t!astUtils.isReferenceToGlobalVariable(scope, node) &&\n\t\t(isStrict || !isInsideWithBlock(node))\n\t);\n}\n```\n\nThis needs threading a `scope` (via `sourceCode.getScope(...)`, same pattern already used for the `IfStatement` handler) through to all four call sites (`never`-mode `AssignmentExpression`, `always`-mode `foo = foo || bar`, `always`-mode `foo || (foo = bar)`, and `always`-mode `if (foo) foo = bar`), since all four convert between forms that are only equivalent when the assignment target has no observable write side effect - the `never` direction currently over-fixes by adding an unconditional write, and the `always` direction under-fixes in the same way in reverse (removes a write that should stay conditional).\n\nA variable that *is* locally declared (function param, `let`/`const`/`var` inside a function, etc.) is unaffected - `isReferenceToGlobalVariable` only returns `true` when `reference.resolved.defs.length === 0`, so the common case still auto-fixes exactly as it does today.\n\nI verified this fix (and confirmed the bug reproduces without it) against the exact repro in this issue, plus checked all four `cannotBeGetter` call sites individually with both a global-identifier case (downgrades from autofix to suggestion-only, as intended) and a locally-scoped identifier case (still autofixes, no regression).",
+            "bodyHTML": "<p dir=\"auto\"><strong>This comment was created with AI (Claude Sonnet 5).</strong></p>\n<p dir=\"auto\">I dug into the root cause and have a fix ready, but per ESLint's AI contribution policy I understand AI-generated PRs are only considered for issues labeled <code class=\"notranslate\">accepted</code>, so I'm posting the diagnosis and proposed fix here rather than opening a PR against an unaccepted issue. Happy to submit it as a PR if a maintainer marks this accepted.</p>\n<h3 dir=\"auto\">Root cause</h3>\n<p dir=\"auto\">In <code class=\"notranslate\">lib/rules/logical-assignment-operators.js</code>, the <code class=\"notranslate\">never</code>-mode fixer (and the three <code class=\"notranslate\">always</code>-mode fixers going the other direction) gate whether to auto-fix vs. only suggest via <code class=\"notranslate\">cannotBeGetter(node)</code>:</p>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"function cannotBeGetter(node) {\n\treturn (\n\t\tnode.type === &quot;Identifier&quot; &amp;&amp;\n\t\t(isStrict || !isInsideWithBlock(node))\n\t);\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">function</span> <span class=\"pl-en\">cannotBeGetter</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">node</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n\t<span class=\"pl-k\">return</span> <span class=\"pl-kos\">(</span>\n\t\t<span class=\"pl-s1\">node</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">type</span> <span class=\"pl-c1\">===</span> <span class=\"pl-s\">\"Identifier\"</span> <span class=\"pl-c1\">&amp;&amp;</span>\n\t\t<span class=\"pl-kos\">(</span><span class=\"pl-s1\">isStrict</span> <span class=\"pl-c1\">||</span> <span class=\"pl-c1\">!</span><span class=\"pl-en\">isInsideWithBlock</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">node</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n\t<span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">The intent is \"a plain <code class=\"notranslate\">Identifier</code> target can't have observable getter/setter side effects unless we're inside a non-strict <code class=\"notranslate\">with</code> block.\" That's true for identifiers bound to local variables, but not for identifiers that resolve to an <strong>implicit global</strong> - i.e. no local declaration, so at runtime the reference is effectively a property access on the global object. In <code class=\"notranslate\">sourceType: \"script\"</code>, <code class=\"notranslate\">Object.defineProperty(globalThis, 'p', { get, set, configurable: true })</code> makes plain <code class=\"notranslate\">p</code> an accessor, with no <code class=\"notranslate\">with</code> block involved at all, which is exactly this issue's repro.</p>\n<p dir=\"auto\"><code class=\"notranslate\">isInsideWithBlock</code> catches the <code class=\"notranslate\">with</code> case; nothing catches the implicit-global case, so <code class=\"notranslate\">cannotBeGetter</code> returns <code class=\"notranslate\">true</code> (safe to auto-fix) when it shouldn't.</p>\n<h3 dir=\"auto\">Proposed fix</h3>\n<p dir=\"auto\">The file already has the right tool for this: <code class=\"notranslate\">astUtils.isReferenceToGlobalVariable(scope, node)</code> (used a few lines up, for detecting bare <code class=\"notranslate\">undefined</code>) returns <code class=\"notranslate\">true</code> exactly for a reference with no local declaration - which is precisely \"could be an implicit-global accessor.\" Extending <code class=\"notranslate\">cannotBeGetter</code> to take the enclosing scope and exclude that case:</p>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"function cannotBeGetter(node, scope) {\n\treturn (\n\t\tnode.type === &quot;Identifier&quot; &amp;&amp;\n\t\t!astUtils.isReferenceToGlobalVariable(scope, node) &amp;&amp;\n\t\t(isStrict || !isInsideWithBlock(node))\n\t);\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">function</span> <span class=\"pl-en\">cannotBeGetter</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">node</span><span class=\"pl-kos\">,</span> <span class=\"pl-s1\">scope</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n\t<span class=\"pl-k\">return</span> <span class=\"pl-kos\">(</span>\n\t\t<span class=\"pl-s1\">node</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">type</span> <span class=\"pl-c1\">===</span> <span class=\"pl-s\">\"Identifier\"</span> <span class=\"pl-c1\">&amp;&amp;</span>\n\t\t<span class=\"pl-c1\">!</span><span class=\"pl-s1\">astUtils</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">isReferenceToGlobalVariable</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">scope</span><span class=\"pl-kos\">,</span> <span class=\"pl-s1\">node</span><span class=\"pl-kos\">)</span> <span class=\"pl-c1\">&amp;&amp;</span>\n\t\t<span class=\"pl-kos\">(</span><span class=\"pl-s1\">isStrict</span> <span class=\"pl-c1\">||</span> <span class=\"pl-c1\">!</span><span class=\"pl-en\">isInsideWithBlock</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">node</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n\t<span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">This needs threading a <code class=\"notranslate\">scope</code> (via <code class=\"notranslate\">sourceCode.getScope(...)</code>, same pattern already used for the <code class=\"notranslate\">IfStatement</code> handler) through to all four call sites (<code class=\"notranslate\">never</code>-mode <code class=\"notranslate\">AssignmentExpression</code>, <code class=\"notranslate\">always</code>-mode <code class=\"notranslate\">foo = foo || bar</code>, <code class=\"notranslate\">always</code>-mode <code class=\"notranslate\">foo || (foo = bar)</code>, and <code class=\"notranslate\">always</code>-mode <code class=\"notranslate\">if (foo) foo = bar</code>), since all four convert between forms that are only equivalent when the assignment target has no observable write side effect - the <code class=\"notranslate\">never</code> direction currently over-fixes by adding an unconditional write, and the <code class=\"notranslate\">always</code> direction under-fixes in the same way in reverse (removes a write that should stay conditional).</p>\n<p dir=\"auto\">A variable that <em>is</em> locally declared (function param, <code class=\"notranslate\">let</code>/<code class=\"notranslate\">const</code>/<code class=\"notranslate\">var</code> inside a function, etc.) is unaffected - <code class=\"notranslate\">isReferenceToGlobalVariable</code> only returns <code class=\"notranslate\">true</code> when <code class=\"notranslate\">reference.resolved.defs.length === 0</code>, so the common case still auto-fixes exactly as it does today.</p>\n<p dir=\"auto\">I verified this fix (and confirmed the bug reproduces without it) against the exact repro in this issue, plus checked all four <code class=\"notranslate\">cannotBeGetter</code> call sites individually with both a global-identifier case (downgrades from autofix to suggestion-only, as intended) and a locally-scoped identifier case (still autofixes, no regression).</p>",
+            "bodyVersion": "527c9436efbc015ecffe7edd2dba8304282ef4e863c6524b522b96f44fbd6524",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoLS39bAAqjU3MzA3MzM1ODA=",
+          "node": {
+            "__typename": "IssueComment",
+            "id": "IC_kwDOAKjKDc8AAAABVZQODA",
+            "createdAt": "2026-09-18T13:32:30Z",
+            "url": "https://github.com/eslint/eslint/issues/21321#issuecomment-5730733580",
+            "isHidden": false,
+            "isMinimized": false,
+            "minimizedReason": null,
+            "databaseId": 5730733580,
+            "viewerDidAuthor": false,
+            "issue": {
+              "id": "I_kwDOAKjKDc8AAAABRDCfTw",
+              "author": {
+                "__typename": "User",
+                "id": "MDQ6VXNlcjM4MzM4MTUx",
+                "login": "torjan0"
+              },
+              "number": 21321,
+              "locked": false,
+              "databaseId": 5439004495
+            },
+            "author": {
+              "__typename": "User",
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "login": "mdjermanovic",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "profileUrl": "https://github.com/mdjermanovic",
+              "name": "Milos Djermanovic"
+            },
+            "authorAssociation": "MEMBER",
+            "viewerCanDelete": false,
+            "viewerCanMinimize": false,
+            "viewerCanUnminimize": false,
+            "viewerCanReport": false,
+            "viewerCanReportToMaintainer": false,
+            "viewerCanBlockFromOrg": false,
+            "viewerCanUnblockFromOrg": false,
+            "viewerCanBlockPersonally": false,
+            "viewerCanUnblockPersonally": false,
+            "viewerCanPin": false,
+            "viewerCanUnpin": false,
+            "viaApp": null,
+            "showSpammyBadge": false,
+            "createdViaEmail": false,
+            "authorToRepoOwnerSponsorship": null,
+            "viewerCanReadUserContentEdits": true,
+            "lastEditedAt": null,
+            "lastUserContentEdit": null,
+            "pinnedBy": null,
+            "body": "Based on the thumbs-up on my previous comment, it looks like the team agrees not to make any changes to this rule in this regard.",
+            "bodyHTML": "<p dir=\"auto\">Based on the thumbs-up on my previous comment, it looks like the team agrees not to make any changes to this rule in this regard.</p>",
+            "bodyVersion": "8a2207ad73402720e1775eb423dd8acfc6d990cfad6aa084b8d89792f415ccee",
+            "viewerCanUpdate": false,
+            "repository": {
+              "id": "MDEwOlJlcG9zaXRvcnkxMTA2MTc3Mw==",
+              "name": "eslint",
+              "owner": {
+                "__typename": "Organization",
+                "id": "MDEyOk9yZ2FuaXphdGlvbjYwMTk3MTY=",
+                "login": "eslint",
+                "url": "https://github.com/eslint"
+              },
+              "isPrivate": false,
+              "viewerCanCreateIssues": false,
+              "slashCommandsEnabled": false,
+              "nameWithOwner": "eslint/eslint",
+              "databaseId": 11061773
+            },
+            "reactionGroups": [
+              {
+                "content": "THUMBS_UP",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "THUMBS_DOWN",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "LAUGH",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HOORAY",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "CONFUSED",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "HEART",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "ROCKET",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              },
+              {
+                "content": "EYES",
+                "viewerHasReacted": false,
+                "reactors": {
+                  "totalCount": 0,
+                  "nodes": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoLS3-ZgBqzMxMzkyNzE2NDY4",
+          "node": {
+            "__typename": "ClosedEvent",
+            "id": "CE_lADOAKjKDc8AAAABRDCfT88AAAAHTybWtA",
+            "databaseId": 31392716468,
+            "createdAt": "2026-09-18T13:32:31Z",
+            "actor": {
+              "id": "MDQ6VXNlcjQ0MzQ5NzU2",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/44349756?s=64&u=baa3edf860147f322135a1ec9e8a6c28eeab2409&v=4",
+              "login": "mdjermanovic",
+              "profileResourcePath": "/mdjermanovic",
+              "__typename": "User",
+              "name": "Milos Djermanovic"
+            },
+            "stateReason": "NOT_PLANNED",
+            "duplicateOf": null,
+            "closingProjectItemStatus": null,
+            "closer": null,
+            "intent": null
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOnYyOpPPAAABoLS4AWgBqzMxMzkyNzgxNTA5",
+          "node": {
+            "__typename": "ProjectV2ItemStatusChangedEvent",
+            "id": "PVTISC_lADOAKjKDc8AAAABRDCfT88AAAAHTyfUxQ",
+            "databaseId": 31392781509,
+            "createdAt": "2026-09-18T13:32:33Z",
+            "actor": {
+              "id": "BOT_kgDOBr0Lng",
+              "avatarUrl": "https://avatars.githubusercontent.com/in/235829?s=64&v=4",
+              "login": "github-project-automation",
+              "profileResourcePath": "/apps/github-project-automation",
+              "__typename": "Bot",
+              "isCopilot": false,
+              "isAgent": false,
+              "displayName": "github-project-automation[bot]"
+            },
+            "project": {
+              "id": "PVT_kwDOAFvahM4AKMzD",
+              "title": "Triage",
+              "url": "https://github.com/orgs/eslint/projects/3"
+            },
+            "previousStatus": "Needs Triage",
+            "status": "Complete"
+          }
+        }
+      ]
+    },
+    "pendingSuggestions": []
+  }
+}

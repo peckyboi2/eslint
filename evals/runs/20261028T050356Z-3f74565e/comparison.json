@@ -1,0 +1,87 @@
+{
+  "verification_type": "actual selected-engine coding-assistant preview; not a GitHub workflow run",
+  "reviewed_at": "2026-10-28T05:04:53.715539+00:00",
+  "reviewer": "Codex implementation review; no Darren human output approval claimed",
+  "source_issue": 19924,
+  "expected_decision": "human_review",
+  "actual_decision": "no_action",
+  "decision_pass": false,
+  "quality": [
+    {
+      "criterion": 1,
+      "result": "fail",
+      "evidence": "The rationale claims the workload details establish a sufficient reproduction and that rule/source files are unnecessary; this does not retain the frozen uncertainty expected for this case."
+    },
+    {
+      "criterion": 2,
+      "result": "not_assessable",
+      "evidence": "No proposed comment; not assessable as comment wording."
+    },
+    {
+      "criterion": 3,
+      "result": "not_assessable",
+      "evidence": "No proposed comment; no unnecessary public question."
+    },
+    {
+      "criterion": 4,
+      "result": "pass",
+      "evidence": "Neutral internal rationale; no public contribution."
+    },
+    {
+      "criterion": 5,
+      "result": "pass",
+      "evidence": "No diagnosis, fix, code execution or prohibited action."
+    },
+    {
+      "criterion": 6,
+      "result": "pass",
+      "evidence": "Valid silent output and correct selected identity 19924."
+    },
+    {
+      "criterion": 7,
+      "result": "pass",
+      "evidence": "No proposed comment and public_actions=[]; public silence preserved."
+    }
+  ],
+  "quality_findings": {
+    "unnecessary_questions": [],
+    "missed_clarifications": [],
+    "deferrals": [],
+    "silent_branch_violations": [],
+    "scope_issues": [],
+    "infrastructure_failures": [],
+    "uncertainty_failures": [
+      "Returned no_action with a confident completeness assertion instead of recording uncertainty as human_review."
+    ],
+    "notes": [
+      "Decision FAIL: no_action rather than accepted human_review.",
+      "Public silence passes; the absent public comment does not make the internal decision correct.",
+      "Accepted expectation retained; no prompt tuning or relabelling."
+    ]
+  },
+  "actual_clarification": null,
+  "actual_rationale": "The report supplies the Windows environment, Node/npm/ESLint versions, the exact `eslint ./ --fix` command, a roughly 9,000-file workload with over 100,000 autofixable issues, and an EMFILE stack trace during `ESLint.outputFixes`. It also states the expected outcome. These details sufficiently establish the bulk-fix reproduction path; the company's specific rule configuration and source files are not necessary to reconstruct this file-writing workload.",
+  "raw_output_sha256": "56e8c054aa143f3f76cc3f777b27195a8162d6839001d217c0eee1de119bd6a7",
+  "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+  "configuration_version": "milestone-d-development-v3",
+  "input_hashes": {
+    "body.md": "aaf9b98240c9a65e947e7443c9caa14a658226d308144c0d96d0bb6b498b6ce6",
+    "snapshot.json": "e476ce16e7c5f801ad58584c53ab569e530d0cb6c9ead0f17bdfc70c732c8658",
+    "title.txt": "f43660440f0faf5c02b0ced5ae0f9da4c1d73ad08c44259c0d63207ebbb7c9c2"
+  },
+  "boundary_checks": {
+    "exact_selected_input": true,
+    "skill_loaded": true,
+    "fresh_two_message_request": true,
+    "outbound_tools": [],
+    "implicit_host_context_forwarded": false,
+    "temporary_workspace_removed": true,
+    "selected_route_identity_matches": true
+  },
+  "public_actions": [],
+  "limitations": [
+    "Preview only; no live GitHub/platform verification.",
+    "Host Python/Codex is trusted, not OS-jailed.",
+    "Backend revision unpinned; monetary cost unknown."
+  ]
+}

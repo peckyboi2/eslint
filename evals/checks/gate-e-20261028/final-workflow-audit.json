@@ -1,0 +1,37 @@
+{
+  "verification_type": "static actual YAML capability inspection; external actionlint required",
+  "platform": "GitHub Actions equivalent; no gh-aw compiler/lockfile",
+  "jobs": {
+    "gate": [
+      "contents:read"
+    ],
+    "admission": [
+      "contents:write"
+    ],
+    "inference": [
+      "contents:read",
+      "no GitHub token in model environment",
+      "tools:[]"
+    ],
+    "output": [
+      "contents:write",
+      "issues:write",
+      "comment-only trusted handler"
+    ],
+    "stop": [
+      "contents:write",
+      "actions:write",
+      "independent"
+    ]
+  },
+  "silent_branches": "no status/error/default comment integration",
+  "platform_limits": [
+    "Hosted inference engine/login absent",
+    "No OS jail or host egress firewall tested",
+    "Runner image label is mutable",
+    "Provider/backend revision unpinned",
+    "Token permissions do not restrict trusted code to one API operation",
+    "GitHub scheduling/queue/cancel and log retention not live-tested",
+    "Final recheck cannot atomically lock GitHub source/stop flag and HTTP POST"
+  ]
+}

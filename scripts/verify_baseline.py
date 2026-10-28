@@ -158,7 +158,7 @@ def main():
                 or p == "scripts/clarifier/tests/__init__.py"
                 or p in {"evals/development-evidence.tar.gz",
                          "scripts/clarifier/tests/fixtures/routing.json",
-                         "scripts/verify_baseline.py", "scripts/clarifier/preview.py",
+                         "scripts/verify_baseline.py", "scripts/check_regression.py", "scripts/check_campaign.py", "scripts/clarifier/preview.py",
                          ".claude/skills/eslint-clarification/SKILL.md"})
     }
     if unexpected:

@@ -1,0 +1,18 @@
+{
+  "infrastructure_result": "PASS",
+  "model_decision_result": "FAIL",
+  "configuration_sha256": "770f66a7ddc5a38176b3585dabf287253145360ce5078e6d1b008c4431db32d3",
+  "actual_model_calls": 1,
+  "remaining_calls": 0,
+  "deterministic_tests": 132,
+  "prior_evidence_files": 1614,
+  "prior_immutable_files_unchanged": 1613,
+  "admissions_before": 30,
+  "admissions_after": 31,
+  "public_actions": [],
+  "baseline": "PASS",
+  "markdown": "PASS",
+  "diff_check": "PASS",
+  "approved_paragraph_verified": true,
+  "conditional_plan_followed": true
+}

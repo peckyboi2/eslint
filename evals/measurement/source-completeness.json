@@ -1,0 +1,130 @@
+[
+  {
+    "issue": 21293,
+    "title": "Bug: stats `TimePass.parse` is missing when a processor returns no code blocks",
+    "report_author": "ntnyq",
+    "retrieved_at": "2026-10-26T13:16:37.488704+00:00",
+    "reported_total_comments": 3,
+    "recovered_comments": 3,
+    "recovered_comment_ids": [
+      "IC_kwDOAKjKDc8AAAABSEytEQ",
+      "IC_kwDOAKjKDc8AAAABTDMWUA",
+      "IC_kwDOAKjKDc8AAAABTIjRVg"
+    ]
+  },
+  {
+    "issue": 21295,
+    "title": "Bug: `no-unreachable` reports export declarations that aren't evaluated where they appear",
+    "report_author": "crimsonjay0",
+    "retrieved_at": "2026-10-26T13:16:37.482484+00:00",
+    "reported_total_comments": 2,
+    "recovered_comments": 2,
+    "recovered_comment_ids": [
+      "IC_kwDOAKjKDc8AAAABSJwLDQ",
+      "IC_kwDOAKjKDc8AAAABTDKZdQ"
+    ]
+  },
+  {
+    "issue": 21304,
+    "title": "Bug: `no-unexpected-multiline` ignores the `d` and `v` regex flags",
+    "report_author": "electrohyun",
+    "retrieved_at": "2026-10-26T13:16:37.533715+00:00",
+    "reported_total_comments": 2,
+    "recovered_comments": 2,
+    "recovered_comment_ids": [
+      "IC_kwDOAKjKDc8AAAABSgEEmw",
+      "IC_kwDOAKjKDc8AAAABSgNlAQ"
+    ]
+  },
+  {
+    "issue": 21314,
+    "title": "Bug: `no-unsafe-finally` misses labeled `continue` targeting a loop outside `finally`",
+    "report_author": "electrohyun",
+    "retrieved_at": "2026-10-26T13:16:37.475240+00:00",
+    "reported_total_comments": 2,
+    "recovered_comments": 2,
+    "recovered_comment_ids": [
+      "IC_kwDOAKjKDc8AAAABTeIl3A",
+      "IC_kwDOAKjKDc8AAAABTe8H_Q"
+    ]
+  },
+  {
+    "issue": 21319,
+    "title": "Bug: prefer-exponentiation-operator autofix produces invalid syntax for an async function expression",
+    "report_author": "torjan0",
+    "retrieved_at": "2026-10-26T13:16:40.895832+00:00",
+    "reported_total_comments": 2,
+    "recovered_comments": 2,
+    "recovered_comment_ids": [
+      "IC_kwDOAKjKDc8AAAABUOdUIg",
+      "IC_kwDOAKjKDc8AAAABUOn1qA"
+    ]
+  },
+  {
+    "issue": 21320,
+    "title": "Bug: object-shorthand never autofix produces invalid syntax for methods using super",
+    "report_author": "torjan0",
+    "retrieved_at": "2026-10-26T13:16:40.880778+00:00",
+    "reported_total_comments": 6,
+    "recovered_comments": 6,
+    "recovered_comment_ids": [
+      "IC_kwDOAKjKDc8AAAABUOf0ew",
+      "IC_kwDOAKjKDc8AAAABUO9sFQ",
+      "IC_kwDOAKjKDc8AAAABUQZr2A",
+      "IC_kwDOAKjKDc8AAAABUQb8sw",
+      "IC_kwDOAKjKDc8AAAABUQdcrA",
+      "IC_kwDOAKjKDc8AAAABUQmO9A"
+    ]
+  },
+  {
+    "issue": 21321,
+    "title": "Bug: logical-assignment-operators never autofix introduces a setter call on a short-circuited assignment",
+    "report_author": "torjan0",
+    "retrieved_at": "2026-10-26T13:16:40.904836+00:00",
+    "reported_total_comments": 3,
+    "recovered_comments": 3,
+    "recovered_comment_ids": [
+      "IC_kwDOAKjKDc8AAAABUOnflw",
+      "IC_kwDOAKjKDc8AAAABVBQDHg",
+      "IC_kwDOAKjKDc8AAAABVZQODA"
+    ]
+  },
+  {
+    "issue": 21356,
+    "title": "Bug: new-cap doesn't report names starting with an astral letter",
+    "report_author": "saryn17",
+    "retrieved_at": "2026-10-26T13:16:40.886396+00:00",
+    "reported_total_comments": 2,
+    "recovered_comments": 2,
+    "recovered_comment_ids": [
+      "IC_kwDOAKjKDc8AAAABXHBfqg",
+      "IC_kwDOAKjKDc8AAAABXHqGHw"
+    ]
+  },
+  {
+    "issue": 21361,
+    "title": "Bug: `func-name-matching` ignores property names containing astral letters",
+    "report_author": "sethamus",
+    "retrieved_at": "2026-10-26T13:16:45.393696+00:00",
+    "reported_total_comments": 2,
+    "recovered_comments": 2,
+    "recovered_comment_ids": [
+      "IC_kwDOAKjKDc8AAAABXUvg4Q",
+      "IC_kwDOAKjKDc8AAAABYEELXg"
+    ]
+  },
+  {
+    "issue": 21368,
+    "title": "Bug: [prefer-arrow-callback] autofix produces a syntax error when the function is the test of a conditional",
+    "report_author": "Cayan",
+    "retrieved_at": "2026-10-26T13:16:45.540625+00:00",
+    "reported_total_comments": 4,
+    "recovered_comments": 4,
+    "recovered_comment_ids": [
+      "IC_kwDOAKjKDc8AAAABYBCMHQ",
+      "IC_kwDOAKjKDc8AAAABYB216A",
+      "IC_kwDOAKjKDc8AAAABYB4Nuw",
+      "IC_kwDOAKjKDc8AAAABYGC1Ng"
+    ]
+  }
+]

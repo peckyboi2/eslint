@@ -1,0 +1,32 @@
+{
+  "status": "instruction_change_complete; actual_model_verification_pending",
+  "configuration_version": "milestone-d-development-v4",
+  "configuration_sha256": "aa4f8b250850871e43859bcd2f6c967508e375a695c43b08e9f14fad1e0a16fa",
+  "prior_configuration_version": "milestone-d-development-v3",
+  "prior_configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+  "skill_sha256": "2483687d671ad00bda5fded84f80b13887acfe0e6da6fec9c606fcffd7c025e4",
+  "changes": [
+    "Require evidence that a supplied reproduction stands alone before dismissing absent relevant material; otherwise preserve uncertainty internally.",
+    "When a pipeline reproduction lacks a necessary invocation, request the exact command or package-script invocation in the same cohesive request.",
+    "Protect complete inline/API reproductions and already-supplied commands from redundant requests."
+  ],
+  "deterministic_checks": {
+    "result": "PASS",
+    "tests": 47,
+    "log": "tests.txt",
+    "verification_type": "simulated infrastructure; no model inference"
+  },
+  "baseline": "baseline.json",
+  "prior_evidence_files_verified": 1292,
+  "prior_evidence_changed": [],
+  "quota_changed": false,
+  "model_calls": 0,
+  "public_actions": [],
+  "limitations": [
+    "Instruction changes are not evidence that model decisions or wording are corrected.",
+    "Local allowance is exhausted at 21/21 and remains unchanged in this side conversation.",
+    "Actual fresh previews and semantic review for the two failures remain pending, with targeted API-restraint/shared-config regression recommended.",
+    "No new final comparison; earlier v3 failures and v4 #20373 development output retain their original configuration identities.",
+    "Hosted controls, backend pinning and cost limitations remain unchanged."
+  ]
+}

@@ -1,0 +1,10 @@
+test_absent_admission_precedes_engine (tests.test_workflow.WorkflowTests.test_absent_admission_precedes_engine) ... ok
+test_phase_order (tests.test_workflow.WorkflowTests.test_phase_order) ... ok
+test_privileged_token_read_follows_live_gate (tests.test_workflow.WorkflowTests.test_privileged_token_read_follows_live_gate) ... ok
+test_rejected_context_never_reads_token_or_admits (tests.test_workflow.WorkflowTests.test_rejected_context_never_reads_token_or_admits) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK
+{"status": "blocked", "error": "Rejected", "public_actions": []}

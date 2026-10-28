@@ -1,0 +1,19 @@
+{
+  "active-v6/configuration/.claude/skills/eslint-clarification/SKILL.md": "dbfd948cd6b528d23b4e641bdb274be2ae237a0840a41753c58685e9614f7550",
+  "active-v6/configuration/scripts/clarifier/config/config.json": "0fdb1130c07f92b9b3f97290207f610ff999aaa0903265755f9b8af9945e9aa5",
+  "active-v6/configuration/scripts/clarifier/config/decision.schema.json": "97bf2f86d7d67d83f8ed2e368e4928e0df9f88185c7335844cab4f0dcfb726a1",
+  "active-v6/configuration-hashes.json": "ff5c8b1926c1ee08c5f2d562f5603267676a5327cc8277651fbeca57dfb1a284",
+  "baseline-after.json": "7ce478a08b548f213c3b079a105cd34c62771316eb1cffd1988395c12e898583",
+  "baseline-before.json": "9d1aa8441d8615816caa5c24021a3815140bc7a5c74d516218da2378a953d443",
+  "local-quota-decision.json": "ac301bdbefd69d211cade7020b816b7f6c0975620b8e1a439322714f9deda3a9",
+  "pre-extension-state.json": "0f3080d46d7f02b71d052a524f75d7061b3ac13a1d9c5e957985f1ae4e3338cb",
+  "preparation.json": "7c8b894653fd546b7a87d9dec2cfbde439a43bc1080fc7214229da7db5b0d09c",
+  "prior-evidence-hashes.json": "4eb7f99658844abcb23a1b3fada90834233c183a7bfa73da9a5377b94e95e54f",
+  "prior-v5/configuration/.claude/skills/eslint-clarification/SKILL.md": "2483687d671ad00bda5fded84f80b13887acfe0e6da6fec9c606fcffd7c025e4",
+  "prior-v5/configuration/scripts/clarifier/config/config.json": "0471798cc6414a0b3a8fcbf5c2067b36f5d60baa57e3be4ee29ed9804a9b64b7",
+  "prior-v5/configuration/scripts/clarifier/config/decision.schema.json": "97bf2f86d7d67d83f8ed2e368e4928e0df9f88185c7335844cab4f0dcfb726a1",
+  "prior-v5/configuration-hashes.json": "8c770b12820027417fac33a4d4c9816b5c8d6e0257874924d8d6d3f523b00564",
+  "results.json": "53af7deb9c856084b690b23bf54113dd5bc0c108bfa797ca3669efd91d89e992",
+  "tests.txt": "68eeced6f1c33c3cb9ccfc9d22eeebcfe0c0909ad9522b0121d7dc84e2d470b9",
+  "verification.json": "16a08b74602f41d9415bac6a4d0acc02379a17b2cf76bafafd60b05dd37ecabf"
+}

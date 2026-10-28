@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 19044,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "no_action",
+  "validated_output": {
+    "decision": "no_action",
+    "rationale": "The report supplies ESLint 9.13.0, the absence of a `type` field in `package.json`, three explicitly blank configuration files, exact commands, and expected versus observed output. These inline details are sufficient to reproduce the configuration-loading comparison without relying on the external reproduction link.",
+    "clarification": null
+  }
+}

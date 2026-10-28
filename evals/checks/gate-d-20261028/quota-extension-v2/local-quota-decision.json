@@ -1,0 +1,11 @@
+{
+  "actor_id": 234542779,
+  "scope": "local-development-preview",
+  "rolling_limit": 20,
+  "campaign": "c-development-20261028",
+  "authorization_text": "ok while we are developing just raise the local calling allowance if you need to",
+  "authorisation_source": "Darren reply in this chat on 2026-10-28; standing local development authorisation; hosted policy unchanged",
+  "recorded_at": "2026-10-28T04:58:17.239240+00:00",
+  "purpose": "Exactly nine remaining Milestone D local previews now; retain all prior admissions, no refunds or paid API access",
+  "campaign_limit_unchanged": 20
+}

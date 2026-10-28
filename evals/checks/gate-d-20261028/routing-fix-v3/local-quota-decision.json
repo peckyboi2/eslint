@@ -1,0 +1,11 @@
+{
+  "actor_id": 234542779,
+  "scope": "local-development-preview",
+  "rolling_limit": 21,
+  "campaign_limit": 21,
+  "campaign": "c-development-20261028",
+  "authorization_text": "ok while we are developing just raise the local calling allowance if you need to",
+  "authorisation_source": "Darren standing local development authorisation in this chat on 2026-10-28",
+  "recorded_at": "2026-10-28T05:02:34.597544+00:00",
+  "purpose": "Remaining eight D cases plus one targeted fresh #20606 regression after correcting preview metadata; local total21, hosted10/24h and20/campaign unchanged; no reset/refund"
+}

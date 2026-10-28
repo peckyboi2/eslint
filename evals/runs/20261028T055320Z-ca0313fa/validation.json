@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 19847,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "no_action",
+  "validated_output": {
+    "decision": "no_action",
+    "rationale": "The supporting files supply the exact CLI invocation, flat configuration, triggering `build/test.js`, TypeScript configuration, and dependency records. The body supplies the expected behavior and observed diagnostic. Together these establish a standalone reproduction of the unexpected JavaScript-file linting without needing the original Gulp pipeline or access to the linked repository.",
+    "clarification": null
+  }
+}

@@ -1,0 +1,23 @@
+test_busy_stop_keeps_inflight_marker_and_blocks_future_admission (clarifier.tests.test_stop.StopTests.test_busy_stop_keeps_inflight_marker_and_blocks_future_admission) ... ok
+test_corrupt_state_does_not_stop_cancellation (clarifier.tests.test_stop.StopTests.test_corrupt_state_does_not_stop_cancellation) ... ok
+test_disables_admission_and_both_run_classes (clarifier.tests.test_stop.StopTests.test_disables_admission_and_both_run_classes) ... ok
+test_force_cancel_exhaustion_is_reported (clarifier.tests.test_stop.StopTests.test_force_cancel_exhaustion_is_reported) ... ok
+test_identity_rejection_reaches_no_write (clarifier.tests.test_stop.StopTests.test_identity_rejection_reaches_no_write) ... ok
+test_concurrent_distinct_inputs_keep_quota_but_only_one_lifetime_comment (clarifier.tests.test_posting.PostingTests.test_concurrent_distinct_inputs_keep_quota_but_only_one_lifetime_comment) ... ok
+test_final_enabled_source_and_identity_checks_precede_post (clarifier.tests.test_posting.PostingTests.test_final_enabled_source_and_identity_checks_precede_post) ... ok
+test_human_reconciliation_never_clears_intent (clarifier.tests.test_posting.PostingTests.test_human_reconciliation_never_clears_intent) ... ok
+test_incomplete_intent_is_corrupt_and_cannot_enable_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_intent_is_corrupt_and_cannot_enable_repost) ... ok
+test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) ... ok
+test_intent_precedes_single_post_and_receipt (clarifier.tests.test_posting.PostingTests.test_intent_precedes_single_post_and_receipt) ... ok
+test_receipt_write_loss_retains_reserved_lifetime_block (clarifier.tests.test_posting.PostingTests.test_receipt_write_loss_retains_reserved_lifetime_block) ... ok
+test_response_loss_leaves_uncertain_without_retry (clarifier.tests.test_posting.PostingTests.test_response_loss_leaves_uncertain_without_retry) ... ok
+test_server_acceptance_lost_response_reconciles_exact_marker_without_repost (clarifier.tests.test_posting.PostingTests.test_server_acceptance_lost_response_reconciles_exact_marker_without_repost) ... ok
+test_stop_after_final_check_records_unavoidable_inflight_write (clarifier.tests.test_posting.PostingTests.test_stop_after_final_check_records_unavoidable_inflight_write) ... ok
+test_stop_winning_state_conflict_blocks_posting_reservation (clarifier.tests.test_posting.PostingTests.test_stop_winning_state_conflict_blocks_posting_reservation) ... ok
+test_actual_workflows (clarifier.tests.test_workflow_audit.AuditTests.test_actual_workflows) ... ok
+test_unsafe_permission_secret_or_stop_dependency_rejected (clarifier.tests.test_workflow_audit.AuditTests.test_unsafe_permission_secret_or_stop_dependency_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.011s
+
+OK

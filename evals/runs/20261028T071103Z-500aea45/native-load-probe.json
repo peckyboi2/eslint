@@ -1,0 +1,71 @@
+{
+  "top_level_keys": [
+    "client_metadata",
+    "include",
+    "input",
+    "instructions",
+    "model",
+    "parallel_tool_calls",
+    "prompt_cache_key",
+    "reasoning",
+    "store",
+    "stream",
+    "tool_choice",
+    "tools"
+  ],
+  "input_structure": [
+    {
+      "type": "message",
+      "role": "developer",
+      "content": [
+        {
+          "type": "input_text",
+          "length": 2732,
+          "equals_canonical": false,
+          "equals_trimmed": false,
+          "contains_canonical": false
+        },
+        {
+          "type": "input_text",
+          "length": 341,
+          "equals_canonical": false,
+          "equals_trimmed": false,
+          "contains_canonical": false
+        }
+      ]
+    },
+    {
+      "type": "message",
+      "role": "user",
+      "content": [
+        {
+          "type": "input_text",
+          "length": 477,
+          "equals_canonical": false,
+          "equals_trimmed": false,
+          "contains_canonical": false
+        }
+      ]
+    },
+    {
+      "type": "message",
+      "role": "user",
+      "content": [
+        {
+          "type": "input_text",
+          "length": 7686,
+          "equals_canonical": false,
+          "equals_trimmed": false,
+          "contains_canonical": false
+        }
+      ]
+    }
+  ],
+  "native_instruction_sha256": "9be7ed95a884790097240a568189111db6d58b2804c7701cade6f64efcee8d1c",
+  "native_length": 10588,
+  "canonical_length": 10589,
+  "exact_match": false,
+  "trimmed_match": true,
+  "contains_canonical": false,
+  "contains_trimmed_canonical": true
+}

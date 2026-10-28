@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/opt/homebrew/Caskroom/codex/0.154.0/bin/codex",
+    "exec",
+    "--strict-config",
+    "--ephemeral",
+    "--ignore-rules",
+    "--skip-git-repo-check",
+    "--json",
+    "--color",
+    "never",
+    "-C",
+    "/private/tmp/cs467-preview-8chfc70b/workspace",
+    "-"
+  ],
+  "environment_keys": [
+    "CODEX_HOME",
+    "LANG",
+    "PATH",
+    "TMPDIR"
+  ],
+  "stdin_sha256": "9b847e78fa759ee1b4dcc64acea99a2d666fcad36607ab9eb8caa09f79e2942f",
+  "engine_config_sha256": "7cc828681ae08302c8ab1b76b1f32a4d229d1a46857996caeac509421f8e07a2"
+}

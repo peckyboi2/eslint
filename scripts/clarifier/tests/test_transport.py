@@ -13,6 +13,18 @@ from clarifier.inference import transport as t
 
 
 class ProviderResponses(unittest.TestCase):
+    def test_private_invocation_has_no_github_credentials_or_checkout_context(self):
+        engine = t.Engine(Path('/trusted/codex'), Path('/private/isolated/home'))
+        from clarifier.inference.staging import StagedCase
+        staged = StagedCase(Path('/private/staged'), Path('/private/staged/evidence'), {})
+        argv, env = t.invocation(engine, staged)
+        self.assertEqual(set(env), {'PATH', 'CODEX_HOME', 'TMPDIR', 'LANG'})
+        self.assertIn('--strict-config', argv)
+        self.assertIn('--ephemeral', argv)
+        self.assertIn('--ignore-rules', argv)
+        self.assertNotIn('GH_TOKEN', env)
+        self.assertNotIn('GITHUB_TOKEN', env)
+
     def test_response_tools_blocked_before_dispatch(self):
         for kind in ("function_call", "custom_tool_call", "web_search_call", "computer_call", "local_shell_call"):
             raw = ('data: ' + json.dumps({"type": "response.output_item.added", "item": {"type": kind}}) + '\n\n').encode()

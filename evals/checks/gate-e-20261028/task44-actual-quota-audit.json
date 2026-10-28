@@ -1,0 +1,30 @@
+{
+  "before_admissions": 31,
+  "after_admissions": 38,
+  "new_reservations": 7,
+  "actual_provider_calls": 6,
+  "failed_preprovider_reservations": 1,
+  "local_rolling_limit": 39,
+  "local_campaign_limit": 39,
+  "hosted_rolling_limit": 10,
+  "hosted_campaign_limit": 20,
+  "extension": false,
+  "refunds": 0,
+  "resets": 0,
+  "posting_enabled": false,
+  "ledger_sha256": "e102024c510091712455f3e60b4873a1753377c4de5221222a89bf7ca44fca0a",
+  "actual_enforcement": [
+    "Persistent reservation before login/model call",
+    "One provider exchange allowed by transport",
+    "Native provider retries disabled",
+    "300-second client process-group timeout",
+    "Output rejected after bounded buffering"
+  ],
+  "not_enforced": [
+    "Hard dollar cost cap",
+    "Provider/backend version pin",
+    "Provider-side token generation/spend cap",
+    "Guaranteed provider compute cancellation after client termination"
+  ],
+  "cost": "unknown"
+}

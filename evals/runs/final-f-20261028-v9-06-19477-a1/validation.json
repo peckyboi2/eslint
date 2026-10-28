@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 19477,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "no_action",
+  "validated_output": {
+    "decision": "no_action",
+    "rationale": "The report supplies ESLint and environment versions, the parser, a minimal input with `no-console` enabled, and the exact confusing suggestion messages alongside the expected behavior. The supporting playground data preserves the same input and language options. This is sufficient to reproduce the suggestion-message issue without additional project files or a separate command.",
+    "clarification": null
+  }
+}

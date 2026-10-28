@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "verification_type": "actual local evidence/hash checks; deterministic infrastructure; no new model or platform calls",
+  "configuration_version": "milestone-d-development-v3",
+  "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+  "deterministic_tests": 131,
+  "actual_D_model_calls_verified": 10,
+  "actual_D_case_outputs_verified": 9,
+  "extra_targeted_regressions": 1,
+  "original_pre_inference_failures_retained": 9,
+  "admissions": 21,
+  "old_admissions_retained": 11,
+  "refunds": 0,
+  "public_actions": [],
+  "source_and_configuration_hashes_match": true,
+  "model_skill_requests_transcripts_usage_outputs_present": true,
+  "temporary_workspaces_removed": true,
+  "baseline_golden_archive_upstream_check": "PASS",
+  "markdown": "PASS",
+  "diff_check": "PASS",
+  "evaluation_failures_retained": [
+    "19924 wrong decision",
+    "20606 incomplete build-command request",
+    "Initial v2 preview identity defect, fixed with separate v3 regression"
+  ],
+  "live_platform_controls_verified": false,
+  "final_mixed_configuration_aggregate": null
+}

@@ -1,0 +1,9 @@
+test_corrupt_state_does_not_stop_cancellation (tests.test_stop.StopTests.test_corrupt_state_does_not_stop_cancellation) ... ok
+test_disables_admission_and_both_run_classes (tests.test_stop.StopTests.test_disables_admission_and_both_run_classes) ... ok
+test_force_cancel_exhaustion_is_reported (tests.test_stop.StopTests.test_force_cancel_exhaustion_is_reported) ... ok
+test_identity_rejection_reaches_no_write (tests.test_stop.StopTests.test_identity_rejection_reaches_no_write) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

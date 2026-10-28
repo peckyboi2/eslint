@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 19924,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "no_action",
+  "validated_output": {
+    "decision": "no_action",
+    "rationale": "The report supplies the Windows environment, Node/npm/ESLint versions, the exact `eslint ./ --fix` command, a roughly 9,000-file workload with over 100,000 autofixable issues, and an EMFILE stack trace during `ESLint.outputFixes`. It also states the expected outcome. These details sufficiently establish the bulk-fix reproduction path; the company's specific rule configuration and source files are not necessary to reconstruct this file-writing workload.",
+    "clarification": null
+  }
+}

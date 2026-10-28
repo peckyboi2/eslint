@@ -1,0 +1,13 @@
+{
+  "prior_evidence_files": 682,
+  "unchanged_files": 681,
+  "approved_mutable_state_path": "evals/checks/gate-c-20261028/dry-state.json",
+  "append_only_transition_verified": true,
+  "old_admissions": 11,
+  "new_admissions": 21,
+  "old_decisions_retained": true,
+  "public_posts": [],
+  "archive_sha256": "33e5bf68145a83871ff94324b25694a780e326e119ad48f979d78e8b75620531",
+  "golden_unchanged": true,
+  "earlier_D_attempts_retained": true
+}

@@ -1,0 +1,1 @@
+{"result": "PASS handler simulation", "real_public_writes": 0, "simulated_comment_id": 999, "live_posting_enabled": false}

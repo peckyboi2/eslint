@@ -3,6 +3,7 @@ from clarifier.controls import ledger
 from clarifier.outputs import output_handler as handler
 from clarifier.controls import policy as p
 from clarifier.outputs.output_handler import CommentPlan
+from clarifier.shared.errors import guarded
 
 
 def reserve(state: dict, plan: CommentPlan, run_id: str) -> dict:
@@ -27,6 +28,7 @@ def receipt(state: dict, marker: str, comment_id: int | None) -> dict:
     return ledger.validate(state)
 
 
+@guarded(p.PostingBlocked, 'Malformed reconciliation evidence; lifetime intent remains blocked')
 def reconcile(state: dict, marker: str, comments: list[dict], at: int, reason: str) -> dict:
     """Record human-confirmed bot comment; never reopen an absent/ambiguous intent."""
     state=ledger.validate(state)

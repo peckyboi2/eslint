@@ -1,0 +1,61 @@
+{
+  "verification_type": "stipulated scheduler simulation plus actual pure admission/identity helpers; NOT a live queue test",
+  "configuration_version": "milestone-e-controls-v7",
+  "trace": [
+    {
+      "event": "A active",
+      "workflow_states": {
+        "A": "in_progress"
+      },
+      "simulated_admissions": 1
+    },
+    {
+      "event": "B dispatched while A active",
+      "workflow_states": {
+        "A": "in_progress",
+        "B": "pending"
+      },
+      "simulated_admissions": 1
+    },
+    {
+      "event": "C replaces B pending under stipulated single-pending semantics",
+      "workflow_states": {
+        "A": "in_progress",
+        "B": "cancelled/superseded",
+        "C": "pending"
+      },
+      "simulated_admissions": 1
+    },
+    {
+      "event": "A completes, C released; actual admission helper reapplied",
+      "workflow_states": {
+        "A": "completed",
+        "B": "cancelled/superseded",
+        "C": "in_progress"
+      },
+      "simulated_admissions": 2
+    }
+  ],
+  "release_rechecks": [
+    {
+      "scenario": "disabled-on-release",
+      "error": "Admission disabled",
+      "model_calls": 0,
+      "public_actions": []
+    },
+    {
+      "scenario": "changed-caller-on-release",
+      "error": "Trigger/identity/ref rejected",
+      "model_calls": 0,
+      "public_actions": []
+    }
+  ],
+  "actual_model_calls": 0,
+  "simulated_model_admissions": 2,
+  "public_actions": [],
+  "live_blocker": "task46-platform-preflight-v2.json: Actions disabled, no registered workflows, state ref 404; hosted engine/login not provisioned.",
+  "unsupported_claims": [
+    "No observed GitHub pending replacement, runner scheduling, release timing or cancellation",
+    "No platform dispatch attempted; no state/workflow enablement"
+  ]
+}

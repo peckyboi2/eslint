@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": "Could you share the configuration provided by `feEslint` from `@fe/eslint-config`, together with the relevant `package.json` and lockfile, or a minimal project containing them? The inline configuration builds on that shared setup, so its inherited settings and plugin dependencies are needed to reproduce the two errors.\n\n**Created by AI (OpenAI Codex, gpt-6.1-sol).**\nPreview run: `20261028T020039Z-14037685`.",
+  "source_issue": 20373,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "clarify",
+  "validated_output": {
+    "decision": "clarify",
+    "rationale": "The report supplies environment versions, the overriding configuration, the plugin-registration toggle, and both errors with their affected file types. However, the base configuration supplied by `feEslint` from `@fe/eslint-config` and its dependency setup are absent. These are necessary to reconstruct the inherited plugin registrations and file-specific configuration involved in the reported errors.",
+    "clarification": "Could you share the configuration provided by `feEslint` from `@fe/eslint-config`, together with the relevant `package.json` and lockfile, or a minimal project containing them? The inline configuration builds on that shared setup, so its inherited settings and plugin dependencies are needed to reproduce the two errors."
+  }
+}

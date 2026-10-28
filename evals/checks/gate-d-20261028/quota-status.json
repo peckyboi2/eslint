@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-10-28T04:50:28.806492+00:00",
+  "campaign": "c-development-20261028",
+  "admissions_total": 11,
+  "rolling_24h_admissions": 11,
+  "local_rolling_limit": 11,
+  "hosted_rolling_limit": 10,
+  "campaign_limit": 20,
+  "remaining_campaign_admissions": 9,
+  "additional_admissions_needed": 9,
+  "proposed_local_rolling_limit": 20,
+  "approval": "pending; no limits changed",
+  "posting_enabled": false,
+  "ledger_sha256": "5551a466c399e62367ca740980524971fa944c0bdee99449a35cb05022f82c4c"
+}

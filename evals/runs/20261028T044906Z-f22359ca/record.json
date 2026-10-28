@@ -1,0 +1,52 @@
+{
+  "run_id": "20261028T044906Z-f22359ca",
+  "started_at": "2026-10-28T04:49:06.437917+00:00",
+  "status": "failed",
+  "trigger": "Darren-authorised local development preview",
+  "kind": "local preview attempt",
+  "verification_type": "local pre-inference checks",
+  "source_issue": 19477,
+  "model_requested": "gpt-6.1-sol",
+  "engine": "codex-cli",
+  "input_hashes": {
+    "body.md": "1b0d0ec7bb51bc0af9319f6afb392e0ffe3e356d6839cc6123fe7ac2f7aa5ac5",
+    "snapshot.json": "2331952f2a2ea637b5fc2ce82344ad43c16cf4d466ab77472014a1d75b25cfc3",
+    "support/playground-1.json": "15f8e590eb3bd4bf8ff8cf6b6c8f447e3e8f8bb4502589d82ba9de37a6dc1925",
+    "title.txt": "4923aad93b56b198d8181cd01ac8a6657f2085237d0f1ea693ae5b7e8e7e994d"
+  },
+  "skill_sha256": "unknown",
+  "engine_version": "unknown",
+  "model_returned": "unknown",
+  "usage": "unknown",
+  "cost": "unknown",
+  "errors": [
+    "Rolling quota exhausted"
+  ],
+  "posting_available": false,
+  "public_actions": [],
+  "backend_revision_pinned": false,
+  "transport_request_attempts": 0,
+  "inference_admitted": false,
+  "configuration_sha256": "61a7ed5119a18a3fa74653eb5b40ccbf1e422a894b946272eddecdc9a73084de",
+  "configuration_version": "milestone-d-development-v1",
+  "model_workspace": "/private/tmp/cs467-preview-iqdcr7gi/workspace",
+  "host_isolation": {
+    "model_tools": [],
+    "model_filesystem_interface": "none; approved text supplied inline",
+    "model_network_interface": "none",
+    "host_harness_os_jail": false,
+    "host_network_firewall_tested": false,
+    "trusted_harness": "Python recorder/gateway and pinned Codex binary can access host resources; model cannot call them",
+    "gateway": "fixed HTTPS provider destination; no redirects; one request; response buffered before tool rejection",
+    "credentials": "ChatGPT login only in temporary private engine home; none in model request; no posting/state credentials"
+  },
+  "historical_cutoff": {
+    "kind": "opening_record",
+    "cutoff_utc": "2025-03-04T20:34:50Z",
+    "cutoff_semantics": "Opening-event payload at its recorded event time; not proof of byte-exact state at issue creation.",
+    "source_event_created_at": "2025-03-04T20:34:50Z",
+    "issue_updated_at_in_payload": "2025-03-04T20:34:49Z"
+  },
+  "redacted_artifacts": [],
+  "finished_at": "2026-10-28T04:49:06.444846+00:00"
+}

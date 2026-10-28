@@ -1,0 +1,450 @@
+[
+  {
+    "issue": 21293,
+    "id": "IC_kwDOAKjKDc8AAAABSEytEQ",
+    "created_at": "2026-09-02T10:11:33Z",
+    "last_edited_at": null,
+    "author": "mdjermanovic",
+    "author_type": "User",
+    "author_association": "MEMBER",
+    "is_report_author": false,
+    "body": "Thanks for the report, I can reproduce this.\n\nSince in this case there is no parsing, I think it really makes more sense to omit the property, as it currently works. We'd just update the docs and types to align with the current behavior.\n\n@eslint/eslint-team thoughts?",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21293,
+    "id": "IC_kwDOAKjKDc8AAAABTDMWUA",
+    "created_at": "2026-09-07T16:24:35Z",
+    "last_edited_at": null,
+    "author": "snitin315",
+    "author_type": "User",
+    "author_association": "CONTRIBUTOR",
+    "is_report_author": false,
+    "body": "Agree with just updating docs & types. Marking this as accepted for the docs.\n\n@ntnyq Feel free to send a PR updating docs & types to match current behaviour",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21293,
+    "id": "IC_kwDOAKjKDc8AAAABTIjRVg",
+    "created_at": "2026-09-08T04:04:38Z",
+    "last_edited_at": null,
+    "author": "eslint-github-bot",
+    "author_type": "Bot",
+    "author_association": "NONE",
+    "is_report_author": false,
+    "body": "👋 Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21313. Thanks, @ntnyq!\n\n[//]: # (issue-pr-link)",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21295,
+    "id": "IC_kwDOAKjKDc8AAAABSJwLDQ",
+    "created_at": "2026-09-02T16:51:36Z",
+    "last_edited_at": null,
+    "author": "mdjermanovic",
+    "author_type": "User",
+    "author_association": "MEMBER",
+    "is_report_author": false,
+    "body": "I'm not sure it would be useful to not report these declarations. While they technically execute, the exports can never be accessed.\n\n@eslint/eslint-team thoughts?",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21295,
+    "id": "IC_kwDOAKjKDc8AAAABTDKZdQ",
+    "created_at": "2026-09-07T16:21:12Z",
+    "last_edited_at": null,
+    "author": "snitin315",
+    "author_type": "User",
+    "author_association": "CONTRIBUTOR",
+    "is_report_author": false,
+    "body": "I agree to keep the existing behavior. Closing this issue.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21304,
+    "id": "IC_kwDOAKjKDc8AAAABSgEEmw",
+    "created_at": "2026-09-04T06:19:15Z",
+    "last_edited_at": null,
+    "author": "mdjermanovic",
+    "author_type": "User",
+    "author_association": "MEMBER",
+    "is_report_author": false,
+    "body": "Thank for the report. I agree this is a bug, PR is welcome.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21304,
+    "id": "IC_kwDOAKjKDc8AAAABSgNlAQ",
+    "created_at": "2026-09-04T06:36:49Z",
+    "last_edited_at": null,
+    "author": "eslint-github-bot",
+    "author_type": "Bot",
+    "author_association": "NONE",
+    "is_report_author": false,
+    "body": "👋 Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21305. Thanks, @electrohyun!\n\n[//]: # (issue-pr-link)",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21314,
+    "id": "IC_kwDOAKjKDc8AAAABTeIl3A",
+    "created_at": "2026-09-09T12:13:02Z",
+    "last_edited_at": null,
+    "author": "mdjermanovic",
+    "author_type": "User",
+    "author_association": "MEMBER",
+    "is_report_author": false,
+    "body": "Thanks for the report. I agree this is a bug, PR is welcome.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21314,
+    "id": "IC_kwDOAKjKDc8AAAABTe8H_Q",
+    "created_at": "2026-09-09T13:16:31Z",
+    "last_edited_at": null,
+    "author": "eslint-github-bot",
+    "author_type": "Bot",
+    "author_association": "NONE",
+    "is_report_author": false,
+    "body": "👋 Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21316. Thanks, @electrohyun!\n\n[//]: # (issue-pr-link)",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21319,
+    "id": "IC_kwDOAKjKDc8AAAABUOdUIg",
+    "created_at": "2026-09-13T08:49:52Z",
+    "last_edited_at": null,
+    "author": "mdjermanovic",
+    "author_type": "User",
+    "author_association": "MEMBER",
+    "is_report_author": false,
+    "body": "Thanks for the report, I can reproduce this. This is a very edge case, but since it seems fairly easy to fix, marking as accepted. PR is welcome.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21319,
+    "id": "IC_kwDOAKjKDc8AAAABUOn1qA",
+    "created_at": "2026-09-13T09:36:00Z",
+    "last_edited_at": null,
+    "author": "eslint-github-bot",
+    "author_type": "Bot",
+    "author_association": "NONE",
+    "is_report_author": false,
+    "body": "👋 Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21322. Thanks, @chiliec!\n\n[//]: # (issue-pr-link)",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21320,
+    "id": "IC_kwDOAKjKDc8AAAABUOf0ew",
+    "created_at": "2026-09-13T09:01:56Z",
+    "last_edited_at": null,
+    "author": "mdjermanovic",
+    "author_type": "User",
+    "author_association": "MEMBER",
+    "is_report_author": false,
+    "body": "Thanks for report, I can reproduce this. I think the `\"never\"` option shouldn't apply to methods using `super`. Marking as accepted, PR is welcome.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21320,
+    "id": "IC_kwDOAKjKDc8AAAABUO9sFQ",
+    "created_at": "2026-09-13T10:56:29Z",
+    "last_edited_at": "2026-09-13T11:02:40Z",
+    "author": "dvd233",
+    "author_type": "User",
+    "author_association": "CONTRIBUTOR",
+    "is_report_author": false,
+    "body": "I'm working on this now and expect to open a focused PR today. I'll make the `\"never\"` option skip object methods whose `super` usage requires method syntax and add regression coverage for the reported case and related method-bound `super` usage.\n\n**Created by AI (GPT-5.6 Sol).**\n",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21320,
+    "id": "IC_kwDOAKjKDc8AAAABUQZr2A",
+    "created_at": "2026-09-13T15:54:25Z",
+    "last_edited_at": null,
+    "author": "crimsonjay0",
+    "author_type": "User",
+    "author_association": "CONTRIBUTOR",
+    "is_report_author": false,
+    "body": "I would like to be assigned to this.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21320,
+    "id": "IC_kwDOAKjKDc8AAAABUQb8sw",
+    "created_at": "2026-09-13T16:01:21Z",
+    "last_edited_at": "2026-09-13T20:35:52Z",
+    "author": "DMartens",
+    "author_type": "User",
+    "author_association": "CONTRIBUTOR",
+    "is_report_author": false,
+    "body": "~~There is already a PR for this (#21322)~~.\n~~Unfortunately I am unable to assign it as the person has not commented on this issue.~~\nEdit: Mistook issues from the same issue author.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21320,
+    "id": "IC_kwDOAKjKDc8AAAABUQdcrA",
+    "created_at": "2026-09-13T16:05:39Z",
+    "last_edited_at": null,
+    "author": "crimsonjay0",
+    "author_type": "User",
+    "author_association": "CONTRIBUTOR",
+    "is_report_author": false,
+    "body": "@DMartens That PR addresses another issue.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21320,
+    "id": "IC_kwDOAKjKDc8AAAABUQmO9A",
+    "created_at": "2026-09-13T16:31:28Z",
+    "last_edited_at": null,
+    "author": "eslint-github-bot",
+    "author_type": "Bot",
+    "author_association": "NONE",
+    "is_report_author": false,
+    "body": "👋 Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21323. Thanks, @dvd233!\n\n[//]: # (issue-pr-link)",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21321,
+    "id": "IC_kwDOAKjKDc8AAAABUOnflw",
+    "created_at": "2026-09-13T09:34:36Z",
+    "last_edited_at": null,
+    "author": "mdjermanovic",
+    "author_type": "User",
+    "author_association": "MEMBER",
+    "is_report_author": false,
+    "body": "In case of global variables, we could convert autofixes to suggestions, like we are already doing with member expressions for the same reason (possible setter). However, global setters seems like an extreme edge case, so I think we shouldn't make any changes to the rule.\n\n@eslint/eslint-team thoughts?",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21321,
+    "id": "IC_kwDOAKjKDc8AAAABVBQDHg",
+    "created_at": "2026-09-16T22:38:47Z",
+    "last_edited_at": null,
+    "author": "InnoxCodes",
+    "author_type": "User",
+    "author_association": "NONE",
+    "is_report_author": false,
+    "body": "**This comment was created with AI (Claude Sonnet 5).**\n\nI dug into the root cause and have a fix ready, but per ESLint's AI contribution policy I understand AI-generated PRs are only considered for issues labeled `accepted`, so I'm posting the diagnosis and proposed fix here rather than opening a PR against an unaccepted issue. Happy to submit it as a PR if a maintainer marks this accepted.\n\n### Root cause\n\nIn `lib/rules/logical-assignment-operators.js`, the `never`-mode fixer (and the three `always`-mode fixers going the other direction) gate whether to auto-fix vs. only suggest via `cannotBeGetter(node)`:\n\n```js\nfunction cannotBeGetter(node) {\n\treturn (\n\t\tnode.type === \"Identifier\" &&\n\t\t(isStrict || !isInsideWithBlock(node))\n\t);\n}\n```\n\nThe intent is \"a plain `Identifier` target can't have observable getter/setter side effects unless we're inside a non-strict `with` block.\" That's true for identifiers bound to local variables, but not for identifiers that resolve to an **implicit global** - i.e. no local declaration, so at runtime the reference is effectively a property access on the global object. In `sourceType: \"script\"`, `Object.defineProperty(globalThis, 'p', { get, set, configurable: true })` makes plain `p` an accessor, with no `with` block involved at all, which is exactly this issue's repro.\n\n`isInsideWithBlock` catches the `with` case; nothing catches the implicit-global case, so `cannotBeGetter` returns `true` (safe to auto-fix) when it shouldn't.\n\n### Proposed fix\n\nThe file already has the right tool for this: `astUtils.isReferenceToGlobalVariable(scope, node)` (used a few lines up, for detecting bare `undefined`) returns `true` exactly for a reference with no local declaration - which is precisely \"could be an implicit-global accessor.\" Extending `cannotBeGetter` to take the enclosing scope and exclude that case:\n\n```js\nfunction cannotBeGetter(node, scope) {\n\treturn (\n\t\tnode.type === \"Identifier\" &&\n\t\t!astUtils.isReferenceToGlobalVariable(scope, node) &&\n\t\t(isStrict || !isInsideWithBlock(node))\n\t);\n}\n```\n\nThis needs threading a `scope` (via `sourceCode.getScope(...)`, same pattern already used for the `IfStatement` handler) through to all four call sites (`never`-mode `AssignmentExpression`, `always`-mode `foo = foo || bar`, `always`-mode `foo || (foo = bar)`, and `always`-mode `if (foo) foo = bar`), since all four convert between forms that are only equivalent when the assignment target has no observable write side effect - the `never` direction currently over-fixes by adding an unconditional write, and the `always` direction under-fixes in the same way in reverse (removes a write that should stay conditional).\n\nA variable that *is* locally declared (function param, `let`/`const`/`var` inside a function, etc.) is unaffected - `isReferenceToGlobalVariable` only returns `true` when `reference.resolved.defs.length === 0`, so the common case still auto-fixes exactly as it does today.\n\nI verified this fix (and confirmed the bug reproduces without it) against the exact repro in this issue, plus checked all four `cannotBeGetter` call sites individually with both a global-identifier case (downgrades from autofix to suggestion-only, as intended) and a locally-scoped identifier case (still autofixes, no regression).",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21321,
+    "id": "IC_kwDOAKjKDc8AAAABVZQODA",
+    "created_at": "2026-09-18T13:32:30Z",
+    "last_edited_at": null,
+    "author": "mdjermanovic",
+    "author_type": "User",
+    "author_association": "MEMBER",
+    "is_report_author": false,
+    "body": "Based on the thumbs-up on my previous comment, it looks like the team agrees not to make any changes to this rule in this regard.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21356,
+    "id": "IC_kwDOAKjKDc8AAAABXHBfqg",
+    "created_at": "2026-09-26T11:20:33Z",
+    "last_edited_at": null,
+    "author": "mdjermanovic",
+    "author_type": "User",
+    "author_association": "MEMBER",
+    "is_report_author": false,
+    "body": "Thank for the report. I agree this is a bug, PR is welcome.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21356,
+    "id": "IC_kwDOAKjKDc8AAAABXHqGHw",
+    "created_at": "2026-09-26T13:04:47Z",
+    "last_edited_at": null,
+    "author": "eslint-github-bot",
+    "author_type": "Bot",
+    "author_association": "NONE",
+    "is_report_author": false,
+    "body": "👋 Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21357. Thanks, @sary8!\n\n[//]: # (issue-pr-link)",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21361,
+    "id": "IC_kwDOAKjKDc8AAAABXUvg4Q",
+    "created_at": "2026-09-27T22:01:16Z",
+    "last_edited_at": null,
+    "author": "DMartens",
+    "author_type": "User",
+    "author_association": "CONTRIBUTOR",
+    "is_report_author": false,
+    "body": "Thank you for checking other rules for the same bugs with astral letters.\nFeel free to open a PR for this.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21361,
+    "id": "IC_kwDOAKjKDc8AAAABYEELXg",
+    "created_at": "2026-09-30T11:00:48Z",
+    "last_edited_at": null,
+    "author": "eslint-github-bot",
+    "author_type": "Bot",
+    "author_association": "NONE",
+    "is_report_author": false,
+    "body": "👋 Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21372. Thanks, @Hashim1999164!\n\n[//]: # (issue-pr-link)",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21368,
+    "id": "IC_kwDOAKjKDc8AAAABYBCMHQ",
+    "created_at": "2026-09-30T07:49:17Z",
+    "last_edited_at": null,
+    "author": "mdjermanovic",
+    "author_type": "User",
+    "author_association": "MEMBER",
+    "is_report_author": false,
+    "body": "Thank for the report, I can reproduce this.\n\nThis is definitely a bug in this rule, but not because of the invalid autofix. The rule should actually not report `function() {}` in `foo(function() {} ? a : b);` because the `function() {} ? a : b` expression cannot evaluate to `function() {}`, so it shouldn't be considered as an argument/callback. PR to fix this is welcome.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21368,
+    "id": "IC_kwDOAKjKDc8AAAABYB216A",
+    "created_at": "2026-09-30T08:42:30Z",
+    "last_edited_at": null,
+    "author": "eslint-github-bot",
+    "author_type": "Bot",
+    "author_association": "NONE",
+    "is_report_author": false,
+    "body": "👋 Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21370. Thanks, @opencode13241-eng!\n\n[//]: # (issue-pr-link)",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21368,
+    "id": "IC_kwDOAKjKDc8AAAABYB4Nuw",
+    "created_at": "2026-09-30T08:43:53Z",
+    "last_edited_at": null,
+    "author": "opencode13241-eng",
+    "author_type": "User",
+    "author_association": "NONE",
+    "is_report_author": false,
+    "body": "Opened #21370 so functions in the test position of a conditional are not treated as callbacks.",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  },
+  {
+    "issue": 21368,
+    "id": "IC_kwDOAKjKDc8AAAABYGC1Ng",
+    "created_at": "2026-09-30T13:06:59Z",
+    "last_edited_at": null,
+    "author": "eslint-github-bot",
+    "author_type": "Bot",
+    "author_association": "NONE",
+    "is_report_author": false,
+    "body": "👋 Hi! This issue is being addressed in pull request https://github.com/eslint/eslint/pull/21373. Thanks, @Cayan!\n\n[//]: # (issue-pr-link)",
+    "coding": {
+      "requests_missing_reproduction_information": false,
+      "coder": "research assistant; inspect stored text to verify",
+      "basis": "No comment asks the reporter to supply missing reproduction context; comments concern acceptance, behaviour, diagnosis or PR coordination."
+    }
+  }
+]

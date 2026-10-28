@@ -1,0 +1,51 @@
+{
+  "previous_comparisons": {
+    "19924": "evals/runs/20261028T050356Z-3f74565e/comparison.json",
+    "20606": "evals/runs/20261028T050239Z-453163ef/comparison.json"
+  },
+  "current": [
+    {
+      "issue": 20606,
+      "decision_pass": true,
+      "quality_pass": true,
+      "comparison": "evals/runs/20261028T054714Z-72edea74/comparison.json",
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "notes": [
+          "Expected clarify decision and all applicable wording criteria pass in this actual run.",
+          "The request explicitly includes the exact build command, addressing the earlier omission without endorsing deletion advice."
+        ]
+      }
+    },
+    {
+      "issue": 19924,
+      "decision_pass": false,
+      "quality_pass": false,
+      "comparison": "evals/runs/20261028T054822Z-b5ee3ae0/comparison.json",
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "unsupported_automatic_requests": [
+          "Expected human_review, but actual clarify proposes requesting a minimal/generated project, configuration and fixable input files."
+        ],
+        "uncertainty_failures": [
+          "Rationale asserts missing materials are necessary rather than retaining uncertainty about their necessity."
+        ],
+        "notes": [
+          "Decision FAIL: clarify instead of accepted human_review.",
+          "The new output changes the earlier no_action error into an unsupported automatic clarification request; uncertainty is still not recorded.",
+          "No actual public write occurred; this proposed comment remains a preview. Earlier failure and expectation remain unchanged."
+        ]
+      }
+    }
+  ],
+  "original_records_unchanged": true,
+  "interpretation": "Current actual outcomes are new evidence; old failures remain and are not overwritten or relabelled."
+}

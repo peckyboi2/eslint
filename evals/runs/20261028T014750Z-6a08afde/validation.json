@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": "Could you share the relevant configuration exported by `@fe/eslint-config`, together with the relevant `package.json` and lockfile, or a minimal project containing them? The snippet builds on `feEslint(...)`, so its inherited plugin registrations, file scopes, and dependency setup are needed to reproduce both errors.\n\n**Created by AI (OpenAI Codex, gpt-6.1-sol).**\nPreview run: `20261028T014750Z-6a08afde`.",
+  "source_issue": 20373,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "clarify",
+  "validated_output": {
+    "decision": "clarify",
+    "rationale": "The report supplies environment versions, the local flat configuration, the plugin-registration toggle, and both observed errors, including their differing effects on .ts and .js files. However, it spreads configuration returned by `feEslint` from `@fe/eslint-config` without supplying that configuration or its dependency records. Those inherited settings and dependencies are necessary to reconstruct the plugin setup and file matching involved in the reported errors.",
+    "clarification": "Could you share the relevant configuration exported by `@fe/eslint-config`, together with the relevant `package.json` and lockfile, or a minimal project containing them? The snippet builds on `feEslint(...)`, so its inherited plugin registrations, file scopes, and dependency setup are needed to reproduce both errors."
+  }
+}

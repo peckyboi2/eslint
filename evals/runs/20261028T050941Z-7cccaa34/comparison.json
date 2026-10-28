@@ -1,0 +1,96 @@
+{
+  "verification_type": "actual selected-engine coding-assistant preview; not a GitHub workflow run",
+  "reviewed_at": "2026-10-28T05:10:11.396759+00:00",
+  "reviewer": "Codex implementation review; no Darren human output approval claimed",
+  "source_issue": 19118,
+  "expected_decision": "no_action",
+  "actual_decision": "no_action",
+  "decision_pass": true,
+  "quality": [
+    {
+      "criterion": 1,
+      "result": "pass",
+      "evidence": "Internal completeness judgement agrees with frozen expectation: Explicitly recognises supplied working directory and external-file layout alongside both-version commands, configurations and source."
+    },
+    {
+      "criterion": 2,
+      "result": "not_assessable",
+      "evidence": "No proposed comment; public wording criterion is not assessable."
+    },
+    {
+      "criterion": 3,
+      "result": "not_assessable",
+      "evidence": "No proposed comment; no redundant public request."
+    },
+    {
+      "criterion": 4,
+      "result": "pass",
+      "evidence": "Internal rationale remains neutral and does not decide whether maintainers should accept the bug."
+    },
+    {
+      "criterion": 5,
+      "result": "pass",
+      "evidence": "No diagnosis/fix or submitted-code execution; preview has no action/tool interface."
+    },
+    {
+      "criterion": 6,
+      "result": "pass",
+      "evidence": "Validated silent result with correct selected identity; no posting target."
+    },
+    {
+      "criterion": 7,
+      "result": "pass",
+      "evidence": "clarification and preview_comment are null; public_actions=[] and no public write occurred."
+    }
+  ],
+  "quality_findings": {
+    "unnecessary_questions": [],
+    "missed_clarifications": [],
+    "deferrals": [],
+    "silent_branch_violations": [],
+    "scope_issues": [],
+    "infrastructure_failures": [],
+    "notes": [
+      "Explicitly recognises supplied working directory and external-file layout alongside both-version commands, configurations and source.",
+      "Expected no_action; /app is preserved in the source shell prompt and no redundant working-directory request is produced."
+    ]
+  },
+  "actual_clarification": null,
+  "actual_rationale": "The body and supporting files supply ESLint 9.14.0 with Espree, the working directory and external-file layout, CLI commands, flat configuration, triggering JavaScript, package declarations, and exact dependency versions. They also establish the observed warning, expected linting behavior, and ESLint 8 comparison. This is sufficient to reconstruct the reported reproduction without additional information.",
+  "raw_output_sha256": "1307357932fccf746c9518278be97f5b9616cb26c22a7a49b5c259f5d05cc18c",
+  "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+  "configuration_version": "milestone-d-development-v3",
+  "input_hashes": {
+    "body.md": "e966d6675a422c4ed4bb688707a1938132006bf4945ba31010f892d59b57c23b",
+    "snapshot.json": "42273146df8a8f284a434898fb06dede6bc1c341ce0b25322e87d677b2f406db",
+    "support/README.md": "f5a87bf65a68b2ce24d1327c020199e03e98df234e64e28ce301776aeeef0ddd",
+    "support/example_8_X/app/.eslintrc.yml": "cd42bf9b0813214f19acb9225cdbd366c6678aecbd128a21dc66fe807a169705",
+    "support/example_8_X/app/README.md": "dd763a8f41ea49f1940124eb9cb446f2b750e56b1c4d444e0b5981f9c46be20d",
+    "support/example_8_X/app/inner_example.js": "f7c738f92c0b2321932bddf877383ff8f3b4837d17f67d311d752b3e17db63eb",
+    "support/example_8_X/app/package-lock.versions.json": "e697cd209f6a90392eca2d77ee551adb303a982cdd1c4faa96bc6c8d83117e3f",
+    "support/example_8_X/app/package.json": "940a677fbfc0458956cb9d2b8cc72d173b159318fa2ea9dbc3a6163120226efe",
+    "support/example_8_X/tmp/outer_example.js": "7301d885929cd18816f09536780efa3fe439669a040da5f242bdc9c3a1f590c9",
+    "support/example_9_X/app/README.md": "74e6a96b8b73bed994bc96575581addfb9b3dd43e169508b52fe6726d29916a1",
+    "support/example_9_X/app/eslint.config.mjs": "2ec2df6d2cba56e7c6d29a8ba98ccdd146283d2e6ce08a5a0fcdadf54976a55b",
+    "support/example_9_X/app/inner_example.js": "f7c738f92c0b2321932bddf877383ff8f3b4837d17f67d311d752b3e17db63eb",
+    "support/example_9_X/app/package-lock.versions.json": "4b96931f6b0b8afcf62d0da2f44f96e6ffca7563b637c230f245b9750399a8b1",
+    "support/example_9_X/app/package.json": "c9662a73587bcae9e4646117d096a87540c44ad19920d218ac95ab813cd40a76",
+    "support/example_9_X/tmp/outer_example.js": "7301d885929cd18816f09536780efa3fe439669a040da5f242bdc9c3a1f590c9",
+    "title.txt": "c37e2979538b3e4e096bbe3a0106fff3d5902375bb6ac50a091da2165269f78c"
+  },
+  "boundary_checks": {
+    "exact_selected_input": true,
+    "skill_loaded": true,
+    "fresh_two_message_request": true,
+    "outbound_tools": [],
+    "implicit_host_context_forwarded": false,
+    "temporary_workspace_removed": true,
+    "selected_route_identity_matches": true
+  },
+  "public_actions": [],
+  "limitations": [
+    "Preview only; no live GitHub/platform verification.",
+    "Host Python/Codex is trusted, not OS-jailed.",
+    "Backend revision unpinned; monetary cost unknown."
+  ]
+}

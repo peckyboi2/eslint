@@ -1,0 +1,19 @@
+{
+  "verification_type": "actual local model preview; platform path unavailable",
+  "reviewed_at": "2026-10-28T01:57:22.214786+00:00",
+  "expected_decision": "clarify",
+  "actual_decision": "clarify",
+  "raw_output_sha256": "00660de8e56c70aaa87999fb62bc2e036a1b9c33d6f7b4829604ee333d7d3cf3",
+  "configuration_sha256": "f07dc84cb306891068b358f7c416ef843a8dd1ff1f847ca9e618295603c46774",
+  "decision_pass": true,
+  "quality": "Targeted shared configuration and dependency setup requested; comment-only handler falsely rejects code-formatted plugin scope, fixed in a new version before any live posting",
+  "handler_issue": "@typescript-eslint without a slash is code-formatted, safe and present in source, but v3 formatter rejects it",
+  "public_actions": [],
+  "platform_blockers": [
+    "Actions disabled",
+    "Remote main has upstream baseline only",
+    "No repository secrets or hosted Codex login/runtime",
+    "No triage-state branch or sandbox issue copy",
+    "No application token available outside Actions; personal token not used for comments"
+  ]
+}

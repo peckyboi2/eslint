@@ -1,0 +1,15 @@
+{
+  "text": "const obj = { describe() { return super.toString(); } }; obj.describe();",
+  "options": {
+    "rules": {
+      "object-shorthand": [
+        "error",
+        "never"
+      ]
+    },
+    "languageOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "script"
+    }
+  }
+}

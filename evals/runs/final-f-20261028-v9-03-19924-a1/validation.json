@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 19924,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "no_action",
+  "validated_output": {
+    "decision": "no_action",
+    "rationale": "The report supplies the environment and versions, the exact `eslint ./ --fix` command, a workload of roughly 9,000 files with autofixable issues, the expected result, and an EMFILE stack trace during `ESLint.outputFixes`. This sufficiently describes the large-batch autofix reproduction path; the original repository and exact rule list are not necessary to reconstruct that scenario.",
+    "clarification": null
+  }
+}

@@ -18,6 +18,47 @@ def ctx(number): return identity.verify({**context_data(), 'run_id':str(number)}
 
 
 class AdmissionTests(unittest.TestCase):
+    def test_just_below_at_above_rolling_and_campaign_limits(self):
+        state = enabled()
+        for number in range(1, p.ROLLING_LIMIT):
+            state = admission.reserve(state, ctx(number), 'a'*64, 100)
+        self.assertEqual(len(state['admissions']), p.ROLLING_LIMIT - 1)
+        state = admission.reserve(state, ctx(p.ROLLING_LIMIT), 'a'*64, 100)
+        self.assertEqual(len(state['admissions']), p.ROLLING_LIMIT)
+        self.denied_without_effect(state, ctx(p.ROLLING_LIMIT + 1), 100)
+        for number in range(p.ROLLING_LIMIT + 1, p.CAMPAIGN_LIMIT):
+            state = admission.reserve(state, ctx(number), 'a'*64, number*p.ROLLING_SECONDS)
+        self.assertEqual(len(state['admissions']), p.CAMPAIGN_LIMIT - 1)
+        state = admission.reserve(state, ctx(p.CAMPAIGN_LIMIT), 'a'*64, p.CAMPAIGN_LIMIT*p.ROLLING_SECONDS)
+        self.assertEqual(len(state['admissions']), p.CAMPAIGN_LIMIT)
+        self.denied_without_effect(state, ctx(p.CAMPAIGN_LIMIT + 1), (p.CAMPAIGN_LIMIT + 1)*p.ROLLING_SECONDS)
+        invalid = ledger.validate(state)
+        invalid['admissions'].append({**invalid['admissions'][-1], 'run_id': '999', 'event_key': 'f'*64})
+        self.denied_without_effect(invalid, ctx(1000), (p.CAMPAIGN_LIMIT + 2)*p.ROLLING_SECONDS)
+
+    def test_failed_or_interrupted_persisted_admission_cannot_refund_or_retry(self):
+        from pathlib import Path
+        import tempfile
+        from clarifier.controls import dry_state
+        from clarifier.shared.errors import InterruptedRun, TransportError
+        for error in (InterruptedRun('Trusted interruption fixture'), TransportError('Trusted failure fixture')):
+            with tempfile.TemporaryDirectory() as tmp:
+                path = Path(tmp) / 'state.json'
+                path.write_bytes(ledger.encode(enabled()))
+                store = dry_state.DryStore(path)
+                admission.admit(store, ctx(1), 'a'*64, 100)
+                with self.assertRaises(type(error)):
+                    raise error
+                recovered = dry_state.DryStore(path).read().state
+                self.assertEqual(len(recovered['admissions']), 1)
+                for at in (101, 100 + p.ROLLING_SECONDS, 100 + 7*p.ROLLING_SECONDS):
+                    self.denied_without_effect(recovered, ctx(1), at)
+                changed = ledger.validate(recovered)
+                changed['admissions'] = []
+                with self.assertRaises(p.StateError):
+                    ledger.validate_transition(recovered, changed)
+                self.assertEqual(recovered['posts'], [])
+
     def denied_without_effect(self, state, context, at):
         model,write=Mock(),Mock()
         with self.assertRaises((p.AdmissionDenied,p.StateError)):
@@ -92,6 +133,6 @@ class LocalExceptionTests(unittest.TestCase):
         model,write=Mock(),Mock()
         for at in (100,100+p.ROLLING_SECONDS):
             with self.assertRaises(p.AdmissionDenied):
-                admission.reserve(state,Context('22',1,'0'*40,p.LOCAL_WORKFLOW),'a'*64,at,rolling_limit=p.LOCAL_DEVELOPMENT_LIMIT,campaign_limit=p.LOCAL_CAMPAIGN_LIMIT);model();write()
+                admission.reserve(state,Context(str(p.LOCAL_DEVELOPMENT_LIMIT+1),1,'0'*40,p.LOCAL_WORKFLOW),'a'*64,at,rolling_limit=p.LOCAL_DEVELOPMENT_LIMIT,campaign_limit=p.LOCAL_CAMPAIGN_LIMIT);model();write()
         self.assertEqual(len(state['admissions']),p.LOCAL_CAMPAIGN_LIMIT)
         model.assert_not_called();write.assert_not_called()

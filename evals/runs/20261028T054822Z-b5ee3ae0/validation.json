@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": "Could you share a minimal project, or a script that generates one, containing the ESLint configuration and enough fixable input files to reproduce the error with `eslint ./ --fix`? This would provide the setup needed to recreate the large autofix workload described in the report.\n\n**Created by AI (OpenAI Codex, gpt-6.1-sol).**\nPreview run: `20261028T054822Z-b5ee3ae0`.",
+  "source_issue": 19924,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "clarify",
+  "validated_output": {
+    "decision": "clarify",
+    "rationale": "The report supplies environment versions, the exact command, workload counts, expected behaviour and an error stack. However, it supplies no ESLint configuration or input example that produces the reported autofix workload. Those materials are needed to reconstruct the setup; the counts and stack trace alone do not establish a reproduction.",
+    "clarification": "Could you share a minimal project, or a script that generates one, containing the ESLint configuration and enough fixable input files to reproduce the error with `eslint ./ --fix`? This would provide the setup needed to recreate the large autofix workload described in the report."
+  }
+}

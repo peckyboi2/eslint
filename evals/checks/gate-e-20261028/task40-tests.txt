@@ -1,0 +1,35 @@
+test_actual_response_guard_denies_forbidden_capability_items (clarifier.tests.test_adversarial.AttackTests.test_actual_response_guard_denies_forbidden_capability_items) ... ok
+test_fabricated_authority_cannot_select_a_mutation (clarifier.tests.test_adversarial.AttackTests.test_fabricated_authority_cannot_select_a_mutation) ... ok
+test_generated_request_exposes_no_mutation_interface (clarifier.tests.test_adversarial.AttackTests.test_generated_request_exposes_no_mutation_interface) ... ok
+test_local_reservations_persist_without_enabling_posting (clarifier.tests.test_adversarial.AttackTests.test_local_reservations_persist_without_enabling_posting) ... ok
+test_outside_evaluator_reads_are_rejected_by_staging (clarifier.tests.test_adversarial.AttackTests.test_outside_evaluator_reads_are_rejected_by_staging) ... ok
+test_poisoned_tool_items_cannot_dispatch_any_interface (clarifier.tests.test_adversarial.AttackTests.test_poisoned_tool_items_cannot_dispatch_any_interface) ... ok
+test_staged_attack_has_only_fabricated_input_not_expectations (clarifier.tests.test_adversarial.AttackTests.test_staged_attack_has_only_fabricated_input_not_expectations) ... ok
+test_cleanup_denial_stays_silent_and_records_safe_diagnostic (clarifier.tests.test_staging.CleanupFailure.test_cleanup_denial_stays_silent_and_records_safe_diagnostic) ... ok
+test_hash_verification_rejects_missing_extra_or_changed_files (clarifier.tests.test_staging.SourceVerification.test_hash_verification_rejects_missing_extra_or_changed_files) ... ok
+test_non_utf8_input_is_rejected (clarifier.tests.test_staging.SourceVerification.test_non_utf8_input_is_rejected) ... ok
+test_exact_bytes_and_no_evaluator_material (clarifier.tests.test_staging.Staging.test_exact_bytes_and_no_evaluator_material) ... ok
+test_hash_size_and_extra_file_rejection (clarifier.tests.test_staging.Staging.test_hash_size_and_extra_file_rejection) ... ok
+test_path_traversal_symlinks_and_special_files (clarifier.tests.test_staging.Staging.test_path_traversal_symlinks_and_special_files) ... ok
+test_symlink_parent_and_hardlink (clarifier.tests.test_staging.Staging.test_symlink_parent_and_hardlink) ... ok
+test_shutdown_error_is_recorded_and_remains_publicly_silent (clarifier.tests.test_transport.GateLifecycle.test_shutdown_error_is_recorded_and_remains_publicly_silent) ... ok
+test_started_gate_serves_only_loopback_and_closes_thread (clarifier.tests.test_transport.GateLifecycle.test_started_gate_serves_only_loopback_and_closes_thread) ... ok
+test_unstarted_gate_closes_without_waiting_for_server_loop (clarifier.tests.test_transport.GateLifecycle.test_unstarted_gate_closes_without_waiting_for_server_loop) ... ok
+test_duplicate_request_is_silent_before_provider_dispatch (clarifier.tests.test_transport.GuardedHTTP.test_duplicate_request_is_silent_before_provider_dispatch) ... ok
+test_forbidden_response_is_buffered_without_cli_dispatch (clarifier.tests.test_transport.GuardedHTTP.test_forbidden_response_is_buffered_without_cli_dispatch) ... ok
+test_malformed_request_is_rejected_without_dispatch (clarifier.tests.test_transport.GuardedHTTP.test_malformed_request_is_rejected_without_dispatch) ... ok
+test_oversize_and_encoded_requests_are_rejected_without_dispatch (clarifier.tests.test_transport.GuardedHTTP.test_oversize_and_encoded_requests_are_rejected_without_dispatch) ... ok
+test_oversize_response_cannot_dispatch (clarifier.tests.test_transport.GuardedHTTP.test_oversize_response_cannot_dispatch) ... ok
+test_path_rejection_is_silent_and_cannot_reach_provider (clarifier.tests.test_transport.GuardedHTTP.test_path_rejection_is_silent_and_cannot_reach_provider) ... ok
+test_provider_error_redacts_credentials_before_recording (clarifier.tests.test_transport.GuardedHTTP.test_provider_error_redacts_credentials_before_recording) ... ok
+test_provider_headers_stay_transient_and_target_is_fixed (clarifier.tests.test_transport.GuardedHTTP.test_provider_headers_stay_transient_and_target_is_fixed) ... ok
+test_skill_mismatch_is_rejected_without_dispatch (clarifier.tests.test_transport.GuardedHTTP.test_skill_mismatch_is_rejected_without_dispatch) ... ok
+test_synthetic_response_is_local_and_labelled (clarifier.tests.test_transport.GuardedHTTP.test_synthetic_response_is_local_and_labelled) ... ok
+test_structural_and_utf8_errors_raise_typed_errors (clarifier.tests.test_transport.MalformedResponses.test_structural_and_utf8_errors_raise_typed_errors) ... ok
+test_response_tools_blocked_before_dispatch (clarifier.tests.test_transport.ProviderResponses.test_response_tools_blocked_before_dispatch) ... ok
+test_synthetic_fixture_is_labelled_and_has_no_usage_claim (clarifier.tests.test_transport.ProviderResponses.test_synthetic_fixture_is_labelled_and_has_no_usage_claim) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.042s
+
+OK

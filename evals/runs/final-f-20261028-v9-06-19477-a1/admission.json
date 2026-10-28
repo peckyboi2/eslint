@@ -1,0 +1,12 @@
+{
+  "verification_type": "actual local reservation; GitHub identity/branch simulation only",
+  "adapter_run_id": "final-f-20261028-v9-06-19477-a1",
+  "local_context_run_id": "1793174014242383000",
+  "input_key": "2949216342f4438fa65ce19c5b596e573a287a1c53b9afd5163dc2abf5af2eb7",
+  "rolling_limit": 51,
+  "campaign_limit": 51,
+  "quota_decision_sha256": "169aad5ca71170b9bd12912ed587007f6ebb286d5e5fcedaecf336330352c674",
+  "event_key": "f072934e9fd6dc9145723bb6c6c252b74e8d8ec8fb37a329353ec0451e9c8f5e",
+  "campaign": "c-development-20261028",
+  "posting_enabled": false
+}

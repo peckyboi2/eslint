@@ -1,9 +1,71 @@
 """Task 17 mocked branch conflicts; no live state or public writes."""
 import unittest
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+import tempfile
+import threading
 from unittest.mock import Mock
 from clarifier.controls import ledger
 from clarifier.controls import policy as p
 from clarifier.controls.state_store import Snapshot, StateStore, transact
+from clarifier.controls import admission, dry_state
+from clarifier.tests.test_admission import enabled, ctx
+
+
+class RacingStore(dry_state.DryStore):
+    """Real atomic-file store with simultaneous first snapshots for task 43."""
+
+    def __init__(self, path):
+        super().__init__(path)
+        self.barrier = threading.Barrier(2)
+        self.local = threading.local()
+        self.conflicts = []
+
+    def read(self):
+        result = super().read()
+        if threading.current_thread() is not threading.main_thread() and not getattr(self.local, 'seen', False):
+            self.local.seen = True
+            self.barrier.wait(timeout=5)
+        return result
+
+    def update(self, previous, state):
+        try:
+            super().update(previous, state)
+        except p.Conflict:
+            self.conflicts.append(previous.parent)
+            raise
+
+
+def race(left, right):
+    """Return two outcomes after concurrent trusted operations; no network effects."""
+    def invoke(operation):
+        try:
+            operation()
+            return 'completed'
+        except (p.AdmissionDenied, p.PostingBlocked):
+            return 'blocked'
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        return list(executor.map(invoke, (left, right)))
+
+
+class ConcurrentAdmissions(unittest.TestCase):
+    def test_races_retain_distinct_quota_and_block_duplicate_original_delivery(self):
+        for runs, keys, expected_count in (((1, 2), ('a'*64, 'b'*64), 2),
+                                           ((1, 1), ('a'*64, 'a'*64), 1),
+                                           ((1, 1), ('a'*64, 'b'*64), 1)):
+            with tempfile.TemporaryDirectory() as tmp:
+                path = Path(tmp) / 'state.json'
+                path.write_bytes(ledger.encode(enabled()))
+                store = RacingStore(path)
+                operations = [lambda n=n, key=key: admission.admit(store, ctx(n), key, 100)
+                              for n, key in zip(runs, keys)]
+                outcomes = race(*operations)
+                state = store.read().state
+                self.assertEqual(len(state['admissions']), expected_count)
+                self.assertEqual(outcomes.count('completed'), expected_count)
+                self.assertEqual(state['posts'], [])
+                self.assertTrue(store.conflicts)
+                self.assertFalse(path.with_suffix('.next').exists())
 
 
 class MemoryStore:

@@ -1,0 +1,10 @@
+{
+  "campaign_id": "final-f-20261028-v9",
+  "issue": 19477,
+  "run_id": "final-f-20261028-v9-06-19477-a1",
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "freeze_sha256": "0c0ca76cd19e5adca0c5ebfc2be40e531a1ecbda5a4a546ada9f42d125d21a5f",
+  "phase": "before",
+  "verified_at": "2026-10-28T07:53:34.237148+00:00",
+  "files_verified": 168
+}

@@ -1,0 +1,7 @@
+test_actual_workflows (tests.test_workflow_audit.AuditTests.test_actual_workflows) ... ok
+test_unsafe_permission_secret_or_stop_dependency_rejected (tests.test_workflow_audit.AuditTests.test_unsafe_permission_secret_or_stop_dependency_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK

@@ -7,6 +7,17 @@ from clarifier.outputs import validation as v
 
 
 class StrictValidation(unittest.TestCase):
+    def test_exact_result_bytes_and_one_byte_excess_remain_publicly_silent(self):
+        from clarifier.outputs import routing
+        raw = json.dumps(dict(decision='no_action', rationale='Boundary fixture.', clarification=None))
+        exact = raw + ' ' * (c.MAX_OUTPUT_BYTES - len(raw.encode()))
+        self.assertEqual(len(exact.encode()), c.MAX_OUTPUT_BYTES)
+        self.assertEqual(v.parse_and_validate(exact)['decision'], 'no_action')
+        blocked = routing.route(exact + ' ', 'size-test', 'fixture-model')
+        self.assertFalse(blocked['valid'])
+        self.assertEqual(blocked['public_actions'], [])
+        self.assertIsNone(blocked['preview_comment'])
+
     def test_schema_boundaries_are_exact(self):
         result = {'decision': c.CLARIFY, 'rationale': 'r' * c.MAX_RATIONALE_CHARS,
                   'clarification': 'c' * c.MAX_CLARIFICATION_CHARS}

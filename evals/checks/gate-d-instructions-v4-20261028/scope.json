@@ -1,0 +1,11 @@
+{
+  "task": "Gate D instruction correction for tasks 30/31",
+  "authorisation": "User asked in this side conversation: ok make the changes",
+  "prior_configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+  "model_evaluation": "pending; no actual model calls authorised or performed by this local correction",
+  "local_admissions": 21,
+  "quota_state_sha256": "611f867d642447515629f43c37042f331c7107afc5aab5210cf0805dd2d6b123",
+  "quota_mutation": false,
+  "posting": false,
+  "public_actions": []
+}

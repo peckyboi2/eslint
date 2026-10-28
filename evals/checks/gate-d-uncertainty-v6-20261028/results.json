@@ -1,0 +1,144 @@
+{
+  "status": "first_case_failed; remaining_eight_not_run",
+  "configuration_version": "milestone-d-development-v6",
+  "configuration_sha256": "770f66a7ddc5a38176b3585dabf287253145360ce5078e6d1b008c4431db32d3",
+  "approved_change": "Exact symmetric evidence-standard paragraph shown to Darren; build-command rule retained",
+  "first_case": {
+    "issue": 19924,
+    "run_id": "20261028T060932Z-f77abb9c",
+    "expected_decision": "human_review",
+    "actual_decision": "no_action",
+    "decision_pass": false,
+    "quality_findings": {
+      "unnecessary_questions": [],
+      "missed_clarifications": [],
+      "deferrals": [],
+      "silent_branch_violations": [],
+      "scope_issues": [],
+      "uncertainty_failures": [
+        "The model again asserts that specific rule configuration and repository contents are unnecessary, rather than retaining uncertainty."
+      ],
+      "notes": [
+        "Decision FAIL: no_action instead of accepted human_review.",
+        "The new symmetric paragraph did not resolve the uncertainty judgement in this fresh run.",
+        "No proposed or posted comment; the other eight are not run because the approved first-case gate failed."
+      ]
+    },
+    "comparison": "evals/runs/20261028T060932Z-f77abb9c/comparison.json",
+    "actual_rationale": "The report supplies the environment and versions, the exact `eslint ./ --fix` command, a workload of roughly 9,000 files with extensive autofixable issues, expected behaviour, and an EMFILE stack trace in `ESLint.outputFixes`. This sufficiently identifies the large-scale fix-writing reproduction path. The particular rule configuration and repository contents are not necessary to reconstruct that path.",
+    "input_hashes": {
+      "body.md": "aaf9b98240c9a65e947e7443c9caa14a658226d308144c0d96d0bb6b498b6ce6",
+      "snapshot.json": "e476ce16e7c5f801ad58584c53ab569e530d0cb6c9ead0f17bdfc70c732c8658",
+      "title.txt": "f43660440f0faf5c02b0ced5ae0f9da4c1d73ad08c44259c0d63207ebbb7c9c2"
+    },
+    "usage": {
+      "input_tokens": 2934,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 565,
+      "output_tokens_details": {
+        "reasoning_tokens": 468
+      },
+      "total_tokens": 3499,
+      "attribution": {
+        "items": {
+          "msg_0dd508a1ed370425016ae1919d5ef48191838d2fb177ad38ee": {
+            "input_tokens": 977,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "content": [
+              {
+                "input_tokens": 977,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "output_tokens": 0
+              }
+            ]
+          },
+          "msg_0dd508a1ed370425016ae1919d5ef48191a5957ae0c784e5c9": {
+            "input_tokens": 1955,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "content": [
+              {
+                "input_tokens": 1955,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "output_tokens": 0
+              }
+            ]
+          },
+          "msg_0dd508a1ed370425016ae191aff5788191abe69cf027e59400": {
+            "input_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 97,
+            "content": [
+              {
+                "input_tokens": 0,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "output_tokens": 97
+              }
+            ]
+          },
+          "rs_0dd508a1ed370425016ae191aff5848191bee535e861d746fb": {
+            "input_tokens": 2,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 468
+          }
+        }
+      }
+    },
+    "cost": "unknown"
+  },
+  "conditional_gate_passed": false,
+  "remaining_cases_not_run": [
+    20606,
+    19044,
+    21320,
+    19477,
+    21304,
+    19847,
+    19118,
+    19818
+  ],
+  "model_calls": 1,
+  "quota": {
+    "admissions_before": 30,
+    "admissions_after": 31,
+    "local_rolling_limit": 39,
+    "local_campaign_limit": 39,
+    "unused_capacity": 8,
+    "unused_capacity_is_not_permission_to_continue_after_failed_gate": true,
+    "hosted_rolling_limit": 10,
+    "hosted_campaign_limit": 20,
+    "reset": false,
+    "refunded": 0
+  },
+  "prior_evidence": {
+    "files": 1614,
+    "immutable_files_unchanged": 1613,
+    "approved_mutable_path": "evals/checks/gate-c-20261028/dry-state.json",
+    "append_only_transition_verified": true
+  },
+  "tests": {
+    "deterministic": 132,
+    "result": "PASS",
+    "log": "tests.txt",
+    "baseline": "baseline-after.json"
+  },
+  "public_actions": [],
+  "limitations": [
+    "No model-behaviour fix is established; first-case decision remains wrong against the accepted expectation.",
+    "The eight previous results retain their v5 identities and are not substituted into a v6 campaign.",
+    "Known development case and implementation review, not unseen accuracy or Darren approval of the answer.",
+    "Provider backend unpinned and cost unknown; host trusted rather than OS-jailed; hosted controls unverified.",
+    "No code execution, public write, E/F work, deployment or final ten-case campaign."
+  ]
+}

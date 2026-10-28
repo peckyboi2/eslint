@@ -1,0 +1,80 @@
+test_concurrent_distinct_inputs_keep_quota_but_only_one_lifetime_comment (clarifier.tests.test_posting.PostingTests.test_concurrent_distinct_inputs_keep_quota_but_only_one_lifetime_comment) ... ok
+test_final_enabled_source_and_identity_checks_precede_post (clarifier.tests.test_posting.PostingTests.test_final_enabled_source_and_identity_checks_precede_post) ... ok
+test_human_reconciliation_never_clears_intent (clarifier.tests.test_posting.PostingTests.test_human_reconciliation_never_clears_intent) ... ok
+test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) ... 
+  test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) (comments=[{'body': '<!-- clarifier-attempt-49ca5b9d1c3a77879286e347b0760159c462a9e10107b4d74fac70e7cc2c700b -->', 'user': {'login': 'github-actions[bot]', 'type': 'Bot'}}]) ... ERROR
+  test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) (comments=[{'id': 999, 'body': None, 'user': {'login': 'github-actions[bot]', 'type': 'Bot'}}]) ... ERROR
+  test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) (comments=[{'id': 999, 'body': '<!-- clarifier-attempt-49ca5b9d1c3a77879286e347b0760159c462a9e10107b4d74fac70e7cc2c700b -->', 'user': None}]) ... ERROR
+  test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) (comments=[None]) ... ERROR
+  test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) (comments=None) ... ERROR
+test_intent_precedes_single_post_and_receipt (clarifier.tests.test_posting.PostingTests.test_intent_precedes_single_post_and_receipt) ... ok
+test_receipt_write_loss_retains_reserved_lifetime_block (clarifier.tests.test_posting.PostingTests.test_receipt_write_loss_retains_reserved_lifetime_block) ... ok
+test_response_loss_leaves_uncertain_without_retry (clarifier.tests.test_posting.PostingTests.test_response_loss_leaves_uncertain_without_retry) ... ok
+test_server_acceptance_lost_response_reconciles_exact_marker_without_repost (clarifier.tests.test_posting.PostingTests.test_server_acceptance_lost_response_reconciles_exact_marker_without_repost) ... ok
+test_stop_after_final_check_records_unavoidable_inflight_write (clarifier.tests.test_posting.PostingTests.test_stop_after_final_check_records_unavoidable_inflight_write) ... ok
+test_stop_winning_state_conflict_blocks_posting_reservation (clarifier.tests.test_posting.PostingTests.test_stop_winning_state_conflict_blocks_posting_reservation) ... ok
+
+======================================================================
+ERROR: test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) (comments=[{'body': '<!-- clarifier-attempt-49ca5b9d1c3a77879286e347b0760159c462a9e10107b4d74fac70e7cc2c700b -->', 'user': {'login': 'github-actions[bot]', 'type': 'Bot'}}])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_posting.py", line 35, in test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost
+    intent.reconcile(store.state, plan.marker, comments, 101, 'Owner review fixture')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/outputs/posting_intent.py", line 37, in reconcile
+    rows[0].update(status='posted',comment_id=found[0]['id'])
+                                              ~~~~~~~~^^^^^^
+KeyError: 'id'
+
+======================================================================
+ERROR: test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) (comments=[{'id': 999, 'body': None, 'user': {'login': 'github-actions[bot]', 'type': 'Bot'}}])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_posting.py", line 35, in test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost
+    intent.reconcile(store.state, plan.marker, comments, 101, 'Owner review fixture')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/outputs/posting_intent.py", line 34, in reconcile
+    found=[row for row in comments if f'<!-- {marker} -->' in row.get('body','') and row.get('user',{}).get('login')=='github-actions[bot]' and row.get('user',{}).get('type')=='Bot']
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'NoneType' is not a container or iterable
+
+======================================================================
+ERROR: test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) (comments=[{'id': 999, 'body': '<!-- clarifier-attempt-49ca5b9d1c3a77879286e347b0760159c462a9e10107b4d74fac70e7cc2c700b -->', 'user': None}])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_posting.py", line 35, in test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost
+    intent.reconcile(store.state, plan.marker, comments, 101, 'Owner review fixture')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/outputs/posting_intent.py", line 34, in reconcile
+    found=[row for row in comments if f'<!-- {marker} -->' in row.get('body','') and row.get('user',{}).get('login')=='github-actions[bot]' and row.get('user',{}).get('type')=='Bot']
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+
+======================================================================
+ERROR: test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) (comments=[None])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_posting.py", line 35, in test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost
+    intent.reconcile(store.state, plan.marker, comments, 101, 'Owner review fixture')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/outputs/posting_intent.py", line 34, in reconcile
+    found=[row for row in comments if f'<!-- {marker} -->' in row.get('body','') and row.get('user',{}).get('login')=='github-actions[bot]' and row.get('user',{}).get('type')=='Bot']
+                                                              ^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+
+======================================================================
+ERROR: test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost (clarifier.tests.test_posting.PostingTests.test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost) (comments=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_posting.py", line 35, in test_incomplete_reconciliation_evidence_fails_with_typed_error_and_no_repost
+    intent.reconcile(store.state, plan.marker, comments, 101, 'Owner review fixture')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/outputs/posting_intent.py", line 34, in reconcile
+    found=[row for row in comments if f'<!-- {marker} -->' in row.get('body','') and row.get('user',{}).get('login')=='github-actions[bot]' and row.get('user',{}).get('type')=='Bot']
+                          ^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.012s
+
+FAILED (errors=5)

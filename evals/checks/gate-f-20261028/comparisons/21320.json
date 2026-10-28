@@ -1,0 +1,141 @@
+{
+  "issue": 21320,
+  "run_id": "final-f-20261028-v9-05-21320-a1",
+  "status": "completed",
+  "actual_decision": "no_action",
+  "result": {
+    "decision": "no_action",
+    "rationale": "The report supplies environment versions, the parser, and a complete inline `Linter.verifyAndFix()` reproduction with triggering input, language options, rule configuration, and observed versus expected behavior. The supporting playground text confirms the input and settings. No additional project files or CLI command are needed for the reported API path.",
+    "clarification": null
+  },
+  "errors": [],
+  "input_hashes": {
+    "body.md": "e34f7c9cf0da40eb9cd9db910ff5b3a9c75d1e57c81fda81e96220973d2e8a1e",
+    "snapshot.json": "08c954b2e18a4d09d11250674e2e71b3aa7c13baa2526b1b8c7ef204867b2f34",
+    "support/playground-1.json": "6f4c063979c2cfca301014ebe87c7b3fa1145a7dd6d3377348a6b899171e001b",
+    "title.txt": "8097c9f0bc7da9781c1126b924a6e0023614b59f1d8969121d4a44e1f27b4007"
+  },
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "public_actions": [],
+  "usage": {
+    "input_tokens": 3304,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 315,
+    "output_tokens_details": {
+      "reasoning_tokens": 233
+    },
+    "total_tokens": 3619,
+    "attribution": {
+      "items": {
+        "msg_04cfcf0600c0232b016ae1a9cdf8d8819181ed093dc5de030f": {
+          "input_tokens": 1955,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_04cfcf0600c0232b016ae1a9cdf8d88191b731b63b04f25cd6": {
+          "input_tokens": 1347,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 1347,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_04cfcf0600c0232b016ae1a9d5525881918f71f0daba4b3f77": {
+          "input_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 82,
+          "content": [
+            {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 82
+            }
+          ]
+        },
+        "rs_04cfcf0600c0232b016ae1a9d55270819187f75e9a13ed3227": {
+          "input_tokens": 2,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 233
+        }
+      }
+    }
+  },
+  "cost": "unknown",
+  "source": "evals/golden/prepared-inputs/inputs/21320",
+  "run": "evals/runs/final-f-20261028-v9-05-21320-a1",
+  "campaign_id": "final-f-20261028-v9",
+  "expected_decision": "no_action",
+  "decision_pass": true,
+  "quality_review": {
+    "comment_quality": "not_assessable",
+    "criteria": [
+      {
+        "criterion": 1,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 2,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 3,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 4,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 5,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 6,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 7,
+        "result": "pass",
+        "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+      }
+    ],
+    "irrelevant_content": false,
+    "redundant_content": false,
+    "silent_branch_violation": false,
+    "notes": [
+      "PASS: no_action matches. The complete Linter.verifyAndFix API reproduction supplies its input/settings and invocation; no redundant CLI command or project request."
+    ],
+    "issue": 21320,
+    "run_id": "final-f-20261028-v9-05-21320-a1",
+    "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+    "reviewed_at": "2026-10-28T07:53:31.507455+00:00"
+  },
+  "clarification_success": false
+}

@@ -1,0 +1,9 @@
+test_live_release_is_disabled (tests.test_output_handler.OutputHandlerTests.test_live_release_is_disabled) ... ok
+test_mentions_rejected_even_in_code (tests.test_output_handler.OutputHandlerTests.test_mentions_rejected_even_in_code) ... ok
+test_one_attributed_bounded_plan (tests.test_output_handler.OutputHandlerTests.test_one_attributed_bounded_plan) ... ok
+test_rejected_or_silent_paths_never_write (tests.test_output_handler.OutputHandlerTests.test_rejected_or_silent_paths_never_write) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

@@ -1,0 +1,13 @@
+{
+  "status": "infrastructure_fixed; fresh regression pending",
+  "configuration_version": "milestone-d-development-v3",
+  "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+  "tests": 131,
+  "retained_failure": "evals/runs/20261028T045855Z-a5d67146/comparison.json",
+  "local_rolling_limit": 21,
+  "local_campaign_limit": 21,
+  "hosted_rolling_limit": 10,
+  "hosted_campaign_limit": 20,
+  "admissions_retained": 12,
+  "public_actions": []
+}

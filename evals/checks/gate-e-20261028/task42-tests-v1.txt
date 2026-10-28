@@ -1,0 +1,90 @@
+test_context_matrix_for_triage_and_independent_stop (clarifier.tests.test_identity.IdentityTests.test_context_matrix_for_triage_and_independent_stop) ... ok
+test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) ... 
+  test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-triage.yml', attempt=1, path='owner.login', value=None) ... FAIL
+  test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-triage.yml', attempt=1, path='owner.login', value='wrong') ... FAIL
+  test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-triage.yml', attempt=2, path='owner.login', value=None) ... FAIL
+  test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-triage.yml', attempt=2, path='owner.login', value='wrong') ... FAIL
+  test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-stop.yml', attempt=1, path='owner.login', value=None) ... FAIL
+  test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-stop.yml', attempt=1, path='owner.login', value='wrong') ... FAIL
+  test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-stop.yml', attempt=2, path='owner.login', value=None) ... FAIL
+  test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-stop.yml', attempt=2, path='owner.login', value='wrong') ... FAIL
+test_live_rerun_identity_is_pinned (clarifier.tests.test_identity.IdentityTests.test_live_rerun_identity_is_pinned) ... ok
+test_missing_or_changed_fields_never_reach_effect (clarifier.tests.test_identity.IdentityTests.test_missing_or_changed_fields_never_reach_effect) ... ok
+test_stop_and_rerun_share_gate (clarifier.tests.test_identity.IdentityTests.test_stop_and_rerun_share_gate) ... ok
+
+======================================================================
+FAIL: test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-triage.yml', attempt=1, path='owner.login', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_identity.py", line 62, in test_live_identity_matrix_includes_owner_name_and_rerun_initiator
+    with self.assertRaises(p.IdentityError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: IdentityError not raised
+
+======================================================================
+FAIL: test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-triage.yml', attempt=1, path='owner.login', value='wrong')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_identity.py", line 62, in test_live_identity_matrix_includes_owner_name_and_rerun_initiator
+    with self.assertRaises(p.IdentityError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: IdentityError not raised
+
+======================================================================
+FAIL: test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-triage.yml', attempt=2, path='owner.login', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_identity.py", line 62, in test_live_identity_matrix_includes_owner_name_and_rerun_initiator
+    with self.assertRaises(p.IdentityError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: IdentityError not raised
+
+======================================================================
+FAIL: test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-triage.yml', attempt=2, path='owner.login', value='wrong')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_identity.py", line 62, in test_live_identity_matrix_includes_owner_name_and_rerun_initiator
+    with self.assertRaises(p.IdentityError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: IdentityError not raised
+
+======================================================================
+FAIL: test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-stop.yml', attempt=1, path='owner.login', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_identity.py", line 62, in test_live_identity_matrix_includes_owner_name_and_rerun_initiator
+    with self.assertRaises(p.IdentityError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: IdentityError not raised
+
+======================================================================
+FAIL: test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-stop.yml', attempt=1, path='owner.login', value='wrong')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_identity.py", line 62, in test_live_identity_matrix_includes_owner_name_and_rerun_initiator
+    with self.assertRaises(p.IdentityError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: IdentityError not raised
+
+======================================================================
+FAIL: test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-stop.yml', attempt=2, path='owner.login', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_identity.py", line 62, in test_live_identity_matrix_includes_owner_name_and_rerun_initiator
+    with self.assertRaises(p.IdentityError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: IdentityError not raised
+
+======================================================================
+FAIL: test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) (workflow='clarifier-stop.yml', attempt=2, path='owner.login', value='wrong')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_identity.py", line 62, in test_live_identity_matrix_includes_owner_name_and_rerun_initiator
+    with self.assertRaises(p.IdentityError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: IdentityError not raised
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.010s
+
+FAILED (failures=8)

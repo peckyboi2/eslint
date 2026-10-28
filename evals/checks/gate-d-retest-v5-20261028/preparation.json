@@ -1,0 +1,17 @@
+{
+  "status": "done",
+  "configuration_version": "milestone-d-development-v5",
+  "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+  "skill_sha256": "2483687d671ad00bda5fded84f80b13887acfe0e6da6fec9c606fcffd7c025e4",
+  "instruction_change_from_v4": false,
+  "tests": 132,
+  "admissions_retained": 21,
+  "additional_available": 9,
+  "local_rolling_limit": 30,
+  "local_campaign_limit": 30,
+  "hosted_rolling_limit": 10,
+  "hosted_campaign_limit": 20,
+  "quota_decision_sha256": "519285567d4a7ea19e328baac6c6c0665e3adc7302170bb419da99f3cc7883f4",
+  "public_actions": [],
+  "verification_type": "actual local allowance record; deterministic infrastructure, no model result yet"
+}

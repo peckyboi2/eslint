@@ -1,0 +1,6 @@
+{
+  "prior_evidence_files": 1307,
+  "immutable_files_unchanged": 1306,
+  "only_changed_prior_path": "evals/checks/gate-c-20261028/dry-state.json",
+  "append_only_transition_verified": true
+}

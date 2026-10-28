@@ -1,0 +1,10 @@
+test_final_enabled_source_and_identity_checks_precede_post (tests.test_posting.PostingTests.test_final_enabled_source_and_identity_checks_precede_post) ... ok
+test_human_reconciliation_never_clears_intent (tests.test_posting.PostingTests.test_human_reconciliation_never_clears_intent) ... ok
+test_intent_precedes_single_post_and_receipt (tests.test_posting.PostingTests.test_intent_precedes_single_post_and_receipt) ... ok
+test_receipt_write_loss_retains_reserved_lifetime_block (tests.test_posting.PostingTests.test_receipt_write_loss_retains_reserved_lifetime_block) ... ok
+test_response_loss_leaves_uncertain_without_retry (tests.test_posting.PostingTests.test_response_loss_leaves_uncertain_without_retry) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK

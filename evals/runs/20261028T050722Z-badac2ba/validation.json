@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 19847,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "no_action",
+  "validated_output": {
+    "decision": "no_action",
+    "rationale": "The supporting files supply a standalone ESLint command, the flat configuration, `tsconfig.json`, dependency declarations and exact resolved versions, and `build/test.js` with the triggering directive. The report also states the observed error and expected behavior. This is sufficient to reconstruct the reproduction without requesting the Gulp setup.",
+    "clarification": null
+  }
+}

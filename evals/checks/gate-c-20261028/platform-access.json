@@ -1,0 +1,68 @@
+{
+  "repository": {
+    "id": 1435519573,
+    "full_name": "peckyboi2/eslint",
+    "default_branch": "main",
+    "owner": {
+      "login": "peckyboi2",
+      "id": 234542779,
+      "node_id": "U_kgDODfrWuw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/234542779?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/peckyboi2",
+      "html_url": "https://github.com/peckyboi2",
+      "followers_url": "https://api.github.com/users/peckyboi2/followers",
+      "following_url": "https://api.github.com/users/peckyboi2/following{/other_user}",
+      "gists_url": "https://api.github.com/users/peckyboi2/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/peckyboi2/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/peckyboi2/subscriptions",
+      "organizations_url": "https://api.github.com/users/peckyboi2/orgs",
+      "repos_url": "https://api.github.com/users/peckyboi2/repos",
+      "events_url": "https://api.github.com/users/peckyboi2/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/peckyboi2/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
+  },
+  "actions": {
+    "enabled": false,
+    "sha_pinning_required": false
+  },
+  "workflows": {
+    "total_count": 0,
+    "workflows": []
+  },
+  "secret_names": {
+    "total_count": 0,
+    "secrets": []
+  },
+  "branches": [
+    {
+      "name": "main",
+      "commit": {
+        "sha": "161558ae1391a8649a8d69a8b2c2e555b40121b9",
+        "url": "https://api.github.com/repos/peckyboi2/eslint/commits/161558ae1391a8649a8d69a8b2c2e555b40121b9"
+      },
+      "protected": false,
+      "protection": {
+        "enabled": false,
+        "required_status_checks": {
+          "enforcement_level": "off",
+          "contexts": [],
+          "checks": []
+        }
+      },
+      "protection_url": "https://api.github.com/repos/peckyboi2/eslint/branches/main/protection"
+    }
+  ],
+  "issues": [],
+  "checked_at": "2026-10-28T01:42:26.393660+00:00"
+}

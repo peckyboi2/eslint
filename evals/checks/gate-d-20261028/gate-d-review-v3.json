@@ -1,0 +1,1477 @@
+{
+  "gate": "D",
+  "status": "complete_for_development_review; stop before E/F",
+  "reviewed_at": "2026-10-28T05:11:02.901690+00:00",
+  "tasks": {
+    "29": "done",
+    "30": "done",
+    "31": "done",
+    "32": "done",
+    "33": "done",
+    "34": "done",
+    "35": "done",
+    "36": "done",
+    "37": "done",
+    "38": "done"
+  },
+  "current_configuration_version": "milestone-d-development-v3",
+  "current_configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+  "case_results": [
+    {
+      "task": 30,
+      "issue": 20606,
+      "run_id": "20261028T050239Z-453163ef",
+      "run_folder": "evals/runs/20261028T050239Z-453163ef",
+      "configuration_version": "milestone-d-development-v3",
+      "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+      "expected_decision": "clarify",
+      "actual_decision": "clarify",
+      "decision_pass": true,
+      "quality": [
+        {
+          "criterion": 1,
+          "result": "pass",
+          "evidence": "Requests minimal Angular/webpack warning-producing project with referenced tsconfig.angular.json, build entry point and package.json/lockfile."
+        },
+        {
+          "criterion": 2,
+          "result": "pass",
+          "evidence": "Brief evidence-based reason; no cause or fix asserted."
+        },
+        {
+          "criterion": 3,
+          "result": "fail",
+          "evidence": "One cohesive request, but it does not explicitly ask for the missing build command or build script required by the frozen case criterion."
+        },
+        {
+          "criterion": 4,
+          "result": "pass",
+          "evidence": "Neutral and respectful; no promised outcome or bug-validity judgement."
+        },
+        {
+          "criterion": 5,
+          "result": "pass",
+          "evidence": "No submitted-code execution, diagnosis, fix or deletion advice."
+        },
+        {
+          "criterion": 6,
+          "result": "pass",
+          "evidence": "Bounded safe attribution; selected source_issue now correctly 20606 and posting_target null."
+        },
+        {
+          "criterion": 7,
+          "result": "pass",
+          "evidence": "One proposed preview comment; public_actions=[]; no posting."
+        }
+      ],
+      "quality_findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [
+          "Partial clarification: build command/build script is not explicitly requested."
+        ],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "infrastructure_failures": [],
+        "notes": [
+          "Expected clarify decision and corrected source identity pass.",
+          "Comment-quality deviation: minimal Angular/webpack project requested, but build command/build script omitted from the explicit request; frozen criterion retained.",
+          "The earlier v2 result and metadata failure remain visible; no prompt tuning or replacement of that failure."
+        ]
+      },
+      "actual_rationale": "The report supplies the affected package version, published file paths, environment, webpack snippet and exact warning. However, the referenced tsconfig.angular.json and build inputs showing how @eslint/plugin-kit enters the TypeScript compilation are absent. The supplied playground contains only a comment and ESLint settings, not a build reproduction. The Angular compilation setup is necessary to reproduce the warning beyond inspecting the package contents.",
+      "actual_clarification": "Could you share a minimal Angular/webpack project that produces this warning, including the referenced `tsconfig.angular.json`, build entry point, and `package.json` with its lockfile? The snippet does not show how `@eslint/plugin-kit` enters the TypeScript compilation, so that setup is needed to reproduce the warning.",
+      "input_hashes": {
+        "body.md": "0bf7b3f7742f8c94409012f7775d81c48497e13dca85d9f9575163cd963e36e1",
+        "snapshot.json": "26b42f996edf751304044c8e2e866cd9526c5eff4a5bb8631ab1cb558bda1326",
+        "support/playground-1.json": "0fada517ef6703ec36f3d8b95f3d0215be70ac23f8c879e374ac821654a88e4c",
+        "title.txt": "bafb36fd5e3eec3fb151c5d89aa46adeebaec659155356f02f8ff3fee1ba66d8"
+      },
+      "historical_cutoff": {
+        "kind": "early_pre_response_snapshot",
+        "cutoff_utc": "2026-03-10T00:00:00Z",
+        "cutoff_semantics": "Exclusive conservative upper bound from the archive hour. The exact capture moment is not established. This is not an exact issue-opening replay.",
+        "source_event_created_at": "2026-03-09T23:18:39Z",
+        "issue_updated_at_in_payload": "2026-03-09T23:18:41Z"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 6567,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 1714,
+        "output_tokens_details": {
+          "reasoning_tokens": 1552
+        },
+        "total_tokens": 8281,
+        "attribution": {
+          "items": {
+            "msg_07f42109b5616999016ae181f0125c8191b5a67a6c769871ea": {
+              "input_tokens": 1738,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1738,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_07f42109b5616999016ae181f0125c8191b7146cc63b8eb73e": {
+              "input_tokens": 4827,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 4827,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_07f42109b5616999016ae1821e4f388191ad8ba2a839dfef9f": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 162,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 162
+                }
+              ]
+            },
+            "rs_07f42109b5616999016ae181ff24208191af0494c8bc64c0b3": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 516
+            },
+            "rs_07f42109b5616999016ae182106ec8819183a97f87d3c916a7": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 518
+            },
+            "rs_07f42109b5616999016ae1821e4f38819191185c06093e5de0": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 518
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "tool_calls": [],
+      "public_actions": [],
+      "errors": []
+    },
+    {
+      "task": 31,
+      "issue": 19924,
+      "run_id": "20261028T050356Z-3f74565e",
+      "run_folder": "evals/runs/20261028T050356Z-3f74565e",
+      "configuration_version": "milestone-d-development-v3",
+      "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+      "expected_decision": "human_review",
+      "actual_decision": "no_action",
+      "decision_pass": false,
+      "quality": [
+        {
+          "criterion": 1,
+          "result": "fail",
+          "evidence": "The rationale claims the workload details establish a sufficient reproduction and that rule/source files are unnecessary; this does not retain the frozen uncertainty expected for this case."
+        },
+        {
+          "criterion": 2,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; not assessable as comment wording."
+        },
+        {
+          "criterion": 3,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; no unnecessary public question."
+        },
+        {
+          "criterion": 4,
+          "result": "pass",
+          "evidence": "Neutral internal rationale; no public contribution."
+        },
+        {
+          "criterion": 5,
+          "result": "pass",
+          "evidence": "No diagnosis, fix, code execution or prohibited action."
+        },
+        {
+          "criterion": 6,
+          "result": "pass",
+          "evidence": "Valid silent output and correct selected identity 19924."
+        },
+        {
+          "criterion": 7,
+          "result": "pass",
+          "evidence": "No proposed comment and public_actions=[]; public silence preserved."
+        }
+      ],
+      "quality_findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "infrastructure_failures": [],
+        "uncertainty_failures": [
+          "Returned no_action with a confident completeness assertion instead of recording uncertainty as human_review."
+        ],
+        "notes": [
+          "Decision FAIL: no_action rather than accepted human_review.",
+          "Public silence passes; the absent public comment does not make the internal decision correct.",
+          "Accepted expectation retained; no prompt tuning or relabelling."
+        ]
+      },
+      "actual_rationale": "The report supplies the Windows environment, Node/npm/ESLint versions, the exact `eslint ./ --fix` command, a roughly 9,000-file workload with over 100,000 autofixable issues, and an EMFILE stack trace during `ESLint.outputFixes`. It also states the expected outcome. These details sufficiently establish the bulk-fix reproduction path; the company's specific rule configuration and source files are not necessary to reconstruct this file-writing workload.",
+      "actual_clarification": null,
+      "input_hashes": {
+        "body.md": "aaf9b98240c9a65e947e7443c9caa14a658226d308144c0d96d0bb6b498b6ce6",
+        "snapshot.json": "e476ce16e7c5f801ad58584c53ab569e530d0cb6c9ead0f17bdfc70c732c8658",
+        "title.txt": "f43660440f0faf5c02b0ced5ae0f9da4c1d73ad08c44259c0d63207ebbb7c9c2"
+      },
+      "historical_cutoff": {
+        "kind": "opening_record",
+        "cutoff_utc": "2025-07-08T11:24:15Z",
+        "cutoff_semantics": "Opening-event payload at its recorded event time; not proof of byte-exact state at issue creation.",
+        "source_event_created_at": "2025-07-08T11:24:15Z",
+        "issue_updated_at_in_payload": "2025-07-08T11:24:12Z"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 2717,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 925,
+        "output_tokens_details": {
+          "reasoning_tokens": 812
+        },
+        "total_tokens": 3642,
+        "attribution": {
+          "items": {
+            "msg_03f3d76580ff9562016ae1823d87988191967c869d33f406a1": {
+              "input_tokens": 1738,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1738,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_03f3d76580ff9562016ae1823d879881919b6eb15593147f48": {
+              "input_tokens": 977,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 977,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_03f3d76580ff9562016ae182591f8481919ce1bd37eb8c6066": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 113,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 113
+                }
+              ]
+            },
+            "rs_03f3d76580ff9562016ae1824fec308191b7f00a0518fc3262": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 516
+            },
+            "rs_03f3d76580ff9562016ae182591f948191a194addb7de7610e": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 296
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "tool_calls": [],
+      "public_actions": [],
+      "errors": []
+    },
+    {
+      "task": 32,
+      "issue": 19044,
+      "run_id": "20261028T050456Z-0f3a3010",
+      "run_folder": "evals/runs/20261028T050456Z-0f3a3010",
+      "configuration_version": "milestone-d-development-v3",
+      "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality": [
+        {
+          "criterion": 1,
+          "result": "pass",
+          "evidence": "Internal completeness judgement agrees with frozen expectation: Recognises all three configurations are explicitly blank and the module context, commands and differing outputs are supplied."
+        },
+        {
+          "criterion": 2,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; public wording criterion is not assessable."
+        },
+        {
+          "criterion": 3,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; no redundant public request."
+        },
+        {
+          "criterion": 4,
+          "result": "pass",
+          "evidence": "Internal rationale remains neutral and does not decide whether maintainers should accept the bug."
+        },
+        {
+          "criterion": 5,
+          "result": "pass",
+          "evidence": "No diagnosis/fix or submitted-code execution; preview has no action/tool interface."
+        },
+        {
+          "criterion": 6,
+          "result": "pass",
+          "evidence": "Validated silent result with correct selected identity; no posting target."
+        },
+        {
+          "criterion": 7,
+          "result": "pass",
+          "evidence": "clarification and preview_comment are null; public_actions=[] and no public write occurred."
+        }
+      ],
+      "quality_findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "infrastructure_failures": [],
+        "notes": [
+          "Recognises all three configurations are explicitly blank and the module context, commands and differing outputs are supplied.",
+          "Expected no_action; no redundant request for configuration contents, extra environment fields or desired maintainer behaviour."
+        ]
+      },
+      "actual_rationale": "The report supplies ESLint 9.13.0, the absence of a `type` field in `package.json`, three explicitly blank configuration files, exact commands, and expected versus observed output. These inline details are sufficient to reproduce the configuration-loading comparison without relying on the external reproduction link.",
+      "actual_clarification": null,
+      "input_hashes": {
+        "body.md": "17d1db6b8444fe12ee4e9d3aa9da6605bff10d55cc3c4d5f6648b4370a8cb424",
+        "snapshot.json": "df1f65a27885b141bd723a317589c9fa4647628e702e0deb94c837e1dfce013a",
+        "title.txt": "4c2341a8258736b70a9fd938f8fc7bd3345aafec9acc6fcf3885504f72134dbc"
+      },
+      "historical_cutoff": {
+        "kind": "opening_record",
+        "cutoff_utc": "2024-10-23T03:46:15Z",
+        "cutoff_semantics": "Opening-event payload at its recorded event time; not proof of byte-exact state at issue creation.",
+        "source_event_created_at": "2024-10-23T03:46:15Z",
+        "issue_updated_at_in_payload": "2024-10-23T03:46:14Z"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 2600,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 296,
+        "output_tokens_details": {
+          "reasoning_tokens": 217
+        },
+        "total_tokens": 2896,
+        "attribution": {
+          "items": {
+            "msg_0f17384107b92abd016ae18278ff288191989a575d27d44409": {
+              "input_tokens": 860,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 860,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0f17384107b92abd016ae18278ff288191bbcf4ad730704d52": {
+              "input_tokens": 1738,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1738,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0f17384107b92abd016ae1828228748191a67f7acfa2d87a03": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 79,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 79
+                }
+              ]
+            },
+            "rs_0f17384107b92abd016ae1828208488191ad433502c54f7e12": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 217
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "tool_calls": [],
+      "public_actions": [],
+      "errors": []
+    },
+    {
+      "task": 33,
+      "issue": 21320,
+      "run_id": "20261028T050539Z-5c38530a",
+      "run_folder": "evals/runs/20261028T050539Z-5c38530a",
+      "configuration_version": "milestone-d-development-v3",
+      "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality": [
+        {
+          "criterion": 1,
+          "result": "pass",
+          "evidence": "Internal completeness judgement agrees with frozen expectation: Recognises the complete Linter.verifyAndFix programming-interface reproduction and preserved playground text."
+        },
+        {
+          "criterion": 2,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; public wording criterion is not assessable."
+        },
+        {
+          "criterion": 3,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; no redundant public request."
+        },
+        {
+          "criterion": 4,
+          "result": "pass",
+          "evidence": "Internal rationale remains neutral and does not decide whether maintainers should accept the bug."
+        },
+        {
+          "criterion": 5,
+          "result": "pass",
+          "evidence": "No diagnosis/fix or submitted-code execution; preview has no action/tool interface."
+        },
+        {
+          "criterion": 6,
+          "result": "pass",
+          "evidence": "Validated silent result with correct selected identity; no posting target."
+        },
+        {
+          "criterion": 7,
+          "result": "pass",
+          "evidence": "clarification and preview_comment are null; public_actions=[] and no public write occurred."
+        }
+      ],
+      "quality_findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "infrastructure_failures": [],
+        "notes": [
+          "Recognises the complete Linter.verifyAndFix programming-interface reproduction and preserved playground text.",
+          "Expected no_action; explicitly says separate configuration or CLI reproduction is unnecessary, without requiring CLI file-write testing."
+        ]
+      },
+      "actual_rationale": "The report supplies environment versions, the default parser, and a self-contained `Linter.verifyAndFix()` example with triggering input, language options and rule configuration. It also gives the expected behavior, transformed output and fatal parsing diagnostic. The supporting Playground text confirms the same setup. No external configuration or CLI reproduction is needed for this API-based report.",
+      "actual_clarification": null,
+      "input_hashes": {
+        "body.md": "e34f7c9cf0da40eb9cd9db910ff5b3a9c75d1e57c81fda81e96220973d2e8a1e",
+        "snapshot.json": "08c954b2e18a4d09d11250674e2e71b3aa7c13baa2526b1b8c7ef204867b2f34",
+        "support/playground-1.json": "6f4c063979c2cfca301014ebe87c7b3fa1145a7dd6d3377348a6b899171e001b",
+        "title.txt": "8097c9f0bc7da9781c1126b924a6e0023614b59f1d8969121d4a44e1f27b4007"
+      },
+      "historical_cutoff": {
+        "kind": "opening_record",
+        "cutoff_utc": "2026-09-13T08:12:41Z",
+        "cutoff_semantics": "Opening-event payload at its recorded event time; not proof of byte-exact state at issue creation.",
+        "source_event_created_at": "2026-09-13T08:12:41Z",
+        "issue_updated_at_in_payload": "2026-09-13T08:12:40Z"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 3087,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 254,
+        "output_tokens_details": {
+          "reasoning_tokens": 165
+        },
+        "total_tokens": 3341,
+        "attribution": {
+          "items": {
+            "msg_057c92c1aa8e58da016ae182a487c881918c2546744efb7d5e": {
+              "input_tokens": 1738,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1738,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_057c92c1aa8e58da016ae182a487c88191a44310362f88492f": {
+              "input_tokens": 1347,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1347,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_057c92c1aa8e58da016ae182ab14b48191940f990df1f53c98": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 89,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 89
+                }
+              ]
+            },
+            "rs_057c92c1aa8e58da016ae182aafb988191ad46658c34652f5c": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 165
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "tool_calls": [],
+      "public_actions": [],
+      "errors": []
+    },
+    {
+      "task": 34,
+      "issue": 19477,
+      "run_id": "20261028T050613Z-40ae1f8f",
+      "run_folder": "evals/runs/20261028T050613Z-40ae1f8f",
+      "configuration_version": "milestone-d-development-v3",
+      "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality": [
+        {
+          "criterion": 1,
+          "result": "pass",
+          "evidence": "Internal completeness judgement agrees with frozen expectation: Recognises inline no-console settings, both triggering expressions and expected/actual suggestion wording."
+        },
+        {
+          "criterion": 2,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; public wording criterion is not assessable."
+        },
+        {
+          "criterion": 3,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; no redundant public request."
+        },
+        {
+          "criterion": 4,
+          "result": "pass",
+          "evidence": "Internal rationale remains neutral and does not decide whether maintainers should accept the bug."
+        },
+        {
+          "criterion": 5,
+          "result": "pass",
+          "evidence": "No diagnosis/fix or submitted-code execution; preview has no action/tool interface."
+        },
+        {
+          "criterion": 6,
+          "result": "pass",
+          "evidence": "Validated silent result with correct selected identity; no posting target."
+        },
+        {
+          "criterion": 7,
+          "result": "pass",
+          "evidence": "clarification and preview_comment are null; public_actions=[] and no public write occurred."
+        }
+      ],
+      "quality_findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "infrastructure_failures": [],
+        "notes": [
+          "Recognises inline no-console settings, both triggering expressions and expected/actual suggestion wording.",
+          "Expected no_action; no runtime logLevel question, execution, suggested fix or diagnosis."
+        ]
+      },
+      "actual_rationale": "The report supplies ESLint and environment versions, the default parser, inline `no-console` configuration, two triggering inputs, and the observed and expected suggestion wording. The supporting playground text confirms the input and language options, providing enough information to reproduce without relying on the external link.",
+      "actual_clarification": null,
+      "input_hashes": {
+        "body.md": "1b0d0ec7bb51bc0af9319f6afb392e0ffe3e356d6839cc6123fe7ac2f7aa5ac5",
+        "snapshot.json": "2331952f2a2ea637b5fc2ce82344ad43c16cf4d466ab77472014a1d75b25cfc3",
+        "support/playground-1.json": "15f8e590eb3bd4bf8ff8cf6b6c8f447e3e8f8bb4502589d82ba9de37a6dc1925",
+        "title.txt": "4923aad93b56b198d8181cd01ac8a6657f2085237d0f1ea693ae5b7e8e7e994d"
+      },
+      "historical_cutoff": {
+        "kind": "opening_record",
+        "cutoff_utc": "2025-03-04T20:34:50Z",
+        "cutoff_semantics": "Opening-event payload at its recorded event time; not proof of byte-exact state at issue creation.",
+        "source_event_created_at": "2025-03-04T20:34:50Z",
+        "issue_updated_at_in_payload": "2025-03-04T20:34:49Z"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 3048,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 272,
+        "output_tokens_details": {
+          "reasoning_tokens": 197
+        },
+        "total_tokens": 3320,
+        "attribution": {
+          "items": {
+            "msg_01c2468cd9af8eeb016ae182c6c5cc8191a088fdecbf870a93": {
+              "input_tokens": 1308,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1308,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_01c2468cd9af8eeb016ae182c6c5cc8191ba58ad2e6e03f32c": {
+              "input_tokens": 1738,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1738,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_01c2468cd9af8eeb016ae182cf91e48191bf3ec48bc54c6ddd": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 75,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 75
+                }
+              ]
+            },
+            "rs_01c2468cd9af8eeb016ae182cf6f6c81918dc6ecc61d64fab9": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 197
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "tool_calls": [],
+      "public_actions": [],
+      "errors": []
+    },
+    {
+      "task": 35,
+      "issue": 21304,
+      "run_id": "20261028T050647Z-a8f28878",
+      "run_folder": "evals/runs/20261028T050647Z-a8f28878",
+      "configuration_version": "milestone-d-development-v3",
+      "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality": [
+        {
+          "criterion": 1,
+          "result": "pass",
+          "evidence": "Internal completeness judgement agrees with frozen expectation: Recognises complete rule configuration, triggering inputs, versions and expected/observed behaviour from preserved text."
+        },
+        {
+          "criterion": 2,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; public wording criterion is not assessable."
+        },
+        {
+          "criterion": 3,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; no redundant public request."
+        },
+        {
+          "criterion": 4,
+          "result": "pass",
+          "evidence": "Internal rationale remains neutral and does not decide whether maintainers should accept the bug."
+        },
+        {
+          "criterion": 5,
+          "result": "pass",
+          "evidence": "No diagnosis/fix or submitted-code execution; preview has no action/tool interface."
+        },
+        {
+          "criterion": 6,
+          "result": "pass",
+          "evidence": "Validated silent result with correct selected identity; no posting target."
+        },
+        {
+          "criterion": 7,
+          "result": "pass",
+          "evidence": "clarification and preview_comment are null; public_actions=[] and no public write occurred."
+        }
+      ],
+      "quality_findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "infrastructure_failures": [],
+        "notes": [
+          "Recognises complete rule configuration, triggering inputs, versions and expected/observed behaviour from preserved text.",
+          "Expected no_action; explicitly does not depend on the linked screenshot, whose bytes were not independently preserved; no extra setup request."
+        ]
+      },
+      "actual_rationale": "The report supplies environment versions, the default Espree parser, a self-contained rule configuration, exact triggering inputs, and expected versus observed behavior. The supplied playground data also includes the comparison using the `g` flag and its configuration. This is sufficient to reconstruct the reported case without the linked screenshot or additional setup details.",
+      "actual_clarification": null,
+      "input_hashes": {
+        "body.md": "ece9b68942dfaa87727c8262eb680c411ab68423dd942b6343b2539717ee065d",
+        "snapshot.json": "87cbd367b2cfbd92e60a180a4be1b8ea0730157f869083904e5ca32c456c23d8",
+        "support/playground-1.json": "dd91fbbef85dbb67997cf6423ac8b32d2f185df690c7205103c470d8a7a8d2bd",
+        "title.txt": "3f041738bb6647ab00e55964978f398bf870a6dc286e93abbf0eeb546a463393"
+      },
+      "historical_cutoff": {
+        "kind": "early_pre_response_snapshot",
+        "cutoff_utc": "2026-09-04T03:00:00Z",
+        "cutoff_semantics": "Exclusive conservative upper bound from the archive hour. The exact capture moment is not established. This is not an exact issue-opening replay.",
+        "source_event_created_at": "2026-09-04T02:12:13Z",
+        "issue_updated_at_in_payload": "2026-09-04T02:12:56Z"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 6065,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 269,
+        "output_tokens_details": {
+          "reasoning_tokens": 186
+        },
+        "total_tokens": 6334,
+        "attribution": {
+          "items": {
+            "msg_011255714dd5a16d016ae182e8e7f0819195703a0a7396841d": {
+              "input_tokens": 4325,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 4325,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_011255714dd5a16d016ae182e8e7f08191965e4a5913ca8fdc": {
+              "input_tokens": 1738,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1738,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_011255714dd5a16d016ae182f0353c8191938b4694ec3b8f3e": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 83,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 83
+                }
+              ]
+            },
+            "rs_011255714dd5a16d016ae182f0354c81919fb41e7654942213": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 186
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "tool_calls": [],
+      "public_actions": [],
+      "errors": []
+    },
+    {
+      "task": 36,
+      "issue": 19847,
+      "run_id": "20261028T050722Z-badac2ba",
+      "run_folder": "evals/runs/20261028T050722Z-badac2ba",
+      "configuration_version": "milestone-d-development-v3",
+      "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality": [
+        {
+          "criterion": 1,
+          "result": "pass",
+          "evidence": "Internal completeness judgement agrees with frozen expectation: Recognises supplied standalone command, configuration, tsconfig, dependencies/resolved versions and triggering build/test.js support."
+        },
+        {
+          "criterion": 2,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; public wording criterion is not assessable."
+        },
+        {
+          "criterion": 3,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; no redundant public request."
+        },
+        {
+          "criterion": 4,
+          "result": "pass",
+          "evidence": "Internal rationale remains neutral and does not decide whether maintainers should accept the bug."
+        },
+        {
+          "criterion": 5,
+          "result": "pass",
+          "evidence": "No diagnosis/fix or submitted-code execution; preview has no action/tool interface."
+        },
+        {
+          "criterion": 6,
+          "result": "pass",
+          "evidence": "Validated silent result with correct selected identity; no posting target."
+        },
+        {
+          "criterion": 7,
+          "result": "pass",
+          "evidence": "clarification and preview_comment are null; public_actions=[] and no public write occurred."
+        }
+      ],
+      "quality_findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "infrastructure_failures": [],
+        "notes": [
+          "Recognises supplied standalone command, configuration, tsconfig, dependencies/resolved versions and triggering build/test.js support.",
+          "Expected no_action; does not ask for configuration hidden by malformed Markdown or demand Gulp setup already replaceable by the supplied standalone command.",
+          "Both reported 9.21.0 and supporting lockfile 9.28.0 remain byte-preserved; the agent does not explicitly discuss that discrepancy and no harmonisation or execution is claimed."
+        ]
+      },
+      "actual_rationale": "The supporting files supply a standalone ESLint command, the flat configuration, `tsconfig.json`, dependency declarations and exact resolved versions, and `build/test.js` with the triggering directive. The report also states the observed error and expected behavior. This is sufficient to reconstruct the reproduction without requesting the Gulp setup.",
+      "actual_clarification": null,
+      "input_hashes": {
+        "body.md": "0d2880c7c0b24fe6064e8423f8be34446621e04eeb3ecd3151bee34a8e5a9114",
+        "snapshot.json": "0ec8a8dfd733b57eccc4f434319a1e009c97006641e8b94577421c065ba67ce4",
+        "support/Readme.md": "99060686ccd5ebec427934edd56ecf7a2b19ad0cdb9328572fec5e96c264c183",
+        "support/build/test.js": "f624c9241d6a695a186647c835068f43038c2aaca07a5ee332c0dd54a9459914",
+        "support/eslint.config.mjs": "cfe43e59495ba9a7f360d5d0e610b042fd76b8f90ca98bd8e64d7f71b253bf29",
+        "support/package-lock.versions.json": "759612cc49e946f7dbb146ccecd7c1b51eef2755012e8c1f7b0769dfbef1d8ac",
+        "support/package.json": "7c2a3d22d83dc1561f8b855c338e8aef5ca9640026c80dfca4fb6b8e2a54451d",
+        "support/tsconfig.json": "504dbc6a2b3ec8b5a03134c45bb575c47e8a067867a9aa2a8dde1ba18c9be721",
+        "title.txt": "50e0418385eb4e71c18d5dc522ed68549241b11d4594f3702a09864557e5e0f5"
+      },
+      "historical_cutoff": {
+        "kind": "opening_record",
+        "cutoff_utc": "2025-06-13T12:40:21Z",
+        "cutoff_semantics": "Opening-event payload at its recorded event time; not proof of byte-exact state at issue creation.",
+        "source_event_created_at": "2025-06-13T12:40:21Z",
+        "issue_updated_at_in_payload": "2025-06-13T12:40:20Z"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 7379,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 454,
+        "output_tokens_details": {
+          "reasoning_tokens": 372
+        },
+        "total_tokens": 7833,
+        "attribution": {
+          "items": {
+            "msg_033bd92212d4a182016ae1830b754c8191a55f1540e84640ee": {
+              "input_tokens": 5639,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 5639,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_033bd92212d4a182016ae1830b754c8191af07c89cf8e3621c": {
+              "input_tokens": 1738,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1738,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_033bd92212d4a182016ae18318c11c8191a03fca6aed61f6ec": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 82,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 82
+                }
+              ]
+            },
+            "rs_033bd92212d4a182016ae18318c12881919139ddd851952858": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 372
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "tool_calls": [],
+      "public_actions": [],
+      "errors": []
+    },
+    {
+      "task": 37,
+      "issue": 19118,
+      "run_id": "20261028T050941Z-7cccaa34",
+      "run_folder": "evals/runs/20261028T050941Z-7cccaa34",
+      "configuration_version": "milestone-d-development-v3",
+      "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality": [
+        {
+          "criterion": 1,
+          "result": "pass",
+          "evidence": "Internal completeness judgement agrees with frozen expectation: Explicitly recognises supplied working directory and external-file layout alongside both-version commands, configurations and source."
+        },
+        {
+          "criterion": 2,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; public wording criterion is not assessable."
+        },
+        {
+          "criterion": 3,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; no redundant public request."
+        },
+        {
+          "criterion": 4,
+          "result": "pass",
+          "evidence": "Internal rationale remains neutral and does not decide whether maintainers should accept the bug."
+        },
+        {
+          "criterion": 5,
+          "result": "pass",
+          "evidence": "No diagnosis/fix or submitted-code execution; preview has no action/tool interface."
+        },
+        {
+          "criterion": 6,
+          "result": "pass",
+          "evidence": "Validated silent result with correct selected identity; no posting target."
+        },
+        {
+          "criterion": 7,
+          "result": "pass",
+          "evidence": "clarification and preview_comment are null; public_actions=[] and no public write occurred."
+        }
+      ],
+      "quality_findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "infrastructure_failures": [],
+        "notes": [
+          "Explicitly recognises supplied working directory and external-file layout alongside both-version commands, configurations and source.",
+          "Expected no_action; /app is preserved in the source shell prompt and no redundant working-directory request is produced."
+        ]
+      },
+      "actual_rationale": "The body and supporting files supply ESLint 9.14.0 with Espree, the working directory and external-file layout, CLI commands, flat configuration, triggering JavaScript, package declarations, and exact dependency versions. They also establish the observed warning, expected linting behavior, and ESLint 8 comparison. This is sufficient to reconstruct the reported reproduction without additional information.",
+      "actual_clarification": null,
+      "input_hashes": {
+        "body.md": "e966d6675a422c4ed4bb688707a1938132006bf4945ba31010f892d59b57c23b",
+        "snapshot.json": "42273146df8a8f284a434898fb06dede6bc1c341ce0b25322e87d677b2f406db",
+        "support/README.md": "f5a87bf65a68b2ce24d1327c020199e03e98df234e64e28ce301776aeeef0ddd",
+        "support/example_8_X/app/.eslintrc.yml": "cd42bf9b0813214f19acb9225cdbd366c6678aecbd128a21dc66fe807a169705",
+        "support/example_8_X/app/README.md": "dd763a8f41ea49f1940124eb9cb446f2b750e56b1c4d444e0b5981f9c46be20d",
+        "support/example_8_X/app/inner_example.js": "f7c738f92c0b2321932bddf877383ff8f3b4837d17f67d311d752b3e17db63eb",
+        "support/example_8_X/app/package-lock.versions.json": "e697cd209f6a90392eca2d77ee551adb303a982cdd1c4faa96bc6c8d83117e3f",
+        "support/example_8_X/app/package.json": "940a677fbfc0458956cb9d2b8cc72d173b159318fa2ea9dbc3a6163120226efe",
+        "support/example_8_X/tmp/outer_example.js": "7301d885929cd18816f09536780efa3fe439669a040da5f242bdc9c3a1f590c9",
+        "support/example_9_X/app/README.md": "74e6a96b8b73bed994bc96575581addfb9b3dd43e169508b52fe6726d29916a1",
+        "support/example_9_X/app/eslint.config.mjs": "2ec2df6d2cba56e7c6d29a8ba98ccdd146283d2e6ce08a5a0fcdadf54976a55b",
+        "support/example_9_X/app/inner_example.js": "f7c738f92c0b2321932bddf877383ff8f3b4837d17f67d311d752b3e17db63eb",
+        "support/example_9_X/app/package-lock.versions.json": "4b96931f6b0b8afcf62d0da2f44f96e6ffca7563b637c230f245b9750399a8b1",
+        "support/example_9_X/app/package.json": "c9662a73587bcae9e4646117d096a87540c44ad19920d218ac95ab813cd40a76",
+        "support/example_9_X/tmp/outer_example.js": "7301d885929cd18816f09536780efa3fe439669a040da5f242bdc9c3a1f590c9",
+        "title.txt": "c37e2979538b3e4e096bbe3a0106fff3d5902375bb6ac50a091da2165269f78c"
+      },
+      "historical_cutoff": {
+        "kind": "opening_record",
+        "cutoff_utc": "2024-11-09T19:40:36Z",
+        "cutoff_semantics": "Opening-event payload at its recorded event time; not proof of byte-exact state at issue creation.",
+        "source_event_created_at": "2024-11-09T19:40:36Z",
+        "issue_updated_at_in_payload": "2024-11-09T19:40:35Z"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 10752,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 460,
+        "output_tokens_details": {
+          "reasoning_tokens": 365
+        },
+        "total_tokens": 11212,
+        "attribution": {
+          "items": {
+            "msg_05e6f8c3bce623ce016ae18396ea44819186bc738ad28ab15d": {
+              "input_tokens": 9012,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 9012,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_05e6f8c3bce623ce016ae18396ea448191b4036f0eda6c5f55": {
+              "input_tokens": 1738,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1738,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_05e6f8c3bce623ce016ae183a0b6c88191b369d5c5d0f5bfe4": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 95,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 95
+                }
+              ]
+            },
+            "rs_05e6f8c3bce623ce016ae183a099848191a1ebf5360d86c552": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 365
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "tool_calls": [],
+      "public_actions": [],
+      "errors": []
+    },
+    {
+      "task": 38,
+      "issue": 19818,
+      "run_id": "20261028T051014Z-a6abe644",
+      "run_folder": "evals/runs/20261028T051014Z-a6abe644",
+      "configuration_version": "milestone-d-development-v3",
+      "configuration_sha256": "6e5e71e401349836825361bd6625f6235f9d0c9474288cd63c9ce25d0255d965",
+      "expected_decision": "no_action",
+      "actual_decision": "no_action",
+      "decision_pass": true,
+      "quality": [
+        {
+          "criterion": 1,
+          "result": "pass",
+          "evidence": "Internal completeness judgement agrees with frozen expectation: Recognises complete original triggering/comparison examples, inline rule and playground settings, versions and observed/expected diagnostic."
+        },
+        {
+          "criterion": 2,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; public wording criterion is not assessable."
+        },
+        {
+          "criterion": 3,
+          "result": "not_assessable",
+          "evidence": "No proposed comment; no redundant public request."
+        },
+        {
+          "criterion": 4,
+          "result": "pass",
+          "evidence": "Internal rationale remains neutral and does not decide whether maintainers should accept the bug."
+        },
+        {
+          "criterion": 5,
+          "result": "pass",
+          "evidence": "No diagnosis/fix or submitted-code execution; preview has no action/tool interface."
+        },
+        {
+          "criterion": 6,
+          "result": "pass",
+          "evidence": "Validated silent result with correct selected identity; no posting target."
+        },
+        {
+          "criterion": 7,
+          "result": "pass",
+          "evidence": "clarification and preview_comment are null; public_actions=[] and no public write occurred."
+        }
+      ],
+      "quality_findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "infrastructure_failures": [],
+        "notes": [
+          "Recognises complete original triggering/comparison examples, inline rule and playground settings, versions and observed/expected diagnostic.",
+          "Expected no_action; original i++ and i-- expressions and weaker ClickHouse archive provenance are byte-preserved.",
+          "Completeness is assessed without asserting whether the requested behaviour is a bug or replacing postfix expressions with later edits."
+        ]
+      },
+      "actual_rationale": "The report supplies ESLint 9.28.0, the runtime environment, the default Espree parser, and complete triggering and comparison examples. The inline rule directive and supplied playground configuration establish the relevant settings. The observed diagnostic and expected absence of errors are explicit, so a maintainer can reproduce the reported behavior without additional information.",
+      "actual_clarification": null,
+      "input_hashes": {
+        "body.md": "8f81bebba3ff2b4ef76b54d9744f74f069d24d0820588e3fa8c454075068a638",
+        "snapshot.json": "42ff4f85764bdcbcced9d219e6e89b90656435f65c13381d0a08333171acec62",
+        "support/playground-1.json": "9565b6b311e39e3fc56d40081c3ee704f5d7f05c5dbec9372080d6250df30415",
+        "title.txt": "69a5848ef026217f2b4746b153a5143ad7a716fe62fcd906089a46b5289216b6"
+      },
+      "historical_cutoff": {
+        "kind": "opening_record_via_clickhouse",
+        "cutoff_utc": "2025-06-02T21:29:51Z",
+        "cutoff_semantics": "Opening-event payload at its recorded event time; not proof of byte-exact state at issue creation.",
+        "source_event_created_at": "2025-06-02T21:29:51Z",
+        "issue_updated_at_in_payload": "2025-06-02T21:29:44Z"
+      },
+      "model_requested": "gpt-6.1-sol",
+      "model_returned": "gpt-6.1-sol",
+      "engine_version": "codex-cli 0.154.0",
+      "backend_revision_pinned": false,
+      "usage": {
+        "input_tokens": 3159,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 336,
+        "output_tokens_details": {
+          "reasoning_tokens": 250
+        },
+        "total_tokens": 3495,
+        "attribution": {
+          "items": {
+            "msg_06a74f2e30b1a0de016ae183b71d048191a0fdef90f762abcd": {
+              "input_tokens": 1738,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1738,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_06a74f2e30b1a0de016ae183b71d048191a7b04749c2d95383": {
+              "input_tokens": 1419,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1419,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_06a74f2e30b1a0de016ae183bfc3d081918a3068d4543d892c": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 86,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 86
+                }
+              ]
+            },
+            "rs_06a74f2e30b1a0de016ae183bfc3e081919ed686c737b5882b": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 250
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "tool_calls": [],
+      "public_actions": [],
+      "errors": []
+    }
+  ],
+  "prior_20373": {
+    "configuration_version": "milestone-c-development-v4",
+    "configuration_sha256": "fea4bd34fd5c9403afc1604d3800a66ad54b2d849c4db023b5e8bab0517c82e3",
+    "actual_decision": "clarify",
+    "expected_decision": "clarify",
+    "comparison": "evals/runs/20261028T020039Z-14037685/comparison.json"
+  },
+  "earlier_D_attempts": {
+    "quota_denied": "task30-38-attempts.json",
+    "v2_20606_metadata_failure": "evals/runs/20261028T045855Z-a5d67146/comparison.json",
+    "fixed_by": "routing-fix-v3/correction-record.json",
+    "targeted_regression": "evals/runs/20261028T050239Z-453163ef/comparison.json"
+  },
+  "quota": {
+    "recorded_at": "2026-10-28T05:11:02.901578+00:00",
+    "standing_authorisation": "Darren permitted local allowance increases as needed during development; exact text retained in both extension decisions.",
+    "campaign": "c-development-20261028",
+    "local_rolling_limit": 21,
+    "local_campaign_limit": 21,
+    "hosted_rolling_limit": 10,
+    "hosted_campaign_limit": 20,
+    "admissions_total": 21,
+    "rolling_24h_admissions": 21,
+    "admissions_added_during_D": 10,
+    "initial_pre_inference_failures": 9,
+    "additional_targeted_regression": 1,
+    "reservations_refunded": 0,
+    "campaign_reset": false,
+    "posting_enabled": false,
+    "remaining_local_admissions": 0
+  },
+  "tests": {
+    "deterministic_tests": 131,
+    "result": "PASS",
+    "log": "routing-fix-v3/tests.txt",
+    "baseline": "final-baseline-v3.json"
+  },
+  "development_findings": [
+    {
+      "issue": 20606,
+      "decision_pass": true,
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [
+          "Partial clarification: build command/build script is not explicitly requested."
+        ],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "infrastructure_failures": [],
+        "notes": [
+          "Expected clarify decision and corrected source identity pass.",
+          "Comment-quality deviation: minimal Angular/webpack project requested, but build command/build script omitted from the explicit request; frozen criterion retained.",
+          "The earlier v2 result and metadata failure remain visible; no prompt tuning or replacement of that failure."
+        ]
+      }
+    },
+    {
+      "issue": 19924,
+      "decision_pass": false,
+      "findings": {
+        "unnecessary_questions": [],
+        "missed_clarifications": [],
+        "deferrals": [],
+        "silent_branch_violations": [],
+        "scope_issues": [],
+        "infrastructure_failures": [],
+        "uncertainty_failures": [
+          "Returned no_action with a confident completeness assertion instead of recording uncertainty as human_review."
+        ],
+        "notes": [
+          "Decision FAIL: no_action rather than accepted human_review.",
+          "Public silence passes; the absent public comment does not make the internal decision correct.",
+          "Accepted expectation retained; no prompt tuning or relabelling."
+        ]
+      }
+    }
+  ],
+  "public_actions": [],
+  "final_aggregate": null,
+  "limitations": [
+    "Development/regression outputs only; no final mixed-configuration aggregate or accuracy claim.",
+    "Final Milestone F must freeze one final configuration and freshly rerun all ten, including #20373.",
+    "No individual model output approval by Darren is claimed.",
+    "All model runs use tools=[] and exactly selected evidence plus canonical skill; host Python/Codex remains trusted, not OS-jailed.",
+    "Backend revision unpinned, monetary cost unknown; usage retained as returned by the provider.",
+    "No reproduction code executed, diagnosis/fix, public comment, GitHub write, Actions enablement, live state provisioning or deployment.",
+    "Hosted engine/state/issue, phone stop, host isolation/firewall, contention and final-check-to-post race remain unprovisioned/unverified or explicit limitations.",
+    "Purposive ten-case development set; always-no_action baseline 7/10. September 0/10 maintainer requests is separate; workload/time savings unproven.",
+    "No E/F or final submission/report work started."
+  ]
+}

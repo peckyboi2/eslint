@@ -1,0 +1,12 @@
+test_disabled_corrupt_exhausted_zero_model_zero_write (tests.test_preflight.Preflight.test_disabled_corrupt_exhausted_zero_model_zero_write) ... ok
+test_duplicate_and_uncertain_intent_never_reposts (tests.test_preflight.Preflight.test_duplicate_and_uncertain_intent_never_reposts) ... ok
+test_identity_ref_matrix_zero_model_zero_write (tests.test_preflight.Preflight.test_identity_ref_matrix_zero_model_zero_write) ... ok
+test_invalid_and_silent_outputs_zero_write (tests.test_preflight.Preflight.test_invalid_and_silent_outputs_zero_write) ... ok
+test_known_success_simulates_exactly_one_comment (tests.test_preflight.Preflight.test_known_success_simulates_exactly_one_comment) ... ok
+test_preview_and_rerun_cannot_post (tests.test_preflight.Preflight.test_preview_and_rerun_cannot_post) ... ok
+test_wrong_target_pr_nonbug_changed_source_zero_write (tests.test_preflight.Preflight.test_wrong_target_pr_nonbug_changed_source_zero_write) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.011s
+
+OK

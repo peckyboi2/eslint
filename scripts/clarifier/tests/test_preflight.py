@@ -20,6 +20,59 @@ from clarifier.tests.test_state_store import MemoryStore
 
 
 class Preflight(unittest.TestCase):
+    def test_full_invalid_output_matrix_never_reaches_public_edge(self):
+        result = json.loads(RAW)
+        outputs = ['{', RAW + RAW, json.dumps([result]), 'null',
+                   RAW.replace('"decision":', '"decision":"clarify","decision":')]
+        outputs += [json.dumps({**result, key: value}) for key, value in (
+            ('action', 'close'), ('repository', p.REPOSITORY), ('issue', 1), ('force', True))]
+        outputs += [json.dumps({**result, 'clarification': text}) for text in (
+            'x' * 1501, '@reporter respond', '`@reporter` respond', '<script>bad</script>',
+            '[open](https://example.invalid)', '```shell\nrun\n```', 'hidden\u202econtrol', r'escaped\markup')]
+        outputs.append(json.dumps({**result, 'rationale': 'x' * 16384}))
+        for decision in ('no_action', 'human_review'):
+            outputs.append(json.dumps({**result, 'decision': decision}))
+        for raw in outputs:
+            with self.subTest(raw=raw[:80]):
+                model, edge, store = self.pipeline(raw=raw)
+                model.assert_called_once()
+                edge.create_comment.assert_not_called()
+                self.assertEqual(store.state['posts'], [])
+
+    def test_full_target_matrix_never_reserves_or_posts(self):
+        changes = [dict(number=None), dict(number=2), dict(repository_url='upstream'),
+                   dict(url='https://api.github.com/repos/eslint/eslint/issues/1'),
+                   dict(pull_request={}), dict(state='closed'), dict(locked=True),
+                   dict(labels=[{'name': 'enhancement'}]), dict(labels=None),
+                   dict(body='edited'), dict(body=None), dict(title='edited'), dict(title=None)]
+        for change in changes:
+            with self.subTest(change=change):
+                _, edge, store = self.pipeline(issue_change=change)
+                edge.create_comment.assert_not_called()
+                self.assertEqual(store.state['posts'], [])
+
+    def test_both_valid_silent_decisions_have_no_intent_or_public_write(self):
+        for decision in ('no_action', 'human_review'):
+            raw = json.dumps(dict(decision=decision, rationale='Internal only.', clarification=None))
+            model, edge, store = self.pipeline(raw=raw)
+            model.assert_called_once()
+            edge.create_comment.assert_not_called()
+            self.assertEqual(store.state['posts'], [])
+
+    def test_changed_source_at_final_edge_blocks_post(self):
+        from clarifier.outputs import posting_intent
+        from clarifier.tests.test_posting import prepared
+        from clarifier.controls.state_store import transact
+        for field in ('body', 'title', 'repository_url', 'number', 'labels'):
+            store, plan, args = prepared()
+            transact(store, lambda state: posting_intent.reserve(state, plan, args['ctx'].run_id))
+            api = Mock()
+            api._request.return_value = {**args['issue'], field: None}
+            edge = posting.CommentEdge(api, args['ctx'], store, args['target'])
+            with self.subTest(field=field), self.assertRaises(ClarifierError):
+                edge.create_comment(plan)
+            self.assertFalse(any(call.args[0] != 'GET' for call in api._request.call_args_list))
+
     def pipeline(self, data=None, state=None, raw=RAW, issue_change=None, uncertain=False, mode='post'):
         args=fixture();store=MemoryStore();store.state=args['state'] if state is None else state
         model,edge=Mock(return_value=raw),Mock()

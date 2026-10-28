@@ -1,0 +1,29 @@
+test_both_valid_silent_decisions_have_no_intent_or_public_write (clarifier.tests.test_preflight.Preflight.test_both_valid_silent_decisions_have_no_intent_or_public_write) ... ok
+test_changed_source_at_final_edge_blocks_post (clarifier.tests.test_preflight.Preflight.test_changed_source_at_final_edge_blocks_post) ... ok
+test_disabled_corrupt_exhausted_zero_model_zero_write (clarifier.tests.test_preflight.Preflight.test_disabled_corrupt_exhausted_zero_model_zero_write) ... ok
+test_duplicate_and_uncertain_intent_never_reposts (clarifier.tests.test_preflight.Preflight.test_duplicate_and_uncertain_intent_never_reposts) ... ok
+test_full_invalid_output_matrix_never_reaches_public_edge (clarifier.tests.test_preflight.Preflight.test_full_invalid_output_matrix_never_reaches_public_edge) ... ok
+test_full_target_matrix_never_reserves_or_posts (clarifier.tests.test_preflight.Preflight.test_full_target_matrix_never_reserves_or_posts) ... ok
+test_identity_ref_matrix_zero_model_zero_write (clarifier.tests.test_preflight.Preflight.test_identity_ref_matrix_zero_model_zero_write) ... ok
+test_invalid_and_silent_outputs_zero_write (clarifier.tests.test_preflight.Preflight.test_invalid_and_silent_outputs_zero_write) ... ok
+test_known_success_simulates_exactly_one_comment (clarifier.tests.test_preflight.Preflight.test_known_success_simulates_exactly_one_comment) ... ok
+test_preview_and_rerun_cannot_post (clarifier.tests.test_preflight.Preflight.test_preview_and_rerun_cannot_post) ... ok
+test_wrong_target_pr_nonbug_changed_source_zero_write (clarifier.tests.test_preflight.Preflight.test_wrong_target_pr_nonbug_changed_source_zero_write) ... ok
+test_live_release_is_disabled (clarifier.tests.test_output_handler.OutputHandlerTests.test_live_release_is_disabled) ... ok
+test_mentions_rejected_even_in_code (clarifier.tests.test_output_handler.OutputHandlerTests.test_mentions_rejected_even_in_code) ... ok
+test_one_attributed_bounded_plan (clarifier.tests.test_output_handler.OutputHandlerTests.test_one_attributed_bounded_plan) ... ok
+test_rejected_or_silent_paths_never_write (clarifier.tests.test_output_handler.OutputHandlerTests.test_rejected_or_silent_paths_never_write) ... ok
+test_scoped_package_in_code_is_safe_but_escaped_or_plain_mentions_are_blocked (clarifier.tests.test_output_handler.OutputHandlerTests.test_scoped_package_in_code_is_safe_but_escaped_or_plain_mentions_are_blocked) ... ok
+test_hidden_controls_and_unsafe_wording_rejected (clarifier.tests.test_validation.StrictValidation.test_hidden_controls_and_unsafe_wording_rejected) ... ok
+test_json_and_structural_failures_are_typed (clarifier.tests.test_validation.StrictValidation.test_json_and_structural_failures_are_typed) ... ok
+test_schema_boundaries_are_exact (clarifier.tests.test_validation.StrictValidation.test_schema_boundaries_are_exact) ... ok
+test_all_routes_and_trusted_identity (clarifier.tests.test_routing.Decisions.test_all_routes_and_trusted_identity) ... ok
+test_bounds_and_attribution (clarifier.tests.test_routing.Decisions.test_bounds_and_attribution) ... ok
+test_every_selected_case_keeps_its_identity_on_all_silent_and_preview_routes (clarifier.tests.test_routing.Decisions.test_every_selected_case_keeps_its_identity_on_all_silent_and_preview_routes) ... ok
+test_invalid_results_stay_silent (clarifier.tests.test_routing.Decisions.test_invalid_results_stay_silent) ... ok
+test_attribution_rejections_have_no_public_action_or_target (clarifier.tests.test_routing.RejectedAttribution.test_attribution_rejections_have_no_public_action_or_target) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.014s
+
+OK

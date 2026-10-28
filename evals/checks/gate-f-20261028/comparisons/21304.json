@@ -1,0 +1,141 @@
+{
+  "issue": 21304,
+  "run_id": "final-f-20261028-v9-07-21304-a1",
+  "status": "completed",
+  "actual_decision": "no_action",
+  "result": {
+    "decision": "no_action",
+    "rationale": "The report supplies environment versions, the default Espree parser, a self-contained rule configuration, triggering code, and expected versus observed diagnostics. The supplied playground content also includes a reported `g` control alongside the unreported `d` and `v` cases. These examples are sufficient to reproduce the rule behavior without the linked image, additional project files, or a pipeline-specific command.",
+    "clarification": null
+  },
+  "errors": [],
+  "input_hashes": {
+    "body.md": "ece9b68942dfaa87727c8262eb680c411ab68423dd942b6343b2539717ee065d",
+    "snapshot.json": "87cbd367b2cfbd92e60a180a4be1b8ea0730157f869083904e5ca32c456c23d8",
+    "support/playground-1.json": "dd91fbbef85dbb67997cf6423ac8b32d2f185df690c7205103c470d8a7a8d2bd",
+    "title.txt": "3f041738bb6647ab00e55964978f398bf870a6dc286e93abbf0eeb546a463393"
+  },
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "public_actions": [],
+  "usage": {
+    "input_tokens": 6282,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 364,
+    "output_tokens_details": {
+      "reasoning_tokens": 268
+    },
+    "total_tokens": 6646,
+    "attribution": {
+      "items": {
+        "msg_0666f2ba7a8d4cae016ae1aa2a292c81919b42c3c2b5192d8e": {
+          "input_tokens": 1955,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_0666f2ba7a8d4cae016ae1aa2a292c8191b267eeb89de6ab32": {
+          "input_tokens": 4325,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 4325,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_0666f2ba7a8d4cae016ae1aa359dd88191b5b9075ffae2ded9": {
+          "input_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 96,
+          "content": [
+            {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 96
+            }
+          ]
+        },
+        "rs_0666f2ba7a8d4cae016ae1aa359de08191a323b20ddc5ba333": {
+          "input_tokens": 2,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 268
+        }
+      }
+    }
+  },
+  "cost": "unknown",
+  "source": "evals/golden/prepared-inputs/inputs/21304",
+  "run": "evals/runs/final-f-20261028-v9-07-21304-a1",
+  "campaign_id": "final-f-20261028-v9",
+  "expected_decision": "no_action",
+  "decision_pass": true,
+  "quality_review": {
+    "comment_quality": "not_assessable",
+    "criteria": [
+      {
+        "criterion": 1,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 2,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 3,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 4,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 5,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 6,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 7,
+        "result": "pass",
+        "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+      }
+    ],
+    "irrelevant_content": false,
+    "redundant_content": false,
+    "silent_branch_violation": false,
+    "notes": [
+      "PASS: no_action matches; the report and preserved playground establish the text reproduction without the supplementary unpreserved screenshot. No screenshot-dependent finding or additional request."
+    ],
+    "issue": 21304,
+    "run_id": "final-f-20261028-v9-07-21304-a1",
+    "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+    "reviewed_at": "2026-10-28T07:55:02.654277+00:00"
+  },
+  "clarification_success": false
+}

@@ -1,0 +1,1527 @@
+{
+  "campaign_id": "final-f-20261028-v9",
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "cases": [
+    {
+      "issue": 20373,
+      "run_id": "final-f-20261028-v9-01-20373-a1",
+      "status": "completed",
+      "actual_decision": "clarify",
+      "result": {
+        "decision": "clarify",
+        "rationale": "The report supplies environment versions, the override configuration, the plugin-registration toggle, and the different errors for `.ts` and `.js` files. However, the configuration returned by `feEslint` from `@fe/eslint-config` and its dependency setup are absent. Without them, a maintainer cannot reconstruct the base plugin registrations and file matching needed to reproduce either case. The lint invocation is also unspecified, leaving the target-file selection unclear.",
+        "clarification": "Could you share the configuration exported by `@fe/eslint-config`, together with the relevant `package.json` and lockfile, or a minimal project containing them, and the exact lint command or package-script invocation that demonstrates the two cases? The supplied override does not show which base configurations and plugin registrations apply to the `.ts` and `.js` files."
+      },
+      "errors": [],
+      "input_hashes": {
+        "body.md": "52acebec10d033684d643df1c45c849b02967fa291806af3ee70f7e5ee1d0243",
+        "snapshot.json": "cb0a6bae09b182ec75254f2079ad7712ef4fa42f95e6456aa04a3eaadc0ee588",
+        "title.txt": "8aacd3f7ce411c29e90e47cb1e6f9fab92581735ab2187f6dfaa28f5252fb8d3"
+      },
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": [],
+      "usage": {
+        "input_tokens": 4330,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 1216,
+        "output_tokens_details": {
+          "reasoning_tokens": 1034
+        },
+        "total_tokens": 5546,
+        "attribution": {
+          "items": {
+            "msg_05551b2a15d11793016ae1a8bb1258819184f915afe5eed088": {
+              "input_tokens": 2373,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 2373,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_05551b2a15d11793016ae1a8bb125881918b9cef7d6cce48a4": {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1955,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_05551b2a15d11793016ae1a8e8a6208191806ca014c39a53c1": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 182,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 182
+                }
+              ]
+            },
+            "rs_05551b2a15d11793016ae1a8d2dd508191841ec3a00701f61c": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 516
+            },
+            "rs_05551b2a15d11793016ae1a8e878ec8191b89f4d333919745c": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 518
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "source": "evals/golden/prepared-inputs/inputs/20373",
+      "run": "evals/runs/final-f-20261028-v9-01-20373-a1",
+      "campaign_id": "final-f-20261028-v9",
+      "expected_decision": "clarify",
+      "decision_pass": true,
+      "quality_review": {
+        "comment_quality": "pass",
+        "criteria": [
+          {
+            "criterion": 1,
+            "result": "pass",
+            "evidence": "Requests the configuration exported by @fe/eslint-config and relevant package.json/lockfile or a minimal project containing them; these are absent from the preserved override."
+          },
+          {
+            "criterion": 2,
+            "result": "pass",
+            "evidence": "Explains that the supplied override does not show base configurations and plugin registrations for the .ts/.js files; no error cause or fix asserted."
+          },
+          {
+            "criterion": 3,
+            "result": "pass",
+            "evidence": "One cohesive setup request; exact lint command/package-script is also absent and relates to selection of the two file cases. It does not repeat the supplied versions or override."
+          },
+          {
+            "criterion": 4,
+            "result": "pass",
+            "evidence": "Could you share… is respectful and neutral; no validity verdict or promise."
+          },
+          {
+            "criterion": 5,
+            "result": "pass",
+            "evidence": "No deletion, diagnosis, fix, execution, continuation or forbidden operation proposed; inference tool calls are empty."
+          },
+          {
+            "criterion": 6,
+            "result": "pass",
+            "evidence": "Validated bounded preview with trusted model/run attribution; @fe/eslint-config is a package reference, no reporter mention or posting target."
+          },
+          {
+            "criterion": 7,
+            "result": "pass",
+            "evidence": "Exactly one preview comment, public_actions=[] and posting_available=false; no public comment."
+          }
+        ],
+        "irrelevant_content": false,
+        "redundant_content": false,
+        "silent_branch_violation": false,
+        "notes": [
+          "Fresh final-campaign decision and comment match the accepted shared-configuration/dependency requirement."
+        ],
+        "issue": 20373,
+        "run_id": "final-f-20261028-v9-01-20373-a1",
+        "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+        "reviewed_at": "2026-10-28T07:49:33.648971+00:00"
+      },
+      "clarification_success": true
+    },
+    {
+      "issue": 20606,
+      "run_id": "final-f-20261028-v9-02-20606-a1",
+      "status": "completed",
+      "actual_decision": "clarify",
+      "result": {
+        "decision": "clarify",
+        "rationale": "The report supplies environment versions, the package version and file listing, a webpack resolver/plugin snippet, and the exact warning. However, the warning concerns membership in Angular's TypeScript compilation, while the snippet references an unsupplied tsconfig.angular.json. The Angular/webpack dependency setup and build invocation are also absent. These gaps prevent reconstructing how the package file enters the compilation and running the warning-producing path. The supplied playground contains only a comment and lint rules, not a build reproduction.",
+        "clarification": "Could you share a minimal Angular/webpack project that produces this warning, including `tsconfig.angular.json`, `package.json`, the lockfile and any required entry files, along with the exact build command or package-script invocation? The package listing and webpack snippet do not establish how `@eslint/plugin-kit` enters the TypeScript compilation that emits the warning."
+      },
+      "errors": [],
+      "input_hashes": {
+        "body.md": "0bf7b3f7742f8c94409012f7775d81c48497e13dca85d9f9575163cd963e36e1",
+        "snapshot.json": "26b42f996edf751304044c8e2e866cd9526c5eff4a5bb8631ab1cb558bda1326",
+        "support/playground-1.json": "0fada517ef6703ec36f3d8b95f3d0215be70ac23f8c879e374ac821654a88e4c",
+        "title.txt": "bafb36fd5e3eec3fb151c5d89aa46adeebaec659155356f02f8ff3fee1ba66d8"
+      },
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": [],
+      "usage": {
+        "input_tokens": 6784,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 1708,
+        "output_tokens_details": {
+          "reasoning_tokens": 1520
+        },
+        "total_tokens": 8492,
+        "attribution": {
+          "items": {
+            "msg_0f88724247b5d141016ae1a912408c81918cc61c5f773c10cc": {
+              "input_tokens": 4827,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 4827,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0f88724247b5d141016ae1a912408c81919f567f2463022bf7": {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1955,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0f88724247b5d141016ae1a952bbdc819189c1360aefdeabc3": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 188,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 188
+                }
+              ]
+            },
+            "rs_0f88724247b5d141016ae1a92a21548191889235e7aa87c762": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 516
+            },
+            "rs_0f88724247b5d141016ae1a93ed2c0819187e06e20efc28670": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 518
+            },
+            "rs_0f88724247b5d141016ae1a952bbf481918b0658b398198173": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 486
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "source": "evals/golden/prepared-inputs/inputs/20606",
+      "run": "evals/runs/final-f-20261028-v9-02-20606-a1",
+      "campaign_id": "final-f-20261028-v9",
+      "expected_decision": "clarify",
+      "decision_pass": true,
+      "quality_review": {
+        "comment_quality": "pass",
+        "criteria": [
+          {
+            "criterion": 1,
+            "result": "pass",
+            "evidence": "Requests a minimal Angular/webpack project including tsconfig.angular.json, package.json, lockfile, required entry files and the exact build command/package-script. These missing materials cover the frozen build-reproduction requirement."
+          },
+          {
+            "criterion": 2,
+            "result": "pass",
+            "evidence": "Explains that the package listing/snippet do not establish how @eslint/plugin-kit enters the warning-producing TypeScript compilation; describes the evidence gap without asserting an error cause."
+          },
+          {
+            "criterion": 3,
+            "result": "pass",
+            "evidence": "One cohesive actionable build-project request; the preserved playground is only a pointer/comment and cannot supply the build setup. No already supplied environment versions or warning text are requested."
+          },
+          {
+            "criterion": 4,
+            "result": "pass",
+            "evidence": "Respectful Could you share… wording without promising a fix or judging report validity."
+          },
+          {
+            "criterion": 5,
+            "result": "pass",
+            "evidence": "Does not endorse the deletion workaround, propose a diagnosis/fix, execute code or request a forbidden action; model tool calls are empty."
+          },
+          {
+            "criterion": 6,
+            "result": "pass",
+            "evidence": "Bounded validated preview with trusted model/run attribution and package reference only; posting target absent."
+          },
+          {
+            "criterion": 7,
+            "result": "pass",
+            "evidence": "One preview comment only; public_actions=[] and posting_available=false."
+          }
+        ],
+        "irrelevant_content": false,
+        "redundant_content": false,
+        "silent_branch_violation": false,
+        "notes": [
+          "Decision and all wording criteria pass; explicit exact build command is present in this final attempt. Prior omitted-command failures remain separate."
+        ],
+        "issue": 20606,
+        "run_id": "final-f-20261028-v9-02-20606-a1",
+        "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+        "reviewed_at": "2026-10-28T07:51:12.277764+00:00"
+      },
+      "clarification_success": true
+    },
+    {
+      "issue": 19924,
+      "run_id": "final-f-20261028-v9-03-19924-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "result": {
+        "decision": "no_action",
+        "rationale": "The report supplies the environment and versions, the exact `eslint ./ --fix` command, a workload of roughly 9,000 files with autofixable issues, the expected result, and an EMFILE stack trace during `ESLint.outputFixes`. This sufficiently describes the large-batch autofix reproduction path; the original repository and exact rule list are not necessary to reconstruct that scenario.",
+        "clarification": null
+      },
+      "errors": [],
+      "input_hashes": {
+        "body.md": "aaf9b98240c9a65e947e7443c9caa14a658226d308144c0d96d0bb6b498b6ce6",
+        "snapshot.json": "e476ce16e7c5f801ad58584c53ab569e530d0cb6c9ead0f17bdfc70c732c8658",
+        "title.txt": "f43660440f0faf5c02b0ced5ae0f9da4c1d73ad08c44259c0d63207ebbb7c9c2"
+      },
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": [],
+      "usage": {
+        "input_tokens": 2934,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 559,
+        "output_tokens_details": {
+          "reasoning_tokens": 461
+        },
+        "total_tokens": 3493,
+        "attribution": {
+          "items": {
+            "msg_01720ff3b8daa764016ae1a97486508191ae1aebffd101879e": {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1955,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_01720ff3b8daa764016ae1a97486508191b897c4c58f62c563": {
+              "input_tokens": 977,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 977,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_01720ff3b8daa764016ae1a98a24708191aa6cf4ed4f6eb5de": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 98,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 98
+                }
+              ]
+            },
+            "rs_01720ff3b8daa764016ae1a98a24788191ae0e8fc5b0a782f4": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 461
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "source": "evals/golden/prepared-inputs/inputs/19924",
+      "run": "evals/runs/final-f-20261028-v9-03-19924-a1",
+      "campaign_id": "final-f-20261028-v9",
+      "expected_decision": "human_review",
+      "decision_pass": false,
+      "quality_review": {
+        "comment_quality": "not_assessable",
+        "criteria": [
+          {
+            "criterion": 1,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 2,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 3,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 4,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 5,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 6,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 7,
+            "result": "pass",
+            "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+          }
+        ],
+        "irrelevant_content": false,
+        "redundant_content": false,
+        "silent_branch_violation": false,
+        "notes": [
+          "FAIL: actual no_action differs from frozen human_review. The rationale asserts that workload/command/stack trace establish completeness and exact rule list/repository are unnecessary. This repeats the known uncertainty boundary failure; a plausible interpretation still fails the accepted label. No public question or write; all earlier mismatches retained."
+        ],
+        "issue": 19924,
+        "run_id": "final-f-20261028-v9-03-19924-a1",
+        "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+        "reviewed_at": "2026-10-28T07:52:01.482970+00:00"
+      },
+      "clarification_success": false
+    },
+    {
+      "issue": 19044,
+      "run_id": "final-f-20261028-v9-04-19044-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "result": {
+        "decision": "no_action",
+        "rationale": "The report specifies ESLint 9.13.0, the absence of a `type` field in `package.json`, three blank configuration files, and the exact command for each file. It also supplies the differing outputs and expected consistent behavior. These inline details are sufficient to reconstruct the config-loading comparison without the linked reproduction or additional project files.",
+        "clarification": null
+      },
+      "errors": [],
+      "input_hashes": {
+        "body.md": "17d1db6b8444fe12ee4e9d3aa9da6605bff10d55cc3c4d5f6648b4370a8cb424",
+        "snapshot.json": "df1f65a27885b141bd723a317589c9fa4647628e702e0deb94c837e1dfce013a",
+        "title.txt": "4c2341a8258736b70a9fd938f8fc7bd3345aafec9acc6fcf3885504f72134dbc"
+      },
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": [],
+      "usage": {
+        "input_tokens": 2817,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 298,
+        "output_tokens_details": {
+          "reasoning_tokens": 209
+        },
+        "total_tokens": 3115,
+        "attribution": {
+          "items": {
+            "msg_0bd639fdc197ac8f016ae1a9a739fc81919a780db765ce3c4a": {
+              "input_tokens": 860,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 860,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0bd639fdc197ac8f016ae1a9a739fc81919f00875364975681": {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1955,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0bd639fdc197ac8f016ae1a9b286b48191b8c8b9c108e5c232": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 89,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 89
+                }
+              ]
+            },
+            "rs_0bd639fdc197ac8f016ae1a9b286c481919e75914b87c8eecb": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 209
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "source": "evals/golden/prepared-inputs/inputs/19044",
+      "run": "evals/runs/final-f-20261028-v9-04-19044-a1",
+      "campaign_id": "final-f-20261028-v9",
+      "expected_decision": "no_action",
+      "decision_pass": true,
+      "quality_review": {
+        "comment_quality": "not_assessable",
+        "criteria": [
+          {
+            "criterion": 1,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 2,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 3,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 4,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 5,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 6,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 7,
+            "result": "pass",
+            "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+          }
+        ],
+        "irrelevant_content": false,
+        "redundant_content": false,
+        "silent_branch_violation": false,
+        "notes": [
+          "PASS: no_action matches the accepted label. The rationale recognises explicitly blank configuration contents, no package.json type, exact commands and differing outputs as supplied reproduction inputs; no redundant request."
+        ],
+        "issue": 19044,
+        "run_id": "final-f-20261028-v9-04-19044-a1",
+        "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+        "reviewed_at": "2026-10-28T07:52:41.469034+00:00"
+      },
+      "clarification_success": false
+    },
+    {
+      "issue": 21320,
+      "run_id": "final-f-20261028-v9-05-21320-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "result": {
+        "decision": "no_action",
+        "rationale": "The report supplies environment versions, the parser, and a complete inline `Linter.verifyAndFix()` reproduction with triggering input, language options, rule configuration, and observed versus expected behavior. The supporting playground text confirms the input and settings. No additional project files or CLI command are needed for the reported API path.",
+        "clarification": null
+      },
+      "errors": [],
+      "input_hashes": {
+        "body.md": "e34f7c9cf0da40eb9cd9db910ff5b3a9c75d1e57c81fda81e96220973d2e8a1e",
+        "snapshot.json": "08c954b2e18a4d09d11250674e2e71b3aa7c13baa2526b1b8c7ef204867b2f34",
+        "support/playground-1.json": "6f4c063979c2cfca301014ebe87c7b3fa1145a7dd6d3377348a6b899171e001b",
+        "title.txt": "8097c9f0bc7da9781c1126b924a6e0023614b59f1d8969121d4a44e1f27b4007"
+      },
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": [],
+      "usage": {
+        "input_tokens": 3304,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 315,
+        "output_tokens_details": {
+          "reasoning_tokens": 233
+        },
+        "total_tokens": 3619,
+        "attribution": {
+          "items": {
+            "msg_04cfcf0600c0232b016ae1a9cdf8d8819181ed093dc5de030f": {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1955,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_04cfcf0600c0232b016ae1a9cdf8d88191b731b63b04f25cd6": {
+              "input_tokens": 1347,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1347,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_04cfcf0600c0232b016ae1a9d5525881918f71f0daba4b3f77": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 82,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 82
+                }
+              ]
+            },
+            "rs_04cfcf0600c0232b016ae1a9d55270819187f75e9a13ed3227": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 233
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "source": "evals/golden/prepared-inputs/inputs/21320",
+      "run": "evals/runs/final-f-20261028-v9-05-21320-a1",
+      "campaign_id": "final-f-20261028-v9",
+      "expected_decision": "no_action",
+      "decision_pass": true,
+      "quality_review": {
+        "comment_quality": "not_assessable",
+        "criteria": [
+          {
+            "criterion": 1,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 2,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 3,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 4,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 5,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 6,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 7,
+            "result": "pass",
+            "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+          }
+        ],
+        "irrelevant_content": false,
+        "redundant_content": false,
+        "silent_branch_violation": false,
+        "notes": [
+          "PASS: no_action matches. The complete Linter.verifyAndFix API reproduction supplies its input/settings and invocation; no redundant CLI command or project request."
+        ],
+        "issue": 21320,
+        "run_id": "final-f-20261028-v9-05-21320-a1",
+        "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+        "reviewed_at": "2026-10-28T07:53:31.507455+00:00"
+      },
+      "clarification_success": false
+    },
+    {
+      "issue": 19477,
+      "run_id": "final-f-20261028-v9-06-19477-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "result": {
+        "decision": "no_action",
+        "rationale": "The report supplies ESLint and environment versions, the parser, a minimal input with `no-console` enabled, and the exact confusing suggestion messages alongside the expected behavior. The supporting playground data preserves the same input and language options. This is sufficient to reproduce the suggestion-message issue without additional project files or a separate command.",
+        "clarification": null
+      },
+      "errors": [],
+      "input_hashes": {
+        "body.md": "1b0d0ec7bb51bc0af9319f6afb392e0ffe3e356d6839cc6123fe7ac2f7aa5ac5",
+        "snapshot.json": "2331952f2a2ea637b5fc2ce82344ad43c16cf4d466ab77472014a1d75b25cfc3",
+        "support/playground-1.json": "15f8e590eb3bd4bf8ff8cf6b6c8f447e3e8f8bb4502589d82ba9de37a6dc1925",
+        "title.txt": "4923aad93b56b198d8181cd01ac8a6657f2085237d0f1ea693ae5b7e8e7e994d"
+      },
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": [],
+      "usage": {
+        "input_tokens": 3265,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 268,
+        "output_tokens_details": {
+          "reasoning_tokens": 185
+        },
+        "total_tokens": 3533,
+        "attribution": {
+          "items": {
+            "msg_0e7afca7e97b6d35016ae1a9fff76481919aaf5f35d1e113f0": {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1955,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0e7afca7e97b6d35016ae1a9fff7648191a7c9ba9cff876df7": {
+              "input_tokens": 1308,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1308,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0e7afca7e97b6d35016ae1aa09ffe881919cfd735c3a275f76": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 83,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 83
+                }
+              ]
+            },
+            "rs_0e7afca7e97b6d35016ae1aa09ee908191a5f62577f8f7f240": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 185
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "source": "evals/golden/prepared-inputs/inputs/19477",
+      "run": "evals/runs/final-f-20261028-v9-06-19477-a1",
+      "campaign_id": "final-f-20261028-v9",
+      "expected_decision": "no_action",
+      "decision_pass": true,
+      "quality_review": {
+        "comment_quality": "not_assessable",
+        "criteria": [
+          {
+            "criterion": 1,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 2,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 3,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 4,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 5,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 6,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 7,
+            "result": "pass",
+            "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+          }
+        ],
+        "irrelevant_content": false,
+        "redundant_content": false,
+        "silent_branch_violation": false,
+        "notes": [
+          "PASS: no_action matches; source/rule/options and exact suggestion wording suffice for the static suggestion path. No request for the runtime logLevel value or additional project."
+        ],
+        "issue": 19477,
+        "run_id": "final-f-20261028-v9-06-19477-a1",
+        "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+        "reviewed_at": "2026-10-28T07:54:14.392950+00:00"
+      },
+      "clarification_success": false
+    },
+    {
+      "issue": 21304,
+      "run_id": "final-f-20261028-v9-07-21304-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "result": {
+        "decision": "no_action",
+        "rationale": "The report supplies environment versions, the default Espree parser, a self-contained rule configuration, triggering code, and expected versus observed diagnostics. The supplied playground content also includes a reported `g` control alongside the unreported `d` and `v` cases. These examples are sufficient to reproduce the rule behavior without the linked image, additional project files, or a pipeline-specific command.",
+        "clarification": null
+      },
+      "errors": [],
+      "input_hashes": {
+        "body.md": "ece9b68942dfaa87727c8262eb680c411ab68423dd942b6343b2539717ee065d",
+        "snapshot.json": "87cbd367b2cfbd92e60a180a4be1b8ea0730157f869083904e5ca32c456c23d8",
+        "support/playground-1.json": "dd91fbbef85dbb67997cf6423ac8b32d2f185df690c7205103c470d8a7a8d2bd",
+        "title.txt": "3f041738bb6647ab00e55964978f398bf870a6dc286e93abbf0eeb546a463393"
+      },
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": [],
+      "usage": {
+        "input_tokens": 6282,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 364,
+        "output_tokens_details": {
+          "reasoning_tokens": 268
+        },
+        "total_tokens": 6646,
+        "attribution": {
+          "items": {
+            "msg_0666f2ba7a8d4cae016ae1aa2a292c81919b42c3c2b5192d8e": {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1955,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0666f2ba7a8d4cae016ae1aa2a292c8191b267eeb89de6ab32": {
+              "input_tokens": 4325,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 4325,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_0666f2ba7a8d4cae016ae1aa359dd88191b5b9075ffae2ded9": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 96,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 96
+                }
+              ]
+            },
+            "rs_0666f2ba7a8d4cae016ae1aa359de08191a323b20ddc5ba333": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 268
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "source": "evals/golden/prepared-inputs/inputs/21304",
+      "run": "evals/runs/final-f-20261028-v9-07-21304-a1",
+      "campaign_id": "final-f-20261028-v9",
+      "expected_decision": "no_action",
+      "decision_pass": true,
+      "quality_review": {
+        "comment_quality": "not_assessable",
+        "criteria": [
+          {
+            "criterion": 1,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 2,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 3,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 4,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 5,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 6,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 7,
+            "result": "pass",
+            "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+          }
+        ],
+        "irrelevant_content": false,
+        "redundant_content": false,
+        "silent_branch_violation": false,
+        "notes": [
+          "PASS: no_action matches; the report and preserved playground establish the text reproduction without the supplementary unpreserved screenshot. No screenshot-dependent finding or additional request."
+        ],
+        "issue": 21304,
+        "run_id": "final-f-20261028-v9-07-21304-a1",
+        "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+        "reviewed_at": "2026-10-28T07:55:02.654277+00:00"
+      },
+      "clarification_success": false
+    },
+    {
+      "issue": 19847,
+      "run_id": "final-f-20261028-v9-08-19847-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "result": {
+        "decision": "no_action",
+        "rationale": "The supplied supporting files provide the exact ESLint command, flat configuration, triggering `build/test.js`, TypeScript configuration, and dependency/version records. Together with the reported environment and expected/actual behavior, these are sufficient to reconstruct the reproduction without the Gulp pipeline or access to the linked repository.",
+        "clarification": null
+      },
+      "errors": [],
+      "input_hashes": {
+        "body.md": "0d2880c7c0b24fe6064e8423f8be34446621e04eeb3ecd3151bee34a8e5a9114",
+        "snapshot.json": "0ec8a8dfd733b57eccc4f434319a1e009c97006641e8b94577421c065ba67ce4",
+        "support/Readme.md": "99060686ccd5ebec427934edd56ecf7a2b19ad0cdb9328572fec5e96c264c183",
+        "support/build/test.js": "f624c9241d6a695a186647c835068f43038c2aaca07a5ee332c0dd54a9459914",
+        "support/eslint.config.mjs": "cfe43e59495ba9a7f360d5d0e610b042fd76b8f90ca98bd8e64d7f71b253bf29",
+        "support/package-lock.versions.json": "759612cc49e946f7dbb146ccecd7c1b51eef2755012e8c1f7b0769dfbef1d8ac",
+        "support/package.json": "7c2a3d22d83dc1561f8b855c338e8aef5ca9640026c80dfca4fb6b8e2a54451d",
+        "support/tsconfig.json": "504dbc6a2b3ec8b5a03134c45bb575c47e8a067867a9aa2a8dde1ba18c9be721",
+        "title.txt": "50e0418385eb4e71c18d5dc522ed68549241b11d4594f3702a09864557e5e0f5"
+      },
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": [],
+      "usage": {
+        "input_tokens": 7596,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 469,
+        "output_tokens_details": {
+          "reasoning_tokens": 390
+        },
+        "total_tokens": 8065,
+        "attribution": {
+          "items": {
+            "msg_078e4c8ac1864658016ae1aa5db31881919d2111bded1c726c": {
+              "input_tokens": 5639,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 5639,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_078e4c8ac1864658016ae1aa5db3188191a0e9458dcb8336ce": {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1955,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_078e4c8ac1864658016ae1aa6edaec819191bde9d79053cb6a": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 79,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 79
+                }
+              ]
+            },
+            "rs_078e4c8ac1864658016ae1aa6eac3c8191bc8765223b219118": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 390
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "source": "evals/golden/prepared-inputs/inputs/19847",
+      "run": "evals/runs/final-f-20261028-v9-08-19847-a1",
+      "campaign_id": "final-f-20261028-v9",
+      "expected_decision": "no_action",
+      "decision_pass": true,
+      "quality_review": {
+        "comment_quality": "not_assessable",
+        "criteria": [
+          {
+            "criterion": 1,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 2,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 3,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 4,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 5,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 6,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 7,
+            "result": "pass",
+            "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+          }
+        ],
+        "irrelevant_content": false,
+        "redundant_content": false,
+        "silent_branch_violation": false,
+        "notes": [
+          "PASS: accepted no_action matches with all nine approved package files. Original malformed Markdown and body ESLint 9.21.0 versus supporting lockfile 9.28.0 remain unchanged; no version-equivalent execution or complete Gulp reconstruction is established. The rationale relies on the supplied standalone command/config/source/dependency evidence. No code executed or public request."
+        ],
+        "issue": 19847,
+        "run_id": "final-f-20261028-v9-08-19847-a1",
+        "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+        "reviewed_at": "2026-10-28T07:55:55.504096+00:00"
+      },
+      "clarification_success": false
+    },
+    {
+      "issue": 19118,
+      "run_id": "final-f-20261028-v9-09-19118-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "result": {
+        "decision": "no_action",
+        "rationale": "The report supplies ESLint 9.14.0, the default parser, working directory, triggering command, and observed/expected behavior. The supporting files provide the flat configuration, dependency records, source input, app/tmp directory layout, and an ESLint 8 comparison. Together these are sufficient to reconstruct the reported reproduction without clarification.",
+        "clarification": null
+      },
+      "errors": [],
+      "input_hashes": {
+        "body.md": "e966d6675a422c4ed4bb688707a1938132006bf4945ba31010f892d59b57c23b",
+        "snapshot.json": "42273146df8a8f284a434898fb06dede6bc1c341ce0b25322e87d677b2f406db",
+        "support/README.md": "f5a87bf65a68b2ce24d1327c020199e03e98df234e64e28ce301776aeeef0ddd",
+        "support/example_8_X/app/.eslintrc.yml": "cd42bf9b0813214f19acb9225cdbd366c6678aecbd128a21dc66fe807a169705",
+        "support/example_8_X/app/README.md": "dd763a8f41ea49f1940124eb9cb446f2b750e56b1c4d444e0b5981f9c46be20d",
+        "support/example_8_X/app/inner_example.js": "f7c738f92c0b2321932bddf877383ff8f3b4837d17f67d311d752b3e17db63eb",
+        "support/example_8_X/app/package-lock.versions.json": "e697cd209f6a90392eca2d77ee551adb303a982cdd1c4faa96bc6c8d83117e3f",
+        "support/example_8_X/app/package.json": "940a677fbfc0458956cb9d2b8cc72d173b159318fa2ea9dbc3a6163120226efe",
+        "support/example_8_X/tmp/outer_example.js": "7301d885929cd18816f09536780efa3fe439669a040da5f242bdc9c3a1f590c9",
+        "support/example_9_X/app/README.md": "74e6a96b8b73bed994bc96575581addfb9b3dd43e169508b52fe6726d29916a1",
+        "support/example_9_X/app/eslint.config.mjs": "2ec2df6d2cba56e7c6d29a8ba98ccdd146283d2e6ce08a5a0fcdadf54976a55b",
+        "support/example_9_X/app/inner_example.js": "f7c738f92c0b2321932bddf877383ff8f3b4837d17f67d311d752b3e17db63eb",
+        "support/example_9_X/app/package-lock.versions.json": "4b96931f6b0b8afcf62d0da2f44f96e6ffca7563b637c230f245b9750399a8b1",
+        "support/example_9_X/app/package.json": "c9662a73587bcae9e4646117d096a87540c44ad19920d218ac95ab813cd40a76",
+        "support/example_9_X/tmp/outer_example.js": "7301d885929cd18816f09536780efa3fe439669a040da5f242bdc9c3a1f590c9",
+        "title.txt": "c37e2979538b3e4e096bbe3a0106fff3d5902375bb6ac50a091da2165269f78c"
+      },
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": [],
+      "usage": {
+        "input_tokens": 10969,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 413,
+        "output_tokens_details": {
+          "reasoning_tokens": 326
+        },
+        "total_tokens": 11382,
+        "attribution": {
+          "items": {
+            "msg_08985044e029f8e3016ae1aa8f75e081918265380e847c576d": {
+              "input_tokens": 9012,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 9012,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_08985044e029f8e3016ae1aa8f75e081918e2fdc3e64a3d2d3": {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1955,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_08985044e029f8e3016ae1aa9baff88191af84144f28c518d7": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 87,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 87
+                }
+              ]
+            },
+            "rs_08985044e029f8e3016ae1aa9bb0008191ad703dfa47c96b8e": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 326
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "source": "evals/golden/prepared-inputs/inputs/19118",
+      "run": "evals/runs/final-f-20261028-v9-09-19118-a1",
+      "campaign_id": "final-f-20261028-v9",
+      "expected_decision": "no_action",
+      "decision_pass": true,
+      "quality_review": {
+        "comment_quality": "not_assessable",
+        "criteria": [
+          {
+            "criterion": 1,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 2,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 3,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 4,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 5,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 6,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 7,
+            "result": "pass",
+            "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+          }
+        ],
+        "irrelevant_content": false,
+        "redundant_content": false,
+        "silent_branch_violation": false,
+        "notes": [
+          "PASS: no_action matches with all sixteen approved files including both ESLint examples. The rationale recognises the supplied working directory (/app), command, layout, configs/source/dependencies and comparison. No redundant working-directory request or execution claim."
+        ],
+        "issue": 19118,
+        "run_id": "final-f-20261028-v9-09-19118-a1",
+        "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+        "reviewed_at": "2026-10-28T07:56:33.257881+00:00"
+      },
+      "clarification_success": false
+    },
+    {
+      "issue": 19818,
+      "run_id": "final-f-20261028-v9-10-19818-a1",
+      "status": "completed",
+      "actual_decision": "no_action",
+      "result": {
+        "decision": "no_action",
+        "rationale": "The report supplies ESLint 9.28.0, the default Espree parser, environment details, self-contained triggering and comparison examples, and expected versus observed diagnostics. The supplied playground content confirms the input and rule/parser configuration. This is sufficient to reproduce the reported rule behavior without additional project files or an execution command.",
+        "clarification": null
+      },
+      "errors": [],
+      "input_hashes": {
+        "body.md": "8f81bebba3ff2b4ef76b54d9744f74f069d24d0820588e3fa8c454075068a638",
+        "snapshot.json": "42ff4f85764bdcbcced9d219e6e89b90656435f65c13381d0a08333171acec62",
+        "support/playground-1.json": "9565b6b311e39e3fc56d40081c3ee704f5d7f05c5dbec9372080d6250df30415",
+        "title.txt": "69a5848ef026217f2b4746b153a5143ad7a716fe62fcd906089a46b5289216b6"
+      },
+      "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+      "public_actions": [],
+      "usage": {
+        "input_tokens": 3376,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "output_tokens": 295,
+        "output_tokens_details": {
+          "reasoning_tokens": 211
+        },
+        "total_tokens": 3671,
+        "attribution": {
+          "items": {
+            "msg_021f3605c94ed83b016ae1aab70a148191bfee74f5089dcb61": {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1955,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_021f3605c94ed83b016ae1aab70a1881918e03ec56e76d226b": {
+              "input_tokens": 1419,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0,
+              "content": [
+                {
+                  "input_tokens": 1419,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 0
+                }
+              ]
+            },
+            "msg_021f3605c94ed83b016ae1aabed13c8191a42a512072a19d35": {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 84,
+              "content": [
+                {
+                  "input_tokens": 0,
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "output_tokens": 84
+                }
+              ]
+            },
+            "rs_021f3605c94ed83b016ae1aabed148819186284ef1d47b5688": {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 211
+            }
+          }
+        }
+      },
+      "cost": "unknown",
+      "source": "evals/golden/prepared-inputs/inputs/19818",
+      "run": "evals/runs/final-f-20261028-v9-10-19818-a1",
+      "campaign_id": "final-f-20261028-v9",
+      "expected_decision": "no_action",
+      "decision_pass": true,
+      "quality_review": {
+        "comment_quality": "not_assessable",
+        "criteria": [
+          {
+            "criterion": 1,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 2,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 3,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 4,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 5,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 6,
+            "result": "not_assessable",
+            "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+          },
+          {
+            "criterion": 7,
+            "result": "pass",
+            "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+          }
+        ],
+        "irrelevant_content": false,
+        "redundant_content": false,
+        "silent_branch_violation": false,
+        "notes": [
+          "PASS: no_action matches with original postfix increment/decrement examples, inline rule and preserved playground. Weaker transformed ClickHouse provenance remains explicit; no later expressions substituted, submitted code executed or arbitrary links fetched."
+        ],
+        "issue": 19818,
+        "run_id": "final-f-20261028-v9-10-19818-a1",
+        "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+        "reviewed_at": "2026-10-28T07:57:38.064177+00:00"
+      },
+      "clarification_success": false
+    }
+  ],
+  "confusion": {
+    "clarify": {
+      "clarify": 2,
+      "no_action": 0,
+      "human_review": 0
+    },
+    "no_action": {
+      "clarify": 0,
+      "no_action": 7,
+      "human_review": 0
+    },
+    "human_review": {
+      "clarify": 0,
+      "no_action": 1,
+      "human_review": 0
+    }
+  },
+  "metrics": {
+    "completed": {
+      "count": 10,
+      "denominator": 10
+    },
+    "decision_matches": {
+      "count": 9,
+      "denominator": 10
+    },
+    "decision_matches_completed": {
+      "count": 9,
+      "denominator": 10
+    },
+    "unnecessary_requests_on_complete": {
+      "count": 0,
+      "denominator": 7
+    },
+    "unsupported_requests_on_human_review": {
+      "count": 0,
+      "denominator": 1
+    },
+    "missed_necessary_clarifications": {
+      "count": 0,
+      "denominator": 2
+    },
+    "clarify_deferred_to_human": {
+      "count": 0,
+      "denominator": 2
+    },
+    "all_deferrals": {
+      "count": 0,
+      "denominator": 10
+    },
+    "silent_branch_violations": {
+      "count": 0,
+      "denominator": 8
+    },
+    "public_writes": {
+      "count": 0,
+      "denominator": 10
+    },
+    "comment_quality_passes": {
+      "count": 2,
+      "denominator": 2
+    },
+    "irrelevant_comments": {
+      "count": 0,
+      "denominator": 2
+    },
+    "redundant_comments": {
+      "count": 0,
+      "denominator": 2
+    }
+  },
+  "execution_failures": [],
+  "always_no_action_baseline": {
+    "count": 7,
+    "denominator": 10
+  },
+  "review_required": true,
+  "promotion_allowed": false,
+  "interpretation": "Known purposive development/regression examples; no unseen or representative performance claim. Assistant content review is not Darren independent approval. September 0/10 is a separate measurement. No workload/time-savings or deployment-readiness claim."
+}

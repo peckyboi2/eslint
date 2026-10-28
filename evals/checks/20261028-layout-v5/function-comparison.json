@@ -1,0 +1,7 @@
+{
+  "comparison": "AST definitions excluding import statements",
+  "changed_functions": [
+    "github/workflow_io.py:fingerprint"
+  ],
+  "reason": "Fingerprint now includes nested runtime modules and package initialisers; decision/inference/posting functions retain their bodies"
+}

@@ -1,0 +1,14 @@
+{
+  "recorded_at": "2026-10-28T07:16:28.077689+00:00",
+  "verification_type": "synthetic comparator control challenge, not model evaluation",
+  "fixtures": {
+    "task49-synthetic-failure-v1.json": "5ba1a99d81de0284bacca1716877c4d75f28dd4fc97f218b30a5b9e1fae9c058",
+    "task49-synthetic-correction-v2.json": "57fadd83eabe64e3c7bbcd5448621334aef880d48c5af105be1530a093b8d437"
+  },
+  "expected_v1": "Exit 1; decision/configuration/model drift surfaced; review_required true; promotion_allowed false",
+  "expected_v2": "Exit 0 mechanical checks; still review_required true and promotion_allowed false; separate synthetic identity",
+  "reference_configuration": "3d9151822045b917165383d3a54e55927b042749502eb680460bfe3fa1e0de2a",
+  "checker_sha256": "6175a843b8155323a44da6d0fd8a25bb532d2285a56d3ab6fe74f3ce66e8b8ce",
+  "golden_edited": false,
+  "actual_model_calls": 0
+}

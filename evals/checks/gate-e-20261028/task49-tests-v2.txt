@@ -1,0 +1,19 @@
+test_changed_source_identifier_breaks_aggregate (clarifier.tests.test_recording.ConfigurationIdentity.test_changed_source_identifier_breaks_aggregate) ... ok
+test_python_sources_are_rejected_from_data_bundle (clarifier.tests.test_recording.ConfigurationIdentity.test_python_sources_are_rejected_from_data_bundle) ... ok
+test_records_code_hashes_without_copying_python (clarifier.tests.test_recording.ConfigurationIdentity.test_records_code_hashes_without_copying_python) ... ok
+test_changed_evidence_is_rejected (clarifier.tests.test_recording.DevelopmentEvidence.test_changed_evidence_is_rejected) ... ok
+test_data_bundle_verifies_without_old_source (clarifier.tests.test_recording.DevelopmentEvidence.test_data_bundle_verifies_without_old_source) ... ok
+test_malformed_configuration_is_a_configuration_failure (clarifier.tests.test_recording.FailureEvidence.test_malformed_configuration_is_a_configuration_failure) ... ok
+test_typed_failure_redacts_secrets_and_finishes_with_no_public_action (clarifier.tests.test_recording.FailureEvidence.test_typed_failure_redacts_secrets_and_finishes_with_no_public_action) ... ok
+test_configuration_snapshots_are_exclusive (clarifier.tests.test_recording.ImmutableRecords.test_configuration_snapshots_are_exclusive) ... ok
+test_injectable_identity_time_and_unknown_usage (clarifier.tests.test_recording.RecordingPolicy.test_injectable_identity_time_and_unknown_usage) ... ok
+test_missing_and_ambiguous_configuration_fail_closed (clarifier.tests.test_recording.RecordingPolicy.test_missing_and_ambiguous_configuration_fail_closed) ... ok
+test_redaction_and_exclusive_evidence (clarifier.tests.test_recording.RecordingPolicy.test_redaction_and_exclusive_evidence) ... ok
+test_malformed_observation_and_missing_expected_case_fail_closed (clarifier.tests.test_recording.RegressionReview.test_malformed_observation_and_missing_expected_case_fail_closed) ... ok
+test_passing_or_pending_quality_still_requires_owner_review (clarifier.tests.test_recording.RegressionReview.test_passing_or_pending_quality_still_requires_owner_review) ... ok
+test_synthetic_drift_failure_is_visible_and_never_promoted (clarifier.tests.test_recording.RegressionReview.test_synthetic_drift_failure_is_visible_and_never_promoted) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.017s
+
+OK

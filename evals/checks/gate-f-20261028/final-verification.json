@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-28T08:01:13.831783+00:00",
+  "freeze_unchanged": true,
+  "frozen_files": 168,
+  "all_ten_attempts_bound": true,
+  "comparison": "comparison.json",
+  "git_diff_check": "pass",
+  "markdown": "README/checklist single blank separators and no trailing whitespace; new local links resolve",
+  "full_suite": "pre-freeze-tests-v3.txt; unchanged frozen code, 172 passed; not needlessly rerun",
+  "baseline": "final-baseline.json; pass",
+  "stop": "Gate F; G unstarted",
+  "readme_sha256": "fbb218eabbf789d2380964d0fcebbcc7e10f838a0bd80bae1dd13e0de3c446c9",
+  "checklist_sha256": "51509c707c2a0bd43126151fa31284a555d9f1cb16b8869e1451541761cab41b"
+}

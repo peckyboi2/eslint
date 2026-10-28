@@ -1,0 +1,19 @@
+{
+  "actor_id": 234542779,
+  "scope": "local-development-preview",
+  "rolling_limit": 51,
+  "campaign_limit": 51,
+  "campaign": "c-development-20261028",
+  "authorization_text": "Darren explicitly authorises Milestone F tasks 51–62, all ten fresh historical previews, with the necessary bounded local allowance recorded before the freeze; existing Codex/ChatGPT access only.",
+  "purpose": "Exactly ten declared final-f-20261028-v9 attempts in checklist order, one per case; no retry, no refunds/reset, no earlier-output substitution, no paid API or hosted cap change.",
+  "prior_limit": 41,
+  "reservations_before": 41,
+  "planned_new_reservations": 10,
+  "reset": false,
+  "refund": false,
+  "final_evaluation_campaign": "final-f-20261028-v9",
+  "ledger_campaign": "c-development-20261028",
+  "hosted_rolling_limit": 10,
+  "hosted_campaign_limit": 20,
+  "cost": "unknown"
+}

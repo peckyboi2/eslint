@@ -1,0 +1,128 @@
+{
+  "verification_type": "deterministic server-accepted/response-lost simulation; no live comment",
+  "before_reconciliation": {
+    "schema": 1,
+    "enabled": true,
+    "posting_enabled": true,
+    "campaign": "c-development-20261028",
+    "admissions": [
+      {
+        "run_id": "123",
+        "event_key": "7b1c380477192570086c3b03402acb6ae14a43bfb2d09efbe4c1266aa867817b",
+        "input_key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "at": 100,
+        "campaign": "c-development-20261028"
+      }
+    ],
+    "posts": [
+      {
+        "report": 1,
+        "input_key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "event_key": "7b1c380477192570086c3b03402acb6ae14a43bfb2d09efbe4c1266aa867817b",
+        "marker": "clarifier-attempt-49ca5b9d1c3a77879286e347b0760159c462a9e10107b4d74fac70e7cc2c700b",
+        "run_id": "123",
+        "status": "uncertain",
+        "comment_id": null,
+        "configuration": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      }
+    ],
+    "decisions": [
+      {
+        "actor_id": 234542779,
+        "at": 1,
+        "reason": "Owner setup for mock",
+        "action": "bootstrap"
+      },
+      {
+        "actor_id": 234542779,
+        "at": 2,
+        "reason": "Mock preview authorisation",
+        "action": "enable-preview"
+      },
+      {
+        "actor_id": 234542779,
+        "at": 3,
+        "reason": "Mock posting release only",
+        "action": "enable-posting"
+      }
+    ]
+  },
+  "fixture_server_comments": [
+    {
+      "id": 999,
+      "body": "Could you share a minimal reproduction with the configuration?\n\n**Created by AI (OpenAI Codex, gpt-6.1-sol).**\nPosted by GitHub Actions application; [run 123](https://github.com/peckyboi2/eslint/actions/runs/123).\n<!-- clarifier-attempt-49ca5b9d1c3a77879286e347b0760159c462a9e10107b4d74fac70e7cc2c700b -->",
+      "user": {
+        "login": "github-actions[bot]",
+        "type": "Bot"
+      }
+    }
+  ],
+  "after_reconciliation": {
+    "schema": 1,
+    "enabled": true,
+    "posting_enabled": true,
+    "campaign": "c-development-20261028",
+    "admissions": [
+      {
+        "run_id": "123",
+        "event_key": "7b1c380477192570086c3b03402acb6ae14a43bfb2d09efbe4c1266aa867817b",
+        "input_key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "at": 100,
+        "campaign": "c-development-20261028"
+      }
+    ],
+    "posts": [
+      {
+        "report": 1,
+        "input_key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "event_key": "7b1c380477192570086c3b03402acb6ae14a43bfb2d09efbe4c1266aa867817b",
+        "marker": "clarifier-attempt-49ca5b9d1c3a77879286e347b0760159c462a9e10107b4d74fac70e7cc2c700b",
+        "run_id": "123",
+        "status": "posted",
+        "comment_id": 999,
+        "configuration": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      }
+    ],
+    "decisions": [
+      {
+        "actor_id": 234542779,
+        "at": 1,
+        "reason": "Owner setup for mock",
+        "action": "bootstrap"
+      },
+      {
+        "actor_id": 234542779,
+        "at": 2,
+        "reason": "Mock preview authorisation",
+        "action": "enable-preview"
+      },
+      {
+        "actor_id": 234542779,
+        "at": 3,
+        "reason": "Mock posting release only",
+        "action": "enable-posting"
+      },
+      {
+        "actor_id": 234542779,
+        "at": 101,
+        "reason": "Darren fixture: full scan, pinned target URL, exact bot marker and ID verified",
+        "action": "reconcile"
+      }
+    ]
+  },
+  "automatic_repost_blocked": true,
+  "simulated_server_posts": 1,
+  "actual_public_actions": [],
+  "actual_comment_id": null,
+  "actual_comment_url": null,
+  "owner_steps": [
+    "Keep posting disabled; retain reserved/uncertain lifetime intent and original run/attempt marker",
+    "On pinned sandbox issue, fetch/inspect the complete comment list; incomplete pagination remains unresolved",
+    "Verify one exact trusted marker, GitHub Actions bot identity, target and positive ID/URL; absent or multiple matches stay blocked",
+    "Record Darren reason/time in a trusted state transaction using reconcile; retain the intent forever, never clear it to retry"
+  ],
+  "limitations": [
+    "Pure helper assumes a complete trusted owner scan; it does not fetch/verify scan completeness or URL itself",
+    "No actual bot identity, receipt, comment URL or HTTP ambiguity was observed"
+  ]
+}

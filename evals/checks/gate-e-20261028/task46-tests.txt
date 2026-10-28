@@ -1,0 +1,64 @@
+test_absent_admission_precedes_engine (clarifier.tests.test_workflow.WorkflowTests.test_absent_admission_precedes_engine) ... ok
+test_phase_order (clarifier.tests.test_workflow.WorkflowTests.test_phase_order) ... ok
+test_privileged_token_read_follows_live_gate (clarifier.tests.test_workflow.WorkflowTests.test_privileged_token_read_follows_live_gate) ... ok
+test_real_entry_gates_reject_before_token_platform_or_mutation (clarifier.tests.test_workflow.WorkflowTests.test_real_entry_gates_reject_before_token_platform_or_mutation) ... ok
+test_rejected_context_never_reads_token_or_admits (clarifier.tests.test_workflow.WorkflowTests.test_rejected_context_never_reads_token_or_admits) ... ok
+test_waiting_run_rechecks_persisted_enabled_and_binding_before_engine (clarifier.tests.test_workflow.WorkflowTests.test_waiting_run_rechecks_persisted_enabled_and_binding_before_engine) ... ok
+test_context_matrix_for_triage_and_independent_stop (clarifier.tests.test_identity.IdentityTests.test_context_matrix_for_triage_and_independent_stop) ... ok
+test_live_identity_matrix_includes_owner_name_and_rerun_initiator (clarifier.tests.test_identity.IdentityTests.test_live_identity_matrix_includes_owner_name_and_rerun_initiator) ... ok
+test_live_rerun_identity_is_pinned (clarifier.tests.test_identity.IdentityTests.test_live_rerun_identity_is_pinned) ... ok
+test_missing_or_changed_fields_never_reach_effect (clarifier.tests.test_identity.IdentityTests.test_missing_or_changed_fields_never_reach_effect) ... ok
+test_stop_and_rerun_share_gate (clarifier.tests.test_identity.IdentityTests.test_stop_and_rerun_share_gate) ... ok
+test_actual_workflows (clarifier.tests.test_workflow_audit.AuditTests.test_actual_workflows) ... ok
+test_unsafe_permission_secret_or_stop_dependency_rejected (clarifier.tests.test_workflow_audit.AuditTests.test_unsafe_permission_secret_or_stop_dependency_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.044s
+
+OK
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Untrusted workflow ref", "public_actions": []}
+{"status": "blocked", "error": "Missing trusted SHA", "public_actions": []}
+{"status": "blocked", "error": "Workflow/code SHA mismatch", "public_actions": []}
+{"status": "blocked", "error": "Invalid run ID", "public_actions": []}
+{"status": "blocked", "error": "Invalid attempt", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Untrusted workflow ref", "public_actions": []}
+{"status": "blocked", "error": "Missing trusted SHA", "public_actions": []}
+{"status": "blocked", "error": "Workflow/code SHA mismatch", "public_actions": []}
+{"status": "blocked", "error": "Invalid run ID", "public_actions": []}
+{"status": "blocked", "error": "Invalid attempt", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Trigger/identity/ref rejected", "public_actions": []}
+{"status": "blocked", "error": "Untrusted workflow ref", "public_actions": []}
+{"status": "blocked", "error": "Missing trusted SHA", "public_actions": []}
+{"status": "blocked", "error": "Workflow/code SHA mismatch", "public_actions": []}
+{"status": "blocked", "error": "Invalid run ID", "public_actions": []}
+{"status": "blocked", "error": "Invalid attempt", "public_actions": []}
+{"status": "blocked", "error": "Rejected", "public_actions": []}

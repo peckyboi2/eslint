@@ -1,0 +1,39 @@
+{
+  "result": "PASS",
+  "verification_type": "static integrity; no inference/network/report-code execution",
+  "golden_version": "golden-v1-2026-10-27",
+  "golden_aggregate_sha256": "fa64d12b7c6db060be0a269200bb3e288c37a71fbe7d36df7769462466e51085",
+  "frozen_files_verified": 63,
+  "frozen_files_ignored_by_git": 0,
+  "case_package_bytes": {
+    "20373": 6253,
+    "20606": 11749,
+    "21304": 9646,
+    "19847": 15273,
+    "19044": 2328,
+    "21320": 3489,
+    "19118": 23174,
+    "19818": 3368,
+    "19477": 3352,
+    "19924": 2748
+  },
+  "upstream_base_commit": "161558ae1391a8649a8d69a8b2c2e555b40121b9",
+  "original_tracked_files": 2362,
+  "modified_upstream_paths": [
+    ".gitattributes",
+    ".gitignore",
+    ".prettierignore",
+    "AGENTS.md",
+    "CONTRIBUTING.md"
+  ],
+  "inherited_workflows_unchanged": 10,
+  "live_actions_setting_requeried": false,
+  "recorded_actual_attempts": 45,
+  "recorded_platform_attempts": 45,
+  "development_evidence_files": 258,
+  "current_configuration_version": "milestone-e-controls-v7",
+  "current_model": "gpt-6.1-sol",
+  "current_reasoning_effort": "xhigh",
+  "live_posting_tests": 0,
+  "runtime_isolation_retested_by_this_check": false
+}

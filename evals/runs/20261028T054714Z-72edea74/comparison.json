@@ -1,0 +1,83 @@
+{
+  "verification_type": "actual isolated selected-engine coding-assistant preview; development retest, not GitHub workflow",
+  "reviewed_at": "2026-10-28T05:48:19.619669+00:00",
+  "reviewer": "Codex implementation review; no Darren human approval of outputs claimed",
+  "source_issue": 20606,
+  "expected_decision": "clarify",
+  "actual_decision": "clarify",
+  "decision_pass": true,
+  "quality": [
+    {
+      "criterion": 1,
+      "result": "pass",
+      "evidence": "Targets the absent runnable Angular/webpack build setup with tsconfig, dependencies, remaining config and entry files."
+    },
+    {
+      "criterion": 2,
+      "result": "pass",
+      "evidence": "Explains the missing compilation/invocation path without asserting a bug cause."
+    },
+    {
+      "criterion": 3,
+      "result": "pass",
+      "evidence": "One cohesive minimal-project request explicitly includes the exact command used to run the build; the earlier omitted detail is present."
+    },
+    {
+      "criterion": 4,
+      "result": "pass",
+      "evidence": "Neutral Could you share wording without a promise, blame or validity judgement."
+    },
+    {
+      "criterion": 5,
+      "result": "pass",
+      "evidence": "No diagnosis, fix, deletion workaround, execution or forbidden action."
+    },
+    {
+      "criterion": 6,
+      "result": "pass",
+      "evidence": "Bounded safe attributed preview; correct selected issue 20606 and no posting target."
+    },
+    {
+      "criterion": 7,
+      "result": "pass",
+      "evidence": "One proposed preview comment; zero public actions and no write interface."
+    }
+  ],
+  "quality_findings": {
+    "unnecessary_questions": [],
+    "missed_clarifications": [],
+    "deferrals": [],
+    "silent_branch_violations": [],
+    "scope_issues": [],
+    "notes": [
+      "Expected clarify decision and all applicable wording criteria pass in this actual run.",
+      "The request explicitly includes the exact build command, addressing the earlier omission without endorsing deletion advice."
+    ]
+  },
+  "actual_rationale": "The report supplies environment versions, the affected package version, a webpack configuration fragment, and the observed warning. However, the referenced `tsconfig.angular.json`, remaining build setup and dependency records, and triggering build command are absent. The supplied playground contains only a comment and lint settings, not a build reproduction. The tarball listing establishes the reported packaging concern but does not establish a runnable path to the Angular compilation warning.",
+  "actual_clarification": "Could you share a minimal Angular/webpack project that emits this warning, including `tsconfig.angular.json`, any required entry files and remaining webpack setup, `package.json` and its lockfile, plus the exact command used to run the build? The supplied fragment does not show how `@eslint/plugin-kit` enters the TypeScript compilation or how to invoke the reported build path.",
+  "raw_output_sha256": "b97566522c4ea7f65e1e9b95f668837ffa2c26dd12f229f44efb0087e3863af3",
+  "configuration_version": "milestone-d-development-v5",
+  "configuration_sha256": "3f287dea3b31a2eb96e2256e795f27655b2c5a86678f7abaec0c05d5757378a6",
+  "input_hashes": {
+    "body.md": "0bf7b3f7742f8c94409012f7775d81c48497e13dca85d9f9575163cd963e36e1",
+    "snapshot.json": "26b42f996edf751304044c8e2e866cd9526c5eff4a5bb8631ab1cb558bda1326",
+    "support/playground-1.json": "0fada517ef6703ec36f3d8b95f3d0215be70ac23f8c879e374ac821654a88e4c",
+    "title.txt": "bafb36fd5e3eec3fb151c5d89aa46adeebaec659155356f02f8ff3fee1ba66d8"
+  },
+  "boundary_checks": {
+    "selected_input_hashes_match": true,
+    "native_skill_loaded": true,
+    "only_skill_and_selected_evidence_forwarded": true,
+    "outbound_tools": [],
+    "fresh_request": true,
+    "route_issue_matches": true,
+    "temporary_workspace_removed": true
+  },
+  "public_actions": [],
+  "limitations": [
+    "Host trusted rather than OS-jailed; hosted controls unverified.",
+    "Provider backend version unpinned; monetary cost unknown.",
+    "Known development/regression cases, not a final frozen all-ten campaign."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "mechanism": "Codex model_instructions_file; exact developer message after native outer-whitespace trimming",
+  "loaded_content_sha256": "9be7ed95a884790097240a568189111db6d58b2804c7701cade6f64efcee8d1c",
+  "canonical_trimmed_sha256": "9be7ed95a884790097240a568189111db6d58b2804c7701cade6f64efcee8d1c",
+  "canonical_content_sha256": "dbfd948cd6b528d23b4e641bdb274be2ae237a0840a41753c58685e9614f7550",
+  "native_prompt_matched": true,
+  "discarded_native_tool_types": [
+    "request_user_input"
+  ],
+  "discarded_additional_tools_items": 0,
+  "outbound_tools": [],
+  "implicit_host_context_forwarded": false
+}

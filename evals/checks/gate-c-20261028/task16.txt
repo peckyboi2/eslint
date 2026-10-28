@@ -1,0 +1,8 @@
+test_live_rerun_identity_is_pinned (tests.test_identity.IdentityTests.test_live_rerun_identity_is_pinned) ... ok
+test_missing_or_changed_fields_never_reach_effect (tests.test_identity.IdentityTests.test_missing_or_changed_fields_never_reach_effect) ... ok
+test_stop_and_rerun_share_gate (tests.test_identity.IdentityTests.test_stop_and_rerun_share_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
