@@ -1,4 +1,4 @@
-"""Append-only configuration and run evidence. Serves task 14 and R1."""
+"""Append-only configuration and run evidence. Serves tasks 14, 29 and R1."""
 from dataclasses import dataclass, field
 from collections.abc import Sequence
 from datetime import datetime, timezone
@@ -76,6 +76,8 @@ class RunRecord(TypedDict, total=False):
     tool_calls: list
     tool_calls_evidence: str
     redacted_artifacts: list[str]
+    historical_cutoff: dict
+    inference_admitted: bool
 
 
 @dataclass
@@ -185,7 +187,8 @@ def preserve_configuration_file(folder: Path, name: Path, data: bytes) -> None:
 
 @guarded(RecordingError, "Cannot start immutable run record")
 def start_run(platform_test: bool, root: Path = c.ROOT,
-              clock: Callable[[], str] = utc, id_factory: Callable[[], str] = new_run_id) -> Session:
+              clock: Callable[[], str] = utc, id_factory: Callable[[], str] = new_run_id,
+              *, source_issue: int = c.SOURCE_ISSUE) -> Session:
     """Return a new run session or raise RecordingError before any engine call."""
     run_id = id_factory()
     if not re.fullmatch(r"[A-Za-z0-9_.-]+", run_id) or run_id in (".", ".."):
@@ -196,7 +199,7 @@ def start_run(platform_test: bool, root: Path = c.ROOT,
                        trigger="manual Milestone B authorised development preview",
                        kind="synthetic platform test" if platform_test else "actual Codex ChatGPT dry run",
                        verification_type="synthetic infrastructure" if platform_test else "model dry run",
-                       source_issue=c.SOURCE_ISSUE, model_requested=c.UNKNOWN, engine=c.UNKNOWN,
+                       source_issue=source_issue, model_requested=c.UNKNOWN, engine=c.UNKNOWN,
                        input_hashes=c.UNKNOWN, skill_sha256=c.UNKNOWN, engine_version=c.UNKNOWN,
                        model_returned=c.UNKNOWN,
                        usage=c.UNKNOWN, cost=c.UNKNOWN, errors=[], posting_available=False,
@@ -228,6 +231,13 @@ def configure(session: Session) -> None:
                           model_requested=session.config["model"], engine=session.config["engine"])
 
 
+def mark_local_attempt(session: Session) -> None:
+    """Identify an unadmitted local attempt without implying a model execution."""
+    session.record.update(trigger="Darren-authorised local development preview",
+                          kind="local preview attempt", verification_type="local pre-inference checks",
+                          transport_request_attempts=0, inference_admitted=False)
+
+
 @guarded(ConfigurationError, "Cannot read preview configuration")
 def load_configuration(path: Path) -> PreviewConfig:
     """Return strict preview configuration or raise ConfigurationError."""
@@ -254,7 +264,7 @@ def fail(session: Session, error: ClarifierError) -> None:
     status = "interrupted" if isinstance(error, InterruptedRun) else "failed"
     if isinstance(error, ValidationError):
         status = "invalid_output"
-        save_json(session.folder / c.VALIDATION_FILE, rejected(error))
+        save_json(session.folder / c.VALIDATION_FILE, rejected(error, source_issue=session.record['source_issue']))
     session.record.update(status=status)
     session.record["errors"].append(redact_text(str(error), session.secrets))
 

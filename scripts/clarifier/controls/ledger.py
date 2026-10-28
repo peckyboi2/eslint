@@ -45,16 +45,24 @@ def validate(state: Any) -> dict:
     check(state['campaign'] == CAMPAIGN, 'Unapproved campaign reset')
     for name in ('admissions', 'posts', 'decisions'):
         check(isinstance(state[name], list), 'Invalid record collection')
-    validate_admissions(state['admissions'])
-    validate_posts(state['posts'], state['admissions'])
     validate_decisions(state['decisions'])
+    validate_admissions(state['admissions'], local_campaign_limit(state))
+    validate_posts(state['posts'], state['admissions'])
     mode = next(row['action'] for row in reversed(state['decisions']) if row['action'] in ('bootstrap','disable','enable-preview','enable-posting'))
     flags = {'bootstrap': (False, False), 'disable': (False, False), 'enable-preview': (True, False), 'enable-posting': (True, True)}
     check((state['enabled'], state['posting_enabled']) == flags[mode], 'Enabled flags lack matching accountable decision')
     return deepcopy(state)
 
 
-def validate_admissions(rows: list) -> None:
+def local_campaign_limit(state: dict) -> int:
+    """Return the recorded local cap or the unchanged hosted campaign cap."""
+    approved = any(row['action'] == 'extend-local-preview'
+                   and row['reason'].startswith(p.LOCAL_EXTENSION_REASON)
+                   and digest(row['reason'][len(p.LOCAL_EXTENSION_REASON):]) for row in state['decisions'])
+    return p.LOCAL_CAMPAIGN_LIMIT if approved else p.CAMPAIGN_LIMIT
+
+
+def validate_admissions(rows: list, limit: int = p.CAMPAIGN_LIMIT) -> None:
     """Raise StateError for corrupt/duplicate quota reservations."""
     events, runs = set(), set()
     for row in rows:
@@ -64,7 +72,7 @@ def validate_admissions(rows: list) -> None:
         check(row['campaign'] == CAMPAIGN, 'Unknown admitted campaign')
         check(row['event_key'] not in events and row['run_id'] not in runs, 'Duplicate reservation')
         events.add(row['event_key']); runs.add(row['run_id'])
-    check(len(rows) <= p.CAMPAIGN_LIMIT, 'Campaign ledger exceeds quota')
+    check(len(rows) <= limit, 'Campaign ledger exceeds quota')
 
 
 def validate_posts(rows: list, admissions: list) -> None:

@@ -4,6 +4,7 @@ import unittest
 
 from clarifier.shared import constants as c
 from clarifier.outputs import routing as route
+from clarifier.shared.errors import ValidationError
 
 
 class Decisions(unittest.TestCase):
@@ -48,6 +49,24 @@ class Decisions(unittest.TestCase):
         self.assertTrue(out["valid"])
         self.assertLessEqual(len(out["preview_comment"]), 2000)
         self.assertFalse(route.route(json.dumps(self.result()), "@bad", "model")["valid"])
+
+    def test_every_selected_case_keeps_its_identity_on_all_silent_and_preview_routes(self):
+        for issue in c.HISTORICAL_CASE_IDS:
+            for decision in c.ALLOWED_DECISIONS:
+                with self.subTest(issue=issue,decision=decision):
+                    result=self.result(decision,'Could you supply the missing setup?' if decision==c.CLARIFY else None)
+                    routed=route.route_result(result,'fixture','model',source_issue=issue)
+                    self.assertEqual(routed['source_issue'],issue)
+                    self.assertEqual(routed['public_actions'],[])
+                    self.assertIsNone(routed['posting_target'])
+                    if decision!=c.CLARIFY: self.assertIsNone(routed['preview_comment'])
+            rejected=route.rejected(ValidationError('fixture'),source_issue=issue)
+            self.assertEqual(rejected['source_issue'],issue)
+            self.assertEqual(rejected['public_actions'],[])
+            self.assertIsNone(rejected['preview_comment'])
+        for issue in (True,99999,'20606'):
+            with self.assertRaises(ValidationError):
+                route.route_result(self.result(),'fixture','model',source_issue=issue)
 
 
 class RejectedAttribution(unittest.TestCase):

@@ -40,6 +40,9 @@ STOP_WORKFLOW = 'clarifier-stop.yml'
 ROLLING_SECONDS = 86400
 ROLLING_LIMIT = 10
 LOCAL_EXCEPTION_LIMIT = 11
+LOCAL_DEVELOPMENT_LIMIT = 21
+LOCAL_CAMPAIGN_LIMIT = 21
+LOCAL_EXTENSION_REASON = 'Owner approved local preview limits rolling=21 campaign=21; decision SHA-256 '
 LOCAL_WORKFLOW = "local-development-preview"
 SAFE_PLUGIN_SCOPE = "@typescript-eslint"
 CAMPAIGN_LIMIT = 20
@@ -54,7 +57,7 @@ SHA_PATTERN = r'[a-f0-9]{64}'
 GIT_SHA_PATTERN = r'[a-f0-9]{40}'
 RUN_PATTERN = r'[1-9][0-9]*'
 POLICY_VERSION = 'milestone-c-policy-v1'
-CONFIG_VERSION = 'milestone-c-layout-v5'
+CONFIG_VERSION = 'milestone-d-development-v3'
 
 
 @dataclass(frozen=True)

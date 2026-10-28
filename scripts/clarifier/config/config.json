@@ -1,5 +1,5 @@
 {
-  "version": "milestone-c-layout-v5",
+  "version": "milestone-d-development-v3",
   "engine": "codex-cli",
   "cli_version": "codex-cli 0.154.0",
   "model": "gpt-6.1-sol",
@@ -17,5 +17,5 @@
   "sandbox_repository": "peckyboi2/eslint",
   "sandbox_repository_id": 1435519573,
   "posting": false,
-  "skill_sha256": "290acdc81c5b4596e58583a1b5d2e7458e638f1e43d3a6e38ef75290a3f0e78e"
+  "skill_sha256": "cf48df54b41da49e9a678ed6ede2e202b483acde7674b34681d98c3b3417bf73"
 }

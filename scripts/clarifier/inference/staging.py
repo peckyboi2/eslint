@@ -1,15 +1,18 @@
-"""Approved text staging and private workspace lifecycle. Serves task 09 and R1."""
+"""Approved text staging and private workspace lifecycle. Serves tasks 09, 29 and R1."""
 from dataclasses import dataclass
 import os
 from pathlib import Path, PurePosixPath
 import shutil
 import stat
 import tempfile
-from typing import TypedDict
+from typing import TYPE_CHECKING, TypedDict
 
 from clarifier.shared import constants as c
 from clarifier.shared.errors import StagingError, guarded
 from clarifier.inference.recording import Session, save_json, sha
+
+if TYPE_CHECKING:
+    from clarifier.inference.packages import Package
 
 
 class FileDigest(TypedDict):
@@ -78,39 +81,62 @@ def verify_source_hashes(files: dict[str, bytes], expected: dict[str, str]) -> N
             raise StagingError(f"Historical hash mismatch: {name}")
 
 
-def build_manifest(files: dict[str, bytes]) -> StagedManifest:
+def build_manifest(files: dict[str, bytes], expected: dict[str, str]) -> StagedManifest:
     """Return the deterministic approved-file manifest."""
     entries = {name: FileDigest(bytes=len(data), sha256=sha(data)) for name, data in files.items()}
-    return StagedManifest(source_hashes=dict(c.APPROVED), staged_files=entries,
+    return StagedManifest(source_hashes=dict(expected), staged_files=entries,
                           staged_bytes=sum(item["bytes"] for item in entries.values()), excluded=list(c.EXCLUDED))
 
 
 @guarded(StagingError, "Cannot stage approved case")
-def stage(source: Path, destination: Path, limit: int = c.MAX_INPUT_BYTES) -> StagedManifest:
-    """Copy only the exact approved case or raise StagingError without truncation."""
+def verify_inventory(source: Path, expected: dict[str, str]) -> None:
+    """Reject unexpected paths, symlinks or directories with StagingError."""
+    reject_symlinks(source)
+    directories = {parent.as_posix() for name in expected for parent in PurePosixPath(name).parents
+                   if parent != PurePosixPath(".")}
     found = {path.relative_to(source).as_posix() for path in source.rglob("*")}
-    if found != set(c.APPROVED):
+    if found != set(expected) | directories:
         raise StagingError("Unexpected or missing case files")
-    files = {name: read_safe(source, name, limit) for name in c.APPROVED}
+    for name in found:
+        reject_unsafe_path(name)
+        reject_symlinks(source / name)
+        if name in directories and not (source / name).is_dir():
+            raise StagingError("Expected support directory")
+
+
+@guarded(StagingError, "Cannot stage approved case")
+def stage(source: Path, destination: Path, limit: int = c.MAX_INPUT_BYTES,
+          *, expected: dict[str, str] = c.APPROVED) -> StagedManifest:
+    """Copy only the exact approved case or raise StagingError without truncation."""
+    verify_inventory(source, expected)
+    files = {name: read_safe(source, name, limit) for name in expected}
     if sum(map(len, files.values())) > limit:
         raise StagingError("Case package exceeds input limit")
-    verify_source_hashes(files, c.APPROVED)
+    verify_source_hashes(files, expected)
     destination.mkdir(parents=True, exist_ok=False)
     for name, data in files.items():
-        with (destination / name).open("xb") as stream:
+        target = destination / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        with target.open("xb") as stream:
             stream.write(data)
-    return build_manifest(files)
+    return build_manifest(files, expected)
 
 
 @guarded(StagingError, "Cannot prepare private workspace")
-def prepare(session: Session) -> StagedCase:
+def prepare(session: Session, package: "Package | None" = None) -> StagedCase:
     """Create the private workspace and audited input copy or raise StagingError."""
     session.temporary = tempfile.TemporaryDirectory(prefix="cs467-preview-", dir=c.PRIVATE_TEMP_ROOT)
     workspace = Path(session.temporary.name) / c.WORKSPACE_DIR
     workspace.mkdir()
     session.record.update(model_workspace=str(workspace), host_isolation=dict(c.HOST_ISOLATION))
     evidence = workspace / c.EVIDENCE_DIR
-    manifest = stage(session.root / c.CASE_PATH, evidence, session.config["input_limit_bytes"])
+    source = package.source if package else session.root / c.CASE_PATH
+    expected = package.hashes if package else c.APPROVED
+    manifest = stage(source, evidence, session.config["input_limit_bytes"], expected=expected)
+    if package:
+        if manifest["staged_bytes"] != package.total_bytes:
+            raise StagingError("Historical package size mismatch")
+        session.record.update(source_issue=package.issue, historical_cutoff=package.cutoff)
     session.record["input_hashes"] = manifest["source_hashes"]
     save_json(session.folder / c.MANIFEST_FILE, manifest)
     shutil.copytree(evidence, session.folder / c.INPUT_DIR)

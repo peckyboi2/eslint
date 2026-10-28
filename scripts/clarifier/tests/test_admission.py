@@ -60,3 +60,38 @@ class LocalExceptionTests(unittest.TestCase):
         local=Context('1',1,'0'*40,p.LOCAL_WORKFLOW)
         with self.assertRaises(p.AdmissionDenied):admission.reserve(enabled(),local,'a'*64,100,rolling_limit=11)
         self.assertEqual(len(admission.reserve(state,local,'a'*64,100,rolling_limit=11)['admissions']),1)
+
+    def test_development_extension_needs_matching_decision_and_stays_local(self):
+        from clarifier.controls.identity import Context
+        local=Context('1',1,'0'*40,p.LOCAL_WORKFLOW)
+        state=enabled()
+        state['decisions'].append(dict(actor_id=p.OWNER_ID,at=3,reason='Original one-call extension',action='extend-local-preview'))
+        model,write=Mock(),Mock()
+        for reason in ('Original one-call extension',p.LOCAL_EXTENSION_REASON+'bad-digest'):
+            state['decisions'][-1]['reason']=reason
+            with self.assertRaises(p.AdmissionDenied):
+                admission.reserve(state,local,'a'*64,100,rolling_limit=p.LOCAL_DEVELOPMENT_LIMIT);model();write()
+        state['decisions'][-1]['reason']=p.LOCAL_EXTENSION_REASON+'a'*64
+        with self.assertRaises(p.AdmissionDenied):
+            admission.reserve(state,ctx(1),'a'*64,100,rolling_limit=p.LOCAL_DEVELOPMENT_LIMIT);model();write()
+        with self.assertRaises(p.AdmissionDenied):
+            admission.reserve(state,ctx(1),'a'*64,100,campaign_limit=p.LOCAL_CAMPAIGN_LIMIT);model();write()
+        with self.assertRaises(p.AdmissionDenied):
+            admission.reserve(enabled(),local,'a'*64,100,campaign_limit=p.LOCAL_CAMPAIGN_LIMIT);model();write()
+        updated=admission.reserve(state,local,'a'*64,100,rolling_limit=p.LOCAL_DEVELOPMENT_LIMIT)
+        self.assertEqual(len(updated['admissions']),1)
+        self.assertFalse(updated['posting_enabled'])
+        model.assert_not_called();write.assert_not_called()
+
+    def test_local_extension_keeps_rolling_campaign_and_no_refund_limits(self):
+        from clarifier.controls.identity import Context
+        state=enabled()
+        state['decisions'].append(dict(actor_id=p.OWNER_ID,at=3,reason=p.LOCAL_EXTENSION_REASON+'a'*64,action='extend-local-preview'))
+        for n in range(1,p.LOCAL_DEVELOPMENT_LIMIT+1):
+            state=admission.reserve(state,Context(str(n),1,'0'*40,p.LOCAL_WORKFLOW),'a'*64,100,rolling_limit=p.LOCAL_DEVELOPMENT_LIMIT,campaign_limit=p.LOCAL_CAMPAIGN_LIMIT)
+        model,write=Mock(),Mock()
+        for at in (100,100+p.ROLLING_SECONDS):
+            with self.assertRaises(p.AdmissionDenied):
+                admission.reserve(state,Context('22',1,'0'*40,p.LOCAL_WORKFLOW),'a'*64,at,rolling_limit=p.LOCAL_DEVELOPMENT_LIMIT,campaign_limit=p.LOCAL_CAMPAIGN_LIMIT);model();write()
+        self.assertEqual(len(state['admissions']),p.LOCAL_CAMPAIGN_LIMIT)
+        model.assert_not_called();write.assert_not_called()

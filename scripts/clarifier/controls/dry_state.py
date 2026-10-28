@@ -1,4 +1,4 @@
-"""Local transactional preview reservations for tasks 25–26; not a GitHub state branch."""
+"""Local transactional preview reservations for tasks 25–38; not a GitHub state branch."""
 import fcntl
 import hashlib
 import json
@@ -12,8 +12,10 @@ from clarifier.controls.identity import Context
 from clarifier.controls import ledger
 from clarifier.controls import policy as p
 from clarifier.controls.state_store import Snapshot, transact
+from clarifier.inference.staging import read_safe
 
 STATE = Path('evals/checks/gate-c-20261028/dry-state.json')
+DEVELOPMENT_DECISION = Path('evals/checks/gate-d-20261028/routing-fix-v3/local-quota-decision.json')
 
 
 class DryStore:
@@ -56,27 +58,47 @@ def reserve(root: Path, run_id: str, source_hashes: dict[str,str]) -> dict:
     context=Context(str(time.time_ns()),1,'0'*40,p.LOCAL_WORKFLOW)
     store=DryStore(root/STATE)
     limit,decision_hash=local_limit(root,store)
-    state=transact(store,lambda state:admission.reserve(state,context,key,int(time.time()),rolling_limit=limit))
+    campaign_limit=p.LOCAL_CAMPAIGN_LIMIT if limit==p.LOCAL_DEVELOPMENT_LIMIT else p.CAMPAIGN_LIMIT
+    state=transact(store,lambda state:admission.reserve(state,context,key,int(time.time()),rolling_limit=limit,campaign_limit=campaign_limit))
     return dict(verification_type='actual local reservation; GitHub identity/branch simulation only',
-                adapter_run_id=run_id,local_context_run_id=context.run_id,input_key=key,rolling_limit=limit,quota_decision_sha256=decision_hash,
+                adapter_run_id=run_id,local_context_run_id=context.run_id,input_key=key,rolling_limit=limit,campaign_limit=campaign_limit,quota_decision_sha256=decision_hash,
                 event_key=admission.event_key(context,key),campaign=state['campaign'],posting_enabled=state['posting_enabled'])
 
 
-def local_limit(root: Path, store) -> tuple[int, str | None]:
-    """Return default limit or a recorded owner-approved local-only one-call exception."""
-    path=root/STATE.parent/'local-quota-decision.json'
-    if not path.exists(): return p.ROLLING_LIMIT,None
-    raw=path.read_bytes()
+def read_quota_decision(path: Path, limit: int) -> str:
+    """Return an owner-approved local decision hash or raise AdmissionDenied."""
+    raw=read_safe(path.parent,path.name,c.MAX_INPUT_BYTES)
     try: decision=json.loads(raw)
     except ValueError: raise p.AdmissionDenied('Malformed local quota decision') from None
-    expected={'actor_id':p.OWNER_ID,'scope':p.LOCAL_WORKFLOW,'rolling_limit':p.LOCAL_EXCEPTION_LIMIT,'campaign':ledger.CAMPAIGN}
+    expected={'actor_id':p.OWNER_ID,'scope':p.LOCAL_WORKFLOW,'rolling_limit':limit,'campaign':ledger.CAMPAIGN}
+    if limit==p.LOCAL_DEVELOPMENT_LIMIT: expected['campaign_limit']=p.LOCAL_CAMPAIGN_LIMIT
     if not isinstance(decision,dict) or any(decision.get(k)!=v for k,v in expected.items()) or not isinstance(decision.get('authorization_text'),str) or not decision['authorization_text'].strip():
         raise p.AdmissionDenied('Invalid accountable local quota decision')
-    decision_hash=hashlib.sha256(raw).hexdigest()
-    reason='Owner approved one additional local preview; decision SHA-256 '+decision_hash
+    return hashlib.sha256(raw).hexdigest()
+
+
+def record_extension(store, reason: str, at: int) -> None:
+    """Append the authorised extension once or raise StateError without resetting state."""
     def record(state):
         if not any(d['action']=='extend-local-preview' and d['reason']==reason for d in state['decisions']):
-            state['decisions'].append(dict(actor_id=p.OWNER_ID,at=int(time.time()),reason=reason,action='extend-local-preview'))
+            state['decisions'].append(dict(actor_id=p.OWNER_ID,at=at,reason=reason,action='extend-local-preview'))
         return state
     transact(store,record)
-    return p.LOCAL_EXCEPTION_LIMIT,decision_hash
+
+
+def local_limit(root: Path, store) -> tuple[int, str | None]:
+    """Return the recorded local-only allowance or raise AdmissionDenied/StateError."""
+    development=root/DEVELOPMENT_DECISION
+    legacy=root/STATE.parent/'local-quota-decision.json'
+    if development.exists():
+        limit=p.LOCAL_DEVELOPMENT_LIMIT
+        decision_hash=read_quota_decision(development,limit)
+        reason=p.LOCAL_EXTENSION_REASON+decision_hash
+    elif legacy.exists():
+        limit=p.LOCAL_EXCEPTION_LIMIT
+        decision_hash=read_quota_decision(legacy,limit)
+        reason='Owner approved one additional local preview; decision SHA-256 '+decision_hash
+    else:
+        return p.ROLLING_LIMIT,None
+    record_extension(store,reason,int(time.time()))
+    return limit,decision_hash

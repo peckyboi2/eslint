@@ -1,4 +1,4 @@
-"""Trusted paths, schemas and preview limits. Serves tasks 08–15 and R1."""
+"""Trusted paths, schemas and preview limits. Serves tasks 08–15, 29 and R1."""
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -6,6 +6,12 @@ HERE = Path(__file__).resolve().parent.parent
 SKILL_PATH = Path(".claude/skills/eslint-clarification/SKILL.md")
 NATIVE_SKILL_PATH = Path(".agents/skills/eslint-clarification/SKILL.md")
 CASE_PATH = Path("evals/golden/prepared-inputs/inputs/20373")
+PREPARED_PATH = CASE_PATH.parent.parent
+PACKAGE_MANIFEST = "manifest.json"
+PACKAGE_HASHES = "SHA256-MANIFEST.json"
+PACKAGE_MANIFEST_SHA256 = "29b9b0dcca6e4b2688afef630da97e6f46f2547bccf90fcee5dec65ad9ca2763"
+PACKAGE_HASHES_SHA256 = "b3fc37075be7b82d02346f442bae83457b126f80908406419f16548f4b740594"
+HISTORICAL_CASE_IDS = (20373, 20606, 19924, 19044, 21320, 19477, 21304, 19847, 19118, 19818)
 CONFIG_PATH = Path("scripts/clarifier/config/config.json")
 SCHEMA_PATH = Path("scripts/clarifier/config/decision.schema.json")
 MODULE_PATHS = tuple(map(Path, (
@@ -16,6 +22,7 @@ MODULE_PATHS = tuple(map(Path, (
     "workflow.py",
     "stop.py",
     "inference/staging.py",
+    "inference/packages.py",
     "inference/skill.py",
     "inference/request.py",
     "inference/transport.py",

@@ -1,4 +1,4 @@
-"""Pure irrevocable inference reservations and limits for task 18."""
+"""Pure irrevocable inference reservations and limits for tasks 18, 29."""
 import hashlib
 import json
 
@@ -20,7 +20,21 @@ def event_key(context: Context, source_key: str) -> str:
     return hashlib.sha256(f'{p.REPOSITORY_ID}:{context.run_id}:{source_key}'.encode()).hexdigest()
 
 
-def reserve(state: dict, context: Context, source_key: str, at: int, *, rolling_limit: int = p.ROLLING_LIMIT) -> dict:
+def local_extension_allowed(state: dict, context: Context, limit: int) -> bool:
+    """Return whether an accountable decision permits this local-only limit."""
+    if context.workflow != p.LOCAL_WORKFLOW:
+        return False
+    extensions = [row for row in state['decisions'] if row['action'] == 'extend-local-preview']
+    if limit == p.LOCAL_EXCEPTION_LIMIT:
+        return bool(extensions)
+    if limit != p.LOCAL_DEVELOPMENT_LIMIT:
+        return False
+    return any(row['reason'].startswith(p.LOCAL_EXTENSION_REASON)
+               and ledger.digest(row['reason'][len(p.LOCAL_EXTENSION_REASON):]) for row in extensions)
+
+
+def reserve(state: dict, context: Context, source_key: str, at: int, *, rolling_limit: int = p.ROLLING_LIMIT,
+            campaign_limit: int = p.CAMPAIGN_LIMIT) -> dict:
     """Return appended admission or raise AdmissionDenied/StateError; never refund."""
     state = ledger.validate(state)
     key = event_key(context, source_key)
@@ -29,11 +43,14 @@ def reserve(state: dict, context: Context, source_key: str, at: int, *, rolling_
     if any(a['at'] > at for a in state['admissions']): raise p.AdmissionDenied('Ledger clock is ahead; human review required')
     if any(a['event_key'] == key or a['run_id'] == context.run_id for a in state['admissions']):
         raise p.AdmissionDenied('Original run/event already admitted; no automatic retry')
-    if rolling_limit != p.ROLLING_LIMIT and not (rolling_limit == p.LOCAL_EXCEPTION_LIMIT and context.workflow == p.LOCAL_WORKFLOW and any(d['action']=='extend-local-preview' for d in state['decisions'])):
+    if rolling_limit != p.ROLLING_LIMIT and not local_extension_allowed(state, context, rolling_limit):
         raise p.AdmissionDenied('Unapproved limit increase')
+    if campaign_limit != p.CAMPAIGN_LIMIT and not (campaign_limit == p.LOCAL_CAMPAIGN_LIMIT
+            and context.workflow == p.LOCAL_WORKFLOW and ledger.local_campaign_limit(state) == campaign_limit):
+        raise p.AdmissionDenied('Unapproved campaign limit increase')
     recent = sum(a['at'] > at-p.ROLLING_SECONDS for a in state['admissions'])
     if recent >= rolling_limit: raise p.AdmissionDenied('Rolling quota exhausted')
-    if len(state['admissions']) >= p.CAMPAIGN_LIMIT: raise p.AdmissionDenied('Campaign quota exhausted')
+    if len(state['admissions']) >= campaign_limit: raise p.AdmissionDenied('Campaign quota exhausted')
     state['admissions'].append(dict(run_id=context.run_id, event_key=key, input_key=source_key, at=at, campaign=state['campaign']))
     return ledger.validate(state)
 
