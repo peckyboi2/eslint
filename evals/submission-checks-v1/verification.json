@@ -1,0 +1,31 @@
+{
+  "result": "PASS",
+  "verification": "complete working tree; offline; no model/network/report-code execution",
+  "original_candidate": "884acc7031a761eb45e5fe7ac186d43d5bed5901",
+  "original_tree_files": 5221,
+  "original_current_docs_allowed": [
+    "DESIGN.md",
+    "evals/README.md"
+  ],
+  "golden_v1_files": 63,
+  "final_frozen_files": 168,
+  "preserved_earlier_evidence_files": 2710,
+  "original_freezes_unchanged": true,
+  "development_archive_files": 258,
+  "recorded_attempts": {
+    "runs": 60,
+    "platform-tests": 69
+  },
+  "byte_identical_exports": 66,
+  "isolated_historical_packages": 10,
+  "exact_final_comparison_reproduced": true,
+  "decision_matches": {
+    "count": 9,
+    "denominator": 10
+  },
+  "retained_failed_case": 19924,
+  "design_lines": 76,
+  "current_local_links": 240,
+  "model_calls": 0,
+  "scope_limit": "Structural replay uses saved semantic assessments; no new judgement or hosted-control verification."
+}

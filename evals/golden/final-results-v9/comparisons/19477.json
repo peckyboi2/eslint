@@ -1,0 +1,141 @@
+{
+  "issue": 19477,
+  "run_id": "final-f-20261028-v9-06-19477-a1",
+  "status": "completed",
+  "actual_decision": "no_action",
+  "result": {
+    "decision": "no_action",
+    "rationale": "The report supplies ESLint and environment versions, the parser, a minimal input with `no-console` enabled, and the exact confusing suggestion messages alongside the expected behavior. The supporting playground data preserves the same input and language options. This is sufficient to reproduce the suggestion-message issue without additional project files or a separate command.",
+    "clarification": null
+  },
+  "errors": [],
+  "input_hashes": {
+    "body.md": "1b0d0ec7bb51bc0af9319f6afb392e0ffe3e356d6839cc6123fe7ac2f7aa5ac5",
+    "snapshot.json": "2331952f2a2ea637b5fc2ce82344ad43c16cf4d466ab77472014a1d75b25cfc3",
+    "support/playground-1.json": "15f8e590eb3bd4bf8ff8cf6b6c8f447e3e8f8bb4502589d82ba9de37a6dc1925",
+    "title.txt": "4923aad93b56b198d8181cd01ac8a6657f2085237d0f1ea693ae5b7e8e7e994d"
+  },
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "public_actions": [],
+  "usage": {
+    "input_tokens": 3265,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 268,
+    "output_tokens_details": {
+      "reasoning_tokens": 185
+    },
+    "total_tokens": 3533,
+    "attribution": {
+      "items": {
+        "msg_0e7afca7e97b6d35016ae1a9fff76481919aaf5f35d1e113f0": {
+          "input_tokens": 1955,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_0e7afca7e97b6d35016ae1a9fff7648191a7c9ba9cff876df7": {
+          "input_tokens": 1308,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 1308,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_0e7afca7e97b6d35016ae1aa09ffe881919cfd735c3a275f76": {
+          "input_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 83,
+          "content": [
+            {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 83
+            }
+          ]
+        },
+        "rs_0e7afca7e97b6d35016ae1aa09ee908191a5f62577f8f7f240": {
+          "input_tokens": 2,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 185
+        }
+      }
+    }
+  },
+  "cost": "unknown",
+  "source": "evals/golden/prepared-inputs/inputs/19477",
+  "run": "evals/runs/final-f-20261028-v9-06-19477-a1",
+  "campaign_id": "final-f-20261028-v9",
+  "expected_decision": "no_action",
+  "decision_pass": true,
+  "quality_review": {
+    "comment_quality": "not_assessable",
+    "criteria": [
+      {
+        "criterion": 1,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 2,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 3,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 4,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 5,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 6,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 7,
+        "result": "pass",
+        "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+      }
+    ],
+    "irrelevant_content": false,
+    "redundant_content": false,
+    "silent_branch_violation": false,
+    "notes": [
+      "PASS: no_action matches; source/rule/options and exact suggestion wording suffice for the static suggestion path. No request for the runtime logLevel value or additional project."
+    ],
+    "issue": 19477,
+    "run_id": "final-f-20261028-v9-06-19477-a1",
+    "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+    "reviewed_at": "2026-10-28T07:54:14.392950+00:00"
+  },
+  "clarification_success": false
+}

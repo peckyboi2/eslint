@@ -2,7 +2,7 @@
 
 This submission configures Codex to assess whether an ESLint bug report lacks necessary reproduction information. It proposes one targeted clarification, stays silent on complete reports, or records uncertainty for human review. It uses the brief's coding-assistant dry-run route: actual local inference with the same frozen skill/settings/inputs, plus deterministic platform simulations. Hosted end-to-end execution is unavailable.
 
-Start at [evaluation, reproduction and operations](evals/README.md) for all ten outputs, transcripts, expectations, offline commands, failures and stopping instructions. The root README and golden-v1 README are preserved historical files, not the current submission status. The full upstream fork, source, tests, packages, licence and inherited workflows remain intact.
+Start at the [current golden submission index](evals/golden/INDEX.md) for all ten outputs, transcripts, expectations, offline commands and failures; [operations](evals/README.md) covers stopping instructions. The root README, AGENTS and golden-v1 README retain frozen historical commands; [SUBMISSION.md](SUBMISSION.md) identifies the current complete-tree verifier. The full upstream fork, source, tests, packages, licence and inherited workflows remain intact.
 
 ## Why this workflow and AI
 

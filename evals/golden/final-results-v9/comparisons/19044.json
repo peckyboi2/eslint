@@ -1,0 +1,140 @@
+{
+  "issue": 19044,
+  "run_id": "final-f-20261028-v9-04-19044-a1",
+  "status": "completed",
+  "actual_decision": "no_action",
+  "result": {
+    "decision": "no_action",
+    "rationale": "The report specifies ESLint 9.13.0, the absence of a `type` field in `package.json`, three blank configuration files, and the exact command for each file. It also supplies the differing outputs and expected consistent behavior. These inline details are sufficient to reconstruct the config-loading comparison without the linked reproduction or additional project files.",
+    "clarification": null
+  },
+  "errors": [],
+  "input_hashes": {
+    "body.md": "17d1db6b8444fe12ee4e9d3aa9da6605bff10d55cc3c4d5f6648b4370a8cb424",
+    "snapshot.json": "df1f65a27885b141bd723a317589c9fa4647628e702e0deb94c837e1dfce013a",
+    "title.txt": "4c2341a8258736b70a9fd938f8fc7bd3345aafec9acc6fcf3885504f72134dbc"
+  },
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "public_actions": [],
+  "usage": {
+    "input_tokens": 2817,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 298,
+    "output_tokens_details": {
+      "reasoning_tokens": 209
+    },
+    "total_tokens": 3115,
+    "attribution": {
+      "items": {
+        "msg_0bd639fdc197ac8f016ae1a9a739fc81919a780db765ce3c4a": {
+          "input_tokens": 860,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 860,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_0bd639fdc197ac8f016ae1a9a739fc81919f00875364975681": {
+          "input_tokens": 1955,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_0bd639fdc197ac8f016ae1a9b286b48191b8c8b9c108e5c232": {
+          "input_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 89,
+          "content": [
+            {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 89
+            }
+          ]
+        },
+        "rs_0bd639fdc197ac8f016ae1a9b286c481919e75914b87c8eecb": {
+          "input_tokens": 2,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 209
+        }
+      }
+    }
+  },
+  "cost": "unknown",
+  "source": "evals/golden/prepared-inputs/inputs/19044",
+  "run": "evals/runs/final-f-20261028-v9-04-19044-a1",
+  "campaign_id": "final-f-20261028-v9",
+  "expected_decision": "no_action",
+  "decision_pass": true,
+  "quality_review": {
+    "comment_quality": "not_assessable",
+    "criteria": [
+      {
+        "criterion": 1,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 2,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 3,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 4,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 5,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 6,
+        "result": "not_assessable",
+        "evidence": "No proposed comment; this comment-quality criterion is not assessable. Internal decision correctness is recorded separately."
+      },
+      {
+        "criterion": 7,
+        "result": "pass",
+        "evidence": "Validated clarification=null and preview_comment=null; public_actions=[] and posting_available=false. Public silence is independent of the expected internal decision."
+      }
+    ],
+    "irrelevant_content": false,
+    "redundant_content": false,
+    "silent_branch_violation": false,
+    "notes": [
+      "PASS: no_action matches the accepted label. The rationale recognises explicitly blank configuration contents, no package.json type, exact commands and differing outputs as supplied reproduction inputs; no redundant request."
+    ],
+    "issue": 19044,
+    "run_id": "final-f-20261028-v9-04-19044-a1",
+    "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+    "reviewed_at": "2026-10-28T07:52:41.469034+00:00"
+  },
+  "clarification_success": false
+}

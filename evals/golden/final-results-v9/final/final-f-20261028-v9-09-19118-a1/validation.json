@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 19118,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "no_action",
+  "validated_output": {
+    "decision": "no_action",
+    "rationale": "The report supplies ESLint 9.14.0, the default parser, working directory, triggering command, and observed/expected behavior. The supporting files provide the flat configuration, dependency records, source input, app/tmp directory layout, and an ESLint 8 comparison. Together these are sufficient to reconstruct the reported reproduction without clarification.",
+    "clarification": null
+  }
+}

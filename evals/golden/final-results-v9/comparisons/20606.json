@@ -1,0 +1,153 @@
+{
+  "issue": 20606,
+  "run_id": "final-f-20261028-v9-02-20606-a1",
+  "status": "completed",
+  "actual_decision": "clarify",
+  "result": {
+    "decision": "clarify",
+    "rationale": "The report supplies environment versions, the package version and file listing, a webpack resolver/plugin snippet, and the exact warning. However, the warning concerns membership in Angular's TypeScript compilation, while the snippet references an unsupplied tsconfig.angular.json. The Angular/webpack dependency setup and build invocation are also absent. These gaps prevent reconstructing how the package file enters the compilation and running the warning-producing path. The supplied playground contains only a comment and lint rules, not a build reproduction.",
+    "clarification": "Could you share a minimal Angular/webpack project that produces this warning, including `tsconfig.angular.json`, `package.json`, the lockfile and any required entry files, along with the exact build command or package-script invocation? The package listing and webpack snippet do not establish how `@eslint/plugin-kit` enters the TypeScript compilation that emits the warning."
+  },
+  "errors": [],
+  "input_hashes": {
+    "body.md": "0bf7b3f7742f8c94409012f7775d81c48497e13dca85d9f9575163cd963e36e1",
+    "snapshot.json": "26b42f996edf751304044c8e2e866cd9526c5eff4a5bb8631ab1cb558bda1326",
+    "support/playground-1.json": "0fada517ef6703ec36f3d8b95f3d0215be70ac23f8c879e374ac821654a88e4c",
+    "title.txt": "bafb36fd5e3eec3fb151c5d89aa46adeebaec659155356f02f8ff3fee1ba66d8"
+  },
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "public_actions": [],
+  "usage": {
+    "input_tokens": 6784,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 1708,
+    "output_tokens_details": {
+      "reasoning_tokens": 1520
+    },
+    "total_tokens": 8492,
+    "attribution": {
+      "items": {
+        "msg_0f88724247b5d141016ae1a912408c81918cc61c5f773c10cc": {
+          "input_tokens": 4827,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 4827,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_0f88724247b5d141016ae1a912408c81919f567f2463022bf7": {
+          "input_tokens": 1955,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 1955,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_0f88724247b5d141016ae1a952bbdc819189c1360aefdeabc3": {
+          "input_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 188,
+          "content": [
+            {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 188
+            }
+          ]
+        },
+        "rs_0f88724247b5d141016ae1a92a21548191889235e7aa87c762": {
+          "input_tokens": 2,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 516
+        },
+        "rs_0f88724247b5d141016ae1a93ed2c0819187e06e20efc28670": {
+          "input_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 518
+        },
+        "rs_0f88724247b5d141016ae1a952bbf481918b0658b398198173": {
+          "input_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 486
+        }
+      }
+    }
+  },
+  "cost": "unknown",
+  "source": "evals/golden/prepared-inputs/inputs/20606",
+  "run": "evals/runs/final-f-20261028-v9-02-20606-a1",
+  "campaign_id": "final-f-20261028-v9",
+  "expected_decision": "clarify",
+  "decision_pass": true,
+  "quality_review": {
+    "comment_quality": "pass",
+    "criteria": [
+      {
+        "criterion": 1,
+        "result": "pass",
+        "evidence": "Requests a minimal Angular/webpack project including tsconfig.angular.json, package.json, lockfile, required entry files and the exact build command/package-script. These missing materials cover the frozen build-reproduction requirement."
+      },
+      {
+        "criterion": 2,
+        "result": "pass",
+        "evidence": "Explains that the package listing/snippet do not establish how @eslint/plugin-kit enters the warning-producing TypeScript compilation; describes the evidence gap without asserting an error cause."
+      },
+      {
+        "criterion": 3,
+        "result": "pass",
+        "evidence": "One cohesive actionable build-project request; the preserved playground is only a pointer/comment and cannot supply the build setup. No already supplied environment versions or warning text are requested."
+      },
+      {
+        "criterion": 4,
+        "result": "pass",
+        "evidence": "Respectful Could you share… wording without promising a fix or judging report validity."
+      },
+      {
+        "criterion": 5,
+        "result": "pass",
+        "evidence": "Does not endorse the deletion workaround, propose a diagnosis/fix, execute code or request a forbidden action; model tool calls are empty."
+      },
+      {
+        "criterion": 6,
+        "result": "pass",
+        "evidence": "Bounded validated preview with trusted model/run attribution and package reference only; posting target absent."
+      },
+      {
+        "criterion": 7,
+        "result": "pass",
+        "evidence": "One preview comment only; public_actions=[] and posting_available=false."
+      }
+    ],
+    "irrelevant_content": false,
+    "redundant_content": false,
+    "silent_branch_violation": false,
+    "notes": [
+      "Decision and all wording criteria pass; explicit exact build command is present in this final attempt. Prior omitted-command failures remain separate."
+    ],
+    "issue": 20606,
+    "run_id": "final-f-20261028-v9-02-20606-a1",
+    "reviewer": "Codex assistant semantic review after output; not independent/blinded or Darren approval",
+    "reviewed_at": "2026-10-28T07:51:12.277764+00:00"
+  },
+  "clarification_success": true
+}

@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": "Could you share a minimal Angular/webpack project that produces this warning, including `tsconfig.angular.json`, `package.json`, the lockfile and any required entry files, along with the exact build command or package-script invocation? The package listing and webpack snippet do not establish how `@eslint/plugin-kit` enters the TypeScript compilation that emits the warning.\n\n**Created by AI (OpenAI Codex, gpt-6.1-sol).**\nPreview run: `final-f-20261028-v9-02-20606-a1`.",
+  "source_issue": 20606,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "clarify",
+  "validated_output": {
+    "decision": "clarify",
+    "rationale": "The report supplies environment versions, the package version and file listing, a webpack resolver/plugin snippet, and the exact warning. However, the warning concerns membership in Angular's TypeScript compilation, while the snippet references an unsupplied tsconfig.angular.json. The Angular/webpack dependency setup and build invocation are also absent. These gaps prevent reconstructing how the package file enters the compilation and running the warning-producing path. The supplied playground contains only a comment and lint rules, not a build reproduction.",
+    "clarification": "Could you share a minimal Angular/webpack project that produces this warning, including `tsconfig.angular.json`, `package.json`, the lockfile and any required entry files, along with the exact build command or package-script invocation? The package listing and webpack snippet do not establish how `@eslint/plugin-kit` enters the TypeScript compilation that emits the warning."
+  }
+}

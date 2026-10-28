@@ -1,6 +1,6 @@
 # Evaluation, reproduction and operations
 
-Start with [DESIGN.md](../DESIGN.md). This is the current evaluation home for the marker; all instructions use this repository alone. The root README and [golden README](golden/README.md) retain their frozen historical wording. Actual outputs/logs live beside the immutable `golden/` inventory and are indexed here rather than added to golden-v1.
+Start with the [current golden submission index](golden/INDEX.md) and [DESIGN.md](../DESIGN.md). Current instructions and a [versioned results bundle](golden/final-results-v9/README.md) now live under `evals/golden/`, including byte-identical actual outputs/transcripts, comparisons, adversarial evidence and test logs. Full original records stay at their source paths below. The root README, AGENTS and [golden README](golden/README.md) retain frozen historical wording; the additive index supersedes their old status/commands without changing golden-v1.
 
 ## Final campaign and evidence
 
@@ -40,12 +40,16 @@ The record identifies requested/returned model, pinned engine binary, settings, 
 
 ## Offline reproduction: no inference or network
 
-Use Python 3.11+ and the standard library from the repository root. No Node installation or submitted dependency installation is needed. Run the existing safety suite:
+Use Git with retained repository history and Python 3.11+ with the standard library from the repository root. No Node installation, pinned CLI binary or submitted dependency installation is needed. The current complete-tree verification route is:
 
 ```sh
-python3 -B -m unittest discover -s scripts/clarifier/tests -t scripts -p 'test_*.py' -v
+python3 -B scripts/verify_submission.py
+python3 -B -m unittest discover -s scripts/submission_tests -v
+python3 -B scripts/verify_submission.py --safety-tests
 git diff --check
 ```
+
+The current verifier checks the complete tree, preserves the original 168-file freeze and all 2,710 earlier evidence hashes, verifies the additive exports, stages all ten exact input packages and reproduces the saved 9/10 comparison. Its corruption tests use disposable fixtures. It does not require 10/10, rerun model judgement or verify hosted controls. See [saved packaging checks](submission-checks-v1/). The expanded replay below remains an inspectable explanation of its staging/aggregation checks.
 
 Stage every approved case into a disposable directory using the same trusted helpers, inspect the closed inventories, and reproduce the comparison without overwriting evidence:
 
@@ -79,7 +83,7 @@ PY
 
 This verifies saved decisions and reproduces aggregation using the retained semantic assessments; it does not independently repeat qualitative judgement. `python3 -B scripts/check_campaign.py verify --freeze-sha256 0c0ca76cd19e5adca0c5ebfc2be40e531a1ecbda5a4a546ada9f42d125d21a5f` additionally requires the original pinned CLI binary at the recorded host path. Its absence on another machine is an engine-pin portability limit, not permission to weaken the freeze. Do not use `compare` in the original evidence tree: it intentionally creates a new comparison record.
 
-The frozen `scripts/verify_baseline.py` predates G documentation and only allowlists the evaluated file layout. G's audit records its literal full-tree rejection and a separate, explicit projection check excluding only G's new documentation/measurement paths; upstream/source/golden/evidence integrity are also checked against the complete candidate tree. Do not edit the frozen verifier to conceal this packaging limitation. The data-only [development archive](development-evidence.tar.gz) has SHA-256 `33e5bf68145a83871ff94324b25694a780e326e119ad48f979d78e8b75620531`; inspect members as data, never execute historical code. Omitted old Python copies have hashes, which cannot reconstruct them; the final evaluated source is present.
+The frozen `scripts/verify_baseline.py` predates G documentation and requires the original closed golden-v1 inventory. G's audit preserves its [literal full-tree rejection](checks/gate-g-20261028/full-tree-baseline.txt) and a separate [explicit projection](checks/gate-g-20261028/baseline-projection.json). It remains a historical command and also rejects the additive golden results bundle. Use `python3 -B scripts/verify_submission.py` on the complete current tree; no evaluated files are removed or historical checks weakened. The data-only [development archive](development-evidence.tar.gz) has SHA-256 `33e5bf68145a83871ff94324b25694a780e326e119ad48f979d78e8b75620531`; inspect members as data, never execute historical code. Omitted old Python copies have hashes, which cannot reconstruct them; the final evaluated source is present.
 
 ## A future model rerun requires separate authorisation
 

@@ -1,0 +1,22 @@
+test_answers_cannot_enter_staged_input_packages (test_verify_submission.SubmissionVerificationTests.test_answers_cannot_enter_staged_input_packages) ... ok
+test_broken_current_navigation_is_rejected (test_verify_submission.SubmissionVerificationTests.test_broken_current_navigation_is_rejected) ... ok
+test_cli_returns_failure_for_changed_fixture (test_verify_submission.SubmissionVerificationTests.test_cli_returns_failure_for_changed_fixture) ... ok
+test_complete_tree_passes_with_recorded_failure (test_verify_submission.SubmissionVerificationTests.test_complete_tree_passes_with_recorded_failure) ... ok
+test_corrupt_and_missing_exports_are_rejected (test_verify_submission.SubmissionVerificationTests.test_corrupt_and_missing_exports_are_rejected) ... ok
+test_current_command_cannot_disappear_from_submission_index (test_verify_submission.SubmissionVerificationTests.test_current_command_cannot_disappear_from_submission_index) ... ok
+test_design_line_limit_is_enforced (test_verify_submission.SubmissionVerificationTests.test_design_line_limit_is_enforced) ... ok
+test_documented_cli_works_from_outside_checkout (test_verify_submission.SubmissionVerificationTests.test_documented_cli_works_from_outside_checkout) ... ok
+test_export_checkout_byte_protection_is_required (test_verify_submission.SubmissionVerificationTests.test_export_checkout_byte_protection_is_required) ... ok
+test_export_symlink_is_rejected (test_verify_submission.SubmissionVerificationTests.test_export_symlink_is_rejected) ... ok
+test_frozen_safety_suite_runs_without_changing_source_checkout (test_verify_submission.SubmissionVerificationTests.test_frozen_safety_suite_runs_without_changing_source_checkout) ... ok
+test_ignored_unlisted_evidence_is_not_silently_skipped (test_verify_submission.SubmissionVerificationTests.test_ignored_unlisted_evidence_is_not_silently_skipped) ... ok
+test_missing_inherited_workflow_is_rejected (test_verify_submission.SubmissionVerificationTests.test_missing_inherited_workflow_is_rejected) ... ok
+test_original_freezes_and_preservation_inventory_cannot_change (test_verify_submission.SubmissionVerificationTests.test_original_freezes_and_preservation_inventory_cannot_change) ... ok
+test_original_inputs_expectations_skill_and_source_cannot_change (test_verify_submission.SubmissionVerificationTests.test_original_inputs_expectations_skill_and_source_cannot_change) ... ok
+test_results_failed_comparisons_and_archives_cannot_change (test_verify_submission.SubmissionVerificationTests.test_results_failed_comparisons_and_archives_cannot_change) ... ok
+test_rewriting_export_manifest_cannot_hide_removed_export (test_verify_submission.SubmissionVerificationTests.test_rewriting_export_manifest_cannot_hide_removed_export) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 16.728s
+
+OK
