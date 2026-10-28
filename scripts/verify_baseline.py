@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check Milestone A/B integrity; no inference, network or report-code execution."""
+"""Check Milestone A–C integrity; no inference, network or report-code execution."""
 
 import hashlib
 import json
@@ -16,6 +16,8 @@ from clarifier.inference.recording import load_configuration
 ROOT = Path(__file__).resolve().parents[1]
 BASE_COMMIT = "161558ae1391a8649a8d69a8b2c2e555b40121b9"
 GOLDEN_DIGEST = "fa64d12b7c6db060be0a269200bb3e288c37a71fbe7d36df7769462466e51085"
+CONTROL_WORKFLOWS = {".github/workflows/clarifier-triage.yml", ".github/workflows/clarifier-stop.yml"}
+
 ALLOWED_MODIFICATIONS = {
     "AGENTS.md", "CONTRIBUTING.md", "README.md", ".gitattributes", ".gitignore", ".prettierignore"
 }
@@ -147,7 +149,8 @@ def main():
     ).splitlines()))
     unexpected = {
         p for p in added
-        if not (p == "scripts/clarifier/tests/test_layout.py"
+        if not (p in CONTROL_WORKFLOWS
+                or p in {"scripts/clarifier/tests/test_preflight.py", "scripts/clarifier/tests/test_replay.py", "scripts/clarifier/tests/test_layout.py", "scripts/clarifier/tests/fixtures/attacks-v1.json"}
                 or p.startswith("evals/golden/")
                 or p.startswith(("evals/runs/", "evals/platform-tests/", "evals/checks/"))
                 or p in {path.as_posix() for path in CONFIG_PATHS}
@@ -169,7 +172,7 @@ def main():
         p.relative_to(ROOT).as_posix()
         for p in (ROOT / ".github/workflows").rglob("*") if p.is_file()
     }
-    if original_workflows != current_workflows:
+    if not original_workflows <= current_workflows or current_workflows - original_workflows - CONTROL_WORKFLOWS:
         raise ValueError("Inherited workflow inventory changed")
     if set((ROOT / ".claude").rglob("SKILL.md")) != {
         ROOT / ".claude/skills/eslint-clarification/SKILL.md"
@@ -178,6 +181,8 @@ def main():
     config = load_configuration(ROOT / CONFIG_PATH)
     if digest(ROOT / SKILL_PATH) != config["skill_sha256"]:
         raise ValueError("Active skill differs from configured digest")
+    if digest(ROOT / "evals/development-evidence.tar.gz") != "33e5bf68145a83871ff94324b25694a780e326e119ad48f979d78e8b75620531":
+        raise ValueError("Pinned development archive changed")
     evidence_count = check_evidence_archive(ROOT / "evals/development-evidence.tar.gz")
     run_counts = {"actual": 0, "platform": 0}
     for kind, key in (("runs", "actual"), ("platform-tests", "platform")):
@@ -228,7 +233,7 @@ def main():
         "current_configuration_version": config["version"],
         "current_model": config["model"],
         "current_reasoning_effort": config["reasoning_effort"],
-        "posting_tests": 0,
+        "live_posting_tests": 0,
         "runtime_isolation_retested_by_this_check": False,
     }, indent=2))
 

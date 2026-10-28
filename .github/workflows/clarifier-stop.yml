@@ -1,0 +1,35 @@
+name: Stop sandbox clarification
+on:
+  workflow_dispatch:
+permissions: {}
+jobs:
+  stop:
+    if: >-
+      github.event_name == 'workflow_dispatch' && github.repository == 'peckyboi2/eslint' &&
+      github.repository_id == '1435519573' && github.repository_owner_id == '234542779' &&
+      github.actor == 'peckyboi2' && github.actor_id == '234542779' &&
+      github.triggering_actor == 'peckyboi2' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - env:
+          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: python3 -B scripts/clarifier/stop.py gate
+      - env:
+          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 -B scripts/clarifier/stop.py execute
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: ${{ !cancelled() }}
+        with:
+          name: stop-evidence
+          path: evals/checks/workflow/stop.json
+          retention-days: 30
+          if-no-files-found: error

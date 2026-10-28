@@ -12,24 +12,46 @@ MODULE_PATHS = tuple(map(Path, (
     "shared/constants.py",
     "shared/errors.py",
     "preview.py",
+    "c_preview.py",
+    "workflow.py",
+    "stop.py",
     "inference/staging.py",
     "inference/skill.py",
     "inference/request.py",
     "inference/transport.py",
     "inference/recording.py",
+    "inference/adversarial.py",
+    "controls/policy.py",
+    "controls/identity.py",
+    "controls/ledger.py",
+    "controls/admission.py",
+    "controls/state_store.py",
+    "controls/dry_state.py",
+    "github/github_api.py",
+    "github/workflow_io.py",
+    "github/workflow_audit.py",
+    "github/stop_io.py",
     "outputs/validation.py",
     "outputs/routing.py",
+    "outputs/output_handler.py",
+    "outputs/posting_intent.py",
+    "outputs/posting.py",
+    "outputs/release_gate.py",
 )))
 PACKAGE_PATHS = tuple(map(Path, (
     "__init__.py",
     "shared/__init__.py",
     "inference/__init__.py",
+    "controls/__init__.py",
+    "github/__init__.py",
     "outputs/__init__.py",
 )))
 SOURCE_PATHS = MODULE_PATHS + PACKAGE_PATHS
 MODULE_NAMES = tuple(path.stem for path in MODULE_PATHS)
 CONFIG_PATHS = (SKILL_PATH, CONFIG_PATH, SCHEMA_PATH,
-                *(Path("scripts/clarifier") / name for name in SOURCE_PATHS))
+                *(Path("scripts/clarifier") / name for name in SOURCE_PATHS),
+                Path("scripts/clarifier/tests/fixtures/attacks-v1.json"),
+                Path(".github/workflows/clarifier-triage.yml"), Path(".github/workflows/clarifier-stop.yml"))
 RETAINED_CONFIG_PATHS = (SKILL_PATH, CONFIG_PATH, SCHEMA_PATH)
 APPROVED = {
     "body.md": "52acebec10d033684d643df1c45c849b02967fa291806af3ee70f7e5ee1d0243",

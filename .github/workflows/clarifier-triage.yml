@@ -1,0 +1,120 @@
+name: Sandbox clarification
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [preview, post]
+        default: preview
+        description: One fixed historical report; posting requires reviewed gates
+permissions: {}
+concurrency:
+  group: sandbox-clarifier-triage
+  cancel-in-progress: false
+  # GitHub default: at most one pending run; newer dispatch replaces it.
+jobs:
+  gate:
+    if: >-
+      github.event_name == 'workflow_dispatch' && github.repository == 'peckyboi2/eslint' &&
+      github.repository_id == '1435519573' && github.repository_owner_id == '234542779' &&
+      github.actor == 'peckyboi2' && github.actor_id == '234542779' &&
+      github.triggering_actor == 'peckyboi2' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      verified: ${{ steps.verify.outputs.verified }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - id: verify
+        env:
+          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: |
+          python3 -B scripts/clarifier/workflow.py gate
+          echo 'verified=true' >> "$GITHUB_OUTPUT"
+  admission:
+    needs: gate
+    if: needs.gate.outputs.verified == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - env:
+          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
+          DISPATCH_MODE: ${{ inputs.mode }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 -B scripts/clarifier/workflow.py admit
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: admission
+          path: evals/checks/workflow/admission.json
+          retention-days: 30
+          if-no-files-found: error
+  inference:
+    needs: [gate, admission]
+    if: needs.gate.outputs.verified == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: admission
+          path: evals/checks/workflow
+      # No inference secret is provisioned. The pinned local engine/login check fails closed on an unprovisioned runner.
+      - env:
+          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
+          DISPATCH_MODE: ${{ inputs.mode }}
+        run: python3 -B scripts/clarifier/workflow.py infer
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: ${{ !cancelled() }}
+        with:
+          name: inference
+          path: |
+            evals/checks/workflow
+            evals/runs
+          retention-days: 30
+          if-no-files-found: error
+  output:
+    needs: [gate, admission, inference]
+    if: needs.gate.outputs.verified == 'true' && inputs.mode == 'post' && github.run_attempt == 1
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: inference
+          path: evals
+      - env:
+          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
+          DISPATCH_MODE: ${{ inputs.mode }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 -B scripts/clarifier/workflow.py post
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: ${{ !cancelled() }}
+        with:
+          name: posting
+          path: evals/checks/workflow
+          retention-days: 30
+          if-no-files-found: error
