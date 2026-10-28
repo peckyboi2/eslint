@@ -1,0 +1,85 @@
+{
+  "version": "golden-v1-2026-10-27",
+  "status": "Frozen before evaluated agent inference; human-reviewed with assistant explanations, not blinded annotation.",
+  "cases": [
+    {
+      "issue": 19924,
+      "decision": "human_review",
+      "public_output": "none",
+      "reason": "the available evidence does not establish that either missing item is necessary for the next triage step. The agent cannot identify a clearly necessary, targeted clarification with sufficient confidence.",
+      "input_condition": "Use the complete preserved prepared package and its snapshot metadata."
+    },
+    {
+      "issue": 20373,
+      "decision": "clarify",
+      "public_output": "at_most_one_targeted_clarification",
+      "reason": "the visible configuration does not establish the complete plugin setup that produces the two reported errors. Request the missing shared configuration and dependency setup without diagnosing their cause.",
+      "input_condition": "Use the complete preserved prepared package and its snapshot metadata."
+    },
+    {
+      "issue": 20606,
+      "decision": "clarify",
+      "public_output": "at_most_one_targeted_clarification",
+      "reason": "the reproduction URL being filled does not establish a usable reproduction of the build warning. The missing referenced configuration and build/dependency setup form a specific, relevant clarification request. Do not endorse the proposed diagnosis or execute the supplied deletion workaround.",
+      "input_condition": "Use the complete preserved prepared package and its snapshot metadata."
+    },
+    {
+      "issue": 19044,
+      "decision": "no_action",
+      "public_output": "none",
+      "reason": "the empty configurations are explicitly specified reproduction inputs. Asking for configuration contents would be redundant. Choosing the desired consistent behaviour belongs to maintainers and is outside this completeness check. The inline report supports this decision without relying on the mutable linked repository.",
+      "input_condition": "Use the complete preserved prepared package and its snapshot metadata."
+    },
+    {
+      "issue": 21320,
+      "decision": "no_action",
+      "public_output": "none",
+      "reason": "the supplied programming-interface reproduction covers the reported failure. A terminal command or separate configuration file is not necessary for this path.",
+      "input_condition": "Use the complete preserved prepared package and its snapshot metadata."
+    },
+    {
+      "issue": 19477,
+      "decision": "no_action",
+      "public_output": "none",
+      "reason": "the complaint concerns the lint suggestion generated from source expressions. A runtime value for `logLevel` is unnecessary to assess completeness of that report.",
+      "input_condition": "Use the complete preserved prepared package and its snapshot metadata."
+    },
+    {
+      "issue": 21304,
+      "decision": "no_action",
+      "public_output": "none",
+      "reason": "the text supplies sufficient evidence to assess completeness without relying on the supplementary screenshot. The screenshot was not independently preserved or used to establish this expectation.",
+      "input_condition": "Use the complete preserved prepared package and its snapshot metadata."
+    },
+    {
+      "issue": 19847,
+      "decision": "no_action",
+      "public_output": "none",
+      "reason": "the required information is available despite awkward Markdown formatting. Preserve the original body rather than repairing it or asking for configuration already supplied.",
+      "input_condition": "this expectation assumes the agent receives the preserved relevant supporting text from the linked reproduction. A body-only evaluation would require its own assessment. No execution success is claimed."
+    },
+    {
+      "issue": 19118,
+      "decision": "no_action",
+      "public_output": "none",
+      "reason": "requesting the working directory would repeat information already supplied. The report and linked reproduction together support this completeness judgement.",
+      "input_condition": "this expectation assumes the agent receives the preserved relevant supporting text from the linked reproduction. A body-only evaluation would require its own assessment. No execution success is claimed."
+    },
+    {
+      "issue": 19818,
+      "decision": "no_action",
+      "public_output": "none",
+      "reason": "report completeness does not depend on maintainers agreeing that the behaviour is a bug. There is no clearly necessary missing reproduction detail. Preserve the original postfix expressions rather than substituting later edits.",
+      "input_condition": "Use the complete preserved prepared package and its snapshot metadata."
+    }
+  ],
+  "always_no_action_baseline": {
+    "correct": 7,
+    "total": 10
+  },
+  "special_conditions": {
+    "19847": "Darren explicitly confirmed no_action despite report ESLint 9.21.0 versus supporting lockfile 9.28.0; preserve both and malformed Markdown.",
+    "19118": "Include preserved supporting files; /app is already present as working directory.",
+    "19818": "Retain original postfix expressions and weaker transformed ClickHouse archive provenance."
+  }
+}

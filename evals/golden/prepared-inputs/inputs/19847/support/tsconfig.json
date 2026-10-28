@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "amd",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "outFile": "build/10-typescript.js",
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es2022",
+    "allowUnreachableCode": false,
+    "noImplicitReturns": true,
+    "baseUrl": "./",
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "lib": [ "dom", "es2022" ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "typeRoots": [],
+    "paths": {
+      "*": [
+        "*"
+      ]
+    }
+  },
+  "compileOnSave": false,
+  "include": [
+    "App/**/*.ts",
+    "Dependencies/**/*.ts",
+    "Specs/**/*.ts",
+    "Dependencies/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

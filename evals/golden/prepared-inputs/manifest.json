@@ -1,0 +1,97 @@
+{
+  "research_date": "2026-10-27",
+  "purpose": "Prepared historical evidence packages, not an agent configuration or executed evaluation. Expected decisions remain outside inputs/.",
+  "case_limit_bytes": 65536,
+  "cases": [
+    {
+      "issue": 20373,
+      "folder": "inputs/20373",
+      "cutoff_utc": "2025-12-04T14:00:00Z",
+      "cutoff_kind": "early_pre_response_snapshot",
+      "file_count": 2,
+      "total_bytes_including_metadata": 6253,
+      "body_sha256": "52acebec10d033684d643df1c45c849b02967fa291806af3ee70f7e5ee1d0243"
+    },
+    {
+      "issue": 20606,
+      "folder": "inputs/20606",
+      "cutoff_utc": "2026-03-10T00:00:00Z",
+      "cutoff_kind": "early_pre_response_snapshot",
+      "file_count": 3,
+      "total_bytes_including_metadata": 11749,
+      "body_sha256": "0bf7b3f7742f8c94409012f7775d81c48497e13dca85d9f9575163cd963e36e1"
+    },
+    {
+      "issue": 21304,
+      "folder": "inputs/21304",
+      "cutoff_utc": "2026-09-04T03:00:00Z",
+      "cutoff_kind": "early_pre_response_snapshot",
+      "file_count": 3,
+      "total_bytes_including_metadata": 9646,
+      "body_sha256": "ece9b68942dfaa87727c8262eb680c411ab68423dd942b6343b2539717ee065d"
+    },
+    {
+      "issue": 19847,
+      "folder": "inputs/19847",
+      "cutoff_utc": "2025-06-13T12:40:21Z",
+      "cutoff_kind": "opening_record",
+      "file_count": 8,
+      "total_bytes_including_metadata": 15273,
+      "body_sha256": "0d2880c7c0b24fe6064e8423f8be34446621e04eeb3ecd3151bee34a8e5a9114"
+    },
+    {
+      "issue": 19044,
+      "folder": "inputs/19044",
+      "cutoff_utc": "2024-10-23T03:46:15Z",
+      "cutoff_kind": "opening_record",
+      "file_count": 2,
+      "total_bytes_including_metadata": 2328,
+      "body_sha256": "17d1db6b8444fe12ee4e9d3aa9da6605bff10d55cc3c4d5f6648b4370a8cb424"
+    },
+    {
+      "issue": 21320,
+      "folder": "inputs/21320",
+      "cutoff_utc": "2026-09-13T08:12:41Z",
+      "cutoff_kind": "opening_record",
+      "file_count": 3,
+      "total_bytes_including_metadata": 3489,
+      "body_sha256": "e34f7c9cf0da40eb9cd9db910ff5b3a9c75d1e57c81fda81e96220973d2e8a1e"
+    },
+    {
+      "issue": 19118,
+      "folder": "inputs/19118",
+      "cutoff_utc": "2024-11-09T19:40:36Z",
+      "cutoff_kind": "opening_record",
+      "file_count": 15,
+      "total_bytes_including_metadata": 23174,
+      "body_sha256": "e966d6675a422c4ed4bb688707a1938132006bf4945ba31010f892d59b57c23b"
+    },
+    {
+      "issue": 19818,
+      "folder": "inputs/19818",
+      "cutoff_utc": "2025-06-02T21:29:51Z",
+      "cutoff_kind": "opening_record_via_clickhouse",
+      "file_count": 3,
+      "total_bytes_including_metadata": 3368,
+      "body_sha256": "8f81bebba3ff2b4ef76b54d9744f74f069d24d0820588e3fa8c454075068a638"
+    },
+    {
+      "issue": 19477,
+      "folder": "inputs/19477",
+      "cutoff_utc": "2025-03-04T20:34:50Z",
+      "cutoff_kind": "opening_record",
+      "file_count": 3,
+      "total_bytes_including_metadata": 3352,
+      "body_sha256": "1b0d0ec7bb51bc0af9319f6afb392e0ffe3e356d6839cc6123fe7ac2f7aa5ac5"
+    },
+    {
+      "issue": 19924,
+      "folder": "inputs/19924",
+      "cutoff_utc": "2025-07-08T11:24:15Z",
+      "cutoff_kind": "opening_record",
+      "file_count": 2,
+      "total_bytes_including_metadata": 2748,
+      "body_sha256": "aaf9b98240c9a65e947e7443c9caa14a658226d308144c0d96d0bb6b498b6ce6"
+    }
+  ]
+}

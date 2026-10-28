@@ -1,0 +1,67 @@
+{
+  "research_date": "2026-10-27",
+  "original_evidence_files_unchanged": 90,
+  "case_checks": [
+    {
+      "issue": 20373,
+      "title_and_body_match_archived_record": true,
+      "files_hash_verified": 2,
+      "package_bytes": 6253
+    },
+    {
+      "issue": 20606,
+      "title_and_body_match_archived_record": true,
+      "files_hash_verified": 3,
+      "package_bytes": 11749
+    },
+    {
+      "issue": 21304,
+      "title_and_body_match_archived_record": true,
+      "files_hash_verified": 3,
+      "package_bytes": 9646
+    },
+    {
+      "issue": 19847,
+      "title_and_body_match_archived_record": true,
+      "files_hash_verified": 8,
+      "package_bytes": 15273
+    },
+    {
+      "issue": 19044,
+      "title_and_body_match_archived_record": true,
+      "files_hash_verified": 2,
+      "package_bytes": 2328
+    },
+    {
+      "issue": 21320,
+      "title_and_body_match_archived_record": true,
+      "files_hash_verified": 3,
+      "package_bytes": 3489
+    },
+    {
+      "issue": 19118,
+      "title_and_body_match_archived_record": true,
+      "files_hash_verified": 15,
+      "package_bytes": 23174
+    },
+    {
+      "issue": 19818,
+      "title_and_body_match_archived_record": true,
+      "files_hash_verified": 3,
+      "package_bytes": 3368
+    },
+    {
+      "issue": 19477,
+      "title_and_body_match_archived_record": true,
+      "files_hash_verified": 3,
+      "package_bytes": 3352
+    },
+    {
+      "issue": 19924,
+      "title_and_body_match_archived_record": true,
+      "files_hash_verified": 2,
+      "package_bytes": 2748
+    }
+  ],
+  "note": "These are evidence packaging checks, not agent runs, semantic evaluations or enforced-control tests."
+}
