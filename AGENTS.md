@@ -100,7 +100,9 @@ This fork hosts an ESLint report-clarification workflow. Assignment code uses Py
 ### Structure
 
 - `.claude/skills/eslint-clarification/SKILL.md`: canonical clarification procedure.
-- `scripts/clarifier/`: staging, transport, configuration and output schema; deterministic tests live in `scripts/clarifier/tests/`.
+- `scripts/clarifier/`: four command entry points; shared constants/errors live in `shared/`, with helpers grouped under `inference/`, `controls/`, `github/` and `outputs/`.
+- `scripts/clarifier/config/`: the single active `config.json` and decision schema; earlier evaluated settings remain with saved run records.
+- `scripts/clarifier/tests/`: deterministic package/module, command-entry and safeguard tests. Both documented discovery roots remain supported.
 - `scripts/verify_baseline.py`: evidence and upstream integrity checks.
 - `evals/golden/`: frozen inputs and evaluator-only expectations.
 - `evals/development-evidence.tar.gz`: data-only development evidence, including failures and original configuration identifiers; no historical Python copies.
@@ -111,7 +113,7 @@ This fork hosts an ESLint report-clarification workflow. Assignment code uses Py
 Run from the repository root:
 
 ```sh
-python3 -B -m unittest discover -s scripts/clarifier/tests -t scripts/clarifier -p 'test_*.py' -v
+python3 -B -m unittest discover -s scripts/clarifier/tests -t scripts -p 'test_*.py' -v
 python3 -B scripts/verify_baseline.py
 git diff --check
 ```
