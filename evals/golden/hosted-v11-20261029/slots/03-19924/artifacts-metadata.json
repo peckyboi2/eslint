@@ -1,0 +1,45 @@
+{
+  "total_count": 2,
+  "artifacts": [
+    {
+      "id": 12877088337,
+      "node_id": "MDg6QXJ0aWZhY3QxMjg3NzA4ODMzNw==",
+      "name": "evaluation-40827642208",
+      "size_in_bytes": 49872,
+      "url": "https://api.github.com/repos/peckyboi2/eslint/actions/artifacts/12877088337",
+      "archive_download_url": "https://api.github.com/repos/peckyboi2/eslint/actions/artifacts/12877088337/zip",
+      "expired": false,
+      "digest": "sha256:305d67320c6bc354cbb38c62c9a430acb4ad7994bd424b766714ab2725960bac",
+      "created_at": "2026-10-29T06:11:36Z",
+      "updated_at": "2026-10-29T06:11:36Z",
+      "expires_at": "2026-11-28T06:11:35Z",
+      "workflow_run": {
+        "id": 40827642208,
+        "repository_id": 1435519573,
+        "head_repository_id": 1435519573,
+        "head_branch": "main",
+        "head_sha": "06427776a2afbc96b05e3554fe07359036594d07"
+      }
+    },
+    {
+      "id": 12876699812,
+      "node_id": "MDg6QXJ0aWZhY3QxMjg3NjY5OTgxMg==",
+      "name": "evaluation-admission-40827642208",
+      "size_in_bytes": 632,
+      "url": "https://api.github.com/repos/peckyboi2/eslint/actions/artifacts/12876699812",
+      "archive_download_url": "https://api.github.com/repos/peckyboi2/eslint/actions/artifacts/12876699812/zip",
+      "expired": false,
+      "digest": "sha256:5236d85d8aeebbbfd46a10952f12157cf27a9e44d9e98e3faa62038e7ab4f2ab",
+      "created_at": "2026-10-29T06:10:54Z",
+      "updated_at": "2026-10-29T06:10:54Z",
+      "expires_at": "2026-11-28T06:10:53Z",
+      "workflow_run": {
+        "id": 40827642208,
+        "repository_id": 1435519573,
+        "head_repository_id": 1435519573,
+        "head_branch": "main",
+        "head_sha": "06427776a2afbc96b05e3554fe07359036594d07"
+      }
+    }
+  ]
+}

@@ -32,8 +32,8 @@ class AutomaticVerificationTests(unittest.TestCase):
         result=automatic.verify(self.root)
         self.assertEqual(result['decision_matches'],{'count':9,'denominator':10})
         self.assertEqual(result['v9_baseline']['frozen_git_files'],168)
-        self.assertFalse(result['current_candidate']['evaluated'])
         manifest=automatic.read_json(self.root/automatic.candidate_path(self.root))
+        self.assertEqual(result['current_candidate']['evaluated'],'observed_current_evaluation' in manifest)
         self.assertEqual(result['current_candidate']['hosted'],'observed_current_hosted_smoke' in manifest)
         self.assertEqual(result['model_calls'],0)
 

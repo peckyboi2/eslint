@@ -1,0 +1,19 @@
+{
+  "campaign_id": "hosted-v11-evaluation-20261029",
+  "slot": 4,
+  "run_id": "40827760550",
+  "attempt": 1,
+  "code_sha": "06427776a2afbc96b05e3554fe07359036594d07",
+  "freeze_sha256": "d235e3c7596d358479db5eb52f1606699026379b237d1ce7dadf934291ba373d",
+  "input_key": "2062ddc8a718890d04f7dc6f5e4702c18005888540b0614ab44eccf7434c44e8",
+  "event_key": "5593f5bb1bdce3df55c11433589abd283d45d4b9bb533040a1bc5c19af698aa7",
+  "input_hashes": {
+    "body.md": "17d1db6b8444fe12ee4e9d3aa9da6605bff10d55cc3c4d5f6648b4370a8cb424",
+    "snapshot.json": "df1f65a27885b141bd723a317589c9fa4647628e702e0deb94c837e1dfce013a",
+    "title.txt": "4c2341a8258736b70a9fd938f8fc7bd3345aafec9acc6fcf3885504f72134dbc"
+  },
+  "rolling_window_seconds": 60,
+  "rolling_limit": 10,
+  "campaign_limit": 20,
+  "public_actions": []
+}

@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/home/runner/work/_temp/clarifier-bin/codex",
+    "exec",
+    "--strict-config",
+    "--ephemeral",
+    "--ignore-rules",
+    "--skip-git-repo-check",
+    "--json",
+    "--color",
+    "never",
+    "-C",
+    "/tmp/cs467-preview-d4ty_aas/workspace",
+    "-"
+  ],
+  "environment_keys": [
+    "CODEX_HOME",
+    "LANG",
+    "PATH",
+    "TMPDIR"
+  ],
+  "stdin_sha256": "66c12fd5406391d5c4c93484ce4e23a6e8f0fabe85d672bd880b489df7a92758",
+  "engine_config_sha256": "8f2a4bdff312bde1c1d89161148009af901569f8e57967e0b4990b6addcf4ff3"
+}

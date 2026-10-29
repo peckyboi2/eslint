@@ -1,0 +1,26 @@
+{
+  "slot": 5,
+  "case": "21320",
+  "github_run_id": "40827862708",
+  "run_url": "https://github.com/peckyboi2/eslint/actions/runs/40827862708",
+  "conclusion": "success",
+  "record_status": "completed",
+  "provider_calls": 1,
+  "expected_decision": "no_action",
+  "validation": {
+    "mode": "preview",
+    "public_actions": [],
+    "preview_comment": null,
+    "source_issue": 21320,
+    "repository_id": 1435519573,
+    "repository": "peckyboi2/eslint",
+    "posting_target": null,
+    "valid": true,
+    "decision": "no_action",
+    "validated_output": {
+      "decision": "no_action",
+      "rationale": "The report provides environment versions, a complete `Linter.verifyAndFix()` invocation, parser settings, rule options, triggering source, expected behavior, and the observed output and fatal diagnostic. The supplied playground data confirms the same input and configuration. This is sufficient to reproduce the reported API path without additional project files or a CLI command.",
+      "clarification": null
+    }
+  }
+}

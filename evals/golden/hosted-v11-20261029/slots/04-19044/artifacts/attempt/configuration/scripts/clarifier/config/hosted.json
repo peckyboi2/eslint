@@ -1,0 +1,13 @@
+{
+  "version": "hosted-preview-v11-artifacts-v2",
+  "engine": "codex-cli",
+  "cli_version": "codex-cli 0.154.0",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "xhigh",
+  "authentication": "API key in trusted gateway only",
+  "platform": "Linux",
+  "architecture": "x86_64",
+  "linux_archive_url": "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-x86_64-unknown-linux-musl.tar.gz",
+  "linux_archive_sha256": "d7e18b2597ae8f242f5f31ee9e90deef48dbc9edd634d9868fb6435d08c07f02",
+  "linux_binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022"
+}

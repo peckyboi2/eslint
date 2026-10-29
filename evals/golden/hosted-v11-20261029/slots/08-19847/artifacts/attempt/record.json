@@ -1,0 +1,101 @@
+{
+  "run_id": "hosted-v11-20261029-08-19847-a1",
+  "started_at": "2026-10-29T06:16:38.153965+00:00",
+  "status": "completed",
+  "trigger": "owner-approved hosted historical evaluation",
+  "kind": "actual hosted API evaluation",
+  "verification_type": "hosted model evaluation",
+  "source_issue": 19847,
+  "model_requested": "gpt-6.1-sol",
+  "engine": "codex-cli",
+  "input_hashes": {
+    "body.md": "0d2880c7c0b24fe6064e8423f8be34446621e04eeb3ecd3151bee34a8e5a9114",
+    "snapshot.json": "0ec8a8dfd733b57eccc4f434319a1e009c97006641e8b94577421c065ba67ce4",
+    "support/Readme.md": "99060686ccd5ebec427934edd56ecf7a2b19ad0cdb9328572fec5e96c264c183",
+    "support/build/test.js": "f624c9241d6a695a186647c835068f43038c2aaca07a5ee332c0dd54a9459914",
+    "support/eslint.config.mjs": "cfe43e59495ba9a7f360d5d0e610b042fd76b8f90ca98bd8e64d7f71b253bf29",
+    "support/package-lock.versions.json": "759612cc49e946f7dbb146ccecd7c1b51eef2755012e8c1f7b0769dfbef1d8ac",
+    "support/package.json": "7c2a3d22d83dc1561f8b855c338e8aef5ca9640026c80dfca4fb6b8e2a54451d",
+    "support/tsconfig.json": "504dbc6a2b3ec8b5a03134c45bb575c47e8a067867a9aa2a8dde1ba18c9be721",
+    "title.txt": "50e0418385eb4e71c18d5dc522ed68549241b11d4594f3702a09864557e5e0f5"
+  },
+  "skill_sha256": "dbfd948cd6b528d23b4e641bdb274be2ae237a0840a41753c58685e9614f7550",
+  "engine_version": "codex-cli 0.154.0",
+  "model_returned": "gpt-6.1-sol",
+  "usage": {
+    "input_tokens": 7596,
+    "input_tokens_details": {
+      "cache_write_tokens": 5639,
+      "cached_tokens": 1954
+    },
+    "output_tokens": 502,
+    "output_tokens_details": {
+      "reasoning_tokens": 425
+    },
+    "total_tokens": 8098
+  },
+  "cost": "unknown",
+  "errors": [],
+  "posting_available": false,
+  "public_actions": [],
+  "backend_revision_pinned": false,
+  "campaign_id": "hosted-v11-evaluation-20261029",
+  "evaluation_slot": 8,
+  "github_run_id": "40828172907",
+  "code_commit": "06427776a2afbc96b05e3554fe07359036594d07",
+  "inference_admitted": true,
+  "transport_request_attempts": 1,
+  "binding": {
+    "campaign_id": "hosted-v11-evaluation-20261029",
+    "slot": 8,
+    "run_id": "40828172907",
+    "attempt": 1,
+    "code_sha": "06427776a2afbc96b05e3554fe07359036594d07",
+    "freeze_sha256": "d235e3c7596d358479db5eb52f1606699026379b237d1ce7dadf934291ba373d",
+    "input_key": "78b77ef74dd4adf1dc2ebbef3637bab8dc5d8313a4d9876878a6e663819b71d7",
+    "event_key": "99e29a5b921a62fcdec64ca65e55272df5c2295d13445ff713b25699153cf95f",
+    "input_hashes": {
+      "body.md": "0d2880c7c0b24fe6064e8423f8be34446621e04eeb3ecd3151bee34a8e5a9114",
+      "snapshot.json": "0ec8a8dfd733b57eccc4f434319a1e009c97006641e8b94577421c065ba67ce4",
+      "support/Readme.md": "99060686ccd5ebec427934edd56ecf7a2b19ad0cdb9328572fec5e96c264c183",
+      "support/build/test.js": "f624c9241d6a695a186647c835068f43038c2aaca07a5ee332c0dd54a9459914",
+      "support/eslint.config.mjs": "cfe43e59495ba9a7f360d5d0e610b042fd76b8f90ca98bd8e64d7f71b253bf29",
+      "support/package-lock.versions.json": "759612cc49e946f7dbb146ccecd7c1b51eef2755012e8c1f7b0769dfbef1d8ac",
+      "support/package.json": "7c2a3d22d83dc1561f8b855c338e8aef5ca9640026c80dfca4fb6b8e2a54451d",
+      "support/tsconfig.json": "504dbc6a2b3ec8b5a03134c45bb575c47e8a067867a9aa2a8dde1ba18c9be721",
+      "title.txt": "50e0418385eb4e71c18d5dc522ed68549241b11d4594f3702a09864557e5e0f5"
+    },
+    "rolling_window_seconds": 60,
+    "rolling_limit": 10,
+    "campaign_limit": 20,
+    "public_actions": []
+  },
+  "actual_authentication": "API key only in trusted hosted gateway",
+  "configuration_sha256": "b80148da53c9d8196b5792a065ed8c134a8eec2856c938ccb635b9f9591c8c6d",
+  "configuration_version": "hosted-preview-v11-artifacts-v2",
+  "model_workspace": "/tmp/cs467-preview-d4ty_aas/workspace",
+  "host_isolation": {
+    "model_tools": [],
+    "model_filesystem_interface": "none; approved text supplied inline",
+    "model_network_interface": "none",
+    "host_harness_os_jail": false,
+    "host_network_firewall_tested": false,
+    "trusted_harness": "Python recorder/gateway and pinned Codex binary can access host resources; model cannot call them",
+    "gateway": "fixed HTTPS api.openai.com/v1/responses; no redirects; one request; tool rejection",
+    "credentials": "API key only in trusted gateway; harness-only read GitHub token; no state/post token in CLI"
+  },
+  "historical_cutoff": {
+    "kind": "opening_record",
+    "cutoff_utc": "2025-06-13T12:40:21Z",
+    "cutoff_semantics": "Opening-event payload at its recorded event time; not proof of byte-exact state at issue creation.",
+    "source_event_created_at": "2025-06-13T12:40:21Z",
+    "issue_updated_at_in_payload": "2025-06-13T12:40:20Z"
+  },
+  "skill_loaded_path": "/tmp/cs467-preview-d4ty_aas/workspace/.agents/skills/eslint-clarification/SKILL.md",
+  "engine_binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+  "engine_exit_code": 0,
+  "tool_calls": [],
+  "tool_calls_evidence": "guarded response.sse contains no tool items",
+  "redacted_artifacts": [],
+  "finished_at": "2026-10-29T06:16:53.789667+00:00"
+}

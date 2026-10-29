@@ -1,0 +1,32 @@
+{
+  "source_hashes": {
+    "body.md": "ece9b68942dfaa87727c8262eb680c411ab68423dd942b6343b2539717ee065d",
+    "snapshot.json": "87cbd367b2cfbd92e60a180a4be1b8ea0730157f869083904e5ca32c456c23d8",
+    "support/playground-1.json": "dd91fbbef85dbb67997cf6423ac8b32d2f185df690c7205103c470d8a7a8d2bd",
+    "title.txt": "3f041738bb6647ab00e55964978f398bf870a6dc286e93abbf0eeb546a463393"
+  },
+  "staged_files": {
+    "body.md": {
+      "bytes": 4062,
+      "sha256": "ece9b68942dfaa87727c8262eb680c411ab68423dd942b6343b2539717ee065d"
+    },
+    "snapshot.json": {
+      "bytes": 1700,
+      "sha256": "87cbd367b2cfbd92e60a180a4be1b8ea0730157f869083904e5ca32c456c23d8"
+    },
+    "support/playground-1.json": {
+      "bytes": 3817,
+      "sha256": "dd91fbbef85dbb67997cf6423ac8b32d2f185df690c7205103c470d8a7a8d2bd"
+    },
+    "title.txt": {
+      "bytes": 67,
+      "sha256": "3f041738bb6647ab00e55964978f398bf870a6dc286e93abbf0eeb546a463393"
+    }
+  },
+  "staged_bytes": 9646,
+  "excluded": [
+    "Git metadata",
+    "expected answers",
+    "later discussion"
+  ]
+}

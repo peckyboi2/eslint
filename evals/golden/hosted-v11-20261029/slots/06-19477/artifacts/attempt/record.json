@@ -1,0 +1,91 @@
+{
+  "run_id": "hosted-v11-20261029-06-19477-a1",
+  "started_at": "2026-10-29T06:14:32.826061+00:00",
+  "status": "completed",
+  "trigger": "owner-approved hosted historical evaluation",
+  "kind": "actual hosted API evaluation",
+  "verification_type": "hosted model evaluation",
+  "source_issue": 19477,
+  "model_requested": "gpt-6.1-sol",
+  "engine": "codex-cli",
+  "input_hashes": {
+    "body.md": "1b0d0ec7bb51bc0af9319f6afb392e0ffe3e356d6839cc6123fe7ac2f7aa5ac5",
+    "snapshot.json": "2331952f2a2ea637b5fc2ce82344ad43c16cf4d466ab77472014a1d75b25cfc3",
+    "support/playground-1.json": "15f8e590eb3bd4bf8ff8cf6b6c8f447e3e8f8bb4502589d82ba9de37a6dc1925",
+    "title.txt": "4923aad93b56b198d8181cd01ac8a6657f2085237d0f1ea693ae5b7e8e7e994d"
+  },
+  "skill_sha256": "dbfd948cd6b528d23b4e641bdb274be2ae237a0840a41753c58685e9614f7550",
+  "engine_version": "codex-cli 0.154.0",
+  "model_returned": "gpt-6.1-sol",
+  "usage": {
+    "input_tokens": 3265,
+    "input_tokens_details": {
+      "cache_write_tokens": 1308,
+      "cached_tokens": 1954
+    },
+    "output_tokens": 291,
+    "output_tokens_details": {
+      "reasoning_tokens": 212
+    },
+    "total_tokens": 3556
+  },
+  "cost": "unknown",
+  "errors": [],
+  "posting_available": false,
+  "public_actions": [],
+  "backend_revision_pinned": false,
+  "campaign_id": "hosted-v11-evaluation-20261029",
+  "evaluation_slot": 6,
+  "github_run_id": "40827964483",
+  "code_commit": "06427776a2afbc96b05e3554fe07359036594d07",
+  "inference_admitted": true,
+  "transport_request_attempts": 1,
+  "binding": {
+    "campaign_id": "hosted-v11-evaluation-20261029",
+    "slot": 6,
+    "run_id": "40827964483",
+    "attempt": 1,
+    "code_sha": "06427776a2afbc96b05e3554fe07359036594d07",
+    "freeze_sha256": "d235e3c7596d358479db5eb52f1606699026379b237d1ce7dadf934291ba373d",
+    "input_key": "e243854dc8a263899a83fb381c7aa4afd0c6f7ad1bacb65e3c47b112e8ef8352",
+    "event_key": "becc88dd6e18dfa7f5d85d6c5e756356d312efc667bb114b20ae2d88fca2c5bd",
+    "input_hashes": {
+      "body.md": "1b0d0ec7bb51bc0af9319f6afb392e0ffe3e356d6839cc6123fe7ac2f7aa5ac5",
+      "snapshot.json": "2331952f2a2ea637b5fc2ce82344ad43c16cf4d466ab77472014a1d75b25cfc3",
+      "support/playground-1.json": "15f8e590eb3bd4bf8ff8cf6b6c8f447e3e8f8bb4502589d82ba9de37a6dc1925",
+      "title.txt": "4923aad93b56b198d8181cd01ac8a6657f2085237d0f1ea693ae5b7e8e7e994d"
+    },
+    "rolling_window_seconds": 60,
+    "rolling_limit": 10,
+    "campaign_limit": 20,
+    "public_actions": []
+  },
+  "actual_authentication": "API key only in trusted hosted gateway",
+  "configuration_sha256": "b80148da53c9d8196b5792a065ed8c134a8eec2856c938ccb635b9f9591c8c6d",
+  "configuration_version": "hosted-preview-v11-artifacts-v2",
+  "model_workspace": "/tmp/cs467-preview-_e_8p5uw/workspace",
+  "host_isolation": {
+    "model_tools": [],
+    "model_filesystem_interface": "none; approved text supplied inline",
+    "model_network_interface": "none",
+    "host_harness_os_jail": false,
+    "host_network_firewall_tested": false,
+    "trusted_harness": "Python recorder/gateway and pinned Codex binary can access host resources; model cannot call them",
+    "gateway": "fixed HTTPS api.openai.com/v1/responses; no redirects; one request; tool rejection",
+    "credentials": "API key only in trusted gateway; harness-only read GitHub token; no state/post token in CLI"
+  },
+  "historical_cutoff": {
+    "kind": "opening_record",
+    "cutoff_utc": "2025-03-04T20:34:50Z",
+    "cutoff_semantics": "Opening-event payload at its recorded event time; not proof of byte-exact state at issue creation.",
+    "source_event_created_at": "2025-03-04T20:34:50Z",
+    "issue_updated_at_in_payload": "2025-03-04T20:34:49Z"
+  },
+  "skill_loaded_path": "/tmp/cs467-preview-_e_8p5uw/workspace/.agents/skills/eslint-clarification/SKILL.md",
+  "engine_binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+  "engine_exit_code": 0,
+  "tool_calls": [],
+  "tool_calls_evidence": "guarded response.sse contains no tool items",
+  "redacted_artifacts": [],
+  "finished_at": "2026-10-29T06:14:42.746487+00:00"
+}

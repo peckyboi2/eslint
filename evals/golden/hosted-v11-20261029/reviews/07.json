@@ -1,0 +1,8 @@
+{
+  "slot": 7,
+  "actual_decision": "no_action",
+  "decision_match": true,
+  "assessment": "Correctly finds the textual rule/configuration, source and expected/actual diagnostics sufficient without the unpreserved screenshot.",
+  "criteria": [],
+  "quality_pass": null
+}

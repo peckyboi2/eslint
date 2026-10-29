@@ -39,7 +39,7 @@ class HostedCandidateVerificationTests(unittest.TestCase):
         result=automatic.verify(self.root)
         self.assertEqual(result['current_candidate']['version'],'hosted-preview-v11-artifacts-v2')
         self.assertEqual(result['current_candidate']['manifest_path'],'evals/hosted-v11/candidate.json')
-        self.assertFalse(result['current_candidate']['evaluated'])
+        self.assertEqual(result['current_candidate']['evaluated'],'observed_current_evaluation' in self.candidate())
         self.assertEqual(result['current_candidate']['hosted'],'observed_current_hosted_smoke' in self.candidate())
         self.assertEqual(result['decision_matches'],{'count':9,'denominator':10})
         self.assertEqual(result['retained_failed_case'],19924)
@@ -70,6 +70,7 @@ class HostedCandidateVerificationTests(unittest.TestCase):
 
     def test_source_hashes_are_not_a_new_accuracy_claim(self):
         candidate=self.candidate()
+        candidate.pop('observed_current_evaluation',None)
         candidate['evaluated']=True
         with self.assertRaisesRegex(ValueError,'Preparation manifest'):
             automatic.verify_hosted_configuration(self.root,candidate)
@@ -98,6 +99,12 @@ class HostedCandidateVerificationTests(unittest.TestCase):
         automatic.verify_candidate_scope(candidate)
         candidate['version']=automatic.LEGACY_VERSION
         with self.assertRaisesRegex(ValueError,'Candidate scope'):
+            automatic.verify_candidate_scope(candidate)
+
+    def test_manifest_cannot_depend_on_ignored_local_bytecode(self):
+        candidate=self.candidate()
+        candidate['files']['scripts/clarifier/__pycache__/local.pyc']='0'*64
+        with self.assertRaisesRegex(ValueError,'bytecode'):
             automatic.verify_candidate_scope(candidate)
 
     def test_reviewed_guides_reject_later_unrecorded_edits(self):

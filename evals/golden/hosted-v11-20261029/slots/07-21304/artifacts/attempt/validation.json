@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 21304,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "no_action",
+  "validated_output": {
+    "decision": "no_action",
+    "rationale": "The report supplies environment versions, the default parser, a complete rule configuration, triggering source, and expected versus observed diagnostics. The preserved playground content also supplies its configuration and a reported `g`-flag comparison. This is sufficient to reconstruct the reproduction without the screenshot, linked page, or additional project files.",
+    "clarification": null
+  }
+}

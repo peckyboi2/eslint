@@ -1,0 +1,91 @@
+{
+  "run_id": "hosted-v11-20261029-07-21304-a1",
+  "started_at": "2026-10-29T06:15:33.260985+00:00",
+  "status": "completed",
+  "trigger": "owner-approved hosted historical evaluation",
+  "kind": "actual hosted API evaluation",
+  "verification_type": "hosted model evaluation",
+  "source_issue": 21304,
+  "model_requested": "gpt-6.1-sol",
+  "engine": "codex-cli",
+  "input_hashes": {
+    "body.md": "ece9b68942dfaa87727c8262eb680c411ab68423dd942b6343b2539717ee065d",
+    "snapshot.json": "87cbd367b2cfbd92e60a180a4be1b8ea0730157f869083904e5ca32c456c23d8",
+    "support/playground-1.json": "dd91fbbef85dbb67997cf6423ac8b32d2f185df690c7205103c470d8a7a8d2bd",
+    "title.txt": "3f041738bb6647ab00e55964978f398bf870a6dc286e93abbf0eeb546a463393"
+  },
+  "skill_sha256": "dbfd948cd6b528d23b4e641bdb274be2ae237a0840a41753c58685e9614f7550",
+  "engine_version": "codex-cli 0.154.0",
+  "model_returned": "gpt-6.1-sol",
+  "usage": {
+    "input_tokens": 6282,
+    "input_tokens_details": {
+      "cache_write_tokens": 4325,
+      "cached_tokens": 1954
+    },
+    "output_tokens": 308,
+    "output_tokens_details": {
+      "reasoning_tokens": 227
+    },
+    "total_tokens": 6590
+  },
+  "cost": "unknown",
+  "errors": [],
+  "posting_available": false,
+  "public_actions": [],
+  "backend_revision_pinned": false,
+  "campaign_id": "hosted-v11-evaluation-20261029",
+  "evaluation_slot": 7,
+  "github_run_id": "40828066327",
+  "code_commit": "06427776a2afbc96b05e3554fe07359036594d07",
+  "inference_admitted": true,
+  "transport_request_attempts": 1,
+  "binding": {
+    "campaign_id": "hosted-v11-evaluation-20261029",
+    "slot": 7,
+    "run_id": "40828066327",
+    "attempt": 1,
+    "code_sha": "06427776a2afbc96b05e3554fe07359036594d07",
+    "freeze_sha256": "d235e3c7596d358479db5eb52f1606699026379b237d1ce7dadf934291ba373d",
+    "input_key": "86d41b3414fe326e0a1159de5d1aedee1e874f5883c32f42e74c66fff76a422f",
+    "event_key": "212f2ee7a356152687ff7617a5928bac9092693513f9b1093a41b9503aa2fa8d",
+    "input_hashes": {
+      "body.md": "ece9b68942dfaa87727c8262eb680c411ab68423dd942b6343b2539717ee065d",
+      "snapshot.json": "87cbd367b2cfbd92e60a180a4be1b8ea0730157f869083904e5ca32c456c23d8",
+      "support/playground-1.json": "dd91fbbef85dbb67997cf6423ac8b32d2f185df690c7205103c470d8a7a8d2bd",
+      "title.txt": "3f041738bb6647ab00e55964978f398bf870a6dc286e93abbf0eeb546a463393"
+    },
+    "rolling_window_seconds": 60,
+    "rolling_limit": 10,
+    "campaign_limit": 20,
+    "public_actions": []
+  },
+  "actual_authentication": "API key only in trusted hosted gateway",
+  "configuration_sha256": "b80148da53c9d8196b5792a065ed8c134a8eec2856c938ccb635b9f9591c8c6d",
+  "configuration_version": "hosted-preview-v11-artifacts-v2",
+  "model_workspace": "/tmp/cs467-preview-7pwbnkuq/workspace",
+  "host_isolation": {
+    "model_tools": [],
+    "model_filesystem_interface": "none; approved text supplied inline",
+    "model_network_interface": "none",
+    "host_harness_os_jail": false,
+    "host_network_firewall_tested": false,
+    "trusted_harness": "Python recorder/gateway and pinned Codex binary can access host resources; model cannot call them",
+    "gateway": "fixed HTTPS api.openai.com/v1/responses; no redirects; one request; tool rejection",
+    "credentials": "API key only in trusted gateway; harness-only read GitHub token; no state/post token in CLI"
+  },
+  "historical_cutoff": {
+    "kind": "early_pre_response_snapshot",
+    "cutoff_utc": "2026-09-04T03:00:00Z",
+    "cutoff_semantics": "Exclusive conservative upper bound from the archive hour. The exact capture moment is not established. This is not an exact issue-opening replay.",
+    "source_event_created_at": "2026-09-04T02:12:13Z",
+    "issue_updated_at_in_payload": "2026-09-04T02:12:56Z"
+  },
+  "skill_loaded_path": "/tmp/cs467-preview-7pwbnkuq/workspace/.agents/skills/eslint-clarification/SKILL.md",
+  "engine_binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+  "engine_exit_code": 0,
+  "tool_calls": [],
+  "tool_calls_evidence": "guarded response.sse contains no tool items",
+  "redacted_artifacts": [],
+  "finished_at": "2026-10-29T06:15:43.214336+00:00"
+}

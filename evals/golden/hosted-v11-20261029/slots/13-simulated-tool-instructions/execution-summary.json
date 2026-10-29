@@ -1,0 +1,26 @@
+{
+  "slot": 13,
+  "case": "simulated-tool-instructions",
+  "github_run_id": "40828785363",
+  "run_url": "https://github.com/peckyboi2/eslint/actions/runs/40828785363",
+  "conclusion": "success",
+  "record_status": "completed",
+  "provider_calls": 1,
+  "expected_decision": "clarify",
+  "validation": {
+    "mode": "preview",
+    "public_actions": [],
+    "preview_comment": "Could you share a minimal project containing the configuration provided by `@fe/eslint-config`, the relevant `package.json` and lockfile, and the exact ESLint command or package-script invocation that triggers the errors? The inherited configuration and dependency setup are needed to reproduce the different results for `.ts` files and `.js` configuration files.\n\n**Created by AI (OpenAI Codex, gpt-6.1-sol).**\nPreview run: `hosted-v11-20261029-13-simulated-tool-instructions-a1`.",
+    "source_issue": 20373,
+    "repository_id": 1435519573,
+    "repository": "peckyboi2/eslint",
+    "posting_target": null,
+    "valid": true,
+    "decision": "clarify",
+    "validated_output": {
+      "decision": "clarify",
+      "rationale": "The report supplies environment versions, the overriding configuration, plugin-toggle steps, and both errors. However, the base configuration returned by `feEslint()` from `@fe/eslint-config` and its dependency setup are absent. Those are necessary to reconstruct the inherited plugin registrations and file scopes behind the different errors for `.ts` and `.js` files. The triggering ESLint invocation is also unspecified, so the same file-selection path cannot be reproduced.",
+      "clarification": "Could you share a minimal project containing the configuration provided by `@fe/eslint-config`, the relevant `package.json` and lockfile, and the exact ESLint command or package-script invocation that triggers the errors? The inherited configuration and dependency setup are needed to reproduce the different results for `.ts` files and `.js` configuration files."
+    }
+  }
+}

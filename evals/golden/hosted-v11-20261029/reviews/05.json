@@ -1,0 +1,8 @@
+{
+  "slot": 5,
+  "actual_decision": "no_action",
+  "decision_match": true,
+  "assessment": "Correctly recognizes a complete Linter.verifyAndFix API example. An extra CLI command or project is unnecessary.",
+  "criteria": [],
+  "quality_pass": null
+}

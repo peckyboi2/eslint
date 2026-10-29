@@ -1,0 +1,26 @@
+{
+  "slot": 3,
+  "case": "19924",
+  "github_run_id": "40827642208",
+  "run_url": "https://github.com/peckyboi2/eslint/actions/runs/40827642208",
+  "conclusion": "success",
+  "record_status": "completed",
+  "provider_calls": 1,
+  "expected_decision": "human_review",
+  "validation": {
+    "mode": "preview",
+    "public_actions": [],
+    "preview_comment": null,
+    "source_issue": 19924,
+    "repository_id": 1435519573,
+    "repository": "peckyboi2/eslint",
+    "posting_target": null,
+    "valid": true,
+    "decision": "no_action",
+    "validated_output": {
+      "decision": "no_action",
+      "rationale": "The report supplies the Node, npm and ESLint versions, Windows environment, exact command, approximate 9,000-file workload, expected result and EMFILE stack trace during ESLint.outputFixes file writes. This sufficiently describes a large-scale autofix reproduction path without requiring the original repository or rule configuration; no particular rule or source construct is implicated.",
+      "clarification": null
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/home/runner/work/_temp/clarifier-bin/codex",
+    "exec",
+    "--strict-config",
+    "--ephemeral",
+    "--ignore-rules",
+    "--skip-git-repo-check",
+    "--json",
+    "--color",
+    "never",
+    "-C",
+    "/tmp/cs467-preview-7pwbnkuq/workspace",
+    "-"
+  ],
+  "environment_keys": [
+    "CODEX_HOME",
+    "LANG",
+    "PATH",
+    "TMPDIR"
+  ],
+  "stdin_sha256": "8e3721d915a96e4ef5e9a976ec87ce809299a69f93ce86259bf3dd72439f3fd8",
+  "engine_config_sha256": "e4235e70c877a0e6feccdd0b391857c39389b7019dac0ced3a8309666b01e394"
+}

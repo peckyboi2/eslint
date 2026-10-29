@@ -1,0 +1,10 @@
+{
+  "stage": "Offline postrun verifier tests",
+  "test": "test_old_and_new_are_distinct",
+  "original_result": "47 passed; one stale assertion failed in 48 tests",
+  "error": "AssertionError: True is not false",
+  "cause": "Legacy preparation test assumed the current candidate could never be evaluated, even after all 13 genuine hosted records verified.",
+  "correction": "Require evaluated to agree with presence of fully verified current evidence; retain no-proof accuracy rejection and six new evidence corruption tests.",
+  "model_changes": 0,
+  "provider_retries": 0
+}

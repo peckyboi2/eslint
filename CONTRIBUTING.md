@@ -37,7 +37,7 @@ Our full contribution guidelines can be found at:
 
 - Disclose AI-assisted material and the actual tool/model used. Put attribution in contribution metadata, never inside preserved historical evidence.
 - A human must understand, review and take responsibility for submitted work. Humans respond to maintainer feedback.
-- Sandbox maintainers are accountable for this fork and review changes to agent instructions, models, permissions, budgets and output handlers, and decisions to enable or disable automation. The currently authorized owner is `peckyboi2`;
+- Sandbox maintainers are accountable for this fork and review changes to agent instructions, models, permissions, budgets and output handlers, and decisions to enable or disable automation. The currently authorized owner is `peckyboi2`.
 - Automated public contributions must identify the bot/application and disclose AI assistance using verified model and run provenance.
 
 ### Verification and evidence

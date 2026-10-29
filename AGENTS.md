@@ -106,6 +106,7 @@ This fork hosts an automatic ESLint report-clarification preview workflow. Assig
 - `.github/workflows/clarifier-stop.yml`: independent owner-only manual stop. `clarifier-approve.yml` remains disabled and its code blocks public posting.
 - `scripts/clarifier/tests/`: deterministic infrastructure/safeguard tests. `scripts/automatic_tests/` checks evidence integrity and rejects corruption.
 - `scripts/verify_submission.py`: current complete-tree verification plus exact historical replay. `scripts/verify_baseline.py` is a historical layout check and intentionally rejects later additions; do not use it as the current submission check.
+- `scripts/evaluate_hosted.py` and `clarifier-evaluate.yml`: separately authorized owner-only historical replay. The completed 13-slot campaign is exhausted and its manual workflow disabled; do not rerun consumed slots or treat the temporary evaluation window as the automatic issue policy.
 - `evals/golden/`: historical inputs, evaluator-only expectations and indexed results. `evals/hosted-v11/`: current runtime identity, hosted integration evidence and update records. `evals/automatic-v10/` and earlier records remain history.
 - `evals/development-evidence.tar.gz`: data-only development history; do not execute archived content. `evals/runs/`, `evals/platform-tests/` and `evals/checks/` contain retained evidence and development outputs; ignored status does not permit overwriting preserved records.
 

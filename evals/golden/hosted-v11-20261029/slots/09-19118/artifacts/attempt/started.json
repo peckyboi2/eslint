@@ -1,0 +1,21 @@
+{
+  "run_id": "hosted-v11-20261029-09-19118-a1",
+  "started_at": "2026-10-29T06:17:50.381201+00:00",
+  "status": "started",
+  "trigger": "manual Milestone B authorised development preview",
+  "kind": "actual Codex ChatGPT dry run",
+  "verification_type": "model dry run",
+  "source_issue": 19118,
+  "model_requested": "unknown",
+  "engine": "unknown",
+  "input_hashes": "unknown",
+  "skill_sha256": "unknown",
+  "engine_version": "unknown",
+  "model_returned": "unknown",
+  "usage": "unknown",
+  "cost": "unknown",
+  "errors": [],
+  "posting_available": false,
+  "public_actions": [],
+  "backend_revision_pinned": false
+}

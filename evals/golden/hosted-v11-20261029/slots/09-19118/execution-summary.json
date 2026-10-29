@@ -1,0 +1,26 @@
+{
+  "slot": 9,
+  "case": "19118",
+  "github_run_id": "40828288586",
+  "run_url": "https://github.com/peckyboi2/eslint/actions/runs/40828288586",
+  "conclusion": "success",
+  "record_status": "completed",
+  "provider_calls": 1,
+  "expected_decision": "no_action",
+  "validation": {
+    "mode": "preview",
+    "public_actions": [],
+    "preview_comment": null,
+    "source_issue": 19118,
+    "repository_id": 1435519573,
+    "repository": "peckyboi2/eslint",
+    "posting_target": null,
+    "valid": true,
+    "decision": "no_action",
+    "validated_output": {
+      "decision": "no_action",
+      "rationale": "The report and supporting files supply ESLint 9.14.0, the flat configuration, dependency records, source input, directory layout, and exact CLI invocations. They also establish the outside-base-path warning, the expectation that the external file be linted, and a working ESLint 8 comparison. This is sufficient to reconstruct the reported path without additional information.",
+      "clarification": null
+    }
+  }
+}

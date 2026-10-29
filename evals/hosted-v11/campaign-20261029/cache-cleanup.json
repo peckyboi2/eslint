@@ -1,0 +1,13 @@
+{
+  "reason": "Final staged-Git check found six preexisting ignored local bytecode files named by earlier manifests but never committed. They are generated data, not runtime source or assignment evidence.",
+  "files": {
+    "scripts/clarifier/__pycache__/__init__.cpython-314.pyc": "4f984a04a8b0424b10ec43d2830b929e766b3169ee45ced7aecae8c25b5e69a7",
+    "scripts/clarifier/controls/__pycache__/__init__.cpython-314.pyc": "395f28e2f086649ccde6a97d299af59b863006063a34d495314ebba0be404b12",
+    "scripts/clarifier/controls/__pycache__/ledger.cpython-314.pyc": "5308a6b19872302a5f0fa0bbba8e757a5e008fad5dfea3a167165c52825dc3c5",
+    "scripts/clarifier/controls/__pycache__/policy.cpython-314.pyc": "de227f23e86e808cd21a4c214d62506c244f23aec440aa14a34464487dbfd616",
+    "scripts/clarifier/shared/__pycache__/__init__.cpython-314.pyc": "dd8e8d1acbac2e68f69073c4a71f7a011b2bb218303a05848b18cc6eecd98f93",
+    "scripts/clarifier/shared/__pycache__/errors.cpython-314.pyc": "168b6f4c191b307d3c5b97effb0ce93d3169b96cff645fd1454fb3eb5684e67a"
+  },
+  "preservation": "Original six bytes retained in data-only preexisting-local-cache-data.tar.gz; do not import or execute. Prior manifests remain unchanged.",
+  "change": "Removed generated files from active tree/manifest and reject future local bytecode dependencies. No inference source, frozen input, label, output or consumed reservation changed."
+}

@@ -1,0 +1,740 @@
+admission	Set up job	﻿2026-10-29T06:10:44.0777168Z Current runner version: '2.338.0'
+admission	Set up job	2026-10-29T06:10:44.0821612Z ##[group]Runner Image Provisioner
+admission	Set up job	2026-10-29T06:10:44.0822778Z Hosted Compute Agent
+admission	Set up job	2026-10-29T06:10:44.0823553Z Version: 20261021.618
+admission	Set up job	2026-10-29T06:10:44.0824357Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+admission	Set up job	2026-10-29T06:10:44.0825470Z Build Date: 2026-10-21T00:45:21Z
+admission	Set up job	2026-10-29T06:10:44.0826378Z Worker ID: {e17659d7-bbf8-479f-af36-c86b303bb09c}
+admission	Set up job	2026-10-29T06:10:44.0827610Z Region: eastus
+admission	Set up job	2026-10-29T06:10:44.0828345Z Cloud: Azure
+admission	Set up job	2026-10-29T06:10:44.0829046Z ##[endgroup]
+admission	Set up job	2026-10-29T06:10:44.0830799Z ##[group]Operating System
+admission	Set up job	2026-10-29T06:10:44.0831587Z Ubuntu
+admission	Set up job	2026-10-29T06:10:44.0832264Z 24.04.5
+admission	Set up job	2026-10-29T06:10:44.0832876Z LTS
+admission	Set up job	2026-10-29T06:10:44.0833450Z ##[endgroup]
+admission	Set up job	2026-10-29T06:10:44.0834147Z ##[group]Runner Image
+admission	Set up job	2026-10-29T06:10:44.0834891Z Image: ubuntu-24.04
+admission	Set up job	2026-10-29T06:10:44.0835578Z Version: 20261025.353.1
+admission	Set up job	2026-10-29T06:10:44.0837989Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+admission	Set up job	2026-10-29T06:10:44.0840233Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+admission	Set up job	2026-10-29T06:10:44.0841382Z ##[endgroup]
+admission	Set up job	2026-10-29T06:10:44.0842752Z ##[group]GITHUB_TOKEN Permissions
+admission	Set up job	2026-10-29T06:10:44.0845436Z Actions: read
+admission	Set up job	2026-10-29T06:10:44.0846163Z Contents: write
+admission	Set up job	2026-10-29T06:10:44.0847061Z Metadata: read
+admission	Set up job	2026-10-29T06:10:44.0847680Z ##[endgroup]
+admission	Set up job	2026-10-29T06:10:44.0850154Z Secret source: Actions
+admission	Set up job	2026-10-29T06:10:44.0851280Z Cache mode: write
+admission	Set up job	2026-10-29T06:10:44.0852485Z Prepare workflow directory
+admission	Set up job	2026-10-29T06:10:44.1209684Z Prepare all required actions
+admission	Set up job	2026-10-29T06:10:44.1261500Z Getting action download info
+admission	Set up job	2026-10-29T06:10:44.3522322Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+admission	Set up job	2026-10-29T06:10:44.5188743Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+admission	Set up job	2026-10-29T06:10:44.7485971Z Complete job name: admission
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	﻿2026-10-29T06:10:44.8432746Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8433948Z with:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8434478Z   ref: 06427776a2afbc96b05e3554fe07359036594d07
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8435163Z   persist-credentials: false
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8435756Z   repository: peckyboi2/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8440916Z   token: ***
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8441411Z   ssh-strict: true
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8441907Z   ssh-user: git
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8442384Z   clean: true
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8442884Z   sparse-checkout-cone-mode: true
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8443482Z   fetch-depth: 1
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8443967Z   fetch-tags: false
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8444471Z   show-progress: true
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8444986Z   lfs: false
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8445450Z   submodules: false
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8445951Z   set-safe-directory: true
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:44.8446905Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2221336Z Syncing repository: peckyboi2/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2224245Z ##[group]Getting Git version info
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2226060Z Working directory is '/home/runner/work/eslint/eslint'
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2228493Z [command]/usr/bin/git version
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2330924Z git version 2.56.0
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2355584Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2374477Z Temporarily overriding HOME='/home/runner/work/_temp/bcb9e181-b6a2-4f99-820f-d91871b7f5d8' before making global git config changes
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2377444Z Adding repository directory to the temporary git global config as a safe directory
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2380155Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eslint/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2455939Z Deleting the contents of '/home/runner/work/eslint/eslint'
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2461176Z ##[group]Initializing the repository
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2466454Z [command]/usr/bin/git init /home/runner/work/eslint/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2622828Z hint: Using 'master' as the name for the initial branch. This default branch name
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2625486Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2627543Z hint: to use in all of your new repositories, which will suppress this warning,
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2629081Z hint: call:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2629787Z hint:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2630679Z hint: 	git config --global init.defaultBranch <name>
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2631873Z hint:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2633059Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2634770Z hint: 'development'. The just-created branch can be renamed via this command:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2636243Z hint:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2637333Z hint: 	git branch -m <name>
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2638212Z hint:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2639325Z hint: Disable this message with "git config set advice.defaultBranchName false"
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2658618Z Initialized empty Git repository in /home/runner/work/eslint/eslint/.git/
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2676268Z [command]/usr/bin/git remote add origin https://github.com/peckyboi2/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2734697Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2736297Z ##[group]Disabling automatic garbage collection
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2739034Z [command]/usr/bin/git config --local gc.auto 0
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2780344Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2782841Z ##[group]Setting up auth
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2789246Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.2853489Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.3327974Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.3377171Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.3630106Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.3684411Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.3686236Z ##[group]Fetching the repository
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:45.3699052Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 06427776a2afbc96b05e3554fe07359036594d07
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:46.7361386Z From https://github.com/peckyboi2/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:46.7363823Z  * branch            06427776a2afbc96b05e3554fe07359036594d07 -> FETCH_HEAD
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:46.7367616Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:46.7368890Z ##[group]Determining the checkout info
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:46.7370720Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:46.7377975Z [command]/usr/bin/git sparse-checkout disable
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:46.7508160Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:46.7558618Z ##[group]Checking out the ref
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:46.7564227Z [command]/usr/bin/git checkout --progress --force 06427776a2afbc96b05e3554fe07359036594d07
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1476287Z Note: switching to '06427776a2afbc96b05e3554fe07359036594d07'.
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1477360Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1477923Z You are in 'detached HEAD' state. You can look around, make experimental
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1478874Z changes and commit them, and you can discard any commits you make in this
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1479705Z state without impacting any branches by switching back to a branch.
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1480301Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1480739Z If you want to create a new branch to retain commits you create, you may
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1481687Z do so (now or later) by using -c with the switch command. Example:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1482234Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1482499Z   git switch -c <new-branch-name>
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1482863Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1483113Z Or undo this operation with:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1483461Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1483683Z   git switch -
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1484607Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1485042Z Turn off this advice by setting config variable advice.detachedHead to false
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1485719Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1486052Z HEAD is now at 0642777 test: freeze hosted clarification evaluation campaign
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1502668Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1571833Z [command]/usr/bin/git log -1 --format=%H
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1634906Z 06427776a2afbc96b05e3554fe07359036594d07
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1650247Z ##[group]Removing auth
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1655280Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1708532Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.1996484Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.2037777Z http.https://github.com/.extraheader
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.2049569Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.2101877Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:47.2377552Z ##[endgroup]
+admission	Run python3 -B scripts/evaluate_hosted.py admit	﻿2026-10-29T06:10:47.2671729Z ##[group]Run python3 -B scripts/evaluate_hosted.py admit
+admission	Run python3 -B scripts/evaluate_hosted.py admit	2026-10-29T06:10:47.2672429Z ^[[36;1mpython3 -B scripts/evaluate_hosted.py admit^[[0m
+admission	Run python3 -B scripts/evaluate_hosted.py admit	2026-10-29T06:10:47.2697063Z shell: /usr/bin/bash -e {0}
+admission	Run python3 -B scripts/evaluate_hosted.py admit	2026-10-29T06:10:47.2697452Z env:
+admission	Run python3 -B scripts/evaluate_hosted.py admit	2026-10-29T06:10:47.2733037Z   TRUSTED_GITHUB_CONTEXT: {
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "token": "***",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "job": "admission",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "ref": "refs/heads/main",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "sha": "06427776a2afbc96b05e3554fe07359036594d07",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "repository": "peckyboi2/eslint",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "repository_owner": "peckyboi2",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "repository_owner_id": "234542779",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "repositoryUrl": "git://github.com/peckyboi2/eslint.git",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "run_id": "40827642208",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "run_number": "3",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "retention_days": "90",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "run_attempt": "1",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "artifact_cache_size_limit": "10",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "repository_visibility": "public",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "actor_id": "234542779",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "actor": "peckyboi2",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "workflow": "Frozen clarification evaluation",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "head_ref": "",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "base_ref": "",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "event_name": "workflow_dispatch",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "server_url": "https://github.com",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "api_url": "https://api.github.com",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "graphql_url": "https://api.github.com/graphql",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "ref_name": "main",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "ref_protected": false,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "ref_type": "branch",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "secret_source": "Actions",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "event": {
+admission	Run python3 -B scripts/evaluate_hosted.py admit	    "inputs": {
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "slot": "3"
+admission	Run python3 -B scripts/evaluate_hosted.py admit	    },
+admission	Run python3 -B scripts/evaluate_hosted.py admit	    "ref": "refs/heads/main",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	    "repository": {
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "id": 1435519573,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "node_id": "R_kgDOVZBKVQ",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "name": "eslint",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "full_name": "peckyboi2/eslint",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "private": false,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "owner": {
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "login": "peckyboi2",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "id": 234542779,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "node_id": "U_kgDODfrWuw",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "avatar_url": "https://avatars.githubusercontent.com/u/234542779?v=4",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "gravatar_id": "",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "url": "https://api.github.com/users/peckyboi2",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "html_url": "https://github.com/peckyboi2",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "followers_url": "https://api.github.com/users/peckyboi2/followers",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "following_url": "https://api.github.com/users/peckyboi2/following{/other_user}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "gists_url": "https://api.github.com/users/peckyboi2/gists{/gist_id}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "starred_url": "https://api.github.com/users/peckyboi2/starred{/owner}{/repo}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "subscriptions_url": "https://api.github.com/users/peckyboi2/subscriptions",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "organizations_url": "https://api.github.com/users/peckyboi2/orgs",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "repos_url": "https://api.github.com/users/peckyboi2/repos",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "events_url": "https://api.github.com/users/peckyboi2/events{/privacy}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "received_events_url": "https://api.github.com/users/peckyboi2/received_events",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "type": "User",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "user_view_type": "public",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "site_admin": false
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      },
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "html_url": "https://github.com/peckyboi2/eslint",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "description": "Find and fix problems in your JavaScript code.",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "fork": true,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "url": "https://api.github.com/repos/peckyboi2/eslint",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "forks_url": "https://api.github.com/repos/peckyboi2/eslint/forks",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "keys_url": "https://api.github.com/repos/peckyboi2/eslint/keys{/key_id}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "collaborators_url": "https://api.github.com/repos/peckyboi2/eslint/collaborators{/collaborator}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "teams_url": "https://api.github.com/repos/peckyboi2/eslint/teams",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "hooks_url": "https://api.github.com/repos/peckyboi2/eslint/hooks",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "issue_events_url": "https://api.github.com/repos/peckyboi2/eslint/issues/events{/number}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "events_url": "https://api.github.com/repos/peckyboi2/eslint/events",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "assignees_url": "https://api.github.com/repos/peckyboi2/eslint/assignees{/user}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "branches_url": "https://api.github.com/repos/peckyboi2/eslint/branches{/branch}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "tags_url": "https://api.github.com/repos/peckyboi2/eslint/tags",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "blobs_url": "https://api.github.com/repos/peckyboi2/eslint/git/blobs{/sha}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "git_tags_url": "https://api.github.com/repos/peckyboi2/eslint/git/tags{/sha}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "git_refs_url": "https://api.github.com/repos/peckyboi2/eslint/git/refs{/sha}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "trees_url": "https://api.github.com/repos/peckyboi2/eslint/git/trees{/sha}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "statuses_url": "https://api.github.com/repos/peckyboi2/eslint/statuses/{sha}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "languages_url": "https://api.github.com/repos/peckyboi2/eslint/languages",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "stargazers_url": "https://api.github.com/repos/peckyboi2/eslint/stargazers",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "contributors_url": "https://api.github.com/repos/peckyboi2/eslint/contributors",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "subscribers_url": "https://api.github.com/repos/peckyboi2/eslint/subscribers",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "subscription_url": "https://api.github.com/repos/peckyboi2/eslint/subscription",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "commits_url": "https://api.github.com/repos/peckyboi2/eslint/commits{/sha}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "git_commits_url": "https://api.github.com/repos/peckyboi2/eslint/git/commits{/sha}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "comments_url": "https://api.github.com/repos/peckyboi2/eslint/comments{/number}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "issue_comment_url": "https://api.github.com/repos/peckyboi2/eslint/issues/comments{/number}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "contents_url": "https://api.github.com/repos/peckyboi2/eslint/contents/{+path}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "compare_url": "https://api.github.com/repos/peckyboi2/eslint/compare/{base}...{head}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "merges_url": "https://api.github.com/repos/peckyboi2/eslint/merges",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "archive_url": "https://api.github.com/repos/peckyboi2/eslint/{archive_format}{/ref}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "downloads_url": "https://api.github.com/repos/peckyboi2/eslint/downloads",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "issues_url": "https://api.github.com/repos/peckyboi2/eslint/issues{/number}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "pulls_url": "https://api.github.com/repos/peckyboi2/eslint/pulls{/number}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "milestones_url": "https://api.github.com/repos/peckyboi2/eslint/milestones{/number}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "notifications_url": "https://api.github.com/repos/peckyboi2/eslint/notifications{?since,all,participating}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "labels_url": "https://api.github.com/repos/peckyboi2/eslint/labels{/name}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "releases_url": "https://api.github.com/repos/peckyboi2/eslint/releases{/id}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "deployments_url": "https://api.github.com/repos/peckyboi2/eslint/deployments",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "created_at": "2026-10-27T09:33:31Z",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "updated_at": "2026-10-29T06:06:53Z",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "pushed_at": "2026-10-29T06:09:22Z",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "git_url": "git://github.com/peckyboi2/eslint.git",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "ssh_url": "git@github.com:peckyboi2/eslint.git",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "clone_url": "https://github.com/peckyboi2/eslint.git",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "svn_url": "https://github.com/peckyboi2/eslint",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "homepage": "https://eslint.org",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "size": 55344,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "stargazers_count": 0,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "watchers_count": 0,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "language": "JavaScript",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "has_issues": true,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "has_projects": true,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "has_downloads": false,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "has_wiki": false,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "has_pages": false,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "has_discussions": false,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "forks_count": 0,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "mirror_url": null,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "archived": false,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "disabled": false,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "open_issues_count": 2,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "license": {
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "key": "mit",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "name": "MIT License",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "spdx_id": "MIT",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "url": "https://api.github.com/licenses/mit",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	        "node_id": "MDc6TGljZW5zZTEz"
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      },
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "allow_forking": true,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "is_template": false,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "web_commit_signoff_required": false,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "has_pull_requests": true,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "pull_request_creation_policy": "all",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "topics": [],
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "visibility": "public",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "forks": 0,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "open_issues": 2,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "watchers": 0,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "default_branch": "main"
+admission	Run python3 -B scripts/evaluate_hosted.py admit	    },
+admission	Run python3 -B scripts/evaluate_hosted.py admit	    "sender": {
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "login": "peckyboi2",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "id": 234542779,
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "node_id": "U_kgDODfrWuw",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "avatar_url": "https://avatars.githubusercontent.com/u/234542779?v=4",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "gravatar_id": "",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "url": "https://api.github.com/users/peckyboi2",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "html_url": "https://github.com/peckyboi2",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "followers_url": "https://api.github.com/users/peckyboi2/followers",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "following_url": "https://api.github.com/users/peckyboi2/following{/other_user}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "gists_url": "https://api.github.com/users/peckyboi2/gists{/gist_id}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "starred_url": "https://api.github.com/users/peckyboi2/starred{/owner}{/repo}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "subscriptions_url": "https://api.github.com/users/peckyboi2/subscriptions",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "organizations_url": "https://api.github.com/users/peckyboi2/orgs",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "repos_url": "https://api.github.com/users/peckyboi2/repos",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "events_url": "https://api.github.com/users/peckyboi2/events{/privacy}",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "received_events_url": "https://api.github.com/users/peckyboi2/received_events",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "type": "User",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "user_view_type": "public",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	      "site_admin": false
+admission	Run python3 -B scripts/evaluate_hosted.py admit	    },
+admission	Run python3 -B scripts/evaluate_hosted.py admit	    "workflow": ".github/workflows/clarifier-evaluate.yml"
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  },
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "workflow_ref": "peckyboi2/eslint/.github/workflows/clarifier-evaluate.yml@refs/heads/main",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "workflow_sha": "06427776a2afbc96b05e3554fe07359036594d07",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "repository_id": "1435519573",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "triggering_actor": "peckyboi2",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "workspace": "/home/runner/work/eslint/eslint",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "action": "__run",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "action_repository": "actions/checkout",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "action_ref": "11bd71901bbe5b1630ceea73d27597364c9af683",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_cbef2b8c-47d1-4859-a390-c95673cced16",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_cbef2b8c-47d1-4859-a390-c95673cced16",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_cbef2b8c-47d1-4859-a390-c95673cced16",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_cbef2b8c-47d1-4859-a390-c95673cced16",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_cbef2b8c-47d1-4859-a390-c95673cced16",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "artifacts": "/home/runner/work/_temp/_runner_file_commands/artifacts_cbef2b8c-47d1-4859-a390-c95673cced16",
+admission	Run python3 -B scripts/evaluate_hosted.py admit	  "artifacts_list": "/home/runner/work/_temp/_runner_file_commands/artifacts_list_cbef2b8c-47d1-4859-a390-c95673cced16"
+admission	Run python3 -B scripts/evaluate_hosted.py admit	}
+admission	Run python3 -B scripts/evaluate_hosted.py admit	2026-10-29T06:10:47.2772512Z   EVALUATION_SLOT: 3
+admission	Run python3 -B scripts/evaluate_hosted.py admit	2026-10-29T06:10:47.2772995Z   EVALUATION_FREEZE_SHA256: d235e3c7596d358479db5eb52f1606699026379b237d1ce7dadf934291ba373d
+admission	Run python3 -B scripts/evaluate_hosted.py admit	2026-10-29T06:10:47.2773605Z   EVALUATION_WINDOW_SECONDS: 60
+admission	Run python3 -B scripts/evaluate_hosted.py admit	2026-10-29T06:10:47.2776360Z   GH_TOKEN: ***
+admission	Run python3 -B scripts/evaluate_hosted.py admit	2026-10-29T06:10:47.2776754Z ##[endgroup]
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	﻿2026-10-29T06:10:53.5012673Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.5013166Z with:
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.5013409Z   name: evaluation-admission-40827642208
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.5013941Z   path: evals/hosted-evaluation-workflow
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.5092762Z   retention-days: 30
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.5093121Z   if-no-files-found: error
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.5093491Z   compression-level: 6
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.5093924Z   overwrite: false
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.5094357Z   include-hidden-files: false
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.5094887Z ##[endgroup]
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.6971558Z (node:2354) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.6973694Z (Use `node --trace-deprecation ...` to show where the warning was created)
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.7051375Z With the provided path, there will be 1 file uploaded
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.7052616Z Artifact name is valid!
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.7053092Z Root directory input is valid!
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.9512860Z Beginning upload of artifact content to blob storage
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:53.9723665Z (node:2354) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:54.0155007Z Uploaded bytes 632
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:54.0348179Z Finished uploading artifact content to blob storage!
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:54.0353225Z SHA256 digest of uploaded artifact zip is 5236d85d8aeebbbfd46a10952f12157cf27a9e44d9e98e3faa62038e7ab4f2ab
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:54.0354351Z Finalizing artifact upload
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:54.5083545Z Artifact evaluation-admission-40827642208.zip successfully finalized. Artifact ID 12876699812
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:54.5085461Z Artifact evaluation-admission-40827642208 has been successfully uploaded! Final size is 632 bytes. Artifact ID is 12876699812
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:10:54.5087419Z Artifact download URL: https://github.com/peckyboi2/eslint/actions/runs/40827642208/artifacts/12876699812
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	﻿2026-10-29T06:10:54.5360323Z Post job cleanup.
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:54.6346026Z [command]/usr/bin/git version
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:54.6395671Z git version 2.56.0
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:54.6439339Z Temporarily overriding HOME='/home/runner/work/_temp/eb3bca2b-6a01-4074-a3a3-6d342dcb4d82' before making global git config changes
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:54.6440988Z Adding repository directory to the temporary git global config as a safe directory
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:54.6446349Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eslint/eslint
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:54.6494469Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:54.6539615Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:54.6829194Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:10:54.6869224Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+admission	Complete job	﻿2026-10-29T06:10:54.7408569Z Cleaning up orphan processes
+admission	Complete job	2026-10-29T06:10:54.7831831Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+inference	Set up job	﻿2026-10-29T06:11:00.5184838Z Current runner version: '2.338.0'
+inference	Set up job	2026-10-29T06:11:00.5209788Z ##[group]Runner Image Provisioner
+inference	Set up job	2026-10-29T06:11:00.5210741Z Hosted Compute Agent
+inference	Set up job	2026-10-29T06:11:00.5211403Z Version: 20261021.618
+inference	Set up job	2026-10-29T06:11:00.5212056Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+inference	Set up job	2026-10-29T06:11:00.5212815Z Build Date: 2026-10-21T00:45:21Z
+inference	Set up job	2026-10-29T06:11:00.5213608Z Worker ID: {6220dca6-c03f-4ef2-8bb3-456cc5b135e6}
+inference	Set up job	2026-10-29T06:11:00.5214350Z Region: westcentralus
+inference	Set up job	2026-10-29T06:11:00.5214971Z Cloud: Azure
+inference	Set up job	2026-10-29T06:11:00.5215535Z ##[endgroup]
+inference	Set up job	2026-10-29T06:11:00.5217376Z ##[group]Operating System
+inference	Set up job	2026-10-29T06:11:00.5218225Z Ubuntu
+inference	Set up job	2026-10-29T06:11:00.5218761Z 24.04.5
+inference	Set up job	2026-10-29T06:11:00.5219309Z LTS
+inference	Set up job	2026-10-29T06:11:00.5219859Z ##[endgroup]
+inference	Set up job	2026-10-29T06:11:00.5220425Z ##[group]Runner Image
+inference	Set up job	2026-10-29T06:11:00.5221106Z Image: ubuntu-24.04
+inference	Set up job	2026-10-29T06:11:00.5221719Z Version: 20261025.353.1
+inference	Set up job	2026-10-29T06:11:00.5222840Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+inference	Set up job	2026-10-29T06:11:00.5224641Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+inference	Set up job	2026-10-29T06:11:00.5226335Z ##[endgroup]
+inference	Set up job	2026-10-29T06:11:00.5227556Z ##[group]GITHUB_TOKEN Permissions
+inference	Set up job	2026-10-29T06:11:00.5229834Z Actions: read
+inference	Set up job	2026-10-29T06:11:00.5230473Z Contents: read
+inference	Set up job	2026-10-29T06:11:00.5231171Z Metadata: read
+inference	Set up job	2026-10-29T06:11:00.5231749Z ##[endgroup]
+inference	Set up job	2026-10-29T06:11:00.5233821Z Secret source: Actions
+inference	Set up job	2026-10-29T06:11:00.5234866Z Cache mode: write
+inference	Set up job	2026-10-29T06:11:00.5235565Z Prepare workflow directory
+inference	Set up job	2026-10-29T06:11:00.5635732Z Prepare all required actions
+inference	Set up job	2026-10-29T06:11:00.5683117Z Getting action download info
+inference	Set up job	2026-10-29T06:11:00.8751530Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+inference	Set up job	2026-10-29T06:11:00.9852093Z Download action repository 'actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+inference	Set up job	2026-10-29T06:11:01.5558027Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+inference	Set up job	2026-10-29T06:11:01.7641389Z Complete job name: inference
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	﻿2026-10-29T06:11:01.8537005Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8538262Z with:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8538796Z   ref: 06427776a2afbc96b05e3554fe07359036594d07
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8539468Z   persist-credentials: false
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8540047Z   repository: peckyboi2/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8544186Z   token: ***
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8544670Z   ssh-strict: true
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8545158Z   ssh-user: git
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8545634Z   clean: true
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8546319Z   sparse-checkout-cone-mode: true
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8546903Z   fetch-depth: 1
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8547372Z   fetch-tags: false
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8547862Z   show-progress: true
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8548354Z   lfs: false
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8548831Z   submodules: false
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8549325Z   set-safe-directory: true
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:01.8550113Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1103755Z Syncing repository: peckyboi2/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1105683Z ##[group]Getting Git version info
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1107050Z Working directory is '/home/runner/work/eslint/eslint'
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1108175Z [command]/usr/bin/git version
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1197365Z git version 2.56.0
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1219996Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1235211Z Temporarily overriding HOME='/home/runner/work/_temp/bcc9f15f-f993-4553-983b-02f69262838e' before making global git config changes
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1238278Z Adding repository directory to the temporary git global config as a safe directory
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1240527Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eslint/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1309319Z Deleting the contents of '/home/runner/work/eslint/eslint'
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1313762Z ##[group]Initializing the repository
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1319004Z [command]/usr/bin/git init /home/runner/work/eslint/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1416696Z hint: Using 'master' as the name for the initial branch. This default branch name
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1418440Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1419541Z hint: to use in all of your new repositories, which will suppress this warning,
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1420349Z hint: call:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1420808Z hint:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1421391Z hint: 	git config --global init.defaultBranch <name>
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1422068Z hint:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1422817Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1424088Z hint: 'development'. The just-created branch can be renamed via this command:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1424910Z hint:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1425382Z hint: 	git branch -m <name>
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1426008Z hint:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1427542Z hint: Disable this message with "git config set advice.defaultBranchName false"
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1429756Z Initialized empty Git repository in /home/runner/work/eslint/eslint/.git/
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1440490Z [command]/usr/bin/git remote add origin https://github.com/peckyboi2/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1491968Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1493509Z ##[group]Disabling automatic garbage collection
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1496459Z [command]/usr/bin/git config --local gc.auto 0
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1543394Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1545069Z ##[group]Setting up auth
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1551824Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.1591880Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.2005807Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.2058461Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.2308363Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.2360645Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.2361652Z ##[group]Fetching the repository
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:02.2373470Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 06427776a2afbc96b05e3554fe07359036594d07
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:03.7621696Z From https://github.com/peckyboi2/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:03.7624683Z  * branch            06427776a2afbc96b05e3554fe07359036594d07 -> FETCH_HEAD
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:03.7631374Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:03.7633819Z ##[group]Determining the checkout info
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:03.7636707Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:03.7637874Z [command]/usr/bin/git sparse-checkout disable
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:03.7702700Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:03.7743479Z ##[group]Checking out the ref
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:03.7749150Z [command]/usr/bin/git checkout --progress --force 06427776a2afbc96b05e3554fe07359036594d07
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1575035Z Note: switching to '06427776a2afbc96b05e3554fe07359036594d07'.
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1575898Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1576612Z You are in 'detached HEAD' state. You can look around, make experimental
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1577630Z changes and commit them, and you can discard any commits you make in this
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1578587Z state without impacting any branches by switching back to a branch.
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1579159Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1579569Z If you want to create a new branch to retain commits you create, you may
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1580363Z do so (now or later) by using -c with the switch command. Example:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1580817Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1581025Z   git switch -c <new-branch-name>
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1581796Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1582022Z Or undo this operation with:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1582327Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1582516Z   git switch -
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1582775Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1583192Z Turn off this advice by setting config variable advice.detachedHead to false
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1583816Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1584195Z HEAD is now at 0642777 test: freeze hosted clarification evaluation campaign
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1597462Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1654213Z [command]/usr/bin/git log -1 --format=%H
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1697989Z 06427776a2afbc96b05e3554fe07359036594d07
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1707696Z ##[group]Removing auth
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1711881Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.1752956Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.2001501Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.2037946Z http.https://github.com/.extraheader
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.2048729Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.2092226Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:04.2337331Z ##[endgroup]
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	﻿2026-10-29T06:11:04.2595360Z ##[group]Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.2595905Z with:
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.2596443Z   name: evaluation-admission-40827642208
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.2596824Z   path: evals/hosted-evaluation-workflow
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.2597177Z   merge-multiple: false
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.2597492Z   repository: peckyboi2/eslint
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.2597799Z   run-id: 40827642208
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.2598089Z ##[endgroup]
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.4206629Z Downloading single artifact
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.4394672Z (node:2377) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.4396023Z (Use `node --trace-deprecation ...` to show where the warning was created)
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.6746842Z Preparing to download the following artifacts:
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.6747866Z - evaluation-admission-40827642208 (ID: 12876699812, Size: 632, Expected Digest: sha256:5236d85d8aeebbbfd46a10952f12157cf27a9e44d9e98e3faa62038e7ab4f2ab)
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.9228608Z Redirecting to blob download url: https://productionresultssa8.blob.core.windows.net/actions-results/507b03dc-b1a2-4339-b5d3-4253e32e2474/workflow-job-run-56237c7b-d681-571e-8384-d733b0df2be8/artifacts/226e29635eff49dd1ceb1a4ab5ebe4477bc35b425d787a38475b6e79f4e155cc.zip
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:04.9230367Z Starting download of artifact to: /home/runner/work/eslint/eslint/evals/hosted-evaluation-workflow
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:05.1762048Z (node:2377) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:05.1831715Z SHA256 digest of downloaded artifact is 5236d85d8aeebbbfd46a10952f12157cf27a9e44d9e98e3faa62038e7ab4f2ab
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:05.1832807Z Artifact download completed successfully.
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:05.1833371Z Total of 1 artifact(s) downloaded
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T06:11:05.1838407Z Download artifact has finished successfully
+inference	Install verified Linux Codex	﻿2026-10-29T06:11:05.1988181Z ##[group]Run python3 -B scripts/clarifier/inference/hosted_install.py --destination "$RUNNER_TEMP/clarifier-bin" --github-path
+inference	Install verified Linux Codex	2026-10-29T06:11:05.1989157Z ^[[36;1mpython3 -B scripts/clarifier/inference/hosted_install.py --destination "$RUNNER_TEMP/clarifier-bin" --github-path^[[0m
+inference	Install verified Linux Codex	2026-10-29T06:11:05.2013956Z shell: /usr/bin/bash -e {0}
+inference	Install verified Linux Codex	2026-10-29T06:11:05.2014251Z ##[endgroup]
+inference	Install verified Linux Codex	2026-10-29T06:11:08.4435312Z Installed verified codex-cli 0.154.0
+inference	Run python3 -B scripts/evaluate_hosted.py infer	﻿2026-10-29T06:11:08.4661675Z ##[group]Run python3 -B scripts/evaluate_hosted.py infer
+inference	Run python3 -B scripts/evaluate_hosted.py infer	2026-10-29T06:11:08.4662144Z ^[[36;1mpython3 -B scripts/evaluate_hosted.py infer^[[0m
+inference	Run python3 -B scripts/evaluate_hosted.py infer	2026-10-29T06:11:08.4684065Z shell: /usr/bin/bash -e {0}
+inference	Run python3 -B scripts/evaluate_hosted.py infer	2026-10-29T06:11:08.4684338Z env:
+inference	Run python3 -B scripts/evaluate_hosted.py infer	2026-10-29T06:11:08.4715218Z   TRUSTED_GITHUB_CONTEXT: {
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "token": "***",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "job": "inference",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "ref": "refs/heads/main",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "sha": "06427776a2afbc96b05e3554fe07359036594d07",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "repository": "peckyboi2/eslint",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "repository_owner": "peckyboi2",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "repository_owner_id": "234542779",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "repositoryUrl": "git://github.com/peckyboi2/eslint.git",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "run_id": "40827642208",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "run_number": "3",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "retention_days": "90",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "run_attempt": "1",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "artifact_cache_size_limit": "10",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "repository_visibility": "public",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "actor_id": "234542779",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "actor": "peckyboi2",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "workflow": "Frozen clarification evaluation",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "head_ref": "",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "base_ref": "",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "event_name": "workflow_dispatch",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "server_url": "https://github.com",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "api_url": "https://api.github.com",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "graphql_url": "https://api.github.com/graphql",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "ref_name": "main",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "ref_protected": false,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "ref_type": "branch",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "secret_source": "Actions",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "event": {
+inference	Run python3 -B scripts/evaluate_hosted.py infer	    "inputs": {
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "slot": "3"
+inference	Run python3 -B scripts/evaluate_hosted.py infer	    },
+inference	Run python3 -B scripts/evaluate_hosted.py infer	    "ref": "refs/heads/main",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	    "repository": {
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "id": 1435519573,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "node_id": "R_kgDOVZBKVQ",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "name": "eslint",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "full_name": "peckyboi2/eslint",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "private": false,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "owner": {
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "login": "peckyboi2",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "id": 234542779,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "node_id": "U_kgDODfrWuw",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "avatar_url": "https://avatars.githubusercontent.com/u/234542779?v=4",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "gravatar_id": "",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "url": "https://api.github.com/users/peckyboi2",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "html_url": "https://github.com/peckyboi2",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "followers_url": "https://api.github.com/users/peckyboi2/followers",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "following_url": "https://api.github.com/users/peckyboi2/following{/other_user}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "gists_url": "https://api.github.com/users/peckyboi2/gists{/gist_id}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "starred_url": "https://api.github.com/users/peckyboi2/starred{/owner}{/repo}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "subscriptions_url": "https://api.github.com/users/peckyboi2/subscriptions",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "organizations_url": "https://api.github.com/users/peckyboi2/orgs",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "repos_url": "https://api.github.com/users/peckyboi2/repos",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "events_url": "https://api.github.com/users/peckyboi2/events{/privacy}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "received_events_url": "https://api.github.com/users/peckyboi2/received_events",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "type": "User",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "user_view_type": "public",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "site_admin": false
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      },
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "html_url": "https://github.com/peckyboi2/eslint",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "description": "Find and fix problems in your JavaScript code.",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "fork": true,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "url": "https://api.github.com/repos/peckyboi2/eslint",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "forks_url": "https://api.github.com/repos/peckyboi2/eslint/forks",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "keys_url": "https://api.github.com/repos/peckyboi2/eslint/keys{/key_id}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "collaborators_url": "https://api.github.com/repos/peckyboi2/eslint/collaborators{/collaborator}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "teams_url": "https://api.github.com/repos/peckyboi2/eslint/teams",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "hooks_url": "https://api.github.com/repos/peckyboi2/eslint/hooks",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "issue_events_url": "https://api.github.com/repos/peckyboi2/eslint/issues/events{/number}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "events_url": "https://api.github.com/repos/peckyboi2/eslint/events",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "assignees_url": "https://api.github.com/repos/peckyboi2/eslint/assignees{/user}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "branches_url": "https://api.github.com/repos/peckyboi2/eslint/branches{/branch}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "tags_url": "https://api.github.com/repos/peckyboi2/eslint/tags",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "blobs_url": "https://api.github.com/repos/peckyboi2/eslint/git/blobs{/sha}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "git_tags_url": "https://api.github.com/repos/peckyboi2/eslint/git/tags{/sha}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "git_refs_url": "https://api.github.com/repos/peckyboi2/eslint/git/refs{/sha}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "trees_url": "https://api.github.com/repos/peckyboi2/eslint/git/trees{/sha}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "statuses_url": "https://api.github.com/repos/peckyboi2/eslint/statuses/{sha}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "languages_url": "https://api.github.com/repos/peckyboi2/eslint/languages",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "stargazers_url": "https://api.github.com/repos/peckyboi2/eslint/stargazers",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "contributors_url": "https://api.github.com/repos/peckyboi2/eslint/contributors",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "subscribers_url": "https://api.github.com/repos/peckyboi2/eslint/subscribers",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "subscription_url": "https://api.github.com/repos/peckyboi2/eslint/subscription",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "commits_url": "https://api.github.com/repos/peckyboi2/eslint/commits{/sha}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "git_commits_url": "https://api.github.com/repos/peckyboi2/eslint/git/commits{/sha}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "comments_url": "https://api.github.com/repos/peckyboi2/eslint/comments{/number}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "issue_comment_url": "https://api.github.com/repos/peckyboi2/eslint/issues/comments{/number}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "contents_url": "https://api.github.com/repos/peckyboi2/eslint/contents/{+path}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "compare_url": "https://api.github.com/repos/peckyboi2/eslint/compare/{base}...{head}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "merges_url": "https://api.github.com/repos/peckyboi2/eslint/merges",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "archive_url": "https://api.github.com/repos/peckyboi2/eslint/{archive_format}{/ref}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "downloads_url": "https://api.github.com/repos/peckyboi2/eslint/downloads",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "issues_url": "https://api.github.com/repos/peckyboi2/eslint/issues{/number}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "pulls_url": "https://api.github.com/repos/peckyboi2/eslint/pulls{/number}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "milestones_url": "https://api.github.com/repos/peckyboi2/eslint/milestones{/number}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "notifications_url": "https://api.github.com/repos/peckyboi2/eslint/notifications{?since,all,participating}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "labels_url": "https://api.github.com/repos/peckyboi2/eslint/labels{/name}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "releases_url": "https://api.github.com/repos/peckyboi2/eslint/releases{/id}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "deployments_url": "https://api.github.com/repos/peckyboi2/eslint/deployments",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "created_at": "2026-10-27T09:33:31Z",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "updated_at": "2026-10-29T06:06:53Z",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "pushed_at": "2026-10-29T06:09:22Z",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "git_url": "git://github.com/peckyboi2/eslint.git",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "ssh_url": "git@github.com:peckyboi2/eslint.git",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "clone_url": "https://github.com/peckyboi2/eslint.git",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "svn_url": "https://github.com/peckyboi2/eslint",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "homepage": "https://eslint.org",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "size": 55344,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "stargazers_count": 0,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "watchers_count": 0,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "language": "JavaScript",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "has_issues": true,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "has_projects": true,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "has_downloads": false,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "has_wiki": false,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "has_pages": false,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "has_discussions": false,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "forks_count": 0,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "mirror_url": null,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "archived": false,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "disabled": false,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "open_issues_count": 2,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "license": {
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "key": "mit",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "name": "MIT License",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "spdx_id": "MIT",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "url": "https://api.github.com/licenses/mit",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	        "node_id": "MDc6TGljZW5zZTEz"
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      },
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "allow_forking": true,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "is_template": false,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "web_commit_signoff_required": false,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "has_pull_requests": true,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "pull_request_creation_policy": "all",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "topics": [],
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "visibility": "public",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "forks": 0,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "open_issues": 2,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "watchers": 0,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "default_branch": "main"
+inference	Run python3 -B scripts/evaluate_hosted.py infer	    },
+inference	Run python3 -B scripts/evaluate_hosted.py infer	    "sender": {
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "login": "peckyboi2",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "id": 234542779,
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "node_id": "U_kgDODfrWuw",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "avatar_url": "https://avatars.githubusercontent.com/u/234542779?v=4",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "gravatar_id": "",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "url": "https://api.github.com/users/peckyboi2",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "html_url": "https://github.com/peckyboi2",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "followers_url": "https://api.github.com/users/peckyboi2/followers",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "following_url": "https://api.github.com/users/peckyboi2/following{/other_user}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "gists_url": "https://api.github.com/users/peckyboi2/gists{/gist_id}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "starred_url": "https://api.github.com/users/peckyboi2/starred{/owner}{/repo}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "subscriptions_url": "https://api.github.com/users/peckyboi2/subscriptions",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "organizations_url": "https://api.github.com/users/peckyboi2/orgs",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "repos_url": "https://api.github.com/users/peckyboi2/repos",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "events_url": "https://api.github.com/users/peckyboi2/events{/privacy}",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "received_events_url": "https://api.github.com/users/peckyboi2/received_events",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "type": "User",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "user_view_type": "public",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	      "site_admin": false
+inference	Run python3 -B scripts/evaluate_hosted.py infer	    },
+inference	Run python3 -B scripts/evaluate_hosted.py infer	    "workflow": ".github/workflows/clarifier-evaluate.yml"
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  },
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "workflow_ref": "peckyboi2/eslint/.github/workflows/clarifier-evaluate.yml@refs/heads/main",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "workflow_sha": "06427776a2afbc96b05e3554fe07359036594d07",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "repository_id": "1435519573",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "triggering_actor": "peckyboi2",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "workspace": "/home/runner/work/eslint/eslint",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "action": "__run_2",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "action_repository": "",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "action_ref": "",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_32357110-4621-432b-9212-b97f9b0b5c9f",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_32357110-4621-432b-9212-b97f9b0b5c9f",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_32357110-4621-432b-9212-b97f9b0b5c9f",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_32357110-4621-432b-9212-b97f9b0b5c9f",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_32357110-4621-432b-9212-b97f9b0b5c9f",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "artifacts": "/home/runner/work/_temp/_runner_file_commands/artifacts_32357110-4621-432b-9212-b97f9b0b5c9f",
+inference	Run python3 -B scripts/evaluate_hosted.py infer	  "artifacts_list": "/home/runner/work/_temp/_runner_file_commands/artifacts_list_32357110-4621-432b-9212-b97f9b0b5c9f"
+inference	Run python3 -B scripts/evaluate_hosted.py infer	}
+inference	Run python3 -B scripts/evaluate_hosted.py infer	2026-10-29T06:11:08.4744743Z   EVALUATION_SLOT: 3
+inference	Run python3 -B scripts/evaluate_hosted.py infer	2026-10-29T06:11:08.4745155Z   EVALUATION_FREEZE_SHA256: d235e3c7596d358479db5eb52f1606699026379b237d1ce7dadf934291ba373d
+inference	Run python3 -B scripts/evaluate_hosted.py infer	2026-10-29T06:11:08.4745614Z   EVALUATION_WINDOW_SECONDS: 60
+inference	Run python3 -B scripts/evaluate_hosted.py infer	2026-10-29T06:11:08.4748277Z   CLARIFIER_READ_TOKEN: ***
+inference	Run python3 -B scripts/evaluate_hosted.py infer	2026-10-29T06:11:08.4749180Z   CLARIFIER_PROVIDER_KEY: ***
+inference	Run python3 -B scripts/evaluate_hosted.py infer	2026-10-29T06:11:08.4749432Z ##[endgroup]
+inference	Run python3 -B scripts/evaluate_hosted.py infer	2026-10-29T06:11:35.7729324Z {"folder": "/home/runner/work/eslint/eslint/evals/hosted-evaluation-workflow/attempt", "status": "completed", "errors": []}
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	﻿2026-10-29T06:11:35.7940603Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.7941064Z with:
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.7941269Z   name: evaluation-40827642208
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.7941543Z   path: evals/hosted-evaluation-workflow
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.7941833Z   include-hidden-files: true
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.7942083Z   retention-days: 30
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.7942305Z   if-no-files-found: error
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.7942538Z   compression-level: 6
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.7942759Z   overwrite: false
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.7942964Z ##[endgroup]
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.9659964Z (node:2520) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.9661145Z (Use `node --trace-deprecation ...` to show where the warning was created)
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.9787159Z With the provided path, there will be 25 files uploaded
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.9794287Z Artifact name is valid!
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:35.9794743Z Root directory input is valid!
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:36.3563958Z Beginning upload of artifact content to blob storage
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:36.4027751Z (node:2520) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:36.7116725Z Uploaded bytes 49872
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:36.7737053Z Finished uploading artifact content to blob storage!
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:36.7738202Z SHA256 digest of uploaded artifact zip is 305d67320c6bc354cbb38c62c9a430acb4ad7994bd424b766714ab2725960bac
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:36.7740563Z Finalizing artifact upload
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:37.2963423Z Artifact evaluation-40827642208.zip successfully finalized. Artifact ID 12877088337
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:37.2965257Z Artifact evaluation-40827642208 has been successfully uploaded! Final size is 49872 bytes. Artifact ID is 12877088337
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T06:11:37.2972806Z Artifact download URL: https://github.com/peckyboi2/eslint/actions/runs/40827642208/artifacts/12877088337
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	﻿2026-10-29T06:11:37.3188848Z Post job cleanup.
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:37.4090862Z [command]/usr/bin/git version
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:37.4137366Z git version 2.56.0
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:37.4182288Z Temporarily overriding HOME='/home/runner/work/_temp/865b9266-813b-41bd-ac3d-ea37b5ecbd0c' before making global git config changes
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:37.4183430Z Adding repository directory to the temporary git global config as a safe directory
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:37.4188736Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eslint/eslint
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:37.4231876Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:37.4270816Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:37.4558278Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T06:11:37.4600930Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+inference	Complete job	﻿2026-10-29T06:11:37.5190355Z Cleaning up orphan processes
+inference	Complete job	2026-10-29T06:11:37.5674706Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683, actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

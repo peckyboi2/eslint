@@ -1,0 +1,2 @@
+# Preserve every original hosted artifact and receipt byte across Git checkouts.
+slots/** -text -whitespace

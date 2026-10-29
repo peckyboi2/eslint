@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 19477,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "no_action",
+  "validated_output": {
+    "decision": "no_action",
+    "rationale": "The report supplies ESLint and environment versions, the default Espree parser, the inline `no-console` configuration, and both triggering computed-property calls. The supplied playground data confirms the input and language options. Actual suggestion messages and expected behavior are clearly described, so no additional reproduction information is necessary.",
+    "clarification": null
+  }
+}

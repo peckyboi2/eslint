@@ -1,0 +1,8 @@
+{
+  "slot": 6,
+  "actual_decision": "no_action",
+  "decision_match": true,
+  "assessment": "Correctly uses the supplied no-console rule, computed-property expressions and suggestion text; a runtime logLevel value is not required.",
+  "criteria": [],
+  "quality_pass": null
+}

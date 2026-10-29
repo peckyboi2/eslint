@@ -1,0 +1,8 @@
+{
+  "slot": 3,
+  "actual_decision": "no_action",
+  "decision_match": false,
+  "assessment": "Failure: the agent treats the workload, command and EMFILE trace as sufficient. The accepted expectation requires human_review because the evidence does not establish whether omitted configuration or a project is necessary; public silence does not repair this distinction.",
+  "criteria": [],
+  "quality_pass": null
+}
