@@ -1,10 +1,10 @@
 {
   "version": "hosted-preview-v11-artifacts-v2",
-  "status": "Current hosted integration smoke observed with complete original artifacts; current ten-case accuracy remains unevaluated",
-  "preparation_revision": 4,
+  "status": "Frozen owner-authorized hosted correctness campaign prepared; no campaign model calls yet",
+  "preparation_revision": 6,
   "superseded_preparation": {
-    "path": "evals/hosted-v11/pre-run-artifacts-v2-candidate.json",
-    "sha256": "938ff2b11bab54048c6631d28052091fcabbf7f756ca962b5c6046ef2ccb0963"
+    "path": "evals/hosted-v11/campaign-20261029/pre-evaluation-candidate.json",
+    "sha256": "870c14f3fb4cdf771bea5b79d6137c1d617754746ea4dd370e806806771f7744"
   },
   "created_date": "2026-10-29 Asia/Singapore",
   "baseline_commit": "7fdbf7322cbecbe852ce971b6c10f343daa1aaf0",
@@ -81,10 +81,13 @@
   "files": {
     ".gitattributes": "43a8681e30d0ecabc3650e8b457214c79ba6e9c1590228a39797b613f7b88d1a",
     ".github/workflows/clarifier-approve.yml": "4f0399209bf13e57573231025b7456c5d79c1aab71c824f7b62ebc542fdd9960",
+    ".github/workflows/clarifier-evaluate.yml": "b0bb9bead1a33fbbb542fda09f3bd1a84f6e2ab157cf9f893936c535d4b2ffc7",
     ".github/workflows/clarifier-triage.yml": "b4959f7863816e944c1936dd3902117e3ff31ed25c1a6437d5702dc2ff154061",
-    "DESIGN.md": "1f66d326ebc98a0755bbdd8ef1016e6d6be90fa8607242e02d4bc956f9ce9fb2",
-    "SUBMISSION.md": "34e917de9f153fa9c8ed5d4a9a9a4258f3a76f5a0bbc44af2a3dea6700d1de3d",
-    "evals/README.md": "939084f3f682f060bd8dd4739be5f932801938a4b65d8787fdc3a2d63d4a96f4",
+    "AGENTS.md": "a1023e426a011e30f17c0055077064592a0801f6fa35045be040807b4838a392",
+    "CONTRIBUTING.md": "554409de95a9f270b5c7965503ddfc7c62336ac067ebd2655b862a3365746fd1",
+    "DESIGN.md": "26cae4ffed6fb82e276003f347231cba205f8f89ff6a834dc97b196ee180799f",
+    "SUBMISSION.md": "bb3dbf9eb04fa0e551e949d214adf8006786c9e95662cf9869d361eaebe3303e",
+    "evals/README.md": "3c7df5c08a464319a24d292df3eaf79d5c0fccd5c8be582b16fd0ef70eba81fd",
     "evals/automatic-v10/ACTIVATION.md": "65be9a88470fede401f0d9dc9219868e554ea06e6ae79ce3d8d1a6902a4f37c8",
     "evals/automatic-v10/README.md": "c545d63a1edf49f66e38ae3d369c1191ab332f55caf4425b438711e5a7b22de7",
     "evals/automatic-v10/access.json": "afa47d745567ebfab45212675fbeab8db14f26242262b8fc1475f3ac0dcc4652",
@@ -120,7 +123,17 @@
     "evals/automatic-v10/verifier-tests-v2.txt": "e53018ee427ae5f3077e14da7b9a7b7845b7c8ac1b6872243c0abbf7f9f7b709",
     "evals/golden/INDEX.md": "72e21d4a4a3f097d6d082964df4ae3e2e8a317d0e093b1ad97642830dd76056d",
     "evals/golden/final-results-v9/README.md": "0b08b129eba06c693318012dc5f6aa61f2329a58ce9f5c8d97f4b8de92893779",
-    "evals/hosted-v11/README.md": "d11eccdf3bca17cae8affac5479b8f7c9d19de94084851e0d8720a2c1b58eb86",
+    "evals/golden/hosted-v11-20261029/README.md": "b2bdb2e47f446716967557c27adfb31b6e41ed0e0e7a13a631d5c6eb320647cc",
+    "evals/hosted-v11/README.md": "e81b864998bee9210bdcde32b7c8a8b6f2cbd932ac717ff46109fe30e7e64e57",
+    "evals/hosted-v11/campaign-20261029/README.md": "0a861dca332fc7c1d76fca23826922bb3c64eb5ca6a7d5c5d68d06c098b08c79",
+    "evals/hosted-v11/campaign-20261029/approval.json": "3cb3ca637d43d855d7209e0653db0127bef90a02f1ecdb0f888681727a927e3e",
+    "evals/hosted-v11/campaign-20261029/freeze.json": "d235e3c7596d358479db5eb52f1606699026379b237d1ce7dadf934291ba373d",
+    "evals/hosted-v11/campaign-20261029/plan.json": "41e082e1a7958f3a26ecc50b3e7e349e79144bac813eb7703284ef0f0cbbd381",
+    "evals/hosted-v11/campaign-20261029/pre-evaluation-candidate.json": "870c14f3fb4cdf771bea5b79d6137c1d617754746ea4dd370e806806771f7744",
+    "evals/hosted-v11/campaign-20261029/preflight-failure.json": "1ea195e9fd741b601249c18da5997e01e4b349fe9f673f570a4fa05804f23ac9",
+    "evals/hosted-v11/campaign-20261029/safety-tests-preflight.txt": "4dbc21958f34be591b07337d3c30ddf9307cec41dc3cea94598a8eec16ce3bbe",
+    "evals/hosted-v11/campaign-20261029/state-before.json": "16f8fdf67d38bef8edf7d65db42c5d904a3c1097991d51d20cedbbc4d0a125c5",
+    "evals/hosted-v11/campaign-20261029/verifier-tests-preflight.txt": "e5886d33e2dcbb65e98e08b17a1bcbabfd33ed5b3531baf785b0cf03a56c2266",
     "evals/hosted-v11/failed-preparation-v1.json": "95e4ba57604006c23f3e61bd161a8f17dcb271e8ac64264ae33658841fcd5c6d",
     "evals/hosted-v11/frozen-v9-tests.txt": "bbeff16ff165ba98b2b821c7f5090d8fc49cd3a059937a8ed92881ffa53bb48a",
     "evals/hosted-v11/live-smoke-20261029/README.md": "e35f6fe2d4d7341b440e946c424dc909455482c91533891c0267281a77f37fce",
@@ -240,6 +253,10 @@
     "evals/hosted-v11/preparation-checks.json": "1f1b78cd6e195f42d7bf3715db19b78d6a5db0b88ccbfbe0953d8da79599adbc",
     "evals/hosted-v11/preparation-review-v1.json": "fef7f1cff870fab60b9b3d0b2e6a0a8fc14ff92dea582c7bc0987167e4a3de10",
     "evals/hosted-v11/preservation.json": "0639f8a750f03327a567a24a282fad2596671872c50227b3488e79c16a7398ac",
+    "evals/hosted-v11/repository-guides-20261029/README.md": "afd6350b041d14649af61b794dfb38a15fd64a99a9101b93ea504765ee061417",
+    "evals/hosted-v11/repository-guides-20261029/previous-candidate.json": "c59b2870d01d7bbf4ba3d5d647cbc7a3d7300d02f3135ae77a4d22509bb94969",
+    "evals/hosted-v11/repository-guides-20261029/update.json": "b6e16c9d1bd179f2b6a26dfa907f93620376f4db5a0cdffc8e835e91a5f65cae",
+    "evals/hosted-v11/repository-guides-20261029/verifier-tests.txt": "564fe7d9b221cf16d9dedbb3cac711ff9686d82cbe4112d968599f86c98a60b3",
     "evals/hosted-v11/runtime-release.json": "216c23ead8e4f77dcf1212b0836e54f842b837a976181bfd988f1a50f096f9aa",
     "evals/hosted-v11/safety-tests-artifacts-v2.txt": "e77e0f26d04f0bce9011e2761028e3bb34cea1973657884d8a5e64e77592a2c0",
     "evals/hosted-v11/safety-tests-initial.txt": "4e0c0bdab0a59b378bcbe6a895ceaff15e982a0dafc58dfc71af1fb8bc11c191",
@@ -249,9 +266,10 @@
     "evals/hosted-v11/verifier-tests-artifacts-v2-prerun.txt": "22692c2c26a5eb53dc5841982c7c483eb5fed993d7ac8fcfedbae73811f0325b",
     "evals/hosted-v11/verifier-tests-v2.txt": "dab69273cc2552dadb70866d3a9606e3ba38130ed86e29771bce2c682bd14db0",
     "evals/hosted-v11/verifier-tests.txt": "bf0af0b2a43951f1cd8597bbb7676a18eebc823575cb077fba1610582a79a045",
+    "scripts/automatic_tests/test_evaluate_hosted.py": "4234750afad4e0dbeb8767b0ea6d40bd0924759030ef2f43ca96698b2309f7c6",
     "scripts/automatic_tests/test_evaluation_allowance.py": "d06b615a6c73cb0f91e1db589fa5a377434a9b2c3e740506d09387bc3f87095c",
     "scripts/automatic_tests/test_verify_automatic.py": "e8fe10bad7a95568194d49ddbd518d74c9b7adc06a8796866bffea3ba9ab50db",
-    "scripts/automatic_tests/test_verify_hosted_candidate.py": "3bf3af673b87695b66d738dd564906524d99593558031cb8f6ed7cbe5537840e",
+    "scripts/automatic_tests/test_verify_hosted_candidate.py": "ff863ee343f659edb58423b36aa4710913e0eb393af08e0da6a34b93e79d37d4",
     "scripts/automatic_tests/test_verify_hosted_smoke.py": "e2be078d320f9b5318ee4efebf28e0b5520967967ba70a7387ec3eaa8a2278f7",
     "scripts/clarifier/__pycache__/__init__.cpython-314.pyc": "4f984a04a8b0424b10ec43d2830b929e766b3169ee45ced7aecae8c25b5e69a7",
     "scripts/clarifier/approve.py": "bfc1a451186add86a6a70f6204b1c5cd06679852644079e78f1a8e3ef01d0389",
@@ -309,8 +327,9 @@
     "scripts/clarifier/tests/test_workflow_audit.py": "7db0d540c3cb6d42f95cd1d16bef80911345ab8011022ecb189d01221d130531",
     "scripts/clarifier/workflow.py": "06bad49b7a6d1f43d3ed9fc486b8b405d58cd92b3612c55277e6d8bb2cf94f2c",
     "scripts/evaluate_automatic.py": "f141269beb241b0cf5dbd5e9dc0e52893dcd8f9bfd0f360bd77909643f8d4f6f",
+    "scripts/evaluate_hosted.py": "438c8bbea1ad33df1eb6418de6230c65485b8759059911311b6d6bab27d8c39c",
     "scripts/submission_tests/test_verify_submission.py": "dffc20a8bafbf6fa43f5f3c39e9bdb2333dae28179dc98bba07c8e721e581165",
-    "scripts/verify_automatic.py": "4778679aa8edb54c96e5d968e2997c07dd51859c1aeb875ce32ea70d8823b3be",
+    "scripts/verify_automatic.py": "2fbe81ecc72a3e187aec889942187b710309700e9b01e3931b028bf0616f7e7d",
     "scripts/verify_hosted_smoke.py": "050a3b98437daa424df5d6a293bbc5fb6111b7c38bca77ab0fd844014cfa8fa5",
     "scripts/verify_submission.py": "020a14a6e08e620fea048a6f9f6bd1c44aef9d732db05b11389575fbd942f36d"
   },
@@ -327,11 +346,23 @@
     "public_actions": 0,
     "artifact_completeness": "failed",
     "evidence": "evals/hosted-v11/live-smoke-20261029/assessment.json",
-    "scope": "Prior integration smoke only; current artifacts-v2 has not been run against the provider; not a ten-case correctness evaluation"
+    "scope": "Prior v11 integration only; its incomplete artifact export remains failed. The current variant is separately observed below; neither smoke is a ten-case correctness evaluation."
   },
   "observed_current_hosted_smoke": {
     "assessment": "evals/hosted-v11/live-smoke-artifacts-v2-20261029/assessment.json",
     "sha256": "2d00eaebece8132b029c796bff46596d9dce20957ed1cf95fd6672dcce4ce3dd"
   },
-  "total_observed_hosted_provider_calls": 2
+  "total_observed_hosted_provider_calls": 2,
+  "repository_guides_update": {
+    "path": "evals/hosted-v11/repository-guides-20261029/update.json",
+    "sha256": "b6e16c9d1bd179f2b6a26dfa907f93620376f4db5a0cdffc8e835e91a5f65cae"
+  },
+  "evaluation_preparation": {
+    "folder": "evals/hosted-v11/campaign-20261029",
+    "freeze_sha256": "d235e3c7596d358479db5eb52f1606699026379b237d1ce7dadf934291ba373d",
+    "attempt_limit": 13,
+    "provider_calls": 0,
+    "temporary_rolling_window_seconds": 60,
+    "normal_rolling_window_seconds": 86400
+  }
 }

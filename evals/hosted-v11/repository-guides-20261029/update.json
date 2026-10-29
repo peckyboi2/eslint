@@ -1,0 +1,36 @@
+{
+  "scope": "Local repository guide refresh; no inference, permissions, workflow or provider changes",
+  "authorization": "Maintainer requested updates to AGENTS.md and CONTRIBUTING.md; no commit or push",
+  "previous_candidate": {
+    "path": "evals/hosted-v11/repository-guides-20261029/previous-candidate.json",
+    "sha256": "c59b2870d01d7bbf4ba3d5d647cbc7a3d7300d02f3135ae77a4d22509bb94969"
+  },
+  "historical_guides": {
+    "commit": "7fdbf7322cbecbe852ce971b6c10f343daa1aaf0",
+    "files": {
+      "AGENTS.md": "8b94e0bf536b24c15b03028f306b4bef1cd85c4514b6c812c1060cf1cf8ac803",
+      "CONTRIBUTING.md": "9776e5ff27a8926d5ee06f4c0f30a507098a637c157dee8ac05a8d3468908c82"
+    },
+    "preservation": "Exact immutable Git blobs remain available and are checked against the unchanged 168-file v9 freeze"
+  },
+  "starting_commit": "4629f54b4aebbacedae15880fb11e499f5f0839c",
+  "preexisting_design_change": {
+    "reviewed_candidate_sha256": "1f66d326ebc98a0755bbdd8ef1016e6d6be90fa8607242e02d4bc956f9ce9fb2",
+    "current_sha256": "26cae4ffed6fb82e276003f347231cba205f8f89ff6a834dc97b196ee180799f",
+    "note": "User committed the revised DESIGN before this guide update; the refreshed manifest will bind those existing bytes"
+  },
+  "runtime_configuration_sha256": "b80148da53c9d8196b5792a065ed8c134a8eec2856c938ccb635b9f9591c8c6d",
+  "provider_calls_during_update": 0,
+  "public_actions_during_update": 0,
+  "current_guides": {
+    "AGENTS.md": "a1023e426a011e30f17c0055077064592a0801f6fa35045be040807b4838a392",
+    "CONTRIBUTING.md": "50bed3977b5f1099a08ebf60865c04ee49f6729c2405948645dbf5fcb01a4742"
+  },
+  "verifier_change": "Allow these two hash-reviewed current guides only for the hosted candidate; original v9 Git/freeze checks remain intact",
+  "offline_checks": {
+    "status": "passed",
+    "expected_verifier_tests": 33,
+    "log": "evals/hosted-v11/repository-guides-20261029/verifier-tests.txt",
+    "verification": "33 offline corruption/allowance/smoke tests; original/current guide identity and scope included; zero new provider calls"
+  }
+}

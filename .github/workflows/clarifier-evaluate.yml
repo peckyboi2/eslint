@@ -1,0 +1,78 @@
+name: Frozen clarification evaluation
+on:
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: One frozen historical or adversarial slot (1-13); never rerun consumed slots
+        required: true
+        type: number
+permissions: {}
+concurrency:
+  group: sandbox-clarifier-triage
+  cancel-in-progress: false
+  queue: max
+jobs:
+  admission:
+    if: >-
+      github.repository == 'peckyboi2/eslint' && github.repository_id == '1435519573' &&
+      github.repository_owner_id == '234542779' && github.actor == 'peckyboi2' &&
+      github.actor_id == '234542779' && github.triggering_actor == 'peckyboi2' &&
+      github.ref == 'refs/heads/main' && github.run_attempt == 1
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - env:
+          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
+          EVALUATION_SLOT: ${{ inputs.slot }}
+          EVALUATION_FREEZE_SHA256: ${{ vars.CLARIFIER_EVALUATION_FREEZE_SHA256 }}
+          EVALUATION_WINDOW_SECONDS: ${{ vars.CLARIFIER_EVALUATION_WINDOW_SECONDS || '86400' }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 -B scripts/evaluate_hosted.py admit
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: ${{ !cancelled() }}
+        with:
+          name: evaluation-admission-${{ github.run_id }}
+          path: evals/hosted-evaluation-workflow
+          retention-days: 30
+          if-no-files-found: error
+  inference:
+    needs: admission
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: evaluation-admission-${{ github.run_id }}
+          path: evals/hosted-evaluation-workflow
+      - name: Install verified Linux Codex
+        run: python3 -B scripts/clarifier/inference/hosted_install.py --destination "$RUNNER_TEMP/clarifier-bin" --github-path
+      - env:
+          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
+          EVALUATION_SLOT: ${{ inputs.slot }}
+          EVALUATION_FREEZE_SHA256: ${{ vars.CLARIFIER_EVALUATION_FREEZE_SHA256 }}
+          EVALUATION_WINDOW_SECONDS: ${{ vars.CLARIFIER_EVALUATION_WINDOW_SECONDS || '86400' }}
+          CLARIFIER_READ_TOKEN: ${{ github.token }}
+          CLARIFIER_PROVIDER_KEY: ${{ secrets.CLARIFIER_PROVIDER_KEY }}
+        run: python3 -B scripts/evaluate_hosted.py infer
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: ${{ !cancelled() }}
+        with:
+          name: evaluation-${{ github.run_id }}
+          path: evals/hosted-evaluation-workflow
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error

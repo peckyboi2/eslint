@@ -6,7 +6,7 @@ The [v10 automatic candidate](automatic-v10/README.md) and its 212 tests are pre
 
 ## Retained v9 evidence and operations
 
-Start with the [current golden submission index](golden/INDEX.md) and [DESIGN.md](../DESIGN.md). Current instructions and a [versioned results bundle](golden/final-results-v9/README.md) now live under `evals/golden/`, including byte-identical actual outputs/transcripts, comparisons, adversarial evidence and test logs. Full original records stay at their source paths below. The root README, AGENTS and [golden README](golden/README.md) retain frozen historical wording; the additive index supersedes their old status/commands without changing golden-v1.
+Start with the [current golden submission index](golden/INDEX.md) and [DESIGN.md](../DESIGN.md). Current instructions and a [versioned results bundle](golden/final-results-v9/README.md) now live under `evals/golden/`, including byte-identical actual outputs/transcripts, comparisons, adversarial evidence and test logs. Full original records stay at their source paths below. The root README and [golden README](golden/README.md) retain historical wording. Current AGENTS/CONTRIBUTING describe the automatic preview route; evaluated v9 guides remain in retained Git. The additive index supersedes old status/commands without changing golden-v1.
 
 ## Final campaign and evidence
 

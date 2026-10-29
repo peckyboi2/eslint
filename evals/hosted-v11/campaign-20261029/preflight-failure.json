@@ -1,0 +1,8 @@
+{
+  "stage": "Synthetic test fixture before freeze",
+  "test": "test_temporary_window_preserves_all_reservations_and_restores_policy",
+  "error": "StateError: Enabled flags lack matching accountable decision",
+  "cause": "Synthetic disabled flag lacked matching ledger decision; production code unchanged",
+  "resolution": "Use a valid disabled ledger fixture; rerun all nine evaluator tests",
+  "provider_calls": 0
+}

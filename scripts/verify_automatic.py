@@ -23,6 +23,7 @@ PRESERVATION_SHA256='0639f8a750f03327a567a24a282fad2596671872c50227b3488e79c16a7
 LEGACY_VERSION='automatic-preview-v10'
 HOSTED_VERSION='hosted-preview-v11-artifacts-v2'
 MUTABLE_DOCS={'DESIGN.md','SUBMISSION.md','evals/README.md','evals/golden/INDEX.md'}
+REPOSITORY_GUIDES={'AGENTS.md','CONTRIBUTING.md'}
 
 
 def require(value: bool, reason: str) -> None:
@@ -119,11 +120,13 @@ def verify_tree(root: Path, candidate: dict) -> int:
 def verify_candidate_scope(candidate: dict) -> None:
     """Raise ValueError if candidate bytes change inherited code/workflows or old evidence."""
     permitted=MUTABLE_DOCS|{'.gitattributes','scripts/verify_submission.py','scripts/verify_automatic.py',
-        'scripts/check_v9_attacks.py','scripts/evaluate_automatic.py','scripts/verify_hosted_smoke.py','scripts/submission_tests/test_verify_submission.py',
+        'scripts/check_v9_attacks.py','scripts/evaluate_automatic.py','scripts/evaluate_hosted.py','scripts/verify_hosted_smoke.py','scripts/submission_tests/test_verify_submission.py',
         'evals/golden/final-results-v9/README.md'}
     prefixes=('scripts/clarifier/','scripts/automatic_tests/','evals/automatic-v10/')
     if candidate['version']==HOSTED_VERSION:
-        prefixes+=('evals/hosted-v11/',)
+        permitted|=REPOSITORY_GUIDES
+        permitted.add('.github/workflows/clarifier-evaluate.yml')
+        prefixes+=('evals/hosted-v11/','evals/golden/hosted-v11-20261029/')
     workflows={'.github/workflows/clarifier-'+name+'.yml' for name in ('triage','stop','approve')}
     require(all(name in permitted|workflows or name.startswith(prefixes) for name in candidate['files']),
             'Candidate scope includes inherited source/workflows or earlier evidence')

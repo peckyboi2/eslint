@@ -92,6 +92,20 @@ class HostedCandidateVerificationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'Candidate scope'):
             automatic.verify_candidate_scope(candidate)
 
+    def test_guide_updates_are_allowed_only_in_the_current_candidate(self):
+        candidate=dict(version=automatic.HOSTED_VERSION,
+                       files={'AGENTS.md':'0'*64,'CONTRIBUTING.md':'0'*64})
+        automatic.verify_candidate_scope(candidate)
+        candidate['version']=automatic.LEGACY_VERSION
+        with self.assertRaisesRegex(ValueError,'Candidate scope'):
+            automatic.verify_candidate_scope(candidate)
+
+    def test_reviewed_guides_reject_later_unrecorded_edits(self):
+        for name in ('AGENTS.md','CONTRIBUTING.md'):
+            with self.subTest(guide=name), self.altered(name,b'unreviewed guide change\n'):
+                with self.assertRaisesRegex(ValueError,'Candidate hash mismatch: '+name):
+                    automatic.verify(self.root)
+
     def test_old_candidate_does_not_authorise_new_hosted_directory(self):
         candidate=copy.deepcopy(self.candidate())
         candidate['version']=automatic.LEGACY_VERSION

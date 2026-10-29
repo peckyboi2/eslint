@@ -37,7 +37,7 @@ Our full contribution guidelines can be found at:
 
 - Disclose AI-assisted material and the actual tool/model used. Put attribution in contribution metadata, never inside preserved historical evidence.
 - A human must understand, review and take responsibility for submitted work. Humans respond to maintainer feedback.
-- Darren Peck is accountable for this fork and approves changes to agent instructions, models, permissions, budgets and output handlers, and decisions to enable or disable automation.
+- Sandbox maintainers are accountable for this fork and review changes to agent instructions, models, permissions, budgets and output handlers, and decisions to enable or disable automation. The currently authorized owner is `peckyboi2`;
 - Automated public contributions must identify the bot/application and disclose AI assistance using verified model and run provenance.
 
 ### Verification and evidence
@@ -50,5 +50,6 @@ Our full contribution guidelines can be found at:
 ### Scope and permissions
 
 - Keep work within the sandbox and approved scope. Do not execute submitted reproductions or use the clarification workflow to diagnose/fix bugs, continue conversations, close/delete issues, merge PRs or force-push. No upstream writes or contact.
-- Model runs, external writes and automation enablement require explicit owner authorisation. Malicious-input preview tests must pass before posting is enabled.
+- Owner-approved enablement gives standing authorization for eligible automatic issue previews within the configured scope and quotas. Additional assistant-created test issues, standalone model/evaluation runs, quota extensions, activation changes and public writes outside that approved route require separate explicit owner authorization.
+- The current automatic route saves internal artifacts only; public commenting is disabled and release-blocked. Before enabling posting, maintainers must review a frozen evaluation of the exact proposed configuration and its malicious-input tests must pass. Passing results from another version do not satisfy that requirement.
 - Enforce action limits through trusted code and permissions. Written policy does not replace technical enforcement.

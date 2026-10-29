@@ -1,0 +1,13 @@
+{
+  "owner_id": 234542779,
+  "campaign_id": "hosted-v11-evaluation-20261029",
+  "plan_sha256": "41e082e1a7958f3a26ecc50b3e7e349e79144bac813eb7703284ef0f0cbbd381",
+  "freeze_sha256": "d235e3c7596d358479db5eb52f1606699026379b237d1ce7dadf934291ba373d",
+  "attempt_limit": 13,
+  "allow_provider_calls": true,
+  "posting": false,
+  "temporary_rolling_window_seconds": 60,
+  "authorization_text": "Use hosted inference; push for me and test",
+  "window_authorization_text": "just change the window to run everything then change back after done",
+  "authorization_source": "Direct human messages in this side conversation on 29 October 2026; recorded by assistant, not an independent signature"
+}
