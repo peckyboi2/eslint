@@ -17,6 +17,10 @@ def input_key(hashes: dict[str, str]) -> str:
 
 def event_key(context: Context, source_key: str) -> str:
     """Return stable original-run dedup key; rerun attempts keep this identity."""
+    if context.event_name == 'issues':
+        if type(context.issue_id) is not int or context.issue_id <= 0 or context.attempt != 1:
+            raise p.AdmissionDenied('Invalid issue-event identity')
+        return hashlib.sha256(f'{p.REPOSITORY_ID}:issue:{context.issue_id}:opened'.encode()).hexdigest()
     return hashlib.sha256(f'{p.REPOSITORY_ID}:{context.run_id}:{source_key}'.encode()).hexdigest()
 
 

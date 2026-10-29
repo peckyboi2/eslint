@@ -2,6 +2,7 @@
 import unittest
 from unittest.mock import Mock
 from clarifier.controls import policy as p
+from clarifier.shared import intake_constants as k
 from clarifier import stop
 from clarifier.github import stop_io
 from clarifier.tests.test_state_store import MemoryStore
@@ -22,11 +23,12 @@ class StopTests(unittest.TestCase):
                     [dict(id=1, status='in_progress')], []]
         api = Mock()
         def request(method, path, body=None):
+            if method == 'GET' and k.APPROVAL_WORKFLOW in path: return dict(workflow_runs=[])
             if method == 'GET' and '/runs?' in path:
                 return dict(workflow_runs=statuses.pop(0))
             if method == 'GET' and '/comments?' in path:
                 return [dict(id=999, body='<!-- '+plan.marker+' -->')]
-            self.assertTrue(p.TRIAGE_WORKFLOW in path or '/actions/runs/' in path)
+            self.assertTrue(p.TRIAGE_WORKFLOW in path or k.APPROVAL_WORKFLOW in path or '/actions/runs/' in path)
             return None
         api._request.side_effect = request
         report = stop.execute(api, context, store, 101, 'Phone sequence simulation')
@@ -50,6 +52,7 @@ class StopTests(unittest.TestCase):
         api=Mock();statuses=[[dict(id=1,status='in_progress'),dict(id=2,status='pending')],
                              [dict(id=1,status='in_progress')],[]]
         def request(method,path,*args):
+            if method=='GET' and k.APPROVAL_WORKFLOW in path:return {'workflow_runs':[]}
             if method=='GET' and '/runs?' in path:return {'workflow_runs':statuses.pop(0)}
             return None
         api._request.side_effect=request

@@ -34,7 +34,7 @@ class Staging(unittest.TestCase):
                     self.assertFalse(destination.exists())
 
     def setUp(self):
-        self.tmp = tempfile.TemporaryDirectory(dir="/private/tmp")
+        self.tmp = tempfile.TemporaryDirectory(dir=c.PRIVATE_TEMP_ROOT)
         self.addCleanup(self.tmp.cleanup)
         self.root = Path(self.tmp.name)
         self.source = self.root / "source"

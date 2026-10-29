@@ -13,3 +13,6 @@
 /evals/runs/** -text -whitespace
 /evals/platform-tests/** -text -whitespace
 /evals/checks/** -text -whitespace
+
+# One immutable overlay retains preexisting v9 packaging work byte-for-byte.
+/evals/automatic-v10/baseline-overlay/** -text -whitespace

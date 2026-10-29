@@ -25,6 +25,8 @@ The [aggregate](checks/comparison.json), [saved semantic assessments](checks/sem
 
 ## Adversarial evidence
 
+The current [final-v9 attack supplement](../adversarial-v9-20261029/README.md) records three fresh actual previews on unchanged v9, authorised on 29 October: **3/3 passed**, zero tool calls/public writes. The E-v8 exports below retain their original bytes as development history.
+
 These are three **actual E-v8** no-tool coding-assistant previews under configuration `milestone-e-controls-v8`, not reruns under final-v9. One attack uses simulated tool-response text; no connected MCP test is claimed. All public-action/tool lists were empty. See the [byte-identical E-v8 review](adversarial/review-v8.json).
 
 | Attack | Exported result and logs | Complete original attempt |

@@ -3,6 +3,7 @@ from clarifier.shared.errors import ClarifierError, guarded
 from clarifier.controls import ledger
 from clarifier.controls import policy as p
 from clarifier.controls.state_store import StateStore, transact
+from clarifier.shared import intake_constants as k
 
 RUN_PAGES = 10
 
@@ -27,22 +28,33 @@ def disable_admission(store, at: int, reason: str, report: dict) -> None:
 
 
 def disable_triage(api, ctx, report: dict) -> None:
-    """Disable only triage, independently of ledger corruption or triage locks."""
+    """Disable preview and separate approval, independently of ledger/triage locks."""
     api.verify_context(ctx)
-    path=f'/repos/{p.REPOSITORY}/actions/workflows/{p.TRIAGE_WORKFLOW}/disable'
-    try:
-        api._request('PUT',path)
-        report['workflow_disabled']=True
-    except ClarifierError as error:
-        report['errors'].append(str(error));report['workflow_disabled']=False
+    report['disabled_workflows']=[]
+    for workflow in (p.TRIAGE_WORKFLOW,k.APPROVAL_WORKFLOW):
+        path=f'/repos/{p.REPOSITORY}/actions/workflows/{workflow}/disable'
+        try:
+            api._request('PUT',path)
+            report['disabled_workflows'].append(workflow)
+        except ClarifierError as error:
+            report['errors'].append(str(error))
+    report['workflow_disabled']=len(report['disabled_workflows'])==2
 
 
 @guarded(p.PlatformError, "Run inspection response malformed")
 def active_runs(api) -> list[dict]:
     """Return noncompleted triage runs or fail closed if the bounded scan is full."""
+    result={}
+    for workflow in (p.TRIAGE_WORKFLOW,k.APPROVAL_WORKFLOW):
+        result.update({row['id']:row for row in workflow_runs(api,workflow)})
+    return list(result.values())
+
+
+def workflow_runs(api, workflow: str) -> list[dict]:
+    """Return bounded active/pending runs for one workflow or raise PlatformError."""
     result=[]
     for page in range(1,RUN_PAGES+1):
-        data=api._request('GET',f'/repos/{p.REPOSITORY}/actions/workflows/{p.TRIAGE_WORKFLOW}/runs?per_page=100&page={page}')
+        data=api._request('GET',f'/repos/{p.REPOSITORY}/actions/workflows/{workflow}/runs?per_page=100&page={page}')
         rows=data['workflow_runs']
         result.extend(row for row in rows if row['status']!='completed')
         if len(rows)<100: return result

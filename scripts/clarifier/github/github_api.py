@@ -45,6 +45,8 @@ class GitHub:
     def verify_context(self, context) -> None:
         """Verify live identity/ref before a privileged boundary or raise IdentityError."""
         from clarifier.controls.identity import verify_live
+        if context.event_name == 'issues':
+            from clarifier.controls.intake_identity import verify_live
         root = f'/repos/{p.REPOSITORY}/'
         repo = self._request('GET', root.rstrip('/'))
         run = self._request('GET', root+'actions/runs/'+context.run_id)

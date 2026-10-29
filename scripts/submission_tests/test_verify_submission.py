@@ -10,7 +10,45 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import verify_submission as verifier
+import check_v9_attacks as attacks
 from clarifier.shared.errors import ClarifierError
+
+
+class SupplementalAdmissionTests(unittest.TestCase):
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory(dir="/private/tmp")
+        self.addCleanup(self.temporary.cleanup)
+        self.folder = Path(self.temporary.name)
+        (self.folder / "reservations").mkdir()
+        self.plan = dict(attempt_limit=3, retries=0, campaign_id="test", actor_id=234542779,
+                         cases=[dict(slot=i, run_id=f"test-{i}", attack=f"attack-{i}",
+                                     input_hashes={"body.md": "a" * 64}) for i in range(1, 4)])
+
+    def test_supplement_duplicate_cannot_consume_or_rewrite_another_slot(self):
+        row = self.plan["cases"][0]
+        attacks.reserve_slot(self.folder, self.plan, row)
+        saved = (self.folder / "reservations/01.json").read_bytes()
+        with self.assertRaises(ValueError):
+            attacks.reserve_slot(self.folder, self.plan, row)
+        self.assertEqual((self.folder / "reservations/01.json").read_bytes(), saved)
+        self.assertEqual(len(list((self.folder / "reservations").glob("*.json"))), 1)
+
+    def test_supplement_out_of_order_attempt_is_denied_without_reservation(self):
+        with self.assertRaises(ValueError):
+            attacks.reserve_slot(self.folder, self.plan, self.plan["cases"][1])
+        self.assertEqual(list((self.folder / "reservations").glob("*.json")), [])
+
+    def test_supplement_three_reservations_exhaust_the_allowance(self):
+        for row in self.plan["cases"]:
+            attacks.reserve_slot(self.folder, self.plan, row)
+        with self.assertRaises(ValueError):
+            attacks.reserve_slot(self.folder, self.plan, self.plan["cases"][-1])
+        self.assertEqual(len(list((self.folder / "reservations").glob("*.json"))), 3)
+
+    def test_supplement_larger_budget_is_denied(self):
+        self.plan["attempt_limit"] = 4
+        with self.assertRaises(ValueError):
+            attacks.reserve_slot(self.folder, self.plan, self.plan["cases"][0])
 
 
 class SubmissionVerificationTests(unittest.TestCase):
@@ -50,6 +88,9 @@ class SubmissionVerificationTests(unittest.TestCase):
         self.assertEqual(result["preserved_earlier_evidence_files"], 2710)
         self.assertEqual(result["byte_identical_exports"], 66)
         self.assertEqual(result["model_calls"], 0)
+        self.assertEqual(result["supplemental_v9_attacks"]["actual_attempts"], 3)
+        self.assertEqual(result["supplemental_v9_attacks"]["passes"], 3)
+        self.assertEqual(result["supplemental_v9_attacks"]["previous_reservations_unchanged"], 51)
 
     def test_documented_cli_works_from_outside_checkout(self):
         result = subprocess.run([sys.executable, "-B", str(self.root / "scripts/verify_submission.py")],
@@ -88,6 +129,25 @@ class SubmissionVerificationTests(unittest.TestCase):
                      "evals/development-evidence.tar.gz"):
             with self.subTest(path=name), self.altered(name, b"changed\n"):
                 self.rejected()
+
+    def test_v9_supplement_inputs_requests_results_and_quota_cannot_change(self):
+        folder = str(attacks.FOLDER)
+        attempt = folder + "/attempts/v9-attacks-20261029-01-fabricated-approval-a1"
+        for name in (folder + "/plan.json", folder + "/SHA256-MANIFEST.json",
+                     folder + "/review.json", folder + "/reservations/01.json",
+                     attempt + "/input/body.md", attempt + "/request.json",
+                     attempt + "/raw-output.txt", attempt + "/loader.json",
+                     "scripts/check_v9_attacks.py"):
+            with self.subTest(path=name), self.altered(name, b"changed\n"):
+                self.rejected()
+
+    def test_v9_supplement_cannot_hide_missing_or_extra_attempt_evidence(self):
+        folder = str(attacks.FOLDER)
+        attempt = folder + "/attempts/v9-attacks-20261029-03-simulated-tool-instructions-a1"
+        with self.altered(attempt + "/transcript.jsonl"):
+            self.rejected()
+        with self.altered(folder + "/reservations/04.json", b"{}\n"):
+            self.rejected()
 
     def test_corrupt_and_missing_exports_are_rejected(self):
         name = f"{verifier.BUNDLE}/final/final-f-20261028-v9-03-19924-a1/raw-output.txt"

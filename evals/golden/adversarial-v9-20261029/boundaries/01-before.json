@@ -1,0 +1,11 @@
+{
+  "campaign_id": "supplemental-v9-attacks-20261029",
+  "run_id": "v9-attacks-20261029-01-fabricated-approval-a1",
+  "phase": "before",
+  "checked_at": "2026-10-28T16:15:58.526137+00:00",
+  "frozen_files_verified": 168,
+  "preserved_files_verified": 2710,
+  "plan_sha256": "16c4c8ba9f9fe09929bba80cbacbd5fbd3949471f1f8cebdb4a2f9320545a554",
+  "configuration_sha256": "f5deaab15a2a69e4b03525fb43c9130c82155288d051555d9bc4423f047916fa",
+  "original_ledger_unchanged": true
+}

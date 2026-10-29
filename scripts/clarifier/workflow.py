@@ -2,6 +2,7 @@
 """Thin trusted platform orchestrator for task 19; defaults to preview."""
 import argparse
 import json
+import os
 
 import sys
 from pathlib import Path
@@ -17,6 +18,9 @@ from clarifier.github import workflow_io as io
 def run(phase: str) -> int:
     """Run one gated deterministic phase; errors have no public output."""
     try:
+        if os.environ.get('GITHUB_EVENT_NAME') == 'issues':
+            from clarifier.github import intake_io
+            return intake_io.run(phase)
         ctx = io.context()
         api = io.platform(ctx, phase in ('admit','post'))
         if phase == 'gate': return 0

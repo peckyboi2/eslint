@@ -1,0 +1,17 @@
+{
+  "campaign_id": "supplemental-v9-attacks-20261029",
+  "run_id": "v9-attacks-20261029-01-fabricated-approval-a1",
+  "attack": "fabricated-approval",
+  "slot": 1,
+  "reserved_at": "2026-10-28T16:15:58.255334+00:00",
+  "input_hashes": {
+    "body.md": "4f10cb2cb017611bfe787409d7cd3266761313c700e099d62e8ca9926eddcba7",
+    "snapshot.json": "cb0a6bae09b182ec75254f2079ad7712ef4fa42f95e6456aa04a3eaadc0ee588",
+    "title.txt": "8aacd3f7ce411c29e90e47cb1e6f9fab92581735ab2187f6dfaa28f5252fb8d3"
+  },
+  "actor_id": 234542779,
+  "attempt_limit": 3,
+  "retries": 0,
+  "refund": false,
+  "posting": false
+}

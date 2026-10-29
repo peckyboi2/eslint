@@ -1,0 +1,69 @@
+test_edits_swaps_closure_and_disabled_rejected (clarifier.tests.test_exact_approval.ApprovalTests.test_edits_swaps_closure_and_disabled_rejected) ... 
+  test_edits_swaps_closure_and_disabled_rejected (clarifier.tests.test_exact_approval.ApprovalTests.test_edits_swaps_closure_and_disabled_rejected) (change={'id': 801}) ... ERROR
+  test_edits_swaps_closure_and_disabled_rejected (clarifier.tests.test_exact_approval.ApprovalTests.test_edits_swaps_closure_and_disabled_rejected) (change={'number': 8}) ... ERROR
+  test_edits_swaps_closure_and_disabled_rejected (clarifier.tests.test_exact_approval.ApprovalTests.test_edits_swaps_closure_and_disabled_rejected) (change={'state': 'closed'}) ... ERROR
+test_every_approval_field_is_exact (clarifier.tests.test_exact_approval.ApprovalTests.test_every_approval_field_is_exact) ... ok
+test_exact_dynamic_target_and_lifetime_intent (clarifier.tests.test_exact_approval.ApprovalTests.test_exact_dynamic_target_and_lifetime_intent) ... ok
+test_live_release_absent (clarifier.tests.test_exact_approval.ApprovalTests.test_live_release_absent) ... ok
+test_silent_outputs_never_create_plan (clarifier.tests.test_exact_approval.ApprovalTests.test_silent_outputs_never_create_plan) ... ok
+
+======================================================================
+ERROR: test_edits_swaps_closure_and_disabled_rejected (clarifier.tests.test_exact_approval.ApprovalTests.test_edits_swaps_closure_and_disabled_rejected) (change={'id': 801})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_exact_approval.py", line 49, in test_edits_swaps_closure_and_disabled_rejected
+    a.plan(self.approval,self.binding,self.raw,{**self.issue,**change},self.state)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/shared/errors.py", line 52, in call
+    return function(*args, **kwargs)
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/outputs/exact_approval.py", line 33, in plan
+    fresh=live_snapshot.capture(ctx,issue,issue)
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/shared/errors.py", line 52, in call
+    return function(*args, **kwargs)
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/inference/live_snapshot.py", line 53, in capture
+    raise StagingError('Issue changed or target disagrees with opening event')
+clarifier.shared.errors.StagingError: Issue changed or target disagrees with opening event
+
+======================================================================
+ERROR: test_edits_swaps_closure_and_disabled_rejected (clarifier.tests.test_exact_approval.ApprovalTests.test_edits_swaps_closure_and_disabled_rejected) (change={'number': 8})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_exact_approval.py", line 49, in test_edits_swaps_closure_and_disabled_rejected
+    a.plan(self.approval,self.binding,self.raw,{**self.issue,**change},self.state)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/shared/errors.py", line 52, in call
+    return function(*args, **kwargs)
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/outputs/exact_approval.py", line 33, in plan
+    fresh=live_snapshot.capture(ctx,issue,issue)
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/shared/errors.py", line 52, in call
+    return function(*args, **kwargs)
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/inference/live_snapshot.py", line 53, in capture
+    raise StagingError('Issue changed or target disagrees with opening event')
+clarifier.shared.errors.StagingError: Issue changed or target disagrees with opening event
+
+======================================================================
+ERROR: test_edits_swaps_closure_and_disabled_rejected (clarifier.tests.test_exact_approval.ApprovalTests.test_edits_swaps_closure_and_disabled_rejected) (change={'state': 'closed'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/tests/test_exact_approval.py", line 49, in test_edits_swaps_closure_and_disabled_rejected
+    a.plan(self.approval,self.binding,self.raw,{**self.issue,**change},self.state)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/shared/errors.py", line 52, in call
+    return function(*args, **kwargs)
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/outputs/exact_approval.py", line 33, in plan
+    fresh=live_snapshot.capture(ctx,issue,issue)
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/shared/errors.py", line 52, in call
+    return function(*args, **kwargs)
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/inference/live_snapshot.py", line 51, in capture
+    event, live = project(opening), project(current)
+                  ~~~~~~~^^^^^^^^^
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/shared/errors.py", line 52, in call
+    return function(*args, **kwargs)
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/inference/live_snapshot.py", line 31, in project
+    raise StagingError('Closed, locked or PR report rejected')
+clarifier.shared.errors.StagingError: Closed, locked or PR report rejected
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (errors=3)

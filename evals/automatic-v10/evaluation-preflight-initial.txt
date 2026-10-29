@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/evaluate_automatic.py", line 43, in verify_files
+    raw=staging.read_safe(root,name,c.MAX_RESPONSE_BYTES)
+  File "/Users/darrenpeck/Documents/school/Y3S1/CS467 Open Source Software Systems/Assignment/assignment 3/eslint-fork/scripts/clarifier/shared/errors.py", line 59, in call
+    raise error_type(message) from None
+clarifier.shared.errors.StagingError: Cannot read safe UTF-8 source file

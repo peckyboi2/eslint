@@ -47,6 +47,28 @@ class AuditTests(unittest.TestCase):
 
     def test_actual_workflows(self): self.assertEqual(audit.run()['jobs']['stop'][1],'actions:write')
 
+    def test_provider_key_is_allowed_only_on_the_inference_command(self):
+        folder=c.ROOT/'.github/workflows'
+        triage=(folder/p.TRIAGE_WORKFLOW).read_text(); stop=(folder/p.STOP_WORKFLOW).read_text()
+        audit.inspect(triage,stop)
+        secret='          CLARIFIER_PROVIDER_KEY: ${{ secrets.CLARIFIER_PROVIDER_KEY }}\n'
+        mutations=(triage.replace(secret,''),
+                   triage.replace('permissions: {}','permissions: {}\nenv:\n  KEY: ${{ secrets.CLARIFIER_PROVIDER_KEY }}'),
+                   triage.replace('CLARIFIER_PROVIDER_KEY','ANOTHER_KEY'),
+                   triage.replace('  gate:\n','  gate:\n    env:\n'+secret),
+                   triage.replace('  inference:\n','  inference:\n    env:\n'+secret),
+                   triage.replace('        run: python3 -B scripts/clarifier/workflow.py infer','        run: echo provider-key'))
+        for mutated in mutations:
+            with self.subTest(workflow=mutated), self.assertRaises(p.PlatformError):
+                audit.inspect(mutated,stop)
+
+    def test_runtime_install_and_metadata_permissions_are_required(self):
+        folder=c.ROOT/'.github/workflows'
+        triage=(folder/p.TRIAGE_WORKFLOW).read_text(); stop=(folder/p.STOP_WORKFLOW).read_text()
+        for before,after in (('      actions: read\n',''),('      issues: read\n',''),(' --github-path','')):
+            with self.subTest(removed=before), self.assertRaises(p.PlatformError):
+                audit.inspect(triage.replace(before,after),stop)
+
     def test_unsafe_permission_secret_or_stop_dependency_rejected(self):
         folder=c.ROOT/'.github/workflows'
         triage=(folder/p.TRIAGE_WORKFLOW).read_text();stop=(folder/p.STOP_WORKFLOW).read_text()

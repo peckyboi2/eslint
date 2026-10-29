@@ -1,5 +1,11 @@
 # Current golden submission index
 
+Current active runtime is **hosted-preview-v11**: [hosted preparation and activation review](../hosted-v11/README.md). The API secret is stored and Linux archive/executable pins are verified. The new workflow wiring has 235 passing synthetic safety tests; no v11 model call or hosted execution has occurred. Earlier v10/v9 records below remain history. Current offline verification uses the new v11 candidate while preserving those records.
+
+Current active code is the [automatic-preview v10 local candidate](../automatic-v10/README.md). It has 212 passing deterministic safety tests and no new model accuracy or hosted-execution claim. The v9 evaluation below is retained history. `python3 -B scripts/verify_submission.py` now checks current v10 bytes separately and runs the unchanged historical verifier on retained v9 Git/overlay bytes; `--safety-tests` runs the frozen 172 tests. Use `python3 -B scripts/verify_automatic.py --tests` for current candidate tests. Do not run old inline v9 source-hash commands against changed active runtime files.
+
+## Retained v9 evidence and operations
+
 This is the current entry point. The [golden-v1 README](README.md) records the pre-inference state of 27 October 2026; its wording and all original bytes remain frozen. The additive [final-results-v9 bundle](final-results-v9/README.md) contains actual outputs, transcripts, run records, comparisons and test logs from the completed evaluation. It is evaluator-only and is not part of the original input set.
 
 ## Inputs, results and failures
@@ -10,15 +16,14 @@ This is the current entry point. The [golden-v1 README](README.md) records the p
 | Expectations recorded before inference | [Labels](expectations.json), [accepted reasons](expected-decision-review.md), [comment criteria](comment-quality.md), [original plan](evaluation-plan.md). Labels remain 2 clarify / 7 no_action / 1 human_review. |
 | Ten final actual attempts | [Versioned bundle and case table](final-results-v9/README.md), including outputs, transcripts, validated routes, records and per-case comparisons. Each row also links its full original run. |
 | Final comparison and test log | [Comparison export](final-results-v9/checks/comparison.json), [semantic reviews](final-results-v9/checks/semantic-reviews.json), [172-test log](final-results-v9/checks/pre-freeze-tests-v3.txt), [original F review](../checks/gate-f-20261028/gate-f-review.json). |
-| Adversarial evidence | [Three actual E-v8 attack attempts and review](final-results-v9/README.md#adversarial-evidence). Fabricated approval, poisoned support and simulated tool instructions are included. E-v6/v7 and all defects remain indexed in [earlier evidence](../README.md#earlier-evidence-and-failures). No F-v9 attack inference is claimed. |
+| Adversarial evidence | [Three actual final-v9 attack attempts and review](adversarial-v9-20261029/README.md): fabricated approval, poisoned support and simulated tool instructions, **3/3 passed**. This separately authorised 29 October supplement preserves the original historical campaign. [Earlier E-v8 exports](final-results-v9/README.md#adversarial-evidence), E-v6/v7 and all defects remain available through [earlier evidence](../README.md#earlier-evidence-and-failures). |
 | Earlier failures and original evidence | [Failure/history index](../README.md#earlier-evidence-and-failures), [all original runs](../runs/), [platform simulations](../platform-tests/), [checks](../checks/), [data-only archive](../development-evidence.tar.gz). Do not execute archived content. |
 | Final freeze and audit | [168-file F freeze](../checks/gate-f-20261028/freeze.json), [2,710 earlier evidence hashes](../checks/gate-g-20261028/preserved-evidence-sha256.json), [G review](../checks/gate-g-20261028/review.md). These historical status records are not rewritten by this packaging correction. |
 | Need measurement and operations | [September cohort](../measurement/README.md), [operating guide and limits](../README.md), [design](../../DESIGN.md). |
 
 Final campaign `final-f-20261028-v9` uses `milestone-f-final-v9`, selected `gpt-6.1-sol` / `xhigh`, Codex CLI 0.154.0. Ten single predeclared attempts completed with **9/10 decision matches**, 2/2 comment-quality passes and zero public writes.
 #19924 remains expected `human_review`, actual `no_action`, a failed match.
-#19847 remains `no_action`. Assistant semantic reviews are saved assessments, not
-independent/blinded human approval. The separate September 0/10 is an observation of maintainer clarification requests, not evaluation accuracy.
+#19847 remains `no_action`. Assistant semantic reviews are saved assessments, not independent/blinded human approval. The separate September 0/10 is an observation of maintainer clarification requests, not evaluation accuracy.
 
 ## Offline reproduction for the complete submission
 
@@ -35,7 +40,7 @@ The current [verifier](../../scripts/verify_submission.py) checks the actual com
 
 The safety-suite command runs the unchanged 172 historical tests in a disposable local copy because some tests create synthetic platform records. It leaves this checkout intact. The verifier tests also use a disposable local clone/copy and alter inputs, expectations, results, manifests, source, packaging and navigation to check that corruption is rejected. [Saved packaging check records](../submission-checks-v1/) contain the current verification and test results.
 
-These checks invoke no model, network, GitHub or submitted reproduction code. They replay saved evidence and do not independently repeat qualitative judgement or establish hosted enforcement. A fresh model rerun needs separate authorisation, new campaign identifiers and quota; follow the [future-rerun instructions](../README.md#a-future-model-rerun-requires-separate-authorisation). The exhausted local ledger remains 51/51.
+These checks invoke no model, network, GitHub or submitted reproduction code. They replay saved evidence and do not independently repeat qualitative judgement or establish hosted enforcement. They also verify the [v9 supplement](adversarial-v9-20261029/README.md), including its predeclared plan, three exact requests, results and separate reservation receipts. A fresh model rerun needs separate authorisation, new campaign identifiers and quota; follow the [future-rerun instructions](../README.md#a-future-model-rerun-requires-separate-authorisation). The original local ledger remains exhausted at 51/51; the separately authorised supplement is exhausted at 3/3.
 
 ## Packaging and historical commands
 

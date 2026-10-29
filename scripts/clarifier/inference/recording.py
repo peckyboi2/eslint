@@ -132,7 +132,8 @@ def redact(value: Any) -> Any:
     """Return JSON data with credential fields and bearer values removed."""
     if isinstance(value, dict):
         return {key: "[REDACTED]" if key.lower() in {
-            "authorization", "access_token", "refresh_token", "id_token", "openai_api_key", "password"
+            "authorization", "access_token", "refresh_token", "id_token", "openai_api_key", "password",
+            "gh_token", "github_token", "token", "codex_api_key", "clarifier_provider_key", "client_secret", "cookie"
         } else redact(item) for key, item in value.items()}
     if isinstance(value, list):
         return [redact(item) for item in value]
@@ -264,7 +265,8 @@ def fail(session: Session, error: ClarifierError) -> None:
     status = "interrupted" if isinstance(error, InterruptedRun) else "failed"
     if isinstance(error, ValidationError):
         status = "invalid_output"
-        save_json(session.folder / c.VALIDATION_FILE, rejected(error, source_issue=session.record['source_issue']))
+        save_json(session.folder / c.VALIDATION_FILE, rejected(error, source_issue=session.record['source_issue'],
+                  trusted_live=session.record.get('trigger')=='issues:opened'))
     session.record.update(status=status)
     session.record["errors"].append(redact_text(str(error), session.secrets))
 

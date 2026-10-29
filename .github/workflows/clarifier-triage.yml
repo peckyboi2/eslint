@@ -1,28 +1,26 @@
-name: Sandbox clarification
+name: Sandbox clarification preview
 on:
-  workflow_dispatch:
-    inputs:
-      mode:
-        type: choice
-        options: [preview, post]
-        default: preview
-        description: One fixed historical report; posting requires reviewed gates
+  issues:
+    types: [opened]
 permissions: {}
 concurrency:
   group: sandbox-clarifier-triage
   cancel-in-progress: false
-  # GitHub default: at most one pending run; newer dispatch replaces it.
+  queue: max
+  # One running/100 pending. Overflow has Actions cancellation records only.
 jobs:
   gate:
     if: >-
-      github.event_name == 'workflow_dispatch' && github.repository == 'peckyboi2/eslint' &&
-      github.repository_id == '1435519573' && github.repository_owner_id == '234542779' &&
-      github.actor == 'peckyboi2' && github.actor_id == '234542779' &&
-      github.triggering_actor == 'peckyboi2' && github.ref == 'refs/heads/main'
+      github.event_name == 'issues' && github.event.action == 'opened' &&
+      github.repository == 'peckyboi2/eslint' && github.repository_id == '1435519573' &&
+      github.repository_owner == 'peckyboi2' && github.repository_owner_id == '234542779' &&
+      github.ref == 'refs/heads/main' && github.run_attempt == 1
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     permissions:
       contents: read
+      actions: read
+      issues: read
     outputs:
       verified: ${{ steps.verify.outputs.verified }}
     steps:
@@ -32,10 +30,17 @@ jobs:
           persist-credentials: false
       - id: verify
         env:
-          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
+          CLARIFIER_READ_TOKEN: ${{ github.token }}
         run: |
           python3 -B scripts/clarifier/workflow.py gate
           echo 'verified=true' >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: ${{ !cancelled() }}
+        with:
+          name: intake-gate-${{ github.run_id }}
+          path: evals/automatic-workflow
+          retention-days: 30
+          if-no-files-found: warn
   admission:
     needs: gate
     if: needs.gate.outputs.verified == 'true'
@@ -43,20 +48,21 @@ jobs:
     timeout-minutes: 5
     permissions:
       contents: write
+      actions: read
+      issues: read
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           ref: ${{ github.sha }}
           persist-credentials: false
       - env:
-          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
-          DISPATCH_MODE: ${{ inputs.mode }}
           GH_TOKEN: ${{ github.token }}
         run: python3 -B scripts/clarifier/workflow.py admit
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: ${{ !cancelled() }}
         with:
-          name: admission
-          path: evals/checks/workflow/admission.json
+          name: admission-${{ github.run_id }}
+          path: evals/automatic-workflow
           retention-days: 30
           if-no-files-found: error
   inference:
@@ -66,6 +72,8 @@ jobs:
     timeout-minutes: 15
     permissions:
       contents: read
+      actions: read
+      issues: read
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -73,48 +81,19 @@ jobs:
           persist-credentials: false
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
         with:
-          name: admission
-          path: evals/checks/workflow
-      # No inference secret is provisioned. The pinned local engine/login check fails closed on an unprovisioned runner.
+          name: admission-${{ github.run_id }}
+          path: evals/automatic-workflow
+      - name: Install verified Linux Codex
+        run: python3 -B scripts/clarifier/inference/hosted_install.py --destination "$RUNNER_TEMP/clarifier-bin" --github-path
+      # The credential belongs only to the trusted gateway invocation.
       - env:
-          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
-          DISPATCH_MODE: ${{ inputs.mode }}
+          CLARIFIER_READ_TOKEN: ${{ github.token }}
+          CLARIFIER_PROVIDER_KEY: ${{ secrets.CLARIFIER_PROVIDER_KEY }}
         run: python3 -B scripts/clarifier/workflow.py infer
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: ${{ !cancelled() }}
         with:
-          name: inference
-          path: |
-            evals/checks/workflow
-            evals/runs
-          retention-days: 30
-          if-no-files-found: error
-  output:
-    needs: [gate, admission, inference]
-    if: needs.gate.outputs.verified == 'true' && inputs.mode == 'post' && github.run_attempt == 1
-    runs-on: ubuntu-24.04
-    timeout-minutes: 5
-    permissions:
-      contents: write
-      issues: write
-    steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-        with:
-          ref: ${{ github.sha }}
-          persist-credentials: false
-      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
-        with:
-          name: inference
-          path: evals
-      - env:
-          TRUSTED_GITHUB_CONTEXT: ${{ toJSON(github) }}
-          DISPATCH_MODE: ${{ inputs.mode }}
-          GH_TOKEN: ${{ github.token }}
-        run: python3 -B scripts/clarifier/workflow.py post
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        if: ${{ !cancelled() }}
-        with:
-          name: posting
-          path: evals/checks/workflow
+          name: preview-${{ github.run_id }}
+          path: evals/automatic-workflow
           retention-days: 30
           if-no-files-found: error

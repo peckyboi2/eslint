@@ -1,0 +1,10 @@
+{
+  "DESIGN.md": "e6a96102e479fc8e942e191c12d5d76a111ddb5117c3313558b3fae3022312f6",
+  "SUBMISSION.md": "acf399fbec6a7a0d0e4bd0c4b67a62276bc69179ea821367c32b7c5ed050fa88",
+  "evals/README.md": "654f4e36c2273572ea50daa94e4be6e21b28d87186c96eed0be305b1336fe43c",
+  "evals/golden/INDEX.md": "5d47afd92b9a74768bfe238f3ccd21c6379a895988af937e467b0b1acd230cfa",
+  "evals/golden/final-results-v9/README.md": "0b08b129eba06c693318012dc5f6aa61f2329a58ce9f5c8d97f4b8de92893779",
+  "scripts/submission_tests/test_verify_submission.py": "dffc20a8bafbf6fa43f5f3c39e9bdb2333dae28179dc98bba07c8e721e581165",
+  "scripts/verify_submission.py": "8fea98c4ea40fe7858deb80c7ad4cdd38b0ccc7c447a85ee71de55cf88eb0b7f",
+  "scripts/check_v9_attacks.py": "f33d62a816834f537bac353232cde21062872b1c3d11eefb2f84dbeaae9521e1"
+}

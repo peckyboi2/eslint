@@ -13,6 +13,7 @@ import tempfile
 from urllib.parse import unquote
 
 import verify_baseline as historical
+import check_v9_attacks as supplemental
 from clarifier.inference import packages, staging
 from clarifier.inference.recording import load_configuration
 from clarifier.outputs import campaign, campaign_metrics
@@ -29,10 +30,14 @@ GOLDEN_FREEZE_SHA = "f5a4d84dc59728cbec961eae309ca0df0328cfbb1b9b3747a16d3584987
 FINAL_FREEZE_SHA = "0c0ca76cd19e5adca0c5ebfc2be40e531a1ecbda5a4a546ada9f42d125d21a5f"
 G_PRESERVED_SHA = "6022e3d9f60bafa7e074b89347008620b43f597e76b1fef8b5eb0238757df041"
 EXPORT_MANIFEST_SHA = "711a27974bc59feb03c59fb0be177c98af12ae9e179e0159f62bc080f44c9950"
+SUPPLEMENT_PLAN_SHA = "16c4c8ba9f9fe09929bba80cbacbd5fbd3949471f1f8cebdb4a2f9320545a554"
+SUPPLEMENT_MANIFEST_SHA = "81486c945ae438e89e3b1be0283ff1b48f87906616ecd0b525bc0f45279d64c9"
 CURRENT_DOCS = ("SUBMISSION.md", "DESIGN.md", "evals/README.md",
-                "evals/golden/INDEX.md", f"{BUNDLE}/README.md")
+                "evals/golden/INDEX.md", f"{BUNDLE}/README.md",
+                str(supplemental.FOLDER / "README.md"))
 EDITABLE_ORIGINALS = {"DESIGN.md", "evals/README.md"}
 NEW_FILES = {"SUBMISSION.md", "scripts/verify_submission.py",
+             "scripts/check_v9_attacks.py",
              "scripts/submission_tests/test_verify_submission.py", "evals/golden/INDEX.md",
              f"{BUNDLE}/README.md", f"{BUNDLE}/.gitattributes", f"{BUNDLE}/exports.json"}
 REPORT_FOLDER = "evals/submission-checks-v1"
@@ -280,13 +285,14 @@ def build_result(root: Path, golden: dict, sources: dict, original_count: int,
                 scope_limit="Structural replay uses saved semantic assessments; no new judgement or hosted-control verification.")
 
 
-def verify(root: Path) -> dict:
+def verify_v9(root: Path) -> dict:
     """Return complete-tree verification evidence or raise at the first failed check."""
     root = root.resolve()
     actual = tree_files(root)
     golden, frozen = check_freezes(root)
+    supplement = supplemental.verify(root, SUPPLEMENT_PLAN_SHA, SUPPLEMENT_MANIFEST_SHA)
     sources = export_sources(root, frozen)
-    additions = NEW_FILES | {f"{BUNDLE}/{name}" for name in sources}
+    additions = NEW_FILES | {f"{BUNDLE}/{name}" for name in sources} | set(supplement["files"])
     original_count = check_tree(root, actual, additions)
     check_golden_layout(root, actual, golden, additions)
     check_exports(root, sources, frozen)
@@ -297,7 +303,17 @@ def verify(root: Path) -> dict:
     reproduced = reproduce_comparison(root, frozen)
     check_saved_reports(root)
     links = check_links(root)
-    return build_result(root, golden, sources, original_count, archive_count, run_counts, reproduced, links)
+    result = build_result(root, golden, sources, original_count, archive_count, run_counts, reproduced, links)
+    result["supplemental_v9_attacks"] = {key: value for key, value in supplement.items() if key != "files"}
+    return result
+
+
+def verify(root: Path) -> dict:
+    """Verify v10 separately when present; preserve the original v9 checker intact."""
+    if (root / 'evals/automatic-v10/baseline.json').is_file():
+        import verify_automatic
+        return verify_automatic.verify(root)
+    return verify_v9(root)
 
 
 def main() -> int:
@@ -309,6 +325,12 @@ def main() -> int:
     try:
         result = verify(ROOT)
         if args.safety_tests:
+            if (ROOT / 'evals/automatic-v10/baseline.json').is_file():
+                import verify_automatic
+                historical = verify_automatic.run_historical(ROOT, '--safety-tests')
+                print(historical.stdout, end='')
+                print(historical.stderr, end='', file=sys.stderr)
+                return historical.returncode
             # Some historical tests write synthetic platform records beneath their root.
             # Retain their exact source and behavior while keeping this checkout intact.
             with disposable_copy(ROOT) as folder:

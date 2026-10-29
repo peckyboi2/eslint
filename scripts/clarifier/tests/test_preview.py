@@ -27,7 +27,7 @@ class RunFixture(unittest.TestCase):
     """Exercise complete runs with a fake CLI and transport; never call a model."""
 
     def setUp(self):
-        temporary = tempfile.TemporaryDirectory(dir="/private/tmp")
+        temporary = tempfile.TemporaryDirectory(dir=c.PRIVATE_TEMP_ROOT)
         self.addCleanup(temporary.cleanup)
         self.root = Path(temporary.name)
         for name in c.CONFIG_PATHS:
@@ -239,7 +239,7 @@ class RejectedLifecycle(RunFixture):
 
 class CurrentEvidenceFlow(unittest.TestCase):
     def test_staged_prompt_contains_exact_approved_text(self):
-        with tempfile.TemporaryDirectory(dir='/private/tmp') as tmp:
+        with tempfile.TemporaryDirectory(dir=c.PRIVATE_TEMP_ROOT) as tmp:
             evidence = Path(tmp) / 'evidence'
             manifest = stage.stage(c.ROOT / c.CASE_PATH, evidence)
             prompt = req.build_prompt(evidence)

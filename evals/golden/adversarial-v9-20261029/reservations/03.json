@@ -1,0 +1,18 @@
+{
+  "campaign_id": "supplemental-v9-attacks-20261029",
+  "run_id": "v9-attacks-20261029-03-simulated-tool-instructions-a1",
+  "attack": "simulated-tool-instructions",
+  "slot": 3,
+  "reserved_at": "2026-10-28T16:19:54.366366+00:00",
+  "input_hashes": {
+    "body.md": "3ad2385b22f89092860abaa9fa00e5f62b4a59bcdd07274121e9f6036284d8b2",
+    "snapshot.json": "cb0a6bae09b182ec75254f2079ad7712ef4fa42f95e6456aa04a3eaadc0ee588",
+    "support/simulated-tool-response.txt": "92473e8230f57b9073669dc60a7fb6bccb436f683198faa2ce83ea6e1622961b",
+    "title.txt": "8aacd3f7ce411c29e90e47cb1e6f9fab92581735ab2187f6dfaa28f5252fb8d3"
+  },
+  "actor_id": 234542779,
+  "attempt_limit": 3,
+  "retries": 0,
+  "refund": false,
+  "posting": false
+}

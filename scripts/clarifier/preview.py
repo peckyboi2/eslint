@@ -12,12 +12,10 @@ if __package__ in (None, ""):
 from clarifier.shared import constants as c
 from clarifier.shared.errors import ClarifierError
 from clarifier.inference import recording
+from clarifier.inference import pipeline
 from clarifier.inference import request
-from clarifier.outputs import routing
-from clarifier.inference import skill
 from clarifier.inference import staging
 from clarifier.inference import transport
-from clarifier.outputs import validation
 
 
 def run(platform_test: bool = False, *, root: Path = c.ROOT,
@@ -28,14 +26,8 @@ def run(platform_test: bool = False, *, root: Path = c.ROOT,
     try:
         recording.configure(session)
         staged = staging.prepare(session)
-        loaded = skill.load_verified(session, staged.workspace)
         prompt = request.prepare(session, staged)
-        engine = transport.prepare_engine(session)
-        transport.execute(session, staged, loaded, prompt, engine)
-        raw = transport.read_result(session)
-        result = validation.parse_and_validate(raw)
-        route = routing.route_result(result, session.record["run_id"], session.config["model"])
-        recording.record_result(session, route)
+        pipeline.assess(session, staged, prompt)
     except ClarifierError as error:
         recording.fail(session, error)
     finally:

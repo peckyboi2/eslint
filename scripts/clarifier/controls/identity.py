@@ -5,6 +5,7 @@ from typing import Any
 
 from clarifier.shared.errors import guarded
 from clarifier.controls import policy as p
+from clarifier.shared import intake_constants as k
 
 
 @dataclass(frozen=True)
@@ -14,6 +15,11 @@ class Context:
     attempt: int
     sha: str
     workflow: str
+    event_name: str = 'workflow_dispatch'
+    issue_id: int | None = None
+    issue_number: int | None = None
+    actor_id: int | None = None
+    actor_login: str | None = None
 
 
 def require(value: bool, message: str) -> None:
@@ -31,7 +37,7 @@ def verify(data: dict[str, Any], workflow: str = p.TRIAGE_WORKFLOW) -> Context:
                 'actor_id': str(p.OWNER_ID), 'triggering_actor': p.OWNER,
                 'ref': p.TRUSTED_REF, 'ref_type': 'branch'}
     require(all(data.get(k) == v for k, v in expected.items()), 'Trigger/identity/ref rejected')
-    require(workflow in (p.TRIAGE_WORKFLOW, p.STOP_WORKFLOW), 'Unknown workflow')
+    require(workflow in (p.TRIAGE_WORKFLOW, p.STOP_WORKFLOW, k.APPROVAL_WORKFLOW), 'Unknown workflow')
     require(data.get('workflow_ref') == f'{p.REPOSITORY}/.github/workflows/{workflow}@{p.TRUSTED_REF}', 'Untrusted workflow ref')
     require(bool(re.fullmatch(p.GIT_SHA_PATTERN, str(data.get('sha', '')))), 'Missing trusted SHA')
     require(data.get('workflow_sha') == data['sha'], 'Workflow/code SHA mismatch')

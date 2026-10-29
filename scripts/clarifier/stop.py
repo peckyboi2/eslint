@@ -21,7 +21,9 @@ from clarifier.github import workflow_io
 def execute(api, ctx, store, at: int, reason: str) -> dict:
     """Disable future work, cancel active/pending work and inspect possible writes."""
     report=dict(ledger_disabled=False,workflow_disabled=False,cancellation_requests=[],
-                unresolved_runs=['inspection incomplete'],inflight_intents=[],errors=[],public_actions=[])
+                unresolved_runs=['inspection incomplete'],inflight_intents=[],errors=[],public_actions=[],
+                provider_work='Cancellation cannot prove provider work terminated; reservations remain consumed',
+                artifact_limit='Cancelled/overflow runs may not upload artifacts; inspect Actions history')
     io.disable_admission(store,at,reason,report)
     io.disable_triage(api,ctx,report)
     io.cancel_runs(api,ctx,report)

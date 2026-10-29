@@ -1,5 +1,6 @@
 """Trusted paths, schemas and preview limits. Serves tasks 08–15, 29 and R1."""
 from pathlib import Path
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent.parent
@@ -38,6 +39,21 @@ MODULE_PATHS = tuple(map(Path, (
     "github/workflow_io.py",
     "github/workflow_audit.py",
     "github/stop_io.py",
+    "approve.py",
+    "outputs/exact_approval.py",
+    "outputs/dynamic_posting.py",
+    "github/approval_io.py",
+    "github/intake_audit.py",
+    "shared/intake_constants.py",
+    "controls/intake_identity.py",
+    "controls/intake_binding.py",
+    "github/issue_io.py",
+    "github/intake_io.py",
+    "inference/live_snapshot.py",
+    "inference/pipeline.py",
+    "inference/hosted_runtime.py",
+    "inference/hosted_install.py",
+    "inference/hosted_transport.py",
     "outputs/validation.py",
     "outputs/routing.py",
     "outputs/output_handler.py",
@@ -58,10 +74,12 @@ PACKAGE_PATHS = tuple(map(Path, (
 SOURCE_PATHS = MODULE_PATHS + PACKAGE_PATHS
 MODULE_NAMES = tuple(path.stem for path in MODULE_PATHS)
 CONFIG_PATHS = (SKILL_PATH, CONFIG_PATH, SCHEMA_PATH,
+                Path("scripts/clarifier/config/hosted.json"),
                 *(Path("scripts/clarifier") / name for name in SOURCE_PATHS),
                 Path("scripts/clarifier/tests/fixtures/attacks-v1.json"),
-                Path(".github/workflows/clarifier-triage.yml"), Path(".github/workflows/clarifier-stop.yml"))
-RETAINED_CONFIG_PATHS = (SKILL_PATH, CONFIG_PATH, SCHEMA_PATH)
+                Path(".github/workflows/clarifier-triage.yml"), Path(".github/workflows/clarifier-stop.yml"),
+                Path(".github/workflows/clarifier-approve.yml"))
+RETAINED_CONFIG_PATHS = (SKILL_PATH, CONFIG_PATH, SCHEMA_PATH, Path("scripts/clarifier/config/hosted.json"))
 APPROVED = {
     "body.md": "52acebec10d033684d643df1c45c849b02967fa291806af3ee70f7e5ee1d0243",
     "title.txt": "8aacd3f7ce411c29e90e47cb1e6f9fab92581735ab2187f6dfaa28f5252fb8d3",
@@ -85,7 +103,7 @@ MAX_PROVIDER_REQUESTS = 1
 MAX_SKILL_BYTES = MAX_INPUT_BYTES
 SHA256_HEX_LENGTH = 64
 RUN_SUFFIX_CHARS = 8
-PRIVATE_TEMP_ROOT = "/private/tmp"
+PRIVATE_TEMP_ROOT = str(Path(tempfile.gettempdir()).resolve())
 WORKSPACE_DIR, EVIDENCE_DIR, INPUT_DIR = "workspace", "evidence", "input"
 ENGINE_HOME_DIR, CONFIGURATION_DIR = "engine-home", "configuration"
 STARTED_FILE, RECORD_FILE = "started.json", "record.json"

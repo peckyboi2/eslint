@@ -136,7 +136,9 @@ def prepare(session: Session, package: "Package | None" = None) -> StagedCase:
     if package:
         if manifest["staged_bytes"] != package.total_bytes:
             raise StagingError("Historical package size mismatch")
-        session.record.update(source_issue=package.issue, historical_cutoff=package.cutoff)
+        session.record['source_issue']=package.issue
+        boundary='snapshot_boundary' if package.cutoff.get('kind')=='issues:opened' else 'historical_cutoff'
+        session.record[boundary]=package.cutoff
     session.record["input_hashes"] = manifest["source_hashes"]
     save_json(session.folder / c.MANIFEST_FILE, manifest)
     shutil.copytree(evidence, session.folder / c.INPUT_DIR)

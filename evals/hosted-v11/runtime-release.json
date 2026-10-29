@@ -1,0 +1,32 @@
+{
+  "version": "hosted-preview-v11",
+  "verification": "Official release archive downloaded and hashed; exact payload hashed and ELF inspected; no Linux execution or provider call",
+  "source": "https://github.com/openai/codex/releases/tag/rust-v0.154.0",
+  "metadata_source": "https://api.github.com/repos/openai/codex/releases/tags/rust-v0.154.0",
+  "release_published_at": "2026-09-09T22:35:38Z",
+  "archive": {
+    "url": "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-x86_64-unknown-linux-musl.tar.gz",
+    "bytes": 98981886,
+    "sha256": "d7e18b2597ae8f242f5f31ee9e90deef48dbc9edd634d9868fb6435d08c07f02",
+    "published_digest_matched": true
+  },
+  "binary": {
+    "member": "codex-x86_64-unknown-linux-musl",
+    "bytes": 262858016,
+    "sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+    "elf_class": 64,
+    "endianness": "little",
+    "machine": 62,
+    "executed": false
+  },
+  "github_secret": {
+    "name": "CLARIFIER_PROVIDER_KEY",
+    "metadata_confirmed": true,
+    "created_at": "2026-10-29T02:43:13Z",
+    "value_read": false
+  },
+  "provider_calls": 0,
+  "public_actions": [],
+  "linux_installation_verified": false,
+  "hosted_execution_verified": false
+}

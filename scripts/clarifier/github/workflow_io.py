@@ -40,7 +40,8 @@ def fingerprint(root: Path = c.ROOT) -> dict:
     """Return source-only runtime/configuration identity, without source copies."""
     paths = [root/'scripts/clarifier'/name for name in c.SOURCE_PATHS]
     paths += list((root/'.github/workflows').glob('clarifier-*.yml'))
-    paths += [root/c.CONFIG_PATH, root/c.SKILL_PATH, root/c.SCHEMA_PATH]
+    paths += [root/c.CONFIG_PATH, root/c.SKILL_PATH, root/c.SCHEMA_PATH,
+              root/'scripts/clarifier/config/hosted.json']
     files = {x.relative_to(root).as_posix(): hashlib.sha256(x.read_bytes()).hexdigest() for x in sorted(paths)}
     digest = hashlib.sha256(json.dumps(files,sort_keys=True,separators=(',',':')).encode()).hexdigest()
     return dict(version=p.CONFIG_VERSION, aggregate_sha256=digest, source_hashes=files)

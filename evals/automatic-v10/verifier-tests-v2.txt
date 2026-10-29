@@ -1,0 +1,11 @@
+test_candidate_source_corruption_rejected (test_verify_automatic.AutomaticVerificationTests.test_candidate_source_corruption_rejected) ... ok
+test_external_candidate_review_hash_is_exact (test_verify_automatic.AutomaticVerificationTests.test_external_candidate_review_hash_is_exact) ... ok
+test_old_and_new_are_distinct (test_verify_automatic.AutomaticVerificationTests.test_old_and_new_are_distinct) ... ok
+test_original_failed_output_corruption_rejected (test_verify_automatic.AutomaticVerificationTests.test_original_failed_output_corruption_rejected) ... ok
+test_preexisting_overlay_corruption_rejected (test_verify_automatic.AutomaticVerificationTests.test_preexisting_overlay_corruption_rejected) ... ok
+test_unlisted_file_rejected (test_verify_automatic.AutomaticVerificationTests.test_unlisted_file_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 6.234s
+
+OK

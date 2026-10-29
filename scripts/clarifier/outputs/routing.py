@@ -22,18 +22,19 @@ class PreviewRoute(TypedDict, total=False):
     error: str
 
 
-def silent_envelope(source_issue: int = c.SOURCE_ISSUE) -> PreviewRoute:
+def silent_envelope(source_issue: int = c.SOURCE_ISSUE, *, trusted_live: bool = False) -> PreviewRoute:
     """Return a fresh envelope bound to the trusted preview identity."""
-    if type(source_issue) is not int or source_issue not in c.HISTORICAL_CASE_IDS:
+    if (type(source_issue) is not int or source_issue <= 0
+            or (not trusted_live and source_issue not in c.HISTORICAL_CASE_IDS)):
         raise ValidationError("Unsupported trusted preview identity")
     return {"mode": "preview", "public_actions": [], "preview_comment": None,
             "source_issue": source_issue, "repository_id": c.REPOSITORY_ID,
             "repository": c.REPOSITORY, "posting_target": None}
 
 
-def rejected(error: ValidationError, *, source_issue: int = c.SOURCE_ISSUE) -> PreviewRoute:
+def rejected(error: ValidationError, *, source_issue: int = c.SOURCE_ISSUE, trusted_live: bool = False) -> PreviewRoute:
     """Return a publicly silent invalid-result envelope."""
-    return {**silent_envelope(source_issue), "valid": False, "decision": "invalid", "error": str(error)}
+    return {**silent_envelope(source_issue,trusted_live=trusted_live), "valid": False, "decision": "invalid", "error": str(error)}
 
 
 def attributed_comment(comment: str, run_id: str, model: str) -> str:
@@ -47,9 +48,9 @@ def attributed_comment(comment: str, run_id: str, model: str) -> str:
 
 
 def route_result(result: ModelResult, run_id: str, model: str,
-                 *, source_issue: int = c.SOURCE_ISSUE) -> PreviewRoute:
+                 *, source_issue: int = c.SOURCE_ISSUE, trusted_live: bool = False) -> PreviewRoute:
     """Return the validated preview route or raise ValidationError for attribution."""
-    route = silent_envelope(source_issue)
+    route = silent_envelope(source_issue,trusted_live=trusted_live)
     route.update({"valid": True, "decision": result[c.DECISION], "validated_output": result})
     if result[c.DECISION] == c.CLARIFY:
         comment = result[c.CLARIFICATION]

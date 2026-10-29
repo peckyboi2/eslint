@@ -1,0 +1,34 @@
+{
+  "observed_date": "2026-10-29 Asia/Singapore",
+  "repository": "peckyboi2/eslint",
+  "repository_id": 1435519573,
+  "owner_id": 234542779,
+  "default_branch": "main",
+  "actions_enabled": false,
+  "registered_workflows": 0,
+  "state_branch": "404 absent",
+  "ci_credential_environment_present": false,
+  "secret_store_contents": "Values never read; read-only metadata endpoint confirms zero Actions secrets",
+  "provider_calls": 0,
+  "engine": "Codex CLI 0.154.0 / gpt-6.1-sol / xhigh",
+  "linux_binary_sha256": null,
+  "hosted_authentication": "blocked; no API credential provisioned or approved",
+  "chatgpt_login": "local historical only; must not export to public CI",
+  "sources": [
+    "https://learn.chatgpt.com/docs/auth",
+    "https://learn.chatgpt.com/docs/non-interactive-mode",
+    "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency"
+  ],
+  "no_purchase_route": "None established for this public hosted workflow; use permitted local implementation/dry-run alternative",
+  "limits": [
+    "Linux binary hash and native skill-loading compatibility require independent verification",
+    "API credential or approved secure proxy requires separate owner decision",
+    "No OS jail/host firewall tested; no paid-credit assumption"
+  ],
+  "repository_actions_secrets_metadata": {
+    "total_count": 0,
+    "clarifier_provider_key_present": false,
+    "openai_api_key_present": false,
+    "codex_api_key_present": false
+  }
+}

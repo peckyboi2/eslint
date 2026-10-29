@@ -58,7 +58,7 @@ class Metrics(unittest.TestCase):
 
 class Provenance(unittest.TestCase):
     def setUp(self):
-        self.temp=tempfile.TemporaryDirectory(dir='/private/tmp');self.addCleanup(self.temp.cleanup)
+        self.temp=tempfile.TemporaryDirectory(dir=c.PRIVATE_TEMP_ROOT);self.addCleanup(self.temp.cleanup)
         self.root=Path(self.temp.name)
         (self.root/'item').write_text('Frozen')
         self.files={'item':recording.sha(b'Frozen')}

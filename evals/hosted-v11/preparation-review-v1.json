@@ -1,0 +1,11 @@
+{
+  "status": "Superseded preparation identity; not deployed or model-evaluated",
+  "manifest": "failed-preparation-v1.json",
+  "manifest_sha256": "95e4ba57604006c23f3e61bd161a8f17dcb271e8ac64264ae33658841fcd5c6d",
+  "configuration_sha256": "eab5107b2cfe89bdc8bca2d1771f36c5a9ab14a66f001764306cdd83c228b47d",
+  "review_finding": "Root review found hosted_runtime --version subprocess inherited the parent provider-key environment. This needs a clean explicit environment even though the model invocation is already clean.",
+  "observed_exposure": "No hosted CLI/provider execution occurred during this preparation; no actual credential exposure was observed.",
+  "checks_before_finding": "Offline complete-tree verifier, current synthetic tests, and retained v9 replay passed. Those checks did not establish the missing subprocess environment boundary.",
+  "provider_calls": 0,
+  "public_actions": 0
+}

@@ -14,13 +14,11 @@ from clarifier.shared import constants as c
 from clarifier.controls import dry_state
 from clarifier.shared.errors import ClarifierError, StagingError
 from clarifier.inference import packages
+from clarifier.inference import pipeline
 from clarifier.inference import recording
 from clarifier.inference import request
-from clarifier.outputs import routing
-from clarifier.inference import skill
 from clarifier.inference import staging
 from clarifier.inference import transport
-from clarifier.outputs import validation
 from clarifier.github import workflow_io
 
 
@@ -56,11 +54,7 @@ def run(attack: str | None=None, *, case_id: int=c.SOURCE_ISSUE, root: Path=c.RO
         staged=prepare(session,attack,case_id)
         prompt=build_prompt(session,staged,attack)
         record_admission(session)
-        loaded=skill.load_verified(session,staged.workspace)
-        engine=transport.prepare_engine(session)
-        transport.execute(session,staged,loaded,prompt,engine)
-        result=validation.parse_and_validate(transport.read_result(session))
-        recording.record_result(session,routing.route_result(result,session.record['run_id'],session.config['model'],source_issue=session.record['source_issue']))
+        pipeline.assess(session,staged,prompt)
     except ClarifierError as error:
         recording.fail(session,error)
     finally:

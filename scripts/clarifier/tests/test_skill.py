@@ -32,7 +32,7 @@ class NativeLoading(unittest.TestCase):
 
 class VerifiedSkill(unittest.TestCase):
     def test_exact_canonical_bytes_and_digest_are_recorded(self):
-        with tempfile.TemporaryDirectory(dir="/private/tmp") as tmp:
+        with tempfile.TemporaryDirectory(dir=c.PRIVATE_TEMP_ROOT) as tmp:
             root = Path(tmp)
             source = root / c.SKILL_PATH
             source.parent.mkdir(parents=True)

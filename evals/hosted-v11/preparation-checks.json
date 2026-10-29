@@ -1,0 +1,22 @@
+{
+  "version": "hosted-preview-v11",
+  "current_safety_tests": 235,
+  "safety_result": "pass",
+  "safety_log": "safety-tests.txt",
+  "verifier_allowance_tests": 24,
+  "verifier_result": "pass; disposable candidate",
+  "verifier_log": "verifier-tests.txt",
+  "yaml_syntax": "All three authored workflows parsed with Ruby Psych; not actionlint or GitHub enforcement",
+  "diff_whitespace": "pass",
+  "design_lines": 109,
+  "provider_calls": 0,
+  "public_actions": [],
+  "remote_mutations": [],
+  "hosted_execution_verified": false,
+  "remaining": [
+    "Owner review of exact publication/activation payload",
+    "Preview state/bootstrap and selected workflow enablement",
+    "First actual Linux CLI/provider/issue-trigger smoke test",
+    "New frozen model evaluation; old v9 results do not establish v11 accuracy"
+  ]
+}

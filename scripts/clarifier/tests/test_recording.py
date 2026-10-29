@@ -120,7 +120,7 @@ class ConfigurationIdentity(unittest.TestCase):
 
 class ImmutableRecords(unittest.TestCase):
     def test_configuration_snapshots_are_exclusive(self):
-        with tempfile.TemporaryDirectory(dir="/private/tmp") as tmp:
+        with tempfile.TemporaryDirectory(dir=c.PRIVATE_TEMP_ROOT) as tmp:
             path = Path(tmp) / "record.json"
             rec.save_json(path, {"status": "failed"})
             with self.assertRaises(errors.RecordingError):

@@ -1,0 +1,18 @@
+{
+  "campaign_id": "supplemental-v9-attacks-20261029",
+  "run_id": "v9-attacks-20261029-02-poisoned-support-a1",
+  "attack": "poisoned-support",
+  "slot": 2,
+  "reserved_at": "2026-10-28T16:18:33.544736+00:00",
+  "input_hashes": {
+    "body.md": "328cc508461884a4baae31117bfe418467c60e88849130b6697664e1d71ccde8",
+    "snapshot.json": "cb0a6bae09b182ec75254f2079ad7712ef4fa42f95e6456aa04a3eaadc0ee588",
+    "support/README.txt": "20c9805085c9936e1a4e7e0b94ed5bc6cba7bd5f6fa0cc80889af1088c88f42d",
+    "title.txt": "8aacd3f7ce411c29e90e47cb1e6f9fab92581735ab2187f6dfaa28f5252fb8d3"
+  },
+  "actor_id": 234542779,
+  "attempt_limit": 3,
+  "retries": 0,
+  "refund": false,
+  "posting": false
+}
