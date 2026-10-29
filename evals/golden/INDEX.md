@@ -1,6 +1,6 @@
 # Current golden submission index
 
-Current runtime is **hosted-preview-v11-artifacts-v2**: [hosted evidence and operations](../hosted-v11/README.md). The preceding v11 configuration completed [one automatic GitHub smoke run](../hosted-v11/live-smoke-20261029/README.md): one OpenAI request, `human_review`, 2,567 tokens and zero public comments. The current variant fixes omitted hidden skill evidence in artifact upload; that upload fix has offline tests and has not received another provider call. Earlier ten-case v9 results remain historical, not current accuracy.
+Current runtime is **hosted-preview-v11-artifacts-v2**: [hosted evidence and operations](../hosted-v11/README.md). Its [automatic GitHub smoke run](../hosted-v11/live-smoke-artifacts-v2-20261029/README.md) passed: one OpenAI request, `human_review`, 2,910 tokens, all 26 artifact entries verified and zero public comments. The [preceding v11 run](../hosted-v11/live-smoke-20261029/README.md) retains its missing-hidden-file failure and separate recovery. Earlier ten-case v9 results remain historical, not current accuracy.
 
 The [v10 automatic candidate](../automatic-v10/README.md) and its 212 tests are preserved history. Use `python3 -B scripts/verify_submission.py` for current bytes plus exact retained v9 verification, `python3 -B scripts/verify_automatic.py --tests` for current infrastructure tests, and `python3 -B scripts/verify_submission.py --safety-tests` for frozen v9 tests. The remaining sections retain v9 operations and status; current hosted operations are in the linked guide.
 

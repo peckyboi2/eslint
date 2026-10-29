@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-10-29T04:26:11.669048+00:00",
+  "authorization": "Darren: spool up another run if needed once everything is fixed",
+  "purpose": "One additional genuine issue-opening integration test to verify hidden skill file retention after the upload fix",
+  "configuration_version": "hosted-preview-v11-artifacts-v2",
+  "provider_request_limit": 1,
+  "semantic_retry": false,
+  "public_comment_authorized": false,
+  "expected_technical_outcome": {
+    "event": "issues:opened",
+    "run_attempt": 1,
+    "all_jobs": "success",
+    "provider_requests": 1,
+    "model_requested": "gpt-6.1-sol",
+    "model_returned": "gpt-6.1-sol",
+    "tools": [],
+    "public_actions": [],
+    "original_artifact_completeness": "all manifest entries including configuration/.claude/skills/eslint-clarification/SKILL.md present and hash-matching",
+    "canonical_skill_native_load": true,
+    "issue_comments": 0,
+    "posting_enabled": false
+  },
+  "semantic_expected_outcome": "No guaranteed semantic decision for this synthetic integration input; correctness not scored",
+  "no_action_limits": "Do not edit, close or comment on test issue; do not rerun or refund reservations",
+  "code_commit": "0db9c40737e7fca31d79d476bc36ff30b714c133",
+  "configuration_sha256": "b80148da53c9d8196b5792a065ed8c134a8eec2856c938ccb635b9f9591c8c6d",
+  "pre_run_manifest_sha256": "938ff2b11bab54048c6631d28052091fcabbf7f756ca962b5c6046ef2ccb0963"
+}

@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "kind": "single live GitHub-to-provider integration smoke test; not an accuracy evaluation",
+  "repository": "peckyboi2/eslint",
+  "repository_id": 1435519573,
+  "issue_number": 2,
+  "issue_id": 6092831422,
+  "issue_url": "https://github.com/peckyboi2/eslint/issues/2",
+  "run_id": "40818202827",
+  "run_url": "https://github.com/peckyboi2/eslint/actions/runs/40818202827",
+  "code_commit": "0db9c40737e7fca31d79d476bc36ff30b714c133",
+  "configuration_version": "hosted-preview-v11-artifacts-v2",
+  "configuration_sha256": "b80148da53c9d8196b5792a065ed8c134a8eec2856c938ccb635b9f9591c8c6d",
+  "binding_configuration_sha256": "eb8b9e8621420756fb841c9d8d071580d481b5853e924c5e4eb342679a55b7e1",
+  "integration_status": "passed",
+  "artifact_completeness_status": "passed",
+  "semantic_correctness_status": "not_scored",
+  "decision_observed": "human_review",
+  "jobs": {
+    "gate": "success",
+    "admission": "success",
+    "inference": "success"
+  },
+  "engine_version": "codex-cli 0.154.0",
+  "engine_binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+  "model_requested": "gpt-6.1-sol",
+  "model_returned": "gpt-6.1-sol",
+  "backend_revision_pinned": false,
+  "provider_requests": 1,
+  "provider_status": 200,
+  "usage": {
+    "input_tokens": 2227,
+    "input_tokens_details": {
+      "cache_write_tokens": 270,
+      "cached_tokens": 1954
+    },
+    "output_tokens": 683,
+    "output_tokens_details": {
+      "reasoning_tokens": 601
+    },
+    "total_tokens": 2910
+  },
+  "cost": "unknown",
+  "tool_calls": [],
+  "public_actions": [],
+  "issue_comments_observed": 0,
+  "state": {
+    "admissions": 2,
+    "enabled": true,
+    "posting_enabled": false,
+    "posts": 0
+  },
+  "skill": {
+    "native_loaded": true,
+    "native_outer_whitespace_trimmed": true,
+    "canonical_sha256": "dbfd948cd6b528d23b4e641bdb274be2ae237a0840a41753c58685e9614f7550",
+    "trimmed_sha256": "9be7ed95a884790097240a568189111db6d58b2804c7701cade6f64efcee8d1c",
+    "outbound_tools": [],
+    "implicit_host_context_forwarded": false
+  },
+  "artifact_validation": {
+    "manifest_entries": 26,
+    "verified_original_files": 26,
+    "missing_original_files": [],
+    "mismatched_original_files": [],
+    "recovered_separately": [],
+    "recovered_hash_matches_original_manifest": null,
+    "original_artifacts_modified": false
+  },
+  "configuration_validation": {
+    "recorded_file_count": 60,
+    "commit_byte_mismatches": [],
+    "aggregate_verified": true,
+    "against_exact_commit": "0db9c40737e7fca31d79d476bc36ff30b714c133"
+  },
+  "copied_original_files": 48,
+  "unverified": [
+    "Historical decision accuracy of hosted v11 artifacts-v2",
+    "Adversarial model behavior of hosted v11 artifacts-v2",
+    "Public posting and bot comment identity",
+    "Live cancellation and phone kill switch",
+    "Live concurrency and quota exhaustion"
+  ],
+  "notes": [
+    "Acceptance criteria were recorded before creating the issue and inspecting output.",
+    "This was a separately authorized additional run to verify artifact retention, not a semantic retry.",
+    "The observed response was human_review; no semantic outcome was fixed for this synthetic wiring test.",
+    "All original manifest entries including the hidden canonical skill are present; no recovery was needed.",
+    "One additional admission increased the existing state count from one to two; posting remained disabled.",
+    "Workflow logs warn that pinned actions targeting Node.js 20 were forced by GitHub to run on Node.js 24. This is a mutable-platform warning, not a failed job.",
+    "Packaging and assessment used no network or model calls."
+  ]
+}

@@ -1,0 +1,547 @@
+gate	Set up job	﻿2026-10-29T04:31:17.3834098Z Current runner version: '2.338.0'
+gate	Set up job	2026-10-29T04:31:17.3857881Z ##[group]Runner Image Provisioner
+gate	Set up job	2026-10-29T04:31:17.3858766Z Hosted Compute Agent
+gate	Set up job	2026-10-29T04:31:17.3859344Z Version: 20261021.618
+gate	Set up job	2026-10-29T04:31:17.3859947Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+gate	Set up job	2026-10-29T04:31:17.3860584Z Build Date: 2026-10-21T00:45:21Z
+gate	Set up job	2026-10-29T04:31:17.3861209Z Worker ID: {76682017-bd60-48b8-b113-c97291ca8d24}
+gate	Set up job	2026-10-29T04:31:17.3861845Z Region: westus
+gate	Set up job	2026-10-29T04:31:17.3862353Z Cloud: Azure
+gate	Set up job	2026-10-29T04:31:17.3862826Z ##[endgroup]
+gate	Set up job	2026-10-29T04:31:17.3863949Z ##[group]Operating System
+gate	Set up job	2026-10-29T04:31:17.3864549Z Ubuntu
+gate	Set up job	2026-10-29T04:31:17.3865037Z 24.04.5
+gate	Set up job	2026-10-29T04:31:17.3865504Z LTS
+gate	Set up job	2026-10-29T04:31:17.3866001Z ##[endgroup]
+gate	Set up job	2026-10-29T04:31:17.3866609Z ##[group]Runner Image
+gate	Set up job	2026-10-29T04:31:17.3867188Z Image: ubuntu-24.04
+gate	Set up job	2026-10-29T04:31:17.3867703Z Version: 20261025.353.1
+gate	Set up job	2026-10-29T04:31:17.3868968Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+gate	Set up job	2026-10-29T04:31:17.3870461Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+gate	Set up job	2026-10-29T04:31:17.3871350Z ##[endgroup]
+gate	Set up job	2026-10-29T04:31:17.3872392Z ##[group]GITHUB_TOKEN Permissions
+gate	Set up job	2026-10-29T04:31:17.3874554Z Actions: read
+gate	Set up job	2026-10-29T04:31:17.3875077Z Contents: read
+gate	Set up job	2026-10-29T04:31:17.3875674Z Issues: read
+gate	Set up job	2026-10-29T04:31:17.3876316Z Metadata: read
+gate	Set up job	2026-10-29T04:31:17.3876790Z ##[endgroup]
+gate	Set up job	2026-10-29T04:31:17.3878786Z Secret source: Actions
+gate	Set up job	2026-10-29T04:31:17.3879564Z Cache mode: read
+gate	Set up job	2026-10-29T04:31:17.3880268Z Prepare workflow directory
+gate	Set up job	2026-10-29T04:31:17.4167046Z Prepare all required actions
+gate	Set up job	2026-10-29T04:31:17.4208705Z Getting action download info
+gate	Set up job	2026-10-29T04:31:17.7511709Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+gate	Set up job	2026-10-29T04:31:17.8452104Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+gate	Set up job	2026-10-29T04:31:18.0849913Z Complete job name: gate
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	﻿2026-10-29T04:31:18.1562632Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1563486Z with:
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1563888Z   ref: 0db9c40737e7fca31d79d476bc36ff30b714c133
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1564394Z   persist-credentials: false
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1564809Z   repository: peckyboi2/eslint
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1567997Z   token: ***
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1568349Z   ssh-strict: true
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1568702Z   ssh-user: git
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1569046Z   clean: true
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1569408Z   sparse-checkout-cone-mode: true
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1569835Z   fetch-depth: 1
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1570176Z   fetch-tags: false
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1570529Z   show-progress: true
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1570891Z   lfs: false
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1571221Z   submodules: false
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1571576Z   set-safe-directory: true
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.1572115Z ##[endgroup]
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3485993Z Syncing repository: peckyboi2/eslint
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3488884Z ##[group]Getting Git version info
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3489670Z Working directory is '/home/runner/work/eslint/eslint'
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3490542Z [command]/usr/bin/git version
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3546648Z git version 2.56.0
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3568461Z ##[endgroup]
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3585975Z Temporarily overriding HOME='/home/runner/work/_temp/b7a211dc-76c4-48eb-8cff-76359bdeab83' before making global git config changes
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3588620Z Adding repository directory to the temporary git global config as a safe directory
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3593710Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eslint/eslint
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3662644Z Deleting the contents of '/home/runner/work/eslint/eslint'
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3672329Z ##[group]Initializing the repository
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3682594Z [command]/usr/bin/git init /home/runner/work/eslint/eslint
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3760746Z hint: Using 'master' as the name for the initial branch. This default branch name
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3762759Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3763964Z hint: to use in all of your new repositories, which will suppress this warning,
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3764996Z hint: call:
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3765569Z hint:
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3766422Z hint: 	git config --global init.defaultBranch <name>
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3767250Z hint:
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3768028Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3769296Z hint: 'development'. The just-created branch can be renamed via this command:
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3770384Z hint:
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3771004Z hint: 	git branch -m <name>
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3771706Z hint:
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3772591Z hint: Disable this message with "git config set advice.defaultBranchName false"
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3773982Z Initialized empty Git repository in /home/runner/work/eslint/eslint/.git/
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3781155Z [command]/usr/bin/git remote add origin https://github.com/peckyboi2/eslint
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3827401Z ##[endgroup]
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3828218Z ##[group]Disabling automatic garbage collection
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3830854Z [command]/usr/bin/git config --local gc.auto 0
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3867556Z ##[endgroup]
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3868284Z ##[group]Setting up auth
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3874768Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.3914566Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.4245217Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.4273586Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.4500421Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.4556462Z ##[endgroup]
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.4557273Z ##[group]Fetching the repository
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:18.4570179Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 0db9c40737e7fca31d79d476bc36ff30b714c133
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.6524627Z From https://github.com/peckyboi2/eslint
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.6527374Z  * branch            0db9c40737e7fca31d79d476bc36ff30b714c133 -> FETCH_HEAD
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.6531342Z ##[endgroup]
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.6532669Z ##[group]Determining the checkout info
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.6534066Z ##[endgroup]
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.6535343Z [command]/usr/bin/git sparse-checkout disable
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.6594209Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.6632526Z ##[group]Checking out the ref
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.6637452Z [command]/usr/bin/git checkout --progress --force 0db9c40737e7fca31d79d476bc36ff30b714c133
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9617632Z Note: switching to '0db9c40737e7fca31d79d476bc36ff30b714c133'.
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9618045Z 
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9618249Z You are in 'detached HEAD' state. You can look around, make experimental
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9618691Z changes and commit them, and you can discard any commits you make in this
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9619111Z state without impacting any branches by switching back to a branch.
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9619385Z 
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9619604Z If you want to create a new branch to retain commits you create, you may
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9619996Z do so (now or later) by using -c with the switch command. Example:
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9620222Z 
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9620329Z   git switch -c <new-branch-name>
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9620494Z 
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9620609Z Or undo this operation with:
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9620760Z 
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9621291Z   git switch -
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9621437Z 
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9621986Z Turn off this advice by setting config variable advice.detachedHead to false
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9622533Z 
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9623038Z HEAD is now at 0db9c40 fix: retain complete hosted clarification evidence
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9633268Z ##[endgroup]
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9683724Z [command]/usr/bin/git log -1 --format=%H
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9723974Z 0db9c40737e7fca31d79d476bc36ff30b714c133
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9732011Z ##[group]Removing auth
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9735396Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9771872Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:19.9987791Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:20.0019622Z http.https://github.com/.extraheader
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:20.0059088Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:20.0098650Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+gate	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:20.0312223Z ##[endgroup]
+gate	Run python3 -B scripts/clarifier/workflow.py gate	﻿2026-10-29T04:31:20.0511474Z ##[group]Run python3 -B scripts/clarifier/workflow.py gate
+gate	Run python3 -B scripts/clarifier/workflow.py gate	2026-10-29T04:31:20.0511986Z ^[[36;1mpython3 -B scripts/clarifier/workflow.py gate^[[0m
+gate	Run python3 -B scripts/clarifier/workflow.py gate	2026-10-29T04:31:20.0512323Z ^[[36;1mecho 'verified=true' >> "$GITHUB_OUTPUT"^[[0m
+gate	Run python3 -B scripts/clarifier/workflow.py gate	2026-10-29T04:31:20.0533424Z shell: /usr/bin/bash -e {0}
+gate	Run python3 -B scripts/clarifier/workflow.py gate	2026-10-29T04:31:20.0533720Z env:
+gate	Run python3 -B scripts/clarifier/workflow.py gate	2026-10-29T04:31:20.0535972Z   CLARIFIER_READ_TOKEN: ***
+gate	Run python3 -B scripts/clarifier/workflow.py gate	2026-10-29T04:31:20.0536492Z ##[endgroup]
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	﻿2026-10-29T04:31:22.2715889Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.2716479Z with:
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.2716664Z   name: intake-gate-40818202827
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.2716880Z   path: evals/automatic-workflow
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.2717084Z   retention-days: 30
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.2717270Z   if-no-files-found: warn
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.2717459Z   compression-level: 6
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.2717636Z   overwrite: false
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.2717817Z   include-hidden-files: false
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.2718017Z ##[endgroup]
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.4173917Z (node:2118) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.4174803Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.4230309Z With the provided path, there will be 1 file uploaded
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.4242969Z Artifact name is valid!
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.4243521Z Root directory input is valid!
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.8431209Z Beginning upload of artifact content to blob storage
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:22.8583206Z (node:2118) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:23.1205049Z Uploaded bytes 3524
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:23.1907942Z Finished uploading artifact content to blob storage!
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:23.1908775Z SHA256 digest of uploaded artifact zip is 7d7119247a83ca4f6da7db8d4c643612275a13d6bbbc53dd048ba42591eb0e51
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:23.1909396Z Finalizing artifact upload
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:23.7064418Z Artifact intake-gate-40818202827.zip successfully finalized. Artifact ID 12873486821
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:23.7065359Z Artifact intake-gate-40818202827 has been successfully uploaded! Final size is 3524 bytes. Artifact ID is 12873486821
+gate	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:23.7066390Z Artifact download URL: https://github.com/peckyboi2/eslint/actions/runs/40818202827/artifacts/12873486821
+gate	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	﻿2026-10-29T04:31:23.7264158Z Post job cleanup.
+gate	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:23.8005479Z [command]/usr/bin/git version
+gate	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:23.8043993Z git version 2.56.0
+gate	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:23.8079273Z Temporarily overriding HOME='/home/runner/work/_temp/0bf5c6a4-d0f1-4945-b7e9-7c2a3187aeb4' before making global git config changes
+gate	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:23.8080248Z Adding repository directory to the temporary git global config as a safe directory
+gate	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:23.8084380Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eslint/eslint
+gate	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:23.8124748Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+gate	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:23.8161456Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+gate	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:23.8397869Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+gate	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:23.8439979Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+gate	Complete job	﻿2026-10-29T04:31:23.8839249Z Evaluate and set job outputs
+gate	Complete job	2026-10-29T04:31:23.8844137Z Set output 'verified'
+gate	Complete job	2026-10-29T04:31:23.8845615Z Cleaning up orphan processes
+gate	Complete job	2026-10-29T04:31:23.9183285Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+admission	Set up job	﻿2026-10-29T04:31:30.1400322Z Current runner version: '2.338.0'
+admission	Set up job	2026-10-29T04:31:30.1420927Z ##[group]Runner Image Provisioner
+admission	Set up job	2026-10-29T04:31:30.1421629Z Hosted Compute Agent
+admission	Set up job	2026-10-29T04:31:30.1422006Z Version: 20261021.618
+admission	Set up job	2026-10-29T04:31:30.1422391Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+admission	Set up job	2026-10-29T04:31:30.1422954Z Build Date: 2026-10-21T00:45:21Z
+admission	Set up job	2026-10-29T04:31:30.1423376Z Worker ID: {e099a1cf-6b38-4506-851d-92caf38dbb13}
+admission	Set up job	2026-10-29T04:31:30.1423844Z Region: westus3
+admission	Set up job	2026-10-29T04:31:30.1424199Z Cloud: Azure
+admission	Set up job	2026-10-29T04:31:30.1424573Z ##[endgroup]
+admission	Set up job	2026-10-29T04:31:30.1425470Z ##[group]Operating System
+admission	Set up job	2026-10-29T04:31:30.1425853Z Ubuntu
+admission	Set up job	2026-10-29T04:31:30.1426244Z 24.04.5
+admission	Set up job	2026-10-29T04:31:30.1426590Z LTS
+admission	Set up job	2026-10-29T04:31:30.1426922Z ##[endgroup]
+admission	Set up job	2026-10-29T04:31:30.1427363Z ##[group]Runner Image
+admission	Set up job	2026-10-29T04:31:30.1427748Z Image: ubuntu-24.04
+admission	Set up job	2026-10-29T04:31:30.1428406Z Version: 20261025.353.1
+admission	Set up job	2026-10-29T04:31:30.1429355Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+admission	Set up job	2026-10-29T04:31:30.1430517Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+admission	Set up job	2026-10-29T04:31:30.1431095Z ##[endgroup]
+admission	Set up job	2026-10-29T04:31:30.1431935Z ##[group]GITHUB_TOKEN Permissions
+admission	Set up job	2026-10-29T04:31:30.1433496Z Actions: read
+admission	Set up job	2026-10-29T04:31:30.1433931Z Contents: write
+admission	Set up job	2026-10-29T04:31:30.1434322Z Issues: read
+admission	Set up job	2026-10-29T04:31:30.1434669Z Metadata: read
+admission	Set up job	2026-10-29T04:31:30.1435052Z ##[endgroup]
+admission	Set up job	2026-10-29T04:31:30.1436502Z Secret source: Actions
+admission	Set up job	2026-10-29T04:31:30.1437166Z Cache mode: read
+admission	Set up job	2026-10-29T04:31:30.1437614Z Prepare workflow directory
+admission	Set up job	2026-10-29T04:31:30.1655364Z Prepare all required actions
+admission	Set up job	2026-10-29T04:31:30.1688631Z Getting action download info
+admission	Set up job	2026-10-29T04:31:30.4585973Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+admission	Set up job	2026-10-29T04:31:30.5485498Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+admission	Set up job	2026-10-29T04:31:30.7405673Z Complete job name: admission
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	﻿2026-10-29T04:31:30.7948066Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7948621Z with:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7949027Z   ref: 0db9c40737e7fca31d79d476bc36ff30b714c133
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7949374Z   persist-credentials: false
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7949665Z   repository: peckyboi2/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7951850Z   token: ***
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7952093Z   ssh-strict: true
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7952343Z   ssh-user: git
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7952582Z   clean: true
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7952835Z   sparse-checkout-cone-mode: true
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7953133Z   fetch-depth: 1
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7953375Z   fetch-tags: false
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7953632Z   show-progress: true
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7953888Z   lfs: false
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7954124Z   submodules: false
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7954382Z   set-safe-directory: true
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:30.7954733Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0245228Z Syncing repository: peckyboi2/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0246417Z ##[group]Getting Git version info
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0246884Z Working directory is '/home/runner/work/eslint/eslint'
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0247617Z [command]/usr/bin/git version
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0324600Z git version 2.56.0
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0338294Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0349166Z Temporarily overriding HOME='/home/runner/work/_temp/81ba8861-141b-4b35-8f0a-dd2b9f95af18' before making global git config changes
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0350491Z Adding repository directory to the temporary git global config as a safe directory
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0353350Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eslint/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0405250Z Deleting the contents of '/home/runner/work/eslint/eslint'
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0408251Z ##[group]Initializing the repository
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0412495Z [command]/usr/bin/git init /home/runner/work/eslint/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0522539Z hint: Using 'master' as the name for the initial branch. This default branch name
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0523958Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0525187Z hint: to use in all of your new repositories, which will suppress this warning,
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0525839Z hint: call:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0526207Z hint:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0526760Z hint: 	git config --global init.defaultBranch <name>
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0527321Z hint:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0527837Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0528763Z hint: 'development'. The just-created branch can be renamed via this command:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0529565Z hint:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0529929Z hint: 	git branch -m <name>
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0530327Z hint:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0530897Z hint: Disable this message with "git config set advice.defaultBranchName false"
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0531876Z Initialized empty Git repository in /home/runner/work/eslint/eslint/.git/
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0541535Z [command]/usr/bin/git remote add origin https://github.com/peckyboi2/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0589265Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0590045Z ##[group]Disabling automatic garbage collection
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0592514Z [command]/usr/bin/git config --local gc.auto 0
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0626253Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0631979Z ##[group]Setting up auth
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0632611Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.0667630Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.1032116Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.1081424Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.1380688Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.1449352Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.1449881Z ##[group]Fetching the repository
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:31.1459554Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 0db9c40737e7fca31d79d476bc36ff30b714c133
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.5816503Z From https://github.com/peckyboi2/eslint
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.5840192Z  * branch            0db9c40737e7fca31d79d476bc36ff30b714c133 -> FETCH_HEAD
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.5842554Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.5843254Z ##[group]Determining the checkout info
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.5844038Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.5844528Z [command]/usr/bin/git sparse-checkout disable
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.5887511Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.5929950Z ##[group]Checking out the ref
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.5934360Z [command]/usr/bin/git checkout --progress --force 0db9c40737e7fca31d79d476bc36ff30b714c133
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8651940Z Note: switching to '0db9c40737e7fca31d79d476bc36ff30b714c133'.
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8652565Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8652833Z You are in 'detached HEAD' state. You can look around, make experimental
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8653353Z changes and commit them, and you can discard any commits you make in this
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8653872Z state without impacting any branches by switching back to a branch.
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8654221Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8654532Z If you want to create a new branch to retain commits you create, you may
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8655037Z do so (now or later) by using -c with the switch command. Example:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8655322Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8655477Z   git switch -c <new-branch-name>
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8655696Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8655849Z Or undo this operation with:
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8656039Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8656506Z   git switch -
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8656692Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8656947Z Turn off this advice by setting config variable advice.detachedHead to false
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8657328Z 
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8657561Z HEAD is now at 0db9c40 fix: retain complete hosted clarification evidence
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8681204Z ##[endgroup]
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8740034Z [command]/usr/bin/git log -1 --format=%H
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8772250Z 0db9c40737e7fca31d79d476bc36ff30b714c133
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8780308Z ##[group]Removing auth
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8783269Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.8818547Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.9038418Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.9074836Z http.https://github.com/.extraheader
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.9081012Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.9121439Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+admission	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:32.9329826Z ##[endgroup]
+admission	Run python3 -B scripts/clarifier/workflow.py admit	﻿2026-10-29T04:31:32.9509686Z ##[group]Run python3 -B scripts/clarifier/workflow.py admit
+admission	Run python3 -B scripts/clarifier/workflow.py admit	2026-10-29T04:31:32.9510156Z ^[[36;1mpython3 -B scripts/clarifier/workflow.py admit^[[0m
+admission	Run python3 -B scripts/clarifier/workflow.py admit	2026-10-29T04:31:32.9529386Z shell: /usr/bin/bash -e {0}
+admission	Run python3 -B scripts/clarifier/workflow.py admit	2026-10-29T04:31:32.9529632Z env:
+admission	Run python3 -B scripts/clarifier/workflow.py admit	2026-10-29T04:31:32.9531534Z   GH_TOKEN: ***
+admission	Run python3 -B scripts/clarifier/workflow.py admit	2026-10-29T04:31:32.9531714Z ##[endgroup]
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	﻿2026-10-29T04:31:43.6022969Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.6023277Z with:
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.6023436Z   name: admission-40818202827
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.6023629Z   path: evals/automatic-workflow
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.6023800Z   retention-days: 30
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.6023957Z   if-no-files-found: error
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.6024123Z   compression-level: 6
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.6024275Z   overwrite: false
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.6024426Z   include-hidden-files: false
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.6024593Z ##[endgroup]
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.7172456Z (node:2131) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.7172980Z (Use `node --trace-deprecation ...` to show where the warning was created)
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.7210640Z With the provided path, there will be 2 files uploaded
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.7214643Z Artifact name is valid!
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:43.7215171Z Root directory input is valid!
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:44.0849099Z Beginning upload of artifact content to blob storage
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:44.0978444Z (node:2131) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:44.3160608Z Uploaded bytes 6952
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:44.3722713Z Finished uploading artifact content to blob storage!
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:44.3723362Z SHA256 digest of uploaded artifact zip is 8e1efd56508609eb099f601732eaddbb213617c83e3b56892ea94d970cee717e
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:44.3723893Z Finalizing artifact upload
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:44.8490393Z Artifact admission-40818202827.zip successfully finalized. Artifact ID 12872859573
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:44.8491107Z Artifact admission-40818202827 has been successfully uploaded! Final size is 6952 bytes. Artifact ID is 12872859573
+admission	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:31:44.8496653Z Artifact download URL: https://github.com/peckyboi2/eslint/actions/runs/40818202827/artifacts/12872859573
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	﻿2026-10-29T04:31:44.8700351Z Post job cleanup.
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:44.9275889Z [command]/usr/bin/git version
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:44.9340750Z git version 2.56.0
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:44.9366594Z Temporarily overriding HOME='/home/runner/work/_temp/300f7ef2-39b0-4c52-9318-35a8ca33ee8e' before making global git config changes
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:44.9367668Z Adding repository directory to the temporary git global config as a safe directory
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:44.9375299Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eslint/eslint
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:44.9408644Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:44.9440369Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:44.9666946Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+admission	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:44.9710289Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+admission	Complete job	﻿2026-10-29T04:31:45.0049416Z Cleaning up orphan processes
+admission	Complete job	2026-10-29T04:31:45.0322668Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+inference	Set up job	﻿2026-10-29T04:31:52.1391793Z Current runner version: '2.338.0'
+inference	Set up job	2026-10-29T04:31:52.1420915Z ##[group]Runner Image Provisioner
+inference	Set up job	2026-10-29T04:31:52.1422021Z Hosted Compute Agent
+inference	Set up job	2026-10-29T04:31:52.1422697Z Version: 20261021.618
+inference	Set up job	2026-10-29T04:31:52.1423338Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+inference	Set up job	2026-10-29T04:31:52.1424243Z Build Date: 2026-10-21T00:45:21Z
+inference	Set up job	2026-10-29T04:31:52.1425340Z Worker ID: {be3cad41-ca79-481b-a692-14d104a8ffb6}
+inference	Set up job	2026-10-29T04:31:52.1426161Z Region: westus2
+inference	Set up job	2026-10-29T04:31:52.1426726Z Cloud: Azure
+inference	Set up job	2026-10-29T04:31:52.1427272Z ##[endgroup]
+inference	Set up job	2026-10-29T04:31:52.1428981Z ##[group]Operating System
+inference	Set up job	2026-10-29T04:31:52.1429683Z Ubuntu
+inference	Set up job	2026-10-29T04:31:52.1430758Z 24.04.5
+inference	Set up job	2026-10-29T04:31:52.1431317Z LTS
+inference	Set up job	2026-10-29T04:31:52.1431952Z ##[endgroup]
+inference	Set up job	2026-10-29T04:31:52.1432538Z ##[group]Runner Image
+inference	Set up job	2026-10-29T04:31:52.1433164Z Image: ubuntu-24.04
+inference	Set up job	2026-10-29T04:31:52.1433812Z Version: 20261025.353.1
+inference	Set up job	2026-10-29T04:31:52.1435189Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+inference	Set up job	2026-10-29T04:31:52.1437152Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+inference	Set up job	2026-10-29T04:31:52.1438149Z ##[endgroup]
+inference	Set up job	2026-10-29T04:31:52.1439511Z ##[group]GITHUB_TOKEN Permissions
+inference	Set up job	2026-10-29T04:31:52.1442026Z Actions: read
+inference	Set up job	2026-10-29T04:31:52.1442782Z Contents: read
+inference	Set up job	2026-10-29T04:31:52.1443359Z Issues: read
+inference	Set up job	2026-10-29T04:31:52.1443952Z Metadata: read
+inference	Set up job	2026-10-29T04:31:52.1444985Z ##[endgroup]
+inference	Set up job	2026-10-29T04:31:52.1447410Z Secret source: Actions
+inference	Set up job	2026-10-29T04:31:52.1448516Z Cache mode: read
+inference	Set up job	2026-10-29T04:31:52.1449260Z Prepare workflow directory
+inference	Set up job	2026-10-29T04:31:52.1929448Z Prepare all required actions
+inference	Set up job	2026-10-29T04:31:52.1991680Z Getting action download info
+inference	Set up job	2026-10-29T04:31:52.5763228Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+inference	Set up job	2026-10-29T04:31:52.8322623Z Download action repository 'actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+inference	Set up job	2026-10-29T04:31:53.0748577Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+inference	Set up job	2026-10-29T04:31:53.3244868Z Complete job name: inference
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	﻿2026-10-29T04:31:53.4396328Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4398159Z with:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4398932Z   ref: 0db9c40737e7fca31d79d476bc36ff30b714c133
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4399900Z   persist-credentials: false
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4400715Z   repository: peckyboi2/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4406281Z   token: ***
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4406772Z   ssh-strict: true
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4407212Z   ssh-user: git
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4407641Z   clean: true
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4408082Z   sparse-checkout-cone-mode: true
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4408592Z   fetch-depth: 1
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4409036Z   fetch-tags: false
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4409476Z   show-progress: true
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4409950Z   lfs: false
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4410364Z   submodules: false
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4410808Z   set-safe-directory: true
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.4411698Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7617843Z Syncing repository: peckyboi2/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7621088Z ##[group]Getting Git version info
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7622610Z Working directory is '/home/runner/work/eslint/eslint'
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7624282Z [command]/usr/bin/git version
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7735054Z git version 2.56.0
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7769931Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7779284Z Temporarily overriding HOME='/home/runner/work/_temp/2a6461bd-18a2-4637-aa18-c83ede032f14' before making global git config changes
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7782204Z Adding repository directory to the temporary git global config as a safe directory
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7784412Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eslint/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7853005Z Deleting the contents of '/home/runner/work/eslint/eslint'
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7877209Z ##[group]Initializing the repository
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7880177Z [command]/usr/bin/git init /home/runner/work/eslint/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7997703Z hint: Using 'master' as the name for the initial branch. This default branch name
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.7999087Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8000244Z hint: to use in all of your new repositories, which will suppress this warning,
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8001116Z hint: call:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8001574Z hint:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8002168Z hint: 	git config --global init.defaultBranch <name>
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8002853Z hint:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8003496Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8004859Z hint: 'development'. The just-created branch can be renamed via this command:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8005792Z hint:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8006253Z hint: 	git branch -m <name>
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8006775Z hint:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8007448Z hint: Disable this message with "git config set advice.defaultBranchName false"
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8011270Z Initialized empty Git repository in /home/runner/work/eslint/eslint/.git/
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8027091Z [command]/usr/bin/git remote add origin https://github.com/peckyboi2/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8096188Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8097672Z ##[group]Disabling automatic garbage collection
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8100750Z [command]/usr/bin/git config --local gc.auto 0
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8143891Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8145664Z ##[group]Setting up auth
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8152919Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8208498Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8692406Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.8746410Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.9010729Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.9067818Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.9068783Z ##[group]Fetching the repository
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:53.9083280Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 0db9c40737e7fca31d79d476bc36ff30b714c133
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.1197372Z From https://github.com/peckyboi2/eslint
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.1200057Z  * branch            0db9c40737e7fca31d79d476bc36ff30b714c133 -> FETCH_HEAD
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.1205390Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.1209246Z ##[group]Determining the checkout info
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.1210549Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.1214808Z [command]/usr/bin/git sparse-checkout disable
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.1331069Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.1387686Z ##[group]Checking out the ref
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.1392135Z [command]/usr/bin/git checkout --progress --force 0db9c40737e7fca31d79d476bc36ff30b714c133
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5432943Z Note: switching to '0db9c40737e7fca31d79d476bc36ff30b714c133'.
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5433911Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5434741Z You are in 'detached HEAD' state. You can look around, make experimental
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5435978Z changes and commit them, and you can discard any commits you make in this
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5437047Z state without impacting any branches by switching back to a branch.
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5437658Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5438122Z If you want to create a new branch to retain commits you create, you may
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5438984Z do so (now or later) by using -c with the switch command. Example:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5439352Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5439863Z   git switch -c <new-branch-name>
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5440148Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5440319Z Or undo this operation with:
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5440546Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5440678Z   git switch -
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5440869Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5441246Z Turn off this advice by setting config variable advice.detachedHead to false
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5441677Z 
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5441958Z HEAD is now at 0db9c40 fix: retain complete hosted clarification evidence
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5453517Z ##[endgroup]
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5513007Z [command]/usr/bin/git log -1 --format=%H
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5561844Z 0db9c40737e7fca31d79d476bc36ff30b714c133
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5571359Z ##[group]Removing auth
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5576142Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5620913Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5888705Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5931487Z http.https://github.com/.extraheader
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5942243Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.5994799Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+inference	Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:31:55.6265748Z ##[endgroup]
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	﻿2026-10-29T04:31:55.6645413Z ##[group]Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:55.6646033Z with:
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:55.6646299Z   name: admission-40818202827
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:55.6646619Z   path: evals/automatic-workflow
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:55.6646946Z   merge-multiple: false
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:55.6647245Z   repository: peckyboi2/eslint
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:55.6647566Z   run-id: 40818202827
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:55.6647822Z ##[endgroup]
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:55.8332119Z Downloading single artifact
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:55.8566050Z (node:2596) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:55.8567142Z (Use `node --trace-deprecation ...` to show where the warning was created)
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:56.1918149Z Preparing to download the following artifacts:
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:56.1919744Z - admission-40818202827 (ID: 12872859573, Size: 6952, Expected Digest: sha256:8e1efd56508609eb099f601732eaddbb213617c83e3b56892ea94d970cee717e)
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:56.4546988Z Redirecting to blob download url: https://productionresultssa6.blob.core.windows.net/actions-results/9beca79b-a84a-8cce-84ca-8159d9403656/workflow-job-run-de68fd5c-7183-59c0-8cc8-b8f2808a919b/artifacts/a018cb6077ada860b349c55bda75b4f3a7cad262c0a7344af4fb0b71de497d12.zip
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:56.4550822Z Starting download of artifact to: /home/runner/work/eslint/eslint/evals/automatic-workflow
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:56.8053996Z (node:2596) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:56.8142530Z SHA256 digest of downloaded artifact is 8e1efd56508609eb099f601732eaddbb213617c83e3b56892ea94d970cee717e
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:56.8143918Z Artifact download completed successfully.
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:56.8144938Z Total of 1 artifact(s) downloaded
+inference	Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093	2026-10-29T04:31:56.8152776Z Download artifact has finished successfully
+inference	Install verified Linux Codex	﻿2026-10-29T04:31:56.8318097Z ##[group]Run python3 -B scripts/clarifier/inference/hosted_install.py --destination "$RUNNER_TEMP/clarifier-bin" --github-path
+inference	Install verified Linux Codex	2026-10-29T04:31:56.8319183Z ^[[36;1mpython3 -B scripts/clarifier/inference/hosted_install.py --destination "$RUNNER_TEMP/clarifier-bin" --github-path^[[0m
+inference	Install verified Linux Codex	2026-10-29T04:31:56.8345101Z shell: /usr/bin/bash -e {0}
+inference	Install verified Linux Codex	2026-10-29T04:31:56.8345450Z ##[endgroup]
+inference	Install verified Linux Codex	2026-10-29T04:32:00.2120565Z Installed verified codex-cli 0.154.0
+inference	Run python3 -B scripts/clarifier/workflow.py infer	﻿2026-10-29T04:32:00.2367226Z ##[group]Run python3 -B scripts/clarifier/workflow.py infer
+inference	Run python3 -B scripts/clarifier/workflow.py infer	2026-10-29T04:32:00.2367787Z ^[[36;1mpython3 -B scripts/clarifier/workflow.py infer^[[0m
+inference	Run python3 -B scripts/clarifier/workflow.py infer	2026-10-29T04:32:00.2391331Z shell: /usr/bin/bash -e {0}
+inference	Run python3 -B scripts/clarifier/workflow.py infer	2026-10-29T04:32:00.2391660Z env:
+inference	Run python3 -B scripts/clarifier/workflow.py infer	2026-10-29T04:32:00.2394958Z   CLARIFIER_READ_TOKEN: ***
+inference	Run python3 -B scripts/clarifier/workflow.py infer	2026-10-29T04:32:00.2395958Z   CLARIFIER_PROVIDER_KEY: ***
+inference	Run python3 -B scripts/clarifier/workflow.py infer	2026-10-29T04:32:00.2396252Z ##[endgroup]
+inference	Run python3 -B scripts/clarifier/workflow.py infer	2026-10-29T04:32:25.9472657Z {"folder": "evals/automatic-workflow/preview", "status": "completed", "errors": []}
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	﻿2026-10-29T04:32:25.9709307Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:25.9709785Z with:
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:25.9710007Z   name: preview-40818202827
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:25.9710278Z   path: evals/automatic-workflow
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:25.9710551Z   include-hidden-files: true
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:25.9710801Z   retention-days: 30
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:25.9711044Z   if-no-files-found: error
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:25.9711347Z   compression-level: 6
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:25.9711604Z   overwrite: false
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:25.9711823Z ##[endgroup]
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:26.1477918Z (node:2718) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:26.1479063Z (Use `node --trace-deprecation ...` to show where the warning was created)
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:26.1717405Z With the provided path, there will be 30 files uploaded
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:26.1718252Z Artifact name is valid!
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:26.1718514Z Root directory input is valid!
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:26.5977866Z Beginning upload of artifact content to blob storage
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:26.6548848Z (node:2718) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:27.0740824Z Uploaded bytes 64145
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:27.1650792Z Finished uploading artifact content to blob storage!
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:27.1652115Z SHA256 digest of uploaded artifact zip is 195ef59c05528ba1706652b8da991a23ca25ec0544ce59eb8a4defc11f2eec9c
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:27.1653218Z Finalizing artifact upload
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:27.6855571Z Artifact preview-40818202827.zip successfully finalized. Artifact ID 12873940069
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:27.6857459Z Artifact preview-40818202827 has been successfully uploaded! Final size is 64145 bytes. Artifact ID is 12873940069
+inference	Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02	2026-10-29T04:32:27.6867076Z Artifact download URL: https://github.com/peckyboi2/eslint/actions/runs/40818202827/artifacts/12873940069
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	﻿2026-10-29T04:32:27.7143941Z Post job cleanup.
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:32:27.8196168Z [command]/usr/bin/git version
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:32:27.8252494Z git version 2.56.0
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:32:27.8301289Z Temporarily overriding HOME='/home/runner/work/_temp/4eeefac8-73ab-435b-9911-1a08353d4b07' before making global git config changes
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:32:27.8302815Z Adding repository directory to the temporary git global config as a safe directory
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:32:27.8308989Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eslint/eslint
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:32:27.8390658Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:32:27.8456658Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:32:27.8786019Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+inference	Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683	2026-10-29T04:32:27.8827351Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+inference	Complete job	﻿2026-10-29T04:32:27.9378604Z Cleaning up orphan processes
+inference	Complete job	2026-10-29T04:32:27.9890326Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683, actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

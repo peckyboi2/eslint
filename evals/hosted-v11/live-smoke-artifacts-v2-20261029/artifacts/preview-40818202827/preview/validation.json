@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 2,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "human_review",
+  "validated_output": {
+    "decision": "human_review",
+    "rationale": "The supplied text describes a preview integration test but establishes no concrete ESLint failure or reproduction path. Although it explicitly says configuration is omitted, it does not establish which settings are necessary or what reproduction step their absence blocks. I cannot confidently identify a necessary clarification or determine that the evidence is sufficient to reproduce an issue.",
+    "clarification": null
+  }
+}
