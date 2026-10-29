@@ -1,0 +1,27 @@
+{
+  "source_hashes": {
+    "title.txt": "4a339ddf899e942d19b8c0aa07b54d3f9c0acbb54f6a11c434ec0177d99411e7",
+    "body.md": "0066fe3bf11ce9b500852f6afd68f9c6cef5fc8060aeec137e1708966cdc18fa",
+    "snapshot.json": "235945f904f9def6745dc45de8d2c7087c055a0272b5a765e0a20f2e87a8b18a"
+  },
+  "staged_files": {
+    "title.txt": {
+      "bytes": 33,
+      "sha256": "4a339ddf899e942d19b8c0aa07b54d3f9c0acbb54f6a11c434ec0177d99411e7"
+    },
+    "body.md": {
+      "bytes": 326,
+      "sha256": "0066fe3bf11ce9b500852f6afd68f9c6cef5fc8060aeec137e1708966cdc18fa"
+    },
+    "snapshot.json": {
+      "bytes": 338,
+      "sha256": "235945f904f9def6745dc45de8d2c7087c055a0272b5a765e0a20f2e87a8b18a"
+    }
+  },
+  "staged_bytes": 697,
+  "excluded": [
+    "Git metadata",
+    "expected answers",
+    "later discussion"
+  ]
+}

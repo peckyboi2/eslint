@@ -1,0 +1,14 @@
+{
+  "recovery_method": "git show of the exact workflow code commit; local object only",
+  "repository": "https://github.com/peckyboi2/eslint",
+  "source_commit": "f2a56cbe6aedc1960f62035a9cad26fa77251b60",
+  "source_path": ".claude/skills/eslint-clarification/SKILL.md",
+  "recovered_path": "configuration/.claude/skills/eslint-clarification/SKILL.md",
+  "original_missing_artifact_path": "artifacts/preview-40816597353/preview/configuration/.claude/skills/eslint-clarification/SKILL.md",
+  "sha256": "dbfd948cd6b528d23b4e641bdb274be2ae237a0840a41753c58685e9614f7550",
+  "artifact_manifest_sha256": "dbfd948cd6b528d23b4e641bdb274be2ae237a0840a41753c58685e9614f7550",
+  "byte_identity_verified": true,
+  "original_artifact_modified": false,
+  "reason": "actions/upload-artifact excludes hidden paths by default; the .claude directory was omitted",
+  "scope": "Recovery of one missing canonical instruction file; original artifact completeness remains failed"
+}

@@ -1,0 +1,1 @@
+{"decision":"human_review","rationale":"The report states that ESLint configuration is deliberately absent, but supplies no triggering input, reproduction path, or observed and expected behavior. This does not establish whether that configuration is necessary or which reproduction step it blocks, so a targeted clarification cannot be justified confidently.","clarification":null}

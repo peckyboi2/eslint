@@ -1,0 +1,16 @@
+{
+  "mode": "preview",
+  "public_actions": [],
+  "preview_comment": null,
+  "source_issue": 1,
+  "repository_id": 1435519573,
+  "repository": "peckyboi2/eslint",
+  "posting_target": null,
+  "valid": true,
+  "decision": "human_review",
+  "validated_output": {
+    "decision": "human_review",
+    "rationale": "The report states that ESLint configuration is deliberately absent, but supplies no triggering input, reproduction path, or observed and expected behavior. This does not establish whether that configuration is necessary or which reproduction step it blocks, so a targeted clarification cannot be justified confidently.",
+    "clarification": null
+  }
+}

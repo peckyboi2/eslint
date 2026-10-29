@@ -1,8 +1,8 @@
 # Evaluation, reproduction and operations
 
-Current active runtime is **hosted-preview-v11**: [hosted preparation and activation review](hosted-v11/README.md). The API secret is stored and Linux archive/executable pins are verified. The new workflow wiring has 235 passing synthetic safety tests; no v11 model call or hosted execution has occurred. Earlier v10/v9 records below remain history. Current offline verification uses the new v11 candidate while preserving those records.
+Current runtime is **hosted-preview-v11-artifacts-v2**: [hosted evidence and operations](hosted-v11/README.md). The preceding v11 configuration completed [one automatic GitHub smoke run](hosted-v11/live-smoke-20261029/README.md): one OpenAI request, `human_review`, 2,567 tokens and zero public comments. The current variant fixes omitted hidden skill evidence in artifact upload; that upload fix has offline tests and has not received another provider call. Earlier ten-case v9 results remain historical, not current accuracy.
 
-Current active code is the [automatic-preview v10 local candidate](automatic-v10/README.md). It has 212 passing deterministic safety tests and no new model accuracy or hosted-execution claim. The v9 evaluation below is retained history. `python3 -B scripts/verify_submission.py` now checks current v10 bytes separately and runs the unchanged historical verifier on retained v9 Git/overlay bytes; `--safety-tests` runs the frozen 172 tests. Use `python3 -B scripts/verify_automatic.py --tests` for current candidate tests. Do not run old inline v9 source-hash commands against changed active runtime files.
+The [v10 automatic candidate](automatic-v10/README.md) and its 212 tests are preserved history. Use `python3 -B scripts/verify_submission.py` for current bytes plus exact retained v9 verification, `python3 -B scripts/verify_automatic.py --tests` for current infrastructure tests, and `python3 -B scripts/verify_submission.py --safety-tests` for frozen v9 tests. The remaining sections retain v9 operations and status; current hosted operations are in the linked guide.
 
 ## Retained v9 evidence and operations
 

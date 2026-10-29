@@ -69,6 +69,15 @@ class AuditTests(unittest.TestCase):
             with self.subTest(removed=before), self.assertRaises(p.PlatformError):
                 audit.inspect(triage.replace(before,after),stop)
 
+    def test_preview_archive_requires_hidden_skill_and_bounded_directory(self):
+        folder=c.ROOT/'.github/workflows'
+        triage=(folder/p.TRIAGE_WORKFLOW).read_text(); stop=(folder/p.STOP_WORKFLOW).read_text()
+        for before,after in (('          include-hidden-files: true\n',''),
+                             ('include-hidden-files: true','include-hidden-files: false'),
+                             ('path: evals/automatic-workflow','path: .')):
+            with self.subTest(change=after), self.assertRaises(p.PlatformError):
+                audit.inspect(triage.replace(before,after),stop)
+
     def test_unsafe_permission_secret_or_stop_dependency_rejected(self):
         folder=c.ROOT/'.github/workflows'
         triage=(folder/p.TRIAGE_WORKFLOW).read_text();stop=(folder/p.STOP_WORKFLOW).read_text()

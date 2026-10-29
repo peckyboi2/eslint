@@ -1,5 +1,5 @@
 {
-  "version": "hosted-preview-v11",
+  "version": "hosted-preview-v11-artifacts-v2",
   "engine": "codex-cli",
   "cli_version": "codex-cli 0.154.0",
   "model": "gpt-6.1-sol",

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "kind": "single live GitHub-to-provider integration smoke test; not an accuracy evaluation",
+  "repository": "peckyboi2/eslint",
+  "repository_id": 1435519573,
+  "issue_number": 1,
+  "issue_id": 6092635307,
+  "issue_url": "https://github.com/peckyboi2/eslint/issues/1",
+  "run_id": "40816597353",
+  "run_url": "https://github.com/peckyboi2/eslint/actions/runs/40816597353",
+  "code_commit": "f2a56cbe6aedc1960f62035a9cad26fa77251b60",
+  "configuration_version": "hosted-preview-v11",
+  "configuration_sha256": "4a81662188af6df6a1ab5180c1121f26757e7bf15b75144a2489751dd9a19777",
+  "binding_configuration_sha256": "e2750ba2e8daaaedbedd972c5419c34bb5f32fc36258d7170833975f1098e59f",
+  "integration_status": "passed",
+  "artifact_completeness_status": "failed",
+  "semantic_correctness_status": "not_scored",
+  "decision_observed": "human_review",
+  "jobs": {
+    "gate": "success",
+    "admission": "success",
+    "inference": "success"
+  },
+  "engine_version": "codex-cli 0.154.0",
+  "engine_binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+  "model_requested": "gpt-6.1-sol",
+  "model_returned": "gpt-6.1-sol",
+  "backend_revision_pinned": false,
+  "provider_requests": 1,
+  "provider_status": 200,
+  "usage": {
+    "input_tokens": 2216,
+    "input_tokens_details": {
+      "cache_write_tokens": 2213,
+      "cached_tokens": 0
+    },
+    "output_tokens": 351,
+    "output_tokens_details": {
+      "reasoning_tokens": 280
+    },
+    "total_tokens": 2567
+  },
+  "cost": "unknown",
+  "tool_calls": [],
+  "public_actions": [],
+  "issue_comments_observed": 0,
+  "state": {
+    "admissions": 1,
+    "enabled": true,
+    "posting_enabled": false,
+    "posts": 0
+  },
+  "skill": {
+    "native_loaded": true,
+    "native_outer_whitespace_trimmed": true,
+    "canonical_sha256": "dbfd948cd6b528d23b4e641bdb274be2ae237a0840a41753c58685e9614f7550",
+    "trimmed_sha256": "9be7ed95a884790097240a568189111db6d58b2804c7701cade6f64efcee8d1c",
+    "outbound_tools": [],
+    "implicit_host_context_forwarded": false
+  },
+  "artifact_validation": {
+    "manifest_entries": 26,
+    "verified_original_files": 25,
+    "missing_original_files": [
+      "configuration/.claude/skills/eslint-clarification/SKILL.md"
+    ],
+    "mismatched_original_files": [],
+    "recovered_separately": [
+      "recovery/configuration/.claude/skills/eslint-clarification/SKILL.md"
+    ],
+    "recovered_hash_matches_original_manifest": true,
+    "original_artifacts_modified": false
+  },
+  "configuration_validation": {
+    "recorded_file_count": 60,
+    "commit_byte_mismatches": [],
+    "aggregate_verified": true,
+    "against_exact_commit": "f2a56cbe6aedc1960f62035a9cad26fa77251b60"
+  },
+  "copied_original_files": 51,
+  "unverified": [
+    "Historical decision accuracy of hosted v11",
+    "Adversarial model behavior of hosted v11",
+    "Public posting and bot comment identity",
+    "Live cancellation and phone kill switch",
+    "Later artifact-export fixes; this run covers only the original code commit"
+  ],
+  "notes": [
+    "Acceptance criteria were recorded before inspecting the output.",
+    "The response was human_review; no semantic outcome was fixed for this synthetic wiring test.",
+    "The missing hidden instruction file is a real artifact-export failure; recovery does not erase that failure.",
+    "No second provider request was made to produce this assessment."
+  ]
+}

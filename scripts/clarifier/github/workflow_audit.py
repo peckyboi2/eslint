@@ -63,6 +63,10 @@ def inspect(triage: str, stop: str, approval: str | None = None) -> dict:
     require('CLARIFIER_READ_TOKEN: ${{ github.token }}' in tj['inference'],'Missing harness-only read token')
     require('hosted_install.py --destination "$RUNNER_TEMP/clarifier-bin" --github-path' in tj['inference'], 'Missing pinned runtime installation')
     require('timeout-minutes: 15' in tj['inference'] and 'retention-days: 30' in tj['inference'],'Missing runtime/retention limit')
+    require('          name: preview-${{ github.run_id }}\n'
+            '          path: evals/automatic-workflow\n'
+            '          include-hidden-files: true\n' in tj['inference'],
+            'Preview must retain hidden skill evidence from only the audited output directory')
     if approval is not None:
         require('workflow_dispatch:' in approval and 'issues: write' not in approval,'Approval must remain manual/inactive')
         require('secrets.' not in approval and 'approve.py' in approval,'Unreviewed approval activation')
@@ -75,7 +79,7 @@ def inspect(triage: str, stop: str, approval: str | None = None) -> dict:
                       'stop':['contents:write','actions:write','independent']},
                 queue=dict(running=1,pending=100,overflow='GitHub cancellation; manual recovery'),
                 silent_branches='no public comment job in issue workflow',
-                platform_limits=['Linux binary pinned; installation and provider access not yet observed in GitHub','No OS jail or host firewall tested',
+                platform_limits=['Static inspection alone does not establish hosted enforcement; consult saved run evidence','No OS jail or host firewall tested',
                                  'Runner image mutable; provider revision unpinned',
                                  'GitHub scheduling/cancel/retention untested',
                                  'Final check cannot atomically lock GitHub edits or stop flag'])

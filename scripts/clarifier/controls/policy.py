@@ -64,7 +64,7 @@ SHA_PATTERN = r'[a-f0-9]{64}'
 GIT_SHA_PATTERN = r'[a-f0-9]{40}'
 RUN_PATTERN = r'[1-9][0-9]*'
 POLICY_VERSION = 'milestone-c-policy-v1'
-CONFIG_VERSION = 'hosted-preview-v11'
+CONFIG_VERSION = 'hosted-preview-v11-artifacts-v2'
 
 
 @dataclass(frozen=True)

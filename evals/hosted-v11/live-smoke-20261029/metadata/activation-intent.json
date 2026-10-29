@@ -1,0 +1,13 @@
+{
+  "repository": "peckyboi2/eslint",
+  "repository_id": 1435519573,
+  "owner_id": 234542779,
+  "configuration_sha256": "4a81662188af6df6a1ab5180c1121f26757e7bf15b75144a2489751dd9a19777",
+  "candidate_sha256": "7447baf19ac29d46eeb60fffc89154cd7de5bf52baebc058d0a3d482abca0fd9",
+  "commit": "f2a56cbe6aedc1960f62035a9cad26fa77251b60",
+  "model_request_limit": 1,
+  "posting": false,
+  "public_test_issue_limit": 1,
+  "initial_actions_enabled": false,
+  "initial_issues_enabled": false
+}

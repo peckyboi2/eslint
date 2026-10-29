@@ -21,7 +21,7 @@ HOSTED_CANDIDATE=HOSTED_FOLDER/'candidate.json'
 HOSTED_PRESERVATION=HOSTED_FOLDER/'preservation.json'
 PRESERVATION_SHA256='0639f8a750f03327a567a24a282fad2596671872c50227b3488e79c16a7398ac'
 LEGACY_VERSION='automatic-preview-v10'
-HOSTED_VERSION='hosted-preview-v11'
+HOSTED_VERSION='hosted-preview-v11-artifacts-v2'
 MUTABLE_DOCS={'DESIGN.md','SUBMISSION.md','evals/README.md','evals/golden/INDEX.md'}
 
 
@@ -119,7 +119,7 @@ def verify_tree(root: Path, candidate: dict) -> int:
 def verify_candidate_scope(candidate: dict) -> None:
     """Raise ValueError if candidate bytes change inherited code/workflows or old evidence."""
     permitted=MUTABLE_DOCS|{'.gitattributes','scripts/verify_submission.py','scripts/verify_automatic.py',
-        'scripts/check_v9_attacks.py','scripts/evaluate_automatic.py','scripts/submission_tests/test_verify_submission.py',
+        'scripts/check_v9_attacks.py','scripts/evaluate_automatic.py','scripts/verify_hosted_smoke.py','scripts/submission_tests/test_verify_submission.py',
         'evals/golden/final-results-v9/README.md'}
     prefixes=('scripts/clarifier/','scripts/automatic_tests/','evals/automatic-v10/')
     if candidate['version']==HOSTED_VERSION:
@@ -152,7 +152,7 @@ def verify_preserved_v10(root: Path, candidate: dict) -> dict:
                 source_reconstruction=preserved['prior_active_file_hash_reference'])
 
 
-def verify_hosted_configuration(root: Path, candidate: dict) -> None:
+def verify_hosted_configuration(root: Path, candidate: dict) -> dict | None:
     """Bind every current runtime source and settings byte to the new candidate or raise ValueError."""
     from clarifier.inference.recording import load_configuration
     from clarifier.shared import constants as c
@@ -164,10 +164,15 @@ def verify_hosted_configuration(root: Path, candidate: dict) -> None:
     require(declared['source_hashes']==sources,'Hosted runtime/configuration inventory differs')
     require(declared['aggregate_sha256']==sha(json.dumps(sources,sort_keys=True,separators=(',',':')).encode()),
             'Hosted configuration aggregate differs')
-    require(type(candidate['provider_calls']) is int and candidate['provider_calls']==0
+    observed='observed_current_hosted_smoke' in candidate
+    require(type(candidate['provider_calls']) is int and candidate['provider_calls']==int(observed)
             and type(candidate['public_actions']) is int and candidate['public_actions']==0
-            and candidate['evaluated'] is False and candidate['hosted_execution_verified'] is False,
+            and candidate['evaluated'] is False and candidate['hosted_execution_verified'] is observed,
             'Preparation manifest cannot claim provider calls or public writes')
+    if observed:
+        import verify_hosted_smoke
+        return verify_hosted_smoke.verify(root,candidate['observed_current_hosted_smoke'],declared)
+    return None
 
 
 @contextmanager
@@ -204,8 +209,7 @@ def verify_candidate(root: Path, expected_sha256: str | None) -> dict:
     prior=verify_preserved_v10(root,candidate) if hosted else None
     frozen=verify_originals(root,candidate)
     files=verify_tree(root,candidate)
-    if hosted:
-        verify_hosted_configuration(root,candidate)
+    current_smoke=verify_hosted_configuration(root,candidate) if hosted else None
     historical=run_historical(root)
     require(historical.returncode==0,'Historical v9 verifier failed: '+historical.stderr)
     result=json.loads(historical.stdout)
@@ -215,11 +219,14 @@ def verify_candidate(root: Path, expected_sha256: str | None) -> dict:
     result.update(verification='Current '+candidate['version']+' tree plus exact retained Git/overlay v9 replay; offline',
                   current_candidate=dict(version=candidate['version'],manifest_path=manifest.as_posix(),manifest_sha256=sha(raw),
                     identified_files=len(candidate['files']),whole_tree_files=files,
-                    model_calls=0,evaluated=False,hosted=False,capabilities=workflow_audit.run(root)),
+                    model_calls=0,provider_calls=candidate.get('provider_calls',0),evaluated=False,
+                    hosted=current_smoke is not None,capabilities=workflow_audit.run(root)),
                   v9_baseline=dict(commit=BASELINE_COMMIT,frozen_git_files=frozen,
                     overlay='One snapshot preserves preexisting uncommitted verifier/docs; not active runtime copies'))
     if prior is not None:
         result['v10_preserved']=prior
+    if current_smoke is not None:
+        result['current_hosted_smoke']=current_smoke
     return result
 
 

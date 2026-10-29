@@ -1,7 +1,7 @@
 """Named automatic-intake contracts and limits. Serves A03–C03."""
 from pathlib import Path
 
-VERSION = 'hosted-preview-v11'
+VERSION = 'hosted-preview-v11-artifacts-v2'
 BUG_PREFIX = 'Bug:'
 EVENT_BYTES = 2097152
 MAX_PENDING = 100

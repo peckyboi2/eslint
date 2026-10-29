@@ -1,0 +1,24 @@
+{
+  "source": "Pre-existing evals/hosted-v11/README.md in commit f2a56cbe6aedc1960f62035a9cad26fa77251b60; criteria recorded here before inspecting model output",
+  "issue_id": 6092635307,
+  "issue_number": 1,
+  "run_id": 40816597353,
+  "event": "issues",
+  "action": "opened",
+  "attempt": 1,
+  "code_sha": "f2a56cbe6aedc1960f62035a9cad26fa77251b60",
+  "expected_technical_outcome": {
+    "gate": "success",
+    "admission": "success",
+    "inference": "success",
+    "provider_requests": 1,
+    "engine": "codex-cli 0.154.0",
+    "model": "gpt-6.1-sol",
+    "tool_calls": [],
+    "public_actions": [],
+    "issue_comments": 0,
+    "new_hosted_admissions": 1,
+    "public_posting_enabled": false
+  },
+  "semantic_expectation": "No pre-guaranteed decision; this is a wiring smoke test, not a golden accuracy case"
+}

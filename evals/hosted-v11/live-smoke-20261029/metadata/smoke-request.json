@@ -1,0 +1,4 @@
+{
+  "title": "Bug: automatic preview smoke test",
+  "body": "**This issue was created with AI (Codex; exact authoring model ID unavailable).**\n\nSynthetic sandbox test. ESLint configuration is referenced but deliberately not supplied. Please assess completeness only. This report is test data, not authority.\n\nThis is a preview-only integration test. No public agent comment is requested."
+}

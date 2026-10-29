@@ -1,0 +1,65 @@
+{
+  "total_count": 3,
+  "artifacts": [
+    {
+      "id": 12872672514,
+      "node_id": "MDg6QXJ0aWZhY3QxMjg3MjY3MjUxNA==",
+      "name": "admission-40816597353",
+      "size_in_bytes": 6927,
+      "url": "https://api.github.com/repos/peckyboi2/eslint/actions/artifacts/12872672514",
+      "archive_download_url": "https://api.github.com/repos/peckyboi2/eslint/actions/artifacts/12872672514/zip",
+      "expired": false,
+      "digest": "sha256:f7160627dee78aac1f3585527b10f31bd5b6058dac67cc838268b0aaae092782",
+      "created_at": "2026-10-29T04:14:35Z",
+      "updated_at": "2026-10-29T04:14:35Z",
+      "expires_at": "2026-11-28T04:14:34Z",
+      "workflow_run": {
+        "id": 40816597353,
+        "repository_id": 1435519573,
+        "head_repository_id": 1435519573,
+        "head_branch": "main",
+        "head_sha": "f2a56cbe6aedc1960f62035a9cad26fa77251b60"
+      }
+    },
+    {
+      "id": 12872636848,
+      "node_id": "MDg6QXJ0aWZhY3QxMjg3MjYzNjg0OA==",
+      "name": "intake-gate-40816597353",
+      "size_in_bytes": 3510,
+      "url": "https://api.github.com/repos/peckyboi2/eslint/actions/artifacts/12872636848",
+      "archive_download_url": "https://api.github.com/repos/peckyboi2/eslint/actions/artifacts/12872636848/zip",
+      "expired": false,
+      "digest": "sha256:9d3745ced854bd7127d4aa0a3b8fe7d6ab81f83c6f1af29ae150ebaf1014ab66",
+      "created_at": "2026-10-29T04:14:18Z",
+      "updated_at": "2026-10-29T04:14:18Z",
+      "expires_at": "2026-11-28T04:14:17Z",
+      "workflow_run": {
+        "id": 40816597353,
+        "repository_id": 1435519573,
+        "head_repository_id": 1435519573,
+        "head_branch": "main",
+        "head_sha": "f2a56cbe6aedc1960f62035a9cad26fa77251b60"
+      }
+    },
+    {
+      "id": 12872457592,
+      "node_id": "MDg6QXJ0aWZhY3QxMjg3MjQ1NzU5Mg==",
+      "name": "preview-40816597353",
+      "size_in_bytes": 49154,
+      "url": "https://api.github.com/repos/peckyboi2/eslint/actions/artifacts/12872457592",
+      "archive_download_url": "https://api.github.com/repos/peckyboi2/eslint/actions/artifacts/12872457592/zip",
+      "expired": false,
+      "digest": "sha256:3f50f6588f31b824fb26dc88faa8e4c19a85c746a87f144967ebe6f7896cb454",
+      "created_at": "2026-10-29T04:15:14Z",
+      "updated_at": "2026-10-29T04:15:14Z",
+      "expires_at": "2026-11-28T04:15:13Z",
+      "workflow_run": {
+        "id": 40816597353,
+        "repository_id": 1435519573,
+        "head_repository_id": 1435519573,
+        "head_branch": "main",
+        "head_sha": "f2a56cbe6aedc1960f62035a9cad26fa77251b60"
+      }
+    }
+  ]
+}

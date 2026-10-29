@@ -1,0 +1,5 @@
+{
+  "status": 200,
+  "host": "api.openai.com",
+  "path": "/v1/responses"
+}

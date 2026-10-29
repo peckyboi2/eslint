@@ -37,10 +37,10 @@ class HostedCandidateVerificationTests(unittest.TestCase):
 
     def test_hosted_preparation_preserves_score_and_exhausted_reservations(self):
         result=automatic.verify(self.root)
-        self.assertEqual(result['current_candidate']['version'],'hosted-preview-v11')
+        self.assertEqual(result['current_candidate']['version'],'hosted-preview-v11-artifacts-v2')
         self.assertEqual(result['current_candidate']['manifest_path'],'evals/hosted-v11/candidate.json')
         self.assertFalse(result['current_candidate']['evaluated'])
-        self.assertFalse(result['current_candidate']['hosted'])
+        self.assertEqual(result['current_candidate']['hosted'],'observed_current_hosted_smoke' in self.candidate())
         self.assertEqual(result['decision_matches'],{'count':9,'denominator':10})
         self.assertEqual(result['retained_failed_case'],19924)
         self.assertEqual(result['v10_preserved']['previous_reservations_unchanged'],54)
