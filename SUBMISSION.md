@@ -72,8 +72,3 @@ As the pinned owner, open **Actions → Stop sandbox clarification → Run workf
 
 The original stop scanner covers preview/approval executions. If the separate manual evaluator is reenabled, cancel its active run directly in Actions and disable that workflow too. The phone test blocked new model runs, but workflow-disable calls returned HTTP 403. Live cancellation, queue overflow and provider termination remain unverified; DESIGN distinguishes actual tests from simulations.
 
-## Submission through eLearn
-
-Submit one GitHub link to the exact commit to be marked, after committing and pushing the complete verified tree. Check that DESIGN, configuration and all required golden inputs, expectations, outputs and logs are present at that commit. Later commits will not be marked. No PDF is required. If the repository is private at submission time, add GitHub user `ctreude` as a collaborator first.
-
-The [30 October readiness review](evals/hosted-v11/submission-readiness-20261030/review.md) maps the brief to the submitted files and records the remaining human submission steps.
