@@ -1,1 +1,0 @@
-Bug: object-shorthand never autofix produces invalid syntax for methods using super

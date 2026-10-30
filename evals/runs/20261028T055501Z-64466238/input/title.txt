@@ -1,1 +1,0 @@
-Bug: 'no-useless-assignment' unexpected error with increment/decrement

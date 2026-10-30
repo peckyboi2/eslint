@@ -107,6 +107,19 @@ class HostedCandidateVerificationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'bytecode'):
             automatic.verify_candidate_scope(candidate)
 
+    def test_stop_evidence_packaging_does_not_allow_other_run_changes(self):
+        candidate=dict(version=automatic.HOSTED_VERSION,files={
+            '.gitignore':'0'*64,
+            'evals/runs/stop-workflow-20261030-runs-41017826713-41018317883/PACKAGE-SHA256.json':'0'*64})
+        automatic.verify_candidate_scope(candidate)
+        candidate['version']=automatic.LEGACY_VERSION
+        with self.assertRaisesRegex(ValueError,'Candidate scope'):
+            automatic.verify_candidate_scope(candidate)
+        candidate['version']=automatic.HOSTED_VERSION
+        candidate['files']['evals/runs/unapproved/record.json']='0'*64
+        with self.assertRaisesRegex(ValueError,'Candidate scope'):
+            automatic.verify_candidate_scope(candidate)
+
     def test_reviewed_guides_reject_later_unrecorded_edits(self):
         for name in ('AGENTS.md','CONTRIBUTING.md'):
             with self.subTest(guide=name), self.altered(name,b'unreviewed guide change\n'):
@@ -122,6 +135,84 @@ class HostedCandidateVerificationTests(unittest.TestCase):
     def test_exact_review_hash_binds_the_active_manifest(self):
         with self.assertRaisesRegex(ValueError,'Candidate review hash'):
             automatic.verify(self.root,'0'*64)
+
+    def test_retired_plan_is_preserved_in_historical_replay(self):
+        name='evals/golden/evaluation-plan.md'
+        retired=automatic.verify_retired_documents(self.root,self.candidate())
+        self.assertEqual(retired,{name:automatic.RETIRED_DOCUMENTS[name]})
+        with automatic.historical_projection(self.root) as historical:
+            self.assertEqual(automatic.sha((historical/name).read_bytes()),retired[name])
+
+    def test_other_evidence_cannot_be_retired(self):
+        candidate=copy.deepcopy(self.candidate())
+        candidate['retired_documents']['evals/golden/expectations.json']='0'*64
+        with self.assertRaisesRegex(ValueError,'Unapproved document retirement'):
+            automatic.verify_retired_documents(self.root,candidate)
+
+    def test_retired_document_hash_cannot_be_relabelled(self):
+        candidate=copy.deepcopy(self.candidate())
+        candidate['retired_documents']['evals/golden/evaluation-plan.md']='0'*64
+        with self.assertRaisesRegex(ValueError,'Retired document Git hash differs'):
+            automatic.verify_retired_documents(self.root,candidate)
+
+    def test_removal_requires_explicit_manifest_record(self):
+        candidate=copy.deepcopy(self.candidate())
+        candidate.pop('retired_documents')
+        with self.assertRaisesRegex(ValueError,'Missing candidate/evidence: evals/golden/evaluation-plan.md'):
+            automatic.verify_originals(self.root,candidate)
+
+    def test_retired_platform_records_remain_verifiable_in_git(self):
+        retired={name:digest for name,digest in automatic.verify_retired_directories(self.root,self.candidate()).items()
+                 if name.startswith('evals/platform-tests/')}
+        self.assertEqual(len(retired),874)
+        with automatic.historical_projection(self.root) as historical:
+            self.assertTrue(all(automatic.sha((historical/name).read_bytes())==digest
+                                for name,digest in retired.items()))
+
+    def test_current_results_cannot_be_retired_as_a_directory(self):
+        candidate=copy.deepcopy(self.candidate())
+        candidate['retired_directories']['evals/golden/hosted-v11-20261029']='0'*40
+        with self.assertRaisesRegex(ValueError,'Unapproved directory retirement'):
+            automatic.verify_retired_directories(self.root,candidate)
+
+    def test_retired_directory_hash_cannot_be_relabelled(self):
+        candidate=copy.deepcopy(self.candidate())
+        candidate['retired_directories']['evals/platform-tests']='0'*40
+        with self.assertRaisesRegex(ValueError,'Retired directory Git tree differs'):
+            automatic.verify_retired_directories(self.root,candidate)
+
+    def test_directory_removal_requires_explicit_manifest_record(self):
+        candidate=copy.deepcopy(self.candidate())
+        candidate['retired_directories'].pop('evals/platform-tests')
+        with self.assertRaisesRegex(ValueError,'Missing candidate/evidence: evals/platform-tests/'):
+            automatic.verify_originals(self.root,candidate)
+
+    def test_retired_development_runs_remain_verifiable_in_git(self):
+        retired={name:digest for name,digest in automatic.verify_retired_directories(self.root,self.candidate()).items()
+                 if name.startswith('evals/runs/')}
+        self.assertEqual(len(retired),747)
+        self.assertEqual({Path(name).parts[2] for name in retired},automatic.RETIRED_RUNS)
+        with automatic.historical_projection(self.root) as historical:
+            self.assertTrue(all(automatic.sha((historical/name).read_bytes())==digest
+                                for name,digest in retired.items()))
+
+    def test_failed_run_cannot_be_retired(self):
+        candidate=copy.deepcopy(self.candidate())
+        candidate['retired_directories']['evals/runs/20261028T044906Z-2dbe7936']='0'*40
+        with self.assertRaisesRegex(ValueError,'Unapproved directory retirement'):
+            automatic.verify_retired_directories(self.root,candidate)
+
+    def test_retired_run_hash_cannot_be_relabelled(self):
+        candidate=copy.deepcopy(self.candidate())
+        candidate['retired_directories']['evals/runs/20261028T014605Z-7eb7cc4d']='0'*40
+        with self.assertRaisesRegex(ValueError,'Retired directory Git tree differs'):
+            automatic.verify_retired_directories(self.root,candidate)
+
+    def test_run_removal_requires_explicit_manifest_record(self):
+        candidate=copy.deepcopy(self.candidate())
+        candidate['retired_directories'].pop('evals/runs/20261028T014605Z-7eb7cc4d')
+        with self.assertRaisesRegex(ValueError,'Missing candidate/evidence: evals/runs/20261028T014605Z-7eb7cc4d/'):
+            automatic.verify_originals(self.root,candidate)
 
 
 if __name__=='__main__':

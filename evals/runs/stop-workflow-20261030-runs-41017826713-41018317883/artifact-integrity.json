@@ -1,0 +1,46 @@
+{
+  "runs": [
+    {
+      "run_id": 41017826713,
+      "artifact_id": 12960023726,
+      "artifact_name": "stop-evidence",
+      "github_digest": "sha256:40e080190adcc1bcc8a8c474154549b000f96e3668510c5c13526effaddedb9a",
+      "downloaded_digest": "sha256:40e080190adcc1bcc8a8c474154549b000f96e3668510c5c13526effaddedb9a",
+      "digest_matches": true,
+      "log_archive_members": 9,
+      "log_crc_check": "pass",
+      "ledger_disabled": true,
+      "workflow_disabled": false,
+      "disabled_workflows": [
+        "clarifier-triage.yml"
+      ],
+      "errors": [
+        "Platform HTTP 403; no automatic write retry"
+      ],
+      "unresolved_runs": [],
+      "cancellation_requests": [],
+      "public_actions": []
+    },
+    {
+      "run_id": 41018317883,
+      "artifact_id": 12960616957,
+      "artifact_name": "stop-evidence",
+      "github_digest": "sha256:73d7779a7fd6ef5a594416829671a77fef6dde1618f967e092dece06d00b9bc3",
+      "downloaded_digest": "sha256:73d7779a7fd6ef5a594416829671a77fef6dde1618f967e092dece06d00b9bc3",
+      "digest_matches": true,
+      "log_archive_members": 9,
+      "log_crc_check": "pass",
+      "ledger_disabled": true,
+      "workflow_disabled": false,
+      "disabled_workflows": [],
+      "errors": [
+        "Platform HTTP 403; no automatic write retry",
+        "Platform HTTP 403; no automatic write retry"
+      ],
+      "unresolved_runs": [],
+      "cancellation_requests": [],
+      "public_actions": []
+    }
+  ],
+  "scope": "Original artifact ZIP digests verified against GitHub metadata; extracted bytes are unchanged; nothing executed"
+}

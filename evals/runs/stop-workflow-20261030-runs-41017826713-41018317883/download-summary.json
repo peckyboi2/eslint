@@ -1,0 +1,49 @@
+{
+  "downloaded_at_utc": "2026-10-30T07:15:36.440153+00:00",
+  "scope": "Read-only GitHub retrieval of two completed stop workflow attempts; no dispatch, cancellation, enablement or repository changes",
+  "runs": [
+    {
+      "run_id": 41017826713,
+      "attempt": 1,
+      "url": "https://github.com/peckyboi2/eslint/actions/runs/41017826713",
+      "conclusion": "failure",
+      "actor": "peckyboi2",
+      "triggering_actor": "peckyboi2",
+      "head_sha": "e47f9920e6ba1ea5a5fdacb509d80d1f341ad5bd",
+      "branch": "main",
+      "artifact_count": 1,
+      "jobs": [
+        {
+          "id": 123938068623,
+          "name": "stop",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python3 -B scripts/clarifier/stop.py execute"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": 41018317883,
+      "attempt": 1,
+      "url": "https://github.com/peckyboi2/eslint/actions/runs/41018317883",
+      "conclusion": "failure",
+      "actor": "peckyboi2",
+      "triggering_actor": "peckyboi2",
+      "head_sha": "e47f9920e6ba1ea5a5fdacb509d80d1f341ad5bd",
+      "branch": "main",
+      "artifact_count": 1,
+      "jobs": [
+        {
+          "id": 123939598379,
+          "name": "stop",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python3 -B scripts/clarifier/stop.py execute"
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

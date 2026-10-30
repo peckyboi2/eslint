@@ -1,0 +1,9 @@
+2026-10-30T07:04:29.5660000Z Requested labels: ubuntu-24.04
+2026-10-30T07:04:29.5660000Z Job defined at: peckyboi2/eslint/.github/workflows/clarifier-stop.yml@refs/heads/main
+2026-10-30T07:04:29.5660000Z Waiting for a runner to pick up this job...
+2026-10-30T07:04:29.5610000Z Evaluating stop.if
+2026-10-30T07:04:29.5610000Z Evaluating: (success() && (((github.event_name == 'workflow_dispatch') && (github.repository == 'peckyboi2/eslint') && (github.repository_id == '1435519573') && (github.repository_owner_id == '234542779') && (github.actor == 'peckyboi2') && (github.actor_id == '234542779') && (github.triggering_actor == 'peckyboi2') && (github.ref == 'refs/heads/main'))))
+2026-10-30T07:04:29.5610000Z Expanded: (true && (('workflow_dispatch' == 'workflow_dispatch') && ('peckyboi2/eslint' == 'peckyboi2/eslint') && ('1435519573' == '1435519573') && ('234542779' == '234542779') && ('peckyboi2' == 'peckyboi2') && ('234542779' == '234542779') && ('peckyboi2' == 'peckyboi2') && ('refs/heads/main' == 'refs/heads/main')))
+2026-10-30T07:04:29.5610000Z Result: true
+2026-10-30T07:04:29.9570000Z Job is waiting for a hosted runner to come online.
+2026-10-30T07:04:29.9570000Z Job is about to start running on the hosted runner: GitHub Actions 1000000032

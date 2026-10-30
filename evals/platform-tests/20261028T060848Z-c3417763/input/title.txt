@@ -1,1 +1,0 @@
-Bug: "Could not find plugin" vs "Cannot redefine plugin"

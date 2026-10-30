@@ -45,6 +45,7 @@ _site
 /scripts/**/__pycache__/
 
 # Local development outputs; explicitly include selected final evaluation evidence.
-/evals/runs/
+/evals/runs/*
+!/evals/runs/stop-workflow-20261030-runs-41017826713-41018317883/
 /evals/platform-tests/
 /evals/checks/

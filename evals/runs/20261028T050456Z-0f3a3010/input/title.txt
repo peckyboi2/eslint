@@ -1,1 +1,0 @@
-Bug: CJS config does not complain about no config object (while ESM config does

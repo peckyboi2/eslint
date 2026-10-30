@@ -1,0 +1,95 @@
+﻿2026-10-30T07:04:32.9714974Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+2026-10-30T07:04:32.9715493Z with:
+2026-10-30T07:04:32.9715745Z   ref: e47f9920e6ba1ea5a5fdacb509d80d1f341ad5bd
+2026-10-30T07:04:32.9716069Z   persist-credentials: false
+2026-10-30T07:04:32.9716346Z   repository: peckyboi2/eslint
+2026-10-30T07:04:32.9718187Z   token: ***
+2026-10-30T07:04:32.9718410Z   ssh-strict: true
+2026-10-30T07:04:32.9718638Z   ssh-user: git
+2026-10-30T07:04:32.9718861Z   clean: true
+2026-10-30T07:04:32.9719101Z   sparse-checkout-cone-mode: true
+2026-10-30T07:04:32.9719374Z   fetch-depth: 1
+2026-10-30T07:04:32.9719604Z   fetch-tags: false
+2026-10-30T07:04:32.9719840Z   show-progress: true
+2026-10-30T07:04:32.9720080Z   lfs: false
+2026-10-30T07:04:32.9720302Z   submodules: false
+2026-10-30T07:04:32.9720537Z   set-safe-directory: true
+2026-10-30T07:04:32.9720858Z ##[endgroup]
+2026-10-30T07:04:33.1857544Z Syncing repository: peckyboi2/eslint
+2026-10-30T07:04:33.1858692Z ##[group]Getting Git version info
+2026-10-30T07:04:33.1859083Z Working directory is '/home/runner/work/eslint/eslint'
+2026-10-30T07:04:33.1859578Z [command]/usr/bin/git version
+2026-10-30T07:04:33.1940306Z git version 2.56.0
+2026-10-30T07:04:33.1953402Z ##[endgroup]
+2026-10-30T07:04:33.1964813Z Temporarily overriding HOME='/home/runner/work/_temp/be5360b9-3943-49bf-92fc-5cd726f6fce8' before making global git config changes
+2026-10-30T07:04:33.1965986Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-30T07:04:33.1968208Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eslint/eslint
+2026-10-30T07:04:33.2019843Z Deleting the contents of '/home/runner/work/eslint/eslint'
+2026-10-30T07:04:33.2023760Z ##[group]Initializing the repository
+2026-10-30T07:04:33.2027780Z [command]/usr/bin/git init /home/runner/work/eslint/eslint
+2026-10-30T07:04:33.2137463Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-30T07:04:33.2138581Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-30T07:04:33.2139080Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-30T07:04:33.2139535Z hint: call:
+2026-10-30T07:04:33.2139749Z hint:
+2026-10-30T07:04:33.2140046Z hint: 	git config --global init.defaultBranch <name>
+2026-10-30T07:04:33.2140368Z hint:
+2026-10-30T07:04:33.2140670Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-30T07:04:33.2141145Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-30T07:04:33.2141520Z hint:
+2026-10-30T07:04:33.2141740Z hint: 	git branch -m <name>
+2026-10-30T07:04:33.2141993Z hint:
+2026-10-30T07:04:33.2142316Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-30T07:04:33.2256210Z Initialized empty Git repository in /home/runner/work/eslint/eslint/.git/
+2026-10-30T07:04:33.2267169Z [command]/usr/bin/git remote add origin https://github.com/peckyboi2/eslint
+2026-10-30T07:04:33.2345949Z ##[endgroup]
+2026-10-30T07:04:33.2346521Z ##[group]Disabling automatic garbage collection
+2026-10-30T07:04:33.2349255Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-30T07:04:33.2388016Z ##[endgroup]
+2026-10-30T07:04:33.2388636Z ##[group]Setting up auth
+2026-10-30T07:04:33.2394069Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-30T07:04:33.2432049Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-30T07:04:33.2767565Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-30T07:04:33.2805124Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-30T07:04:33.3016984Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-30T07:04:33.3061589Z ##[endgroup]
+2026-10-30T07:04:33.3062291Z ##[group]Fetching the repository
+2026-10-30T07:04:33.3071891Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin e47f9920e6ba1ea5a5fdacb509d80d1f341ad5bd
+2026-10-30T07:04:34.5799890Z From https://github.com/peckyboi2/eslint
+2026-10-30T07:04:34.5801086Z  * branch            e47f9920e6ba1ea5a5fdacb509d80d1f341ad5bd -> FETCH_HEAD
+2026-10-30T07:04:34.5855634Z ##[endgroup]
+2026-10-30T07:04:34.5860808Z ##[group]Determining the checkout info
+2026-10-30T07:04:34.5862001Z ##[endgroup]
+2026-10-30T07:04:34.5862977Z [command]/usr/bin/git sparse-checkout disable
+2026-10-30T07:04:34.5864699Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-30T07:04:34.5897215Z ##[group]Checking out the ref
+2026-10-30T07:04:34.5901516Z [command]/usr/bin/git checkout --progress --force e47f9920e6ba1ea5a5fdacb509d80d1f341ad5bd
+2026-10-30T07:04:34.8833592Z Note: switching to 'e47f9920e6ba1ea5a5fdacb509d80d1f341ad5bd'.
+2026-10-30T07:04:34.8834404Z 
+2026-10-30T07:04:34.8835052Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-30T07:04:34.8836128Z changes and commit them, and you can discard any commits you make in this
+2026-10-30T07:04:34.8837196Z state without impacting any branches by switching back to a branch.
+2026-10-30T07:04:34.8837840Z 
+2026-10-30T07:04:34.8838300Z If you want to create a new branch to retain commits you create, you may
+2026-10-30T07:04:34.8839283Z do so (now or later) by using -c with the switch command. Example:
+2026-10-30T07:04:34.8839837Z 
+2026-10-30T07:04:34.8840093Z   git switch -c <new-branch-name>
+2026-10-30T07:04:34.8840497Z 
+2026-10-30T07:04:34.8840741Z Or undo this operation with:
+2026-10-30T07:04:34.8841099Z 
+2026-10-30T07:04:34.8841322Z   git switch -
+2026-10-30T07:04:34.8841893Z 
+2026-10-30T07:04:34.8842361Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-30T07:04:34.8843051Z 
+2026-10-30T07:04:34.8843523Z HEAD is now at e47f992 test: record hosted golden evaluation and restored limits
+2026-10-30T07:04:34.8851716Z ##[endgroup]
+2026-10-30T07:04:34.8917706Z [command]/usr/bin/git log -1 --format=%H
+2026-10-30T07:04:34.9016490Z e47f9920e6ba1ea5a5fdacb509d80d1f341ad5bd
+2026-10-30T07:04:34.9040038Z ##[group]Removing auth
+2026-10-30T07:04:34.9050458Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-30T07:04:34.9152301Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-30T07:04:34.9497421Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-30T07:04:34.9526374Z http.https://github.com/.extraheader
+2026-10-30T07:04:34.9531736Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-30T07:04:34.9566457Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-30T07:04:34.9747445Z ##[endgroup]

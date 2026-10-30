@@ -1,1 +1,0 @@
-Bug: `no-console` bad suggestion message with non-literal method names

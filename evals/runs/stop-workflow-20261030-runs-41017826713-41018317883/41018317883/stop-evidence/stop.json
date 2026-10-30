@@ -1,0 +1,16 @@
+{
+  "ledger_disabled": true,
+  "workflow_disabled": false,
+  "cancellation_requests": [],
+  "unresolved_runs": [],
+  "inflight_intents": [],
+  "errors": [
+    "Platform HTTP 403; no automatic write retry",
+    "Platform HTTP 403; no automatic write retry"
+  ],
+  "public_actions": [],
+  "provider_work": "Cancellation cannot prove provider work terminated; reservations remain consumed",
+  "artifact_limit": "Cancelled/overflow runs may not upload artifacts; inspect Actions history",
+  "disabled_workflows": [],
+  "visible_inflight_comments": []
+}

@@ -24,6 +24,24 @@ LEGACY_VERSION='automatic-preview-v10'
 HOSTED_VERSION='hosted-preview-v11-artifacts-v2'
 MUTABLE_DOCS={'DESIGN.md','SUBMISSION.md','evals/README.md','evals/golden/INDEX.md'}
 REPOSITORY_GUIDES={'AGENTS.md','CONTRIBUTING.md'}
+RETIRED_DOCUMENTS={
+    'evals/golden/evaluation-plan.md':'374f72e58487a3a2f0f0988105b8a066ed193972a4785dd7d4461c75767824cc',
+}
+RETIRED_DIRECTORIES={
+    'evals/platform-tests':'c322f15f1d5ee9762d08b2c4ddfa8b43ab663463',
+}
+RETIRED_RUNS={
+    '20261028T014605Z-7eb7cc4d', '20261028T014634Z-39998a92', '20261028T014750Z-6a08afde',
+    '20261028T014929Z-acbc946e', '20261028T015003Z-728460f9', '20261028T015036Z-1dd27b15',
+    '20261028T015809Z-a9519087', '20261028T015848Z-04fa46cf', '20261028T015925Z-8ae037ec',
+    '20261028T050456Z-0f3a3010', '20261028T050539Z-5c38530a', '20261028T050613Z-40ae1f8f',
+    '20261028T050647Z-a8f28878', '20261028T050722Z-badac2ba', '20261028T050941Z-7cccaa34',
+    '20261028T051014Z-a6abe644', '20261028T055042Z-d06425fc', '20261028T055132Z-e9e5c0db',
+    '20261028T055206Z-952e6321', '20261028T055245Z-449bb07c', '20261028T055320Z-ca0313fa',
+    '20261028T055400Z-282b6f5e', '20261028T055501Z-64466238', '20261028T064836Z-4e5f376d',
+    '20261028T064954Z-0049c695', '20261028T065348Z-e05b4d6b', '20261028T065738Z-90ad3c49',
+    '20261028T065854Z-f9346d37',
+}
 
 
 def require(value: bool, reason: str) -> None:
@@ -72,10 +90,45 @@ def safe_file(root: Path, name: str) -> Path:
     return path
 
 
+def verify_retired_documents(root: Path, candidate: dict) -> dict[str,str]:
+    """Verify approved document removals against retained Git bytes or raise ValueError."""
+    retired=candidate.get('retired_documents',{})
+    require(isinstance(retired,dict) and set(retired)<=set(RETIRED_DOCUMENTS),
+            'Unapproved document retirement')
+    require(not retired or candidate['version']==HOSTED_VERSION,'Retirement requires current hosted candidate')
+    for name,digest in retired.items():
+        require(digest==RETIRED_DOCUMENTS[name]==sha(git_bytes(root,name)),
+                'Retired document Git hash differs: '+name)
+        require(name not in candidate['files'] and not (root/name).exists() and not (root/name).is_symlink(),
+                'Retired document remains in current tree: '+name)
+    return retired
+
+
+def verify_retired_directories(root: Path, candidate: dict) -> dict[str,str]:
+    """Verify approved directory removals against retained Git trees or raise ValueError."""
+    retired=candidate.get('retired_directories',{})
+    allowed=set(RETIRED_DIRECTORIES)|{'evals/runs/'+name for name in RETIRED_RUNS}
+    require(isinstance(retired,dict) and set(retired)<=allowed,
+            'Unapproved directory retirement')
+    require(not retired or candidate['version']==HOSTED_VERSION,'Retirement requires current hosted candidate')
+    files={}
+    for name,digest in retired.items():
+        original=subprocess.check_output(['git','rev-parse',BASELINE_COMMIT+':'+name],cwd=root,text=True).strip()
+        require(digest==original and (name not in RETIRED_DIRECTORIES or digest==RETIRED_DIRECTORIES[name]),
+                'Retired directory Git tree differs: '+name)
+        require(not (root/name).exists() and not (root/name).is_symlink(),
+                'Retired directory remains in current tree: '+name)
+        require(not any(path.startswith(name+'/') for path in candidate['files']),
+                'Retired directory remains in current manifest: '+name)
+        files.update({path:sha(data) for path,data in baseline_blobs(root).items() if path.startswith(name+'/')})
+    return files
+
+
 def verify_originals(root: Path, candidate: dict) -> int:
     """Verify retained Git/evidence and original uncommitted overlay or raise ValueError."""
     baseline=read_json(root/FOLDER/'baseline.json')
     require(baseline['baseline_commit']==BASELINE_COMMIT,'Baseline commit changed')
+    retired={**verify_retired_documents(root,candidate),**verify_retired_directories(root,candidate)}
     overlay=read_json(root/OVERLAY/'SHA256-MANIFEST.json')
     for name,digest in overlay.items():
         require(sha(safe_file(root,(OVERLAY/name).as_posix()).read_bytes())==digest,'Preexisting overlay changed')
@@ -86,9 +139,11 @@ def verify_originals(root: Path, candidate: dict) -> int:
     frozen=read_json(root/'evals/checks/gate-f-20261028/freeze.json')
     for name,digest in frozen['files'].items():
         require(sha(git_bytes(root,name))==digest,'Retained v9 Git blob mismatch: '+name)
-        require(name in candidate['files'] or sha(safe_file(root,name).read_bytes())==digest,
+        require(name in candidate['files'] or retired.get(name)==digest or sha(safe_file(root,name).read_bytes())==digest,
                 'Unexpected frozen evidence change: '+name)
     for name,digest in baseline['preserved_evidence'].items():
+        if retired.get(name)==digest:
+            continue
         path=(OVERLAY/name).as_posix() if name in MUTABLE_DOCS else name
         require(sha(safe_file(root,path).read_bytes())==digest,'Earlier evidence changed: '+name)
     return len(frozen['files'])
@@ -103,13 +158,14 @@ def verify_tree(root: Path, candidate: dict) -> int:
     """Verify every original/current path, including ignored extras; raises on drift."""
     import verify_submission as old
     verify_candidate_scope(candidate)
+    retired={**verify_retired_documents(root,candidate),**verify_retired_directories(root,candidate)}
     actual=old.tree_files(root)
     original=set(subprocess.check_output(['git','ls-tree','-r','--name-only',BASELINE_COMMIT],cwd=root,text=True).splitlines())
     baseline=read_json(root/FOLDER/'baseline.json')
     prior=set(baseline['preserved_evidence'])|{'scripts/check_v9_attacks.py'}
-    allowed=original|prior|set(candidate['files'])|{candidate_path(root).as_posix()}
+    allowed=(original|prior|set(candidate['files'])|{candidate_path(root).as_posix()})-set(retired)
     require(actual==allowed,'Current tree missing/unlisted paths: '+str(sorted(actual^allowed)))
-    for name in original-set(candidate['files']):
+    for name in original-set(candidate['files'])-set(retired):
         require(safe_file(root,name).read_bytes()==git_bytes(root,name),'Original noncandidate file changed: '+name)
     for name,digest in candidate['files'].items():
         require(sha(safe_file(root,name).read_bytes())==digest,'Candidate hash mismatch: '+name)
@@ -127,9 +183,11 @@ def verify_candidate_scope(candidate: dict) -> None:
     prefixes=('scripts/clarifier/','scripts/automatic_tests/','evals/automatic-v10/')
     if candidate['version']==HOSTED_VERSION:
         permitted|=REPOSITORY_GUIDES
+        permitted.add('.gitignore')
         permitted.add('.github/workflows/clarifier-evaluate.yml')
         permitted.add('scripts/verify_hosted_evaluation.py')
-        prefixes+=('evals/hosted-v11/','evals/golden/hosted-v11-20261029/')
+        prefixes+=('evals/hosted-v11/','evals/golden/hosted-v11-20261029/',
+                   'evals/runs/stop-workflow-20261030-runs-41017826713-41018317883/')
     workflows={'.github/workflows/clarifier-'+name+'.yml' for name in ('triage','stop','approve')}
     require(all(name in permitted|workflows or name.startswith(prefixes) for name in candidate['files']),
             'Candidate scope includes inherited source/workflows or earlier evidence')

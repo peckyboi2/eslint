@@ -1,0 +1,34 @@
+{
+  "retrieved_at_utc": "2026-10-30T07:18:35.278367+00:00",
+  "state_commit": "aa74b8573d43c0322eb84dc15a25ca55c3455df1",
+  "ledger_enabled": false,
+  "posting_enabled": false,
+  "workflows": [
+    {
+      "path": ".github/workflows/clarifier-triage.yml",
+      "state": "disabled_manually",
+      "id": 400180069,
+      "updated_at": "2026-10-30T15:04:43.000+08:00"
+    },
+    {
+      "path": ".github/workflows/clarifier-approve.yml",
+      "state": "disabled_manually",
+      "id": 400180063,
+      "updated_at": "2026-10-29T12:10:30.000+08:00"
+    },
+    {
+      "path": ".github/workflows/clarifier-stop.yml",
+      "state": "active",
+      "id": 400180065,
+      "updated_at": "2026-10-29T12:08:11.000+08:00"
+    },
+    {
+      "path": ".github/workflows/clarifier-evaluate.yml",
+      "state": "active",
+      "id": 400249770,
+      "updated_at": "2026-10-30T15:08:48.000+08:00"
+    }
+  ],
+  "errors": [],
+  "interpretation": "Read-only post-run observation; does not prove live cancellation, provider termination or phone operation"
+}
