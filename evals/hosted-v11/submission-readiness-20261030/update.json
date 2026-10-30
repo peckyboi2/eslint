@@ -1,0 +1,78 @@
+{
+  "task": "Submission readiness documentation and offline verification, 30 October 2026",
+  "scope": "Finalize current navigation, authorization wording and submission instructions; preserve all evaluated bytes and incoming records",
+  "previous_candidate": {
+    "path": "evals/hosted-v11/submission-readiness-20261030/previous-candidate.json",
+    "sha256": "af1c74cf7856fc605c4d2219713a4b31ac2a7f0da55f4f4a463400385327fe53"
+  },
+  "checked_documentation_candidate": {
+    "path": "evals/hosted-v11/submission-readiness-20261030/checked-documentation-candidate.json",
+    "sha256": "3633a8375d882b4fd90c38e50ecc5f50225cf3da28f8441c664b7fdc72b48ea5"
+  },
+  "initial_failure": {
+    "path": "evals/hosted-v11/submission-readiness-20261030/initial-verification-failure.json",
+    "sha256": "c6376ff0e559c0def6b24e4363fce8b9ee7f2c86037ebcb8aa173e4a87ac40f9"
+  },
+  "documents": {
+    "SUBMISSION.md": {
+      "previous_sha256": "9879a141d675fb7f4dcfb5d8f2fbc4480f2a5a37a37adb9d88cca402d4b2bd3e",
+      "current_sha256": "ffe749c1e6caf46d58a7c4e248b9492d739ac74ea50935654f3a0417bd61a2f1"
+    },
+    "evals/hosted-v11/README.md": {
+      "previous_sha256": "2369ce5fd6569eaaf456b93218bd422a5f1153c2eb2fe8944f95b295fa8466ef",
+      "current_sha256": "c1a642897be351de2dd67295e94aea45567c7cf5054a79d40c119c37d6b9dfe0"
+    }
+  },
+  "review": {
+    "path": "evals/hosted-v11/submission-readiness-20261030/review.md",
+    "sha256": "70646342d90e2ca47f86ab0ebbe162e72a3c2dc36336e8515e8b3a71a555df53"
+  },
+  "preexisting_user_design_edit": {
+    "file": "DESIGN.md",
+    "sha256": "c3a776c0a048ce973a90a8d768106571888ad1f71bc27834948f3754fca784fa",
+    "changed_by_this_task": false,
+    "line_count": 75,
+    "interpretation": "Preserved user statement; assistant checks do not establish independent human verification"
+  },
+  "inference_configuration_sha256": "b80148da53c9d8196b5792a065ed8c134a8eec2856c938ccb635b9f9591c8c6d",
+  "checks": [
+    {
+      "command": "python3 -B scripts/verify_submission.py",
+      "exit_code": 0,
+      "log": "verification.json"
+    },
+    {
+      "command": "python3 -B -m unittest discover -s scripts/automatic_tests -v",
+      "exit_code": 0,
+      "tests": 49,
+      "log": "verifier-tests.txt"
+    },
+    {
+      "command": "python3 -B scripts/verify_automatic.py --tests",
+      "exit_code": 0,
+      "tests": 236,
+      "log": "safety-tests.txt",
+      "stdout": "safety-test-stdout.txt"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    },
+    {
+      "check": "Current submission/hosted/readiness guides: existing local targets and Markdown spacing",
+      "local_links": 73,
+      "missing": 0,
+      "spacing_failures": 0
+    }
+  ],
+  "repository_access": {
+    "method": "Read-only gh api repos/peckyboi2/eslint",
+    "private": false,
+    "default_branch": "main",
+    "interpretation": "Snapshot during review; no collaborator change needed while public"
+  },
+  "provider_calls_during_update": 0,
+  "public_actions_during_update": 0,
+  "boundaries": "No runtime/skill/expectation/output/ledger/workflow changes, no new model evaluation, no remote publication",
+  "remaining_steps": "Final metadata/tree check and local submission commit; Darren handles pushing and eLearn submission. Verify the exact commit in a clean checkout."
+}

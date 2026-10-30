@@ -1,0 +1,25 @@
+{
+  "reason": "The preserved incoming SUBMISSION.md contains its original blank line at EOF; preserve evidence instead of trimming it",
+  "initial_staged_diff_check": {
+    "command": "git diff --cached --check",
+    "exit_code": 2,
+    "log": "staged-diff-check-initial.txt"
+  },
+  "correction": {
+    "path": "evals/hosted-v11/submission-readiness-20261030/.gitattributes",
+    "rule": "previous-submission.md -text -whitespace",
+    "scope": "Only the preserved incoming guide snapshot; current documentation is not exempt"
+  },
+  "previous_candidate": {
+    "path": "evals/hosted-v11/submission-readiness-20261030/pre-index-candidate.json",
+    "sha256": "a09da6013421af9a485801ab22323e64989cd57b982f271a6bfd3fa8ba40ec26"
+  },
+  "preserved_snapshot_sha256": "7b7bf58fd9eb6d820c1d3ad51817c8f743b7dabd7ccbc060fae474a46ef50f94",
+  "provider_calls": 0,
+  "public_actions": 0,
+  "current_review": {
+    "path": "evals/hosted-v11/submission-readiness-20261030/review.md",
+    "sha256": "6d4248713a7354e7b89f8336d572a9d5bd73511fcb7446bb1f32d3b0cbe1a765",
+    "supersedes_review_reference_in_update_json": true
+  }
+}

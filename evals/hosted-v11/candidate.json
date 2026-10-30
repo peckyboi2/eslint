@@ -1,10 +1,10 @@
 {
   "version": "hosted-preview-v11-artifacts-v2",
-  "status": "Completed hosted evaluation and clean publication checks: 9/10 historical, 3/3 attacks; failure retained, window restored",
-  "preparation_revision": 8,
+  "status": "Submission guide aligned with automatic intake; completed hosted evaluation and all prior evidence unchanged",
+  "preparation_revision": 9,
   "superseded_preparation": {
-    "path": "evals/hosted-v11/campaign-20261029/pre-results-candidate.json",
-    "sha256": "27b58148556d24bc543dfa8cd19277a80004699f5683c60e48522cbc3cb92c8c"
+    "path": "evals/hosted-v11/submission-guide-20261029/previous-candidate.json",
+    "sha256": "c48062f5faae6cd1da8e29d38b44c5385faaf05b8815466eccead45bc19b9ec7"
   },
   "created_date": "2026-10-29 Asia/Singapore",
   "baseline_commit": "7fdbf7322cbecbe852ce971b6c10f343daa1aaf0",
@@ -85,8 +85,8 @@
     ".github/workflows/clarifier-triage.yml": "b4959f7863816e944c1936dd3902117e3ff31ed25c1a6437d5702dc2ff154061",
     "AGENTS.md": "44dda723af0dcd4eb8eacc32229eb2d1dd1e729c50501db094835b5cab7394c1",
     "CONTRIBUTING.md": "80de03c1a19a09e97572c9692a36894d5c489ae92fecb47dfaf8b85d28d2ee55",
-    "DESIGN.md": "1828a70fd9b63993253c08dfc424b4df4e873191735fb56b10eb5fe9e69dfd3d",
-    "SUBMISSION.md": "8136dbd13e965aed71206dc1161088eb20d2e31ffdfd5b101d834c444ba85cd6",
+    "DESIGN.md": "c3a776c0a048ce973a90a8d768106571888ad1f71bc27834948f3754fca784fa",
+    "SUBMISSION.md": "ffe749c1e6caf46d58a7c4e248b9492d739ac74ea50935654f3a0417bd61a2f1",
     "evals/README.md": "b85a0302ed658031ba13ad1662cb30a6eadcc085c3d2add1f33318137af890b0",
     "evals/automatic-v10/ACTIVATION.md": "65be9a88470fede401f0d9dc9219868e554ea06e6ae79ce3d8d1a6902a4f37c8",
     "evals/automatic-v10/README.md": "c545d63a1edf49f66e38ae3d369c1191ab332f55caf4425b438711e5a7b22de7",
@@ -556,7 +556,7 @@
     "evals/golden/hosted-v11-20261029/slots/13-simulated-tool-instructions/run-created.json": "6e9098bf3a6768388e02f849d4dab2eca702a938f760b7bc3b959389b4ed6bb8",
     "evals/golden/hosted-v11-20261029/slots/13-simulated-tool-instructions/run-final.json": "c0ae865ae23ccf1dbc4f8f9369716f834bad3af24bf236689f2a8731c0cda50c",
     "evals/golden/hosted-v11-20261029/slots/13-simulated-tool-instructions/workflow-log.txt": "3ec09c12b0ec7288ab08ad30ea7588ae712e569ca6b19870b20d9b8a58115204",
-    "evals/hosted-v11/README.md": "2369ce5fd6569eaaf456b93218bd422a5f1153c2eb2fe8944f95b295fa8466ef",
+    "evals/hosted-v11/README.md": "c1a642897be351de2dd67295e94aea45567c7cf5054a79d40c119c37d6b9dfe0",
     "evals/hosted-v11/campaign-20261029/README.md": "40a14ee78151937f7ff9e24f4cb510e20ddf909426b6013d78f9620ee2879599",
     "evals/hosted-v11/campaign-20261029/approval.json": "3cb3ca637d43d855d7209e0653db0127bef90a02f1ecdb0f888681727a927e3e",
     "evals/hosted-v11/campaign-20261029/cache-cleanup.json": "44700e304099d315d1434b77b4847708594ff84e06d71d91861acdb7cdb5aca7",
@@ -769,7 +769,24 @@
     "scripts/verify_automatic.py": "035ffa397f418aa8215df4ef02134d196924a9206ae591604e88f4d255ec6b55",
     "scripts/verify_hosted_evaluation.py": "7ec35163abafa34d30cdbc1d9bf2cb6ce5d0bf0ee9cc3a137d4d24abbada8680",
     "scripts/verify_hosted_smoke.py": "050a3b98437daa424df5d6a293bbc5fb6111b7c38bca77ab0fd844014cfa8fa5",
-    "scripts/verify_submission.py": "020a14a6e08e620fea048a6f9f6bd1c44aef9d732db05b11389575fbd942f36d"
+    "scripts/verify_submission.py": "020a14a6e08e620fea048a6f9f6bd1c44aef9d732db05b11389575fbd942f36d",
+    "evals/hosted-v11/submission-guide-20261029/previous-candidate.json": "c48062f5faae6cd1da8e29d38b44c5385faaf05b8815466eccead45bc19b9ec7",
+    "evals/hosted-v11/submission-guide-20261029/update.json": "87e1c638b72447188c3332d16c53f5f34d63f28d677382ea16fa6455ef922434",
+    "evals/hosted-v11/submission-readiness-20261030/initial-verification-failure.json": "c6376ff0e559c0def6b24e4363fce8b9ee7f2c86037ebcb8aa173e4a87ac40f9",
+    "evals/hosted-v11/submission-readiness-20261030/previous-candidate.json": "af1c74cf7856fc605c4d2219713a4b31ac2a7f0da55f4f4a463400385327fe53",
+    "evals/hosted-v11/submission-readiness-20261030/previous-hosted-guide.md": "2369ce5fd6569eaaf456b93218bd422a5f1153c2eb2fe8944f95b295fa8466ef",
+    "evals/hosted-v11/submission-readiness-20261030/previous-submission.md": "7b7bf58fd9eb6d820c1d3ad51817c8f743b7dabd7ccbc060fae474a46ef50f94",
+    "evals/hosted-v11/submission-readiness-20261030/review.md": "6d4248713a7354e7b89f8336d572a9d5bd73511fcb7446bb1f32d3b0cbe1a765",
+    "evals/hosted-v11/submission-readiness-20261030/checked-documentation-candidate.json": "3633a8375d882b4fd90c38e50ecc5f50225cf3da28f8441c664b7fdc72b48ea5",
+    "evals/hosted-v11/submission-readiness-20261030/safety-test-stdout.txt": "83779e71e6825fb2f9be3a8495de8fb0d3bdcd0a3e8b03016e9ec73c3b6f2180",
+    "evals/hosted-v11/submission-readiness-20261030/safety-tests.txt": "db8f6ccf08d969fecc5ebee162eafb44ce58c42a7a533d5b53a8687dd91b8ab2",
+    "evals/hosted-v11/submission-readiness-20261030/update.json": "419924256c1699f7e94dc7f96650007e6b9c03ee188155fb9caa3a205d7cdb5c",
+    "evals/hosted-v11/submission-readiness-20261030/verification.json": "b3d98f8bb7348ae3592c82be9ca9cef5fa2c6793e7b9dc33c581a1adf4c5e002",
+    "evals/hosted-v11/submission-readiness-20261030/verifier-tests.txt": "526822a84944c3cb096118034f6c44e66618309583c048e6d92936a67124e534",
+    "evals/hosted-v11/submission-readiness-20261030/.gitattributes": "5677f180d918d3b013cf9c45c36d92419ae093e783f343d653dc4c0a17e4f193",
+    "evals/hosted-v11/submission-readiness-20261030/index-packaging.json": "dce591ac09c226fd22a5db42e59ea2ceadbd607d21d027ca024ce64788b54081",
+    "evals/hosted-v11/submission-readiness-20261030/pre-index-candidate.json": "a09da6013421af9a485801ab22323e64989cd57b982f271a6bfd3fa8ba40ec26",
+    "evals/hosted-v11/submission-readiness-20261030/staged-diff-check-initial.txt": "287e0ca4a4bf82099e7ee6924f8c0da1c805760854c7cc0fce9d422b910ee850"
   },
   "provider_calls": 14,
   "public_actions": 0,
@@ -806,5 +823,21 @@
   "observed_current_evaluation": {
     "path": "evals/golden/hosted-v11-20261029/comparison.json",
     "sha256": "cf3bd1e9161f9608d1d2cf2d841afa9927f1c19f815385ad506135b11f86706b"
+  },
+  "submission_guide_update": {
+    "path": "evals/hosted-v11/submission-guide-20261029/update.json",
+    "sha256": "87e1c638b72447188c3332d16c53f5f34d63f28d677382ea16fa6455ef922434"
+  },
+  "submission_readiness_review": {
+    "path": "evals/hosted-v11/submission-readiness-20261030/review.md",
+    "sha256": "6d4248713a7354e7b89f8336d572a9d5bd73511fcb7446bb1f32d3b0cbe1a765"
+  },
+  "submission_readiness_update": {
+    "path": "evals/hosted-v11/submission-readiness-20261030/update.json",
+    "sha256": "419924256c1699f7e94dc7f96650007e6b9c03ee188155fb9caa3a205d7cdb5c"
+  },
+  "submission_index_packaging": {
+    "path": "evals/hosted-v11/submission-readiness-20261030/index-packaging.json",
+    "sha256": "dce591ac09c226fd22a5db42e59ea2ceadbd607d21d027ca024ce64788b54081"
   }
 }

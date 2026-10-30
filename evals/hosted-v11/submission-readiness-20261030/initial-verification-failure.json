@@ -1,0 +1,6 @@
+{
+  "command": "python3 -B scripts/verify_submission.py",
+  "exit_code": 1,
+  "output": "FAIL: Candidate hash mismatch: SUBMISSION.md\n",
+  "interpretation": "Pre-review working-tree failure; retained before documentation and manifest corrections."
+}

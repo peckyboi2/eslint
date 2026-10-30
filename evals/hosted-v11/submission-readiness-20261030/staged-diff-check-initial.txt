@@ -1,0 +1,3 @@
+Command: git diff --cached --check
+Exit code: 2
+evals/hosted-v11/submission-readiness-20261030/previous-submission.md:73: new blank line at EOF.

@@ -1,0 +1,21 @@
+{
+  "scope": "Refresh only the submission entry guide for the current automated workflow; runtime and evaluation unchanged",
+  "previous_candidate": {
+    "path": "evals/hosted-v11/submission-guide-20261029/previous-candidate.json",
+    "sha256": "c48062f5faae6cd1da8e29d38b44c5385faaf05b8815466eccead45bc19b9ec7"
+  },
+  "submission": {
+    "previous_sha256": "8136dbd13e965aed71206dc1161088eb20d2e31ffdfd5b101d834c444ba85cd6",
+    "current_sha256": "9879a141d675fb7f4dcfb5d8f2fbc4480f2a5a37a37adb9d88cca402d4b2bd3e"
+  },
+  "preexisting_user_design_edit": {
+    "file": "DESIGN.md",
+    "committed_sha256": "1828a70fd9b63993253c08dfc424b4df4e873191735fb56b10eb5fe9e69dfd3d",
+    "current_sha256": "c3a776c0a048ce973a90a8d768106571888ad1f71bc27834948f3754fca784fa",
+    "text_changed_by_this_task": false,
+    "note": "Existing user AI-use-statement edit is retained unchanged; its digest identifies this working tree and does not assert independent human verification"
+  },
+  "inference_configuration_sha256": "b80148da53c9d8196b5792a065ed8c134a8eec2856c938ccb635b9f9591c8c6d",
+  "provider_calls_during_update": 0,
+  "public_actions_during_update": 0
+}

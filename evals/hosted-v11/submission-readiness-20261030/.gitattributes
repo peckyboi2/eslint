@@ -1,0 +1,2 @@
+# Preserve incoming guide bytes, including its original trailing blank line.
+previous-submission.md -text -whitespace
